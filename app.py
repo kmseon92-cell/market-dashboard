@@ -5,6 +5,27 @@ import pandas as pd
 
 st.set_page_config(page_title="마켓 대시보드", page_icon="📈", layout="wide")
 
+
+def check_password():
+    """비밀번호 게이트. 맞으면 통과, 틀리면 차단."""
+    def password_entered():
+        if st.session_state["password"] == st.secrets.get("APP_PASSWORD", ""):
+            st.session_state["password_ok"] = True
+            del st.session_state["password"]
+        else:
+            st.session_state["password_ok"] = False
+
+    if st.session_state.get("password_ok"):
+        return True
+
+    st.text_input("비밀번호", type="password", on_change=password_entered, key="password")
+    if st.session_state.get("password_ok") is False:
+        st.error("비밀번호가 틀렸어")
+    st.stop()
+
+
+check_password()
+
 # 자동 새로고침 (60초)
 REFRESH_SEC = 60
 st.markdown(
