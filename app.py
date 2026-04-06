@@ -102,4 +102,37 @@ for group, items in TICKERS.items():
             render_card(name, symbol, fetch_quote(symbol))
 
 st.divider()
+
+# 일일 리포트 (3단)
+st.subheader("📰 일일 리포트")
+import os
+REPORTS_DIR = os.path.join(os.path.dirname(__file__), "reports")
+REPORT_FILES = [
+    ("🇰🇷 국내증시 마감시황", "kr_market_close.md"),
+    ("🐳 범고래 패턴 스크리닝", "bumgorae.md"),
+    ("🇺🇸 미국증시 마감시황", "us_market_close.md"),
+]
+
+def load_report(fname: str) -> str:
+    p = os.path.join(REPORTS_DIR, fname)
+    if not os.path.exists(p):
+        return "_아직 업데이트 안 됨_"
+    with open(p, encoding="utf-8") as f:
+        return f.read()
+
+report_cols = st.columns(3)
+for col, (title, fname) in zip(report_cols, REPORT_FILES):
+    with col:
+        st.markdown(f"#### {title}")
+        content = load_report(fname)
+        # 텔레그램 HTML(<b>) 그대로 렌더, 줄바꿈은 <br>로 변환
+        rendered = content.replace("\n", "<br>")
+        st.markdown(
+            f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
+            f'height:600px;overflow-y:auto;font-size:0.88rem;line-height:1.6;color:#000;">'
+            f'{rendered}</div>',
+            unsafe_allow_html=True,
+        )
+
+st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
