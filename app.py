@@ -162,7 +162,7 @@ def fetch_intraday_pcts(symbols: tuple) -> dict:
     if not symbols:
         return {}
     try:
-        df = yf.download(list(symbols), period="2d", interval="1d",
+        df = yf.download(list(symbols), period="5d", interval="1d",
                          progress=False, group_by="ticker", threads=True)
         result = {}
         for sym in symbols:
@@ -175,8 +175,7 @@ def fetch_intraday_pcts(symbols: tuple) -> dict:
                 if len(closes) >= 2:
                     pct = (closes.iloc[-1] / closes.iloc[-2] - 1) * 100
                     result[sym] = float(pct)
-                elif len(closes) == 1:
-                    result[sym] = 0.0
+                # 1개 이하면 데이터 부족 — 표시 안 함 (이전엔 0%로 잘못 표시)
             except Exception:
                 continue
         return result
