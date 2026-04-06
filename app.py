@@ -118,10 +118,16 @@ def extract_us_summary() -> str:
 
 us_summary = extract_us_summary()
 if us_summary:
+    import re as _re
+    def _color_pct(m):
+        val = m.group(0)
+        color = "#ef4444" if val.startswith("+") else "#3b82f6"
+        return f'<span style="color:{color};font-weight:700;">{val}</span>'
+    colored_summary = _re.sub(r'[+\-]\d+\.\d+%', _color_pct, us_summary)
     st.markdown("<h5 style='margin:10px 0 6px 0;color:#000;'>🇺🇸 미국증시 마감시황</h5>", unsafe_allow_html=True)
     st.markdown(
         f'<div style="padding:10px 14px;border:1px solid #2a2a2a;border-radius:10px;'
-        f'font-size:1.0rem;color:#000;font-weight:500;">{us_summary}</div>',
+        f'font-size:1.0rem;color:#000;font-weight:500;">{colored_summary}</div>',
         unsafe_allow_html=True,
     )
     st.divider()
