@@ -26,10 +26,12 @@ def check_password():
 
 check_password()
 
-# 자동 새로고침 (60초, 세션 유지)
+# 자동 새로고침 (60초)
 REFRESH_SEC = 60
-from streamlit_autorefresh import st_autorefresh
-st_autorefresh(interval=REFRESH_SEC * 1000, key="auto_refresh")
+st.markdown(
+    f'<meta http-equiv="refresh" content="{REFRESH_SEC}">',
+    unsafe_allow_html=True,
+)
 
 TICKERS = {
     "주요 지수": {
