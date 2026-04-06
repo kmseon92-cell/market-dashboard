@@ -58,20 +58,48 @@ def format_price(symbol: str, price: float) -> str:
 st.title("📈 마켓 대시보드")
 st.caption(f"마지막 업데이트: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} · {REFRESH_SEC}초마다 자동 새로고침")
 
+def render_card(name: str, symbol: str, q: dict | None):
+    if not q or "error" in (q or {}):
+        st.markdown(
+            f"""
+            <div style="padding:12px 14px;border:1px solid #2a2a2a;border-radius:10px;">
+              <div style="font-size:0.9rem;color:#aaa;">{name}</div>
+              <div style="font-size:1.8rem;font-weight:700;color:#888;">—</div>
+              <div style="font-size:0.85rem;color:#888;">데이터 없음</div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+        return
+    pct = q["pct"]
+    change = q["change"]
+    color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#9ca3af")
+    arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
+    st.markdown(
+        f"""
+        <div style="padding:14px 16px;border:1px solid #2a2a2a;border-radius:10px;">
+          <div style="font-size:0.95rem;color:#aaa;margin-bottom:6px;">{name}</div>
+          <div style="font-size:2.4rem;font-weight:800;line-height:1.1;color:{color};">
+            {arrow} {pct:+.2f}%
+          </div>
+          <div style="font-size:0.85rem;color:{color};margin-top:2px;">
+            {change:+,.2f}
+          </div>
+          <div style="font-size:1.0rem;color:#ddd;margin-top:6px;">
+            {format_price(symbol, q["price"])}
+          </div>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
+
+
 for group, items in TICKERS.items():
     st.subheader(group)
     cols = st.columns(len(items))
     for col, (name, symbol) in zip(cols, items.items()):
-        q = fetch_quote(symbol)
         with col:
-            if not q or "error" in (q or {}):
-                st.metric(name, "—", "데이터 없음")
-            else:
-                st.metric(
-                    name,
-                    format_price(symbol, q["price"]),
-                    f"{q['change']:+,.2f} ({q['pct']:+.2f}%)",
-                )
+            render_card(name, symbol, fetch_quote(symbol))
 
 st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
