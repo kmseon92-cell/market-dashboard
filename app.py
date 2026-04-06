@@ -75,15 +75,15 @@ def render_card(name: str, symbol: str, q: dict | None):
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
     st.markdown(
         f"""
-        <div style="padding:14px 16px;border:1px solid #2a2a2a;border-radius:10px;">
-          <div style="font-size:1.15rem;font-weight:700;color:#000;margin-bottom:6px;">{name}</div>
-          <div style="font-size:2.4rem;font-weight:800;line-height:1.1;color:{color};">
+        <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;">
+          <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
+          <div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">
             {arrow} {pct:+.2f}%
           </div>
-          <div style="font-size:0.85rem;color:{color};margin-top:2px;">
+          <div style="font-size:0.8rem;color:{color};margin-top:0px;">
             {change:+,.2f}
           </div>
-          <div style="font-size:1.4rem;font-weight:600;color:#000;margin-top:6px;">
+          <div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">
             {format_price(symbol, q["price"])}
           </div>
         </div>
