@@ -1,0 +1,9 @@
+[project]
+name = "market-dashboard"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12"
+dependencies = [
+    "streamlit>=1.56.0",
+    "yfinance>=1.2.0",
+]
