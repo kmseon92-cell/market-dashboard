@@ -1,93 +1,83 @@
-<!-- updated: 2026-04-06 15:04 -->
+<!-- updated: 2026-04-07 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-04-06
+📅 2026-04-07
 ━━━━━━━━━━━━━━━
-다우 -0.13% | 나스닥 +0.18% | S&P500 +0.11% | 러셀2000 +0.70% | 필반도체 +0.40% | WTI $111.81 | 환율 1,506원
+다우 +0.36% | 나스닥 +0.54% | S&P500 +0.44% | 러셀2000 +0.42% | 필반도체 +1.06% | WTI $112.61 | 환율 1,509원
 
-📈 <b>52주 신고가 (23종목)</b>
+📈 <b>52주 신고가 (22종목)</b>
 
-<b>〈유틸리티〉</b>
-  <b>BEP</b> Brookfield Renewable Partners LP
-    $33.58 (+1.5%) | $10.3B
-  <b>ETR</b> Entergy Corp
-    $114.90 (+1.2%) | $52.0B
-  <b>SRE</b> Sempra
-    $99.20 (+1.8%) | $64.8B
+<b>〈소재〉</b>
+  <b>AA</b> Alcoa Corp
+    $71.01 (-0.7%) | $18.7B
+
+<b>〈필수소비재〉</b>
+  <b>BG</b> Bunge Global SA
+    $128.47 (-0.7%) | $24.9B
 
 <b>〈경기소비재〉</b>
   <b>BURL</b> Burlington Stores Inc
-    $328.73 (-0.6%) | $20.6B
+    $337.97 (+2.8%) | $21.2B
   <b>CASY</b> Casey's General Stores, Inc
-    $743.42 (+0.9%) | $27.5B
+    $747.77 (+0.6%) | $27.6B
+  <b>FIVE</b> Five Below Inc
+    $233.72 (-0.7%) | $12.9B
   <b>QSR</b> Restaurant Brands International Inc
-    $76.58 (+2.0%) | $34.9B
-  <b>VFS</b> VinFast Auto Ltd 🔥
-    $4.54 (+10.7%) | $10.6B
+    $77.23 (+0.9%) | $35.2B
+  <b>VFS</b> VinFast Auto Ltd
+    $4.35 (-4.2%) | $10.2B
 
 <b>〈기술〉</b>
   <b>CIEN</b> CIENA Corp
-    $447.76 (+7.8%) | $63.3B
-  <b>LITE</b> Lumentum Holdings Inc 🔥
-    $826.88 (+8.1%) | $59.0B
+    $434.26 (-3.0%) | $61.4B
+  <b>LITE</b> Lumentum Holdings Inc
+    $772.28 (-6.6%) | $55.1B
+  <b>MRVL</b> Marvell Technology Inc
+    $109.51 (+2.2%) | $95.7B
   <b>NOK</b> Nokia Corp ADR
-    $8.82 (+6.7%) | $49.2B
+    $8.89 (+0.8%) | $49.6B
   <b>SNX</b> TD Synnex Corp
-    $186.92 (+0.3%) | $15.1B
+    $193.11 (+3.3%) | $15.5B
+  <b>STM</b> ST Microelectronics
+    $35.44 (+3.3%) | $31.5B
+  <b>STX</b> Seagate Technology Holdings Plc
+    $453.30 (+5.6%) | $98.8B
   <b>TSEM</b> Tower Semiconductor Ltd
-    $197.80 (+5.7%) | $22.1B
+    $190.19 (-3.9%) | $21.2B
 
 <b>〈산업재〉</b>
   <b>CLH</b> Clean Harbors, Inc
-    $297.00 (+2.4%) | $15.7B
+    $299.64 (+0.9%) | $15.8B
 
-<b>〈소재〉</b>
-  <b>CTVA</b> Corteva Inc
-    $85.46 (+2.0%) | $57.5B
-  <b>WLK</b> Westlake Corporation
-    $119.40 (+2.4%) | $15.3B
+<b>〈유틸리티〉</b>
+  <b>CMS</b> CMS Energy Corporation
+    $78.33 (-0.3%) | $24.0B
+  <b>ETR</b> Entergy Corp
+    $114.57 (-0.3%) | $51.9B
 
-<b>〈필수소비재〉</b>
-  <b>DAR</b> Darling Ingredients Inc
-    $64.65 (+4.0%) | $10.2B
-  <b>SFD</b> Smithfield Foods, Inc
-    $28.37 (-0.8%) | $11.2B
+<b>〈에너지〉</b>
+  <b>E</b> Eni Spa ADR
+    $57.61 (+0.9%) | $81.8B
 
 <b>〈부동산〉</b>
   <b>EQIX</b> Equinix Inc
-    $1,000.37 (+0.4%) | $98.3B
-
-<b>〈에너지〉</b>
-  <b>IMO</b> Imperial Oil Ltd
-    $130.53 (+1.2%) | $63.1B
-
-<b>〈커뮤니케이션〉</b>
-  <b>NYT</b> New York Times Co
-    $85.69 (+0.3%) | $13.8B
-  <b>TIGO</b> Millicom International Cellular S.A
-    $79.64 (+3.6%) | $13.3B
+    $1,016.08 (+1.6%) | $99.8B
 
 <b>〈헬스케어〉</b>
-  <b>PFE</b> Pfizer Inc
-    $28.32 (-0.8%) | $161.0B
-  <b>RPRX</b> Royalty Pharma plc
-    $48.57 (+0.2%) | $28.0B
+  <b>HOLX</b> Hologic, Inc
+    $76.01 (+0.5%) | $17.0B
 
-🚀 <b>8% 이상 급등 (5종목)</b>
+<b>〈커뮤니케이션〉</b>
+  <b>TIGO</b> Millicom International Cellular S.A
+    $80.62 (+1.2%) | $13.5B
 
-<b>〈기술〉</b>
-  <b>ALAB</b> Astera Labs Inc
-    $117.14 (+10.2%) | $19.9B
-  <b>ASTS</b> AST SpaceMobile Inc
-    $92.62 (+10.3%) | $35.4B
-  <b>NTNX</b> Nutanix Inc
-    $41.10 (+8.0%) | $10.9B
+🚀 <b>8% 이상 급등 (2종목)</b>
 
 <b>〈산업재〉</b>
-  <b>PL</b> Planet Labs PBC
-    $35.88 (+16.8%) | $12.4B
+  <b>KTOS</b> Kratos Defense & Security Solutions Inc
+    $74.09 (+10.1%) | $13.8B
 
-<b>〈부동산〉</b>
-  <b>SBAC</b> SBA Communications Corp
-    $204.04 (+18.9%) | $21.6B
+<b>〈에너지〉</b>
+  <b>VG</b> Venture Global Inc
+    $15.94 (+8.9%) | $39.2B
 
 
