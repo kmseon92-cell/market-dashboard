@@ -78,7 +78,7 @@ def render_card(name: str, symbol: str, q: dict | None):
     st.markdown(
         f"""
         <div style="padding:14px 16px;border:1px solid #2a2a2a;border-radius:10px;">
-          <div style="font-size:0.95rem;color:#aaa;margin-bottom:6px;">{name}</div>
+          <div style="font-size:1.15rem;font-weight:700;color:#000;margin-bottom:6px;">{name}</div>
           <div style="font-size:2.4rem;font-weight:800;line-height:1.1;color:{color};">
             {arrow} {pct:+.2f}%
           </div>
