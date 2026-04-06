@@ -5,6 +5,33 @@ import pandas as pd
 
 st.set_page_config(page_title="범고래 프로젝트", page_icon="🐳", layout="wide")
 
+
+def check_password():
+    import hashlib
+    secret = st.secrets.get("APP_PASSWORD", "")
+    if not secret:
+        return  # secret 미설정 시 통과
+    token = hashlib.sha256(f"bumgorae:{secret}".encode()).hexdigest()[:24]
+
+    # URL 쿼리 파라미터에 토큰 있으면 통과 (meta refresh에도 유지됨)
+    if st.query_params.get("auth") == token:
+        return
+
+    def on_submit():
+        if st.session_state.get("pw_input") == secret:
+            st.query_params["auth"] = token
+        else:
+            st.session_state["pw_wrong"] = True
+
+    st.markdown("### 🐳 범고래 프로젝트")
+    st.text_input("비밀번호", type="password", on_change=on_submit, key="pw_input")
+    if st.session_state.get("pw_wrong"):
+        st.error("비밀번호가 틀렸어")
+    st.stop()
+
+
+check_password()
+
 # 자동 새로고침 (60초)
 REFRESH_SEC = 60
 st.markdown(
