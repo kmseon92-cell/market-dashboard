@@ -20,11 +20,9 @@ TICKERS = {
         "상해종합": "000001.SS",
         "대만 가권": "^TWII",
     },
-    "선물": {
+    "선물 · 환율": {
         "나스닥 선물": "NQ=F",
         "WTI 원유": "CL=F",
-    },
-    "환율": {
         "원/달러": "KRW=X",
         "달러 인덱스": "DX-Y.NYB",
     },
@@ -95,7 +93,7 @@ def render_card(name: str, symbol: str, q: dict | None):
 
 
 for group, items in TICKERS.items():
-    st.subheader(group)
+    st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
     cols = st.columns(len(items))
     for col, (name, symbol) in zip(cols, items.items()):
         with col:
