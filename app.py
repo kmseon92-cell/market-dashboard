@@ -101,6 +101,31 @@ for group, items in TICKERS.items():
 
 st.divider()
 
+# 미국증시 마감시황 한 줄 (us_market_close.md에서 추출)
+def extract_us_summary() -> str:
+    import os
+    p = os.path.join(os.path.dirname(__file__), "reports", "us_market_close.md")
+    if not os.path.exists(p):
+        return ""
+    with open(p, encoding="utf-8") as f:
+        text = f.read()
+    # ━━━ 다음 줄이 요약
+    lines = text.split("\n")
+    for i, line in enumerate(lines):
+        if "━" in line and i + 1 < len(lines):
+            return lines[i + 1].strip()
+    return ""
+
+us_summary = extract_us_summary()
+if us_summary:
+    st.markdown("<h5 style='margin:10px 0 6px 0;color:#000;'>🇺🇸 미국증시 마감시황</h5>", unsafe_allow_html=True)
+    st.markdown(
+        f'<div style="padding:10px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+        f'font-size:1.0rem;color:#000;font-weight:500;">{us_summary}</div>',
+        unsafe_allow_html=True,
+    )
+    st.divider()
+
 # 일일 리포트 (3단)
 st.subheader("📰 일일 리포트")
 import os
