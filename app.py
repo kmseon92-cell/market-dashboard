@@ -184,7 +184,10 @@ def annotate_kr(content: str) -> str:
             return m.group(0) + badge
         return m.group(0)
 
-    return KR_LINE_RE.sub(repl, content)
+    content = KR_LINE_RE.sub(repl, content)
+    # 종목코드 (000000) 제거
+    content = re.sub(r'\s*\(\d{6}\)', '', content)
+    return content
 
 
 def annotate_us(content: str) -> str:
