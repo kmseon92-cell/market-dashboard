@@ -3,7 +3,7 @@ import yfinance as yf
 from datetime import datetime
 import pandas as pd
 
-st.set_page_config(page_title="마켓 대시보드", page_icon="📈", layout="wide")
+st.set_page_config(page_title="범고래 프로젝트", page_icon="🐳", layout="wide")
 
 
 def check_password():
@@ -74,7 +74,7 @@ def format_price(symbol: str, price: float) -> str:
     return f"{price:,.2f}"
 
 
-st.title("📈 마켓 대시보드")
+st.title("🐳 범고래 프로젝트")
 st.caption(f"마지막 업데이트: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} · {REFRESH_SEC}초마다 자동 새로고침")
 
 def render_card(name: str, symbol: str, q: dict | None):
