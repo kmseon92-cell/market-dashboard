@@ -253,7 +253,7 @@ for col, (title, fname) in zip(report_cols, REPORT_FILES):
         rendered = content.replace("\n", "<br>")
         st.markdown(
             f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
-            f'height:700px;overflow-y:auto;font-size:1.05rem;line-height:1.7;color:#000;">'
+            f'font-size:1.05rem;line-height:1.7;color:#000;">'
             f'{rendered}</div>',
             unsafe_allow_html=True,
         )
