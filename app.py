@@ -85,7 +85,7 @@ def render_card(name: str, symbol: str, q: dict | None):
           <div style="font-size:0.85rem;color:{color};margin-top:2px;">
             {change:+,.2f}
           </div>
-          <div style="font-size:1.0rem;color:#ddd;margin-top:6px;">
+          <div style="font-size:1.4rem;font-weight:600;color:#000;margin-top:6px;">
             {format_price(symbol, q["price"])}
           </div>
         </div>
