@@ -56,13 +56,37 @@ TICKERS = {
 }
 
 
+NAVER_INDEX_MAP = {"^KS11": "KOSPI", "^KQ11": "KOSDAQ"}
+
+
 @st.cache_data(ttl=30)
 def fetch_quote(symbol: str):
+    # 한국 지수는 네이버 (야후는 데이터 부정확)
+    if symbol in NAVER_INDEX_MAP:
+        try:
+            import urllib.request, json
+            code = NAVER_INDEX_MAP[symbol]
+            url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_INDEX:{code}"
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
+            )
+            data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+            d = data["result"]["areas"][0]["datas"][0]
+            last = d["nv"] / 100
+            change = d["cv"] / 100
+            pct = float(d["cr"])
+            if d.get("rf") == "5":  # 하락
+                change = -change
+                pct = -pct
+            return {"price": last, "change": change, "pct": pct}
+        except Exception as e:
+            return {"error": str(e)}
     try:
         t = yf.Ticker(symbol)
-        fi = t.fast_info
-        last = float(fi["last_price"])
-        prev = float(fi["previous_close"])
+        info = t.info
+        last = float(info.get("regularMarketPrice"))
+        prev = float(info.get("regularMarketPreviousClose"))
         change = last - prev
         pct = (change / prev * 100) if prev else 0.0
         return {"price": last, "change": change, "pct": pct}
