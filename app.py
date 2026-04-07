@@ -32,12 +32,7 @@ def check_password():
 
 check_password()
 
-# 자동 새로고침 (60초)
 REFRESH_SEC = 60
-st.markdown(
-    f'<meta http-equiv="refresh" content="{REFRESH_SEC}">',
-    unsafe_allow_html=True,
-)
 
 TICKERS = {
     "주요 지수": {
@@ -136,7 +131,6 @@ def format_price(symbol: str, price: float) -> str:
 
 
 st.title("🐳 범고래 프로젝트")
-st.caption(f"마지막 업데이트: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')} · {REFRESH_SEC}초마다 자동 새로고침")
 
 def render_card(name: str, symbol: str, q: dict | None):
     if not q or "error" in (q or {}):
@@ -174,12 +168,17 @@ def render_card(name: str, symbol: str, q: dict | None):
     )
 
 
-for group, items in TICKERS.items():
-    st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
-    cols = st.columns(len(items))
-    for col, (name, symbol) in zip(cols, items.items()):
-        with col:
-            render_card(name, symbol, fetch_quote(symbol))
+@st.fragment(run_every=f"{REFRESH_SEC}s")
+def render_quotes():
+    for group, items in TICKERS.items():
+        st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
+        cols = st.columns(len(items))
+        for col, (name, symbol) in zip(cols, items.items()):
+            with col:
+                render_card(name, symbol, fetch_quote(symbol))
+    st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
+
+render_quotes()
 
 st.divider()
 
