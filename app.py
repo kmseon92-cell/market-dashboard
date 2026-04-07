@@ -80,9 +80,10 @@ def _fetch_naver_kr(code: str):
     data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
     d = data["result"]["areas"][0]["datas"][0]
     last = d["nv"] / 100
-    change = d["cv"] / 100
-    pct = float(d["cr"])
-    if d.get("rf") == "5":  # 하락
+    change = abs(d["cv"]) / 100
+    pct = abs(float(d["cr"]))
+    # rf: 1=상한 2=상승 3=보합 4=하한 5=하락
+    if str(d.get("rf")) in ("4", "5"):
         change = -change
         pct = -pct
     return {"price": last, "change": change, "pct": pct}
@@ -254,8 +255,8 @@ def fetch_kr_pcts(codes: tuple) -> dict:
         data = json.loads(raw)
         out = {}
         for d in data["result"]["areas"][0]["datas"]:
-            pct = float(d.get("cr", 0))
-            if d.get("rf") == "5":
+            pct = abs(float(d.get("cr", 0)))
+            if str(d.get("rf")) in ("4", "5"):
                 pct = -pct
             out[d["cd"]] = pct
         return out
