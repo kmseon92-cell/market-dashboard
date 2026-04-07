@@ -60,11 +60,9 @@ TICKERS = {
 def fetch_quote(symbol: str):
     try:
         t = yf.Ticker(symbol)
-        hist = t.history(period="5d", interval="1d")
-        if hist.empty or len(hist) < 1:
-            return None
-        last = float(hist["Close"].iloc[-1])
-        prev = float(hist["Close"].iloc[-2]) if len(hist) >= 2 else last
+        fi = t.fast_info
+        last = float(fi["last_price"])
+        prev = float(fi["previous_close"])
         change = last - prev
         pct = (change / prev * 100) if prev else 0.0
         return {"price": last, "change": change, "pct": pct}
