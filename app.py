@@ -103,21 +103,27 @@ def _fetch_stooq(sym: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+def _fetch_yf(symbol: str):
+    info = yf.Ticker(symbol).info
+    last = float(info.get("regularMarketPrice"))
+    prev = float(info.get("regularMarketPreviousClose"))
+    change = last - prev
+    pct = (change / prev * 100) if prev else 0.0
+    return {"price": last, "change": change, "pct": pct}
+
+
 @st.cache_data(ttl=30)
 def fetch_quote(symbol: str):
     try:
         if symbol in NAVER_INDEX_MAP:
             return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
-        if symbol in STOOQ_MAP:
-            return _fetch_stooq(STOOQ_MAP[symbol])
-        # fallback: yfinance
-        t = yf.Ticker(symbol)
-        info = t.info
-        last = float(info.get("regularMarketPrice"))
-        prev = float(info.get("regularMarketPreviousClose"))
-        change = last - prev
-        pct = (change / prev * 100) if prev else 0.0
-        return {"price": last, "change": change, "pct": pct}
+        # 우선 yfinance, 실패/이상 시 stooq fallback
+        try:
+            return _fetch_yf(symbol)
+        except Exception:
+            if symbol in STOOQ_MAP:
+                return _fetch_stooq(STOOQ_MAP[symbol])
+            raise
     except Exception as e:
         return {"error": str(e)}
 
