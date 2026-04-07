@@ -238,53 +238,68 @@ US_LINE_RE = re.compile(r'<b>([A-Z]{1,5})</b>\s+[A-Z]')
 
 
 @st.cache_data(ttl=60)
-def fetch_intraday_pcts(symbols: tuple) -> dict:
-    """심볼 리스트 → {symbol: pct} 당일 등락률"""
-    if not symbols:
+def fetch_kr_pcts(codes: tuple) -> dict:
+    """한국 종목코드 리스트 → {code: pct} (네이버 실시간)"""
+    if not codes:
         return {}
+    import urllib.request, json
     try:
-        df = yf.download(list(symbols), period="5d", interval="1d",
-                         progress=False, group_by="ticker", threads=True)
-        result = {}
-        for sym in symbols:
-            try:
-                if len(symbols) == 1:
-                    closes = df["Close"]
-                else:
-                    closes = df[sym]["Close"]
-                closes = closes.dropna()
-                if len(closes) >= 2:
-                    pct = (closes.iloc[-1] / closes.iloc[-2] - 1) * 100
-                    result[sym] = float(pct)
-                # 1개 이하면 데이터 부족 — 표시 안 함 (이전엔 0%로 잘못 표시)
-            except Exception:
-                continue
-        return result
+        q = ",".join(codes)
+        url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:{q}"
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
+        )
+        raw = urllib.request.urlopen(req, timeout=5).read().decode("euc-kr", "ignore")
+        data = json.loads(raw)
+        out = {}
+        for d in data["result"]["areas"][0]["datas"]:
+            pct = float(d.get("cr", 0))
+            if d.get("rf") == "5":
+                pct = -pct
+            out[d["cd"]] = pct
+        return out
     except Exception:
         return {}
 
 
+@st.cache_data(ttl=60)
+def fetch_us_pcts(tickers: tuple) -> dict:
+    """미국 티커 리스트 → {ticker: pct} (Stooq)"""
+    if not tickers:
+        return {}
+    import urllib.request
+    out = {}
+    syms = ",".join(t.lower() + ".us" for t in tickers)
+    url = f"https://stooq.com/q/l/?s={syms}&f=sd2t2ohlcvp&h&e=csv"
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        text = urllib.request.urlopen(req, timeout=5).read().decode().strip()
+        lines = text.splitlines()[1:]
+        for line in lines:
+            row = line.split(",")
+            if len(row) < 9 or row[1] == "N/D":
+                continue
+            try:
+                last = float(row[6])
+                prev = float(row[8])
+                if prev:
+                    sym = row[0].replace(".US", "").upper()
+                    out[sym] = (last / prev - 1) * 100
+            except ValueError:
+                continue
+    except Exception:
+        pass
+    return out
+
+
 def annotate_kr(content: str) -> str:
     """한국 종목 라인에 당일 등락률 추가"""
-    codes = list(set(KR_LINE_RE.findall(content)))
-    if not codes:
+    pairs = list(set(KR_LINE_RE.findall(content)))
+    if not pairs:
         return content
-    # .KS 먼저 시도
-    ks_syms = tuple(f"{c[1]}.KS" for c in codes)
-    ks_pcts = fetch_intraday_pcts(ks_syms)
-    # 결측은 .KQ로 재시도
-    missing = [c for c in codes if f"{c[1]}.KS" not in ks_pcts]
-    kq_pcts = {}
-    if missing:
-        kq_syms = tuple(f"{c[1]}.KQ" for c in missing)
-        kq_pcts = fetch_intraday_pcts(kq_syms)
-
-    code_to_pct = {}
-    for name, code in codes:
-        if f"{code}.KS" in ks_pcts:
-            code_to_pct[code] = ks_pcts[f"{code}.KS"]
-        elif f"{code}.KQ" in kq_pcts:
-            code_to_pct[code] = kq_pcts[f"{code}.KQ"]
+    codes = tuple({code for _, code in pairs})
+    code_to_pct = fetch_kr_pcts(codes)
 
     def repl(m):
         name, code = m.group(1), m.group(2)
@@ -306,7 +321,7 @@ def annotate_us(content: str) -> str:
     tickers = list(set(US_LINE_RE.findall(content)))
     if not tickers:
         return content
-    pcts = fetch_intraday_pcts(tuple(tickers))
+    pcts = fetch_us_pcts(tuple(tickers))
 
     def repl(m):
         ticker = m.group(1)
