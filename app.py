@@ -58,31 +58,63 @@ TICKERS = {
 
 NAVER_INDEX_MAP = {"^KS11": "KOSPI", "^KQ11": "KOSDAQ"}
 
+# 야후 심볼 → stooq 심볼
+STOOQ_MAP = {
+    "^N225": "^nkx",
+    "000001.SS": "^shc",
+    "^TWII": "^twse",
+    "NQ=F": "nq.f",
+    "CL=F": "cl.f",
+    "KRW=X": "usdkrw",
+    "DX-Y.NYB": "dx.f",
+}
+
+
+def _fetch_naver_kr(code: str):
+    import urllib.request, json
+    url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_INDEX:{code}"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
+    )
+    data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+    d = data["result"]["areas"][0]["datas"][0]
+    last = d["nv"] / 100
+    change = d["cv"] / 100
+    pct = float(d["cr"])
+    if d.get("rf") == "5":  # 하락
+        change = -change
+        pct = -pct
+    return {"price": last, "change": change, "pct": pct}
+
+
+def _fetch_stooq(sym: str):
+    import urllib.request
+    url = f"https://stooq.com/q/l/?s={sym}&f=sd2t2ohlcvp&h&e=csv"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    text = urllib.request.urlopen(req, timeout=5).read().decode().strip()
+    lines = text.splitlines()
+    if len(lines) < 2:
+        raise ValueError("no data")
+    row = lines[1].split(",")
+    # Symbol,Date,Time,Open,High,Low,Close,Volume,Prev
+    if row[1] == "N/D":
+        raise ValueError("N/D")
+    last = float(row[6])
+    prev = float(row[8])
+    change = last - prev
+    pct = (change / prev * 100) if prev else 0.0
+    return {"price": last, "change": change, "pct": pct}
+
 
 @st.cache_data(ttl=30)
 def fetch_quote(symbol: str):
-    # 한국 지수는 네이버 (야후는 데이터 부정확)
-    if symbol in NAVER_INDEX_MAP:
-        try:
-            import urllib.request, json
-            code = NAVER_INDEX_MAP[symbol]
-            url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_INDEX:{code}"
-            req = urllib.request.Request(
-                url,
-                headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
-            )
-            data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
-            d = data["result"]["areas"][0]["datas"][0]
-            last = d["nv"] / 100
-            change = d["cv"] / 100
-            pct = float(d["cr"])
-            if d.get("rf") == "5":  # 하락
-                change = -change
-                pct = -pct
-            return {"price": last, "change": change, "pct": pct}
-        except Exception as e:
-            return {"error": str(e)}
     try:
+        if symbol in NAVER_INDEX_MAP:
+            return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
+        if symbol in STOOQ_MAP:
+            return _fetch_stooq(STOOQ_MAP[symbol])
+        # fallback: yfinance
         t = yf.Ticker(symbol)
         info = t.info
         last = float(info.get("regularMarketPrice"))
