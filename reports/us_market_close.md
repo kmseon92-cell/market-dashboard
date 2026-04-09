@@ -1,195 +1,209 @@
-<!-- updated: 2026-04-09 06:30 -->
+<!-- updated: 2026-04-10 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-04-09
+📅 2026-04-10
 ━━━━━━━━━━━━━━━
-다우 +2.85% | 나스닥 +2.80% | S&P500 +2.51% | 러셀2000 +2.97% | 필반도체 +6.34% | WTI $96.50 | 환율 1,478원
+다우 +0.58% | 나스닥 +0.83% | S&P500 +0.62% | 러셀2000 +0.60% | 필반도체 +2.10% | WTI $97.98 | 환율 1,472원
 
-📈 <b>52주 신고가 (50종목)</b>
-
-<b>〈산업재〉</b>
-  <b>GEV</b> GE Vernova Inc
-    $936.07 (+2.8%) | $252.3B
-  <b>AEIS</b> Advanced Energy Industries Inc 🔥
-    $366.95 (+8.1%) | $13.8B
-  <b>BWXT</b> BWX Technologies Inc 🔥
-    $231.78 (+8.1%) | $21.2B
-  <b>CLH</b> Clean Harbors, Inc
-    $302.58 (+1.2%) | $16.0B
-  <b>CRS</b> Carpenter Technology Corp 🔥
-    $427.84 (+8.6%) | $21.3B
-  <b>CW</b> Curtiss-Wright Corp
-    $728.96 (+4.2%) | $26.9B
-  <b>FIX</b> Comfort Systems USA, Inc
-    $1,525.16 (+7.0%) | $53.6B
-  <b>ITT</b> ITT Inc
-    $210.08 (+7.0%) | $18.1B
-  <b>MTZ</b> Mastec Inc
-    $348.11 (+2.9%) | $27.5B
-  <b>PL</b> Planet Labs PBC
-    $36.55 (+3.9%) | $12.7B
-  <b>RTO</b> Rentokil Initial Plc. ADR
-    $33.70 (+3.2%) | $16.9B
-  <b>VRT</b> Vertiv Holdings Co
-    $281.03 (+7.1%) | $107.5B
-  <b>WAB</b> Westinghouse Air Brake Technologies Corp
-    $269.66 (+5.3%) | $46.0B
-
-<b>〈기술〉</b>
-  <b>INTC</b> Intel Corp 🔥
-    $58.95 (+11.4%) | $294.5B
-  <b>CIEN</b> CIENA Corp 🔥
-    $494.01 (+10.3%) | $69.8B
-  <b>DELL</b> Dell Technologies Inc
-    $185.47 (+4.4%) | $119.8B
-  <b>FLEX</b> Flex Ltd
-    $73.19 (+7.3%) | $26.9B
-  <b>GLW</b> Corning, Inc 🔥
-    $165.10 (+11.2%) | $141.7B
-  <b>JBL</b> Jabil Inc
-    $287.14 (+5.2%) | $30.3B
-  <b>KEYS</b> Keysight Technologies Inc
-    $318.33 (+5.9%) | $54.6B
-  <b>LITE</b> Lumentum Holdings Inc 🔥
-    $896.02 (+9.8%) | $64.0B
-  <b>LSCC</b> Lattice Semiconductor Corp 🔥
-    $106.56 (+10.0%) | $14.6B
-  <b>MPWR</b> Monolithic Power System Inc 🔥
-    $1,312.94 (+10.2%) | $64.5B
-  <b>MRVL</b> Marvell Technology Inc
-    $114.45 (+4.6%) | $100.1B
-  <b>NOK</b> Nokia Corp ADR
-    $9.44 (+6.7%) | $52.7B
-  <b>ONTO</b> Onto Innovation Inc 🔥
-    $240.49 (+9.8%) | $11.9B
-  <b>SNDK</b> Sandisk Corp 🔥
-    $780.90 (+9.9%) | $115.3B
-  <b>SNX</b> TD Synnex Corp
-    $200.22 (+2.4%) | $16.1B
-  <b>STM</b> ST Microelectronics
-    $37.98 (+6.5%) | $33.8B
-  <b>STX</b> Seagate Technology Holdings Plc
-    $496.30 (+5.9%) | $108.2B
-  <b>TER</b> Teradyne, Inc 🔥
-    $358.29 (+11.8%) | $56.1B
-  <b>TSEM</b> Tower Semiconductor Ltd
-    $203.68 (+6.7%) | $22.8B
-  <b>UI</b> Ubiquiti Inc
-    $900.50 (+7.6%) | $54.5B
-  <b>WDC</b> Western Digital Corp 🔥
-    $338.78 (+8.6%) | $114.9B
-
-<b>〈커뮤니케이션〉</b>
-  <b>AMX</b> America Movil S.A.B.DE C.V. ADR
-    $26.29 (+2.3%) | $80.5B
-  <b>SKM</b> SK Telecom Co Ltd ADR
-    $34.40 (+7.0%) | $13.1B
-  <b>TIGO</b> Millicom International Cellular S.A
-    $80.48 (+0.6%) | $13.5B
-
-<b>〈유틸리티〉</b>
-  <b>AXIA</b> Axia Energia ADR
-    $12.13 (+5.6%) | $23.8B
-  <b>BEP</b> Brookfield Renewable Partners LP
-    $34.26 (+4.4%) | $10.5B
-  <b>NI</b> NiSource Inc
-    $48.10 (+0.9%) | $23.0B
-  <b>PPL</b> PPL Corp
-    $39.15 (+0.8%) | $29.4B
-  <b>SBS</b> Companhia de Saneamento Basico do Estado de Sao Paulo. ADR
-    $31.71 (+4.2%) | $22.3B
-
-<b>〈경기소비재〉</b>
-  <b>BURL</b> Burlington Stores Inc
-    $334.46 (+2.1%) | $21.0B
-  <b>CASY</b> Casey's General Stores, Inc
-    $758.37 (+2.2%) | $28.0B
-  <b>MOD</b> Modine Manufacturing Co 🔥
-    $234.84 (+9.7%) | $12.4B
-  <b>ROST</b> Ross Stores, Inc
-    $224.47 (+3.8%) | $72.4B
-
-<b>〈부동산〉</b>
-  <b>DLR</b> Digital Realty Trust Inc
-    $185.63 (+1.8%) | $63.8B
-  <b>EQIX</b> Equinix Inc
-    $1,017.66 (+1.0%) | $100.0B
-
-<b>〈필수소비재〉</b>
-  <b>FMX</b> Fomento Economico Mexicano S.A.B. de C.V. ADR
-    $115.57 (+0.4%) | $23.3B
-  <b>SFD</b> Smithfield Foods, Inc
-    $29.16 (+2.8%) | $11.5B
-
-🚀 <b>8% 이상 급등 (29종목)</b>
+📈 <b>52주 신고가 (80종목)</b>
 
 <b>〈기술〉</b>
   <b>AMAT</b> Applied Materials Inc
-    $385.72 (+8.9%) | $306.1B
-  <b>ASML</b> ASML Holding NV
-    $1,421.05 (+8.8%) | $547.7B
+    $397.81 (+3.1%) | $315.7B
+  <b>INTC</b> Intel Corp
+    $61.72 (+4.7%) | $308.3B
+  <b>KLAC</b> KLA Corp
+    $1,727.26 (+3.3%) | $226.4B
   <b>LRCX</b> Lam Research Corp
-    $246.49 (+9.9%) | $307.8B
-  <b>AMKR</b> AMKOR Technology Inc
-    $52.42 (+10.1%) | $13.0B
-  <b>ANET</b> Arista Networks Inc
-    $145.07 (+8.6%) | $182.3B
-  <b>ASX</b> ASE Technology Holding Co.Ltd ADR
-    $24.14 (+8.8%) | $52.8B
+    $258.76 (+5.0%) | $323.1B
+  <b>AAOI</b> Applied Optoelectronics Inc
+    $133.30 (+0.5%) | $10.0B
+  <b>CIEN</b> CIENA Corp
+    $487.38 (-1.3%) | $68.9B
   <b>COHR</b> Coherent Corp
-    $281.79 (+10.5%) | $52.8B
-  <b>ENTG</b> Entegris Inc
-    $129.60 (+9.3%) | $19.7B
+    $284.17 (+0.8%) | $53.3B
+  <b>FLEX</b> Flex Ltd
+    $75.01 (+2.5%) | $27.6B
   <b>FN</b> Fabrinet
-    $610.18 (+9.4%) | $21.9B
-  <b>GFS</b> GlobalFoundries Inc
-    $47.80 (+8.8%) | $26.6B
-  <b>Q</b> Qnity Electronics Inc
-    $129.34 (+8.7%) | $27.1B
-  <b>RMBS</b> Rambus Inc
-    $101.43 (+10.4%) | $10.9B
-
-<b>〈경기소비재〉</b>
-  <b>AMCR</b> Amcor Plc
-    $42.37 (+8.5%) | $19.6B
-  <b>CCL</b> Carnival Corp
-    $28.03 (+11.2%) | $38.8B
-  <b>VIK</b> Viking Holdings Ltd
-    $77.89 (+9.0%) | $34.7B
-
-<b>〈산업재〉</b>
-  <b>BLD</b> TopBuild Corp
-    $381.62 (+8.8%) | $10.7B
-  <b>IESC</b> IES Holdings Inc
-    $523.01 (+8.5%) | $10.4B
-  <b>LTM</b> LATAM Airlines Group S.A. ADR
-    $52.61 (+10.3%) | $15.1B
-  <b>QXO</b> QXO Inc
-    $20.52 (+9.0%) | $14.5B
-  <b>RRX</b> Regal Rexnord Corp
-    $204.15 (+10.1%) | $13.6B
-  <b>RYAAY</b> Ryanair Holdings Plc ADR
-    $64.20 (+10.1%) | $33.5B
-  <b>SPXC</b> SPX Technologies Inc
-    $212.22 (+8.6%) | $10.6B
-  <b>STRL</b> Sterling Infrastructure Inc
-    $423.35 (+10.8%) | $13.0B
+    $618.26 (+1.3%) | $22.1B
+  <b>GLW</b> Corning, Inc
+    $169.80 (+2.9%) | $145.7B
+  <b>JBL</b> Jabil Inc
+    $293.02 (+2.0%) | $30.9B
+  <b>KEYS</b> Keysight Technologies Inc
+    $322.94 (+1.4%) | $55.4B
+  <b>LITE</b> Lumentum Holdings Inc
+    $894.13 (-0.2%) | $63.8B
+  <b>MPWR</b> Monolithic Power System Inc
+    $1,334.21 (+1.6%) | $65.5B
+  <b>MRVL</b> Marvell Technology Inc
+    $119.93 (+4.8%) | $104.9B
+  <b>NOK</b> Nokia Corp ADR
+    $9.55 (+1.2%) | $53.3B
+  <b>ONTO</b> Onto Innovation Inc
+    $246.96 (+2.7%) | $12.3B
+  <b>SNDK</b> Sandisk Corp 🔥
+    $851.57 (+9.1%) | $125.7B
+  <b>STM</b> ST Microelectronics
+    $39.14 (+3.0%) | $34.8B
+  <b>TER</b> Teradyne, Inc
+    $364.21 (+1.7%) | $57.0B
+  <b>TSEM</b> Tower Semiconductor Ltd
+    $203.82 (+0.1%) | $22.8B
 
 <b>〈금융〉</b>
-  <b>FUTU</b> Futu Holdings Ltd ADR
-    $157.14 (+11.5%) | $14.9B
+  <b>C</b> Citigroup Inc
+    $124.92 (+1.2%) | $218.5B
+  <b>STT</b> State Street Corp
+    $138.49 (+1.7%) | $38.6B
+  <b>TD</b> Toronto Dominion Bank
+    $99.87 (+0.6%) | $168.7B
 
-<b>〈유틸리티〉</b>
-  <b>KEP</b> Korea Electric Power Corporation. ADR
-    $14.92 (+9.9%) | $19.2B
+<b>〈산업재〉</b>
+  <b>CAT</b> Caterpillar Inc
+    $787.07 (+2.0%) | $366.2B
+  <b>GEV</b> GE Vernova Inc
+    $968.02 (+3.4%) | $260.9B
+  <b>AEIS</b> Advanced Energy Industries Inc
+    $374.98 (+2.2%) | $14.2B
+  <b>BWXT</b> BWX Technologies Inc
+    $230.29 (-0.6%) | $21.1B
+  <b>CAR</b> Avis Budget Group Inc 🔥
+    $297.08 (+13.7%) | $10.5B
+  <b>CRS</b> Carpenter Technology Corp
+    $431.21 (+0.8%) | $21.5B
+  <b>CW</b> Curtiss-Wright Corp
+    $722.52 (-0.9%) | $26.6B
+  <b>FIX</b> Comfort Systems USA, Inc
+    $1,574.45 (+3.2%) | $55.4B
+  <b>HUBB</b> Hubbell Inc
+    $534.67 (+1.4%) | $28.4B
+  <b>IESC</b> IES Holdings Inc
+    $535.72 (+2.4%) | $10.7B
+  <b>ITT</b> ITT Inc
+    $215.80 (+2.7%) | $18.6B
+  <b>MTZ</b> Mastec Inc
+    $357.37 (+2.7%) | $28.2B
+  <b>NVT</b> nVent Electric plc
+    $128.63 (+1.2%) | $20.8B
+  <b>PWR</b> Quanta Services, Inc
+    $582.06 (+1.0%) | $87.1B
+  <b>RBC</b> RBC Bearings Inc
+    $595.11 (+2.5%) | $18.8B
+  <b>VRT</b> Vertiv Holdings Co
+    $287.64 (+2.4%) | $110.0B
+  <b>WAB</b> Westinghouse Air Brake Technologies Corp
+    $270.94 (+0.5%) | $46.2B
 
 <b>〈소재〉</b>
-  <b>MT</b> ArcelorMittal
-    $60.04 (+11.6%) | $45.7B
-  <b>PKX</b> POSCO Holdings Inc ADR
-    $63.11 (+8.2%) | $19.1B
-  <b>PPG</b> PPG Industries, Inc
-    $110.47 (+8.1%) | $24.7B
-  <b>RPM</b> RPM International, Inc
-    $108.72 (+12.4%) | $13.9B
+  <b>AA</b> Alcoa Corp
+    $73.27 (+2.1%) | $19.3B
+  <b>APD</b> Air Products & Chemicals Inc
+    $297.74 (+0.4%) | $66.3B
+
+<b>〈유틸리티〉</b>
+  <b>AEE</b> Ameren Corp
+    $114.32 (+1.3%) | $31.6B
+  <b>AEP</b> American Electric Power Company Inc
+    $137.15 (+1.8%) | $74.5B
+  <b>ATO</b> Atmos Energy Corp
+    $192.29 (+1.4%) | $31.8B
+  <b>AXIA</b> Axia Energia ADR
+    $12.64 (+4.2%) | $24.8B
+  <b>BEP</b> Brookfield Renewable Partners LP
+    $33.98 (-0.8%) | $10.4B
+  <b>CMS</b> CMS Energy Corporation
+    $79.94 (+1.4%) | $24.5B
+  <b>CNP</b> Centerpoint Energy Inc
+    $44.13 (+1.0%) | $28.8B
+  <b>EIX</b> Edison International
+    $75.82 (+2.0%) | $29.2B
+  <b>ETR</b> Entergy Corp
+    $117.44 (+2.5%) | $53.2B
+  <b>EVRG</b> Evergy Inc
+    $84.41 (+1.2%) | $19.4B
+  <b>FE</b> Firstenergy Corp
+    $51.91 (+1.0%) | $30.0B
+  <b>LNT</b> Alliant Energy Corp
+    $73.72 (+1.0%) | $19.0B
+  <b>NEE</b> NextEra Energy Inc
+    $94.48 (+0.3%) | $196.8B
+  <b>NI</b> NiSource Inc
+    $48.47 (+0.8%) | $23.2B
+  <b>OGE</b> Oge Energy Corp
+    $49.86 (+1.1%) | $10.3B
+  <b>PNW</b> Pinnacle West Capital Corp
+    $104.45 (+1.3%) | $12.6B
+  <b>PPL</b> PPL Corp
+    $39.81 (+1.7%) | $29.9B
+  <b>SBS</b> Companhia de Saneamento Basico do Estado de Sao Paulo. ADR
+    $32.99 (+4.0%) | $23.2B
+  <b>SRE</b> Sempra
+    $99.75 (+0.9%) | $65.2B
+  <b>WEC</b> WEC Energy Group Inc
+    $118.78 (+1.3%) | $37.9B
+
+<b>〈커뮤니케이션〉</b>
+  <b>AMX</b> America Movil S.A.B.DE C.V. ADR
+    $27.15 (+3.3%) | $83.1B
+  <b>SKM</b> SK Telecom Co Ltd ADR
+    $35.61 (+3.5%) | $13.5B
+  <b>TIGO</b> Millicom International Cellular S.A
+    $82.78 (+2.9%) | $13.9B
+  <b>VIV</b> Telefonica Brasil S.A., ADR
+    $16.92 (+2.1%) | $27.0B
+  <b>VOD</b> Vodafone Group plc ADR
+    $15.85 (+0.5%) | $36.6B
+
+<b>〈경기소비재〉</b>
+  <b>CASY</b> Casey's General Stores, Inc
+    $758.76 (+0.1%) | $28.0B
+  <b>MOD</b> Modine Manufacturing Co
+    $241.52 (+2.8%) | $12.7B
+  <b>QSR</b> Restaurant Brands International Inc
+    $76.87 (-0.9%) | $35.0B
+  <b>ROST</b> Ross Stores, Inc
+    $224.91 (+0.2%) | $72.5B
+  <b>TJX</b> TJX Companies, Inc
+    $165.00 (+2.1%) | $182.6B
+
+<b>〈부동산〉</b>
+  <b>DLR</b> Digital Realty Trust Inc
+    $188.15 (+1.4%) | $64.7B
+  <b>EQIX</b> Equinix Inc
+    $1,031.57 (+1.4%) | $101.4B
+
+<b>〈에너지〉</b>
+  <b>FTI</b> TechnipFMC plc
+    $73.51 (+2.4%) | $29.4B
+  <b>TS</b> Tenaris S.A. ADR
+    $59.19 (+0.9%) | $29.9B
+
+<b>〈헬스케어〉</b>
+  <b>JAZZ</b> Jazz Pharmaceuticals plc
+    $198.14 (+1.1%) | $12.2B
+
+<b>〈필수소비재〉</b>
+  <b>JBS</b> JBS N.V
+    $18.42 (+1.3%) | $19.7B
+  <b>SFD</b> Smithfield Foods, Inc
+    $29.59 (+1.5%) | $11.6B
+
+🚀 <b>8% 이상 급등 (5종목)</b>
+
+<b>〈산업재〉</b>
+  <b>BE</b> Bloom Energy Corp
+    $160.13 (+9.1%) | $44.9B
+
+<b>〈필수소비재〉</b>
+  <b>BF-A</b> Brown-Forman Corp
+    $30.40 (+11.4%) | $13.8B
+  <b>BF-B</b> Brown-Forman Corp
+    $30.31 (+12.9%) | $14.0B
+  <b>STZ</b> Constellation Brands Inc
+    $163.07 (+8.5%) | $28.3B
+
+<b>〈기술〉</b>
+  <b>NBIS</b> Nebius Group N.V
+    $136.33 (+9.1%) | $34.3B
 
 
