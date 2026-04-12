@@ -300,7 +300,7 @@ def fetch_us_pcts(tickers: tuple) -> dict:
 
 
 def annotate_kr(content: str) -> str:
-    """한국 종목 라인에 당일 등락률 추가"""
+    """한국 종목 라인에 당일 등락률 추가 + 신규 종목 형광펜"""
     pairs = list(set(KR_LINE_RE.findall(content)))
     if not pairs:
         return content
@@ -319,6 +319,11 @@ def annotate_kr(content: str) -> str:
     content = KR_LINE_RE.sub(repl, content)
     # 종목코드 (000000) 제거
     content = re.sub(r'\s*\(\d{6}\)', '', content)
+    # 🟡 신규 종목 → 노란 형광펜 배경
+    content = content.replace(
+        '🟡 <b>',
+        '<span style="background:#fff176;padding:1px 4px;border-radius:3px;">🆕</span> <b>'
+    )
     return content
 
 
