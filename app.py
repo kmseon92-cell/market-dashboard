@@ -320,9 +320,10 @@ def annotate_kr(content: str) -> str:
     # 종목코드 (000000) 제거
     content = re.sub(r'\s*\(\d{6}\)', '', content)
     # 🟡 신규 종목 → 노란 형광펜 배경
-    content = content.replace(
-        '🟡 <b>',
-        '<span style="background:#fff176;padding:1px 4px;border-radius:3px;">🆕</span> <b>'
+    content = re.sub(
+        r'🟡\s*<b>',
+        '<span style="background:#fff176;padding:1px 4px;border-radius:3px;">🆕</span> <b>',
+        content
     )
     return content
 
