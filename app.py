@@ -271,12 +271,12 @@ def fetch_kr_pcts(codes: tuple) -> dict:
 
 @st.cache_data(ttl=3600)
 def fetch_kr_ytd(codes: tuple) -> dict:
-    """한국 종목코드 리스트 → {code: [close_prices]} (yfinance YTD 일봉, 배치)"""
+    """한국 종목코드 리스트 → {code: [(o,h,l,c), ...]} (yfinance YTD 일봉 OHLC, 배치)"""
     if not codes:
         return {}
     from datetime import date
     start = f"{date.today().year}-01-01"
-    result: dict[str, list[float]] = {}
+    result: dict[str, list[tuple[float, float, float, float]]] = {}
 
     def _batch(suffix: str, targets: list[str]) -> None:
         if not targets:
@@ -297,11 +297,14 @@ def fetch_kr_ytd(codes: tuple) -> dict:
                 if isinstance(df.columns, pd.MultiIndex):
                     if sym not in df.columns.get_level_values(0):
                         continue
-                    series = df[sym]["Close"].dropna()
+                    sub = df[sym][["Open", "High", "Low", "Close"]].dropna()
                 else:
-                    series = df["Close"].dropna()
-                if len(series) >= 5:
-                    result[c] = [float(v) for v in series.tolist()]
+                    sub = df[["Open", "High", "Low", "Close"]].dropna()
+                if len(sub) >= 5:
+                    result[c] = [
+                        (float(o), float(h), float(l), float(cl))
+                        for o, h, l, cl in sub.itertuples(index=False, name=None)
+                    ]
             except Exception:
                 continue
 
@@ -310,30 +313,51 @@ def fetch_kr_ytd(codes: tuple) -> dict:
     return result
 
 
-def make_sparkline(prices: list[float]) -> str:
-    """가격 리스트 → 인라인 SVG YTD 스파크라인"""
-    if not prices or len(prices) < 2:
+def make_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
+    """OHLC 리스트 → 인라인 SVG 캔들차트 (한국식: 양봉=빨강/음봉=파랑)"""
+    if not ohlc or len(ohlc) < 2:
         return ""
-    w, h, pad = 110, 22, 2
-    lo, hi = min(prices), max(prices)
+    w, h, pad = 280, 44, 2
+    lows = [x[2] for x in ohlc]
+    highs = [x[1] for x in ohlc]
+    lo, hi = min(lows), max(highs)
     rng = (hi - lo) or 1.0
-    pct = (prices[-1] / prices[0] - 1) * 100
-    color = "#ef4444" if pct >= 0 else "#3b82f6"
-    n = len(prices)
-    pts = []
-    for i, p in enumerate(prices):
-        x = pad + (w - 2 * pad) * i / (n - 1)
-        y = h - pad - (h - 2 * pad) * (p - lo) / rng
-        pts.append(f"{x:.1f},{y:.1f}")
-    path = " ".join(pts)
+    n = len(ohlc)
+    slot = (w - 2 * pad) / n
+    body_w = max(1.2, slot * 0.7)
+
+    def y(v: float) -> float:
+        return h - pad - (h - 2 * pad) * (v - lo) / rng
+
+    first_close = ohlc[0][3]
+    last_close = ohlc[-1][3]
+    ytd_pct = (last_close / first_close - 1) * 100
+    ytd_color = "#ef4444" if ytd_pct >= 0 else "#3b82f6"
+
+    parts = []
+    for i, (o, hv, lv, c) in enumerate(ohlc):
+        cx = pad + slot * (i + 0.5)
+        up = c >= o
+        color = "#ef4444" if up else "#3b82f6"
+        # 심지
+        parts.append(
+            f'<line x1="{cx:.1f}" y1="{y(hv):.1f}" x2="{cx:.1f}" y2="{y(lv):.1f}" '
+            f'stroke="{color}" stroke-width="0.7"/>'
+        )
+        # 몸통
+        top = y(max(o, c))
+        bot = y(min(o, c))
+        bh = max(1.0, bot - top)
+        parts.append(
+            f'<rect x="{cx - body_w / 2:.1f}" y="{top:.1f}" '
+            f'width="{body_w:.1f}" height="{bh:.1f}" fill="{color}"/>'
+        )
+    svg = "".join(parts)
     return (
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
-        f'style="vertical-align:middle;margin-left:6px;">'
-        f'<polyline points="{path}" fill="none" stroke="{color}" '
-        f'stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>'
-        f'</svg>'
-        f'<span style="font-size:0.75rem;color:{color};font-weight:600;'
-        f'margin-left:3px;">YTD {pct:+.1f}%</span>'
+        f'style="vertical-align:middle;margin-left:6px;">{svg}</svg>'
+        f'<span style="font-size:0.75rem;color:{ytd_color};font-weight:600;'
+        f'margin-left:3px;">YTD {ytd_pct:+.1f}%</span>'
     )
 
 
@@ -384,7 +408,7 @@ def annotate_kr(content: str) -> str:
             color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#888")
             out += f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
         if code in code_to_ytd:
-            out += make_sparkline(code_to_ytd[code])
+            out += make_candlestick(code_to_ytd[code])
         return out
 
     content = KR_LINE_RE.sub(repl, content)
