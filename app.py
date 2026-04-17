@@ -483,6 +483,12 @@ for col, (title, fname) in zip(report_cols, REPORT_FILES):
         if "kr_market_close" in fname or "bumgorae" in fname:
             content = annotate_kr(content)
         elif "us_market_close" in fname:
+            # 종목 간 한 줄 띄우기
+            content = re.sub(
+                r'\n(\s*<b>[A-Z]{1,5}</b>\s+[A-Z])',
+                r'\n\n\1',
+                content,
+            )
             content = annotate_us(content)
         # 텔레그램 HTML(<b>) 그대로 렌더, 줄바꿈은 <br>로 변환
         rendered = content.replace("\n", "<br>")
