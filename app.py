@@ -391,14 +391,33 @@ def fetch_us_pcts(tickers: tuple) -> dict:
     return out
 
 
+KR_SIDEWAYS_BLOCK_RE = re.compile(
+    r'<b>[^<]+</b>\s*\((\d{6})\)(.*?)(?=<b>[^<]+</b>\s*\(\d{6}\)|\Z)',
+    re.DOTALL,
+)
+KR_SIDEWAYS_DAYS_RE = re.compile(r'횡보[:：]\s*(\d+)\s*일')
+
+
+def parse_kr_sideways(content: str) -> dict[str, int]:
+    """범고래 리포트의 '횡보: N일' 파싱 → {code: days}"""
+    out: dict[str, int] = {}
+    for m in KR_SIDEWAYS_BLOCK_RE.finditer(content):
+        code, block = m.group(1), m.group(2)
+        dm = KR_SIDEWAYS_DAYS_RE.search(block)
+        if dm:
+            out[code] = int(dm.group(1))
+    return out
+
+
 def annotate_kr(content: str) -> str:
-    """한국 종목 라인에 당일 등락률 + YTD 스파크라인 추가 + 신규 종목 형광펜"""
+    """한국 종목: 종목명 | 실시간수익률 | 횡보일수 | YTD 캔들차트 + 신규 형광펜"""
     pairs = list(set(KR_LINE_RE.findall(content)))
     if not pairs:
         return content
     codes = tuple({code for _, code in pairs})
     code_to_pct = fetch_kr_pcts(codes)
     code_to_ytd = fetch_kr_ytd(codes)
+    code_to_sideways = parse_kr_sideways(content)
 
     def repl(m):
         name, code = m.group(1), m.group(2)
@@ -407,6 +426,12 @@ def annotate_kr(content: str) -> str:
             pct = code_to_pct[code]
             color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#888")
             out += f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
+        if code in code_to_sideways:
+            out += (
+                f' <span style="color:#555;font-weight:600;'
+                f'background:#eef2ff;padding:1px 6px;border-radius:4px;'
+                f'font-size:0.85rem;">횡보 {code_to_sideways[code]}일</span>'
+            )
         if code in code_to_ytd:
             out += make_candlestick(code_to_ytd[code])
         return out
