@@ -355,7 +355,7 @@ def make_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
     svg = "".join(parts)
     return (
         f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
-        f'style="vertical-align:middle;margin-left:6px;">{svg}</svg>'
+        f'style="vertical-align:middle;">{svg}</svg>'
         f'<span style="font-size:0.75rem;color:{ytd_color};font-weight:600;'
         f'margin-left:3px;">YTD {ytd_pct:+.1f}%</span>'
     )
@@ -433,7 +433,7 @@ def annotate_kr(content: str) -> str:
                 f'font-size:0.85rem;">횡보 {code_to_sideways[code]}일</span>'
             )
         if code in code_to_ytd:
-            out += make_candlestick(code_to_ytd[code])
+            out += "<br>" + make_candlestick(code_to_ytd[code])
         return out
 
     content = KR_LINE_RE.sub(repl, content)
