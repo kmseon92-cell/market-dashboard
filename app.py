@@ -317,7 +317,7 @@ def make_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
     """OHLC 리스트 → 인라인 SVG 캔들차트 (한국식: 양봉=빨강/음봉=파랑)"""
     if not ohlc or len(ohlc) < 2:
         return ""
-    w, h, pad = 280, 44, 2
+    w, h, pad = 280, 90, 3
     lows = [x[2] for x in ohlc]
     highs = [x[1] for x in ohlc]
     lo, hi = min(lows), max(highs)
