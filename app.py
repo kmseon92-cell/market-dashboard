@@ -473,6 +473,13 @@ for col, (title, fname) in zip(report_cols, REPORT_FILES):
     with col:
         st.markdown(f"#### {title}")
         content = load_report(fname)
+        if "kr_market_close" in fname:
+            # 종목 간 한 줄 띄우기 (차트 때문에 조밀해 보여서)
+            content = re.sub(
+                r'\n(\s*<b>[^<]+</b>\s*\(\d{6}\))',
+                r'\n\n\1',
+                content,
+            )
         if "kr_market_close" in fname or "bumgorae" in fname:
             content = annotate_kr(content)
         elif "us_market_close" in fname:
