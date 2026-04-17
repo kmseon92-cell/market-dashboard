@@ -269,6 +269,74 @@ def fetch_kr_pcts(codes: tuple) -> dict:
         return {}
 
 
+@st.cache_data(ttl=3600)
+def fetch_kr_ytd(codes: tuple) -> dict:
+    """한국 종목코드 리스트 → {code: [close_prices]} (yfinance YTD 일봉, 배치)"""
+    if not codes:
+        return {}
+    from datetime import date
+    start = f"{date.today().year}-01-01"
+    result: dict[str, list[float]] = {}
+
+    def _batch(suffix: str, targets: list[str]) -> None:
+        if not targets:
+            return
+        symbols = [f"{c}.{suffix}" for c in targets]
+        try:
+            df = yf.download(
+                symbols, start=start, progress=False,
+                auto_adjust=True, threads=True, group_by="ticker",
+            )
+        except Exception:
+            return
+        if df is None or df.empty:
+            return
+        for c in targets:
+            sym = f"{c}.{suffix}"
+            try:
+                if isinstance(df.columns, pd.MultiIndex):
+                    if sym not in df.columns.get_level_values(0):
+                        continue
+                    series = df[sym]["Close"].dropna()
+                else:
+                    series = df["Close"].dropna()
+                if len(series) >= 5:
+                    result[c] = [float(v) for v in series.tolist()]
+            except Exception:
+                continue
+
+    _batch("KS", list(codes))
+    _batch("KQ", [c for c in codes if c not in result])
+    return result
+
+
+def make_sparkline(prices: list[float]) -> str:
+    """가격 리스트 → 인라인 SVG YTD 스파크라인"""
+    if not prices or len(prices) < 2:
+        return ""
+    w, h, pad = 110, 22, 2
+    lo, hi = min(prices), max(prices)
+    rng = (hi - lo) or 1.0
+    pct = (prices[-1] / prices[0] - 1) * 100
+    color = "#ef4444" if pct >= 0 else "#3b82f6"
+    n = len(prices)
+    pts = []
+    for i, p in enumerate(prices):
+        x = pad + (w - 2 * pad) * i / (n - 1)
+        y = h - pad - (h - 2 * pad) * (p - lo) / rng
+        pts.append(f"{x:.1f},{y:.1f}")
+    path = " ".join(pts)
+    return (
+        f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+        f'style="vertical-align:middle;margin-left:6px;">'
+        f'<polyline points="{path}" fill="none" stroke="{color}" '
+        f'stroke-width="1.3" stroke-linejoin="round" stroke-linecap="round"/>'
+        f'</svg>'
+        f'<span style="font-size:0.75rem;color:{color};font-weight:600;'
+        f'margin-left:3px;">YTD {pct:+.1f}%</span>'
+    )
+
+
 @st.cache_data(ttl=60)
 def fetch_us_pcts(tickers: tuple) -> dict:
     """미국 티커 리스트 → {ticker: pct} (Stooq)"""
@@ -300,21 +368,24 @@ def fetch_us_pcts(tickers: tuple) -> dict:
 
 
 def annotate_kr(content: str) -> str:
-    """한국 종목 라인에 당일 등락률 추가 + 신규 종목 형광펜"""
+    """한국 종목 라인에 당일 등락률 + YTD 스파크라인 추가 + 신규 종목 형광펜"""
     pairs = list(set(KR_LINE_RE.findall(content)))
     if not pairs:
         return content
     codes = tuple({code for _, code in pairs})
     code_to_pct = fetch_kr_pcts(codes)
+    code_to_ytd = fetch_kr_ytd(codes)
 
     def repl(m):
         name, code = m.group(1), m.group(2)
+        out = m.group(0)
         if code in code_to_pct:
             pct = code_to_pct[code]
             color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#888")
-            badge = f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
-            return m.group(0) + badge
-        return m.group(0)
+            out += f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
+        if code in code_to_ytd:
+            out += make_sparkline(code_to_ytd[code])
+        return out
 
     content = KR_LINE_RE.sub(repl, content)
     # 종목코드 (000000) 제거
