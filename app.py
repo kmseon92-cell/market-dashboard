@@ -241,6 +241,7 @@ import re
 
 KR_LINE_RE = re.compile(r'<b>([^<]+)</b>\s*\((\d{6})\)')
 US_LINE_RE = re.compile(r'<b>([A-Z]{1,5})</b>\s+[A-Z]')
+US_FULL_LINE_RE = re.compile(r'(<b>([A-Z]{1,5})</b>\s+[A-Z][^\n]*)')
 
 
 @st.cache_data(ttl=60)
@@ -361,6 +362,41 @@ def make_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
     )
 
 
+@st.cache_data(ttl=3600)
+def fetch_us_ytd(tickers: tuple) -> dict:
+    """미국 티커 리스트 → {ticker: [(o,h,l,c), ...]} (yfinance YTD 일봉 OHLC, 배치)"""
+    if not tickers:
+        return {}
+    from datetime import date
+    start = f"{date.today().year}-01-01"
+    result: dict[str, list[tuple[float, float, float, float]]] = {}
+    try:
+        df = yf.download(
+            list(tickers), start=start, progress=False,
+            auto_adjust=True, threads=True, group_by="ticker",
+        )
+    except Exception:
+        return result
+    if df is None or df.empty:
+        return result
+    for t in tickers:
+        try:
+            if isinstance(df.columns, pd.MultiIndex):
+                if t not in df.columns.get_level_values(0):
+                    continue
+                sub = df[t][["Open", "High", "Low", "Close"]].dropna()
+            else:
+                sub = df[["Open", "High", "Low", "Close"]].dropna()
+            if len(sub) >= 5:
+                result[t] = [
+                    (float(o), float(h), float(l), float(c))
+                    for o, h, l, c in sub.itertuples(index=False, name=None)
+                ]
+        except Exception:
+            continue
+    return result
+
+
 @st.cache_data(ttl=60)
 def fetch_us_pcts(tickers: tuple) -> dict:
     """미국 티커 리스트 → {ticker: pct} (Stooq)"""
@@ -449,23 +485,25 @@ def annotate_kr(content: str) -> str:
 
 
 def annotate_us(content: str) -> str:
-    """미국 종목 라인에 당일 등락률 추가"""
-    tickers = list(set(US_LINE_RE.findall(content)))
+    """미국 종목: 종목명 줄 | 실시간수익률 → 다음 줄에 YTD 캔들차트"""
+    tickers = list({m.group(2) for m in US_FULL_LINE_RE.finditer(content)})
     if not tickers:
         return content
     pcts = fetch_us_pcts(tuple(tickers))
+    ohlc = fetch_us_ytd(tuple(tickers))
 
     def repl(m):
-        ticker = m.group(1)
+        full_line, ticker = m.group(1), m.group(2)
+        out = full_line
         if ticker in pcts:
             pct = pcts[ticker]
             color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#888")
-            badge = f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
-            # ticker 매치 끝에 붙이지 말고 한 줄 끝에 붙여야 자연스러움 — 대신 ticker 뒤에 붙임
-            return m.group(0)[:-1] + badge + m.group(0)[-1]
-        return m.group(0)
+            out += f' <span style="color:{color};font-weight:700;">실시간 {pct:+.2f}%</span>'
+        if ticker in ohlc:
+            out += "<br>" + make_candlestick(ohlc[ticker])
+        return out
 
-    return US_LINE_RE.sub(repl, content)
+    return US_FULL_LINE_RE.sub(repl, content)
 
 
 report_cols = st.columns(3)
