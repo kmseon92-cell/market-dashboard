@@ -227,7 +227,6 @@ REPORT_FILES = [
     ("🇰🇷 국내증시 마감시황", "kr_market_close.md"),
     ("🐳 범고래 패턴 스크리닝", "bumgorae.md"),
     ("🇺🇸 미국증시 마감시황", "us_market_close.md"),
-    ("🌍 ETF 리더스", "etf_leaders.md"),
 ]
 
 def load_report(fname: str) -> str:
@@ -507,7 +506,7 @@ def annotate_us(content: str) -> str:
     return US_FULL_LINE_RE.sub(repl, content)
 
 
-report_cols = st.columns(len(REPORT_FILES))
+report_cols = st.columns(3)
 for col, (title, fname) in zip(report_cols, REPORT_FILES):
     with col:
         st.markdown(f"#### {title}")
@@ -537,6 +536,72 @@ for col, (title, fname) in zip(report_cols, REPORT_FILES):
             f'{rendered}</div>',
             unsafe_allow_html=True,
         )
+
+st.divider()
+
+# 🌍 ETF 리더스 — 미국증시 마감시황 아래 전체 너비, 5섹션 가로 분할
+st.subheader("🌍 ETF 리더스 — 주도 국가·섹터")
+
+
+def render_etf_leaders() -> None:
+    p = os.path.join(REPORTS_DIR, "etf_leaders.md")
+    if not os.path.exists(p):
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    with open(p, encoding="utf-8") as f:
+        text = f.read()
+
+    # 첫 줄(<!-- updated -->)과 헤더(타이틀/기준일/구분선)를 소비하고 섹션 분리
+    body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
+    body = re.sub(r"^🌍[^\n]*\n", "", body)  # 타이틀 줄
+    m = re.search(r"📅[^\n]*", body)
+    as_of = m.group(0) if m else ""
+    body = re.sub(r"^📅[^\n]*\n", "", body)
+    body = re.sub(r"^━+\n", "", body)
+
+    # 상단 요약(🏁/🇺🇸/🇰🇷/📅 시작 라인들)을 한 덩어리로 뽑기 — 빈 줄 전까지
+    lines = body.split("\n")
+    summary_lines: list[str] = []
+    i = 0
+    while i < len(lines) and lines[i].strip():
+        summary_lines.append(lines[i])
+        i += 1
+    rest = "\n".join(lines[i:]).lstrip("\n")
+
+    if as_of:
+        st.caption(as_of)
+    if summary_lines:
+        st.markdown(
+            f'<div style="padding:10px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+            f'font-size:1.0rem;color:#000;line-height:1.8;margin-bottom:14px;">'
+            + "<br>".join(summary_lines)
+            + "</div>",
+            unsafe_allow_html=True,
+        )
+
+    # 섹션은 "<b>🌐 ...</b>" / "<b>🇺🇸 ...</b>" / "<b>🇰🇷 ...</b>" 로 시작
+    section_re = re.compile(
+        r"<b>(🌐[^<]+|🇺🇸[^<]+|🇰🇷[^<]+)</b>\n(.*?)(?=\n<b>(?:🌐|🇺🇸|🇰🇷)|\Z)",
+        re.DOTALL,
+    )
+    sections = [(m.group(1).strip(), m.group(2).strip()) for m in section_re.finditer(rest)]
+    if not sections:
+        return
+
+    cols = st.columns(len(sections))
+    for col, (title, content) in zip(cols, sections):
+        with col:
+            st.markdown(f"#### {title}")
+            rendered = content.replace("\n", "<br>")
+            st.markdown(
+                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
+                f'font-size:0.95rem;line-height:1.7;color:#000;">'
+                f'{rendered}</div>',
+                unsafe_allow_html=True,
+            )
+
+
+render_etf_leaders()
 
 st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
