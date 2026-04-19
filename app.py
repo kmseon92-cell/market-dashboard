@@ -1,3 +1,5 @@
+import re
+
 import streamlit as st
 import yfinance as yf
 from datetime import datetime
@@ -300,8 +302,6 @@ def load_report(fname: str) -> str:
     with open(p, encoding="utf-8") as f:
         return f.read()
 
-
-import re
 
 KR_LINE_RE = re.compile(r'<b>([^<]+)</b>\s*\((\d{6})\)')
 US_LINE_RE = re.compile(r'<b>([A-Z]{1,5})</b>\s+[A-Z]')
