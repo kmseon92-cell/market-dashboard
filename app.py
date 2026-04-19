@@ -227,6 +227,7 @@ REPORT_FILES = [
     ("🇰🇷 국내증시 마감시황", "kr_market_close.md"),
     ("🐳 범고래 패턴 스크리닝", "bumgorae.md"),
     ("🇺🇸 미국증시 마감시황", "us_market_close.md"),
+    ("🌍 ETF 리더스", "etf_leaders.md"),
 ]
 
 def load_report(fname: str) -> str:
@@ -506,7 +507,7 @@ def annotate_us(content: str) -> str:
     return US_FULL_LINE_RE.sub(repl, content)
 
 
-report_cols = st.columns(3)
+report_cols = st.columns(len(REPORT_FILES))
 for col, (title, fname) in zip(report_cols, REPORT_FILES):
     with col:
         st.markdown(f"#### {title}")
