@@ -343,14 +343,60 @@ def fetch_kr_pcts(codes: tuple) -> dict:
         return {}
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=300)
+def fetch_kr_today_ohlc(codes: tuple) -> dict:
+    """오늘 한국 종목 OHLC (네이버 차트 API) - yfinance 당일 미반영 보강용"""
+    if not codes:
+        return {}
+    from datetime import date
+    from concurrent.futures import ThreadPoolExecutor
+    import urllib.request
+    import json as _json
+
+    today = date.today().strftime("%Y%m%d")
+    start_dt, end_dt = f"{today}0000", f"{today}2359"
+
+    def _fetch(code: str):
+        url = (
+            f"https://api.stock.naver.com/chart/domestic/item/{code}/day"
+            f"?startDateTime={start_dt}&endDateTime={end_dt}"
+        )
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+            raw = urllib.request.urlopen(req, timeout=3).read()
+            data = _json.loads(raw)
+            if not data:
+                return code, None
+            row = data[-1]
+            if str(row.get("localDate")) != today:
+                return code, None
+            return code, (
+                float(row["openPrice"]),
+                float(row["highPrice"]),
+                float(row["lowPrice"]),
+                float(row["closePrice"]),
+            )
+        except Exception:
+            return code, None
+
+    out: dict[str, tuple[float, float, float, float]] = {}
+    with ThreadPoolExecutor(max_workers=10) as ex:
+        for code, ohlc in ex.map(_fetch, codes):
+            if ohlc:
+                out[code] = ohlc
+    return out
+
+
+@st.cache_data(ttl=600)
 def fetch_kr_ytd(codes: tuple) -> dict:
-    """한국 종목코드 리스트 → {code: [(o,h,l,c), ...]} (yfinance YTD 일봉 OHLC, 배치)"""
+    """한국 종목코드 리스트 → {code: [(o,h,l,c), ...]} (yfinance YTD + 네이버 당일 보강)"""
     if not codes:
         return {}
     from datetime import date
     start = f"{date.today().year}-01-01"
+    today_str = date.today().strftime("%Y%m%d")
     result: dict[str, list[tuple[float, float, float, float]]] = {}
+    last_date: dict[str, str] = {}
 
     def _batch(suffix: str, targets: list[str]) -> None:
         if not targets:
@@ -379,11 +425,20 @@ def fetch_kr_ytd(codes: tuple) -> dict:
                         (float(o), float(h), float(l), float(cl))
                         for o, h, l, cl in sub.itertuples(index=False, name=None)
                     ]
+                    last_date[c] = sub.index[-1].strftime("%Y%m%d")
             except Exception:
                 continue
 
     _batch("KS", list(codes))
     _batch("KQ", [c for c in codes if c not in result])
+
+    # yfinance 당일 미반영 종목은 네이버 API로 오늘 봉 append
+    missing = tuple(c for c in result if last_date.get(c) != today_str)
+    if missing:
+        today_data = fetch_kr_today_ohlc(missing)
+        for c, ohlc in today_data.items():
+            result[c].append(ohlc)
+
     return result
 
 
