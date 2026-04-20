@@ -114,11 +114,20 @@ def _fetch_yf(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+# yfinance .info가 전일종가=현재가로 고정 반환하는 종목은 stooq 우선
+STOOQ_FIRST = {"CL=F"}
+
+
 @st.cache_data(ttl=30)
 def fetch_quote(symbol: str):
     try:
         if symbol in NAVER_INDEX_MAP:
             return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
+        if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
+            try:
+                return _fetch_stooq(STOOQ_MAP[symbol])
+            except Exception:
+                return _fetch_yf(symbol)
         # 우선 yfinance, 실패/이상 시 stooq fallback
         try:
             return _fetch_yf(symbol)
