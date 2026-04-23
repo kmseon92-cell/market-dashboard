@@ -149,7 +149,80 @@ def format_price(symbol: str, price: float) -> str:
 
 st.title("🐳 범고래 프로젝트")
 
-def render_card(name: str, symbol: str, q: dict | None):
+@st.cache_data(ttl=3600)
+def fetch_yf_ytd(symbols: tuple) -> dict:
+    """yfinance 심볼 리스트 → {symbol: [(o,h,l,c), ...]} (YTD 일봉 OHLC, 배치)"""
+    if not symbols:
+        return {}
+    from datetime import date
+    start = f"{date.today().year}-01-01"
+    result: dict[str, list[tuple[float, float, float, float]]] = {}
+    try:
+        df = yf.download(
+            list(symbols), start=start, progress=False,
+            auto_adjust=True, threads=True, group_by="ticker",
+        )
+    except Exception:
+        return result
+    if df is None or df.empty:
+        return result
+    for s in symbols:
+        try:
+            if isinstance(df.columns, pd.MultiIndex):
+                if s not in df.columns.get_level_values(0):
+                    continue
+                sub = df[s][["Open", "High", "Low", "Close"]].dropna()
+            else:
+                sub = df[["Open", "High", "Low", "Close"]].dropna()
+            if len(sub) >= 5:
+                result[s] = [
+                    (float(o), float(h), float(l), float(c))
+                    for o, h, l, c in sub.itertuples(index=False, name=None)
+                ]
+        except Exception:
+            continue
+    return result
+
+
+def make_mini_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
+    """카드용 소형 YTD 캔들차트 (차트만 반환, YTD% 라벨 없음)"""
+    if not ohlc or len(ohlc) < 2:
+        return ""
+    w, h, pad = 140, 56, 2
+    lows = [x[2] for x in ohlc]
+    highs = [x[1] for x in ohlc]
+    lo, hi = min(lows), max(highs)
+    rng = (hi - lo) or 1.0
+    n = len(ohlc)
+    slot = (w - 2 * pad) / n
+    body_w = max(1.0, slot * 0.7)
+
+    def y(v: float) -> float:
+        return h - pad - (h - 2 * pad) * (v - lo) / rng
+
+    parts = []
+    for i, (o, hv, lv, c) in enumerate(ohlc):
+        cx = pad + slot * (i + 0.5)
+        up = c >= o
+        color = "#ef4444" if up else "#3b82f6"
+        parts.append(
+            f'<line x1="{cx:.1f}" y1="{y(hv):.1f}" x2="{cx:.1f}" y2="{y(lv):.1f}" '
+            f'stroke="{color}" stroke-width="0.6"/>'
+        )
+        top = y(max(o, c))
+        bot = y(min(o, c))
+        bh = max(0.8, bot - top)
+        parts.append(
+            f'<rect x="{cx - body_w / 2:.1f}" y="{top:.1f}" '
+            f'width="{body_w:.1f}" height="{bh:.1f}" fill="{color}"/>'
+        )
+    return (
+        f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+        f'style="display:block;">{"".join(parts)}</svg>'
+    )
+
+
+def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None):
     if not q or "error" in (q or {}):
         st.markdown(
             f"""
@@ -166,19 +239,38 @@ def render_card(name: str, symbol: str, q: dict | None):
     change = q["change"]
     color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#9ca3af")
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
+
+    chart_html = ""
+    if ytd:
+        first_close = ytd[0][3]
+        last_close = ytd[-1][3]
+        ytd_pct = (last_close / first_close - 1) * 100
+        ytd_color = "#ef4444" if ytd_pct >= 0 else "#3b82f6"
+        chart_html = (
+            f'<div style="flex-shrink:0;text-align:right;">'
+            f'{make_mini_candlestick(ytd)}'
+            f'<div style="font-size:0.75rem;color:{ytd_color};font-weight:600;'
+            f'margin-top:2px;">YTD {ytd_pct:+.1f}%</div>'
+            f'</div>'
+        )
+
     st.markdown(
         f"""
-        <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;">
-          <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
-          <div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">
-            {arrow} {pct:+.2f}%
+        <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;
+                    display:flex;align-items:center;gap:10px;">
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
+            <div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">
+              {arrow} {pct:+.2f}%
+            </div>
+            <div style="font-size:0.8rem;color:{color};margin-top:0px;">
+              {change:+,.2f}
+            </div>
+            <div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">
+              {format_price(symbol, q["price"])}
+            </div>
           </div>
-          <div style="font-size:0.8rem;color:{color};margin-top:0px;">
-            {change:+,.2f}
-          </div>
-          <div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">
-            {format_price(symbol, q["price"])}
-          </div>
+          {chart_html}
         </div>
         """,
         unsafe_allow_html=True,
@@ -187,12 +279,14 @@ def render_card(name: str, symbol: str, q: dict | None):
 
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_quotes():
+    all_symbols = tuple(sym for items in TICKERS.values() for sym in items.values())
+    ytd_map = fetch_yf_ytd(all_symbols)
     for group, items in TICKERS.items():
         st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
         cols = st.columns(len(items))
         for col, (name, symbol) in zip(cols, items.items()):
             with col:
-                render_card(name, symbol, fetch_quote(symbol))
+                render_card(name, symbol, fetch_quote(symbol), ytd_map.get(symbol))
     st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
 
 render_quotes()
