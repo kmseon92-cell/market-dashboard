@@ -370,11 +370,11 @@ def render_earnings_md(filename: str) -> None:
             )
 
 
-st.subheader("📅 한국 실적 캘린더 — 시총 큰 종목, 영업일 5일")
+st.subheader("📅 한국 실적 캘린더")
 render_earnings_md("kr_earnings_calendar.md")
 st.divider()
 
-st.subheader("📅 미국 실적 캘린더 — Earnings Whispers 큐레이션, 영업일 5일")
+st.subheader("📅 미국 실적 캘린더")
 render_earnings_md("earnings_calendar.md")
 st.divider()
 
