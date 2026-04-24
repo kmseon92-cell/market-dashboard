@@ -328,12 +328,9 @@ import os
 REPORTS_DIR = os.path.join(os.path.dirname(__file__), "reports")
 
 
-# 📅 미국 실적 캘린더 — ETF 리더스 위, 영업일 5일치 가로 분할
-st.subheader("📅 미국 실적 캘린더 — 시총 $10B+, 영업일 5일")
-
-
-def render_earnings_calendar() -> None:
-    p = os.path.join(REPORTS_DIR, "earnings_calendar.md")
+# 📅 실적 캘린더 — ETF 리더스 위, 영업일 5일치 가로 분할
+def render_earnings_md(filename: str) -> None:
+    p = os.path.join(REPORTS_DIR, filename)
     if not os.path.exists(p):
         st.caption("_아직 업데이트 안 됨_")
         return
@@ -350,7 +347,6 @@ def render_earnings_calendar() -> None:
     if as_of:
         st.caption(as_of)
 
-    # 날짜 블록 분할: <b>MM/DD (요일) · N종목</b> ... 다음 블록 또는 끝
     block_re = re.compile(
         r"<b>(\d{2}/\d{2}\s*\([월화수목금토일]\)\s*·\s*\d+종목)</b>\n(.*?)(?=\n<b>\d{2}/\d{2}|\Z)",
         re.DOTALL,
@@ -374,7 +370,12 @@ def render_earnings_calendar() -> None:
             )
 
 
-render_earnings_calendar()
+st.subheader("📅 한국 실적 캘린더 — 시총 큰 종목, 영업일 5일")
+render_earnings_md("kr_earnings_calendar.md")
+st.divider()
+
+st.subheader("📅 미국 실적 캘린더 — Earnings Whispers 큐레이션, 영업일 5일")
+render_earnings_md("earnings_calendar.md")
 st.divider()
 
 # 🌍 ETF 리더스 — 미국증시 마감시황 아래, 전체 너비, 섹션 가로 분할
