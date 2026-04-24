@@ -328,6 +328,55 @@ import os
 REPORTS_DIR = os.path.join(os.path.dirname(__file__), "reports")
 
 
+# 📅 미국 실적 캘린더 — ETF 리더스 위, 영업일 5일치 가로 분할
+st.subheader("📅 미국 실적 캘린더 — 시총 $10B+, 영업일 5일")
+
+
+def render_earnings_calendar() -> None:
+    p = os.path.join(REPORTS_DIR, "earnings_calendar.md")
+    if not os.path.exists(p):
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    with open(p, encoding="utf-8") as f:
+        text = f.read()
+
+    body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
+    body = re.sub(r"^📅[^\n]*\n", "", body)
+    m = re.search(r"^기준:[^\n]*", body, flags=re.MULTILINE)
+    as_of = m.group(0) if m else ""
+    body = re.sub(r"^기준:[^\n]*\n", "", body)
+    body = re.sub(r"^━+\n", "", body)
+
+    if as_of:
+        st.caption(as_of)
+
+    # 날짜 블록 분할: <b>MM/DD (요일) · N종목</b> ... 다음 블록 또는 끝
+    block_re = re.compile(
+        r"<b>(\d{2}/\d{2}\s*\([월화수목금토일]\)\s*·\s*\d+종목)</b>\n(.*?)(?=\n<b>\d{2}/\d{2}|\Z)",
+        re.DOTALL,
+    )
+    blocks = [(mm.group(1), mm.group(2).strip()) for mm in block_re.finditer(body)]
+    if not blocks:
+        st.caption("_데이터 파싱 실패_")
+        return
+
+    cols = st.columns(len(blocks))
+    for col, (header, content) in zip(cols, blocks):
+        with col:
+            st.markdown(f"#### {header}")
+            rendered = content.replace("\n", "<br>")
+            st.markdown(
+                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+                f'font-size:0.88rem;line-height:1.55;color:#000;'
+                f'max-height:480px;overflow-y:auto;">'
+                f'{rendered}</div>',
+                unsafe_allow_html=True,
+            )
+
+
+render_earnings_calendar()
+st.divider()
+
 # 🌍 ETF 리더스 — 미국증시 마감시황 아래, 전체 너비, 섹션 가로 분할
 st.subheader("🌍 ETF 리더스 — 주도 국가·섹터")
 
