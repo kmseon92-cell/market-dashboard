@@ -348,7 +348,7 @@ def render_earnings_md(filename: str) -> None:
         st.caption(as_of)
 
     block_re = re.compile(
-        r"<b>(\d{2}/\d{2}\s*\([월화수목금토일]\)\s*·\s*\d+종목)</b>\n(.*?)(?=\n<b>\d{2}/\d{2}|\Z)",
+        r"<b>(\d{2}/\d{2}\s*\([월화수목금토일]\)\s*·\s*\d+(?:종목|건))</b>\n(.*?)(?=\n<b>\d{2}/\d{2}|\Z)",
         re.DOTALL,
     )
     blocks = [(mm.group(1), mm.group(2).strip()) for mm in block_re.finditer(body)]
@@ -376,6 +376,10 @@ st.divider()
 
 st.subheader("📅 미국 실적 캘린더")
 render_earnings_md("earnings_calendar.md")
+st.divider()
+
+st.subheader("📈 미국 경제지표 캘린더")
+render_earnings_md("us_econ_calendar.md")
 st.divider()
 
 # 🌍 ETF 리더스 — 미국증시 마감시황 아래, 전체 너비, 섹션 가로 분할
