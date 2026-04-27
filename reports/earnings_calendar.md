@@ -1,43 +1,23 @@
-<!-- updated: 2026-04-27 06:09 -->
+<!-- updated: 2026-04-28 06:09 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-04-27 06:09 KST
+기준: 2026-04-28 06:09 KST
 ━━━━━━━━━━━━━━━
 
-<b>04/27 (월) · 19종목</b>
+<b>04/28 (화) · 35종목</b>
   〈장전〉
-    <b>VZ</b> Verizon Communications
-    <b>ACMR</b> ACM Research, Inc.
-    <b>DPZ</b> Domino's Pizza, Inc.
-    <b>BFST</b> Business First Bancshares, Inc.
-    <b>DEA</b> Easterly Government Properties, Inc.
-    <b>FULC</b> Fulcrum Therapeutics, Inc.
-    <b>ARLP</b> Alliance Resource Partners, L.P.
-  〈장후〉
-    <b>CLS</b> Celestica, Inc.
-    <b>RMBS</b> Rambus, Inc.
-    <b>CDNS</b> Cadence Design Systems, Inc.
-    <b>ARE</b> Alexandria Real Estate Equities, Inc.
-    <b>AMKR</b> Amkor Technology, Inc.
-    <b>BRO</b> Brown & Brown Inc.
-    <b>NUE</b> Nucor Corp.
-    <b>LC</b> Lending Club
-    <b>BBBY</b> Bed Bath & Beyond, Inc.
-    <b>PSA</b> Public Storage, Inc.
-    <b>CR</b> Crane Co.
-    <b>UHS</b> Universal Health Services Inc.
-
-<b>04/28 (화) · 26종목</b>
-  〈장전〉
-    <b>UPS</b> United Parcel Service, Inc.
     <b>SPOT</b> Spotify Technology S.A.
-    <b>GLW</b> Corning Inc.
+    <b>UPS</b> United Parcel Service, Inc.
     <b>KO</b> Coca-Cola Company
+    <b>GLW</b> Corning Inc.
     <b>BP</b> BP p.l.c
     <b>ECL</b> Ecolab Inc.
     <b>HLT</b> Hilton Worldwide Holdings Inc.
     <b>GM</b> General Motors Corp.
-    <b>GLXY</b> Galaxy Digital Inc. 
     <b>AB</b> AllianceBernstein Holding LP
+    <b>EPD</b> Enterprise Products Partners L.P.
+    <b>GLXY</b> Galaxy Digital Inc. 
+    <b>CNC</b> Centene Corporation
+    <b>ARCC</b> Ares Capital Corp
   〈장후〉
     <b>HOOD</b> Robinhood Markets, Inc.
     <b>BE</b> Bloom Energy Corporation
@@ -48,15 +28,21 @@
     <b>OPK</b> Opko Health Inc
     <b>NXPI</b> NXP Semiconductors N.V.
     <b>BKNG</b> Booking Holdings Inc.
-    <b>CSGP</b> CoStar Group, Inc.
-    <b>LRN</b> Stride, Inc.
-    <b>MDLZ</b> Mondelez International Inc.
+    <b>TMUS</b> T-Mobile US Inc.
+    <b>FICO</b> FICO
+    <b>FFIV</b> F5 Networks, Inc.
     <b>SBUX</b> Starbucks Corp.
     <b>SIMO</b> Silicon Motion Technology Corporation
-    <b>TMUS</b> T-Mobile US Inc.
+    <b>MDLZ</b> Mondelez International Inc.
+    <b>CSGP</b> CoStar Group, Inc.
     <b>FE</b> FirstEnergy Corp.
+    <b>LRN</b> Stride, Inc.
+    <b>CZR</b> Caesars Entertainment, Inc.
+    <b>PRCH</b> Porch Group, Inc.
+    <b>WM</b> WM
+    <b>MX</b> Magnachip Semiconductor Corporation
 
-<b>04/29 (수) · 27종목</b>
+<b>04/29 (수) · 32종목</b>
   〈장전〉
     <b>SOFI</b> SoFi
     <b>HUM</b> Humana, Inc.
@@ -66,12 +52,13 @@
     <b>LMND</b> Lemonade, Inc.
     <b>REGN</b> Regeneron Pharmaceuticals Inc.
     <b>GRMN</b> Garmin Ltd.
-    <b>JKS</b> JinkoSolar Holding Co., Ltd.
     <b>CSTM</b> Constellium N.V.
+    <b>EAT</b> Brinker International, Inc.
     <b>CNI</b> Canadian National Railway Company
+    <b>JKS</b> JinkoSolar Holding Co., Ltd.
     <b>ADP</b> Automatic Data Processing, Inc.
     <b>AZN</b> AstraZeneca PLC
-    <b>EAT</b> Brinker International, Inc.
+    <b>EME</b> EMCOR Group Inc.
   〈장후〉
     <b>MSFT</b> Microsoft Corp.
     <b>AMZN</b> Amazon.com, Inc.
@@ -79,18 +66,22 @@
     <b>GOOGL</b> Alphabet Inc.
     <b>QCOM</b> Qualcomm Incorporated
     <b>CMG</b> Chipotle Mexican Grill Inc
+    <b>CVNA</b> Carvana Co.
     <b>F</b> Ford Motor Company
     <b>KGC</b> Kinross Gold Corp.
-    <b>CVNA</b> Carvana Co.
-    <b>TTMI</b> TTM Technologies Inc.
     <b>KLAC</b> KLA Corporation
+    <b>TTMI</b> TTM Technologies Inc.
+    <b>EQIX</b> Equinix, Inc.
     <b>MYRG</b> Myr Group
     <b>BN</b> Brookfield Corporation
+    <b>VIAV</b> Viavi Solutions, Inc.
+    <b>EBAY</b> eBay, Inc.
+    <b>GRBK</b> Green Brick Partners Inc.
 
-<b>04/30 (목) · 23종목</b>
+<b>04/30 (목) · 27종목</b>
   〈장전〉
-    <b>LLY</b> Eli Lilly & Co.
     <b>CAT</b> Caterpillar, Inc.
+    <b>LLY</b> Eli Lilly & Co.
     <b>COP</b> ConocoPhillips
     <b>MA</b> Mastercard Inc
     <b>VLO</b> Valero Energy Corp.
@@ -98,24 +89,39 @@
     <b>BMY</b> Bristol Myers Squibb 
     <b>MO</b> Altria Group Inc
     <b>MRK</b> Merck & Co., Inc.
+    <b>HSY</b> Hershey Company
   〈장후〉
     <b>AAPL</b> Apple, Inc.
     <b>SNDK</b> SanDisk Corp.
     <b>RDDT</b> Reddit, Inc.
     <b>WDC</b> Western Digital Corp.
-    <b>AMGN</b> Amgen, Inc.
     <b>AXTI</b> AXT Inc
+    <b>AMGN</b> Amgen, Inc.
     <b>RIVN</b> Rivian Automotive, Inc.
-    <b>FSLR</b> First Solar Inc
     <b>RBLX</b> Roblox Corporation
-    <b>GDDY</b> GoDaddy Inc.
     <b>MTZ</b> MasTec Inc.
-    <b>RIOT</b> Riot Platforms, Inc. 
+    <b>FSLR</b> First Solar Inc
     <b>ROKU</b> Roku Inc
+    <b>GDDY</b> GoDaddy Inc.
+    <b>RIOT</b> Riot Platforms, Inc. 
     <b>TEAM</b> Atlassian Corporation Plc
+    <b>MPWR</b> Monolithic Power Systems Inc
+    <b>SYK</b> Stryker Corp.
+    <b>ZETA</b> Zeta Global
 
 <b>05/01 (금) · 3종목</b>
   〈장전〉
     <b>CVX</b> Chevron Corporation
     <b>CL</b> Colgate-Palmolive Co.
     <b>XOM</b> Exxon Mobil Corp.
+
+<b>05/04 (월) · 7종목</b>
+  〈장전〉
+    <b>BRK.B</b> Berkshire Hathaway, Inc.
+    <b>NCLH</b> Norwegian Cruise Line Holdings Ltd.
+  〈장후〉
+    <b>PLTR</b> Palantir Technologies Inc.
+    <b>RIG</b> Transocean Ltd.
+    <b>DUOL</b> Duolingo, Inc.
+    <b>BWXT</b> BWX Technologies, Inc.
+    <b>ON</b> onsemi
