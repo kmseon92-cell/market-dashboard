@@ -370,6 +370,10 @@ def render_earnings_md(filename: str) -> None:
             )
 
 
+st.subheader("🚨 시장경보 종목 해제 판단 캘린더")
+render_earnings_md("kr_market_alert.md")
+st.divider()
+
 st.subheader("📅 한국 실적 캘린더")
 render_earnings_md("kr_earnings_calendar.md")
 st.divider()
