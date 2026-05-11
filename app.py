@@ -506,15 +506,13 @@ def render_kr_market_alert() -> None:
             unsafe_allow_html=True,
         )
 
-    # 향후 5영업일 캘린더
-    import holidays as _h
-    kr_h = _h.country_holidays("KR")
+    # 향후 5영업일 캘린더 (주말만 skip — 휴장일 캘린더는 fetcher가 채워주는 데이터로 충분)
+    from datetime import timedelta as _td
     days: list = []
     d = today
     while len(days) < 5:
-        if d.weekday() < 5 and d not in kr_h:
+        if d.weekday() < 5:
             days.append(d)
-        from datetime import timedelta as _td
         d += _td(days=1)
 
     by_day: dict = {d: [] for d in days}
