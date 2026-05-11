@@ -347,13 +347,29 @@ def render_earnings_md(filename: str) -> None:
     if as_of:
         st.caption(as_of)
 
+    # 날짜 블록 앞에 "📛"-prefixed 특수 섹션 (예: 지난 판단일 미해제) 추출
+    special_re = re.compile(
+        r"<b>(📛[^<\n]+)</b>\n(.*?)(?=\n<b>(?:\d{2}/\d{2}|📛)|\Z)",
+        re.DOTALL,
+    )
+    specials = [(mm.group(1), mm.group(2).strip()) for mm in special_re.finditer(body)]
+    for header, content in specials:
+        rendered = content.replace("\n", "<br>")
+        st.markdown(
+            f'<div style="border:1px solid #b22;border-radius:10px;padding:12px;'
+            f'background:#fff5f5;font-size:0.88rem;line-height:1.55;color:#000;'
+            f'margin-bottom:10px;"><b>{header}</b><br>{rendered}</div>',
+            unsafe_allow_html=True,
+        )
+
     block_re = re.compile(
         r"<b>(\d{2}/\d{2}\s*\([월화수목금토일]\)\s*·\s*\d+(?:종목|건))</b>\n(.*?)(?=\n<b>\d{2}/\d{2}|\Z)",
         re.DOTALL,
     )
     blocks = [(mm.group(1), mm.group(2).strip()) for mm in block_re.finditer(body)]
     if not blocks:
-        st.caption("_데이터 파싱 실패_")
+        if not specials:
+            st.caption("_데이터 파싱 실패_")
         return
 
     cols = st.columns(len(blocks))
