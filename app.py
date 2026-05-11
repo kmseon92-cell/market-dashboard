@@ -1,3 +1,5 @@
+import json
+import os
 import re
 
 import streamlit as st
@@ -386,8 +388,170 @@ def render_earnings_md(filename: str) -> None:
             )
 
 
+def _yf_suffix(market: str) -> str:
+    return ".KQ" if market == "코스닥" else ".KS"
+
+
+@st.cache_data(ttl=60, show_spinner=False)
+def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
+    """yfinance로 종목별 최근 종가 일괄 fetch (1분 cache)."""
+    if not tickers:
+        return {}
+    df = yf.download(list(tickers), period="2d", progress=False,
+                     auto_adjust=False, group_by="ticker", threads=True)
+    out: dict[str, float] = {}
+    if df is None or df.empty:
+        return out
+    if len(tickers) == 1:
+        t = tickers[0]
+        try:
+            v = df["Close"].dropna()
+            if not v.empty:
+                out[t] = float(v.iloc[-1])
+        except Exception:
+            pass
+        return out
+    for t in tickers:
+        try:
+            v = df[t]["Close"].dropna()
+            if not v.empty:
+                out[t] = float(v.iloc[-1])
+        except Exception:
+            continue
+    return out
+
+
+def render_kr_market_alert() -> None:
+    p = os.path.join(REPORTS_DIR, "kr_market_alert.json")
+    if not os.path.exists(p):
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    with open(p, encoding="utf-8") as f:
+        payload = json.load(f)
+    records = payload.get("alerts", [])
+    fetched_at = payload.get("fetched_at", "")
+    if not records:
+        st.caption("_지정 종목 없음_")
+        return
+
+    # 종목별 ticker 만들고 실시간 현재가 일괄 fetch
+    tickers = tuple(sorted({
+        f'{r["stock_code"]}{_yf_suffix(r.get("market", ""))}'
+        for r in records if r.get("stock_code")
+    }))
+    live_prices = _fetch_live_prices(tickers)
+    live_at = datetime.now().strftime("%H:%M:%S")
+    st.caption(
+        f"임계가 산출: {fetched_at[:16].replace('T', ' ')} · "
+        f"현재가 실시간({live_at}, 1분 캐시) · 출처: KRX KIND + yfinance"
+    )
+
+    # 실시간 가격으로 is_at_risk 재계산
+    for r in records:
+        code = r.get("stock_code")
+        if not code:
+            r["live_price"] = None
+            r["live_at_risk"] = r.get("is_at_risk")
+            continue
+        t = f"{code}{_yf_suffix(r.get('market', ''))}"
+        live = live_prices.get(t)
+        r["live_price"] = live
+        thr = r.get("threshold_price")
+        if live and thr:
+            r["live_at_risk"] = live >= thr
+        else:
+            r["live_at_risk"] = r.get("is_at_risk")
+
+    today = datetime.now().date()
+    type_emoji = {"투자주의": "🟡", "투자경고": "🟠", "투자위험": "🔴"}
+
+    def _render_item(r: dict, jd_str: str = "") -> str:
+        emoji = type_emoji.get(r.get("alert_type"), "🟠")
+        name = r.get("stock_name", "")
+        code = r.get("stock_code") or "------"
+        thr = r.get("threshold_price")
+        cur = r.get("live_price") or r.get("current_price")
+        risk = r.get("live_at_risk")
+        bd = r.get("threshold_breakdown") or {}
+        binding = bd.get("binding", "")
+        bd_tag = f' <i>[{binding}]</i>' if binding else ""
+
+        if r.get("alert_type") == "투자주의":
+            body = f"현재 {cur:,.0f}원 · 1영업일 후 자동해제" if cur else "1영업일 후 자동해제"
+        elif thr and cur:
+            risk_tag = "⚠️미해제" if risk else "✅해제가능"
+            body = f"해제임계 {thr:,.0f}원 / 현재 {cur:,.0f}원 {risk_tag}{bd_tag}"
+        else:
+            body = f"가격 N/A ({r.get('price_error') or '실시간 수집 실패'})"
+        prefix = f"[{jd_str} 판단] " if jd_str else ""
+        return f"{emoji} <b>{name}</b> ({code}) {prefix}{body}"
+
+    # 지난 판단일 미해제
+    past = []
+    for r in records:
+        try:
+            jd = datetime.strptime(r["judgment_date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if jd < today and r.get("alert_type") != "투자주의":
+            past.append((jd, r))
+    if past:
+        past.sort(key=lambda t: (not bool(t[1].get("live_at_risk")), -t[0].toordinal()))
+        lines = [_render_item(r, jd.strftime("%m/%d")) for jd, r in past]
+        st.markdown(
+            f'<div style="border:1px solid #b22;border-radius:10px;padding:12px;'
+            f'background:#fff5f5;font-size:0.88rem;line-height:1.55;color:#000;'
+            f'margin-bottom:10px;"><b>📛 지난 판단일 미해제 · {len(past)}건</b><br>'
+            + "<br>".join(lines) + "</div>",
+            unsafe_allow_html=True,
+        )
+
+    # 향후 5영업일 캘린더
+    import holidays as _h
+    kr_h = _h.country_holidays("KR")
+    days: list = []
+    d = today
+    while len(days) < 5:
+        if d.weekday() < 5 and d not in kr_h:
+            days.append(d)
+        from datetime import timedelta as _td
+        d += _td(days=1)
+
+    by_day: dict = {d: [] for d in days}
+    for r in records:
+        try:
+            jd = datetime.strptime(r["judgment_date"], "%Y-%m-%d").date()
+        except Exception:
+            continue
+        if jd in by_day:
+            by_day[jd].append(r)
+
+    weekday_kr = ["월", "화", "수", "목", "금", "토", "일"]
+    cols = st.columns(len(days))
+    for col, d in zip(cols, days):
+        items = by_day[d]
+        items.sort(key=lambda r: (
+            not bool(r.get("live_at_risk")),
+            r.get("alert_type", ""),
+            r.get("stock_code") or "",
+        ))
+        header = f"{d.strftime('%m/%d')} ({weekday_kr[d.weekday()]}) · {len(items)}건"
+        with col:
+            st.markdown(f"#### {header}")
+            body_html = (
+                "<br>".join(_render_item(r) for r in items)
+                if items else "<i>해당 종목 없음</i>"
+            )
+            st.markdown(
+                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+                f'font-size:0.88rem;line-height:1.55;color:#000;'
+                f'max-height:480px;overflow-y:auto;">{body_html}</div>',
+                unsafe_allow_html=True,
+            )
+
+
 st.subheader("🚨 시장경보 종목 해제 판단 캘린더")
-render_earnings_md("kr_market_alert.md")
+render_kr_market_alert()
 st.divider()
 
 st.subheader("📅 한국 실적 캘린더")
