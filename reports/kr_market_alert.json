@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-05-11T21:35:10",
+  "fetched_at": "2026-05-12T08:01:15",
   "alerts": [
     {
       "stock_name": "삼아알미늄",
@@ -370,6 +370,29 @@
       "price_error": null
     },
     {
+      "stock_name": "HB테크놀러지",
+      "stock_code": "078150",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-05-11",
+      "designated_date": "2026-05-12",
+      "judgment_date": "2026-05-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 4560.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 4560.0,
+        "cond2_15d_100pct": 5290.0,
+        "cond3_15d_high": 4830.0,
+        "binding": "5일60%"
+      },
+      "current_price": 4965.0,
+      "current_date": "2026-05-11",
+      "is_at_risk": true,
+      "ticker": "078150.KQ",
+      "price_error": null
+    },
+    {
       "stock_name": "CSA 코스믹",
       "stock_code": "083660",
       "market": "코스닥",
@@ -390,6 +413,29 @@
       "current_date": "2026-05-11",
       "is_at_risk": false,
       "ticker": "083660.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "유진테크",
+      "stock_code": "084370",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-05-11",
+      "designated_date": "2026-05-12",
+      "judgment_date": "2026-05-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 148600.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 208000.0,
+        "cond2_15d_100pct": 269800.0,
+        "cond3_15d_high": 148600.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 150300.0,
+      "current_date": "2026-05-11",
+      "is_at_risk": true,
+      "ticker": "084370.KQ",
       "price_error": null
     },
     {
@@ -623,6 +669,29 @@
       "price_error": null
     },
     {
+      "stock_name": "아스플로",
+      "stock_code": "159010",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-05-11",
+      "designated_date": "2026-05-12",
+      "judgment_date": "2026-05-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 14500.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 16944.0,
+        "cond2_15d_100pct": 15460.0,
+        "cond3_15d_high": 14500.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 16120.0,
+      "current_date": "2026-05-11",
+      "is_at_risk": true,
+      "ticker": "159010.KQ",
+      "price_error": null
+    },
+    {
       "stock_name": "핑거",
       "stock_code": "163730",
       "market": "코스닥",
@@ -689,6 +758,29 @@
       "current_date": "2026-04-30",
       "is_at_risk": false,
       "ticker": "184230.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "에이팩트",
+      "stock_code": "200470",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-05-11",
+      "designated_date": "2026-05-12",
+      "judgment_date": "2026-05-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 9980.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 13840.0,
+        "cond2_15d_100pct": 14060.0,
+        "cond3_15d_high": 9980.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 10080.0,
+      "current_date": "2026-05-11",
+      "is_at_risk": true,
+      "ticker": "200470.KQ",
       "price_error": null
     },
     {
@@ -873,6 +965,29 @@
       "current_date": "2026-05-04",
       "is_at_risk": true,
       "ticker": "309930.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "다원넥스뷰",
+      "stock_code": "323350",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-05-11",
+      "designated_date": "2026-05-12",
+      "judgment_date": "2026-05-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 19072.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 19072.0,
+        "cond2_15d_100pct": 24540.0,
+        "cond3_15d_high": 22350.0,
+        "binding": "5일60%"
+      },
+      "current_price": 22900.0,
+      "current_date": "2026-05-11",
+      "is_at_risk": true,
+      "ticker": "323350.KQ",
       "price_error": null
     },
     {
