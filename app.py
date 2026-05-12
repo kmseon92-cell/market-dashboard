@@ -421,6 +421,7 @@ def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
     return out
 
 
+@st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_kr_market_alert() -> None:
     p = os.path.join(REPORTS_DIR, "kr_market_alert.json")
     if not os.path.exists(p):
@@ -440,10 +441,11 @@ def render_kr_market_alert() -> None:
         for r in records if r.get("stock_code")
     }))
     live_prices = _fetch_live_prices(tickers)
-    live_at = datetime.now().strftime("%H:%M:%S")
+    from datetime import timedelta as _td_alert
+    live_at_kst = (datetime.utcnow() + _td_alert(hours=9)).strftime("%H:%M:%S KST")
     st.caption(
         f"임계가 산출: {fetched_at[:16].replace('T', ' ')} · "
-        f"현재가 실시간({live_at}, 1분 캐시) · 출처: KRX KIND + yfinance"
+        f"현재가 실시간({live_at_kst}, {REFRESH_SEC}초마다 자동 갱신) · 출처: KRX KIND + yfinance"
     )
 
     # 실시간 가격으로 is_at_risk 재계산
