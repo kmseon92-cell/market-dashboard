@@ -394,18 +394,25 @@ def _yf_suffix(market: str) -> str:
 
 @st.cache_data(ttl=20, show_spinner=False)
 def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
-    """yfinance로 종목별 실시간 가격 fetch (20초 cache).
-    fast_info.last_price 사용 — 다른 섹션과 동일 방식. ThreadPool로 병렬화.
+    """네이버 금융 polling API로 한국 종목 실시간 가격 fetch (20초 cache).
+    yfinance는 한국 시장 stale data 자주 발생 → 네이버가 closePriceRaw로 정확.
     """
+    import urllib.request, json
     from concurrent.futures import ThreadPoolExecutor
 
     if not tickers:
         return {}
 
     def _one(t: str):
+        code = t.split(".")[0]
         try:
-            v = yf.Ticker(t).fast_info.last_price
-            return t, float(v) if v else None
+            req = urllib.request.Request(
+                f"https://polling.finance.naver.com/api/realtime/domestic/stock/{code}",
+                headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
+            )
+            data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+            d = data["datas"][0]
+            return t, float(d["closePriceRaw"])
         except Exception:
             return t, None
 
@@ -441,7 +448,7 @@ def render_kr_market_alert() -> None:
     live_at_kst = (datetime.utcnow() + _td_alert(hours=9)).strftime("%H:%M:%S KST")
     st.caption(
         f"임계가 산출: {fetched_at[:16].replace('T', ' ')} · "
-        f"현재가 실시간({live_at_kst}, {REFRESH_SEC}초마다 자동 갱신) · 출처: KRX KIND + yfinance"
+        f"현재가 실시간({live_at_kst}, {REFRESH_SEC}초마다 자동 갱신) · 출처: KRX KIND + 네이버 금융"
     )
 
     # 실시간 가격으로 is_at_risk 재계산
