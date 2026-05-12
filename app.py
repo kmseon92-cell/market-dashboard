@@ -392,32 +392,28 @@ def _yf_suffix(market: str) -> str:
     return ".KQ" if market == "코스닥" else ".KS"
 
 
-@st.cache_data(ttl=60, show_spinner=False)
+@st.cache_data(ttl=20, show_spinner=False)
 def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
-    """yfinance로 종목별 최근 종가 일괄 fetch (1분 cache)."""
+    """yfinance로 종목별 실시간 가격 fetch (20초 cache).
+    fast_info.last_price 사용 — 다른 섹션과 동일 방식. ThreadPool로 병렬화.
+    """
+    from concurrent.futures import ThreadPoolExecutor
+
     if not tickers:
         return {}
-    df = yf.download(list(tickers), period="2d", progress=False,
-                     auto_adjust=False, group_by="ticker", threads=True)
+
+    def _one(t: str):
+        try:
+            v = yf.Ticker(t).fast_info.last_price
+            return t, float(v) if v else None
+        except Exception:
+            return t, None
+
     out: dict[str, float] = {}
-    if df is None or df.empty:
-        return out
-    if len(tickers) == 1:
-        t = tickers[0]
-        try:
-            v = df["Close"].dropna()
-            if not v.empty:
-                out[t] = float(v.iloc[-1])
-        except Exception:
-            pass
-        return out
-    for t in tickers:
-        try:
-            v = df[t]["Close"].dropna()
-            if not v.empty:
-                out[t] = float(v.iloc[-1])
-        except Exception:
-            continue
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        for t, v in ex.map(_one, tickers):
+            if v is not None:
+                out[t] = v
     return out
 
 
