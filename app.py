@@ -47,6 +47,7 @@ TICKERS = {
         "대만 가권": "^TWII",
     },
     "선물 · 환율": {
+        "달러/엔": "JPY=X",
         "나스닥 선물": "NQ=F",
         "WTI 원유": "CL=F",
         "원/달러": "KRW=X",
@@ -65,6 +66,7 @@ STOOQ_MAP = {
     "NQ=F": "nq.f",
     "CL=F": "cl.f",
     "KRW=X": "usdkrw",
+    "JPY=X": "usdjpy",
     "DX-Y.NYB": "dx.f",
 }
 
@@ -242,6 +244,10 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
     color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#9ca3af")
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
 
+    highlight = symbol == "JPY=X" and q.get("price", 0) >= 155
+    card_bg = "background:#fef08a;" if highlight else ""
+    border = "border:2px solid #eab308;" if highlight else "border:1px solid #2a2a2a;"
+
     chart_html = ""
     if ytd:
         first_close = ytd[0][3]
@@ -258,7 +264,7 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
 
     st.markdown(
         f"""
-        <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;
+        <div style="padding:8px 14px;{border}border-radius:10px;{card_bg}
                     display:flex;align-items:center;gap:10px;">
           <div style="flex:1;min-width:0;">
             <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
