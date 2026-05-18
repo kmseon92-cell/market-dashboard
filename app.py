@@ -126,14 +126,10 @@ def _fetch_yf(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+# 미국 채권 cash 시장이 닫혀있으면 야후는 직전 종가에 고착됨 → investing.com만 futures 기반 implied yield 제공
 INVESTING_URL = {
-    "^TNX":     "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
-    "^TYX":     "https://www.investing.com/rates-bonds/u.s.-30-year-bond-yield",
-    "NQ=F":     "https://www.investing.com/indices/nq-100-futures",
-    "CL=F":     "https://www.investing.com/commodities/crude-oil",
-    "KRW=X":    "https://www.investing.com/currencies/usd-krw",
-    "JPY=X":    "https://www.investing.com/currencies/usd-jpy",
-    "DX-Y.NYB": "https://www.investing.com/quotes/us-dollar-index",
+    "^TNX": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "^TYX": "https://www.investing.com/rates-bonds/u.s.-30-year-bond-yield",
 }
 
 
@@ -169,7 +165,7 @@ def fetch_quote(symbol: str):
         if symbol in NAVER_INDEX_MAP:
             return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
         if symbol in INVESTING_URL:
-            # 선물·환율·국채금리는 investing.com이 실시간성 가장 좋음
+            # 국채금리만 investing.com (cash 시장 폐장 시 yfinance는 직전 종가 고착)
             try:
                 return _fetch_investing(symbol)
             except Exception:
