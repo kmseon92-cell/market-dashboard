@@ -52,6 +52,8 @@ TICKERS = {
         "WTI 원유": "CL=F",
         "원/달러": "KRW=X",
         "달러 인덱스": "DX-Y.NYB",
+        "미국 10년물 국채금리": "^TNX",
+        "미국 30년물 국채금리": "^TYX",
     },
 }
 
@@ -144,6 +146,8 @@ def fetch_quote(symbol: str):
 
 
 def format_price(symbol: str, price: float) -> str:
+    if symbol in ("^TNX", "^TYX"):
+        return f"{price:,.3f}%"
     if symbol in ("KRW=X",):
         return f"{price:,.2f}"
     if symbol in ("DX-Y.NYB", "CL=F"):
@@ -244,7 +248,12 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
     color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#9ca3af")
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
 
-    highlight = symbol == "JPY=X" and q.get("price", 0) >= 155
+    price_val = q.get("price", 0)
+    highlight = (
+        (symbol == "JPY=X" and price_val >= 155)
+        or (symbol == "^TNX" and price_val >= 4.5)
+        or (symbol == "^TYX" and price_val >= 5.0)
+    )
     card_bg = "background:#fef08a;" if highlight else ""
     border = "border:2px solid #eab308;" if highlight else "border:1px solid #2a2a2a;"
 
