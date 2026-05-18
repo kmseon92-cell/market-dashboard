@@ -236,7 +236,13 @@ def make_mini_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
     )
 
 
-def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None):
+def render_card(
+    name: str,
+    symbol: str,
+    q: dict | None,
+    ytd: list | None = None,
+    price_first: bool = False,
+):
     if not q or "error" in (q or {}):
         st.markdown(
             f"""
@@ -277,11 +283,23 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
             f'</div>'
         )
 
-    st.markdown(
-        f"""
-        <div style="padding:8px 14px;{border}border-radius:10px;{card_bg}
-                    display:flex;align-items:center;gap:10px;">
-          <div style="flex:1;min-width:0;">
+    price_str = format_price(symbol, q["price"])
+
+    if price_first:
+        body_html = f"""
+            <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
+            <div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">
+              {price_str}
+            </div>
+            <div style="font-size:1rem;font-weight:700;color:{color};margin-top:4px;">
+              {arrow} {pct:+.2f}%
+            </div>
+            <div style="font-size:0.8rem;color:{color};">
+              {change:+,.2f}
+            </div>
+        """
+    else:
+        body_html = f"""
             <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
             <div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">
               {arrow} {pct:+.2f}%
@@ -290,8 +308,16 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
               {change:+,.2f}
             </div>
             <div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">
-              {format_price(symbol, q["price"])}
+              {price_str}
             </div>
+        """
+
+    st.markdown(
+        f"""
+        <div style="padding:8px 14px;{border}border-radius:10px;{card_bg}
+                    display:flex;align-items:center;gap:10px;">
+          <div style="flex:1;min-width:0;">
+            {body_html}
           </div>
           {chart_html}
         </div>
@@ -309,11 +335,15 @@ def render_quotes():
     for group, rows in TICKERS.items():
         st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
         max_cols = max(len(row) for row in rows)
+        price_first = group != "주요 지수"
         for row in rows:
             cols = st.columns(max_cols)
             for col, (name, symbol) in zip(cols, row.items()):
                 with col:
-                    render_card(name, symbol, fetch_quote(symbol), ytd_map.get(symbol))
+                    render_card(
+                        name, symbol, fetch_quote(symbol), ytd_map.get(symbol),
+                        price_first=price_first,
+                    )
     st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
 
 render_quotes()
