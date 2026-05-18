@@ -265,6 +265,7 @@ def render_card(
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
         or (symbol == "^TYX" and price_val >= 5.0)
+        or (symbol == "CL=F" and price_val >= 100)
     )
     card_bg = "background:#fef08a;" if highlight else ""
     border = "border:2px solid #eab308;" if highlight else "border:1px solid #2a2a2a;"
