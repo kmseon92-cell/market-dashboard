@@ -126,6 +126,39 @@ def _fetch_yf(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+INVESTING_URL = {
+    "^TNX":     "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
+    "^TYX":     "https://www.investing.com/rates-bonds/u.s.-30-year-bond-yield",
+    "NQ=F":     "https://www.investing.com/indices/nq-100-futures",
+    "CL=F":     "https://www.investing.com/commodities/crude-oil",
+    "KRW=X":    "https://www.investing.com/currencies/usd-krw",
+    "JPY=X":    "https://www.investing.com/currencies/usd-jpy",
+    "DX-Y.NYB": "https://www.investing.com/quotes/us-dollar-index",
+}
+
+
+def _fetch_investing(symbol: str):
+    import urllib.request, re
+    url = INVESTING_URL[symbol]
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                      "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Referer": "https://www.investing.com/",
+    })
+    text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
+    m_last = re.search(r'data-test="instrument-price-last"[^>]*>([0-9,.]+)', text)
+    m_chg = re.search(r'data-test="instrument-price-change"[^>]*>([+\-0-9,.]+)', text)
+    m_pct = re.search(r'data-test="instrument-price-change-percent"[^>]*>\(?([+\-0-9.]+)', text)
+    if not m_last:
+        raise ValueError("investing.com: last not found")
+    last = float(m_last.group(1).replace(",", ""))
+    change = float(m_chg.group(1).replace(",", "")) if m_chg else 0.0
+    pct = float(m_pct.group(1)) if m_pct else 0.0
+    return {"price": last, "change": change, "pct": pct}
+
+
 # yfinance .info가 전일종가=현재가로 고정 반환하는 종목은 stooq 우선
 STOOQ_FIRST = {"CL=F"}
 
@@ -135,6 +168,12 @@ def fetch_quote(symbol: str):
     try:
         if symbol in NAVER_INDEX_MAP:
             return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
+        if symbol in INVESTING_URL:
+            # 선물·환율·국채금리는 investing.com이 실시간성 가장 좋음
+            try:
+                return _fetch_investing(symbol)
+            except Exception:
+                pass  # 아래 yfinance/stooq fallback으로
         if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
             try:
                 return _fetch_stooq(STOOQ_MAP[symbol])
