@@ -39,22 +39,28 @@ check_password()
 REFRESH_SEC = 60
 
 TICKERS = {
-    "주요 지수": {
-        "코스피": "^KS11",
-        "코스닥": "^KQ11",
-        "니케이225": "^N225",
-        "상해종합": "000001.SS",
-        "대만 가권": "^TWII",
-    },
-    "선물 · 환율": {
-        "달러/엔": "JPY=X",
-        "나스닥 선물": "NQ=F",
-        "WTI 원유": "CL=F",
-        "원/달러": "KRW=X",
-        "달러 인덱스": "DX-Y.NYB",
-        "미국 10년물 국채금리": "^TNX",
-        "미국 30년물 국채금리": "^TYX",
-    },
+    "주요 지수": [
+        {
+            "코스피": "^KS11",
+            "코스닥": "^KQ11",
+            "니케이225": "^N225",
+            "상해종합": "000001.SS",
+            "대만 가권": "^TWII",
+        },
+    ],
+    "선물 · 환율": [
+        {
+            "달러/엔": "JPY=X",
+            "나스닥 선물": "NQ=F",
+            "WTI 원유": "CL=F",
+            "원/달러": "KRW=X",
+            "달러 인덱스": "DX-Y.NYB",
+        },
+        {
+            "미국 10년물 국채금리": "^TNX",
+            "미국 30년물 국채금리": "^TYX",
+        },
+    ],
 }
 
 
@@ -296,14 +302,18 @@ def render_card(name: str, symbol: str, q: dict | None, ytd: list | None = None)
 
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_quotes():
-    all_symbols = tuple(sym for items in TICKERS.values() for sym in items.values())
+    all_symbols = tuple(
+        sym for rows in TICKERS.values() for row in rows for sym in row.values()
+    )
     ytd_map = fetch_yf_ytd(all_symbols)
-    for group, items in TICKERS.items():
+    for group, rows in TICKERS.items():
         st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
-        cols = st.columns(len(items))
-        for col, (name, symbol) in zip(cols, items.items()):
-            with col:
-                render_card(name, symbol, fetch_quote(symbol), ytd_map.get(symbol))
+        max_cols = max(len(row) for row in rows)
+        for row in rows:
+            cols = st.columns(max_cols)
+            for col, (name, symbol) in zip(cols, row.items()):
+                with col:
+                    render_card(name, symbol, fetch_quote(symbol), ytd_map.get(symbol))
     st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
 
 render_quotes()
