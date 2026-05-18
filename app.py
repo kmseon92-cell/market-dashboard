@@ -126,11 +126,36 @@ def _fetch_yf(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# 미국 채권 cash 시장이 닫혀있으면 야후는 직전 종가에 고착됨 → investing.com만 futures 기반 implied yield 제공
+# 미국 채권 cash 시장이 닫혀있으면 yfinance는 직전 종가에 고착됨 → 실시간 futures 기반 implied yield는 CNBC/investing.com에서만
+CNBC_YIELD_TAG = {"^TNX": "US10Y", "^TYX": "US30Y"}
 INVESTING_URL = {
     "^TNX": "https://www.investing.com/rates-bonds/u.s.-10-year-bond-yield",
     "^TYX": "https://www.investing.com/rates-bonds/u.s.-30-year-bond-yield",
 }
+
+
+def _fetch_cnbc_yield(symbol: str):
+    import urllib.request, re
+    tag = CNBC_YIELD_TAG[symbol]
+    url = f"https://www.cnbc.com/quotes/{tag}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
+    m_last = re.search(r'QuoteStrip-lastPrice"?[^>]*>([0-9.]+)', text)
+    m_up = re.search(r'QuoteStrip-changeUp[^<]*<[^>]+>[\s\S]{0,200}?<span>([+\-0-9.]+)', text)
+    m_dn = re.search(r'QuoteStrip-changeDown[^<]*<[^>]+>[\s\S]{0,200}?<span>([+\-0-9.]+)', text)
+    m_prev = re.search(r'Yield Prev Close</span><span[^>]*>([0-9.]+)', text)
+    if not m_last:
+        raise ValueError("cnbc: last not found")
+    last = float(m_last.group(1))
+    if m_up:
+        change = abs(float(m_up.group(1)))
+    elif m_dn:
+        change = -abs(float(m_dn.group(1)))
+    else:
+        change = 0.0
+    prev = float(m_prev.group(1)) if m_prev else (last - change)
+    pct = (change / prev * 100) if prev else 0.0
+    return {"price": last, "change": change, "pct": pct}
 
 
 def _fetch_investing(symbol: str):
@@ -164,12 +189,15 @@ def fetch_quote(symbol: str):
     try:
         if symbol in NAVER_INDEX_MAP:
             return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
-        if symbol in INVESTING_URL:
-            # 국채금리만 investing.com (cash 시장 폐장 시 yfinance는 직전 종가 고착)
+        if symbol in CNBC_YIELD_TAG:
+            # 국채금리: CNBC 우선(가벼움) → investing.com fallback. yfinance는 폐장 시 stale이라 fallback X
             try:
-                return _fetch_investing(symbol)
-            except Exception:
-                pass  # 아래 yfinance/stooq fallback으로
+                return _fetch_cnbc_yield(symbol)
+            except Exception as e1:
+                try:
+                    return _fetch_investing(symbol)
+                except Exception as e2:
+                    return {"error": f"cnbc:{e1} / investing:{e2}"}
         if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
             try:
                 return _fetch_stooq(STOOQ_MAP[symbol])
