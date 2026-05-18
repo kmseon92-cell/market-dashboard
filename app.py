@@ -286,44 +286,28 @@ def render_card(
     price_str = format_price(symbol, q["price"])
 
     if price_first:
-        body_html = f"""
-            <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
-            <div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">
-              {price_str}
-            </div>
-            <div style="font-size:1rem;font-weight:700;color:{color};margin-top:4px;">
-              {arrow} {pct:+.2f}%
-            </div>
-            <div style="font-size:0.8rem;color:{color};">
-              {change:+,.2f}
-            </div>
-        """
+        body_html = (
+            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>'
+            f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">{price_str}</div>'
+            f'<div style="font-size:1rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
+            f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
+        )
     else:
-        body_html = f"""
-            <div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>
-            <div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">
-              {arrow} {pct:+.2f}%
-            </div>
-            <div style="font-size:0.8rem;color:{color};margin-top:0px;">
-              {change:+,.2f}
-            </div>
-            <div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">
-              {price_str}
-            </div>
-        """
+        body_html = (
+            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>'
+            f'<div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">{arrow} {pct:+.2f}%</div>'
+            f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
+            f'<div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">{price_str}</div>'
+        )
 
-    st.markdown(
-        f"""
-        <div style="padding:8px 14px;{border}border-radius:10px;{card_bg}
-                    display:flex;align-items:center;gap:10px;">
-          <div style="flex:1;min-width:0;">
-            {body_html}
-          </div>
-          {chart_html}
-        </div>
-        """,
-        unsafe_allow_html=True,
+    html = (
+        f'<div style="padding:8px 14px;{border}border-radius:10px;{card_bg}'
+        f'display:flex;align-items:center;gap:10px;">'
+        f'<div style="flex:1;min-width:0;">{body_html}</div>'
+        f'{chart_html}'
+        f'</div>'
     )
+    st.markdown(html, unsafe_allow_html=True)
 
 
 @st.fragment(run_every=f"{REFRESH_SEC}s")
