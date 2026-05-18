@@ -285,12 +285,16 @@ def render_card(
 
     price_str = format_price(symbol, q["price"])
 
+    # 나스닥 선물은 가격보다 % 변동률이 더 의미있어서 예외처리
+    if symbol == "NQ=F":
+        price_first = False
+
     if price_first:
         body_html = (
             f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>'
             f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">{price_str}</div>'
-            f'<div style="font-size:1rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
-            f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
+            f'<div style="font-size:1.35rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
+            f'<div style="font-size:0.85rem;color:{color};">{change:+,.2f}</div>'
         )
     else:
         body_html = (
