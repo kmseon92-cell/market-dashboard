@@ -1,40 +1,19 @@
-<!-- updated: 2026-05-19 06:03 -->
+<!-- updated: 2026-05-20 06:03 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-05-19 06:03 KST
+기준: 2026-05-20 06:03 KST
 ━━━━━━━━━━━━━━━
 
-<b>05/19 (화) · 17종목</b>
-  〈장전〉
-    <b>HD</b> Home Depot, Inc.
-    <b>AS</b> Amer Sports, Inc. 
-    <b>ECC</b> Eagle Point Credit Co. Inc.
-    <b>ANTA</b> Antalpha Platform Holding Company
-    <b>BILI</b> Bilibili Inc.
-    <b>EXP</b> Eagle Materials Inc.
-    <b>MMYT</b> MakeMyTrip Limited
-    <b>HSAI</b> Hesai Group
-    <b>BEKE</b> KE Holdings Inc.
-  〈장후〉
-    <b>KEYS</b> Keysight Technologies, Inc.
-    <b>CAVA</b> CAVA Group, Inc.
-    <b>TOL</b> Toll Brothers, Inc.
-    <b>EGHT</b> 8x8 Inc.
-    <b>AUNA</b> Auna S.A.
-    <b>CCIF</b> Carlyle Credit Income Fund
-    <b>RRGB</b> Red Robin Gourmet Burgers Inc.
-    <b>JHX</b> James Hardie Industries N.V.
-
-<b>05/20 (수) · 15종목</b>
+<b>05/20 (수) · 17종목</b>
   〈장전〉
     <b>ADI</b> Analog Devices, Inc.
     <b>TGT</b> Target Corp.
     <b>LOW</b> Lowe's Companies, Inc.
+    <b>TJX</b> TJX Companies Inc.
     <b>VFC</b> VF Corp.
     <b>ZIM</b> ZIM Integrated Shipping Services Ltd.
-    <b>TJX</b> TJX Companies Inc.
+    <b>HAS</b> Hasbro, Inc.
     <b>ARCO</b> Arcos Dorados Holdings Inc.
     <b>GDS</b> GDS Holdings Ltd
-    <b>HAS</b> Hasbro, Inc.
   〈장후〉
     <b>NVDA</b> NVIDIA Corp.
     <b>ELF</b> e.l.f. Beauty, Inc.
@@ -42,6 +21,8 @@
     <b>SBLK</b> Star Bulk Carriers Corp
     <b>URBN</b> Urban Outfitters, Inc
     <b>NDSN</b> Nordson Corp.
+    <b>STEP</b> StepStone Group Inc.
+    <b>ENS</b> EnerSys
 
 <b>05/21 (목) · 16종목</b>
   〈장전〉
@@ -50,18 +31,18 @@
     <b>DE</b> Deere & Company
     <b>AAP</b> Advance Auto Parts Inc.
     <b>WMS</b> Advanced Drainage Systems, Inc.
+    <b>RL</b> Ralph Lauren Corporation
     <b>DAVA</b> Endava
     <b>LSPD</b> Lightspeed Commerce Inc.
-    <b>RL</b> Ralph Lauren Corporation
     <b>NTES</b> NetEase, Inc.
   〈장후〉
     <b>DECK</b> Deckers Brands
+    <b>WDAY</b> Workday, Inc.
     <b>TTWO</b> Take-Two Interactive Software, Inc.
     <b>BULL</b> Webull Corporation
     <b>ZM</b> Zoom Communications, Inc.
-    <b>WDAY</b> Workday, Inc.
-    <b>CPRT</b> Copart Inc.
     <b>ROST</b> Ross Stores Inc.
+    <b>CPRT</b> Copart Inc.
 
 <b>05/22 (금) · 2종목</b>
   〈장전〉
@@ -74,3 +55,11 @@
     <b>SQM</b> Chemical & Mining Co. of Chile Inc.
     <b>BOX</b> Box, Inc.
     <b>API</b> Agora, Inc.
+
+<b>05/27 (수) · 5종목</b>
+  〈장후〉
+    <b>MRVL</b> Marvell Technology, Inc. 
+    <b>CRM</b> Salesforce
+    <b>SNOW</b> Snowflake
+    <b>HPQ</b> HP Inc.
+    <b>SNPS</b> Synopsys, Inc.
