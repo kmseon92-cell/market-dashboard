@@ -1,45 +1,24 @@
-<!-- updated: 2026-05-20 06:03 -->
+<!-- updated: 2026-05-21 06:03 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-05-20 06:03 KST
+기준: 2026-05-21 06:03 KST
 ━━━━━━━━━━━━━━━
-
-<b>05/20 (수) · 17종목</b>
-  〈장전〉
-    <b>ADI</b> Analog Devices, Inc.
-    <b>TGT</b> Target Corp.
-    <b>LOW</b> Lowe's Companies, Inc.
-    <b>TJX</b> TJX Companies Inc.
-    <b>VFC</b> VF Corp.
-    <b>ZIM</b> ZIM Integrated Shipping Services Ltd.
-    <b>HAS</b> Hasbro, Inc.
-    <b>ARCO</b> Arcos Dorados Holdings Inc.
-    <b>GDS</b> GDS Holdings Ltd
-  〈장후〉
-    <b>NVDA</b> NVIDIA Corp.
-    <b>ELF</b> e.l.f. Beauty, Inc.
-    <b>INTU</b> Intuit Inc.
-    <b>SBLK</b> Star Bulk Carriers Corp
-    <b>URBN</b> Urban Outfitters, Inc
-    <b>NDSN</b> Nordson Corp.
-    <b>STEP</b> StepStone Group Inc.
-    <b>ENS</b> EnerSys
 
 <b>05/21 (목) · 16종목</b>
   〈장전〉
-    <b>NIO</b> NIO Inc.
     <b>WMT</b> Walmart Inc.
+    <b>NIO</b> NIO Inc.
     <b>DE</b> Deere & Company
+    <b>RL</b> Ralph Lauren Corporation
     <b>AAP</b> Advance Auto Parts Inc.
     <b>WMS</b> Advanced Drainage Systems, Inc.
-    <b>RL</b> Ralph Lauren Corporation
+    <b>NTES</b> NetEase, Inc.
     <b>DAVA</b> Endava
     <b>LSPD</b> Lightspeed Commerce Inc.
-    <b>NTES</b> NetEase, Inc.
   〈장후〉
-    <b>DECK</b> Deckers Brands
     <b>WDAY</b> Workday, Inc.
-    <b>TTWO</b> Take-Two Interactive Software, Inc.
+    <b>DECK</b> Deckers Brands
     <b>BULL</b> Webull Corporation
+    <b>TTWO</b> Take-Two Interactive Software, Inc.
     <b>ZM</b> Zoom Communications, Inc.
     <b>ROST</b> Ross Stores Inc.
     <b>CPRT</b> Copart Inc.
@@ -63,3 +42,18 @@
     <b>SNOW</b> Snowflake
     <b>HPQ</b> HP Inc.
     <b>SNPS</b> Synopsys, Inc.
+
+<b>05/28 (목) · 11종목</b>
+  〈장전〉
+    <b>BBY</b> Best Buy Co., Inc.
+    <b>PLAB</b> Photronics, Inc.
+    <b>HRL</b> Hormel Foods Corp.
+  〈장후〉
+    <b>DELL</b> Dell Technologies
+    <b>PATH</b> UiPath, Inc.
+    <b>MDB</b> MongoDB, Inc.
+    <b>COST</b> Costco Wholesale Corp.
+    <b>ADSK</b> Autodesk, Inc.
+    <b>ESTC</b> Elastic N.V.
+    <b>S</b> SentinelOne, Inc. 
+    <b>OKTA</b> Okta, Inc.
