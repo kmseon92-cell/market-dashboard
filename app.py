@@ -102,7 +102,7 @@ def _fetch_stooq(sym: str):
     import urllib.request
     url = f"https://stooq.com/q/l/?s={sym}&f=sd2t2ohlcvp&h&e=csv"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    text = urllib.request.urlopen(req, timeout=5).read().decode().strip()
+    text = urllib.request.urlopen(req, timeout=3).read().decode().strip()
     lines = text.splitlines()
     if len(lines) < 2:
         raise ValueError("no data")
@@ -118,11 +118,38 @@ def _fetch_stooq(sym: str):
 
 
 def _fetch_yf(symbol: str):
-    info = yf.Ticker(symbol).info
-    last = float(info.get("regularMarketPrice"))
-    prev = float(info.get("regularMarketPreviousClose"))
+    # .info는 Streamlit Cloud에서 자주 rate-limit. chart API(.history)가 더 안정.
+    hist = yf.Ticker(symbol).history(period="2d", auto_adjust=False, timeout=4)
+    if hist is None or len(hist) < 2:
+        raise ValueError("yf history empty")
+    last = float(hist["Close"].iloc[-1])
+    prev = float(hist["Close"].iloc[-2])
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
+    return {"price": last, "change": change, "pct": pct}
+
+
+# 네이버 marketindex/exchange (KRW=X, JPY=X 등 환율 fallback)
+NAVER_EXCHANGE_MAP = {
+    "KRW=X": "FX_USDKRW",
+    "JPY=X": "FX_USDJPY",
+    "DX-Y.NYB": "FX_USDX",
+}
+
+
+def _fetch_naver_exchange(symbol: str):
+    import urllib.request, json
+    code = NAVER_EXCHANGE_MAP[symbol]
+    url = f"https://api.stock.naver.com/marketindex/exchange/{code}"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"})
+    data = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+    info = data.get("exchangeInfo") or {}
+    last = float(str(info["closePrice"]).replace(",", ""))
+    change = float(str(info["fluctuations"]).replace(",", ""))
+    pct = float(str(info["fluctuationsRatio"]).replace(",", ""))
+    if info.get("fluctuationsType", {}).get("code") in ("4", "5"):  # 하한/하락
+        change = -abs(change)
+        pct = -abs(pct)
     return {"price": last, "change": change, "pct": pct}
 
 
@@ -139,7 +166,7 @@ def _fetch_cnbc_yield(symbol: str):
     tag = CNBC_YIELD_TAG[symbol]
     url = f"https://www.cnbc.com/quotes/{tag}"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
-    text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
+    text = urllib.request.urlopen(req, timeout=4).read().decode(errors="ignore")
     m_last = re.search(r'QuoteStrip-lastPrice"?[^>]*>([0-9.]+)', text)
     m_up = re.search(r'QuoteStrip-changeUp[^<]*<[^>]+>[\s\S]{0,200}?<span>([+\-0-9.]+)', text)
     m_dn = re.search(r'QuoteStrip-changeDown[^<]*<[^>]+>[\s\S]{0,200}?<span>([+\-0-9.]+)', text)
@@ -168,7 +195,7 @@ def _fetch_investing(symbol: str):
         "Accept-Language": "en-US,en;q=0.9",
         "Referer": "https://www.investing.com/",
     })
-    text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
+    text = urllib.request.urlopen(req, timeout=4).read().decode(errors="ignore")
     m_last = re.search(r'data-test="instrument-price-last"[^>]*>([0-9,.]+)', text)
     m_chg = re.search(r'data-test="instrument-price-change"[^>]*>([+\-0-9,.]+)', text)
     m_pct = re.search(r'data-test="instrument-price-change-percent"[^>]*>\(?([+\-0-9.]+)', text)
@@ -190,32 +217,37 @@ STOOQ_FIRST = {
 
 @st.cache_data(ttl=30)
 def fetch_quote(symbol: str):
-    try:
-        if symbol in NAVER_INDEX_MAP:
-            return _fetch_naver_kr(NAVER_INDEX_MAP[symbol])
-        if symbol in CNBC_YIELD_TAG:
-            # 국채금리: CNBC 우선(가벼움) → investing.com fallback. yfinance는 폐장 시 stale이라 fallback X
-            try:
-                return _fetch_cnbc_yield(symbol)
-            except Exception as e1:
-                try:
-                    return _fetch_investing(symbol)
-                except Exception as e2:
-                    return {"error": f"cnbc:{e1} / investing:{e2}"}
-        if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
-            try:
-                return _fetch_stooq(STOOQ_MAP[symbol])
-            except Exception:
-                return _fetch_yf(symbol)
-        # 우선 yfinance, 실패/이상 시 stooq fallback
+    errs: list[str] = []
+
+    def try_(name, fn):
         try:
-            return _fetch_yf(symbol)
-        except Exception:
-            if symbol in STOOQ_MAP:
-                return _fetch_stooq(STOOQ_MAP[symbol])
-            raise
-    except Exception as e:
-        return {"error": str(e)}
+            return fn()
+        except Exception as e:
+            errs.append(f"{name}:{e}")
+            return None
+
+    if symbol in NAVER_INDEX_MAP:
+        r = try_("naver_kr", lambda: _fetch_naver_kr(NAVER_INDEX_MAP[symbol]))
+        if r: return r
+    if symbol in CNBC_YIELD_TAG:
+        r = try_("cnbc", lambda: _fetch_cnbc_yield(symbol)) or try_("investing", lambda: _fetch_investing(symbol))
+        return r or {"error": " / ".join(errs)}
+
+    # 국제 지수/환율/선물: stooq → 네이버 환율 → yfinance 순. yfinance .info는 Streamlit Cloud rate-limit 빈번.
+    sources = []
+    if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
+        sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
+    if symbol in NAVER_EXCHANGE_MAP:
+        sources.append(("naver_fx", lambda: _fetch_naver_exchange(symbol)))
+    sources.append(("yfinance", lambda: _fetch_yf(symbol)))
+    if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
+        sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
+
+    for name, fn in sources:
+        r = try_(name, fn)
+        if r:
+            return r
+    return {"error": " / ".join(errs)}
 
 
 def format_price(symbol: str, price: float) -> str:
@@ -382,11 +414,20 @@ def render_card(
     st.markdown(html, unsafe_allow_html=True)
 
 
+@st.cache_data(ttl=30)
+def fetch_all_quotes(symbols: tuple) -> dict:
+    """모든 심볼을 병렬로 fetch (개별 fetch_quote에도 캐시 있어 hot path는 즉시)"""
+    from concurrent.futures import ThreadPoolExecutor
+    with ThreadPoolExecutor(max_workers=12) as ex:
+        return dict(zip(symbols, ex.map(fetch_quote, symbols)))
+
+
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_quotes():
     all_symbols = tuple(
         sym for rows in TICKERS.values() for row in rows for sym in row.values()
     )
+    quotes = fetch_all_quotes(all_symbols)
     ytd_map = fetch_yf_ytd(all_symbols)
     for group, rows in TICKERS.items():
         st.markdown(f"<h5 style='margin:10px 0 6px 0;color:#000;'>{group}</h5>", unsafe_allow_html=True)
@@ -397,7 +438,7 @@ def render_quotes():
             for col, (name, symbol) in zip(cols, row.items()):
                 with col:
                     render_card(
-                        name, symbol, fetch_quote(symbol), ytd_map.get(symbol),
+                        name, symbol, quotes.get(symbol), ytd_map.get(symbol),
                         price_first=price_first,
                     )
     st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
