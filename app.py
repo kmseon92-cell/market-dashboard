@@ -180,8 +180,12 @@ def _fetch_investing(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# yfinance .info가 전일종가=현재가로 고정 반환하는 종목은 stooq 우선
-STOOQ_FIRST = {"CL=F"}
+# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 국제 지수/환율/선물은 stooq 우선
+STOOQ_FIRST = {
+    "CL=F", "NQ=F",
+    "^N225", "000001.SS", "^TWII",
+    "KRW=X", "JPY=X", "DX-Y.NYB",
+}
 
 
 @st.cache_data(ttl=30)
