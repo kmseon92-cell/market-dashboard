@@ -1,153 +1,177 @@
-<!-- updated: 2026-05-22 06:30 -->
+<!-- updated: 2026-05-23 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-05-22
+📅 2026-05-23
 ━━━━━━━━━━━━━━━
-다우 +0.55% | 나스닥 +0.09% | S&P500 +0.17% | 러셀2000 +0.93% | 필반도체 +1.28% | WTI $98.00 | 환율 1,503원
+다우 +0.58% | 나스닥 +0.19% | S&P500 +0.37% | 러셀2000 +0.91% | 필반도체 +1.99% | WTI $97.00 | 환율 1,521원
 
-📈 <b>52주 신고가 (44종목)</b>
+📈 <b>52주 신고가 (62종목)</b>
 
 <b>〈기술〉</b>
   <b>AAPL</b> Apple Inc
-    $304.99 (+0.9%) | $4.5T
-  <b>ARM</b> Arm Holdings Plc ADR 🔥
-    $298.23 (+16.2%) | $317.3B
+    $308.82 (+1.3%) | $4.5T
+  <b>AMD</b> Advanced Micro Devices Inc
+    $467.51 (+4.0%) | $762.3B
+  <b>ARM</b> Arm Holdings Plc ADR
+    $306.51 (+2.8%) | $326.1B
+  <b>ASML</b> ASML Holding NV
+    $1,632.90 (+2.6%) | $629.4B
+  <b>CSCO</b> Cisco Systems Inc
+    $120.41 (+1.9%) | $474.6B
   <b>LRCX</b> Lam Research Corp
-    $302.24 (+3.5%) | $378.0B
+    $305.35 (+1.0%) | $381.9B
   <b>PANW</b> Palo Alto Networks Inc
-    $252.92 (+2.5%) | $206.4B
+    $260.58 (+3.0%) | $212.6B
+  <b>TXN</b> Texas Instruments Inc
+    $309.21 (+3.6%) | $281.4B
   <b>ALAB</b> Astera Labs Inc
-    $297.84 (+3.6%) | $51.0B
-  <b>APLD</b> Applied Digital Corp 🔥
-    $48.02 (+21.5%) | $13.7B
+    $306.88 (+3.0%) | $52.6B
+  <b>ARW</b> Arrow Electronics Inc
+    $217.33 (+2.1%) | $11.1B
+  <b>CDNS</b> Cadence Design Systems Inc
+    $373.59 (+4.2%) | $103.0B
+  <b>CIEN</b> CIENA Corp
+    $583.74 (-0.6%) | $82.5B
+  <b>CRDO</b> Credo Technology Group Holding Ltd 🔥
+    $218.41 (+12.9%) | $40.3B
   <b>CRWD</b> Crowdstrike Holdings Inc
-    $648.23 (-0.3%) | $165.0B
-  <b>DOCN</b> DigitalOcean Holdings Inc
-    $158.35 (-1.1%) | $16.5B
+    $663.46 (+2.4%) | $168.9B
+  <b>DDOG</b> Datadog Inc
+    $222.32 (+2.0%) | $79.2B
+  <b>DELL</b> Dell Technologies Inc 🔥
+    $295.19 (+16.8%) | $192.6B
   <b>ERIC</b> Telefonaktiebolaget L M Ericsson ADR
-    $13.24 (+1.9%) | $40.7B
-  <b>GFS</b> GlobalFoundries Inc 🔥
-    $81.35 (+14.9%) | $45.3B
+    $13.50 (+2.0%) | $41.5B
+  <b>FFIV</b> F5 Inc
+    $393.63 (+2.6%) | $22.2B
+  <b>FTNT</b> Fortinet Inc
+    $133.93 (+3.5%) | $98.1B
+  <b>GFS</b> GlobalFoundries Inc
+    $85.64 (+5.3%) | $47.6B
+  <b>HPE</b> Hewlett Packard Enterprise Co 🔥
+    $37.58 (+10.6%) | $49.9B
   <b>LSCC</b> Lattice Semiconductor Corp
-    $139.35 (+0.4%) | $19.1B
+    $143.22 (+2.8%) | $19.6B
   <b>MRVL</b> Marvell Technology Inc
-    $190.69 (+2.1%) | $167.0B
+    $196.33 (+3.0%) | $171.9B
+  <b>NOK</b> Nokia Corp ADR 🔥
+    $15.47 (+9.1%) | $86.5B
+  <b>NTAP</b> Netapp Inc 🔥
+    $139.36 (+12.4%) | $27.5B
+  <b>NXPI</b> NXP Semiconductors NV
+    $316.47 (+5.7%) | $79.9B
   <b>SMTC</b> Semtech Corp
-    $146.53 (+3.3%) | $13.6B
+    $156.78 (+7.0%) | $14.6B
   <b>STM</b> ST Microelectronics
-    $65.66 (+1.1%) | $58.4B
-  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.32 (+0.2%) | $58.2B
-  <b>UMC</b> United Micro Electronics ADR
-    $18.35 (+4.5%) | $46.2B
+    $66.86 (+1.8%) | $59.4B
+  <b>TSEM</b> Tower Semiconductor Ltd
+    $283.43 (+1.6%) | $31.7B
+  <b>TTMI</b> TTM Technologies Inc 🔥
+    $189.92 (+8.8%) | $19.7B
+  <b>VRSN</b> Verisign Inc
+    $310.00 (+1.3%) | $28.2B
+  <b>ZM</b> Zoom Communications Inc 🔥
+    $105.64 (+9.2%) | $31.1B
 
 <b>〈금융〉</b>
   <b>GS</b> Goldman Sachs Group Inc
-    $988.17 (+0.6%) | $291.5B
+    $996.73 (+0.9%) | $294.1B
   <b>MS</b> Morgan Stanley
-    $200.51 (+1.4%) | $316.3B
+    $201.03 (+0.3%) | $317.1B
   <b>RY</b> Royal Bank Of Canada
-    $189.18 (+1.1%) | $264.2B
-  <b>AEG</b> Aegon Ltd
-    $8.64 (+0.7%) | $13.0B
+    $189.71 (+0.3%) | $264.9B
   <b>BMO</b> Bank of Montreal
-    $159.73 (+1.2%) | $112.8B
+    $160.93 (+0.8%) | $113.7B
   <b>BNS</b> Bank Of Nova Scotia
-    $79.43 (+0.6%) | $97.9B
+    $79.78 (+0.4%) | $98.3B
   <b>BNY</b> Bank Of New York Mellon Corp
-    $138.98 (+1.3%) | $95.4B
+    $139.15 (+0.1%) | $95.5B
   <b>CM</b> Canadian Imperial Bank Of Commerce
-    $114.86 (+0.4%) | $106.4B
+    $115.49 (+0.6%) | $107.0B
   <b>IX</b> Orix Corp ADR
-    $39.26 (+1.6%) | $43.2B
+    $38.85 (-1.0%) | $42.8B
   <b>MET</b> Metlife Inc
-    $84.30 (+2.2%) | $54.2B
+    $84.06 (-0.3%) | $54.1B
   <b>PFG</b> Principal Financial Group Inc
-    $103.92 (+1.1%) | $22.4B
+    $103.85 (-0.1%) | $22.4B
   <b>TD</b> Toronto Dominion Bank
-    $111.11 (+1.4%) | $187.7B
-  <b>UNM</b> Unum Group
-    $84.49 (+0.8%) | $13.5B
-
-<b>〈산업재〉</b>
-  <b>BE</b> Bloom Energy Corp 🔥
-    $307.88 (+9.1%) | $87.6B
+    $111.87 (+0.7%) | $189.0B
 
 <b>〈헬스케어〉</b>
-  <b>BTSG</b> BrightSpring Health Services Inc
-    $57.99 (-1.0%) | $11.2B
-  <b>GH</b> Guardant Health Inc
-    $118.01 (+2.6%) | $15.7B
+  <b>AXSM</b> Axsome Therapeutics Inc
+    $235.97 (+1.0%) | $12.1B
+  <b>JAZZ</b> Jazz Pharmaceuticals plc
+    $239.83 (+0.2%) | $15.1B
   <b>RPRX</b> Royalty Pharma plc
-    $53.55 (+0.9%) | $30.8B
+    $54.50 (+1.8%) | $31.4B
+  <b>RVMD</b> Revolution Medicines Inc
+    $151.56 (-1.4%) | $32.2B
+
+<b>〈산업재〉</b>
+  <b>BE</b> Bloom Energy Corp
+    $302.49 (-1.8%) | $86.0B
+  <b>DAL</b> Delta Air Lines Inc
+    $76.14 (+0.7%) | $50.0B
+  <b>RKLB</b> Rocket Lab Corp 🔥
+    $135.76 (+8.2%) | $78.6B
 
 <b>〈필수소비재〉</b>
   <b>BUD</b> Anheuser-Busch InBev SA/NV ADR
-    $83.36 (+1.0%) | $144.1B
+    $83.45 (+0.1%) | $144.3B
 
 <b>〈에너지〉</b>
   <b>ENB</b> Enbridge Inc
-    $57.79 (+1.2%) | $126.2B
+    $58.04 (+0.4%) | $126.7B
   <b>PAA</b> Plains All American Pipeline LP
-    $23.68 (+1.5%) | $16.7B
-  <b>PBA</b> Pembina Pipeline Corp
-    $49.32 (+0.1%) | $28.7B
+    $24.15 (+2.0%) | $17.0B
+  <b>PAGP</b> Plains GP Holdings LP
+    $25.95 (+1.7%) | $19.8B
+  <b>SLB</b> SLB Ltd
+    $57.28 (+0.1%) | $85.6B
   <b>TRP</b> TC Energy Corp
-    $70.56 (+0.7%) | $73.5B
-  <b>YPF</b> YPF ADR
-    $47.94 (+1.9%) | $18.9B
+    $70.91 (+0.5%) | $73.8B
+
+<b>〈경기소비재〉</b>
+  <b>F</b> Ford Motor Co 🔥
+    $14.93 (+9.2%) | $59.5B
+  <b>ROST</b> Ross Stores Inc 🔥
+    $234.81 (+8.1%) | $75.6B
 
 <b>〈부동산〉</b>
   <b>FRT</b> Federal Realty Investment Trust
-    $118.61 (+2.2%) | $10.3B
-  <b>HST</b> Host Hotels & Resorts Inc
-    $22.41 (+0.5%) | $15.3B
+    $119.75 (+1.0%) | $10.4B
+  <b>PLD</b> Prologis Inc
+    $145.90 (+0.9%) | $138.9B
 
 <b>〈커뮤니케이션〉</b>
   <b>GSAT</b> Globalstar Inc
-    $82.71 (+0.3%) | $10.6B
-  <b>TIGO</b> Millicom International Cellular SA
-    $86.81 (+3.2%) | $14.5B
+    $83.00 (+0.3%) | $10.7B
   <b>WMG</b> Warner Music Group Corp
-    $34.58 (+1.9%) | $18.1B
+    $34.72 (+0.4%) | $18.1B
 
-🚀 <b>8% 이상 급등 (12종목)</b>
+🚀 <b>8% 이상 급등 (9종목)</b>
 
 <b>〈기술〉</b>
-  <b>IBM</b> International Business Machines Corp
-    $252.97 (+12.4%) | $237.8B
-  <b>SNDK</b> Sandisk Corp
-    $1,542.24 (+10.8%) | $228.4B
+  <b>QCOM</b> Qualcomm Inc
+    $238.16 (+11.6%) | $251.0B
+  <b>ASTS</b> AST SpaceMobile Inc
+    $105.86 (+10.0%) | $41.1B
+  <b>HPQ</b> HP Inc
+    $25.24 (+15.2%) | $23.1B
   <b>IONQ</b> IonQ Inc
-    $58.89 (+12.2%) | $22.0B
-  <b>LITE</b> Lumentum Holdings Inc
-    $964.50 (+11.1%) | $75.0B
-  <b>NBIS</b> Nebius Group NV
-    $219.93 (+14.6%) | $55.4B
+    $63.64 (+8.1%) | $23.8B
+  <b>P</b> Everpure Inc
+    $87.20 (+10.4%) | $29.0B
+  <b>QBTS</b> D-Wave Quantum Inc
+    $29.40 (+14.2%) | $10.9B
+  <b>SWKS</b> Skyworks Solutions Inc
+    $82.42 (+12.1%) | $12.4B
+
+<b>〈필수소비재〉</b>
+  <b>EL</b> Estee Lauder Cos. Inc
+    $88.32 (+11.9%) | $31.9B
 
 <b>〈산업재〉</b>
-  <b>FPS</b> Forgent Power Solutions Inc
-    $48.52 (+8.4%) | $14.8B
-
-<b>〈유틸리티〉</b>
-  <b>FRVO</b> Fervo Energy Co
-    $42.50 (+11.8%) | $12.1B
-
-<b>〈금융〉</b>
-  <b>HUT</b> Hut 8 Corp
-    $105.26 (+9.1%) | $11.8B
-  <b>IREN</b> IREN Ltd
-    $58.06 (+10.2%) | $20.7B
-
-<b>〈소재〉</b>
-  <b>MP</b> MP Materials Corp
-    $61.74 (+9.3%) | $11.0B
-
-<b>〈경기소비재〉</b>
-  <b>RL</b> Ralph Lauren Corp
-    $374.90 (+13.9%) | $22.7B
-
-<b>〈커뮤니케이션〉</b>
-  <b>SPOT</b> Spotify Technology SA
-    $489.93 (+13.1%) | $100.8B
+  <b>GNRC</b> Generac Holdings Inc
+    $270.14 (+9.0%) | $15.9B
 
 
