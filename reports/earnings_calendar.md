@@ -1,9 +1,9 @@
-<!-- updated: 2026-05-23 06:03 -->
+<!-- updated: 2026-05-24 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-05-23 06:03 KST
+기준: 2026-05-24 06:02 KST
 ━━━━━━━━━━━━━━━
 
-<b>05/26 (화) · 8종목</b>
+<b>05/26 (화) · 10종목</b>
   〈장전〉
     <b>ESLT</b> Elbit Systems Ltd.
     <b>AZO</b> AutoZone, Inc.
@@ -13,14 +13,16 @@
     <b>SQM</b> Chemical & Mining Co. of Chile Inc.
     <b>BOX</b> Box, Inc.
     <b>MOD</b> Modine Manufacturing Co.
+    <b>SMTC</b> Semtech Corp.
+    <b>OOMA</b> Ooma, Inc.
     <b>API</b> Agora, Inc.
 
 <b>05/27 (수) · 10종목</b>
   〈장전〉
     <b>DKS</b> DICK'S Sporting Goods, Inc.
-    <b>ANF</b> Abercrombie & Fitch Co.
-    <b>BNS</b> Bank of Nova Scotia
     <b>PDD</b> Pinduoduo Inc.
+    <b>BNS</b> Bank of Nova Scotia
+    <b>ANF</b> Abercrombie & Fitch Co.
   〈장후〉
     <b>MRVL</b> Marvell Technology, Inc. 
     <b>CRM</b> Salesforce
@@ -29,11 +31,12 @@
     <b>HPQ</b> HP Inc.
     <b>P</b> Everpure
 
-<b>05/28 (목) · 11종목</b>
+<b>05/28 (목) · 12종목</b>
   〈장전〉
     <b>BBY</b> Best Buy Co., Inc.
     <b>PLAB</b> Photronics, Inc.
     <b>HRL</b> Hormel Foods Corp.
+    <b>XPEV</b> XPeng Inc.
   〈장후〉
     <b>DELL</b> Dell Technologies
     <b>PATH</b> UiPath, Inc.
