@@ -480,30 +480,45 @@ if us_summary:
 
 
 # 🏦 CME FedWatch — 12개월 FOMC 금리 경로
-FEDWATCH_URL = "https://www.investing.com/central-banks/fed-rate-monitor"
+# Streamlit Cloud의 IP는 investing.com www 도메인에서 차단되는 경우가 잦아 mirror들을 순회.
+FEDWATCH_URLS = [
+    "https://www.investing.com/central-banks/fed-rate-monitor",
+    "https://kr.investing.com/central-banks/fed-rate-monitor",
+    "https://uk.investing.com/central-banks/fed-rate-monitor",
+    "https://m.investing.com/central-banks/fed-rate-monitor",
+]
 
 
 @st.cache_data(ttl=3600)
 def fetch_fedwatch() -> dict:
     """investing.com Fed Rate Monitor 스크래핑.
     CME 30일 Fed Funds 선물 기반 (FedWatch와 동일 원천).
-    반환: {"meetings": [...], "updated": str, "baseline_rate": "3.50 - 3.75"}
+    반환: {"meetings": [...], "updated": str, "baseline_rate": "3.50 - 3.75", "error": str}
     """
     import urllib.request
-    try:
-        req = urllib.request.Request(
-            FEDWATCH_URL,
-            headers={
-                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                              "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                "Accept": "text/html,application/xhtml+xml",
-                "Accept-Language": "en-US,en;q=0.9",
-                "Referer": "https://www.investing.com/",
-            },
-        )
-        text = urllib.request.urlopen(req, timeout=8).read().decode(errors="ignore")
-    except Exception:
-        return {"meetings": [], "updated": "", "baseline_rate": None}
+    text = ""
+    errs: list[str] = []
+    for url in FEDWATCH_URLS:
+        try:
+            req = urllib.request.Request(
+                url,
+                headers={
+                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                    "Accept": "text/html,application/xhtml+xml",
+                    "Accept-Language": "en-US,en;q=0.9",
+                    "Referer": "https://www.google.com/",
+                },
+            )
+            text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
+            if "cardWrapper" in text and "fedRateDate" in text:
+                break
+            errs.append(f"{url.split('//')[1].split('/')[0]}: no fedrate markers")
+            text = ""
+        except Exception as e:
+            errs.append(f"{url.split('//')[1].split('/')[0]}: {type(e).__name__}")
+    if not text:
+        return {"meetings": [], "updated": "", "baseline_rate": None, "error": " / ".join(errs)}
 
     meetings: list[dict] = []
     updated = ""
@@ -557,7 +572,8 @@ def render_fedwatch() -> None:
     data = fetch_fedwatch()
     meetings = data.get("meetings", [])
     if not meetings:
-        st.caption("_FedWatch 데이터 fetch 실패_")
+        err = data.get("error", "")
+        st.caption(f"_FedWatch 데이터 fetch 실패{(' · ' + err) if err else ''}_")
         return
 
     baseline = data.get("baseline_rate")
