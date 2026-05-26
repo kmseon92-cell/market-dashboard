@@ -480,88 +480,23 @@ if us_summary:
 
 
 # 🏦 CME FedWatch — 12개월 FOMC 금리 경로
-# Streamlit Cloud의 IP는 investing.com www 도메인에서 차단되는 경우가 잦아 mirror들을 순회.
-FEDWATCH_URLS = [
-    "https://www.investing.com/central-banks/fed-rate-monitor",
-    "https://kr.investing.com/central-banks/fed-rate-monitor",
-    "https://uk.investing.com/central-banks/fed-rate-monitor",
-    "https://m.investing.com/central-banks/fed-rate-monitor",
-]
+# Streamlit Cloud의 IP에서 investing.com이 차단되므로 맥미니에서 미리 fetch한
+# reports/fedwatch.json을 읽기. fetcher는 ~/Projects/bumgorae/fedwatch/fetch.py.
 
 
-@st.cache_data(ttl=3600)
+@st.cache_data(ttl=300)
 def fetch_fedwatch() -> dict:
-    """investing.com Fed Rate Monitor 스크래핑.
-    CME 30일 Fed Funds 선물 기반 (FedWatch와 동일 원천).
-    반환: {"meetings": [...], "updated": str, "baseline_rate": "3.50 - 3.75", "error": str}
-    """
-    import urllib.request
-    text = ""
-    errs: list[str] = []
-    for url in FEDWATCH_URLS:
-        try:
-            req = urllib.request.Request(
-                url,
-                headers={
-                    "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
-                                  "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-                    "Accept": "text/html,application/xhtml+xml",
-                    "Accept-Language": "en-US,en;q=0.9",
-                    "Referer": "https://www.google.com/",
-                },
-            )
-            text = urllib.request.urlopen(req, timeout=10).read().decode(errors="ignore")
-            if "cardWrapper" in text and "fedRateDate" in text:
-                break
-            errs.append(f"{url.split('//')[1].split('/')[0]}: no fedrate markers")
-            text = ""
-        except Exception as e:
-            errs.append(f"{url.split('//')[1].split('/')[0]}: {type(e).__name__}")
-    if not text:
-        return {"meetings": [], "updated": "", "baseline_rate": None, "error": " / ".join(errs)}
-
-    meetings: list[dict] = []
-    updated = ""
-    for block in re.split(r'<div class="cardWrapper">', text)[1:]:
-        m_date = re.search(
-            r'id="cardName_\d+">\s*([A-Z][a-z]{2}\s+\d{1,2},\s+\d{4})', block
-        )
-        if not m_date:
-            continue
-        m_fp = re.search(r'Future Price:</span>\s*<i>([0-9.]+)</i>', block)
-        future_price = float(m_fp.group(1)) if m_fp else None
-
-        rows_m = re.search(r'<tbody>(.*?)</tbody>', block, re.DOTALL)
-        if not rows_m:
-            continue
-        probs: list[tuple[str, float]] = []
-        for tr in re.findall(r'<tr>(.*?)</tr>', rows_m.group(1), re.DOTALL):
-            m_rng = re.search(r'<td class="left">([\d.]+\s*-\s*[\d.]+)', tr)
-            if not m_rng:
-                continue
-            tds = re.findall(r'<td>(.*?)</td>', tr, re.DOTALL)
-            if not tds:
-                continue
-            cur = tds[0].strip()
-            cur_v = 0.0 if cur in ("&mdash;", "—") else float(cur.replace("%", ""))
-            probs.append((m_rng.group(1).strip(), cur_v))
-        if not probs:
-            continue
-
-        m_upd = re.search(r'Updated:\s*([^<]+?)\s*</div>', block)
-        if m_upd and not updated:
-            updated = m_upd.group(1).strip()
-
-        meetings.append({
-            "date": m_date.group(1).strip(),
-            "future_price": future_price,
-            "probs": probs,
-        })
-
-    baseline = None
-    if meetings and meetings[0]["probs"]:
-        baseline = max(meetings[0]["probs"], key=lambda x: x[1])[0]
-    return {"meetings": meetings, "updated": updated, "baseline_rate": baseline}
+    """reports/fedwatch.json 로드. 맥미니 fetcher가 주기적으로 업데이트."""
+    p = os.path.join(os.path.dirname(__file__), "reports", "fedwatch.json")
+    if not os.path.exists(p):
+        return {"meetings": [], "updated": "", "baseline_rate": None,
+                "error": "fedwatch.json 없음 (맥미니 fetcher 첫 실행 대기)"}
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        return {"meetings": [], "updated": "", "baseline_rate": None,
+                "error": f"{type(e).__name__}: {e}"}
 
 
 def _rate_low(rng: str) -> float:
