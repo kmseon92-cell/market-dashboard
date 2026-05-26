@@ -129,6 +129,23 @@ def _fetch_yf(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+def _fetch_yf_chart(symbol: str):
+    """Yahoo Finance v8 chart API 직접 호출. yfinance 라이브러리 우회 (rate-limit 회피)."""
+    import urllib.request, json as _json, urllib.parse
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}?interval=1d&range=5d"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    data = _json.loads(urllib.request.urlopen(req, timeout=4).read().decode())
+    result = data.get("chart", {}).get("result")
+    if not result:
+        raise ValueError("yf chart: no result")
+    meta = result[0].get("meta") or {}
+    last = float(meta["regularMarketPrice"])
+    prev = float(meta["chartPreviousClose"])
+    change = last - prev
+    pct = (change / prev * 100) if prev else 0.0
+    return {"price": last, "change": change, "pct": pct}
+
+
 # 네이버 marketindex/exchange (KRW=X, JPY=X 등 환율 fallback)
 NAVER_EXCHANGE_MAP = {
     "KRW=X": "FX_USDKRW",
@@ -233,12 +250,14 @@ def fetch_quote(symbol: str):
         r = try_("cnbc", lambda: _fetch_cnbc_yield(symbol)) or try_("investing", lambda: _fetch_investing(symbol))
         return r or {"error": " / ".join(errs)}
 
-    # 국제 지수/환율/선물: stooq → 네이버 환율 → yfinance 순. yfinance .info는 Streamlit Cloud rate-limit 빈번.
+    # 국제 지수/환율/선물: stooq → 네이버 환율 → yahoo chart API → yfinance lib 순.
+    # yfinance .info / .history는 Streamlit Cloud rate-limit 빈번 → query1.finance.yahoo.com 직접 호출이 더 안정.
     sources = []
     if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
         sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
     if symbol in NAVER_EXCHANGE_MAP:
         sources.append(("naver_fx", lambda: _fetch_naver_exchange(symbol)))
+    sources.append(("yf_chart", lambda: _fetch_yf_chart(symbol)))
     sources.append(("yfinance", lambda: _fetch_yf(symbol)))
     if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
         sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
