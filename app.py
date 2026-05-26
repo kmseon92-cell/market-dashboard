@@ -478,6 +478,180 @@ if us_summary:
     )
     st.divider()
 
+
+# 🏦 CME FedWatch — 12개월 FOMC 금리 경로
+FEDWATCH_URL = "https://www.investing.com/central-banks/fed-rate-monitor"
+
+
+@st.cache_data(ttl=3600)
+def fetch_fedwatch() -> dict:
+    """investing.com Fed Rate Monitor 스크래핑.
+    CME 30일 Fed Funds 선물 기반 (FedWatch와 동일 원천).
+    반환: {"meetings": [...], "updated": str, "baseline_rate": "3.50 - 3.75"}
+    """
+    import urllib.request
+    try:
+        req = urllib.request.Request(
+            FEDWATCH_URL,
+            headers={
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                              "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Accept": "text/html,application/xhtml+xml",
+                "Accept-Language": "en-US,en;q=0.9",
+                "Referer": "https://www.investing.com/",
+            },
+        )
+        text = urllib.request.urlopen(req, timeout=8).read().decode(errors="ignore")
+    except Exception:
+        return {"meetings": [], "updated": "", "baseline_rate": None}
+
+    meetings: list[dict] = []
+    updated = ""
+    for block in re.split(r'<div class="cardWrapper">', text)[1:]:
+        m_date = re.search(
+            r'id="cardName_\d+">\s*([A-Z][a-z]{2}\s+\d{1,2},\s+\d{4})', block
+        )
+        if not m_date:
+            continue
+        m_fp = re.search(r'Future Price:</span>\s*<i>([0-9.]+)</i>', block)
+        future_price = float(m_fp.group(1)) if m_fp else None
+
+        rows_m = re.search(r'<tbody>(.*?)</tbody>', block, re.DOTALL)
+        if not rows_m:
+            continue
+        probs: list[tuple[str, float]] = []
+        for tr in re.findall(r'<tr>(.*?)</tr>', rows_m.group(1), re.DOTALL):
+            m_rng = re.search(r'<td class="left">([\d.]+\s*-\s*[\d.]+)', tr)
+            if not m_rng:
+                continue
+            tds = re.findall(r'<td>(.*?)</td>', tr, re.DOTALL)
+            if not tds:
+                continue
+            cur = tds[0].strip()
+            cur_v = 0.0 if cur in ("&mdash;", "—") else float(cur.replace("%", ""))
+            probs.append((m_rng.group(1).strip(), cur_v))
+        if not probs:
+            continue
+
+        m_upd = re.search(r'Updated:\s*([^<]+?)\s*</div>', block)
+        if m_upd and not updated:
+            updated = m_upd.group(1).strip()
+
+        meetings.append({
+            "date": m_date.group(1).strip(),
+            "future_price": future_price,
+            "probs": probs,
+        })
+
+    baseline = None
+    if meetings and meetings[0]["probs"]:
+        baseline = max(meetings[0]["probs"], key=lambda x: x[1])[0]
+    return {"meetings": meetings, "updated": updated, "baseline_rate": baseline}
+
+
+def _rate_low(rng: str) -> float:
+    return float(rng.split("-")[0].strip())
+
+
+def render_fedwatch() -> None:
+    data = fetch_fedwatch()
+    meetings = data.get("meetings", [])
+    if not meetings:
+        st.caption("_FedWatch 데이터 fetch 실패_")
+        return
+
+    baseline = data.get("baseline_rate")
+    base_low = _rate_low(baseline) if baseline else None
+    updated = data.get("updated", "")
+    st.caption(
+        f"기준 금리: {baseline}% · {('업데이트 ' + updated + ' · ') if updated else ''}"
+        f"출처: investing.com (CME 30일 Fed Funds 선물 기반)"
+    )
+
+    # 다음 회의 강조 카드
+    nxt = meetings[0]
+    top_rng, top_pct = max(nxt["probs"], key=lambda x: x[1])
+    direction, color = "동결", "#9ca3af"
+    if base_low is not None:
+        diff = _rate_low(top_rng) - base_low
+        if diff > 0.01:
+            direction = f"인상({int(round(diff * 100))}bp)"
+            color = "#ef4444"
+        elif diff < -0.01:
+            direction = f"인하({int(round(abs(diff) * 100))}bp)"
+            color = "#3b82f6"
+    # 모든 시나리오를 인하/동결/인상 누적
+    cut_p = sum(p for r, p in nxt["probs"] if base_low is not None and _rate_low(r) < base_low - 0.01)
+    hold_p = sum(p for r, p in nxt["probs"] if base_low is not None and abs(_rate_low(r) - base_low) <= 0.01)
+    hike_p = sum(p for r, p in nxt["probs"] if base_low is not None and _rate_low(r) > base_low + 0.01)
+    st.markdown(
+        f'<div style="padding:14px 18px;border:2px solid {color};border-radius:10px;'
+        f'background:#fef9c3;margin-bottom:14px;color:#000;">'
+        f'<div style="font-size:0.85rem;color:#444;">다음 FOMC</div>'
+        f'<div style="font-size:1.5rem;font-weight:800;">{nxt["date"]}</div>'
+        f'<div style="font-size:1.0rem;margin-top:6px;">'
+        f'유력 시나리오: <b>{top_rng}%</b> · '
+        f'<span style="color:{color};font-weight:800;">{direction} {top_pct:.1f}%</span>'
+        f'</div>'
+        f'<div style="font-size:0.95rem;margin-top:6px;color:#222;">'
+        f'<span style="color:#3b82f6;font-weight:700;">인하 {cut_p:.1f}%</span> · '
+        f'<span style="color:#666;font-weight:700;">동결 {hold_p:.1f}%</span> · '
+        f'<span style="color:#ef4444;font-weight:700;">인상 {hike_p:.1f}%</span>'
+        f'</div></div>',
+        unsafe_allow_html=True,
+    )
+
+    # 12개월 경로 표
+    def _cell(pct: float, color: str) -> str:
+        if pct < 0.5:
+            return '<td style="text-align:center;color:#bbb;padding:5px 8px;">-</td>'
+        return (
+            f'<td style="text-align:center;color:{color};font-weight:700;'
+            f'padding:5px 8px;">{pct:.1f}%</td>'
+        )
+
+    rows_html = []
+    for m in meetings:
+        probs = m["probs"]
+        cut = sum(p for r, p in probs if base_low is not None and _rate_low(r) < base_low - 0.01)
+        hold = sum(p for r, p in probs if base_low is not None and abs(_rate_low(r) - base_low) <= 0.01)
+        hike = sum(p for r, p in probs if base_low is not None and _rate_low(r) > base_low + 0.01)
+        top_r, top_p = max(probs, key=lambda x: x[1])
+        fp = f"{m['future_price']:.3f}" if m["future_price"] is not None else "-"
+        rows_html.append(
+            f'<tr>'
+            f'<td style="font-weight:600;color:#000;padding:5px 8px;white-space:nowrap;">{m["date"]}</td>'
+            f'<td style="text-align:center;color:#555;padding:5px 8px;">{fp}</td>'
+            f'{_cell(cut, "#3b82f6")}'
+            f'{_cell(hold, "#666")}'
+            f'{_cell(hike, "#ef4444")}'
+            f'<td style="color:#000;padding:5px 8px;white-space:nowrap;">'
+            f'{top_r}% <span style="color:#888;font-size:0.85rem;">({top_p:.0f}%)</span></td>'
+            f'</tr>'
+        )
+    table_html = (
+        f'<table style="width:100%;border-collapse:collapse;font-size:0.92rem;">'
+        f'<thead><tr style="background:#f3f4f6;color:#000;">'
+        f'<th style="padding:6px 8px;text-align:left;">FOMC</th>'
+        f'<th style="padding:6px 8px;">Future</th>'
+        f'<th style="padding:6px 8px;color:#3b82f6;">인하</th>'
+        f'<th style="padding:6px 8px;color:#666;">동결</th>'
+        f'<th style="padding:6px 8px;color:#ef4444;">인상</th>'
+        f'<th style="padding:6px 8px;text-align:left;">유력 시나리오</th>'
+        f'</tr></thead>'
+        f'<tbody>{"".join(rows_html)}</tbody></table>'
+    )
+    st.markdown(
+        f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
+        f'background:#fff;overflow-x:auto;">{table_html}</div>',
+        unsafe_allow_html=True,
+    )
+
+
+st.subheader("🏦 Fed 금리 경로 (CME FedWatch)")
+render_fedwatch()
+st.divider()
+
 import os
 REPORTS_DIR = os.path.join(os.path.dirname(__file__), "reports")
 
