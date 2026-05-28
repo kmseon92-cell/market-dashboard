@@ -224,10 +224,10 @@ def _fetch_investing(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 국제 지수/환율/선물은 stooq 우선
+# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 국제 지수/환율/선물은 stooq 우선.
+# 단, ^N225/000001.SS/^TWII는 stooq의 prev(전일 종가)가 어긋나 변동률이 틀어지므로 yahoo chart API 우선.
 STOOQ_FIRST = {
     "CL=F", "NQ=F",
-    "^N225", "000001.SS", "^TWII",
     "KRW=X", "JPY=X", "DX-Y.NYB",
 }
 
