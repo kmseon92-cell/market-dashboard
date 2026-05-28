@@ -5,6 +5,7 @@ import re
 import streamlit as st
 import yfinance as yf
 from datetime import datetime
+from zoneinfo import ZoneInfo
 import pandas as pd
 
 st.set_page_config(page_title="범고래 프로젝트", page_icon="🐳", layout="wide")
@@ -66,6 +67,15 @@ TICKERS = {
 
 NAVER_INDEX_MAP = {"^KS11": "KOSPI", "^KQ11": "KOSDAQ"}
 
+# 시장 현지 timezone — as_of 날짜와 시장 today를 비교해 stale 여부 판단
+SYMBOL_TZ = {
+    "^KS11": "Asia/Seoul",
+    "^KQ11": "Asia/Seoul",
+    "^N225": "Asia/Tokyo",
+    "000001.SS": "Asia/Shanghai",
+    "^TWII": "Asia/Taipei",
+}
+
 # 야후 심볼 → stooq 심볼
 STOOQ_MAP = {
     "^N225": "^nkx",
@@ -114,7 +124,7 @@ def _fetch_stooq(sym: str):
     prev = float(row[8])
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
-    return {"price": last, "change": change, "pct": pct}
+    return {"price": last, "change": change, "pct": pct, "as_of": row[1]}
 
 
 def _fetch_yf(symbol: str):
@@ -126,11 +136,15 @@ def _fetch_yf(symbol: str):
     prev = float(hist["Close"].iloc[-2])
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
-    return {"price": last, "change": change, "pct": pct}
+    as_of = hist.index[-1].strftime("%Y-%m-%d")
+    return {"price": last, "change": change, "pct": pct, "as_of": as_of}
 
 
 def _fetch_yf_chart(symbol: str):
-    """Yahoo Finance v8 chart API 직접 호출. yfinance 라이브러리 우회 (rate-limit 회피)."""
+    """Yahoo Finance v8 chart API 직접 호출. yfinance 라이브러리 우회 (rate-limit 회피).
+    주의: meta.chartPreviousClose는 어제 종가가 아니라 range 시작점 직전 값임.
+    prev는 반드시 timestamp 배열의 마지막에서 두 번째 close로 계산해야 함.
+    """
     import urllib.request, json as _json, urllib.parse
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}?interval=1d&range=5d"
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
@@ -138,12 +152,24 @@ def _fetch_yf_chart(symbol: str):
     result = data.get("chart", {}).get("result")
     if not result:
         raise ValueError("yf chart: no result")
-    meta = result[0].get("meta") or {}
-    last = float(meta["regularMarketPrice"])
-    prev = float(meta["chartPreviousClose"])
+    r = result[0]
+    meta = r.get("meta") or {}
+    ts = r.get("timestamp") or []
+    closes = ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
+    closes = [c for c in closes if c is not None]
+    if len(closes) < 2:
+        raise ValueError("yf chart: not enough closes")
+    last = float(meta.get("regularMarketPrice") or closes[-1])
+    prev = float(closes[-2])
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
-    return {"price": last, "change": change, "pct": pct}
+    market_tz = meta.get("exchangeTimezoneName") or "UTC"
+    last_ts = ts[-1] if ts else None
+    as_of = (
+        datetime.fromtimestamp(last_ts, ZoneInfo(market_tz)).strftime("%Y-%m-%d")
+        if last_ts else ""
+    )
+    return {"price": last, "change": change, "pct": pct, "as_of": as_of}
 
 
 # 네이버 marketindex/exchange (KRW=X, JPY=X 등 환율 fallback)
@@ -404,20 +430,33 @@ def render_card(
 
     price_str = format_price(symbol, q["price"])
 
+    # 시장 현지 today와 데이터 기준일이 다르면 stale 배지 (개장 전 / 휴장 / 데이터 지연)
+    stale_badge = ""
+    as_of = q.get("as_of") or ""
+    if symbol in SYMBOL_TZ and as_of:
+        market_today = datetime.now(ZoneInfo(SYMBOL_TZ[symbol])).strftime("%Y-%m-%d")
+        if as_of != market_today:
+            label = f"장 마감 · {as_of[5:]}"  # MM-DD
+            stale_badge = (
+                f'<span style="display:inline-block;font-size:0.7rem;font-weight:600;'
+                f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
+                f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
+            )
+
     # 나스닥 선물은 가격보다 % 변동률이 더 의미있어서 예외처리
     if symbol == "NQ=F":
         price_first = False
 
     if price_first:
         body_html = (
-            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}{stale_badge}</div>'
             f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">{price_str}</div>'
             f'<div style="font-size:1.67rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
             f'<div style="font-size:0.85rem;color:{color};">{change:+,.2f}</div>'
         )
     else:
         body_html = (
-            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}</div>'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}{stale_badge}</div>'
             f'<div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">{arrow} {pct:+.2f}%</div>'
             f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
             f'<div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">{price_str}</div>'
