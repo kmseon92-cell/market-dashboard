@@ -405,7 +405,7 @@ def render_card(
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
 
     price_val = q.get("price", 0)
-    danger = symbol == "^TNX" and price_val >= 5.0
+    danger = symbol == "^TNX" and price_val >= 4.0  # TEST: 원래 5.0
     warn = (
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
