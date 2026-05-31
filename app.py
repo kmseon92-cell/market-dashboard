@@ -417,7 +417,7 @@ def render_card(
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
 
     price_val = q.get("price", 0)
-    danger = symbol == "^TNX" and price_val >= 4.0  # TEST: 원래 5.0
+    danger = symbol == "^TNX" and price_val >= 5.0
     warn = (
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
@@ -439,7 +439,7 @@ def render_card(
         'letter-spacing:6px;text-align:center;border-radius:6px;'
         'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
         'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
-        'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황차</div>'
+        'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황챠</div>'
         if danger else ""
     )
 
