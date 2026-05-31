@@ -305,6 +305,18 @@ def format_price(symbol: str, price: float) -> str:
     return f"{price:,.2f}"
 
 
+st.markdown(
+    """
+    <style>
+    @keyframes bumgorae-pulse {
+      0%, 100% { transform: scale(1); box-shadow: 0 2px 10px rgba(220,38,38,0.5); }
+      50% { transform: scale(1.04); box-shadow: 0 4px 18px rgba(220,38,38,0.85); }
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 st.title("🐳 범고래 프로젝트")
 
 @st.cache_data(ttl=3600)
@@ -422,8 +434,12 @@ def render_card(
         card_bg = ""
         border = "border:1px solid #2a2a2a;"
     danger_html = (
-        '<div style="font-size:1.1rem;font-weight:800;color:#dc2626;'
-        'margin-top:4px;letter-spacing:1px;">돔황차</div>'
+        '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
+        'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
+        'letter-spacing:6px;text-align:center;border-radius:6px;'
+        'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
+        'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
+        'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황차</div>'
         if danger else ""
     )
 
