@@ -405,14 +405,27 @@ def render_card(
     arrow = "▲" if pct > 0 else ("▼" if pct < 0 else "■")
 
     price_val = q.get("price", 0)
-    highlight = (
+    danger = symbol == "^TNX" and price_val >= 5.0
+    warn = (
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
         or (symbol == "^TYX" and price_val >= 5.0)
         or (symbol == "CL=F" and price_val >= 100)
+    ) and not danger
+    if danger:
+        card_bg = "background:#fee2e2;"
+        border = "border:2px solid #dc2626;"
+    elif warn:
+        card_bg = "background:#fef08a;"
+        border = "border:2px solid #eab308;"
+    else:
+        card_bg = ""
+        border = "border:1px solid #2a2a2a;"
+    danger_html = (
+        '<div style="font-size:1.1rem;font-weight:800;color:#dc2626;'
+        'margin-top:4px;letter-spacing:1px;">돔황차</div>'
+        if danger else ""
     )
-    card_bg = "background:#fef08a;" if highlight else ""
-    border = "border:2px solid #eab308;" if highlight else "border:1px solid #2a2a2a;"
 
     chart_html = ""
     if ytd:
@@ -453,6 +466,7 @@ def render_card(
             f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">{price_str}</div>'
             f'<div style="font-size:1.67rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
             f'<div style="font-size:0.85rem;color:{color};">{change:+,.2f}</div>'
+            f'{danger_html}'
         )
     else:
         body_html = (
@@ -460,6 +474,7 @@ def render_card(
             f'<div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">{arrow} {pct:+.2f}%</div>'
             f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
             f'<div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">{price_str}</div>'
+            f'{danger_html}'
         )
 
     html = (
