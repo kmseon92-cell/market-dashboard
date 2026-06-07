@@ -68,14 +68,51 @@ TICKERS = {
 
 NAVER_INDEX_MAP = {"^KS11": "KOSPI", "^KQ11": "KOSDAQ"}
 
-# 시장 현지 timezone — as_of 날짜와 시장 today를 비교해 stale 여부 판단
-SYMBOL_TZ = {
-    "^KS11": "Asia/Seoul",
-    "^KQ11": "Asia/Seoul",
-    "^N225": "Asia/Tokyo",
-    "000001.SS": "Asia/Shanghai",
-    "^TWII": "Asia/Taipei",
+# 심볼별 장 운영시간 (현지시각 HHMM, 휴장일 캘린더) — 지금 장이 닫혀있는지 판단용
+# (tz, open_hhmm, close_hhmm, holiday_calendar_name or None)
+MARKET_HOURS = {
+    "^KS11": ("Asia/Seoul", 900, 1530, "KR"),
+    "^KQ11": ("Asia/Seoul", 900, 1530, "KR"),
+    "^N225": ("Asia/Tokyo", 900, 1530, "JP"),
+    "000001.SS": ("Asia/Shanghai", 930, 1500, "CN"),
+    "^TWII": ("Asia/Taipei", 900, 1330, "TW"),
+    "^TNX": ("America/New_York", 800, 1700, "NYSE"),
+    "^TYX": ("America/New_York", 800, 1700, "NYSE"),
 }
+# 24시간장 (CME 선물 / 글로벌 FX): 평일 상시, 금 17:00~일 18:00 ET만 휴장
+MARKET_24H = {"NQ=F", "CL=F", "JPY=X", "KRW=X", "DX-Y.NYB"}
+
+
+@st.cache_data(ttl=3600)
+def _holiday_cal(name: str):
+    import holidays
+    return getattr(holidays, name)()
+
+
+def is_market_closed(symbol: str) -> bool | None:
+    """지금 해당 시장이 닫혀있으면 True, 열려있으면 False, 판단 불가면 None."""
+    try:
+        if symbol in MARKET_24H:
+            et = datetime.now(ZoneInfo("America/New_York"))
+            wd, hm = et.weekday(), et.hour * 100 + et.minute
+            return wd == 5 or (wd == 4 and hm >= 1700) or (wd == 6 and hm < 1800)
+        cfg = MARKET_HOURS.get(symbol)
+        if not cfg:
+            return None
+        tz, open_, close_, cal_name = cfg
+        now = datetime.now(ZoneInfo(tz))
+        if now.weekday() >= 5:
+            return True
+        if cal_name:
+            try:
+                if now.date() in _holiday_cal(cal_name):
+                    return True
+            except Exception:
+                pass
+        hm = now.hour * 100 + now.minute
+        return not (open_ <= hm < close_)
+    except Exception:
+        return None
 
 # 야후 심볼 → stooq 심볼
 STOOQ_MAP = {
@@ -462,26 +499,27 @@ def render_card(
 
     price_str = format_price(symbol, q["price"])
 
-    # 시장 현지 today와 데이터 기준일이 다르면 stale 배지 (개장 전 / 휴장 / 데이터 지연)
+    # 지금 장이 닫혀있으면 "장 마감" 배지 (운영시간 + 휴장일 기반). as_of 있으면 날짜 병기.
     stale_badge = ""
-    as_of = q.get("as_of") or ""
-    if symbol in SYMBOL_TZ and as_of:
-        market_today = datetime.now(ZoneInfo(SYMBOL_TZ[symbol])).strftime("%Y-%m-%d")
-        if as_of != market_today:
-            label = f"장 마감 · {as_of[5:]}"  # MM-DD
-            stale_badge = (
-                f'<span style="display:inline-block;font-size:0.7rem;font-weight:600;'
-                f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
-                f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
-            )
+    if is_market_closed(symbol):
+        as_of = q.get("as_of") or ""
+        label = f"장 마감 · {as_of[5:]}" if as_of else "장 마감"  # MM-DD
+        stale_badge = (
+            f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
+            f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
+            f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
+        )
 
     # 나스닥 선물은 가격보다 % 변동률이 더 의미있어서 예외처리
     if symbol == "NQ=F":
         price_first = False
 
     name_div = (
-        f'<div style="font-size:1.0rem;font-weight:700;color:#000;margin-bottom:2px;'
-        f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{name}{stale_badge}</div>'
+        f'<div style="display:flex;align-items:center;margin-bottom:2px;">'
+        f'<span style="font-size:1.0rem;font-weight:700;color:#000;min-width:0;'
+        f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{name}</span>'
+        f'{stale_badge}'
+        f'</div>'
     )
     if price_first:
         body_html = (
