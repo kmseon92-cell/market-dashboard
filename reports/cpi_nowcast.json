@@ -1,0 +1,50 @@
+{
+  "cleveland": {
+    "next_target": {
+      "subcaption": "2026-5",
+      "cpi_yoy": 4.17966463875701,
+      "core_yoy": 2.82263762748958,
+      "nowcast_as_of": "06/03"
+    },
+    "forward_target": {
+      "subcaption": "2026-6",
+      "cpi_yoy": 4.04506162945988,
+      "core_yoy": 2.82821862281453,
+      "nowcast_as_of": "06/05"
+    },
+    "source_updated": "2026-06-05 00:00"
+  },
+  "consensus": {
+    "cpi": {
+      "latest_release": {
+        "actual": 3.8,
+        "forecast": 3.7,
+        "previous": 3.3,
+        "occurrence_time": "2026-05-12T12:30:00Z",
+        "reference_period": "Apr"
+      },
+      "next_release": {
+        "forecast": 4.2,
+        "previous": 3.8,
+        "occurrence_time": "2026-06-10T12:30:00Z",
+        "reference_period": "May"
+      }
+    },
+    "core_cpi": {
+      "latest_release": {
+        "actual": 2.8,
+        "forecast": 2.7,
+        "previous": 2.6,
+        "occurrence_time": "2026-05-12T12:30:00Z",
+        "reference_period": "Apr"
+      },
+      "next_release": {
+        "forecast": 2.9,
+        "previous": 2.8,
+        "occurrence_time": "2026-06-10T12:30:00Z",
+        "reference_period": "May"
+      }
+    }
+  },
+  "fetched_at": "2026-06-07T21:36:17"
+}
