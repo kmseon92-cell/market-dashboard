@@ -359,7 +359,7 @@ def make_mini_candlestick(ohlc: list[tuple[float, float, float, float]]) -> str:
     """카드용 소형 YTD 캔들차트 (차트만 반환, YTD% 라벨 없음)"""
     if not ohlc or len(ohlc) < 2:
         return ""
-    w, h, pad = 140, 56, 2
+    w, h, pad = 78, 44, 2
     lows = [x[2] for x in ohlc]
     highs = [x[1] for x in ohlc]
     lo, hi = min(lows), max(highs)
@@ -404,7 +404,7 @@ def render_card(
         st.markdown(
             f"""
             <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;
-                        min-height:140px;box-sizing:border-box;display:flex;
+                        min-height:150px;box-sizing:border-box;display:flex;
                         flex-direction:column;justify-content:center;">
               <div style="font-size:1.05rem;font-weight:700;color:#aaa;">{name}</div>
               <div style="font-size:1.8rem;font-weight:700;color:#888;">—</div>
@@ -479,26 +479,30 @@ def render_card(
     if symbol == "NQ=F":
         price_first = False
 
+    name_div = (
+        f'<div style="font-size:1.0rem;font-weight:700;color:#000;margin-bottom:2px;'
+        f'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">{name}{stale_badge}</div>'
+    )
     if price_first:
         body_html = (
-            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}{stale_badge}</div>'
-            f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:#000;">{price_str}</div>'
-            f'<div style="font-size:1.67rem;font-weight:700;color:{color};margin-top:4px;">{arrow} {pct:+.2f}%</div>'
-            f'<div style="font-size:0.85rem;color:{color};">{change:+,.2f}</div>'
+            f'{name_div}'
+            f'<div style="font-size:2.0rem;font-weight:800;line-height:1.1;color:#000;white-space:nowrap;">{price_str}</div>'
+            f'<div style="font-size:1.5rem;font-weight:700;color:{color};margin-top:4px;white-space:nowrap;">{arrow} {pct:+.2f}%</div>'
+            f'<div style="font-size:0.85rem;color:{color};white-space:nowrap;">{change:+,.2f}</div>'
             f'{danger_html}'
         )
     else:
         body_html = (
-            f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">{name}{stale_badge}</div>'
-            f'<div style="font-size:1.9rem;font-weight:800;line-height:1.1;color:{color};">{arrow} {pct:+.2f}%</div>'
-            f'<div style="font-size:0.8rem;color:{color};">{change:+,.2f}</div>'
-            f'<div style="font-size:1.15rem;font-weight:600;color:#000;margin-top:2px;">{price_str}</div>'
+            f'{name_div}'
+            f'<div style="font-size:1.8rem;font-weight:800;line-height:1.1;color:{color};white-space:nowrap;">{arrow} {pct:+.2f}%</div>'
+            f'<div style="font-size:0.8rem;color:{color};white-space:nowrap;">{change:+,.2f}</div>'
+            f'<div style="font-size:1.1rem;font-weight:600;color:#000;margin-top:2px;white-space:nowrap;">{price_str}</div>'
             f'{danger_html}'
         )
 
     html = (
         f'<div style="padding:8px 14px;{border}border-radius:10px;{card_bg}'
-        f'min-height:140px;box-sizing:border-box;'
+        f'min-height:150px;box-sizing:border-box;'
         f'display:flex;align-items:center;gap:10px;">'
         f'<div style="flex:1;min-width:0;">{body_html}</div>'
         f'{chart_html}'
@@ -541,7 +545,7 @@ def render_cpi_nowcast_card():
     if "error" in data:
         st.markdown(
             f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
-            f'min-height:140px;box-sizing:border-box;display:flex;'
+            f'min-height:150px;box-sizing:border-box;display:flex;'
             f'flex-direction:column;justify-content:center;">'
             f'<div style="font-size:1.05rem;font-weight:700;color:#aaa;">Cleveland CPI Nowcast</div>'
             f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
@@ -589,7 +593,7 @@ def render_cpi_nowcast_card():
 
     html = (
         f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
-        f'min-height:140px;box-sizing:border-box;display:flex;'
+        f'min-height:150px;box-sizing:border-box;display:flex;'
         f'flex-direction:column;justify-content:center;">'
         f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
         f'Cleveland CPI Nowcast{surprise_html}</div>'
