@@ -403,8 +403,10 @@ def render_card(
     if not q or "error" in (q or {}):
         st.markdown(
             f"""
-            <div style="padding:12px 14px;border:1px solid #2a2a2a;border-radius:10px;">
-              <div style="font-size:0.9rem;color:#aaa;">{name}</div>
+            <div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;
+                        min-height:140px;box-sizing:border-box;display:flex;
+                        flex-direction:column;justify-content:center;">
+              <div style="font-size:1.05rem;font-weight:700;color:#aaa;">{name}</div>
               <div style="font-size:1.8rem;font-weight:700;color:#888;">—</div>
               <div style="font-size:0.85rem;color:#888;">데이터 없음</div>
             </div>
@@ -496,6 +498,7 @@ def render_card(
 
     html = (
         f'<div style="padding:8px 14px;{border}border-radius:10px;{card_bg}'
+        f'min-height:140px;box-sizing:border-box;'
         f'display:flex;align-items:center;gap:10px;">'
         f'<div style="flex:1;min-width:0;">{body_html}</div>'
         f'{chart_html}'
@@ -537,8 +540,10 @@ def render_cpi_nowcast_card():
     data = fetch_cpi_nowcast()
     if "error" in data:
         st.markdown(
-            f'<div style="padding:12px 14px;border:1px solid #2a2a2a;border-radius:10px;">'
-            f'<div style="font-size:0.9rem;color:#aaa;">Cleveland CPI Nowcast</div>'
+            f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+            f'min-height:140px;box-sizing:border-box;display:flex;'
+            f'flex-direction:column;justify-content:center;">'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#aaa;">Cleveland CPI Nowcast</div>'
             f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
             f'<div style="font-size:0.75rem;color:#888;">{data["error"]}</div>'
             f'</div>',
@@ -583,13 +588,16 @@ def render_cpi_nowcast_card():
             )
 
     html = (
-        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;">'
+        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+        f'min-height:140px;box-sizing:border-box;display:flex;'
+        f'flex-direction:column;justify-content:center;">'
         f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
         f'Cleveland CPI Nowcast{surprise_html}</div>'
         f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
         f'{arrow} {nowcast_str}</div>'
-        f'<div style="font-size:0.85rem;color:#374151;margin-top:4px;">'
-        f'컨센서스 <b>{cons_str}</b> · 이전 {prev_str}</div>'
+        f'<div style="font-size:1.15rem;color:#111;margin-top:5px;font-weight:600;">'
+        f'컨센서스 <b style="font-size:1.35rem;color:#000;">{cons_str}</b>'
+        f'<span style="font-size:0.9rem;color:#6b7280;font-weight:500;"> · 이전 {prev_str}</span></div>'
         f'<div style="font-size:0.78rem;color:#6b7280;margin-top:2px;">'
         f'{release_md} 발표 · {period_kr} · Core {core_str}</div>'
         f'</div>'
