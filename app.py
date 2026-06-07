@@ -60,6 +60,7 @@ TICKERS = {
         {
             "미국 10년물 국채금리": "^TNX",
             "미국 30년물 국채금리": "^TYX",
+            "Cleveland CPI Nowcast": "__CPI_NOWCAST__",
         },
     ],
 }
@@ -507,8 +508,93 @@ def render_card(
 def fetch_all_quotes(symbols: tuple) -> dict:
     """모든 심볼을 병렬로 fetch (개별 fetch_quote에도 캐시 있어 hot path는 즉시)"""
     from concurrent.futures import ThreadPoolExecutor
+    real_syms = tuple(s for s in symbols if not s.startswith("__"))
     with ThreadPoolExecutor(max_workers=12) as ex:
-        return dict(zip(symbols, ex.map(fetch_quote, symbols)))
+        return dict(zip(real_syms, ex.map(fetch_quote, real_syms)))
+
+
+@st.cache_data(ttl=300)
+def fetch_cpi_nowcast() -> dict:
+    """reports/cpi_nowcast.json 로드 — 맥미니 fetcher가 일간 업데이트."""
+    p = os.path.join(os.path.dirname(__file__), "reports", "cpi_nowcast.json")
+    if not os.path.exists(p):
+        return {"error": "cpi_nowcast.json 없음"}
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _ref_period_to_kr(ref: str) -> str:
+    mp = {"Jan": "1월", "Feb": "2월", "Mar": "3월", "Apr": "4월", "May": "5월",
+          "Jun": "6월", "Jul": "7월", "Aug": "8월", "Sep": "9월",
+          "Oct": "10월", "Nov": "11월", "Dec": "12월"}
+    return mp.get(ref, ref)
+
+
+def render_cpi_nowcast_card():
+    data = fetch_cpi_nowcast()
+    if "error" in data:
+        st.markdown(
+            f'<div style="padding:12px 14px;border:1px solid #2a2a2a;border-radius:10px;">'
+            f'<div style="font-size:0.9rem;color:#aaa;">Cleveland CPI Nowcast</div>'
+            f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
+            f'<div style="font-size:0.75rem;color:#888;">{data["error"]}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    cle = data.get("cleveland", {}).get("next_target", {}) or {}
+    cons = (data.get("consensus", {}).get("cpi") or {}).get("next_release") or {}
+    nowcast = cle.get("cpi_yoy")
+    core_nowcast = cle.get("core_yoy")
+    consensus = cons.get("forecast")
+    previous = cons.get("previous")
+    ref_period = cons.get("reference_period") or ""
+    occ = cons.get("occurrence_time") or ""
+    release_md = occ[5:10].replace("-", "/") if occ else ""
+    period_kr = _ref_period_to_kr(ref_period)
+
+    # 색: nowcast가 이전치보다 높으면 빨강(인플레↑), 낮으면 파랑
+    if nowcast is not None and previous is not None:
+        color = "#ef4444" if nowcast > previous else ("#3b82f6" if nowcast < previous else "#9ca3af")
+        arrow = "▲" if nowcast > previous else ("▼" if nowcast < previous else "■")
+    else:
+        color = "#000"
+        arrow = ""
+
+    nowcast_str = f"{nowcast:.2f}%" if nowcast is not None else "—"
+    cons_str = f"{consensus:.1f}%" if consensus is not None else "—"
+    prev_str = f"{previous:.1f}%" if previous is not None else "—"
+    core_str = f"{core_nowcast:.2f}%" if core_nowcast is not None else "—"
+
+    # 컨센서스 vs nowcast 차이 — 둘 다 있을 때 surprise 가능성 표시
+    surprise_html = ""
+    if nowcast is not None and consensus is not None:
+        diff = nowcast - consensus
+        if abs(diff) >= 0.15:
+            tag_color = "#dc2626" if diff > 0 else "#2563eb"
+            surprise_html = (
+                f'<span style="display:inline-block;font-size:0.7rem;font-weight:700;'
+                f'color:#fff;background:{tag_color};padding:1px 6px;border-radius:4px;'
+                f'margin-left:6px;vertical-align:middle;">서프 {diff:+.2f}pp</span>'
+            )
+
+    html = (
+        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;">'
+        f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
+        f'Cleveland CPI Nowcast{surprise_html}</div>'
+        f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
+        f'{arrow} {nowcast_str}</div>'
+        f'<div style="font-size:0.85rem;color:#374151;margin-top:4px;">'
+        f'컨센서스 <b>{cons_str}</b> · 이전 {prev_str}</div>'
+        f'<div style="font-size:0.78rem;color:#6b7280;margin-top:2px;">'
+        f'{release_md} 발표 · {period_kr} · Core {core_str}</div>'
+        f'</div>'
+    )
+    st.markdown(html, unsafe_allow_html=True)
 
 
 @st.fragment(run_every=f"{REFRESH_SEC}s")
@@ -526,10 +612,13 @@ def render_quotes():
             cols = st.columns(max_cols)
             for col, (name, symbol) in zip(cols, row.items()):
                 with col:
-                    render_card(
-                        name, symbol, quotes.get(symbol), ytd_map.get(symbol),
-                        price_first=price_first,
-                    )
+                    if symbol == "__CPI_NOWCAST__":
+                        render_cpi_nowcast_card()
+                    else:
+                        render_card(
+                            name, symbol, quotes.get(symbol), ytd_map.get(symbol),
+                            price_first=price_first,
+                        )
     st.caption(f"마지막 업데이트: {datetime.now().strftime('%H:%M:%S')} · {REFRESH_SEC}초마다 자동 갱신")
 
 render_quotes()
