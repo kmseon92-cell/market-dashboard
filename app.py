@@ -712,19 +712,28 @@ def render_kospi_disparity_card():
     stats = data.get("stats_1y") or {}
     history = data.get("history") or []
 
-    # 색: 110 이상 빨강(과열), 90 이하 파랑(침체), 그 사이는 회색톤
-    if disp is None:
-        color, label = "#000", ""
-    elif disp >= 115:
-        color, label = "#dc2626", "과열"
-    elif disp >= 105:
-        color, label = "#f97316", "단기 과열"
-    elif disp >= 95:
-        color, label = "#374151", "중립"
-    elif disp >= 90:
-        color, label = "#2563eb", "단기 침체"
-    else:
-        color, label = "#1d4ed8", "침체"
+    # 임계값: 125↑ 돔황챠(빨강 배경), 120↑ 노란 형광펜, 그 외 톤 차이만
+    color, label, disp_bg, disp_fg, panic = "#000", "", "transparent", None, False
+    if disp is not None:
+        if disp >= 125:
+            color = "#dc2626"
+            label = "돔황챠"
+            disp_bg = "#dc2626"
+            disp_fg = "#fff"
+            panic = True
+        elif disp >= 120:
+            color = "#b45309"
+            label = "과열"
+            disp_bg = "#fde047"  # 형광펜 노랑
+            disp_fg = "#000"
+        elif disp >= 105:
+            color, label = "#f97316", "단기 과열"
+        elif disp >= 95:
+            color, label = "#374151", "중립"
+        elif disp >= 90:
+            color, label = "#2563eb", "단기 침체"
+        else:
+            color, label = "#1d4ed8", "침체"
 
     arrow, ch_color = "", "#6b7280"
     if change is not None:
@@ -741,11 +750,29 @@ def render_kospi_disparity_card():
     ma_str = f"{ma50:,.2f}" if ma50 is not None else "—"
     as_of_md = as_of[5:].replace("-", "/") if as_of else ""
 
+    # 돔황챠일 땐 라벨 앞에 🚨 + shake 애니메이션, 형광펜일 땐 그냥 라벨만
+    label_text = f"🚨 {label}" if panic else label
     label_html = (
-        f'<span style="display:inline-block;font-size:0.7rem;font-weight:700;'
-        f'color:#fff;background:{color};padding:1px 6px;border-radius:4px;'
-        f'margin-left:6px;vertical-align:middle;">{label}</span>'
+        f'<span style="display:inline-block;font-size:0.75rem;font-weight:800;'
+        f'color:#fff;background:{color};padding:1px 7px;border-radius:4px;'
+        f'margin-left:6px;vertical-align:middle;'
+        f'{"animation:bumgshake 0.5s infinite;" if panic else ""}">{label_text}</span>'
     ) if label else ""
+
+    # 숫자 자체에 형광펜/돔황챠 배경
+    if disp_bg != "transparent":
+        disp_inner = (
+            f'<span style="background:{disp_bg};color:{disp_fg};'
+            f'padding:0 8px;border-radius:4px;">{disp_str}</span>'
+        )
+    else:
+        disp_inner = disp_str
+
+    panic_keyframes = (
+        '<style>@keyframes bumgshake{0%,100%{transform:translateX(0)}'
+        '25%{transform:translateX(-2px)}75%{transform:translateX(2px)}}</style>'
+        if panic else ""
+    )
 
     spark = _sparkline_svg([h["disparity"] for h in history], stroke=color)
 
@@ -758,13 +785,14 @@ def render_kospi_disparity_card():
         )
 
     html = (
-        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
-        f'min-height:150px;box-sizing:border-box;display:flex;'
+        f'{panic_keyframes}'
+        f'<div style="padding:8px 14px;border:{"2px solid #dc2626" if panic else "1px solid #2a2a2a"};'
+        f'border-radius:10px;min-height:150px;box-sizing:border-box;display:flex;'
         f'flex-direction:column;justify-content:center;">'
         f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
         f'코스피 50일 이격도{label_html}</div>'
         f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
-        f'{disp_str}'
+        f'{disp_inner}'
         f'<span style="font-size:1rem;color:{ch_color};font-weight:600;margin-left:8px;">'
         f'{arrow} {ch_str}</span></div>'
         f'<div style="margin-top:4px;">{spark}</div>'
