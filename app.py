@@ -661,7 +661,7 @@ def fetch_kospi_disparity() -> dict:
         return {"error": str(e)}
 
 
-def _sparkline_svg(values: list[float], w: int = 200, h: int = 30,
+def _sparkline_svg(values: list[float], w: int = 180, h: int = 20,
                    stroke: str = "#3b82f6") -> str:
     if not values or len(values) < 2:
         return ""
@@ -779,9 +779,9 @@ def render_kospi_disparity_card():
     stats_line = ""
     if stats:
         stats_line = (
-            f'1Y 최고 <b style="color:#dc2626;">{stats.get("max", 0):.1f}</b> · '
-            f'최저 <b style="color:#2563eb;">{stats.get("min", 0):.1f}</b> · '
-            f'평균 {stats.get("avg", 0):.1f}'
+            f'1Y <b style="color:#dc2626;">{stats.get("max", 0):.0f}</b>/'
+            f'<b style="color:#2563eb;">{stats.get("min", 0):.0f}</b>·'
+            f'평균 {stats.get("avg", 0):.0f}'
         )
 
     html = (
@@ -795,10 +795,10 @@ def render_kospi_disparity_card():
         f'{disp_inner}'
         f'<span style="font-size:1rem;color:{ch_color};font-weight:600;margin-left:8px;">'
         f'{arrow} {ch_str}</span></div>'
-        f'<div style="margin-top:4px;">{spark}</div>'
-        f'<div style="font-size:0.78rem;color:#374151;margin-top:2px;font-weight:600;">'
+        f'<div style="margin-top:2px;">{spark}</div>'
+        f'<div style="font-size:0.75rem;color:#374151;margin-top:2px;font-weight:600;">'
         f'종가 {close_str} · MA50 {ma_str}</div>'
-        f'<div style="font-size:0.72rem;color:#6b7280;margin-top:1px;">'
+        f'<div style="font-size:0.7rem;color:#6b7280;margin-top:0;line-height:1.3;">'
         f'{stats_line} · {as_of_md}</div>'
         f'</div>'
     )
