@@ -61,6 +61,7 @@ TICKERS = {
             "미국 10년물 국채금리": "^TNX",
             "미국 30년물 국채금리": "^TYX",
             "Cleveland CPI Nowcast": "__CPI_NOWCAST__",
+            "코스피 50일 이격도": "__KOSPI_DISPARITY__",
         },
     ],
 }
@@ -647,6 +648,135 @@ def render_cpi_nowcast_card():
     st.markdown(html, unsafe_allow_html=True)
 
 
+@st.cache_data(ttl=300)
+def fetch_kospi_disparity() -> dict:
+    """reports/kospi_disparity.json 로드 — 맥미니 fetcher가 일간 업데이트."""
+    p = os.path.join(os.path.dirname(__file__), "reports", "kospi_disparity.json")
+    if not os.path.exists(p):
+        return {"error": "kospi_disparity.json 없음"}
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def _sparkline_svg(values: list[float], w: int = 200, h: int = 30,
+                   stroke: str = "#3b82f6") -> str:
+    if not values or len(values) < 2:
+        return ""
+    lo, hi = min(values), max(values)
+    rng = hi - lo if hi > lo else 1.0
+    n = len(values)
+    pts = []
+    for i, v in enumerate(values):
+        x = i * w / (n - 1)
+        y = h - (v - lo) / rng * h
+        pts.append(f"{x:.1f},{y:.1f}")
+    # 100 라인 (이격도 기준선)
+    base_y = h - (100 - lo) / rng * h if lo <= 100 <= hi else None
+    base_line = (
+        f'<line x1="0" y1="{base_y:.1f}" x2="{w}" y2="{base_y:.1f}" '
+        f'stroke="#d1d5db" stroke-width="1" stroke-dasharray="2,2"/>'
+        if base_y is not None else ""
+    )
+    return (
+        f'<svg width="{w}" height="{h}" viewBox="0 0 {w} {h}" '
+        f'xmlns="http://www.w3.org/2000/svg" style="display:block;">'
+        f'{base_line}'
+        f'<polyline fill="none" stroke="{stroke}" stroke-width="1.6" '
+        f'points="{" ".join(pts)}"/></svg>'
+    )
+
+
+def render_kospi_disparity_card():
+    data = fetch_kospi_disparity()
+    if "error" in data:
+        st.markdown(
+            f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+            f'min-height:150px;box-sizing:border-box;display:flex;'
+            f'flex-direction:column;justify-content:center;">'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#aaa;">코스피 50일 이격도</div>'
+            f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
+            f'<div style="font-size:0.75rem;color:#888;">{data["error"]}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    disp = data.get("disparity")
+    change = data.get("change")
+    close = data.get("close")
+    ma50 = data.get("ma50")
+    as_of = data.get("as_of") or ""
+    stats = data.get("stats_1y") or {}
+    history = data.get("history") or []
+
+    # 색: 110 이상 빨강(과열), 90 이하 파랑(침체), 그 사이는 회색톤
+    if disp is None:
+        color, label = "#000", ""
+    elif disp >= 115:
+        color, label = "#dc2626", "과열"
+    elif disp >= 105:
+        color, label = "#f97316", "단기 과열"
+    elif disp >= 95:
+        color, label = "#374151", "중립"
+    elif disp >= 90:
+        color, label = "#2563eb", "단기 침체"
+    else:
+        color, label = "#1d4ed8", "침체"
+
+    arrow, ch_color = "", "#6b7280"
+    if change is not None:
+        if change > 0:
+            arrow, ch_color = "▲", "#dc2626"
+        elif change < 0:
+            arrow, ch_color = "▼", "#2563eb"
+        else:
+            arrow = "■"
+
+    disp_str = f"{disp:.2f}" if disp is not None else "—"
+    ch_str = f"{change:+.2f}" if change is not None else ""
+    close_str = f"{close:,.2f}" if close is not None else "—"
+    ma_str = f"{ma50:,.2f}" if ma50 is not None else "—"
+    as_of_md = as_of[5:].replace("-", "/") if as_of else ""
+
+    label_html = (
+        f'<span style="display:inline-block;font-size:0.7rem;font-weight:700;'
+        f'color:#fff;background:{color};padding:1px 6px;border-radius:4px;'
+        f'margin-left:6px;vertical-align:middle;">{label}</span>'
+    ) if label else ""
+
+    spark = _sparkline_svg([h["disparity"] for h in history], stroke=color)
+
+    stats_line = ""
+    if stats:
+        stats_line = (
+            f'1Y 최고 <b style="color:#dc2626;">{stats.get("max", 0):.1f}</b> · '
+            f'최저 <b style="color:#2563eb;">{stats.get("min", 0):.1f}</b> · '
+            f'평균 {stats.get("avg", 0):.1f}'
+        )
+
+    html = (
+        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+        f'min-height:150px;box-sizing:border-box;display:flex;'
+        f'flex-direction:column;justify-content:center;">'
+        f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
+        f'코스피 50일 이격도{label_html}</div>'
+        f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
+        f'{disp_str}'
+        f'<span style="font-size:1rem;color:{ch_color};font-weight:600;margin-left:8px;">'
+        f'{arrow} {ch_str}</span></div>'
+        f'<div style="margin-top:4px;">{spark}</div>'
+        f'<div style="font-size:0.78rem;color:#374151;margin-top:2px;font-weight:600;">'
+        f'종가 {close_str} · MA50 {ma_str}</div>'
+        f'<div style="font-size:0.72rem;color:#6b7280;margin-top:1px;">'
+        f'{stats_line} · {as_of_md}</div>'
+        f'</div>'
+    )
+    st.markdown(html, unsafe_allow_html=True)
+
+
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_quotes():
     all_symbols = tuple(
@@ -664,6 +794,8 @@ def render_quotes():
                 with col:
                     if symbol == "__CPI_NOWCAST__":
                         render_cpi_nowcast_card()
+                    elif symbol == "__KOSPI_DISPARITY__":
+                        render_kospi_disparity_card()
                     else:
                         render_card(
                             name, symbol, quotes.get(symbol), ytd_map.get(symbol),
