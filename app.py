@@ -842,6 +842,13 @@ def render_cpi_nowcast_card():
     occ = cons.get("occurrence_time") or ""
     release_md = occ[5:10].replace("-", "/") if occ else ""
     period_kr = _ref_period_to_kr(ref_period)
+    # investing next_release가 아직 없으면(컨센서스 미게시) Cleveland 타깃월로 월 라벨 보강
+    if not period_kr:
+        sub = cle.get("subcaption") or ""  # 'YYYY-M'
+        if "-" in sub:
+            mm = sub.split("-", 1)[1]
+            if mm.isdigit():
+                period_kr = f"{int(mm)}월"
 
     # 색: nowcast가 이전치보다 높으면 빨강(인플레↑), 낮으면 파랑
     if nowcast is not None and previous is not None:
