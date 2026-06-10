@@ -115,6 +115,40 @@ def is_market_closed(symbol: str) -> bool | None:
     except Exception:
         return None
 
+
+def _latest_session_date(symbol: str) -> str | None:
+    """심볼의 '데이터가 존재해야 하는 가장 최근 거래일'을 거래소 현지 tz 기준
+    'YYYY-MM-DD'로 반환. 오늘이 거래일이고 개장(open) 시각을 지났으면 오늘,
+    아니면 직전 거래일. MARKET_HOURS에 없는 24시간장은 None(검증 제외)."""
+    from datetime import timedelta
+    cfg = MARKET_HOURS.get(symbol)
+    if not cfg:
+        return None
+    tz, open_, _close, cal_name = cfg
+    cal = None
+    if cal_name:
+        try:
+            cal = _holiday_cal(cal_name)
+        except Exception:
+            cal = None
+
+    def is_trading(day):
+        if day.weekday() >= 5:
+            return False
+        if cal is not None and day in cal:
+            return False
+        return True
+
+    now = datetime.now(ZoneInfo(tz))
+    d = now.date()
+    hm = now.hour * 100 + now.minute
+    # 오늘 장이 아직 개장 전이거나 오늘이 휴장일이면 직전 거래일로
+    if not (is_trading(d) and hm >= open_):
+        d -= timedelta(days=1)
+        while not is_trading(d):
+            d -= timedelta(days=1)
+    return d.strftime("%Y-%m-%d")
+
 # 야후 심볼 → stooq 심볼
 STOOQ_MAP = {
     "^N225": "^nkx",
@@ -167,19 +201,14 @@ def _fetch_stooq(sym: str):
 
 
 def _fetch_stooq_fresh(symbol: str):
-    """stooq를 1순위로 쓰되, 장중에 stooq 일봉이 아직 전일 데이터에 머물러
+    """stooq를 1순위로 쓰되, stooq 일봉이 아직 직전 거래일 데이터에 머물러
     있으면(close=어제 종가) 어제 등락률이 오늘 것처럼 표시되는 버그를 막는다.
-    해당 시장이 장중인데 as_of 날짜가 거래소 현지 타임존 기준 오늘과 다르면
-    ValueError를 raise해 다음 소스(yahoo chart API)로 폴백시킨다.
-    24시간장(선물/FX)은 MARKET_HOURS에 없으므로 자동으로 검증에서 제외된다.
-    """
+    as_of가 최신 거래 세션 날짜보다 오래되면 ValueError를 raise해 다음 소스로
+    폴백시킨다. 24시간장(선물/FX)은 MARKET_HOURS에 없어 자동으로 검증 제외."""
     r = _fetch_stooq(STOOQ_MAP[symbol])
-    cfg = MARKET_HOURS.get(symbol)
-    if cfg and is_market_closed(symbol) is False:
-        tz = cfg[0]
-        today = datetime.now(ZoneInfo(tz)).strftime("%Y-%m-%d")
-        if r.get("as_of") != today:
-            raise ValueError(f"stooq stale: as_of={r.get('as_of')} != {today}")
+    expected = _latest_session_date(symbol)
+    if expected and (r.get("as_of") or "") < expected:
+        raise ValueError(f"stooq stale: as_of={r.get('as_of')} < {expected}")
     return r
 
 
@@ -344,10 +373,24 @@ def fetch_quote(symbol: str):
     if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
         sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
 
+    # 신선도 검증: 어떤 소스든 as_of가 최신 거래 세션보다 오래되면(stale) 건너뛰고
+    # 더 신선한 소스를 우선 시도. 모두 stale이면 그나마 최신을 last-resort로 반환.
+    # (as_of 없는 소스 또는 24시간장(expected=None)은 검증 없이 즉시 채택.)
+    expected = _latest_session_date(symbol)
+    stale_fallback = None
     for name, fn in sources:
         r = try_(name, fn)
-        if r:
-            return r
+        if not r:
+            continue
+        as_of = r.get("as_of")
+        if expected and as_of and as_of < expected:
+            errs.append(f"{name}:stale({as_of}<{expected})")
+            if stale_fallback is None or as_of > (stale_fallback.get("as_of") or ""):
+                stale_fallback = r
+            continue
+        return r
+    if stale_fallback:
+        return stale_fallback
     return {"error": " / ".join(errs)}
 
 
