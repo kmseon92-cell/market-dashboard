@@ -227,8 +227,10 @@ def _fetch_yf(symbol: str):
 
 def _fetch_yf_chart(symbol: str):
     """Yahoo Finance v8 chart API 직접 호출. yfinance 라이브러리 우회 (rate-limit 회피).
-    주의: meta.chartPreviousClose는 어제 종가가 아니라 range 시작점 직전 값임.
-    prev는 반드시 timestamp 배열의 마지막에서 두 번째 close로 계산해야 함.
+    주의 1: meta.chartPreviousClose는 어제 종가가 아니라 range 시작점 직전 값임.
+    주의 2: 장중에 오늘 일봉이 아직 timestamp 배열에 없을 수 있음. 이때
+    closes[-2]를 prev로 쓰면 그제 종가가 잡혀 등락폭·부호가 틀어진다.
+    prev는 '마지막 세션 날짜(regularMarketTime 기준)보다 앞선 마지막 종가'로 계산.
     """
     import urllib.request, json as _json, urllib.parse
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{urllib.parse.quote(symbol)}?interval=1d&range=5d"
@@ -240,21 +242,29 @@ def _fetch_yf_chart(symbol: str):
     r = result[0]
     meta = r.get("meta") or {}
     ts = r.get("timestamp") or []
-    closes = ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
-    closes = [c for c in closes if c is not None]
-    if len(closes) < 2:
-        raise ValueError("yf chart: not enough closes")
-    last = float(meta.get("regularMarketPrice") or closes[-1])
-    prev = float(closes[-2])
+    raw_closes = ((r.get("indicators") or {}).get("quote") or [{}])[0].get("close") or []
+    market_tz = ZoneInfo(meta.get("exchangeTimezoneName") or "UTC")
+    bars = [
+        (datetime.fromtimestamp(t, market_tz).date(), float(c))
+        for t, c in zip(ts, raw_closes)
+        if c is not None
+    ]
+    if not bars:
+        raise ValueError("yf chart: no closes")
+    rmp = meta.get("regularMarketPrice")
+    rmt = meta.get("regularMarketTime")
+    last_date = (
+        datetime.fromtimestamp(rmt, market_tz).date() if rmt else bars[-1][0]
+    )
+    last = float(rmp) if rmp is not None else bars[-1][1]
+    prevs = [c for d, c in bars if d < last_date]
+    if not prevs:
+        raise ValueError("yf chart: no prev close")
+    prev = prevs[-1]
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
-    market_tz = meta.get("exchangeTimezoneName") or "UTC"
-    last_ts = ts[-1] if ts else None
-    as_of = (
-        datetime.fromtimestamp(last_ts, ZoneInfo(market_tz)).strftime("%Y-%m-%d")
-        if last_ts else ""
-    )
-    return {"price": last, "change": change, "pct": pct, "as_of": as_of}
+    return {"price": last, "change": change, "pct": pct,
+            "as_of": last_date.strftime("%Y-%m-%d")}
 
 
 # 네이버 marketindex/exchange (KRW=X, JPY=X 등 환율 fallback)
@@ -335,10 +345,11 @@ def _fetch_investing(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 국제 지수/환율/선물은 stooq 우선
+# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 환율/선물(24시간장)은 stooq 우선.
+# 아시아 지수(^N225, 000001.SS, ^TWII)는 stooq 일봉이 장중 지연/전일 고착이 잦아
+# 실시간 regularMarketPrice를 주는 yahoo chart API를 우선하고 stooq는 마지막 폴백.
 STOOQ_FIRST = {
     "CL=F", "NQ=F",
-    "^N225", "000001.SS", "^TWII",
     "KRW=X", "JPY=X", "DX-Y.NYB",
 }
 
