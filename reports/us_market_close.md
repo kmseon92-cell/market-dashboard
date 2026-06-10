@@ -1,157 +1,119 @@
-<!-- updated: 2026-06-10 06:30 -->
+<!-- updated: 2026-06-11 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-06-10
+📅 2026-06-11
 ━━━━━━━━━━━━━━━
-다우 +0.17% | 나스닥 -0.97% | S&P500 -0.26% | 러셀2000 +0.41% | 필반도체 -1.93% | WTI $88.70 | 환율 1,526원
+다우 -1.87% | 나스닥 -1.98% | S&P500 -1.62% | 러셀2000 -1.10% | 필반도체 -3.57% | WTI $91.85 | 환율 1,521원
 
-📈 <b>52주 신고가 (58종목)</b>
+📈 <b>52주 신고가 (45종목)</b>
 
 <b>〈기술〉</b>
   <b>AMAT</b> Applied Materials Inc
-    $499.21 (+1.4%) | $396.4B
-  <b>ASML</b> ASML Holding NV
-    $1,777.77 (+1.6%) | $685.2B
+    $497.01 (-0.4%) | $394.6B
   <b>KLAC</b> KLA Corp
-    $2,139.37 (+1.5%) | $279.5B
-  <b>LRCX</b> Lam Research Corp
-    $327.16 (+0.8%) | $409.1B
+    $2,135.64 (-0.2%) | $279.0B
   <b>CRDO</b> Credo Technology Group Holding Ltd
-    $234.32 (+5.4%) | $43.2B
+    $237.68 (+1.4%) | $43.8B
   <b>FTV</b> Fortive Corp
-    $62.78 (+2.6%) | $19.1B
+    $60.06 (-4.3%) | $18.3B
 
 <b>〈금융〉</b>
   <b>C</b> Citigroup Inc
-    $134.73 (+1.1%) | $231.1B
+    $133.38 (-1.0%) | $228.7B
   <b>RY</b> Royal Bank Of Canada
-    $197.89 (+1.3%) | $276.4B
-  <b>BMO</b> Bank of Montreal
-    $165.22 (+0.4%) | $116.7B
+    $197.61 (-0.1%) | $276.0B
   <b>BPOP</b> Popular Inc
-    $156.00 (+1.5%) | $10.1B
+    $156.15 (+0.1%) | $10.1B
   <b>EWBC</b> East West Bancorp Inc
-    $128.66 (+1.9%) | $17.6B
+    $128.09 (-0.4%) | $17.6B
   <b>GL</b> Globe Life Inc
-    $159.33 (+1.4%) | $12.4B
+    $162.52 (+2.0%) | $12.6B
   <b>MET</b> Metlife Inc
-    $85.57 (+1.4%) | $55.1B
+    $86.13 (+0.7%) | $55.4B
   <b>PFG</b> Principal Financial Group Inc
-    $106.66 (+1.6%) | $23.0B
+    $109.21 (+2.4%) | $23.6B
   <b>SLF</b> Sun Life Financial Inc
-    $73.97 (+0.6%) | $41.0B
+    $74.92 (+1.3%) | $41.5B
   <b>STT</b> State Street Corp
-    $163.25 (+0.9%) | $45.2B
+    $161.80 (-0.9%) | $44.8B
   <b>TD</b> Toronto Dominion Bank
-    $114.64 (+0.4%) | $193.7B
+    $114.50 (-0.1%) | $193.4B
   <b>UNM</b> Unum Group
-    $88.00 (+1.1%) | $14.1B
-  <b>WULF</b> TeraWulf Inc
-    $25.30 (-2.2%) | $12.5B
+    $90.68 (+3.0%) | $14.5B
+
+<b>〈필수소비재〉</b>
+  <b>KO</b> Coca-Cola Co
+    $83.59 (+2.8%) | $359.6B
+  <b>MNST</b> Monster Beverage Corp
+    $91.21 (+1.2%) | $89.2B
+
+<b>〈소재〉</b>
+  <b>LIN</b> Linde Plc
+    $509.16 (-1.2%) | $235.5B
+  <b>RS</b> Reliance Inc
+    $394.29 (-1.9%) | $20.1B
 
 <b>〈헬스케어〉</b>
   <b>UNH</b> Unitedhealth Group Inc
-    $413.00 (+1.6%) | $375.1B
+    $407.46 (-1.3%) | $370.0B
   <b>AXSM</b> Axsome Therapeutics Inc
-    $245.64 (+4.5%) | $12.6B
-  <b>CNC</b> Centene Corp
-    $66.21 (+1.8%) | $32.7B
+    $246.34 (+0.3%) | $12.7B
+  <b>BTSG</b> BrightSpring Health Services Inc
+    $60.59 (-0.7%) | $11.8B
+  <b>CVS</b> CVS Health Corp
+    $98.02 (+1.0%) | $125.1B
   <b>ELV</b> Elevance Health Inc
-    $424.43 (+1.5%) | $92.2B
+    $404.56 (-4.7%) | $87.9B
   <b>EXEL</b> Exelixis Inc
-    $52.99 (+2.4%) | $13.3B
+    $52.58 (-0.8%) | $13.2B
   <b>HUM</b> Humana Inc
-    $363.18 (+2.0%) | $43.6B
-  <b>WST</b> West Pharmaceutical Services Inc
-    $334.66 (+4.7%) | $23.6B
+    $364.46 (+0.3%) | $43.8B
 
 <b>〈산업재〉</b>
   <b>AIT</b> Applied Industrial Technologies Inc
-    $322.81 (+2.7%) | $11.9B
+    $314.08 (-2.7%) | $11.6B
   <b>ATI</b> ATI Inc
-    $187.13 (+3.9%) | $25.5B
+    $183.37 (-2.0%) | $25.0B
   <b>CRS</b> Carpenter Technology Corp
-    $523.77 (+5.0%) | $26.0B
-  <b>CSX</b> CSX Corp
-    $47.28 (+0.4%) | $87.8B
+    $523.05 (-0.1%) | $26.0B
   <b>GWW</b> W.W. Grainger Inc
-    $1,329.80 (+1.9%) | $62.8B
-  <b>IESC</b> IES Holdings Inc
-    $726.31 (-1.2%) | $14.5B
+    $1,317.63 (-0.9%) | $62.2B
   <b>IEX</b> Idex Corp
-    $222.14 (+1.6%) | $16.4B
-  <b>INIO</b> Innio NV
-    $33.72 (+0.0%) | $25.3B
-  <b>JBHT</b> J.B. Hunt Transport Services Inc
-    $287.19 (-0.3%) | $27.1B
+    $214.50 (-3.4%) | $15.9B
   <b>JCI</b> Johnson Controls International plc
-    $147.75 (+2.6%) | $90.1B
-  <b>KNX</b> Knight-Swift Transportation Holdings Inc
-    $80.35 (-0.5%) | $13.1B
+    $139.36 (-5.7%) | $85.0B
   <b>MOG-A</b> Moog Inc
-    $385.23 (+3.5%) | $12.0B
-  <b>ODFL</b> Old Dominion Freight Line Inc
-    $248.73 (+0.7%) | $51.7B
+    $382.13 (-0.8%) | $12.1B
   <b>R</b> Ryder System Inc
-    $276.95 (+2.2%) | $10.7B
-  <b>SAIA</b> Saia Inc
-    $479.30 (-0.3%) | $12.8B
-  <b>SUNB</b> Sunbelt Rentals Holdings Inc
-    $83.63 (+2.9%) | $34.6B
-  <b>TFII</b> TFI International Inc
-    $159.36 (-2.5%) | $13.1B
-  <b>URI</b> United Rentals Inc
-    $1,094.17 (+0.9%) | $68.5B
-  <b>XPO</b> XPO Inc
-    $227.58 (+1.3%) | $26.7B
+    $270.25 (-2.4%) | $10.5B
+
+<b>〈경기소비재〉</b>
+  <b>CASY</b> Casey's General Stores Inc 🔥
+    $915.60 (+20.3%) | $33.8B
+  <b>MUSA</b> Murphy USA Inc 🔥
+    $612.16 (+10.0%) | $11.3B
+  <b>TJX</b> TJX Companies Inc
+    $167.66 (+1.7%) | $185.2B
 
 <b>〈부동산〉</b>
   <b>DOC</b> Healthpeak Properties Inc
-    $20.50 (+3.7%) | $14.5B
+    $20.47 (-0.1%) | $14.5B
   <b>FRT</b> Federal Realty Investment Trust
-    $124.44 (+1.9%) | $10.8B
+    $123.62 (-0.7%) | $10.7B
   <b>KIM</b> Kimco Realty Corp
-    $25.19 (+3.9%) | $17.0B
-  <b>PLD</b> Prologis Inc
-    $147.52 (+3.3%) | $137.5B
+    $25.38 (+0.8%) | $17.1B
   <b>PSA</b> Public Storage
-    $322.86 (+3.8%) | $56.7B
+    $323.87 (+0.3%) | $56.9B
   <b>SPG</b> Simon Property Group Inc
-    $211.89 (+2.2%) | $68.7B
+    $212.82 (+0.4%) | $69.0B
+  <b>WPC</b> W. P. Carey Inc
+    $75.84 (+0.5%) | $16.9B
 
-<b>〈경기소비재〉</b>
-  <b>H</b> Hyatt Hotels Corp
-    $194.08 (+0.2%) | $18.3B
-  <b>HLT</b> Hilton Worldwide Holdings Inc
-    $342.57 (+0.6%) | $78.0B
-  <b>IHG</b> Intercontinental Hotels Group ADR
-    $162.97 (-0.2%) | $24.2B
-  <b>MAR</b> Marriott International Inc
-    $393.61 (+0.6%) | $103.8B
-  <b>RL</b> Ralph Lauren Corp
-    $391.16 (+4.9%) | $23.3B
+<b>〈에너지〉</b>
+  <b>EC</b> Ecopetrol SA ADR
+    $16.21 (+2.1%) | $33.3B
 
-<b>〈필수소비재〉</b>
-  <b>MNST</b> Monster Beverage Corp
-    $90.15 (+1.9%) | $88.2B
-
-<b>〈소재〉</b>
-  <b>RS</b> Reliance Inc
-    $401.80 (+1.4%) | $20.5B
-
-🚀 <b>8% 이상 급등 (4종목)</b>
-
-<b>〈금융〉</b>
-  <b>BAP</b> Credicorp Ltd
-    $349.61 (+9.3%) | $27.8B
-
-<b>〈경기소비재〉</b>
-  <b>DKNG</b> DraftKings Inc
-    $27.59 (+11.3%) | $24.5B
-  <b>SN</b> SharkNinja Inc
-    $128.48 (+8.6%) | $18.2B
-
-<b>〈필수소비재〉</b>
-  <b>SJM</b> J.M. Smucker Co
-    $112.39 (+10.4%) | $12.0B
+<b>〈커뮤니케이션〉</b>
+  <b>TIGO</b> Millicom International Cellular SA
+    $89.25 (+2.2%) | $14.9B
 
 
