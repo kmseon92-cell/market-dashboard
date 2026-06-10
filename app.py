@@ -4,7 +4,7 @@ import re
 
 import streamlit as st
 import yfinance as yf
-from datetime import datetime
+from datetime import datetime, timedelta
 from zoneinfo import ZoneInfo
 import pandas as pd
 
@@ -197,7 +197,8 @@ def _fetch_stooq(sym: str):
     prev = float(row[8])
     change = last - prev
     pct = (change / prev * 100) if prev else 0.0
-    return {"price": last, "change": change, "pct": pct, "as_of": row[1]}
+    # stooq 무료 시세는 지연(선물/달러인덱스 등)
+    return {"price": last, "change": change, "pct": pct, "as_of": row[1], "delayed": True}
 
 
 def _fetch_stooq_fresh(symbol: str):
@@ -384,13 +385,119 @@ def _fetch_investing(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 환율/선물(24시간장)은 stooq 우선.
-# 아시아 지수(^N225, 000001.SS, ^TWII)는 stooq 일봉이 장중 지연/전일 고착이 잦아
-# 실시간 regularMarketPrice를 주는 yahoo chart API를 우선하고 stooq는 마지막 폴백.
+# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 선물/달러인덱스는 stooq 우선 (지연 시세).
+# 지수는 KIS, 원/달러·달러/엔은 naver/KIS 실시간·전용 소스를 먼저 타므로 여기서 뺌.
 STOOQ_FIRST = {
     "CL=F", "NQ=F",
-    "KRW=X", "JPY=X", "DX-Y.NYB",
+    "DX-Y.NYB",
 }
+
+
+# ── 한국투자증권(KIS) 해외지수 ──────────────────────────────────────────
+# stooq 아시아 지수는 지연/종가고착이 잦아 KIS 해외지수 시세로 대체.
+# 단, KIS 무료 해외시세는 실시간이 아니라 지연(약 15~20분) → delayed 플래그로 카드에 "지연" 표시.
+# 코드 출처: frgn_code.mst (해외주식지수정보 마스터)
+KIS_INDEX_MAP = {
+    "^N225": "JP#NI225",   # 일본 니케이225
+    "^TWII": "TW#WT",      # 대만 가권
+    "000001.SS": "SHANG",  # 중국 상해종합
+}
+# 네이버가 안 주는 환율(달러/엔)만 KIS로. 원/달러는 네이버가 실시간이라 네이버 우선.
+KIS_FX_MAP = {
+    "JPY=X": "FX@JPY",     # 엔/달러 (USD/JPY)
+}
+KIS_BASE = "https://openapi.koreainvestment.com:9443"
+
+
+def _kis_creds():
+    """KIS 앱키/시크릿. Streamlit Cloud는 st.secrets, 로컬은 리포 루트의 .env 사용."""
+    key = secret = ""
+    try:
+        key = st.secrets.get("KIS_APP_KEY", "")
+        secret = st.secrets.get("KIS_APP_SECRET", "")
+    except Exception:
+        pass
+    key = key or os.environ.get("KIS_APP_KEY", "")
+    secret = secret or os.environ.get("KIS_APP_SECRET", "")
+    if not (key and secret):
+        d = os.path.dirname(os.path.abspath(__file__))
+        for _ in range(4):
+            envp = os.path.join(d, ".env")
+            if os.path.exists(envp):
+                for line in open(envp, encoding="utf-8"):
+                    line = line.strip()
+                    if line.startswith("KIS_APP_KEY=") and not key:
+                        key = line.split("=", 1)[1].strip().strip('"').strip("'")
+                    elif line.startswith("KIS_APP_SECRET=") and not secret:
+                        secret = line.split("=", 1)[1].strip().strip('"').strip("'")
+                break
+            d = os.path.dirname(d)
+    return key, secret
+
+
+@st.cache_data(ttl=43200)  # 토큰 24h 유효 → 12h마다 재발급
+def _kis_token(key: str, secret: str) -> str:
+    import urllib.request
+    body = json.dumps({"grant_type": "client_credentials",
+                       "appkey": key, "appsecret": secret}).encode()
+    req = urllib.request.Request(KIS_BASE + "/oauth2/tokenP", data=body,
+                                 headers={"content-type": "application/json"})
+    data = json.loads(urllib.request.urlopen(req, timeout=10).read().decode())
+    return data["access_token"]
+
+
+def _kis_chart(div: str, code: str):
+    """KIS 해외 기간별시세(일봉) 공통. div: N=지수, X=환율. output1에 현재가/전일대비/등락률."""
+    import urllib.request, urllib.parse, time as _time
+    key, secret = _kis_creds()
+    if not (key and secret):
+        raise ValueError("KIS creds 없음")
+    tok = _kis_token(key, secret)
+    end = datetime.now(ZoneInfo("Asia/Seoul"))
+    params = {
+        "FID_COND_MRKT_DIV_CODE": div,
+        "FID_INPUT_ISCD": code,
+        "FID_INPUT_DATE_1": (end - timedelta(days=10)).strftime("%Y%m%d"),
+        "FID_INPUT_DATE_2": end.strftime("%Y%m%d"),
+        "FID_PERIOD_DIV_CODE": "D",
+    }
+    url = (KIS_BASE + "/uapi/overseas-price/v1/quotations/inquire-daily-chartprice?"
+           + urllib.parse.urlencode(params))
+    headers = {"authorization": f"Bearer {tok}", "appkey": key,
+               "appsecret": secret, "tr_id": "FHKST03030100", "custtype": "P"}
+    last_err = None
+    for _ in range(3):
+        try:
+            r = json.loads(urllib.request.urlopen(
+                urllib.request.Request(url, headers=headers), timeout=6).read().decode())
+            break
+        except urllib.error.HTTPError as e:
+            last_err = e          # EGW00201(초당 거래건수 초과) 등 → 잠깐 쉬고 재시도
+            _time.sleep(0.6)
+    else:
+        raise last_err or ValueError("KIS 요청 실패")
+    o = r.get("output1") or {}
+    price = float(o.get("ovrs_nmix_prpr") or 0)
+    if not price:
+        raise ValueError(f"KIS 빈 응답: {r.get('msg1', '')}")
+    rows = r.get("output2") or []
+    bsop = rows[0].get("stck_bsop_date", "") if rows else ""
+    as_of = f"{bsop[:4]}-{bsop[4:6]}-{bsop[6:]}" if len(bsop) == 8 else ""
+    return {
+        "price": price,
+        "change": float(o.get("ovrs_nmix_prdy_vrss") or 0),
+        "pct": float(o.get("prdy_ctrt") or 0),
+        "as_of": as_of,
+        "delayed": True,   # KIS 무료 해외시세는 지연(약 15~20분)
+    }
+
+
+def _fetch_kis_index(symbol: str):
+    return _kis_chart("N", KIS_INDEX_MAP[symbol])
+
+
+def _fetch_kis_fx(symbol: str):
+    return _kis_chart("X", KIS_FX_MAP[symbol])
 
 
 @st.cache_data(ttl=30)
@@ -411,15 +518,22 @@ def fetch_quote(symbol: str):
         r = try_("cnbc", lambda: _fetch_cnbc_yield(symbol)) or try_("investing", lambda: _fetch_investing(symbol))
         return r or {"error": " / ".join(errs)}
 
-    # 국제 지수/환율/선물: stooq → 네이버 환율 → yahoo chart API → yfinance lib 순.
+    # 소스 우선순위: 실시간(naver/KIS지수) → KIS환율(지연) → stooq → yahoo.
+    # 지수(니케이/대만/상해)는 KIS, 원/달러는 naver 실시간, 달러/엔은 naver 미제공이라 KIS(지연).
     # yfinance .info / .history는 Streamlit Cloud rate-limit 빈번 → query1.finance.yahoo.com 직접 호출이 더 안정.
     sources = []
+    # 지수(니케이/대만/상해): naver 월드인덱스가 실시간이라 1순위, KIS(지연)는 폴백.
     if symbol in NAVER_WORLD_MAP:
         sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
-    if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
-        sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
+    if symbol in KIS_INDEX_MAP:
+        sources.append(("kis", lambda: _fetch_kis_index(symbol)))
+    # 환율: 원/달러는 naver 실시간, 달러/엔은 naver 미제공(409)이라 KIS(지연).
     if symbol in NAVER_EXCHANGE_MAP:
         sources.append(("naver_fx", lambda: _fetch_naver_exchange(symbol)))
+    if symbol in KIS_FX_MAP:
+        sources.append(("kis_fx", lambda: _fetch_kis_fx(symbol)))
+    if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
+        sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
     sources.append(("yf_chart", lambda: _fetch_yf_chart(symbol)))
     sources.append(("yfinance", lambda: _fetch_yf(symbol)))
     if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
@@ -616,15 +730,23 @@ def render_card(
 
     # 지금 장이 닫혀있으면 "장 마감" 배지 (운영시간 + 휴장일 기반). as_of 있으면 날짜 병기.
     # 장중인데 모든 소스가 전일 데이터뿐이면(stale) "전일 종가" 배지로 정직하게 표기.
+    closed = is_market_closed(symbol)
     stale_badge = ""
-    if is_market_closed(symbol) or q.get("stale"):
+    if closed or q.get("stale"):
         as_of = q.get("as_of") or ""
-        base = "장 마감" if is_market_closed(symbol) else "전일 종가"
+        base = "장 마감" if closed else "전일 종가"
         label = f"{base} · {as_of[5:]}" if as_of else base  # MM-DD
         stale_badge = (
             f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
             f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
             f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
+        )
+    # 장 열려있는데 지연 시세(KIS/stooq)면 "지연" 배지. 장 마감 땐 종가이므로 생략.
+    elif q.get("delayed") and closed is False:
+        stale_badge = (
+            f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
+            f'color:#3730a3;background:#e0e7ff;border:1px solid #a5b4fc;'
+            f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">지연</span>'
         )
 
     # 나스닥 선물은 가격보다 % 변동률이 더 의미있어서 예외처리
