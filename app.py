@@ -291,6 +291,45 @@ def _fetch_naver_exchange(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
+# 네이버 세계지수 (m.stock.naver.com worldstock). Reuters RIC 코드 사용.
+# Streamlit Cloud에서 yahoo는 rate-limit, stooq는 장중 전일 고착이 잦은데
+# 네이버 API는 이 앱에서 코스피/환율로 이미 안정 동작 확인된 경로.
+NAVER_WORLD_MAP = {
+    "^N225": ".N225",
+    "000001.SS": ".SSEC",
+    "^TWII": ".TWII",
+}
+
+
+def _fetch_naver_world(symbol: str):
+    import urllib.request, json
+    code = NAVER_WORLD_MAP[symbol]
+    url = f"https://api.stock.naver.com/index/{code}/basic"
+    req = urllib.request.Request(
+        url,
+        headers={"User-Agent": "Mozilla/5.0", "Referer": "https://m.stock.naver.com/"},
+    )
+    info = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+    last = float(str(info["closePrice"]).replace(",", ""))
+    raw_chg = info.get("compareToPreviousClosePrice", info.get("fluctuations"))
+    change = float(str(raw_chg).replace(",", ""))
+    pct = float(str(info["fluctuationsRatio"]).replace(",", ""))
+    # 부호: 값 자체에 -가 붙어오기도 하고 code(1상한 2상승 3보합 4하한 5하락)로만
+    # 구분되기도 함. code가 있으면 abs 후 code 기준으로 확정 (양쪽 다 안전).
+    sign_code = (info.get("compareToPreviousPrice") or {}).get("code") or (
+        info.get("fluctuationsType") or {}
+    ).get("code")
+    if sign_code in ("4", "5"):
+        change, pct = -abs(change), -abs(pct)
+    elif sign_code in ("1", "2"):
+        change, pct = abs(change), abs(pct)
+    out = {"price": last, "change": change, "pct": pct}
+    traded_at = str(info.get("localTradedAt") or "")
+    if len(traded_at) >= 10:
+        out["as_of"] = traded_at[:10]
+    return out
+
+
 # 미국 채권 cash 시장이 닫혀있으면 yfinance는 직전 종가에 고착됨 → 실시간 futures 기반 implied yield는 CNBC/investing.com에서만
 CNBC_YIELD_TAG = {"^TNX": "US10Y", "^TYX": "US30Y"}
 INVESTING_URL = {
@@ -375,6 +414,8 @@ def fetch_quote(symbol: str):
     # 국제 지수/환율/선물: stooq → 네이버 환율 → yahoo chart API → yfinance lib 순.
     # yfinance .info / .history는 Streamlit Cloud rate-limit 빈번 → query1.finance.yahoo.com 직접 호출이 더 안정.
     sources = []
+    if symbol in NAVER_WORLD_MAP:
+        sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
     if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
         sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
     if symbol in NAVER_EXCHANGE_MAP:
@@ -401,6 +442,8 @@ def fetch_quote(symbol: str):
             continue
         return r
     if stale_fallback:
+        # 어제 데이터를 오늘 것처럼 보이게 하지 않도록 표식 (카드에 배지 표시)
+        stale_fallback["stale"] = True
         return stale_fallback
     return {"error": " / ".join(errs)}
 
@@ -572,10 +615,12 @@ def render_card(
     price_str = format_price(symbol, q["price"])
 
     # 지금 장이 닫혀있으면 "장 마감" 배지 (운영시간 + 휴장일 기반). as_of 있으면 날짜 병기.
+    # 장중인데 모든 소스가 전일 데이터뿐이면(stale) "전일 종가" 배지로 정직하게 표기.
     stale_badge = ""
-    if is_market_closed(symbol):
+    if is_market_closed(symbol) or q.get("stale"):
         as_of = q.get("as_of") or ""
-        label = f"장 마감 · {as_of[5:]}" if as_of else "장 마감"  # MM-DD
+        base = "장 마감" if is_market_closed(symbol) else "전일 종가"
+        label = f"{base} · {as_of[5:]}" if as_of else base  # MM-DD
         stale_badge = (
             f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
             f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
