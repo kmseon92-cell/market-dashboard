@@ -166,6 +166,23 @@ def _fetch_stooq(sym: str):
     return {"price": last, "change": change, "pct": pct, "as_of": row[1]}
 
 
+def _fetch_stooq_fresh(symbol: str):
+    """stooq를 1순위로 쓰되, 장중에 stooq 일봉이 아직 전일 데이터에 머물러
+    있으면(close=어제 종가) 어제 등락률이 오늘 것처럼 표시되는 버그를 막는다.
+    해당 시장이 장중인데 as_of 날짜가 거래소 현지 타임존 기준 오늘과 다르면
+    ValueError를 raise해 다음 소스(yahoo chart API)로 폴백시킨다.
+    24시간장(선물/FX)은 MARKET_HOURS에 없으므로 자동으로 검증에서 제외된다.
+    """
+    r = _fetch_stooq(STOOQ_MAP[symbol])
+    cfg = MARKET_HOURS.get(symbol)
+    if cfg and is_market_closed(symbol) is False:
+        tz = cfg[0]
+        today = datetime.now(ZoneInfo(tz)).strftime("%Y-%m-%d")
+        if r.get("as_of") != today:
+            raise ValueError(f"stooq stale: as_of={r.get('as_of')} != {today}")
+    return r
+
+
 def _fetch_yf(symbol: str):
     # .info는 Streamlit Cloud에서 자주 rate-limit. chart API(.history)가 더 안정.
     hist = yf.Ticker(symbol).history(period="2d", auto_adjust=False, timeout=4)
@@ -319,13 +336,13 @@ def fetch_quote(symbol: str):
     # yfinance .info / .history는 Streamlit Cloud rate-limit 빈번 → query1.finance.yahoo.com 직접 호출이 더 안정.
     sources = []
     if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
-        sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
+        sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
     if symbol in NAVER_EXCHANGE_MAP:
         sources.append(("naver_fx", lambda: _fetch_naver_exchange(symbol)))
     sources.append(("yf_chart", lambda: _fetch_yf_chart(symbol)))
     sources.append(("yfinance", lambda: _fetch_yf(symbol)))
     if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
-        sources.append(("stooq", lambda: _fetch_stooq(STOOQ_MAP[symbol])))
+        sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
 
     for name, fn in sources:
         r = try_(name, fn)
