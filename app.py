@@ -77,11 +77,10 @@ MARKET_HOURS = {
     "^N225": ("Asia/Tokyo", 900, 1530, "JP"),
     "000001.SS": ("Asia/Shanghai", 930, 1500, "CN"),
     "^TWII": ("Asia/Taipei", 900, 1330, "TW"),
-    "^TNX": ("America/New_York", 800, 1700, "NYSE"),
-    "^TYX": ("America/New_York", 800, 1700, "NYSE"),
 }
-# 24시간장 (CME 선물 / 글로벌 FX): 평일 상시, 금 17:00~일 18:00 ET만 휴장
-MARKET_24H = {"NQ=F", "CL=F", "JPY=X", "KRW=X", "DX-Y.NYB"}
+# 24시간장 (CME 선물 / 글로벌 FX / 美국채금리): 평일 상시, 금 17:00~일 18:00 ET만 휴장.
+# ^TNX/^TYX는 채권선물 기반이라 현금시장(8~17 ET) 밖에도 글로벌하게 거의 24h 움직임 → 24h장 취급.
+MARKET_24H = {"NQ=F", "CL=F", "JPY=X", "KRW=X", "DX-Y.NYB", "^TNX", "^TYX"}
 
 
 @st.cache_data(ttl=3600)
@@ -409,7 +408,8 @@ def _fetch_prefetched(symbol: str):
     q = (data.get("quotes") or {}).get(symbol)
     if not q:
         raise ValueError(f"prefetch: {symbol} 없음")
-    out = {"price": q["price"], "change": q["change"], "pct": q["pct"], "delayed": True}
+    out = {"price": q["price"], "change": q["change"], "pct": q["pct"],
+           "delayed": True, "delay_label": "5분"}
     fetched = data.get("fetched_at", "")
     if len(fetched) >= 10:
         out["as_of"] = fetched[:10]
@@ -778,12 +778,14 @@ def render_card(
             f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
             f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
         )
-    # 장 열려있는데 지연 시세(KIS/stooq)면 "지연" 배지. 장 마감 땐 종가이므로 생략.
+    # 장 열려있는데 지연 시세(KIS/stooq)면 배지. 장 마감 땐 종가이므로 생략.
+    # delay_label이 있으면 그걸 사용(프리페치는 "5분"), 없으면 기본 "지연".
     elif q.get("delayed") and closed is False:
+        label = q.get("delay_label") or "지연"
         stale_badge = (
             f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
             f'color:#3730a3;background:#e0e7ff;border:1px solid #a5b4fc;'
-            f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">지연</span>'
+            f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
         )
 
     # 나스닥 선물은 가격보다 % 변동률이 더 의미있어서 예외처리
