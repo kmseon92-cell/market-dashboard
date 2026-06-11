@@ -154,12 +154,11 @@ STOOQ_MAP = {
     "^N225": "^nkx",
     "000001.SS": "^shc",
     "^TWII": "^twse",
-    "NQ=F": "nq.f",
-    "CL=F": "cl.f",
     "KRW=X": "usdkrw",
     "JPY=X": "usdjpy",
     "DX-Y.NYB": "dx.f",
 }
+# NQ=F/CL=F는 stooq nq.f/cl.f 심볼이 죽어(404) 제거. investing.com 프리페치로 대체.
 
 
 def _fetch_naver_kr(code: str):
@@ -385,12 +384,44 @@ def _fetch_investing(symbol: str):
     return {"price": last, "change": change, "pct": pct}
 
 
-# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 선물/달러인덱스는 stooq 우선 (지연 시세).
-# 지수는 KIS, 원/달러·달러/엔은 naver/KIS 실시간·전용 소스를 먼저 타므로 여기서 뺌.
+# Streamlit Cloud에서 yfinance rate-limit 자주 걸리는 달러인덱스는 stooq 우선 (지연 시세).
+# 지수는 KIS, 원/달러·달러/엔은 naver/KIS, 나스닥선물·WTI는 investing 프리페치를 먼저 탐.
 STOOQ_FIRST = {
-    "CL=F", "NQ=F",
     "DX-Y.NYB",
 }
+
+# investing.com을 맥미니가 미리 긁어 reports/us_futures.json으로 공급하는 심볼.
+# (Streamlit Cloud IP는 investing.com 차단 → 직접 호출 불가) fetcher: us-futures/fetch.py
+PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX"}
+
+
+@st.cache_data(ttl=60)
+def _load_us_futures() -> dict:
+    p = os.path.join(os.path.dirname(__file__), "reports", "us_futures.json")
+    with open(p, encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _fetch_prefetched(symbol: str):
+    """reports/us_futures.json(맥미니가 investing.com에서 5분마다 갱신)에서 읽기.
+    장중인데 갱신이 30분 넘게 끊겼으면(맥미니 다운 등) stale로 보고 폴백."""
+    data = _load_us_futures()
+    q = (data.get("quotes") or {}).get(symbol)
+    if not q:
+        raise ValueError(f"prefetch: {symbol} 없음")
+    out = {"price": q["price"], "change": q["change"], "pct": q["pct"], "delayed": True}
+    fetched = data.get("fetched_at", "")
+    if len(fetched) >= 10:
+        out["as_of"] = fetched[:10]
+    if is_market_closed(symbol) is False and fetched:
+        try:
+            age = (datetime.now(ZoneInfo("Asia/Seoul"))
+                   - datetime.fromisoformat(fetched)).total_seconds()
+        except Exception:
+            age = None
+        if age is not None and age > 1800:
+            raise ValueError(f"prefetch stale {int(age)}s")
+    return out
 
 
 # ── 한국투자증권(KIS) 해외지수 ──────────────────────────────────────────
@@ -515,13 +546,19 @@ def fetch_quote(symbol: str):
         r = try_("naver_kr", lambda: _fetch_naver_kr(NAVER_INDEX_MAP[symbol]))
         if r: return r
     if symbol in CNBC_YIELD_TAG:
-        r = try_("cnbc", lambda: _fetch_cnbc_yield(symbol)) or try_("investing", lambda: _fetch_investing(symbol))
+        # 국채금리: investing 프리페치(맥미니) 우선, 끊기면 cnbc → investing 직접.
+        r = (try_("prefetch", lambda: _fetch_prefetched(symbol))
+             or try_("cnbc", lambda: _fetch_cnbc_yield(symbol))
+             or try_("investing", lambda: _fetch_investing(symbol)))
         return r or {"error": " / ".join(errs)}
 
     # 소스 우선순위: 실시간(naver/KIS지수) → KIS환율(지연) → stooq → yahoo.
     # 지수(니케이/대만/상해)는 KIS, 원/달러는 naver 실시간, 달러/엔은 naver 미제공이라 KIS(지연).
     # yfinance .info / .history는 Streamlit Cloud rate-limit 빈번 → query1.finance.yahoo.com 직접 호출이 더 안정.
     sources = []
+    # 나스닥선물·WTI·달러엔: investing 프리페치(맥미니 5분 갱신)를 1순위, yahoo는 폴백.
+    if symbol in PREFETCH_FUTURES:
+        sources.append(("prefetch", lambda: _fetch_prefetched(symbol)))
     # 지수(니케이/대만/상해): naver 월드인덱스가 실시간이라 1순위, KIS(지연)는 폴백.
     if symbol in NAVER_WORLD_MAP:
         sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
