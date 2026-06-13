@@ -1,14 +1,18 @@
-<!-- updated: 2026-06-13 06:03 -->
+<!-- updated: 2026-06-14 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-06-13 06:03 KST
+기준: 2026-06-14 06:02 KST
 ━━━━━━━━━━━━━━━
 
-<b>06/15 (월) · 1종목</b>
+<b>06/15 (월) · 3종목</b>
+  〈장전〉
+    <b>CGC</b> Canopy Growth Corporation
   〈장후〉
     <b>DOMO</b> Domo, Inc.
+    <b>PLAY</b> Dave & Buster's Entertainment, Inc.
 
-<b>06/16 (화) · 0종목</b>
-  — 주목 종목 없음
+<b>06/16 (화) · 1종목</b>
+  〈장후〉
+    <b>LZB</b> La-Z-Boy, Inc.
 
 <b>06/17 (수) · 2종목</b>
   〈장전〉
