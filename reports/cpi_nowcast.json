@@ -15,8 +15,26 @@
     "source_updated": "2026-06-15 00:00"
   },
   "consensus": {
-    "cpi": null,
-    "core_cpi": null
+    "cpi": {
+      "latest_release": {
+        "actual": 4.2,
+        "forecast": 4.2,
+        "previous": 3.8,
+        "occurrence_time": "2026-06-10T12:30:00Z",
+        "reference_period": "May"
+      },
+      "next_release": null
+    },
+    "core_cpi": {
+      "latest_release": {
+        "actual": 2.9,
+        "forecast": 2.9,
+        "previous": 2.8,
+        "occurrence_time": "2026-06-10T12:30:00Z",
+        "reference_period": "May"
+      },
+      "next_release": null
+    }
   },
-  "fetched_at": "2026-06-16T12:10:04"
+  "fetched_at": "2026-06-16T12:22:26"
 }
