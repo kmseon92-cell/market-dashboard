@@ -322,7 +322,9 @@ def _fetch_naver_world(symbol: str):
         change, pct = -abs(change), -abs(pct)
     elif sign_code in ("1", "2"):
         change, pct = abs(change), abs(pct)
-    out = {"price": last, "change": change, "pct": pct}
+    # 네이버 해외지수는 실시간이 아니라 ~15~20분 지연 → 정직하게 지연 뱃지 표시.
+    out = {"price": last, "change": change, "pct": pct,
+           "delayed": True, "delay_label": "지연"}
     traded_at = str(info.get("localTradedAt") or "")
     if len(traded_at) >= 10:
         out["as_of"] = traded_at[:10]
@@ -559,7 +561,7 @@ def fetch_quote(symbol: str):
     # 나스닥선물·WTI·달러엔: investing 프리페치(맥미니 5분 갱신)를 1순위, yahoo는 폴백.
     if symbol in PREFETCH_FUTURES:
         sources.append(("prefetch", lambda: _fetch_prefetched(symbol)))
-    # 지수(니케이/대만/상해): naver 월드인덱스가 실시간이라 1순위, KIS(지연)는 폴백.
+    # 지수(니케이/대만/상해): naver 월드인덱스(~15~20분 지연) 1순위, KIS(지연) 폴백. 둘 다 지연이라 카드에 '지연' 뱃지.
     if symbol in NAVER_WORLD_MAP:
         sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
     if symbol in KIS_INDEX_MAP:
