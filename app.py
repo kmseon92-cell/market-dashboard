@@ -724,13 +724,15 @@ def render_card(
 
     price_val = q.get("price", 0)
     danger = symbol == "^TNX" and price_val >= 5.0
+    # 엔케리 청산 시그널: 달러/엔이 하루 -2%+ 급락 + 156 미만이면 빨간 "경고"
+    jpy_crash = symbol == "JPY=X" and pct <= -2.0 and price_val < 156
     warn = (
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
         or (symbol == "^TYX" and price_val >= 5.0)
         or (symbol == "CL=F" and price_val >= 100)
-    ) and not danger
-    if danger:
+    ) and not danger and not jpy_crash
+    if danger or jpy_crash:
         card_bg = "background:#fee2e2;"
         border = "border:2px solid #dc2626;"
     elif warn:
@@ -739,15 +741,26 @@ def render_card(
     else:
         card_bg = ""
         border = "border:1px solid #2a2a2a;"
-    danger_html = (
-        '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
-        'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
-        'letter-spacing:6px;text-align:center;border-radius:6px;'
-        'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
-        'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
-        'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황챠</div>'
-        if danger else ""
-    )
+    if danger:
+        danger_html = (
+            '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
+            'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
+            'letter-spacing:6px;text-align:center;border-radius:6px;'
+            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
+            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
+            'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황챠</div>'
+        )
+    elif jpy_crash:
+        danger_html = (
+            '<div class="bumgorae-danger" style="margin-top:8px;padding:6px 12px;'
+            'background:#dc2626;color:#fff;font-size:1.5rem;font-weight:900;'
+            'letter-spacing:4px;text-align:center;border-radius:6px;'
+            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
+            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
+            'animation:bumgorae-pulse 1.2s ease-in-out infinite;">⚠ 경고</div>'
+        )
+    else:
+        danger_html = ""
 
     chart_html = ""
     if ytd:
