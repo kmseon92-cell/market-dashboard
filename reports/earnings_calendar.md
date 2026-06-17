@@ -1,15 +1,7 @@
-<!-- updated: 2026-06-17 06:02 -->
+<!-- updated: 2026-06-18 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-06-17 06:02 KST
+기준: 2026-06-18 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>06/17 (수) · 4종목</b>
-  〈장전〉
-    <b>JBL</b> Jabil Inc.
-    <b>PGR</b> Progressive Corp.
-    <b>KMX</b> CarMax, Inc.
-  〈장후〉
-    <b>SWBI</b> Smith & Wesson Brands, Inc.
 
 <b>06/18 (목) · 2종목</b>
   〈장전〉
@@ -30,3 +22,7 @@
     <b>PAYX</b> Paychex, Inc.
   〈장후〉
     <b>MU</b> Micron Technology, Inc.
+
+<b>06/25 (목) · 1종목</b>
+  〈장전〉
+    <b>NNOX</b> Nano-X Imaging Ltd.
