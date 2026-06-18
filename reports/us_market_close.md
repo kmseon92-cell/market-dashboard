@@ -1,163 +1,201 @@
-<!-- updated: 2026-06-18 06:30 -->
+<!-- updated: 2026-06-19 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-06-18
+📅 2026-06-19
 ━━━━━━━━━━━━━━━
-다우 -0.98% | 나스닥 -1.34% | S&P500 -1.21% | 러셀2000 -0.72% | 필반도체 +1.38% | WTI $75.01 | 환율 1,527원
+다우 +0.14% | 나스닥 +1.91% | S&P500 +1.08% | 러셀2000 +2.12% | 필반도체 +6.42% | WTI $75.52 | 환율 1,535원
 
-📈 <b>52주 신고가 (66종목)</b>
+📈 <b>52주 신고가 (75종목)</b>
 
 <b>〈기술〉</b>
   <b>AMAT</b> Applied Materials Inc
-    $592.92 (+4.3%) | $470.8B
+    $617.11 (+4.1%) | $490.0B
   <b>ARM</b> Arm Holdings Plc ADR
-    $418.88 (+5.7%) | $445.7B
+    $439.46 (+4.9%) | $467.6B
   <b>ASML</b> ASML Holding NV
-    $1,867.83 (+3.5%) | $719.9B
+    $1,929.68 (+3.3%) | $743.7B
+  <b>INTC</b> Intel Corp 🔥
+    $133.99 (+10.6%) | $673.4B
   <b>LRCX</b> Lam Research Corp
-    $374.18 (+1.3%) | $467.9B
+    $389.04 (+4.0%) | $486.5B
+  <b>MRVL</b> Marvell Technology Inc
+    $310.58 (+7.3%) | $271.7B
+  <b>MU</b> Micron Technology Inc 🔥
+    $1,133.99 (+8.7%) | $1.3T
+  <b>SNDK</b> Sandisk Corp 🔥
+    $2,184.75 (+11.5%) | $323.5B
+  <b>STX</b> Seagate Technology Holdings Plc
+    $1,070.23 (+0.4%) | $240.0B
+  <b>TSM</b> Taiwan Semiconductor Manufacturing ADR
+    $462.12 (+6.9%) | $2.4T
   <b>WDC</b> Western Digital Corp
-    $712.13 (+4.6%) | $245.5B
-  <b>DOCN</b> DigitalOcean Holdings Inc
-    $177.81 (+2.1%) | $18.6B
-  <b>JBL</b> Jabil Inc
-    $374.98 (-0.1%) | $39.6B
-  <b>MKSI</b> MKS Inc
-    $371.26 (+1.4%) | $25.1B
+    $746.23 (+4.8%) | $257.2B
+  <b>ALAB</b> Astera Labs Inc 🔥
+    $417.07 (+11.3%) | $71.5B
+  <b>ALGM</b> Allegro Microsystems Inc 🔥
+    $59.00 (+9.3%) | $11.0B
+  <b>CIFR</b> Cipher Digital Inc 🔥
+    $29.18 (+10.7%) | $11.9B
+  <b>CRDO</b> Credo Technology Group Holding Ltd 🔥
+    $271.83 (+9.0%) | $50.7B
+  <b>ENTG</b> Entegris Inc 🔥
+    $178.77 (+13.6%) | $27.3B
+  <b>MKSI</b> MKS Inc 🔥
+    $406.37 (+9.5%) | $27.4B
   <b>NBIS</b> Nebius Group NV
-    $280.91 (+6.0%) | $70.7B
-  <b>SIMO</b> Silicon Motion Technology Corp ADR 🔥
-    $307.12 (+8.7%) | $10.3B
-  <b>SNX</b> TD Synnex Corp
-    $283.81 (+0.6%) | $22.8B
-  <b>TER</b> Teradyne Inc
-    $408.56 (-0.2%) | $64.0B
+    $286.69 (+2.1%) | $72.2B
+  <b>QNT</b> Quantinuum Inc 🔥
+    $69.80 (+11.2%) | $36.4B
+  <b>SIMO</b> Silicon Motion Technology Corp ADR
+    $321.66 (+4.7%) | $10.8B
+  <b>TTMI</b> TTM Technologies Inc
+    $216.44 (+6.8%) | $22.5B
+  <b>UMC</b> United Micro Electronics ADR 🔥
+    $24.08 (+10.7%) | $60.6B
 
 <b>〈금융〉</b>
-  <b>BAC</b> Bank Of America Corp
-    $56.53 (-0.6%) | $401.2B
   <b>C</b> Citigroup Inc
-    $143.78 (+0.6%) | $246.6B
+    $143.06 (-0.5%) | $245.3B
   <b>GS</b> Goldman Sachs Group Inc
-    $1,099.14 (+0.8%) | $324.2B
-  <b>HSBC</b> HSBC Holdings plc ADR
-    $95.23 (+0.8%) | $327.3B
+    $1,096.56 (-0.2%) | $323.5B
   <b>JPM</b> JPMorgan Chase & Co
-    $333.46 (+0.7%) | $893.5B
+    $325.22 (-2.5%) | $871.4B
   <b>MS</b> Morgan Stanley
-    $224.96 (+1.9%) | $354.8B
+    $223.17 (-0.8%) | $352.0B
   <b>MUFG</b> Mitsubishi UFJ Financial Group Inc ADR
-    $20.75 (+2.2%) | $234.2B
-  <b>RY</b> Royal Bank Of Canada
-    $200.70 (-0.2%) | $280.3B
+    $21.08 (+1.6%) | $237.9B
   <b>TD</b> Toronto Dominion Bank
-    $118.50 (+0.2%) | $200.2B
-  <b>AIZ</b> Assurant Inc
-    $262.13 (+0.6%) | $13.0B
+    $119.29 (+0.7%) | $201.5B
   <b>BAP</b> Credicorp Ltd
-    $386.94 (+6.2%) | $30.8B
-  <b>BEN</b> Franklin Resources Inc
-    $33.29 (+0.3%) | $17.3B
+    $382.76 (-1.1%) | $30.4B
   <b>BMO</b> Bank of Montreal
-    $169.84 (+0.2%) | $119.9B
+    $170.82 (+0.6%) | $120.6B
   <b>BNS</b> Bank Of Nova Scotia
-    $86.37 (+1.0%) | $106.5B
+    $87.03 (+0.8%) | $107.3B
   <b>BNY</b> Bank Of New York Mellon Corp
-    $146.07 (+1.1%) | $100.3B
+    $143.63 (-1.7%) | $98.6B
   <b>GL</b> Globe Life Inc
-    $171.25 (+1.2%) | $13.3B
+    $170.76 (-0.3%) | $13.3B
   <b>IBKR</b> Interactive Brokers Group Inc
-    $95.09 (+2.1%) | $42.4B
-  <b>ING</b> ING Groep NV ADR
-    $31.24 (+0.3%) | $89.9B
+    $96.00 (+1.0%) | $42.8B
   <b>IX</b> Orix Corp ADR
-    $39.63 (+0.7%) | $43.7B
-  <b>MFG</b> Mizuho Financial Group Inc ADR
-    $10.14 (+3.9%) | $121.2B
+    $40.15 (+1.3%) | $44.2B
   <b>NTRS</b> Northern Trust Corp
-    $174.95 (+0.1%) | $32.4B
-  <b>SAN</b> Banco Santander SA ADR
-    $13.33 (-0.4%) | $195.7B
+    $172.11 (-1.6%) | $31.9B
   <b>SLF</b> Sun Life Financial Inc
-    $77.94 (+0.4%) | $43.2B
+    $78.95 (+1.3%) | $43.7B
   <b>SMFG</b> Sumitomo Mitsui Financial Group Inc ADR
-    $24.54 (+1.5%) | $156.1B
+    $25.23 (+2.8%) | $160.5B
+  <b>SNEX</b> StoneX Group Inc
+    $139.01 (+4.8%) | $11.0B
   <b>STT</b> State Street Corp
-    $171.10 (-0.1%) | $47.4B
+    $168.31 (-1.6%) | $46.6B
   <b>UBS</b> UBS Group AG
-    $49.73 (-1.4%) | $151.2B
-  <b>WBS</b> Webster Financial Corp
-    $75.01 (+0.2%) | $12.2B
+    $50.80 (+2.1%) | $154.4B
+  <b>WULF</b> TeraWulf Inc
+    $28.98 (+4.0%) | $14.4B
 
 <b>〈산업재〉</b>
   <b>CAT</b> Caterpillar Inc
-    $955.92 (+1.1%) | $440.3B
+    $985.82 (+3.1%) | $454.1B
   <b>GE</b> GE Aerospace
-    $357.03 (+1.5%) | $372.5B
+    $357.64 (+0.2%) | $373.1B
   <b>AIT</b> Applied Industrial Technologies Inc
-    $329.89 (+1.7%) | $12.2B
+    $337.96 (+2.5%) | $12.5B
+  <b>BE</b> Bloom Energy Corp 🔥
+    $328.91 (+15.4%) | $93.6B
   <b>CMI</b> Cummins Inc
-    $717.78 (+2.5%) | $99.0B
+    $716.86 (-0.1%) | $98.9B
+  <b>CR</b> Crane Co
+    $214.90 (+2.8%) | $12.4B
   <b>CRS</b> Carpenter Technology Corp
-    $575.47 (+2.5%) | $28.6B
+    $586.47 (+1.9%) | $29.1B
   <b>CW</b> Curtiss-Wright Corp
-    $777.29 (+1.7%) | $28.7B
-  <b>HONIV</b> Honeywell International Inc - When Issued - June 2026
-    $190.00 (+1.0%) | $146.9B
+    $771.93 (-0.7%) | $28.5B
+  <b>GWW</b> W.W. Grainger Inc
+    $1,365.41 (+4.1%) | $64.5B
+  <b>HONIV</b> Honeywell International Inc - When Issued - June 2026 🔥
+    $206.00 (+8.4%) | $157.1B
   <b>HWM</b> Howmet Aerospace Inc
-    $283.23 (+2.1%) | $113.3B
+    $277.66 (-2.0%) | $111.1B
   <b>IEX</b> Idex Corp
-    $223.69 (-0.1%) | $16.6B
+    $224.93 (+0.6%) | $16.6B
   <b>INIO</b> Innio NV
-    $35.02 (+2.3%) | $26.3B
+    $37.45 (+6.9%) | $28.1B
+  <b>JCI</b> Johnson Controls International plc
+    $144.82 (+0.8%) | $88.4B
   <b>MOG-A</b> Moog Inc
-    $411.37 (+2.5%) | $13.0B
+    $409.15 (-0.5%) | $13.0B
+  <b>NVT</b> nVent Electric plc
+    $177.02 (+3.6%) | $28.6B
+  <b>RBC</b> RBC Bearings Inc
+    $639.18 (+2.1%) | $20.2B
+  <b>ROK</b> Rockwell Automation Inc
+    $473.79 (+3.3%) | $52.7B
+  <b>SUNB</b> Sunbelt Rentals Holdings Inc
+    $86.06 (+5.6%) | $35.6B
   <b>VMI</b> Valmont Industries Inc
-    $565.31 (+1.6%) | $11.0B
-  <b>WTS</b> Watts Water Technologies Inc
-    $336.32 (-0.8%) | $11.2B
+    $570.31 (+0.9%) | $11.1B
+  <b>WAB</b> Westinghouse Air Brake Technologies Corp
+    $273.83 (+0.7%) | $46.5B
   <b>WWD</b> Woodward Inc
-    $434.83 (+3.1%) | $25.9B
+    $430.08 (-1.1%) | $25.6B
 
 <b>〈헬스케어〉</b>
   <b>ARWR</b> Arrowhead Pharmaceuticals Inc
-    $81.04 (+5.9%) | $11.4B
+    $81.82 (+1.0%) | $11.5B
+  <b>AXSM</b> Axsome Therapeutics Inc
+    $250.50 (-0.7%) | $12.9B
   <b>BTSG</b> BrightSpring Health Services Inc
-    $64.43 (+0.5%) | $12.6B
-  <b>DVA</b> DaVita Inc
-    $210.58 (+0.8%) | $13.5B
+    $66.25 (+2.8%) | $13.0B
   <b>KRYS</b> Krystal Biotech Inc
-    $341.66 (+5.7%) | $10.1B
-  <b>MRNA</b> Moderna Inc 🔥
-    $61.80 (+11.6%) | $24.5B
+    $348.06 (+1.9%) | $10.3B
+  <b>MRNA</b> Moderna Inc
+    $63.96 (+3.5%) | $25.4B
+
+<b>〈유틸리티〉</b>
+  <b>D</b> Dominion Energy Inc
+    $68.41 (+0.6%) | $60.2B
 
 <b>〈소재〉</b>
   <b>ESI</b> Element Solutions Inc
-    $45.25 (+1.6%) | $11.0B
-  <b>FCX</b> Freeport-McMoRan Inc
-    $69.06 (-1.6%) | $99.3B
+    $45.97 (+1.6%) | $11.2B
 
 <b>〈경기소비재〉</b>
   <b>H</b> Hyatt Hotels Corp
-    $201.88 (+2.5%) | $19.0B
-  <b>HLT</b> Hilton Worldwide Holdings Inc
-    $349.30 (-0.3%) | $79.5B
-  <b>IHG</b> Intercontinental Hotels Group ADR
-    $170.66 (+0.1%) | $25.4B
+    $202.09 (+0.1%) | $19.0B
   <b>SN</b> SharkNinja Inc
-    $133.56 (-2.0%) | $18.9B
+    $140.84 (+5.5%) | $19.9B
   <b>VIK</b> Viking Holdings Ltd
-    $94.71 (+0.7%) | $42.2B
-  <b>WSM</b> Williams-Sonoma Inc
-    $221.15 (-2.6%) | $26.0B
+    $97.17 (+2.6%) | $43.3B
 
-🚀 <b>8% 이상 급등 (2종목)</b>
+<b>〈부동산〉</b>
+  <b>HST</b> Host Hotels & Resorts Inc
+    $25.01 (+1.6%) | $17.1B
 
-<b>〈금융〉</b>
-  <b>HOOD</b> Robinhood Markets Inc
-    $105.20 (+8.8%) | $94.8B
+🚀 <b>8% 이상 급등 (9종목)</b>
 
 <b>〈기술〉</b>
-  <b>QNT</b> Quantinuum Inc
-    $62.75 (+13.2%) | $16.4B
+  <b>KLAC</b> KLA Corp
+    $259.56 (+8.7%) | $339.1B
+  <b>ASX</b> ASE Technology Holding CoLtd ADR
+    $40.56 (+8.3%) | $89.0B
+  <b>CBRS</b> Cerebras Systems Inc
+    $234.71 (+9.8%) | $51.5B
+  <b>GLW</b> Corning Inc
+    $194.92 (+11.1%) | $167.8B
+  <b>LSCC</b> Lattice Semiconductor Corp
+    $153.72 (+9.9%) | $21.1B
+  <b>RMBS</b> Rambus Inc
+    $141.17 (+8.5%) | $15.3B
+  <b>SMCI</b> Super Micro Computer Inc
+    $30.66 (+10.4%) | $19.8B
+
+<b>〈금융〉</b>
+  <b>RKT</b> Rocket Companies Inc
+    $14.42 (+9.1%) | $40.8B
+
+<b>〈경기소비재〉</b>
+  <b>W</b> Wayfair Inc
+    $88.52 (+8.5%) | $11.7B
 
 
