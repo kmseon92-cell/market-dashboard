@@ -847,8 +847,13 @@ def fetch_all_quotes(symbols: tuple) -> dict:
     """모든 심볼을 병렬로 fetch (개별 fetch_quote에도 캐시 있어 hot path는 즉시)"""
     from concurrent.futures import ThreadPoolExecutor
     real_syms = tuple(s for s in symbols if not s.startswith("__"))
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        return dict(zip(real_syms, ex.map(fetch_quote, real_syms)))
+    try:
+        with ThreadPoolExecutor(max_workers=6) as ex:
+            return dict(zip(real_syms, ex.map(fetch_quote, real_syms)))
+    except RuntimeError:
+        # Streamlit Cloud(파이썬 3.14) 컨테이너 스레드 한도로 스레드 생성 실패 시 순차 폴백
+        # 개별 fetch_quote에도 캐시가 있어 hot path는 여전히 빠름
+        return {s: fetch_quote(s) for s in real_syms}
 
 
 @st.cache_data(ttl=300)
