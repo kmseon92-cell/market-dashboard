@@ -1363,7 +1363,6 @@ def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
     yfinance는 한국 시장 stale data 자주 발생 → 네이버가 closePriceRaw로 정확.
     """
     import urllib.request, json
-    from concurrent.futures import ThreadPoolExecutor
 
     if not tickers:
         return {}
@@ -1381,11 +1380,11 @@ def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
         except Exception:
             return t, None
 
+    # Streamlit Cloud(py3.14) 스레드 한도 회피 — 순차 처리(각 함수에 cache 있음)
     out: dict[str, float] = {}
-    with ThreadPoolExecutor(max_workers=12) as ex:
-        for t, v in ex.map(_one, tickers):
-            if v is not None:
-                out[t] = v
+    for t, v in map(_one, tickers):
+        if v is not None:
+            out[t] = v
     return out
 
 
@@ -1649,7 +1648,6 @@ def fetch_kr_today_ohlc(codes: tuple) -> dict:
     if not codes:
         return {}
     from datetime import date
-    from concurrent.futures import ThreadPoolExecutor
     import urllib.request
     import json as _json
 
@@ -1679,11 +1677,11 @@ def fetch_kr_today_ohlc(codes: tuple) -> dict:
         except Exception:
             return code, None
 
+    # Streamlit Cloud(py3.14) 스레드 한도 회피 — 순차 처리
     out: dict[str, tuple[float, float, float, float]] = {}
-    with ThreadPoolExecutor(max_workers=10) as ex:
-        for code, ohlc in ex.map(_fetch, codes):
-            if ohlc:
-                out[code] = ohlc
+    for code, ohlc in map(_fetch, codes):
+        if ohlc:
+            out[code] = ohlc
     return out
 
 
