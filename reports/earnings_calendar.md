@@ -1,18 +1,19 @@
-<!-- updated: 2026-06-20 06:02 -->
+<!-- updated: 2026-06-21 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-06-20 06:02 KST
+기준: 2026-06-21 06:02 KST
 ━━━━━━━━━━━━━━━
 
 <b>06/22 (월) · 1종목</b>
   〈장전〉
     <b>FRVO</b> Fervo Energy Company
 
-<b>06/23 (화) · 3종목</b>
+<b>06/23 (화) · 4종목</b>
   〈장전〉
     <b>CCL</b> Carnival Corp.
   〈장후〉
     <b>FDX</b> FedEx Corp.
     <b>KBH</b> KB Home
+    <b>WOR</b> Worthington Industries, Inc.
 
 <b>06/24 (수) · 3종목</b>
   〈장전〉
