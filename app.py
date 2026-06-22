@@ -405,7 +405,12 @@ def _load_us_futures() -> dict:
 
 def _fetch_prefetched(symbol: str):
     """reports/us_futures.json(맥미니가 investing.com에서 5분마다 갱신)에서 읽기.
-    장중인데 갱신이 30분 넘게 끊겼으면(맥미니 다운 등) stale로 보고 폴백."""
+    investing.com 프리페치는 이 심볼들의 '정식' 소스다. yahoo 폴백은 선물 야간장에
+    오늘 일봉이 아직 없어 라이브가를 그제 종가와 비교하는 prev종가 버그가 있어
+    등락 '부호'까지 틀어진다(NQ=F가 대표 사례, 실제 -0.2%인데 +1%로 표시).
+    따라서 갱신이 다소 늦더라도(특히 Streamlit Cloud 재배포 지연으로 fetched_at이
+    실제보다 오래돼 보일 때) 프리페치 값을 버리지 않고 '지연' 배지만 키운다.
+    파일/심볼이 아예 없을 때만 raise해서 폴백시킨다."""
     data = _load_us_futures()
     q = (data.get("quotes") or {}).get(symbol)
     if not q:
@@ -415,14 +420,16 @@ def _fetch_prefetched(symbol: str):
     fetched = data.get("fetched_at", "")
     if len(fetched) >= 10:
         out["as_of"] = fetched[:10]
+    # 갱신 경과시간으로 배지 라벨만 조정(폴백 안 함). 틀린 yahoo 값으로 떨어지느니
+    # 조금 늦은 정확한 investing 값을 '○○분 전'으로 정직하게 보여준다.
     if is_market_closed(symbol) is False and fetched:
         try:
             age = (datetime.now(ZoneInfo("Asia/Seoul"))
                    - datetime.fromisoformat(fetched)).total_seconds()
         except Exception:
             age = None
-        if age is not None and age > 1800:
-            raise ValueError(f"prefetch stale {int(age)}s")
+        if age is not None and age > 900:
+            out["delay_label"] = f"{int(age // 60)}분 전"
     return out
 
 
