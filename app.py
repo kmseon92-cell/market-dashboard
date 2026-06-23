@@ -394,7 +394,7 @@ STOOQ_FIRST = {
 
 # investing.com을 맥미니가 미리 긁어 reports/us_futures.json으로 공급하는 심볼.
 # (Streamlit Cloud IP는 investing.com 차단 → 직접 호출 불가) fetcher: us-futures/fetch.py
-PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX"}
+PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX", "DX-Y.NYB"}
 # 이 중 'CME 선물'은 yahoo 폴백이 야간장 prev종가 버그로 등락 부호가 뒤집힌다.
 # (NQ=F가 실제 -0.2%인데 +1%로 표시되던 사고) 따라서 프리페치가 못 들어오면
 # 틀린 yahoo 값을 보여주느니 fail-closed로 '—'(데이터 없음) 처리한다. 사용자 정책.
@@ -594,8 +594,10 @@ def fetch_quote(symbol: str):
         sources.append(("kis_fx", lambda: _fetch_kis_fx(symbol)))
     if symbol in STOOQ_FIRST and symbol in STOOQ_MAP:
         sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
-    sources.append(("yf_chart", lambda: _fetch_yf_chart(symbol)))
-    sources.append(("yfinance", lambda: _fetch_yf(symbol)))
+    # yahoo(yf_chart/yfinance) 폴백 제거: 장중 오늘 일봉이 없을 때 prev종가를
+    # 잘못 잡아 등락 '부호'가 뒤집힌다(코스피·니케이·WTI·금리·NQ 전부 야후만 +/-가
+    # 거꾸로였음, 2026-06 점검 확인). 모든 심볼이 야후 외 신뢰 소스(naver/KIS/
+    # investing/stooq-가드)를 최소 1개 가지므로, 야후로 떨어지느니 fail-closed('—').
     if symbol in STOOQ_MAP and not (symbol in STOOQ_FIRST):
         sources.append(("stooq", lambda: _fetch_stooq_fresh(symbol)))
 
