@@ -1,3 +1,4 @@
+# redeploy nudge: 2026-06-23 NQ=F 선물 fail-closed 반영 강제 재배포
 import json
 import os
 import re
