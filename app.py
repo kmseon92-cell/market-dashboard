@@ -1,4 +1,4 @@
-# redeploy nudge: 2026-06-23 NQ=F 선물 fail-closed 반영 강제 재배포
+# redeploy nudge: 2026-06-23 us_futures.json GitHub raw 라이브 fetch (리부트 지연 우회)
 import json
 import os
 import re
@@ -404,9 +404,20 @@ FUTURES_PREFETCH_ONLY = {"NQ=F", "CL=F"}
 
 @st.cache_data(ttl=60)
 def _load_us_futures() -> dict:
-    p = os.path.join(os.path.dirname(__file__), "reports", "us_futures.json")
-    with open(p, encoding="utf-8") as f:
-        return json.load(f)
+    # Streamlit Cloud는 git push마다 즉시 리부트하지 않아 컨테이너 디스크의
+    # reports/us_futures.json이 마지막 배포 시점에 묶인다(맥미니는 5분마다 푸시하는데
+    # 화면엔 '64분 전'처럼 묵은 값이 뜨던 사고). 따라서 디스크 대신 GitHub raw에서
+    # 라이브로 끌어와 ttl=60 캐시 주기로 최신 fetched_at을 반영한다. 실패 시 디스크 폴백.
+    import urllib.request
+    raw_url = ("https://raw.githubusercontent.com/kmseon92-cell/"
+               "market-dashboard/main/reports/us_futures.json")
+    try:
+        req = urllib.request.Request(raw_url, headers={"User-Agent": "Mozilla/5.0"})
+        return json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
+    except Exception:
+        p = os.path.join(os.path.dirname(__file__), "reports", "us_futures.json")
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
 
 
 def _fetch_prefetched(symbol: str):
