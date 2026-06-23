@@ -394,6 +394,11 @@ STOOQ_FIRST = {
 # investing.com을 맥미니가 미리 긁어 reports/us_futures.json으로 공급하는 심볼.
 # (Streamlit Cloud IP는 investing.com 차단 → 직접 호출 불가) fetcher: us-futures/fetch.py
 PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX"}
+# 이 중 'CME 선물'은 yahoo 폴백이 야간장 prev종가 버그로 등락 부호가 뒤집힌다.
+# (NQ=F가 실제 -0.2%인데 +1%로 표시되던 사고) 따라서 프리페치가 못 들어오면
+# 틀린 yahoo 값을 보여주느니 fail-closed로 '—'(데이터 없음) 처리한다. 사용자 정책.
+# JPY=X(KIS/naver 실시간)·^TNX/^TYX(yahoo 수용 가능)는 정상 폴백 유지.
+FUTURES_PREFETCH_ONLY = {"NQ=F", "CL=F"}
 
 
 @st.cache_data(ttl=60)
@@ -568,6 +573,14 @@ def fetch_quote(symbol: str):
     # 나스닥선물·WTI·달러엔: investing 프리페치(맥미니 5분 갱신)를 1순위, yahoo는 폴백.
     if symbol in PREFETCH_FUTURES:
         sources.append(("prefetch", lambda: _fetch_prefetched(symbol)))
+    # CME 선물(NQ/CL)은 yahoo 폴백이 부호까지 틀려서 폴백 금지 → 프리페치만.
+    # 프리페치 실패 시 아래 소스를 안 붙여 error로 떨어뜨려 '—'(데이터 없음) 표시.
+    if symbol in FUTURES_PREFETCH_ONLY:
+        for name, fn in sources:
+            r = try_(name, fn)
+            if r:
+                return r
+        return {"error": " / ".join(errs) or "prefetch unavailable"}
     # 지수(니케이/대만/상해): naver 월드인덱스(~15~20분 지연) 1순위, KIS(지연) 폴백. 둘 다 지연이라 카드에 '지연' 뱃지.
     if symbol in NAVER_WORLD_MAP:
         sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
