@@ -1,36 +1,17 @@
 {
   "quotes": {
-    "NQ=F": {
-      "price": 29901.75,
-      "change": 345.75,
-      "pct": 1.17
-    },
-    "CL=F": {
-      "price": 68.78,
-      "change": 0.09,
-      "pct": 0.13
-    },
-    "JPY=X": {
-      "price": 161.34,
-      "change": 0.33,
-      "pct": 0.2
-    },
-    "^TNX": {
-      "price": 4.487,
-      "change": 0.009,
-      "pct": 0.2
-    },
-    "^TYX": {
-      "price": 4.985,
-      "change": 0.004,
-      "pct": 0.08
-    },
     "DX-Y.NYB": {
       "price": 100.87,
       "change": 0.0,
       "pct": 0.0
     }
   },
-  "errors": [],
-  "fetched_at": "2026-07-04T05:32:47+09:00"
+  "errors": [
+    "NQ=F: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
+    "CL=F: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden",
+    "JPY=X: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden",
+    "^TNX: https://uk.investing.com/rates-bonds/u.s.-10-year-bond-yield: HTTPError: HTTP Error 403: Forbidden",
+    "^TYX: https://uk.investing.com/rates-bonds/u.s.-30-year-bond-yield: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-07-04T05:38:20+09:00"
 }
