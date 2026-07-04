@@ -1,6 +1,6 @@
-<!-- updated: 2026-07-04 06:13 -->
+<!-- updated: 2026-07-05 06:12 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-04 06:13 KST
+기준: 2026-07-05 06:12 KST
 ━━━━━━━━━━━━━━━
 
 <b>07/06 (월) · 0종목</b>
@@ -13,7 +13,9 @@
     <b>KRUS</b> Kura Sushi USA, Inc.
     <b>SAR</b> Saratoga Investment Corp
 
-<b>07/08 (수) · 2종목</b>
+<b>07/08 (수) · 3종목</b>
+  〈장전〉
+    <b>HELE</b> Helen of Troy Ltd.
   〈장후〉
     <b>LEVI</b> Levi Strauss & Co.
     <b>AZZ</b> AZZ Inc.
