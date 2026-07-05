@@ -1,6 +1,6 @@
-<!-- updated: 2026-07-05 06:12 -->
+<!-- updated: 2026-07-06 06:11 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-05 06:12 KST
+기준: 2026-07-06 06:11 KST
 ━━━━━━━━━━━━━━━
 
 <b>07/06 (월) · 0종목</b>
@@ -9,8 +9,8 @@
 <b>07/07 (화) · 4종목</b>
   〈장후〉
     <b>PENG</b> Penguin Solutions, Inc.
-    <b>EPAC</b> Enerpac Tool Group
     <b>KRUS</b> Kura Sushi USA, Inc.
+    <b>EPAC</b> Enerpac Tool Group
     <b>SAR</b> Saratoga Investment Corp
 
 <b>07/08 (수) · 3종목</b>
