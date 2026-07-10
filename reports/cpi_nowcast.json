@@ -4,15 +4,15 @@
       "subcaption": "2026-6",
       "cpi_yoy": 3.92118098800982,
       "core_yoy": 2.8549783446228,
-      "nowcast_as_of": "07/07"
+      "nowcast_as_of": "07/08"
     },
     "forward_target": {
       "subcaption": "2026-7",
       "cpi_yoy": 3.71389995868512,
       "core_yoy": 2.80521134528053,
-      "nowcast_as_of": "07/09"
+      "nowcast_as_of": "07/10"
     },
-    "source_updated": "2026-07-09 00:00"
+    "source_updated": "2026-07-10 00:00"
   },
   "consensus": {
     "cpi": {
@@ -38,11 +38,12 @@
         "reference_period": "May"
       },
       "next_release": {
+        "forecast": 2.9,
         "previous": 2.9,
         "occurrence_time": "2026-07-14T12:30:00Z",
         "reference_period": "Jun"
       }
     }
   },
-  "fetched_at": "2026-07-10T07:00:09"
+  "fetched_at": "2026-07-11T07:00:07"
 }
