@@ -447,6 +447,12 @@ def _fetch_prefetched(symbol: str):
             age = None
         if age is not None and age > 900:
             out["delay_label"] = f"{int(age // 60)}분 전"
+        # 5분 주기인데 30분(=6주기) 넘게 멈추면 프리페처 장애(네트워크/푸시)다.
+        # 5분 지연과 똑같은 인디고 배지로 조용히 보여주면 멈춘 값으로 매매하는 사고가
+        # 난다(2026-07-10 360분 stale). frozen 플래그로 빨간 '멈춤' 배지를 띄운다.
+        if age is not None and age > 1800:
+            out["frozen"] = True
+            out["frozen_label"] = f"⚠ {int(age // 60)}분째 멈춤"
     return out
 
 
@@ -818,7 +824,15 @@ def render_card(
     # 장중인데 모든 소스가 전일 데이터뿐이면(stale) "전일 종가" 배지로 정직하게 표기.
     closed = is_market_closed(symbol)
     stale_badge = ""
-    if closed or q.get("stale"):
+    if q.get("frozen") and closed is False:
+        # 프리페처가 30분+ 멈춤 → 이 값은 과거 시점. 빨간 배지로 매매 오용 차단.
+        label = q.get("frozen_label") or "⚠ 멈춤"
+        stale_badge = (
+            f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:700;'
+            f'color:#fff;background:#dc2626;border:1px solid #b91c1c;'
+            f'padding:1px 6px;border-radius:4px;margin-left:6px;vertical-align:middle;">{label}</span>'
+        )
+    elif closed or q.get("stale"):
         as_of = q.get("as_of") or ""
         base = "장 마감" if closed else "전일 종가"
         label = f"{base} · {as_of[5:]}" if as_of else base  # MM-DD
