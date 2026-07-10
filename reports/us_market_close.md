@@ -1,121 +1,107 @@
-<!-- updated: 2026-07-10 06:30 -->
+<!-- updated: 2026-07-11 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-07-10
+📅 2026-07-11
 ━━━━━━━━━━━━━━━
-다우 +0.27% | 나스닥 +1.30% | S&P500 +0.81% | 러셀2000 +1.22% | 필반도체 +3.06% | WTI $71.81 | 환율 1,507원
+다우 +0.29% | 나스닥 +0.29% | S&P500 +0.42% | 러셀2000 -0.49% | 필반도체 +0.06% | WTI $71.51 | 환율 1,499원
 
 📈 <b>52주 신고가 (37종목)</b>
 
-<b>〈기술〉</b>
-  <b>ANET</b> Arista Networks Inc
-    $184.69 (+2.0%) | $232.6B
-  <b>FFIV</b> F5 Inc
-    $430.32 (+2.7%) | $24.3B
-  <b>FTNT</b> Fortinet Inc
-    $163.73 (+4.5%) | $120.0B
-  <b>NET</b> Cloudflare Inc
-    $275.80 (+0.9%) | $97.9B
-
-<b>〈헬스케어〉</b>
-  <b>UNH</b> Unitedhealth Group Inc
-    $431.68 (+1.4%) | $392.0B
-  <b>ASND</b> Ascendis Pharma A/S
-    $275.43 (-0.6%) | $17.1B
-  <b>BBIO</b> BridgeBio Pharma Inc 🔥
-    $90.17 (+15.1%) | $17.7B
-  <b>CORT</b> Corcept Therapeutics Inc
-    $93.25 (+0.3%) | $10.0B
-  <b>ELV</b> Elevance Health Inc
-    $420.39 (+1.0%) | $91.3B
-  <b>INCY</b> Incyte Corp
-    $118.52 (+1.1%) | $23.7B
-  <b>JAZZ</b> Jazz Pharmaceuticals plc
-    $246.91 (-0.5%) | $15.5B
-  <b>NBIX</b> Neurocrine Biosciences Inc
-    $180.55 (+1.3%) | $18.1B
-  <b>ROIV</b> Roivant Sciences Ltd
-    $36.81 (+2.0%) | $26.5B
-  <b>RPRX</b> Royalty Pharma plc
-    $57.96 (-0.7%) | $33.4B
-  <b>RVMD</b> Revolution Medicines Inc
-    $191.13 (+0.7%) | $40.6B
+<b>〈금융〉</b>
+  <b>HSBC</b> HSBC Holdings plc ADR
+    $99.09 (+1.1%) | $340.5B
+  <b>MUFG</b> Mitsubishi UFJ Financial Group Inc ADR
+    $21.65 (+1.9%) | $244.4B
+  <b>RY</b> Royal Bank Of Canada
+    $211.09 (+1.2%) | $293.4B
+  <b>AEG</b> Aegon Ltd
+    $8.80 (+0.2%) | $13.2B
+  <b>BAP</b> Credicorp Ltd
+    $400.81 (+2.3%) | $31.9B
+  <b>BPOP</b> Popular Inc
+    $170.56 (+0.7%) | $11.0B
+  <b>CM</b> Canadian Imperial Bank Of Commerce
+    $117.78 (+2.1%) | $109.1B
+  <b>KB</b> KB Financial Group Inc ADR
+    $123.19 (+6.8%) | $41.5B
+  <b>MET</b> Metlife Inc
+    $91.65 (+0.6%) | $59.0B
+  <b>MFC</b> Manulife Financial Corp
+    $41.29 (-0.5%) | $68.9B
+  <b>MFG</b> Mizuho Financial Group Inc ADR
+    $10.48 (+1.4%) | $125.3B
+  <b>NMR</b> Nomura Holdings Inc ADR
+    $9.66 (+1.3%) | $28.0B
+  <b>SHG</b> Shinhan Financial Group Co Ltd ADR
+    $73.28 (+3.8%) | $34.6B
+  <b>SLF</b> Sun Life Financial Inc
+    $79.91 (-0.5%) | $44.3B
+  <b>SMFG</b> Sumitomo Mitsui Financial Group Inc ADR
+    $25.74 (+1.0%) | $163.7B
+  <b>UBS</b> UBS Group AG
+    $52.08 (+0.4%) | $158.3B
+  <b>VIRT</b> Virtu Financial Inc
+    $65.80 (-1.5%) | $10.2B
 
 <b>〈산업재〉</b>
   <b>ARMK</b> Aramark
-    $57.88 (+2.5%) | $15.2B
+    $57.88 (+0.0%) | $15.2B
   <b>CNI</b> Canadian National Railway Co
-    $124.34 (+1.4%) | $75.4B
+    $124.40 (+0.1%) | $75.5B
   <b>CSX</b> CSX Corp
-    $49.35 (+1.4%) | $91.7B
+    $49.41 (+0.1%) | $91.8B
   <b>EXPD</b> Expeditors International Of Washington Inc
-    $170.62 (+3.8%) | $22.3B
+    $172.02 (+0.8%) | $22.5B
   <b>GTLS</b> Chart Industries Inc
-    $209.60 (+0.1%) | $10.0B
+    $209.87 (+0.1%) | $10.1B
+  <b>NSC</b> Norfolk Southern Corp
+    $327.47 (+1.1%) | $73.5B
+  <b>UNP</b> Union Pacific Corp
+    $286.96 (+0.7%) | $170.4B
 
-<b>〈금융〉</b>
-  <b>BNY</b> Bank Of New York Mellon Corp
-    $152.26 (+1.4%) | $104.5B
-  <b>MFC</b> Manulife Financial Corp
-    $41.49 (+1.0%) | $69.2B
-  <b>MFG</b> Mizuho Financial Group Inc ADR
-    $10.33 (+1.0%) | $123.5B
-  <b>NMR</b> Nomura Holdings Inc ADR
-    $9.54 (+0.9%) | $27.7B
-  <b>NTRS</b> Northern Trust Corp
-    $182.86 (+1.6%) | $33.8B
-  <b>SEIC</b> SEI Investments Co
-    $94.73 (+0.2%) | $11.4B
-  <b>SLF</b> Sun Life Financial Inc
-    $80.29 (+1.1%) | $44.5B
-  <b>SMFG</b> Sumitomo Mitsui Financial Group Inc ADR
-    $25.48 (+0.6%) | $162.1B
-  <b>STT</b> State Street Corp
-    $180.16 (+1.5%) | $49.9B
-  <b>VIRT</b> Virtu Financial Inc
-    $66.82 (+4.0%) | $10.4B
+<b>〈헬스케어〉</b>
+  <b>CRL</b> Charles River Laboratories International Inc
+    $233.41 (-0.1%) | $11.2B
+  <b>NBIX</b> Neurocrine Biosciences Inc
+    $177.11 (-1.9%) | $17.8B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $35.97 (-2.3%) | $25.9B
 
 <b>〈커뮤니케이션〉</b>
   <b>EA</b> Electronic Arts Inc
-    $206.56 (+0.8%) | $51.8B
+    $206.41 (-0.1%) | $51.8B
+  <b>PSO</b> Pearson plc ADR
+    $16.91 (+0.2%) | $10.1B
   <b>TIGO</b> Millicom International Cellular SA
-    $94.43 (+0.4%) | $15.8B
+    $96.96 (+2.7%) | $16.2B
 
-<b>〈부동산〉</b>
-  <b>LAMR</b> Lamar Advertising Co
-    $162.25 (+1.4%) | $16.5B
+<b>〈기술〉</b>
+  <b>FFIV</b> F5 Inc
+    $430.39 (+0.0%) | $24.3B
+  <b>FTNT</b> Fortinet Inc
+    $157.51 (-3.8%) | $115.4B
+  <b>NET</b> Cloudflare Inc
+    $268.40 (-2.7%) | $95.3B
 
 <b>〈에너지〉</b>
   <b>MPC</b> Marathon Petroleum Corp
-    $283.30 (+0.9%) | $82.7B
+    $283.74 (+0.2%) | $82.8B
   <b>PSX</b> Phillips 66
-    $189.82 (+1.1%) | $76.1B
+    $188.36 (-0.8%) | $75.5B
   <b>VLO</b> Valero Energy Corp
-    $281.25 (-0.6%) | $83.5B
+    $280.69 (-0.2%) | $83.3B
 
 <b>〈경기소비재〉</b>
   <b>PAG</b> Penske Automotive Group Inc
-    $191.49 (+4.9%) | $12.6B
+    $194.27 (+1.4%) | $12.8B
 
-🚀 <b>8% 이상 급등 (8종목)</b>
+🚀 <b>8% 이상 급등 (2종목)</b>
 
 <b>〈기술〉</b>
-  <b>ARM</b> Arm Holdings Plc ADR
-    $327.87 (+9.2%) | $348.9B
-  <b>ALGM</b> Allegro Microsystems Inc
-    $57.38 (+11.5%) | $10.7B
-  <b>ASX</b> ASE Technology Holding CoLtd ADR
-    $43.25 (+8.3%) | $94.9B
   <b>CBRS</b> Cerebras Systems Inc
-    $198.53 (+9.2%) | $55.0B
-  <b>HPE</b> Hewlett Packard Enterprise Co
-    $49.11 (+9.9%) | $65.0B
-  <b>LITE</b> Lumentum Holdings Inc
-    $785.77 (+11.1%) | $61.1B
-  <b>ONTO</b> Onto Innovation Inc
-    $317.02 (+8.8%) | $15.8B
+    $215.08 (+8.3%) | $59.6B
 
-<b>〈경기소비재〉</b>
-  <b>RIVN</b> Rivian Automotive Inc
-    $18.12 (+8.8%) | $24.7B
+<b>〈커뮤니케이션〉</b>
+  <b>VOD</b> Vodafone Group plc ADR
+    $14.72 (+12.5%) | $33.9B
 
 
