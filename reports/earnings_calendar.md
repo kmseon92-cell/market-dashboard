@@ -1,13 +1,14 @@
-<!-- updated: 2026-07-11 06:02 -->
+<!-- updated: 2026-07-12 06:01 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-11 06:02 KST
+기준: 2026-07-12 06:01 KST
 ━━━━━━━━━━━━━━━
 
-<b>07/13 (월) · 1종목</b>
+<b>07/13 (월) · 2종목</b>
   〈장후〉
     <b>AERO</b> AeroGrow International Inc.
+    <b>FBK</b> FB Financial Corporation
 
-<b>07/14 (화) · 8종목</b>
+<b>07/14 (화) · 9종목</b>
   〈장전〉
     <b>C</b> Citigroup, Inc.
     <b>GS</b> Goldman Sachs Group, Inc.
@@ -16,6 +17,7 @@
     <b>WFC</b> Wells Fargo & Co.
     <b>FAST</b> Fastenal Co.
     <b>ERIC</b> Ericsson
+    <b>ANGO</b> AngioDynamics
   〈장후〉
     <b>AEHR</b> Aehr Test Systems
 
@@ -42,8 +44,8 @@
     <b>STT</b> State Street Corp.
   〈장후〉
     <b>NFLX</b> Netflix, Inc.
-    <b>AA</b> Alcoa, Inc.
     <b>ISRG</b> Intuitive Surgical, Inc.
+    <b>AA</b> Alcoa, Inc.
     <b>CNS</b> Cohen & Steers Inc
 
 <b>07/17 (금) · 4종목</b>
