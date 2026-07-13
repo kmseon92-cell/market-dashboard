@@ -1,0 +1,827 @@
+{
+ "as_of": "2026-07-09",
+ "signal": {
+  "status": "purge",
+  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
+  "deposit": 1071279.0,
+  "deposit_delta": -37465.0,
+  "down_streak": 1,
+  "uncl": 14322.0,
+  "uncl_peak": 20688.0,
+  "uncl_drop_pct": -30.8,
+  "credit": 366336.0,
+  "credit_peak": 386328.0,
+  "credit_drop_pct": -5.2
+ },
+ "history": [
+  {
+   "date": "2026-02-27",
+   "bandae": 76.8,
+   "bandae_pct": 0.7,
+   "credit": 326690.0,
+   "deposit": 1187488.0,
+   "futs": 292137.0,
+   "uncl": 10526.0
+  },
+  {
+   "date": "2026-03-03",
+   "bandae": 92.2,
+   "bandae_pct": 0.9,
+   "credit": 328041.0,
+   "deposit": 1298188.0,
+   "futs": 301132.0,
+   "uncl": 10606.0
+  },
+  {
+   "date": "2026-03-04",
+   "bandae": 225.0,
+   "bandae_pct": 2.1,
+   "credit": 331978.0,
+   "deposit": 1320682.0,
+   "futs": 294032.0,
+   "uncl": 12041.0
+  },
+  {
+   "date": "2026-03-05",
+   "bandae": 776.8,
+   "bandae_pct": 6.5,
+   "credit": 336945.0,
+   "deposit": 1308873.0,
+   "futs": 266747.0,
+   "uncl": 21488.0
+  },
+  {
+   "date": "2026-03-06",
+   "bandae": 824.2,
+   "bandae_pct": 3.8,
+   "credit": 327899.0,
+   "deposit": 1299574.0,
+   "futs": 275958.0,
+   "uncl": 20983.0
+  },
+  {
+   "date": "2026-03-09",
+   "bandae": 354.2,
+   "bandae_pct": 1.7,
+   "credit": 316905.0,
+   "deposit": 1274218.0,
+   "futs": 281720.0,
+   "uncl": 13304.0
+  },
+  {
+   "date": "2026-03-10",
+   "bandae": 446.0,
+   "bandae_pct": 3.4,
+   "credit": 318033.0,
+   "deposit": 1255844.0,
+   "futs": 266388.0,
+   "uncl": 11779.0
+  },
+  {
+   "date": "2026-03-11",
+   "bandae": 223.4,
+   "bandae_pct": 1.9,
+   "credit": 317584.0,
+   "deposit": 1190280.0,
+   "futs": 269695.0,
+   "uncl": 12592.0
+  },
+  {
+   "date": "2026-03-12",
+   "bandae": 194.2,
+   "bandae_pct": 1.6,
+   "credit": 321419.0,
+   "deposit": 1201462.0,
+   "futs": 266020.0,
+   "uncl": 10664.0
+  },
+  {
+   "date": "2026-03-13",
+   "bandae": 133.9,
+   "bandae_pct": 1.3,
+   "credit": 326834.0,
+   "deposit": 1196960.0,
+   "futs": 263433.0,
+   "uncl": 11118.0
+  },
+  {
+   "date": "2026-03-16",
+   "bandae": 315.8,
+   "bandae_pct": 2.8,
+   "credit": 332191.0,
+   "deposit": 1178012.0,
+   "futs": 263089.0,
+   "uncl": 10275.0
+  },
+  {
+   "date": "2026-03-17",
+   "bandae": 98.2,
+   "bandae_pct": 1.0,
+   "credit": 333316.0,
+   "deposit": 1147783.0,
+   "futs": 266750.0,
+   "uncl": 10240.0
+  },
+  {
+   "date": "2026-03-18",
+   "bandae": 138.9,
+   "bandae_pct": 1.4,
+   "credit": 334876.0,
+   "deposit": 1122807.0,
+   "futs": 267444.0,
+   "uncl": 10063.0
+  },
+  {
+   "date": "2026-03-19",
+   "bandae": 67.8,
+   "bandae_pct": 0.7,
+   "credit": 333076.0,
+   "deposit": 1156443.0,
+   "futs": 281135.0,
+   "uncl": 10486.0
+  },
+  {
+   "date": "2026-03-20",
+   "bandae": 81.4,
+   "bandae_pct": 0.8,
+   "credit": 332550.0,
+   "deposit": 1206968.0,
+   "futs": 273267.0,
+   "uncl": 9824.0
+  },
+  {
+   "date": "2026-03-23",
+   "bandae": 153.2,
+   "bandae_pct": 1.6,
+   "credit": 333486.0,
+   "deposit": 1218992.0,
+   "futs": 284881.0,
+   "uncl": 10107.0
+  },
+  {
+   "date": "2026-03-24",
+   "bandae": 234.6,
+   "bandae_pct": 2.3,
+   "credit": 334219.0,
+   "deposit": 1197599.0,
+   "futs": 271851.0,
+   "uncl": 10061.0
+  },
+  {
+   "date": "2026-03-25",
+   "bandae": 236.2,
+   "bandae_pct": 2.3,
+   "credit": 330285.0,
+   "deposit": 1088498.0,
+   "futs": 273394.0,
+   "uncl": 12218.0
+  },
+  {
+   "date": "2026-03-26",
+   "bandae": 118.2,
+   "bandae_pct": 1.0,
+   "credit": 327524.0,
+   "deposit": 1115790.0,
+   "futs": 275903.0,
+   "uncl": 11774.0
+  },
+  {
+   "date": "2026-03-27",
+   "bandae": 189.3,
+   "bandae_pct": 1.6,
+   "credit": 327845.0,
+   "deposit": 1128372.0,
+   "futs": 267215.0,
+   "uncl": 10069.0
+  },
+  {
+   "date": "2026-03-30",
+   "bandae": 237.2,
+   "bandae_pct": 2.4,
+   "credit": 326018.0,
+   "deposit": 1110742.0,
+   "futs": 268615.0,
+   "uncl": 11004.0
+  },
+  {
+   "date": "2026-03-31",
+   "bandae": 367.5,
+   "bandae_pct": 3.3,
+   "credit": 329226.0,
+   "deposit": 1102889.0,
+   "futs": 268450.0,
+   "uncl": 10390.0
+  },
+  {
+   "date": "2026-04-01",
+   "bandae": 305.8,
+   "bandae_pct": 2.9,
+   "credit": 329810.0,
+   "deposit": 1116766.0,
+   "futs": 263992.0,
+   "uncl": 10530.0
+  },
+  {
+   "date": "2026-04-02",
+   "bandae": 90.9,
+   "bandae_pct": 0.9,
+   "credit": 327255.0,
+   "deposit": 1085740.0,
+   "futs": 278411.0,
+   "uncl": 12356.0
+  },
+  {
+   "date": "2026-04-03",
+   "bandae": 158.7,
+   "bandae_pct": 1.3,
+   "credit": 324440.0,
+   "deposit": 1090165.0,
+   "futs": 267912.0,
+   "uncl": 10251.0
+  },
+  {
+   "date": "2026-04-06",
+   "bandae": 81.0,
+   "bandae_pct": 0.8,
+   "credit": 328459.0,
+   "deposit": 1074674.0,
+   "futs": 275517.0,
+   "uncl": 11976.0
+  },
+  {
+   "date": "2026-04-07",
+   "bandae": 196.2,
+   "bandae_pct": 1.6,
+   "credit": 326577.0,
+   "deposit": 1089214.0,
+   "futs": 276743.0,
+   "uncl": 10085.0
+  },
+  {
+   "date": "2026-04-08",
+   "bandae": 83.2,
+   "bandae_pct": 0.8,
+   "credit": 327300.0,
+   "deposit": 1098332.0,
+   "futs": 283671.0,
+   "uncl": 10284.0
+  },
+  {
+   "date": "2026-04-09",
+   "bandae": 73.8,
+   "bandae_pct": 0.7,
+   "credit": 327200.0,
+   "deposit": 1128070.0,
+   "futs": 306613.0,
+   "uncl": 10639.0
+  },
+  {
+   "date": "2026-04-10",
+   "bandae": 80.6,
+   "bandae_pct": 0.8,
+   "credit": 329014.0,
+   "deposit": 1153642.0,
+   "futs": 291038.0,
+   "uncl": 10598.0
+  },
+  {
+   "date": "2026-04-13",
+   "bandae": 120.5,
+   "bandae_pct": 1.1,
+   "credit": 332168.0,
+   "deposit": 1161075.0,
+   "futs": 291960.0,
+   "uncl": 10856.0
+  },
+  {
+   "date": "2026-04-14",
+   "bandae": 149.3,
+   "bandae_pct": 1.4,
+   "credit": 332824.0,
+   "deposit": 1176725.0,
+   "futs": 289224.0,
+   "uncl": 9972.0
+  },
+  {
+   "date": "2026-04-15",
+   "bandae": 124.3,
+   "bandae_pct": 1.2,
+   "credit": 333567.0,
+   "deposit": 1171651.0,
+   "futs": 297316.0,
+   "uncl": 10148.0
+  },
+  {
+   "date": "2026-04-16",
+   "bandae": 85.0,
+   "bandae_pct": 0.8,
+   "credit": 338723.0,
+   "deposit": 1190743.0,
+   "futs": 300017.0,
+   "uncl": 9981.0
+  },
+  {
+   "date": "2026-04-17",
+   "bandae": 82.0,
+   "bandae_pct": 0.8,
+   "credit": 340279.0,
+   "deposit": 1205855.0,
+   "futs": 303809.0,
+   "uncl": 10409.0
+  },
+  {
+   "date": "2026-04-20",
+   "bandae": 86.0,
+   "bandae_pct": 0.8,
+   "credit": 342592.0,
+   "deposit": 1218173.0,
+   "futs": 300907.0,
+   "uncl": 10209.0
+  },
+  {
+   "date": "2026-04-21",
+   "bandae": 161.3,
+   "bandae_pct": 1.6,
+   "credit": 346946.0,
+   "deposit": 1212861.0,
+   "futs": 303671.0,
+   "uncl": 10329.0
+  },
+  {
+   "date": "2026-04-22",
+   "bandae": 98.2,
+   "bandae_pct": 1.0,
+   "credit": 348107.0,
+   "deposit": 1225381.0,
+   "futs": 309229.0,
+   "uncl": 10279.0
+  },
+  {
+   "date": "2026-04-23",
+   "bandae": 68.7,
+   "bandae_pct": 0.7,
+   "credit": 350799.0,
+   "deposit": 1260351.0,
+   "futs": 308218.0,
+   "uncl": 9967.0
+  },
+  {
+   "date": "2026-04-24",
+   "bandae": 116.2,
+   "bandae_pct": 1.2,
+   "credit": 354630.0,
+   "deposit": 1256869.0,
+   "futs": 312176.0,
+   "uncl": 11249.0
+  },
+  {
+   "date": "2026-04-27",
+   "bandae": 78.3,
+   "bandae_pct": 0.7,
+   "credit": 355378.0,
+   "deposit": 1259503.0,
+   "futs": 313145.0,
+   "uncl": 11315.0
+  },
+  {
+   "date": "2026-04-28",
+   "bandae": 175.7,
+   "bandae_pct": 1.6,
+   "credit": 356897.0,
+   "deposit": 1274134.0,
+   "futs": 319075.0,
+   "uncl": 10849.0
+  },
+  {
+   "date": "2026-04-29",
+   "bandae": 79.0,
+   "bandae_pct": 0.7,
+   "credit": 360683.0,
+   "deposit": 1297321.0,
+   "futs": 320350.0,
+   "uncl": 10242.0
+  },
+  {
+   "date": "2026-04-30",
+   "bandae": 147.0,
+   "bandae_pct": 1.4,
+   "credit": 357131.0,
+   "deposit": 1247591.0,
+   "futs": 322335.0,
+   "uncl": 11152.0
+  },
+  {
+   "date": "2026-05-04",
+   "bandae": 198.4,
+   "bandae_pct": 1.8,
+   "credit": 358389.0,
+   "deposit": 1248406.0,
+   "futs": 330876.0,
+   "uncl": 10183.0
+  },
+  {
+   "date": "2026-05-06",
+   "bandae": 71.6,
+   "bandae_pct": 0.7,
+   "credit": 354298.0,
+   "deposit": 1307434.0,
+   "futs": 359052.0,
+   "uncl": 11611.0
+  },
+  {
+   "date": "2026-05-07",
+   "bandae": 113.8,
+   "bandae_pct": 1.0,
+   "credit": 355072.0,
+   "deposit": 1369890.0,
+   "futs": 382567.0,
+   "uncl": 11314.0
+  },
+  {
+   "date": "2026-05-08",
+   "bandae": 210.1,
+   "bandae_pct": 1.9,
+   "credit": 359500.0,
+   "deposit": 1352991.0,
+   "futs": 395092.0,
+   "uncl": 12869.0
+  },
+  {
+   "date": "2026-05-11",
+   "bandae": 694.0,
+   "bandae_pct": 5.4,
+   "credit": 359985.0,
+   "deposit": 1340987.0,
+   "futs": 401063.0,
+   "uncl": 14124.0
+  },
+  {
+   "date": "2026-05-12",
+   "bandae": 369.4,
+   "bandae_pct": 2.6,
+   "credit": 362677.0,
+   "deposit": 1374174.0,
+   "futs": 424441.0,
+   "uncl": 12786.0
+  },
+  {
+   "date": "2026-05-13",
+   "bandae": 235.7,
+   "bandae_pct": 1.8,
+   "credit": 360740.0,
+   "deposit": 1371201.0,
+   "futs": 418828.0,
+   "uncl": 13271.0
+  },
+  {
+   "date": "2026-05-14",
+   "bandae": 244.8,
+   "bandae_pct": 1.8,
+   "credit": 364698.0,
+   "deposit": 1335088.0,
+   "futs": 430969.0,
+   "uncl": 17035.0
+  },
+  {
+   "date": "2026-05-15",
+   "bandae": 374.9,
+   "bandae_pct": 2.2,
+   "credit": 365675.0,
+   "deposit": 1328597.0,
+   "futs": 442312.0,
+   "uncl": 15374.0
+  },
+  {
+   "date": "2026-05-18",
+   "bandae": 917.1,
+   "bandae_pct": 6.0,
+   "credit": 363967.0,
+   "deposit": 1329853.0,
+   "futs": 417855.0,
+   "uncl": 14606.0
+  },
+  {
+   "date": "2026-05-19",
+   "bandae": 676.5,
+   "bandae_pct": 4.6,
+   "credit": 358561.0,
+   "deposit": 1269599.0,
+   "futs": 419283.0,
+   "uncl": 19241.0
+  },
+  {
+   "date": "2026-05-20",
+   "bandae": 1458.4,
+   "bandae_pct": 7.6,
+   "credit": 362370.0,
+   "deposit": 1256440.0,
+   "futs": 403941.0,
+   "uncl": 16421.0
+  },
+  {
+   "date": "2026-05-21",
+   "bandae": 624.6,
+   "bandae_pct": 3.8,
+   "credit": 364724.0,
+   "deposit": 1223819.0,
+   "futs": 412277.0,
+   "uncl": 16598.0
+  },
+  {
+   "date": "2026-05-22",
+   "bandae": 524.0,
+   "bandae_pct": 3.2,
+   "credit": 363555.0,
+   "deposit": 1212452.0,
+   "futs": 427880.0,
+   "uncl": 14805.0
+  },
+  {
+   "date": "2026-05-26",
+   "bandae": 51.7,
+   "bandae_pct": 0.3,
+   "credit": 362548.0,
+   "deposit": 1245769.0,
+   "futs": 438553.0,
+   "uncl": 11492.0
+  },
+  {
+   "date": "2026-05-27",
+   "bandae": 79.8,
+   "bandae_pct": 0.7,
+   "credit": 366900.0,
+   "deposit": 1285750.0,
+   "futs": 465358.0,
+   "uncl": 11541.0
+  },
+  {
+   "date": "2026-05-28",
+   "bandae": 78.1,
+   "bandae_pct": 0.7,
+   "credit": 370687.0,
+   "deposit": 1311318.0,
+   "futs": 475505.0,
+   "uncl": 12534.0
+  },
+  {
+   "date": "2026-05-29",
+   "bandae": 154.1,
+   "bandae_pct": 1.2,
+   "credit": 380227.0,
+   "deposit": 1315856.0,
+   "futs": 480248.0,
+   "uncl": 13492.0
+  },
+  {
+   "date": "2026-06-01",
+   "bandae": 331.7,
+   "bandae_pct": 2.5,
+   "credit": 376812.0,
+   "deposit": 1325992.0,
+   "futs": 522917.0,
+   "uncl": 13597.0
+  },
+  {
+   "date": "2026-06-02",
+   "bandae": 168.4,
+   "bandae_pct": 1.2,
+   "credit": 377091.0,
+   "deposit": 1368111.0,
+   "futs": 534509.0,
+   "uncl": 13277.0
+  },
+  {
+   "date": "2026-06-04",
+   "bandae": 243.1,
+   "bandae_pct": 1.8,
+   "credit": 377376.0,
+   "deposit": 1396948.0,
+   "futs": 535185.0,
+   "uncl": 18293.0
+  },
+  {
+   "date": "2026-06-05",
+   "bandae": 1661.9,
+   "bandae_pct": 9.1,
+   "credit": 378384.0,
+   "deposit": 1342344.0,
+   "futs": 527046.0,
+   "uncl": 16885.0
+  },
+  {
+   "date": "2026-06-08",
+   "bandae": 1391.3,
+   "bandae_pct": 8.2,
+   "credit": 377904.0,
+   "deposit": 1363847.0,
+   "futs": 496360.0,
+   "uncl": 16246.0
+  },
+  {
+   "date": "2026-06-09",
+   "bandae": 1698.0,
+   "bandae_pct": 10.5,
+   "credit": 379290.0,
+   "deposit": 1301189.0,
+   "futs": 468120.0,
+   "uncl": 15954.0
+  },
+  {
+   "date": "2026-06-10",
+   "bandae": 396.6,
+   "bandae_pct": 2.5,
+   "credit": 367736.0,
+   "deposit": 1276066.0,
+   "futs": 521640.0,
+   "uncl": 16918.0
+  },
+  {
+   "date": "2026-06-11",
+   "bandae": 306.2,
+   "bandae_pct": 1.8,
+   "credit": 366565.0,
+   "deposit": 1273718.0,
+   "futs": 485396.0,
+   "uncl": 12072.0
+  },
+  {
+   "date": "2026-06-12",
+   "bandae": 476.9,
+   "bandae_pct": 4.0,
+   "credit": 368793.0,
+   "deposit": 1210566.0,
+   "futs": 490411.0,
+   "uncl": 13764.0
+  },
+  {
+   "date": "2026-06-15",
+   "bandae": 100.8,
+   "bandae_pct": 0.7,
+   "credit": 370770.0,
+   "deposit": 1205817.0,
+   "futs": 489553.0,
+   "uncl": 12245.0
+  },
+  {
+   "date": "2026-06-16",
+   "bandae": 51.0,
+   "bandae_pct": 0.4,
+   "credit": 373856.0,
+   "deposit": 1245516.0,
+   "futs": 508131.0,
+   "uncl": 11545.0
+  },
+  {
+   "date": "2026-06-17",
+   "bandae": 120.3,
+   "bandae_pct": 1.0,
+   "credit": 378005.0,
+   "deposit": 1246320.0,
+   "futs": 529563.0,
+   "uncl": 12303.0
+  },
+  {
+   "date": "2026-06-18",
+   "bandae": 141.9,
+   "bandae_pct": 1.2,
+   "credit": 379797.0,
+   "deposit": 1284086.0,
+   "futs": 566206.0,
+   "uncl": 12294.0
+  },
+  {
+   "date": "2026-06-19",
+   "bandae": 234.8,
+   "bandae_pct": 1.9,
+   "credit": 384787.0,
+   "deposit": 1293535.0,
+   "futs": 575026.0,
+   "uncl": 12058.0
+  },
+  {
+   "date": "2026-06-22",
+   "bandae": 198.9,
+   "bandae_pct": 1.6,
+   "credit": 385312.0,
+   "deposit": 1321857.0,
+   "futs": 588261.0,
+   "uncl": 12976.0
+  },
+  {
+   "date": "2026-06-23",
+   "bandae": 424.3,
+   "bandae_pct": 3.3,
+   "credit": 380936.0,
+   "deposit": 1368314.0,
+   "futs": 642204.0,
+   "uncl": 14792.0
+  },
+  {
+   "date": "2026-06-24",
+   "bandae": 1107.9,
+   "bandae_pct": 7.5,
+   "credit": 386328.0,
+   "deposit": 1365527.0,
+   "futs": 533367.0,
+   "uncl": 13769.0
+  },
+  {
+   "date": "2026-06-25",
+   "bandae": 476.5,
+   "bandae_pct": 3.5,
+   "credit": 380484.0,
+   "deposit": 1269924.0,
+   "futs": 568578.0,
+   "uncl": 20688.0
+  },
+  {
+   "date": "2026-06-26",
+   "bandae": 509.8,
+   "bandae_pct": 2.5,
+   "credit": 377616.0,
+   "deposit": 1266049.0,
+   "futs": 622662.0,
+   "uncl": 15632.0
+  },
+  {
+   "date": "2026-06-29",
+   "bandae": 494.4,
+   "bandae_pct": 3.2,
+   "credit": 378070.0,
+   "deposit": 1324697.0,
+   "futs": 565244.0,
+   "uncl": 12423.0
+  },
+  {
+   "date": "2026-06-30",
+   "bandae": 694.1,
+   "bandae_pct": 5.6,
+   "credit": 373282.0,
+   "deposit": 1216340.0,
+   "futs": 533735.0,
+   "uncl": 12983.0
+  },
+  {
+   "date": "2026-07-01",
+   "bandae": 257.3,
+   "bandae_pct": 2.0,
+   "credit": 373393.0,
+   "deposit": 1200837.0,
+   "futs": 562577.0,
+   "uncl": 12591.0
+  },
+  {
+   "date": "2026-07-02",
+   "bandae": 196.3,
+   "bandae_pct": 1.6,
+   "credit": 377187.0,
+   "deposit": 1199264.0,
+   "futs": 574723.0,
+   "uncl": 10685.0
+  },
+  {
+   "date": "2026-07-03",
+   "bandae": 563.6,
+   "bandae_pct": 5.3,
+   "credit": 377922.0,
+   "deposit": 1182594.0,
+   "futs": 509378.0,
+   "uncl": 11278.0
+  },
+  {
+   "date": "2026-07-06",
+   "bandae": 397.0,
+   "bandae_pct": 3.5,
+   "credit": 376600.0,
+   "deposit": 1122082.0,
+   "futs": 537867.0,
+   "uncl": 14400.0
+  },
+  {
+   "date": "2026-07-07",
+   "bandae": 317.4,
+   "bandae_pct": 2.2,
+   "credit": 370654.0,
+   "deposit": 1123260.0,
+   "futs": 535743.0,
+   "uncl": 11409.0
+  },
+  {
+   "date": "2026-07-08",
+   "bandae": 288.5,
+   "bandae_pct": 2.5,
+   "credit": 371999.0,
+   "deposit": 1108744.0,
+   "futs": 521091.0,
+   "uncl": 13911.0
+  },
+  {
+   "date": "2026-07-09",
+   "deposit": 1071279.0,
+   "credit": 366336.0,
+   "uncl": 14322.0,
+   "futs": 504785.0
+  }
+ ],
+ "fetched_at": "2026-07-13T16:04:07"
+}
