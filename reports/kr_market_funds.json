@@ -1,28 +1,19 @@
 {
- "as_of": "2026-07-09",
+ "as_of": "2026-07-10",
  "signal": {
   "status": "purge",
   "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 1071279.0,
-  "deposit_delta": -37465.0,
-  "down_streak": 1,
-  "uncl": 14322.0,
+  "deposit": 1055757.5,
+  "deposit_delta": -15521.5,
+  "down_streak": 2,
+  "uncl": 14293.9,
   "uncl_peak": 20688.0,
-  "uncl_drop_pct": -30.8,
+  "uncl_drop_pct": -30.9,
   "credit": 366336.0,
   "credit_peak": 386328.0,
   "credit_drop_pct": -5.2
  },
  "history": [
-  {
-   "date": "2026-02-27",
-   "bandae": 76.8,
-   "bandae_pct": 0.7,
-   "credit": 326690.0,
-   "deposit": 1187488.0,
-   "futs": 292137.0,
-   "uncl": 10526.0
-  },
   {
    "date": "2026-03-03",
    "bandae": 92.2,
@@ -817,11 +808,21 @@
   },
   {
    "date": "2026-07-09",
-   "deposit": 1071279.0,
+   "bandae": 1422.0,
+   "bandae_pct": 10.2,
    "credit": 366336.0,
-   "uncl": 14322.0,
-   "futs": 504785.0
+   "deposit": 1071279.0,
+   "futs": 504785.0,
+   "uncl": 14322.0
+  },
+  {
+   "date": "2026-07-10",
+   "bandae": 816.1,
+   "bandae_pct": 5.7,
+   "deposit": 1055757.5,
+   "futs": 515980.3,
+   "uncl": 14293.9
   }
  ],
- "fetched_at": "2026-07-13T16:04:07"
+ "fetched_at": "2026-07-13T16:06:46"
 }
