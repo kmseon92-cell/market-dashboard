@@ -63,6 +63,7 @@ TICKERS = {
             "미국 30년물 국채금리": "^TYX",
             "Cleveland CPI Nowcast": "__CPI_NOWCAST__",
             "코스피 50일 이격도": "__KOSPI_DISPARITY__",
+            "투자자예탁금": "__KR_MARKET_FUNDS__",
         },
     ],
 }
@@ -1153,6 +1154,103 @@ def render_kospi_disparity_card():
     st.markdown(html, unsafe_allow_html=True)
 
 
+def fetch_kr_market_funds() -> dict:
+    """reports/kr_market_funds.json 로드 — 맥미니 fetcher가 아침(08:40/10:30) 업데이트."""
+    p = os.path.join(os.path.dirname(__file__), "reports", "kr_market_funds.json")
+    if not os.path.exists(p):
+        return {"error": "kr_market_funds.json 없음"}
+    try:
+        with open(p, encoding="utf-8") as f:
+            return json.load(f)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def render_kr_market_funds_card():
+    data = fetch_kr_market_funds()
+    if "error" in data:
+        st.markdown(
+            f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+            f'min-height:150px;box-sizing:border-box;display:flex;'
+            f'flex-direction:column;justify-content:center;">'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#aaa;">투자자예탁금</div>'
+            f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
+            f'<div style="font-size:0.75rem;color:#888;">{data["error"]}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    sig = data.get("signal") or {}
+    history = data.get("history") or []
+    as_of = data.get("as_of") or ""
+    deposit = sig.get("deposit")  # 억원
+    delta = sig.get("deposit_delta")
+    credit = sig.get("credit")
+    credit_drop = sig.get("credit_drop_pct")
+    uncl = sig.get("uncl")
+    status = sig.get("status") or "neutral"
+
+    # 저점신호 상태별 색/라벨 (bottom=매수신호, outflow=이탈 지속)
+    palette = {
+        "bottom": ("#16a34a", "저점신호"),
+        "turn": ("#ca8a04", "플러스 전환"),
+        "purge": ("#f97316", "청산 진행"),
+        "outflow": ("#dc2626", "자금 이탈"),
+        "neutral": ("#374151", "중립"),
+    }
+    color, label = palette.get(status, palette["neutral"])
+    if status == "outflow" and sig.get("down_streak") is not None:
+        label = f"이탈 {sig['down_streak'] + 1}일째"
+
+    dep_str = f"{deposit / 1e4:,.1f}조" if deposit is not None else "—"
+    arrow, ch_color = "", "#6b7280"
+    if delta is not None:
+        if delta > 0:
+            arrow, ch_color = "▲", "#dc2626"
+        elif delta < 0:
+            arrow, ch_color = "▼", "#2563eb"
+        else:
+            arrow = "■"
+    ch_str = f"{delta / 1e4:+.1f}조" if delta is not None else ""
+
+    label_html = (
+        f'<span style="display:inline-block;font-size:0.75rem;font-weight:800;'
+        f'color:#fff;background:{color};padding:1px 7px;border-radius:4px;'
+        f'margin-left:6px;vertical-align:middle;">{label}</span>'
+    )
+
+    spark = _sparkline_svg(
+        [h["deposit"] for h in history if h.get("deposit")], stroke=color)
+
+    sub1 = ""
+    if credit is not None:
+        drop_s = f" ({credit_drop:+.1f}%)" if credit_drop is not None else ""
+        sub1 = f'신용융자 {credit / 1e4:,.1f}조{drop_s}'
+    if uncl is not None:
+        sub1 += f'{" · " if sub1 else ""}미수 {uncl / 1e4:,.2f}조'
+
+    as_of_md = as_of[5:].replace("-", "/") if as_of else ""
+    html = (
+        f'<div style="padding:8px 14px;border:1px solid #2a2a2a;'
+        f'border-radius:10px;min-height:150px;box-sizing:border-box;display:flex;'
+        f'flex-direction:column;justify-content:center;">'
+        f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
+        f'투자자예탁금{label_html}</div>'
+        f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
+        f'{dep_str}'
+        f'<span style="font-size:1rem;color:{ch_color};font-weight:600;margin-left:8px;">'
+        f'{arrow} {ch_str}</span></div>'
+        f'<div style="margin-top:2px;">{spark}</div>'
+        f'<div style="font-size:0.75rem;color:#374151;margin-top:2px;font-weight:600;">'
+        f'{sub1}</div>'
+        f'<div style="font-size:0.7rem;color:#6b7280;margin-top:0;line-height:1.3;">'
+        f'금투협 T+2 · {as_of_md}</div>'
+        f'</div>'
+    )
+    st.markdown(html, unsafe_allow_html=True)
+
+
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_quotes():
     all_symbols = tuple(
@@ -1172,6 +1270,8 @@ def render_quotes():
                         render_cpi_nowcast_card()
                     elif symbol == "__KOSPI_DISPARITY__":
                         render_kospi_disparity_card()
+                    elif symbol == "__KR_MARKET_FUNDS__":
+                        render_kr_market_funds_card()
                     else:
                         render_card(
                             name, symbol, quotes.get(symbol), ytd_map.get(symbol),
