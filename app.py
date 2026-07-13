@@ -1232,6 +1232,28 @@ def render_kr_market_funds_card():
         sub1 += f'{" · " if sub1 else ""}미수 {uncl / 1e4:,.2f}조'
 
     as_of_md = as_of[5:].replace("-", "/") if as_of else ""
+
+    # 신선도: 금투협 T+1 기준 직전 영업일(주말만 고려) 데이터면 🟢 최신.
+    # KR 휴장일은 미반영이라 연휴 직후엔 하루쯤 🟡로 보일 수 있음.
+    fresh_html = ""
+    try:
+        as_dt = datetime.strptime(as_of, "%Y-%m-%d").date()
+        today = datetime.now(ZoneInfo("Asia/Seoul")).date()
+        lag, d = -1, as_dt
+        while d < today:
+            d += timedelta(days=1)
+            if d.weekday() < 5:
+                lag += 1
+        fetched = (data.get("fetched_at") or "")[5:16].replace("-", "/").replace("T", " ")
+        if lag <= 0:
+            fresh_html = f'<span style="color:#16a34a;font-weight:700;">🟢 최신</span> · 갱신 {fetched}'
+        elif lag == 1:
+            fresh_html = f'<span style="color:#ca8a04;font-weight:700;">🟡 1영업일 지연</span> · 갱신 {fetched}'
+        else:
+            fresh_html = f'<span style="color:#dc2626;font-weight:700;">🔴 {lag}영업일 지연</span> · 갱신 {fetched}'
+    except Exception:
+        pass
+
     html = (
         f'<div style="padding:8px 14px;border:1px solid #2a2a2a;'
         f'border-radius:10px;min-height:150px;box-sizing:border-box;display:flex;'
@@ -1246,7 +1268,7 @@ def render_kr_market_funds_card():
         f'<div style="font-size:0.75rem;color:#374151;margin-top:2px;font-weight:600;">'
         f'{sub1}</div>'
         f'<div style="font-size:0.7rem;color:#6b7280;margin-top:0;line-height:1.3;">'
-        f'금투협 T+2 · {as_of_md}</div>'
+        f'금투협 기준 {as_of_md} · {fresh_html}</div>'
         f'</div>'
     )
     st.markdown(html, unsafe_allow_html=True)
