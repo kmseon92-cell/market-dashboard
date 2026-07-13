@@ -1194,6 +1194,7 @@ def render_kr_market_funds_card():
     # 저점신호 상태별 색/라벨 (bottom=매수신호, outflow=이탈 지속)
     palette = {
         "bottom": ("#16a34a", "저점신호"),
+        "shallow": ("#ca8a04", "얕은 신호"),
         "turn": ("#ca8a04", "플러스 전환"),
         "purge": ("#f97316", "청산 진행"),
         "outflow": ("#dc2626", "자금 이탈"),
