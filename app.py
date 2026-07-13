@@ -1194,6 +1194,7 @@ def render_kr_market_funds_card():
     # 저점신호 상태별 색/라벨 (bottom=매수신호, outflow=이탈 지속)
     palette = {
         "bottom": ("#16a34a", "저점신호"),
+        "climax": ("#ea580c", "🔔 클라이맥스"),
         "turn1": ("#16a34a", "전환 1일차"),
         "shallow": ("#ca8a04", "얕은 신호"),
         "turn": ("#ca8a04", "플러스 전환"),
@@ -1231,6 +1232,11 @@ def render_kr_market_funds_card():
         sub1 = f'신용융자 {credit / 1e4:,.1f}조{drop_s}'
     if uncl is not None:
         sub1 += f'{" · " if sub1 else ""}미수 {uncl / 1e4:,.2f}조'
+    if sig.get("bandae") is not None:
+        # 클라이맥스 상태 마커: held=바닥후보 유효 / broken=함정형
+        cx = sig.get("climax")
+        cx_s = {"held": " ✓홀드", "broken": " ✗깨짐", "today": " 🔔", "pending": " ?"}.get(cx, "")
+        sub1 += f'{" · " if sub1 else ""}반대 {sig["bandae"]:,.0f}억{cx_s}'
 
     as_of_md = as_of[5:].replace("-", "/") if as_of else ""
 
