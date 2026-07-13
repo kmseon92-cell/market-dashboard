@@ -1236,6 +1236,8 @@ def render_kr_market_funds_card():
         # 클라이맥스 상태 마커: held=바닥후보 유효 / broken=함정형
         cx = sig.get("climax")
         cx_s = {"held": " ✓홀드", "broken": " ✗깨짐", "today": " 🔔", "pending": " ?"}.get(cx, "")
+        if sig.get("bandae_record_60d"):
+            cx_s = " 🔴신기록" + cx_s
         sub1 += f'{" · " if sub1 else ""}반대 {sig["bandae"]:,.0f}억{cx_s}'
 
     as_of_md = as_of[5:].replace("-", "/") if as_of else ""
