@@ -1,24 +1,9 @@
-<!-- updated: 2026-07-14 06:01 -->
+<!-- updated: 2026-07-15 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-14 06:01 KST
+기준: 2026-07-15 06:02 KST
 ━━━━━━━━━━━━━━━
 
-<b>07/14 (화) · 11종목</b>
-  〈장전〉
-    <b>C</b> Citigroup, Inc.
-    <b>GS</b> Goldman Sachs Group, Inc.
-    <b>JPM</b> JPMorgan Chase & Co.
-    <b>BAC</b> Bank of America Corp.
-    <b>WFC</b> Wells Fargo & Co.
-    <b>FAST</b> Fastenal Co.
-    <b>ERIC</b> Ericsson
-    <b>ANGO</b> AngioDynamics
-  〈장후〉
-    <b>AEHR</b> Aehr Test Systems
-    <b>EQBK</b> Equity Bancshares
-    <b>PXED</b> Phoenix Education Partners, Inc. 
-
-<b>07/15 (수) · 13종목</b>
+<b>07/15 (수) · 16종목</b>
   〈장전〉
     <b>ASML</b> ASML Holding
     <b>PGR</b> Progressive Corp.
@@ -30,10 +15,13 @@
     <b>PNC</b> PNC Financial Services Group, Inc.
     <b>CTAS</b> Cintas Corporation
     <b>MTB</b> M&T Bank Corp
+    <b>BNY</b> The Bank of New York Mellon Corporation
+    <b>SIFY</b> Sify Technologies Limited
   〈장후〉
     <b>UAL</b> United Airlines
     <b>JBHT</b> J.B. Hunt Transport Services, Inc.
     <b>HOMB</b> Home BancShares Inc.
+    <b>KARO</b> Karooooo Ltd.
 
 <b>07/16 (목) · 10종목</b>
   〈장전〉
@@ -58,3 +46,12 @@
 
 <b>07/20 (월) · 0종목</b>
   — 주목 종목 없음
+
+<b>07/21 (화) · 5종목</b>
+  〈장전〉
+    <b>HAL</b> Halliburton Company
+    <b>VICR</b> Vicor Corporation
+    <b>ALLY</b> Ally Financial
+    <b>DHI</b> D.R. Horton, Inc.
+  〈장후〉
+    <b>ALK</b> Alaska Air Group, Inc.
