@@ -1,50 +1,40 @@
 {
   "cleveland": {
     "next_target": {
-      "subcaption": "2026-6",
-      "cpi_yoy": 3.92118098800982,
-      "core_yoy": 2.8549783446228,
-      "nowcast_as_of": "07/09"
+      "subcaption": "2026-7",
+      "cpi_yoy": 3.28632264441553,
+      "core_yoy": 2.52318470411008,
+      "nowcast_as_of": "07/14"
     },
     "forward_target": {
       "subcaption": "2026-7",
-      "cpi_yoy": 3.71389995868512,
-      "core_yoy": 2.80521134528053,
-      "nowcast_as_of": "07/13"
+      "cpi_yoy": 3.28632264441553,
+      "core_yoy": 2.52318470411008,
+      "nowcast_as_of": "07/14"
     },
-    "source_updated": "2026-07-13 00:00"
+    "source_updated": "2026-07-14 00:00"
   },
   "consensus": {
     "cpi": {
       "latest_release": {
-        "actual": 4.2,
-        "forecast": 4.2,
-        "previous": 3.8,
-        "occurrence_time": "2026-06-10T12:30:00Z",
-        "reference_period": "May"
-      },
-      "next_release": {
+        "actual": 3.5,
         "forecast": 3.8,
         "previous": 4.2,
         "occurrence_time": "2026-07-14T12:30:00Z",
         "reference_period": "Jun"
-      }
+      },
+      "next_release": null
     },
     "core_cpi": {
       "latest_release": {
-        "actual": 2.9,
-        "forecast": 2.9,
-        "previous": 2.8,
-        "occurrence_time": "2026-06-10T12:30:00Z",
-        "reference_period": "May"
-      },
-      "next_release": {
-        "forecast": 2.9,
+        "actual": 2.6,
+        "forecast": 2.8,
         "previous": 2.9,
         "occurrence_time": "2026-07-14T12:30:00Z",
         "reference_period": "Jun"
-      }
+      },
+      "next_release": null
     }
   },
-  "fetched_at": "2026-07-14T07:00:04"
+  "fetched_at": "2026-07-15T07:00:05"
 }
