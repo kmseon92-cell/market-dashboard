@@ -1,40 +1,30 @@
 {
- "as_of": "2026-07-13",
+ "as_of": "2026-07-14",
  "signal": {
-  "status": "turn1",
-  "label": "🟢 전환 1일차 — 내일도 예탁금 +면 저점신호 (하루 반등은 함정 잦음)",
-  "deposit": 1090115.7,
-  "deposit_delta": 34357.69999999995,
-  "down_streak": 3,
-  "deposit_drop_pct": -22.0,
-  "uncl": 11316.7,
+  "status": "shallow",
+  "label": "🟡 얕은 저점신호 (예탁금 고점比 -20% — 과거 이 구간 전패, 데드캣 주의)",
+  "deposit": 1112824.8,
+  "deposit_delta": 22708.800000000047,
+  "down_streak": 0,
+  "deposit_drop_pct": -20.3,
+  "uncl": 10136.7,
   "uncl_peak": 20688.0,
-  "uncl_drop_pct": -45.3,
-  "bandae": 262.4,
+  "uncl_drop_pct": -51.0,
+  "bandae": 215.6,
   "bandae_peak_10d": 1422.0,
   "bandae_climax_passed": true,
   "bandae_record_60d": false,
-  "climax": "held",
+  "climax": "broken",
   "climax_spike": {
    "date": "2026-07-09",
    "bandae": 1422.0,
    "kospi": 7246.79
   },
-  "credit": 355740.0,
+  "credit": 347886.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -7.9
+  "credit_drop_pct": -10.0
  },
  "history": [
-  {
-   "date": "2026-03-04",
-   "bandae": 225.0,
-   "bandae_pct": 2.1,
-   "credit": 331978.0,
-   "deposit": 1320682.0,
-   "futs": 294032.0,
-   "kospi": 5093.54,
-   "uncl": 12041.0
-  },
   {
    "date": "2026-03-05",
    "bandae": 776.8,
@@ -909,20 +899,30 @@
    "date": "2026-07-10",
    "bandae": 816.1,
    "bandae_pct": 5.7,
+   "credit": 355740.0,
    "deposit": 1055758.0,
    "futs": 515980.0,
-   "uncl": 14294.0,
-   "credit": 355740.0,
-   "kospi": 7475.94
+   "kospi": 7475.94,
+   "uncl": 14294.0
   },
   {
    "date": "2026-07-13",
-   "deposit": 1090115.7,
-   "futs": 530553.4,
-   "uncl": 11316.7,
    "bandae": 262.4,
-   "bandae_pct": 2.3
+   "bandae_pct": 2.3,
+   "deposit": 1090116.0,
+   "futs": 530553.0,
+   "uncl": 11317.0,
+   "credit": 347886.0,
+   "kospi": 6806.93
+  },
+  {
+   "date": "2026-07-14",
+   "deposit": 1112824.8,
+   "futs": 474992.5,
+   "uncl": 10136.7,
+   "bandae": 215.6,
+   "bandae_pct": 2.1
   }
  ],
- "fetched_at": "2026-07-14T15:19:24"
+ "fetched_at": "2026-07-15T15:20:07"
 }
