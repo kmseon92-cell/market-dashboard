@@ -1195,6 +1195,7 @@ def render_kr_market_funds_card():
     palette = {
         "bottom": ("#16a34a", "저점신호"),
         "climax": ("#ea580c", "🔔 클라이맥스"),
+        "wait": ("#2563eb", "3/4 충족"),
         "turn1": ("#16a34a", "전환 1일차"),
         "shallow": ("#ca8a04", "얕은 신호"),
         "turn": ("#ca8a04", "플러스 전환"),
