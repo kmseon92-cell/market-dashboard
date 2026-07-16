@@ -4,37 +4,19 @@
       "subcaption": "2026-7",
       "cpi_yoy": 3.31913586579038,
       "core_yoy": 2.52318470411008,
-      "nowcast_as_of": "CPI Jun"
+      "nowcast_as_of": "07/15"
     },
     "forward_target": {
       "subcaption": "2026-7",
       "cpi_yoy": 3.31913586579038,
       "core_yoy": 2.52318470411008,
-      "nowcast_as_of": "CPI Jun"
+      "nowcast_as_of": "07/15"
     },
-    "source_updated": "2026-07-15 00:00"
+    "source_updated": "2026-07-16 00:00"
   },
   "consensus": {
-    "cpi": {
-      "latest_release": {
-        "actual": 3.5,
-        "forecast": 3.8,
-        "previous": 4.2,
-        "occurrence_time": "2026-07-14T12:30:00Z",
-        "reference_period": "Jun"
-      },
-      "next_release": null
-    },
-    "core_cpi": {
-      "latest_release": {
-        "actual": 2.6,
-        "forecast": 2.8,
-        "previous": 2.9,
-        "occurrence_time": "2026-07-14T12:30:00Z",
-        "reference_period": "Jun"
-      },
-      "next_release": null
-    }
+    "cpi": null,
+    "core_cpi": null
   },
-  "fetched_at": "2026-07-16T07:00:08"
+  "fetched_at": "2026-07-17T07:00:05"
 }
