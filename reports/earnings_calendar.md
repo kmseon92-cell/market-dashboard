@@ -1,25 +1,7 @@
-<!-- updated: 2026-07-16 06:02 -->
+<!-- updated: 2026-07-17 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-16 06:02 KST
+기준: 2026-07-17 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>07/16 (목) · 14종목</b>
-  〈장전〉
-    <b>TSM</b> Taiwan Semiconductor Manufacturing Company Limited
-    <b>UNH</b> UnitedHealth Group, Inc.
-    <b>GE</b> GE Aerospace
-    <b>ABT</b> Abbott
-    <b>USB</b> U.S. Bancorp
-    <b>STT</b> State Street Corp.
-    <b>PLD</b> Prologis, Inc.
-    <b>IIIN</b> Insteel Industries Inc.
-    <b>CFG</b> Citizens Financial Group Inc
-  〈장후〉
-    <b>NFLX</b> Netflix, Inc.
-    <b>ISRG</b> Intuitive Surgical, Inc.
-    <b>AA</b> Alcoa, Inc.
-    <b>CNS</b> Cohen & Steers Inc
-    <b>FNB</b> F.N.B. Corporation
 
 <b>07/17 (금) · 5종목</b>
   〈장전〉
@@ -29,18 +11,24 @@
     <b>ALV</b> Autoliv Inc.
     <b>TRV</b> Travelers Companies, Inc.
 
-<b>07/20 (월) · 1종목</b>
+<b>07/20 (월) · 5종목</b>
+  〈장전〉
+    <b>DPZ</b> Domino's Pizza, Inc.
   〈장후〉
     <b>AMC</b> AMC Entertainment Holdings, Inc
+    <b>CCK</b> Crown Holdings, Inc.
+    <b>BOKF</b> BOK Financial Corp.
+    <b>STLD</b> Steel Dynamics, Inc.
 
-<b>07/21 (화) · 5종목</b>
+<b>07/21 (화) · 6종목</b>
   〈장전〉
     <b>HAL</b> Halliburton Company
     <b>VICR</b> Vicor Corporation
-    <b>ALLY</b> Ally Financial
     <b>DHI</b> D.R. Horton, Inc.
+    <b>ALLY</b> Ally Financial
   〈장후〉
     <b>ALK</b> Alaska Air Group, Inc.
+    <b>EWBC</b> East West Bancorp Inc.
 
 <b>07/22 (수) · 10종목</b>
   〈장전〉
@@ -53,5 +41,21 @@
     <b>NOW</b> ServiceNow, Inc.
     <b>IBM</b> International Business Machines Corp.
     <b>TXN</b> Texas Instruments Incorporated
-    <b>TCBI</b> Texas Capital Bancshares, Inc. 
     <b>KMI</b> Kinder Morgan, Inc.
+    <b>TCBI</b> Texas Capital Bancshares, Inc. 
+
+<b>07/23 (목) · 12종목</b>
+  〈장전〉
+    <b>NOK</b> Nokia Corp.
+    <b>CLF</b> Cleveland-Cliffs Inc
+    <b>FCX</b> Freeport-McMoRan Copper & Gold, Inc.
+    <b>HBAN</b> Huntington Bancshares Incorporated
+    <b>AAL</b> American Airlines Group Inc.
+    <b>STM</b> STMicroelectronics N.V.
+    <b>BX</b> Blackstone
+    <b>CX</b> Cemex S.A.B. de C.V.
+    <b>LMT</b> Lockheed Martin Corp.
+  〈장후〉
+    <b>INTC</b> Intel Corp.
+    <b>MXL</b> MaxLinear, Inc.
+    <b>DECK</b> Deckers Brands
