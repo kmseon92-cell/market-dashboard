@@ -1,16 +1,16 @@
 {
- "as_of": "2026-07-14",
+ "as_of": "2026-07-15",
  "signal": {
-  "status": "wait",
-  "label": "🟢 3/4 충족 — 청산 소진 + 예탁금 2일 전환 + 깊은 항복. ①클라이맥스만 미충족: 반대매매 신기록 나오면 완성, 안 나오면 '조용한 청산'형 — 지수 저점 사수 여부로 판단",
-  "deposit": 1112824.8,
-  "deposit_delta": 22708.800000000047,
+  "status": "purge",
+  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
+  "deposit": 1098669.7,
+  "deposit_delta": -14155.300000000047,
   "down_streak": 0,
-  "deposit_drop_pct": -20.3,
-  "uncl": 10136.7,
+  "deposit_drop_pct": -21.4,
+  "uncl": 13968.0,
   "uncl_peak": 20688.0,
-  "uncl_drop_pct": -51.0,
-  "bandae": 215.6,
+  "uncl_drop_pct": -32.5,
+  "bandae": 384.7,
   "bandae_peak_10d": 1422.0,
   "bandae_climax_passed": true,
   "bandae_record_60d": false,
@@ -20,21 +20,11 @@
    "bandae": 1422.0,
    "kospi": 7246.79
   },
-  "credit": 347886.0,
+  "credit": 347078.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -10.0
+  "credit_drop_pct": -10.2
  },
  "history": [
-  {
-   "date": "2026-03-05",
-   "bandae": 776.8,
-   "bandae_pct": 6.5,
-   "credit": 336945.0,
-   "deposit": 1308873.0,
-   "futs": 266747.0,
-   "kospi": 5583.9,
-   "uncl": 21488.0
-  },
   {
    "date": "2026-03-06",
    "bandae": 824.2,
@@ -919,10 +909,20 @@
    "date": "2026-07-14",
    "bandae": 215.6,
    "bandae_pct": 2.1,
-   "deposit": 1112824.8,
-   "futs": 474992.5,
-   "uncl": 10136.7
+   "deposit": 1112825.0,
+   "futs": 474993.0,
+   "uncl": 10137.0,
+   "credit": 347078.0,
+   "kospi": 6856.83
+  },
+  {
+   "date": "2026-07-15",
+   "deposit": 1098669.7,
+   "futs": 495777.8,
+   "uncl": 13968.0,
+   "bandae": 384.7,
+   "bandae_pct": 2.8
   }
  ],
- "fetched_at": "2026-07-15T15:21:36"
+ "fetched_at": "2026-07-16T15:20:18"
 }
