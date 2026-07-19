@@ -1,12 +1,13 @@
-<!-- updated: 2026-07-19 06:02 -->
+<!-- updated: 2026-07-20 06:02 -->
 📅 미국 실적 캘린더 (Earnings Whispers 큐레이션, 영업일 5일)
-기준: 2026-07-19 06:02 KST
+기준: 2026-07-20 06:02 KST
 ━━━━━━━━━━━━━━━
 
-<b>07/20 (월) · 8종목</b>
+<b>07/20 (월) · 9종목</b>
   〈장전〉
     <b>AMC</b> AMC Entertainment Holdings, Inc
     <b>DPZ</b> Domino's Pizza, Inc.
+    <b>RYAAY</b> Ryanair Holdings plc
   〈장후〉
     <b>CCK</b> Crown Holdings, Inc.
     <b>STLD</b> Steel Dynamics, Inc.
@@ -15,21 +16,22 @@
     <b>ZION</b> Zions Bancorporation
     <b>CALX</b> Calix, Inc.
 
-<b>07/21 (화) · 12종목</b>
+<b>07/21 (화) · 13종목</b>
   〈장전〉
     <b>HAL</b> Halliburton Company
     <b>VICR</b> Vicor Corporation
     <b>DHI</b> D.R. Horton, Inc.
     <b>ALLY</b> Ally Financial
-    <b>DHR</b> Danaher Corp.
     <b>GM</b> General Motors Corp.
-    <b>MMM</b> 3M Company
     <b>SCHW</b> Charles Schwab Corp.
+    <b>DHR</b> Danaher Corp.
+    <b>MMM</b> 3M Company
   〈장후〉
     <b>ALK</b> Alaska Air Group, Inc.
     <b>NLY</b> Annaly Capital Management, Inc.
-    <b>EWBC</b> East West Bancorp Inc.
     <b>AIR</b> AAR Corp.
+    <b>EWBC</b> East West Bancorp Inc.
+    <b>RRC</b> Range Resources Corp.
 
 <b>07/22 (수) · 13종목</b>
   〈장전〉
@@ -48,12 +50,12 @@
     <b>CCI</b> Crown Castle International Corp.
     <b>SLG</b> SL Green Realty Corp.
 
-<b>07/23 (목) · 14종목</b>
+<b>07/23 (목) · 15종목</b>
   〈장전〉
     <b>NOK</b> Nokia Corp.
     <b>AAL</b> American Airlines Group Inc.
-    <b>FCX</b> Freeport-McMoRan Copper & Gold, Inc.
     <b>CLF</b> Cleveland-Cliffs Inc
+    <b>FCX</b> Freeport-McMoRan Copper & Gold, Inc.
     <b>STM</b> STMicroelectronics N.V.
     <b>HBAN</b> Huntington Bancshares Incorporated
     <b>LMT</b> Lockheed Martin Corp.
@@ -64,6 +66,7 @@
   〈장후〉
     <b>INTC</b> Intel Corp.
     <b>MXL</b> MaxLinear, Inc.
+    <b>FIX</b> Comfort Systems USA, Inc.
     <b>DECK</b> Deckers Brands
 
 <b>07/24 (금) · 4종목</b>
