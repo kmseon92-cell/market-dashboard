@@ -1,36 +1,34 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 28816.0,
-      "change": 42.75,
-      "pct": 0.15
+      "price": 28818.0,
+      "change": 44.75,
+      "pct": 0.16
     },
     "CL=F": {
-      "price": 84.43,
-      "change": 1.94,
-      "pct": 2.35
+      "price": 84.59,
+      "change": 2.1,
+      "pct": 2.55
     },
     "JPY=X": {
-      "price": 162.43,
-      "change": 0.04,
+      "price": 162.42,
+      "change": 0.03,
       "pct": 0.02
     },
     "^TNX": {
-      "price": 4.572,
-      "change": 0.031,
-      "pct": 0.6827
+      "price": 4.574,
+      "change": 0.033,
+      "pct": 0.7267
     },
     "^TYX": {
       "price": 5.09,
       "change": 0.026,
       "pct": 0.5134
-    },
-    "DX-Y.NYB": {
-      "price": 100.752,
-      "change": -0.013,
-      "pct": -0.01
     }
   },
-  "errors": [],
-  "fetched_at": "2026-07-20T16:10:56+09:00"
+  "errors": [
+    "DX-Y.NYB: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-07-20T16:15:59+09:00"
 }
