@@ -1,34 +1,36 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29044.5,
-      "change": 271.25,
-      "pct": 0.94
+      "price": 29006.5,
+      "change": 233.25,
+      "pct": 0.81
+    },
+    "CL=F": {
+      "price": 82.72,
+      "change": 0.23,
+      "pct": 0.28
     },
     "JPY=X": {
-      "price": 162.38,
-      "change": -0.01,
-      "pct": -0.0062
+      "price": 162.37,
+      "change": -0.02,
+      "pct": -0.0123
     },
     "^TNX": {
-      "price": 4.56,
-      "change": 0.019,
-      "pct": 0.4184
+      "price": 4.562,
+      "change": 0.021,
+      "pct": 0.4625
     },
     "^TYX": {
-      "price": 5.081,
-      "change": 0.017,
-      "pct": 0.3357
+      "price": 5.083,
+      "change": 0.019,
+      "pct": 0.3752
     },
     "DX-Y.NYB": {
-      "price": 100.857,
-      "change": 0.092,
-      "pct": 0.09
+      "price": 100.842,
+      "change": 0.077,
+      "pct": 0.08
     }
   },
-  "errors": [
-    "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden"
-  ],
-  "fetched_at": "2026-07-20T21:49:33+09:00"
+  "errors": [],
+  "fetched_at": "2026-07-20T21:54:36+09:00"
 }
