@@ -5,11 +5,6 @@
       "change": 0.47,
       "pct": 0.57
     },
-    "JPY=X": {
-      "price": 162.46,
-      "change": -0.03,
-      "pct": -0.0185
-    },
     "^TNX": {
       "price": 4.594,
       "change": 0.053,
@@ -21,14 +16,16 @@
       "pct": 1.0269
     },
     "DX-Y.NYB": {
-      "price": 100.992,
-      "change": 0.227,
+      "price": 100.994,
+      "change": 0.229,
       "pct": 0.23
     }
   },
   "errors": [
     "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden"
+    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
+    "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-07-21T06:45:33+09:00"
+  "fetched_at": "2026-07-21T06:50:37+09:00"
 }
