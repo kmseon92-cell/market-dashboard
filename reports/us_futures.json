@@ -1,9 +1,14 @@
 {
   "quotes": {
+    "NQ=F": {
+      "price": 28770.5,
+      "change": -8.25,
+      "pct": -0.03
+    },
     "JPY=X": {
-      "price": 162.48,
-      "change": -0.01,
-      "pct": -0.0062
+      "price": 162.5,
+      "change": 0.01,
+      "pct": 0.01
     },
     "^TNX": {
       "price": 4.594,
@@ -22,10 +27,8 @@
     }
   },
   "errors": [
-    "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
     "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
     "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-07-21T07:05:50+09:00"
+  "fetched_at": "2026-07-21T07:10:53+09:00"
 }
