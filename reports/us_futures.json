@@ -1,14 +1,14 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29097.25,
-      "change": 318.5,
-      "pct": 1.11
+      "price": 29105.75,
+      "change": 327.0,
+      "pct": 1.14
     },
     "CL=F": {
-      "price": 83.4,
-      "change": 0.17,
-      "pct": 0.2
+      "price": 83.7,
+      "change": 0.47,
+      "pct": 0.56
     },
     "JPY=X": {
       "price": 162.56,
@@ -20,15 +20,17 @@
       "change": -0.008,
       "pct": -0.174
     },
+    "^TYX": {
+      "price": 5.117,
+      "change": -0.001,
+      "pct": -0.0195
+    },
     "DX-Y.NYB": {
-      "price": 100.893,
-      "change": -0.056,
-      "pct": -0.06
+      "price": 100.902,
+      "change": -0.047,
+      "pct": -0.05
     }
   },
-  "errors": [
-    "^TYX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "^TYX: investing: https://uk.investing.com/rates-bonds/u.s.-30-year-bond-yield: HTTPError: HTTP Error 403: Forbidden"
-  ],
-  "fetched_at": "2026-07-21T16:37:32+09:00"
+  "errors": [],
+  "fetched_at": "2026-07-21T16:42:35+09:00"
 }
