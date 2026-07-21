@@ -1,9 +1,9 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29283.75,
-      "change": -32.25,
-      "pct": -0.11
+      "price": 29298.25,
+      "change": -17.75,
+      "pct": -0.06
     },
     "JPY=X": {
       "price": 163.17,
@@ -27,5 +27,5 @@
     "^TYX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
     "^TYX: investing: https://uk.investing.com/rates-bonds/u.s.-30-year-bond-yield: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-07-22T07:22:20+09:00"
+  "fetched_at": "2026-07-22T07:27:24+09:00"
 }
