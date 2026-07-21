@@ -10,11 +10,6 @@
       "change": 1.76,
       "pct": 2.11
     },
-    "JPY=X": {
-      "price": 163.17,
-      "change": 0.01,
-      "pct": 0.01
-    },
     "^TNX": {
       "price": 4.626,
       "change": 0.028,
@@ -26,11 +21,14 @@
       "pct": 0.254
     },
     "DX-Y.NYB": {
-      "price": 101.196,
-      "change": 0.247,
-      "pct": 0.24
+      "price": 101.197,
+      "change": 0.248,
+      "pct": 0.25
     }
   },
-  "errors": [],
-  "fetched_at": "2026-07-22T06:31:35+09:00"
+  "errors": [
+    "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-07-22T06:36:39+09:00"
 }
