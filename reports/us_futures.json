@@ -21,14 +21,14 @@
       "pct": 0.254
     },
     "DX-Y.NYB": {
-      "price": 101.197,
-      "change": 0.248,
-      "pct": 0.25
+      "price": 101.182,
+      "change": 0.233,
+      "pct": 0.23
     }
   },
   "errors": [
     "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
     "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-07-22T06:36:39+09:00"
+  "fetched_at": "2026-07-22T06:41:43+09:00"
 }
