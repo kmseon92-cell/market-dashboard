@@ -783,7 +783,11 @@ def render_card(
         border = "border:2px solid #eab308;"
     else:
         card_bg = ""
-        border = "border:1px solid #2a2a2a;"
+        # 10년물 금리·WTI는 상시 주시 대상 → 평상시에도 빨간 테두리로 강조
+        if symbol in ("^TNX", "CL=F"):
+            border = "border:2px solid #dc2626;"
+        else:
+            border = "border:1px solid #2a2a2a;"
     if danger:
         danger_html = (
             '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
