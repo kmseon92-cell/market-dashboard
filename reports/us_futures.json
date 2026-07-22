@@ -36,8 +36,12 @@
       "pct": 2.29
     }
   },
-  "errors": [
-    "jpy_carry: RuntimeError: jpy peak: query2: HTTPError: HTTP Error 429: Too Many Requests"
-  ],
-  "fetched_at": "2026-07-22T20:37:17+09:00"
+  "errors": [],
+  "fetched_at": "2026-07-22T20:37:33+09:00",
+  "jpy_carry": {
+    "peak_3mo": 163.03,
+    "warn_level": 154.88,
+    "drop_pct": 0.0,
+    "warning": false
+  }
 }
