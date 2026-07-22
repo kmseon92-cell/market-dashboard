@@ -437,7 +437,7 @@ def _fetch_prefetched(symbol: str):
         raise ValueError(f"prefetch: {symbol} 없음")
     out = {"price": q["price"], "change": q["change"], "pct": q["pct"],
            "delayed": True, "delay_label": "5분"}
-    # 엔캐리 청산 워닝(3개월 고점比 -5% 엔 강세) — us-futures/fetch.py가 계산해 동봉
+    # 엔캐리 청산 워닝(3개월 고점比 -3% 엔 강세) — us-futures/fetch.py가 계산해 동봉
     if symbol == "JPY=X" and data.get("jpy_carry"):
         out["carry"] = data["jpy_carry"]
     fetched = data.get("fetched_at", "")
@@ -775,7 +775,7 @@ def render_card(
     danger = symbol == "^TNX" and price_val >= 5.0
     # 엔케리 청산 시그널: 달러/엔이 하루 -2%+ 급락 + 156 미만이면 빨간 "경고"
     jpy_crash = symbol == "JPY=X" and pct <= -2.0 and price_val < 156
-    # 엔캐리 청산 워닝: 3개월 고점 대비 -5% 엔 강세 (2024.8.5 급락 때 7영업일 선행)
+    # 엔캐리 청산 워닝: 3개월 고점 대비 -3% 엔 강세 (2024.8.5 급락 때 12영업일 선행)
     jpy_carry_warn = symbol == "JPY=X" and bool(carry.get("warning"))
     vix_danger = symbol == "^VIX" and price_val >= 30
     warn = (
