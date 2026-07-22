@@ -783,9 +783,12 @@ def render_card(
         border = "border:2px solid #eab308;"
     else:
         card_bg = ""
-        # 10년물 금리·WTI는 상시 주시 대상 → 평상시에도 빨간 테두리로 강조
+        # 10년물 금리·WTI는 상시 주시 대상 → 평상시에도 새빨간 굵은 테두리 + 글로우로 강조
         if symbol in ("^TNX", "CL=F"):
-            border = "border:2px solid #dc2626;"
+            border = (
+                "border:4px solid #ff0000;"
+                "box-shadow:0 0 12px rgba(255,0,0,0.55), inset 0 0 6px rgba(255,0,0,0.15);"
+            )
         else:
             border = "border:1px solid #2a2a2a;"
     if danger:
