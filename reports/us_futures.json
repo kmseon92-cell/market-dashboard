@@ -1,36 +1,43 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29131.75,
-      "change": -184.25,
-      "pct": -0.63
+      "price": 29110.0,
+      "change": -206.0,
+      "pct": -0.7
     },
     "CL=F": {
-      "price": 87.38,
-      "change": 3.04,
-      "pct": 3.6
+      "price": 87.36,
+      "change": 3.02,
+      "pct": 3.58
     },
     "JPY=X": {
-      "price": 163.03,
-      "change": -0.13,
-      "pct": -0.0797
+      "price": 163.0,
+      "change": -0.16,
+      "pct": -0.0981
     },
     "^TNX": {
-      "price": 4.638,
-      "change": 0.01,
-      "pct": 0.2161
+      "price": 4.634,
+      "change": 0.006,
+      "pct": 0.1296
     },
     "^TYX": {
-      "price": 5.141,
-      "change": 0.01,
-      "pct": 0.1949
+      "price": 5.139,
+      "change": 0.008,
+      "pct": 0.1559
     },
     "DX-Y.NYB": {
-      "price": 101.154,
-      "change": -0.019,
-      "pct": -0.02
+      "price": 101.16,
+      "change": -0.013,
+      "pct": -0.01
+    },
+    "^VIX": {
+      "price": 17.44,
+      "change": 0.39,
+      "pct": 2.29
     }
   },
-  "errors": [],
-  "fetched_at": "2026-07-22T20:31:26+09:00"
+  "errors": [
+    "jpy_carry: HTTPError: HTTP Error 429: Too Many Requests"
+  ],
+  "fetched_at": "2026-07-22T20:36:12+09:00"
 }
