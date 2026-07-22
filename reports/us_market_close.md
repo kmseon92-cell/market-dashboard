@@ -1,143 +1,101 @@
-<!-- updated: 2026-07-22 06:30 -->
+<!-- updated: 2026-07-23 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-07-22
+📅 2026-07-23
 ━━━━━━━━━━━━━━━
-다우 +0.74% | 나스닥 +1.29% | S&P500 +0.89% | 러셀2000 +1.53% | 필반도체 +5.21% | WTI $84.54 | 환율 1,480원
+다우 -0.01% | 나스닥 -0.57% | S&P500 -0.14% | 러셀2000 -0.92% | 필반도체 +0.44% | WTI $86.48 | 환율 1,477원
 
-📈 <b>52주 신고가 (20종목)</b>
+📈 <b>52주 신고가 (30종목)</b>
 
 <b>〈금융〉</b>
   <b>HHSBC</b> HSBC Holdings plc ADR
-    $101.12 (+2.1%) | $347.5B
+    $103.11 (+2.0%) | $354.4B
   <b>AAEG</b> Aegon Ltd
-    $9.14 (+1.0%) | $13.8B
+    $9.16 (+0.2%) | $13.8B
+  <b>BBPOP</b> Popular Inc
+    $173.89 (+0.9%) | $11.2B
+  <b>IING</b> ING Groep NV ADR
+    $33.33 (+0.7%) | $94.3B
+  <b>IIX</b> Orix Corp ADR
+    $40.54 (+0.3%) | $44.5B
+  <b>PPRU</b> Prudential Financial Inc
+    $118.85 (+0.2%) | $41.2B
+  <b>TTRV</b> Travelers Companies Inc
+    $372.08 (+0.7%) | $77.6B
 
 <b>〈필수소비재〉</b>
+  <b>PPM</b> Philip Morris International Inc
+    $194.30 (+3.3%) | $302.8B
   <b>AADM</b> Archer Daniels Midland Co
-    $86.20 (+0.6%) | $41.5B
+    $87.32 (+1.3%) | $42.1B
 
 <b>〈부동산〉</b>
   <b>AAHR</b> American Healthcare REIT Inc
-    $57.60 (+1.7%) | $12.0B
+    $57.08 (-0.9%) | $11.9B
   <b>CCTRE</b> CareTrust REIT Inc
-    $43.40 (+2.2%) | $10.2B
+    $42.38 (-2.4%) | $10.0B
+  <b>DDOC</b> Healthpeak Properties Inc
+    $22.19 (-1.8%) | $15.7B
+  <b>OOHI</b> Omega Healthcare Investors Inc
+    $50.61 (+0.0%) | $15.1B
   <b>VVTR</b> Ventas Inc
-    $97.62 (+1.4%) | $48.6B
-  <b>WWELL</b> Welltower Inc
-    $246.37 (+0.6%) | $173.9B
+    $97.18 (-0.5%) | $48.4B
 
 <b>〈헬스케어〉</b>
   <b>AAPGE</b> Apogee Therapeutics Inc
-    $134.20 (+0.0%) | $10.1B
-  <b>CCORT</b> Corcept Therapeutics Inc
-    $95.65 (+4.5%) | $10.3B
+    $134.08 (-0.1%) | $10.1B
+  <b>AARWR</b> Arrowhead Pharmaceuticals Inc 🔥
+    $88.70 (+19.0%) | $12.5B
   <b>CCVS</b> CVS Health Corp
-    $110.60 (+2.8%) | $141.1B
-  <b>JJAZZ</b> Jazz Pharmaceuticals plc
-    $254.22 (+4.4%) | $16.0B
-  <b>VVTRS</b> Viatris Inc
-    $17.59 (+3.5%) | $20.6B
+    $108.08 (-2.3%) | $137.9B
 
-<b>〈경기소비재〉</b>
-  <b>CCCK</b> Crown Holdings Inc
-    $117.99 (+3.0%) | $13.2B
+<b>〈유틸리티〉</b>
+  <b>BBIP</b> Brookfield Infrastructure Partners L.P
+    $40.25 (+1.7%) | $18.6B
+  <b>EEIX</b> Edison International
+    $80.38 (+2.8%) | $30.9B
 
 <b>〈산업재〉</b>
   <b>CCHRW</b> C.H. Robinson Worldwide Inc
-    $209.42 (+1.8%) | $24.7B
+    $207.35 (-1.0%) | $24.4B
+  <b>WWAB</b> Westinghouse Air Brake Technologies Corp 🔥
+    $290.00 (+10.0%) | $49.2B
+
+<b>〈소재〉</b>
+  <b>CCTVA</b> Corteva Inc
+    $88.53 (+1.8%) | $59.2B
 
 <b>〈에너지〉</b>
   <b>DDINO</b> HF Sinclair Corp
-    $91.69 (+1.4%) | $16.5B
+    $90.86 (-0.9%) | $16.4B
   <b>MMPC</b> Marathon Petroleum Corp
-    $319.76 (+1.4%) | $93.3B
-  <b>PPAA</b> Plains All American Pipeline LP
-    $24.29 (-0.1%) | $17.1B
+    $315.82 (-1.2%) | $92.2B
   <b>PPAGP</b> Plains GP Holdings LP
-    $25.98 (+0.2%) | $19.8B
+    $26.21 (+0.9%) | $20.0B
   <b>PPSX</b> Phillips 66
-    $212.27 (+1.7%) | $85.1B
+    $211.41 (-0.4%) | $84.8B
+  <b>SSUN</b> Sunoco LP
+    $75.95 (+1.3%) | $15.6B
   <b>VVLO</b> Valero Energy Corp
-    $314.80 (+0.5%) | $93.5B
-
-🚀 <b>8% 이상 급등 (33종목)</b>
-
-<b>〈기술〉</b>
-  <b>AAMD</b> Advanced Micro Devices Inc
-    $544.43 (+8.1%) | $887.8B
-  <b>IINTC</b> Intel Corp
-    $105.45 (+8.6%) | $530.0B
-  <b>MMU</b> Micron Technology Inc
-    $970.82 (+12.2%) | $1.1T
-  <b>SSKHY</b> SK Hynix Inc ADR
-    $171.94 (+13.8%) | $1.2T
-  <b>SSNDK</b> Sandisk Corp
-    $1,589.40 (+14.3%) | $235.4B
-  <b>AASTS</b> AST SpaceMobile Inc
-    $63.34 (+10.3%) | $24.6B
-  <b>AASX</b> ASE Technology Holding CoLtd ADR
-    $40.01 (+8.4%) | $87.8B
-  <b>CCBRS</b> Cerebras Systems Inc
-    $208.57 (+17.9%) | $57.8B
-  <b>CCLS</b> Celestica Inc
-    $339.59 (+10.5%) | $39.0B
-  <b>CCOHR</b> Coherent Corp
-    $317.22 (+11.2%) | $62.1B
-  <b>CCRWV</b> CoreWeave Inc
-    $79.58 (+8.9%) | $43.4B
-  <b>DDOCN</b> DigitalOcean Holdings Inc
-    $136.45 (+14.6%) | $14.2B
-  <b>LLITE</b> Lumentum Holdings Inc
-    $837.56 (+9.4%) | $65.2B
-  <b>LLSCC</b> Lattice Semiconductor Corp
-    $135.83 (+8.2%) | $18.6B
-  <b>NNBIS</b> Nebius Group NV
-    $216.92 (+18.8%) | $54.6B
-  <b>SSANM</b> Sanmina Corp
-    $219.41 (+8.7%) | $11.8B
-  <b>SSMTC</b> Semtech Corp
-    $137.84 (+9.5%) | $12.8B
-  <b>SSTX</b> Seagate Technology Holdings Plc
-    $891.83 (+11.1%) | $200.0B
-  <b>TTER</b> Teradyne Inc
-    $374.04 (+12.1%) | $58.5B
-  <b>TTSEM</b> Tower Semiconductor Ltd
-    $250.91 (+10.4%) | $28.0B
-  <b>TTTMI</b> TTM Technologies Inc
-    $146.85 (+10.3%) | $15.2B
-  <b>VVIAV</b> Viavi Solutions Inc
-    $43.02 (+9.1%) | $10.6B
-  <b>WWDC</b> Western Digital Corp
-    $548.39 (+12.5%) | $189.0B
-
-<b>〈산업재〉</b>
-  <b>AAEIS</b> Advanced Energy Industries Inc
-    $303.71 (+8.2%) | $11.6B
-  <b>BBE</b> Bloom Energy Corp
-    $226.26 (+14.8%) | $64.4B
-  <b>IINIO</b> Innio NV
-    $30.37 (+10.6%) | $22.8B
-
-<b>〈소재〉</b>
-  <b>CCDE</b> Coeur Mining Inc
-    $15.30 (+8.1%) | $15.8B
-  <b>HHBM</b> Hudbay Minerals Inc
-    $23.00 (+10.4%) | $10.2B
-
-<b>〈금융〉</b>
-  <b>CCOIN</b> Coinbase Global Inc
-    $175.85 (+9.6%) | $46.3B
-  <b>CCRCL</b> Circle Internet Group Inc
-    $71.08 (+8.6%) | $17.7B
+    $310.92 (-1.2%) | $92.3B
 
 <b>〈경기소비재〉</b>
-  <b>HHAS</b> Hasbro Inc
-    $88.78 (+8.8%) | $12.6B
-  <b>MMOD</b> Modine Manufacturing Co
-    $247.09 (+8.4%) | $13.1B
+  <b>PPAG</b> Penske Automotive Group Inc 🔥
+    $214.57 (+9.9%) | $14.1B
 
-<b>〈헬스케어〉</b>
-  <b>SSMMT</b> Summit Therapeutics Inc
-    $14.63 (+8.4%) | $11.4B
+<b>〈커뮤니케이션〉</b>
+  <b>TTIGO</b> Millicom International Cellular SA
+    $97.86 (-0.8%) | $16.4B
+
+🚀 <b>8% 이상 급등 (3종목)</b>
+
+<b>〈기술〉</b>
+  <b>DDELL</b> Dell Technologies Inc
+    $441.80 (+9.3%) | $286.4B
+  <b>SSMCI</b> Super Micro Computer Inc
+    $30.56 (+19.8%) | $19.8B
+
+<b>〈에너지〉</b>
+  <b>EEQT</b> EQT Corp
+    $54.01 (+8.4%) | $33.8B
 
 
