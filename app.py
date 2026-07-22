@@ -775,22 +775,21 @@ def render_card(
         or (symbol == "^TYX" and price_val >= 5.0)
         or (symbol == "CL=F" and price_val >= 100)
     ) and not danger and not jpy_crash
+    # 10년물 금리·WTI는 상시 주시 대상 → warn(노란 배경)이어도 새빨간 굵은 테두리 유지
+    red_frame = (
+        "border:4px solid #ff0000;"
+        "box-shadow:0 0 12px rgba(255,0,0,0.55), inset 0 0 6px rgba(255,0,0,0.15);"
+    )
+    always_red = symbol in ("^TNX", "CL=F")
     if danger or jpy_crash:
         card_bg = "background:#fee2e2;"
-        border = "border:2px solid #dc2626;"
+        border = red_frame if always_red else "border:2px solid #dc2626;"
     elif warn:
         card_bg = "background:#fef08a;"
-        border = "border:2px solid #eab308;"
+        border = red_frame if always_red else "border:2px solid #eab308;"
     else:
         card_bg = ""
-        # 10년물 금리·WTI는 상시 주시 대상 → 평상시에도 새빨간 굵은 테두리 + 글로우로 강조
-        if symbol in ("^TNX", "CL=F"):
-            border = (
-                "border:4px solid #ff0000;"
-                "box-shadow:0 0 12px rgba(255,0,0,0.55), inset 0 0 6px rgba(255,0,0,0.15);"
-            )
-        else:
-            border = "border:1px solid #2a2a2a;"
+        border = red_frame if always_red else "border:1px solid #2a2a2a;"
     if danger:
         danger_html = (
             '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
