@@ -61,7 +61,6 @@ TICKERS = {
         {
             "미국 10년물 국채금리": "^TNX",
             "미국 30년물 국채금리": "^TYX",
-            "VIX": "^VIX",
             "Cleveland CPI Nowcast": "__CPI_NOWCAST__",
             "코스피 50일 이격도": "__KOSPI_DISPARITY__",
             "투자자예탁금": "__KR_MARKET_FUNDS__",
@@ -80,7 +79,6 @@ MARKET_HOURS = {
     "^N225": ("Asia/Tokyo", 900, 1530, "JP"),
     "000001.SS": ("Asia/Shanghai", 930, 1500, "CN"),
     "^TWII": ("Asia/Taipei", 900, 1330, "TW"),
-    "^VIX": ("America/New_York", 930, 1615, "NYSE"),
 }
 # 24시간장 (CME 선물 / 글로벌 FX / 美국채금리): 평일 상시, 금 17:00~일 18:00 ET만 휴장.
 # ^TNX/^TYX는 채권선물 기반이라 현금시장(8~17 ET) 밖에도 글로벌하게 거의 24h 움직임 → 24h장 취급.
@@ -397,7 +395,7 @@ STOOQ_FIRST = {
 
 # investing.com을 맥미니가 미리 긁어 reports/us_futures.json으로 공급하는 심볼.
 # (Streamlit Cloud IP는 investing.com 차단 → 직접 호출 불가) fetcher: us-futures/fetch.py
-PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX", "DX-Y.NYB", "^VIX"}
+PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX", "DX-Y.NYB"}
 # 이 중 'CME 선물'은 yahoo 폴백이 야간장 prev종가 버그로 등락 부호가 뒤집힌다.
 # (NQ=F가 실제 -0.2%인데 +1%로 표시되던 사고) 따라서 프리페치가 못 들어오면
 # 틀린 yahoo 값을 보여주느니 fail-closed로 '—'(데이터 없음) 처리한다. 사용자 정책.
@@ -777,21 +775,19 @@ def render_card(
     jpy_crash = symbol == "JPY=X" and pct <= -2.0 and price_val < 156
     # 엔캐리 청산 워닝: 3개월 고점 대비 -3% 엔 강세 (2024.8.5 급락 때 12영업일 선행)
     jpy_carry_warn = symbol == "JPY=X" and bool(carry.get("warning"))
-    vix_danger = symbol == "^VIX" and price_val >= 30
     warn = (
         (symbol == "JPY=X" and price_val >= 155)
         or (symbol == "^TNX" and price_val >= 4.5)
         or (symbol == "^TYX" and price_val >= 5.0)
         or (symbol == "CL=F" and price_val >= 100)
-        or (symbol == "^VIX" and price_val >= 20)
-    ) and not danger and not jpy_crash and not jpy_carry_warn and not vix_danger
+    ) and not danger and not jpy_crash and not jpy_carry_warn
     # 10년물 금리·WTI는 상시 주시 대상 → warn(노란 배경)이어도 새빨간 굵은 테두리 유지
     red_frame = (
         "border:4px solid #ff0000;"
         "box-shadow:0 0 12px rgba(255,0,0,0.55), inset 0 0 6px rgba(255,0,0,0.15);"
     )
     always_red = symbol in ("^TNX", "CL=F")
-    if danger or jpy_crash or jpy_carry_warn or vix_danger:
+    if danger or jpy_crash or jpy_carry_warn:
         card_bg = "background:#fee2e2;"
         border = red_frame if always_red else "border:2px solid #dc2626;"
     elif warn:
@@ -809,7 +805,7 @@ def render_card(
             'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
             'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황챠</div>'
         )
-    elif jpy_crash or jpy_carry_warn or vix_danger:
+    elif jpy_crash or jpy_carry_warn:
         label = "⚠ 경고"
         if jpy_carry_warn and not jpy_crash:
             label = f"⚠ 엔캐리 {carry.get('drop_pct', 0):+.1f}%"
@@ -823,13 +819,11 @@ def render_card(
         )
     else:
         danger_html = ""
-    # 달러/엔 카드엔 엔캐리 워닝 기준선을 상시 노출 (워닝 전에도 거리 확인용)
+    # 엔캐리 경고선은 별도 줄 대신 등락폭 줄에 인라인(카드 높이 유지)
+    carry_inline = ""
     if symbol == "JPY=X" and carry:
-        danger_html = (
-            f'<div style="font-size:0.72rem;color:#555;margin-top:4px;white-space:nowrap;">'
-            f'3M고점 {carry.get("peak_3mo", 0):,.1f} · 엔캐리 경고선 '
-            f'{carry.get("warn_level", 0):,.1f} ({carry.get("drop_pct", 0):+.1f}%)</div>'
-        ) + danger_html
+        carry_inline = (f'<span style="color:#666;font-weight:400;"> · 엔캐리선 '
+                        f'{carry.get("warn_level", 0):,.1f}</span>')
 
     chart_html = ""
     if ytd:
@@ -894,14 +888,14 @@ def render_card(
             f'{name_div}'
             f'<div style="font-size:2.0rem;font-weight:800;line-height:1.1;color:#000;white-space:nowrap;">{price_str}</div>'
             f'<div style="font-size:1.5rem;font-weight:700;color:{color};margin-top:4px;white-space:nowrap;">{arrow} {pct:+.2f}%</div>'
-            f'<div style="font-size:0.85rem;color:{color};white-space:nowrap;">{change:+,.2f}</div>'
+            f'<div style="font-size:0.85rem;color:{color};white-space:nowrap;">{change:+,.2f}{carry_inline}</div>'
             f'{danger_html}'
         )
     else:
         body_html = (
             f'{name_div}'
             f'<div style="font-size:1.8rem;font-weight:800;line-height:1.1;color:{color};white-space:nowrap;">{arrow} {pct:+.2f}%</div>'
-            f'<div style="font-size:0.8rem;color:{color};white-space:nowrap;">{change:+,.2f}</div>'
+            f'<div style="font-size:0.8rem;color:{color};white-space:nowrap;">{change:+,.2f}{carry_inline}</div>'
             f'<div style="font-size:1.1rem;font-weight:600;color:#000;margin-top:2px;white-space:nowrap;">{price_str}</div>'
             f'{danger_html}'
         )
