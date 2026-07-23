@@ -1,11 +1,7 @@
-<!-- updated: 2026-07-23 06:02 -->
+<!-- updated: 2026-07-24 06:02 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-07-23 06:02 KST
+기준: 2026-07-24 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>07/23 (목) · 1종목</b>
-  〈장후〉
-    <b>INTC</b> Intel Corp.
 
 <b>07/24 (금) · 0종목</b>
   — 주목 종목 없음
@@ -28,3 +24,9 @@
     <b>ARM</b> Arm Holdings plc 
     <b>QCOM</b> Qualcomm Incorporated
     <b>LRCX</b> Lam Research Corp.
+
+<b>07/30 (목) · 3종목</b>
+  〈장후〉
+    <b>AAPL</b> Apple, Inc.
+    <b>AMZN</b> Amazon.com, Inc.
+    <b>MPWR</b> Monolithic Power Systems Inc
