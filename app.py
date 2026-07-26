@@ -1405,7 +1405,7 @@ def render_fedwatch() -> None:
     updated = data.get("updated", "")
     st.caption(
         f"기준 금리: {baseline}% · {('업데이트 ' + updated + ' · ') if updated else ''}"
-        f"출처: investing.com (CME 30일 Fed Funds 선물 기반)"
+        f"출처: CME 30일 Fed Funds 선물 (CNBC 시세 + NY연준 EFFR 자체 계산)"
     )
 
     # 다음 회의 강조 카드
