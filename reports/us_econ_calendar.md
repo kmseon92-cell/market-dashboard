@@ -1,13 +1,11 @@
-<!-- updated: 2026-07-27 08:50 -->
+<!-- updated: 2026-07-28 06:02 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-07-27 08:50 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-07-28 06:02 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
 
-<b>07/27 (월) · 0건</b>
-  — 발표 예정 없음
-
-<b>07/28 (화) · 1건</b>
-  23:00 ★★ CB Consumer Confidence 예상:92.1 이전:91.2
+<b>07/28 (화) · 2건</b>
+  03:50 ★★ President Trump Speaks
+  23:00 ★★ CB Consumer Confidence 예상:92.4 이전:91.2
 
 <b>07/29 (수) · 0건</b>
   — 발표 예정 없음
@@ -25,3 +23,6 @@
   21:30 ★★ Employment Cost Index q/q 예상:0.8% 이전:0.9%
   23:00 ★★ Revised UoM Consumer Sentiment 예상:54.2 이전:54.4
   23:00 ★★ Revised UoM Inflation Expectations 이전:4.2%
+
+<b>08/03 (월) · 0건</b>
+  — 발표 예정 없음
