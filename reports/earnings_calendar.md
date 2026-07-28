@@ -1,22 +1,14 @@
-<!-- updated: 2026-07-28 06:02 -->
+<!-- updated: 2026-07-29 06:02 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-07-28 06:02 KST
+기준: 2026-07-29 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>07/28 (화) · 5종목</b>
-  〈장후〉
-    <b>KLAC</b> KLA Corporation
-    <b>TER</b> Teradyne, Inc.
-    <b>SWKS</b> Skyworks Solutions, Inc.
-    <b>QRVO</b> Qorvo, Inc.
-    <b>NXPI</b> NXP Semiconductors N.V.
 
 <b>07/29 (수) · 5종목</b>
   〈장후〉
     <b>MSFT</b> Microsoft Corp.
     <b>META</b> Meta Platforms, Inc.
-    <b>ARM</b> Arm Holdings plc 
     <b>QCOM</b> Qualcomm Incorporated
+    <b>ARM</b> Arm Holdings plc 
     <b>LRCX</b> Lam Research Corp.
 
 <b>07/30 (목) · 3종목</b>
@@ -31,3 +23,10 @@
 <b>08/03 (월) · 1종목</b>
   〈장후〉
     <b>ON</b> onsemi
+
+<b>08/04 (화) · 3종목</b>
+  〈장전〉
+    <b>ENTG</b> Entegris Inc.
+  〈장후〉
+    <b>AMD</b> Advanced Micro Devices, Inc.
+    <b>ALAB</b> Astera Labs 
