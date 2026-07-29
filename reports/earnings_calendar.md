@@ -1,15 +1,7 @@
-<!-- updated: 2026-07-29 06:02 -->
+<!-- updated: 2026-07-30 06:02 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-07-29 06:02 KST
+기준: 2026-07-30 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>07/29 (수) · 5종목</b>
-  〈장후〉
-    <b>MSFT</b> Microsoft Corp.
-    <b>META</b> Meta Platforms, Inc.
-    <b>QCOM</b> Qualcomm Incorporated
-    <b>ARM</b> Arm Holdings plc 
-    <b>LRCX</b> Lam Research Corp.
 
 <b>07/30 (목) · 3종목</b>
   〈장후〉
@@ -30,3 +22,9 @@
   〈장후〉
     <b>AMD</b> Advanced Micro Devices, Inc.
     <b>ALAB</b> Astera Labs 
+
+<b>08/05 (수) · 2종목</b>
+  〈장전〉
+    <b>GFS</b> GlobalFoundries
+  〈장후〉
+    <b>SNDK</b> SanDisk Corp.
