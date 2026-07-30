@@ -1,43 +1,33 @@
 {
- "as_of": "2026-07-28",
+ "as_of": "2026-07-29",
  "signal": {
-  "status": "outflow",
-  "label": "📉 자금 이탈 지속 (1일 연속 감소)",
-  "deposit": 1071994.5,
-  "deposit_delta": -19680.5,
-  "down_streak": 0,
-  "deposit_drop_pct": -23.3,
-  "uncl": 12237.3,
+  "status": "neutral",
+  "label": "⚪ 중립",
+  "deposit": 1095925.9,
+  "deposit_delta": 23931.899999999907,
+  "down_streak": 1,
+  "deposit_drop_pct": -21.5,
+  "uncl": 11999.7,
   "uncl_peak": 14400.0,
-  "uncl_drop_pct": -15.0,
-  "bandae": 138.9,
-  "bandae_peak_10d": 596.0,
-  "bandae_pct": 1.135054301193891,
+  "uncl_drop_pct": -16.7,
+  "bandae": 611.3,
+  "bandae_peak_10d": 611.3,
+  "bandae_pct": 5.094294024017267,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
-  "bandae_record_bar": null,
+  "bandae_record_bar": 10.643098909364422,
   "climax": "broken",
   "climax_spike": {
    "date": "2026-07-09",
    "bandae": 1422.0,
    "kospi": 7246.79
   },
-  "credit": 327411.0,
+  "credit": 331940.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -15.3
+  "credit_drop_pct": -14.1
  },
  "history": [
-  {
-   "date": "2026-03-18",
-   "bandae": 138.9,
-   "bandae_pct": 1.4,
-   "credit": 334876.0,
-   "deposit": 1122807.0,
-   "futs": 267444.0,
-   "kospi": 5925.03,
-   "uncl": 10063.0
-  },
   {
    "date": "2026-03-19",
    "bandae": 67.8,
@@ -912,20 +902,30 @@
    "date": "2026-07-27",
    "bandae": 229.6,
    "bandae_pct": 2.1,
+   "credit": 327411.0,
    "deposit": 1091675.0,
    "futs": 459218.0,
-   "uncl": 10783.0,
-   "credit": 327411.0,
-   "kospi": 6755.75
+   "kospi": 6755.75,
+   "uncl": 10783.0
   },
   {
    "date": "2026-07-28",
-   "deposit": 1071994.5,
-   "futs": 483269.4,
-   "uncl": 12237.3,
    "bandae": 138.9,
-   "bandae_pct": 1.1
+   "bandae_pct": 1.1,
+   "deposit": 1071994.0,
+   "futs": 483269.0,
+   "uncl": 12237.0,
+   "credit": 331940.0,
+   "kospi": 6023.66
+  },
+  {
+   "date": "2026-07-29",
+   "deposit": 1095925.9,
+   "futs": 452023.8,
+   "uncl": 11999.7,
+   "bandae": 611.3,
+   "bandae_pct": 5.1
   }
  ],
- "fetched_at": "2026-07-29T16:10:06"
+ "fetched_at": "2026-07-30T15:10:07"
 }
