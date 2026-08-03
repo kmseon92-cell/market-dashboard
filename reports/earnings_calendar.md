@@ -1,15 +1,9 @@
-<!-- updated: 2026-08-03 06:02 -->
+<!-- updated: 2026-08-04 06:02 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-08-03 06:02 KST
+기준: 2026-08-04 06:02 KST
 ━━━━━━━━━━━━━━━
 
-<b>08/03 (월) · 1종목</b>
-  〈장후〉
-    <b>ON</b> onsemi
-
-<b>08/04 (화) · 3종목</b>
-  〈장전〉
-    <b>ENTG</b> Entegris Inc.
+<b>08/04 (화) · 2종목</b>
   〈장후〉
     <b>AMD</b> Advanced Micro Devices, Inc.
     <b>ALAB</b> Astera Labs 
@@ -27,4 +21,7 @@
     <b>MCHP</b> Microchip Technology Inc.
 
 <b>08/07 (금) · 0종목</b>
+  — 주목 종목 없음
+
+<b>08/10 (월) · 0종목</b>
   — 주목 종목 없음
