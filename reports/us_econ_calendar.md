@@ -1,11 +1,7 @@
-<!-- updated: 2026-08-05 06:02 -->
+<!-- updated: 2026-08-06 06:02 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-08-05 06:02 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-08-06 06:02 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>08/05 (수) · 2건</b>
-  21:15 ★★ ADP Non-Farm Employment Change 예상:68K 이전:98K
-  23:00 ★★ ISM Services PMI 예상:54.5 이전:54.0
 
 <b>08/06 (목) · 2건</b>
   05:30 ★★ President Trump Speaks
@@ -20,4 +16,7 @@
   — 발표 예정 없음
 
 <b>08/11 (화) · 0건</b>
+  — 발표 예정 없음
+
+<b>08/12 (수) · 0건</b>
   — 발표 예정 없음
