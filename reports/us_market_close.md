@@ -1,179 +1,181 @@
-<!-- updated: 2026-08-06 06:30 -->
+<!-- updated: 2026-08-07 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-08-06
+📅 2026-08-07
 ━━━━━━━━━━━━━━━
-다우 +0.49% | 나스닥 -0.83% | S&P500 -0.17% | 러셀2000 -0.59% | 필반도체 -1.40% | WTI $75.08 | 환율 1,422원
+다우 -0.85% | 나스닥 -0.06% | S&P500 -0.18% | 러셀2000 -0.58% | 필반도체 +0.33% | WTI $78.23 | 환율 1,423원
 
-📈 <b>52주 신고가 (68종목)</b>
+📈 <b>52주 신고가 (64종목)</b>
 
 <b>〈헬스케어〉</b>
   <b>AAMGN</b> AMGEN Inc
-    $407.83 (+4.6%) | $220.1B
-  <b>CCRL</b> Charles River Laboratories International Inc 🔥
-    $260.72 (+11.4%) | $12.6B
-  <b>EELAN</b> Elanco Animal Health Inc
-    $26.22 (+2.4%) | $13.1B
-  <b>JJAZZ</b> Jazz Pharmaceuticals plc
-    $261.57 (-0.0%) | $17.0B
+    $404.85 (-0.7%) | $218.5B
+  <b>AAPGE</b> Apogee Therapeutics Inc
+    $134.49 (+0.2%) | $10.2B
+  <b>CCAH</b> Cardinal Health Inc
+    $237.66 (-0.7%) | $55.7B
+  <b>CCRL</b> Charles River Laboratories International Inc
+    $265.51 (+1.8%) | $12.8B
+  <b>HHALO</b> Halozyme Therapeutics Inc
+    $85.76 (+2.6%) | $10.2B
+  <b>LLH</b> Labcorp Holdings Inc
+    $316.53 (+0.8%) | $25.6B
+  <b>PPRAX</b> Praxis Precision Medicines Inc 🔥
+    $370.16 (+16.0%) | $10.3B
   <b>RRVMD</b> Revolution Medicines Inc
-    $197.30 (+2.0%) | $42.0B
+    $197.81 (+0.3%) | $42.0B
+  <b>SSOLV</b> Solventum Corp
+    $82.96 (-5.2%) | $14.4B
   <b>TTHC</b> Tenet Healthcare Corp
-    $261.74 (+3.3%) | $21.1B
-
-<b>〈기술〉</b>
-  <b>AANET</b> Arista Networks Inc
-    $197.31 (+3.6%) | $248.4B
-  <b>CCRWD</b> Crowdstrike Holdings Inc
-    $209.86 (-0.6%) | $213.7B
-  <b>DDELL</b> Dell Technologies Inc
-    $462.70 (-1.0%) | $300.0B
-  <b>PPANW</b> Palo Alto Networks Inc
-    $362.66 (-1.0%) | $295.6B
-  <b>BBSP</b> Bending Spoons S.p.A 🔥
-    $43.75 (+16.8%) | $27.8B
-  <b>CCPAY</b> Corpay Inc
-    $394.53 (-0.5%) | $25.8B
-  <b>DDDOG</b> Datadog Inc
-    $283.17 (-1.7%) | $100.8B
-  <b>DDT</b> Dynatrace Inc 🔥
-    $50.86 (+11.3%) | $14.8B
-  <b>FFTNT</b> Fortinet Inc
-    $164.13 (-2.5%) | $120.4B
-  <b>GGPN</b> Global Payments Inc
-    $87.48 (-0.9%) | $23.9B
-  <b>NNET</b> Cloudflare Inc
-    $292.96 (-2.8%) | $104.0B
-  <b>SSNOW</b> Snowflake Inc
-    $316.84 (+0.0%) | $109.8B
-  <b>TTDY</b> Teledyne Technologies Inc
-    $683.73 (-0.1%) | $31.7B
-  <b>XXYZ</b> Block Inc
-    $84.20 (-0.5%) | $50.1B
-  <b>ZZBRA</b> Zebra Technologies Corp
-    $368.99 (+0.0%) | $17.6B
+    $256.64 (-1.9%) | $20.7B
+  <b>VVTRS</b> Viatris Inc
+    $16.29 (-7.7%) | $19.1B
 
 <b>〈금융〉</b>
   <b>BBAC</b> Bank Of America Corp
-    $63.25 (+0.6%) | $442.3B
+    $63.00 (-0.4%) | $440.5B
+  <b>BBRK-A</b> Berkshire Hathaway Inc
+    $786,000.00 (+1.1%) | $1.0T
+  <b>BBRK-B</b> Berkshire Hathaway Inc
+    $524.61 (+1.1%) | $1.0T
   <b>SSAN</b> Banco Santander SA ADR
-    $14.64 (+1.2%) | $214.9B
+    $14.65 (+0.1%) | $215.0B
   <b>AAEG</b> Aegon Ltd
-    $9.50 (+1.3%) | $14.3B
+    $9.46 (-0.4%) | $14.2B
+  <b>AAFG</b> American Financial Group Inc
+    $146.73 (+0.0%) | $12.2B
   <b>AAIZ</b> Assurant Inc
-    $301.57 (+7.2%) | $14.9B
+    $296.40 (-1.7%) | $14.7B
   <b>AAMP</b> Ameriprise Financial Inc
-    $561.03 (+1.4%) | $50.4B
-  <b>BBEN</b> Franklin Resources Inc
-    $34.92 (-2.4%) | $17.7B
-  <b>FFCNCA</b> First Citizens Bancshares Inc (NC)
-    $2,226.98 (-1.1%) | $25.4B
+    $559.82 (-0.2%) | $50.3B
+  <b>BBBVA</b> Banco Bilbao Vizcaya Argentaria SA ADR
+    $28.14 (+0.2%) | $154.9B
+  <b>BBCS</b> Barclays plc ADR
+    $28.18 (-1.0%) | $95.0B
   <b>IING</b> ING Groep NV ADR
-    $35.92 (+1.6%) | $101.0B
+    $35.71 (-0.6%) | $100.4B
   <b>IIVZ</b> Invesco Ltd
-    $32.01 (+0.0%) | $14.2B
+    $31.69 (-1.0%) | $14.0B
   <b>IIX</b> Orix Corp ADR
-    $41.31 (+2.7%) | $45.4B
-  <b>MMFG</b> Mizuho Financial Group Inc ADR
-    $10.70 (+3.5%) | $130.2B
+    $41.29 (-0.1%) | $45.4B
+  <b>MMET</b> Metlife Inc
+    $99.95 (+3.8%) | $64.3B
+  <b>MMFC</b> Manulife Financial Corp
+    $44.58 (+0.3%) | $74.4B
   <b>PPFG</b> Principal Financial Group Inc
-    $114.85 (-0.3%) | $24.6B
-  <b>PPRU</b> Prudential Financial Inc
-    $120.16 (-2.7%) | $41.7B
+    $115.41 (+0.5%) | $24.7B
+  <b>PPNC</b> PNC Financial Services Group Inc
+    $252.76 (-1.0%) | $100.8B
+  <b>PPRI</b> Primerica Inc
+    $326.41 (+1.8%) | $10.2B
   <b>RRJF</b> Raymond James Financial Inc
-    $180.55 (+1.1%) | $34.7B
+    $179.33 (-0.7%) | $34.5B
   <b>SSCHW</b> Charles Schwab Corp
-    $108.02 (+1.6%) | $187.9B
+    $107.66 (-0.3%) | $187.2B
   <b>SSEIC</b> SEI Investments Co
-    $104.76 (+0.0%) | $12.6B
-  <b>SSSB</b> SouthState Bank Corp
-    $109.19 (-0.2%) | $10.6B
+    $104.69 (-0.1%) | $12.6B
+  <b>SSHG</b> Shinhan Financial Group Co Ltd ADR
+    $74.25 (+2.6%) | $34.7B
+  <b>UUSB</b> U.S. Bancorp
+    $63.81 (-0.6%) | $99.4B
   <b>WWBS</b> Webster Financial Corp
-    $79.12 (+1.5%) | $12.8B
+    $78.78 (-0.4%) | $12.8B
 
 <b>〈산업재〉</b>
   <b>GGE</b> GE Aerospace
-    $381.22 (+1.0%) | $395.5B
+    $374.55 (-1.8%) | $388.6B
   <b>RRTX</b> RTX Corp
-    $222.31 (+2.0%) | $299.6B
-  <b>AAER</b> Aercap Holdings NV
-    $155.13 (+0.0%) | $24.0B
-  <b>AAIT</b> Applied Industrial Technologies Inc
-    $358.14 (+0.3%) | $13.2B
-  <b>AAME</b> Ametek Inc
-    $254.76 (+0.3%) | $58.4B
+    $223.25 (+0.4%) | $300.9B
   <b>AARXS</b> Arxis Inc
-    $59.60 (+2.7%) | $24.9B
-  <b>AATI</b> ATI Inc
-    $205.11 (+2.5%) | $28.0B
+    $57.59 (-3.4%) | $24.0B
+  <b>AATI</b> ATI Inc 🔥
+    $223.43 (+8.9%) | $30.5B
   <b>EETN</b> Eaton Corp Plc
-    $447.28 (+0.6%) | $173.7B
-  <b>EEXPD</b> Expeditors International Of Washington Inc
-    $181.41 (-0.0%) | $23.7B
+    $448.19 (+0.2%) | $174.1B
+  <b>FFAST</b> Fastenal Co
+    $50.80 (+1.6%) | $58.3B
   <b>HHEI</b> Heico Corp
-    $366.80 (-0.2%) | $42.7B
-  <b>JJCI</b> Johnson Controls International plc
-    $153.65 (+0.0%) | $93.1B
+    $363.29 (-1.0%) | $42.4B
+  <b>HHWM</b> Howmet Aerospace Inc
+    $289.72 (-0.6%) | $115.9B
+  <b>IIESC</b> IES Holdings Inc
+    $768.43 (-2.0%) | $15.3B
+  <b>IITT</b> ITT Inc
+    $214.41 (+5.1%) | $19.2B
+  <b>MMLI</b> Mueller Industries Inc
+    $69.46 (+0.3%) | $15.4B
   <b>NNDSN</b> Nordson Corp
-    $310.67 (+0.3%) | $17.3B
+    $308.98 (-0.5%) | $17.2B
+  <b>PPH</b> Parker-Hannifin Corp
+    $1,069.80 (+7.3%) | $134.9B
   <b>SSNA</b> Snap-on Inc
-    $418.85 (+0.1%) | $21.7B
+    $414.68 (-1.0%) | $21.4B
   <b>SSWK</b> Stanley Black & Decker Inc
-    $103.27 (+0.9%) | $15.6B
+    $101.04 (-2.2%) | $15.3B
   <b>UUHAL</b> U-Haul Holding Company
-    $74.08 (+0.4%) | $12.9B
+    $75.10 (+1.4%) | $13.1B
+  <b>UUHAL-B</b> U-Haul Holding Company
+    $65.35 (+0.7%) | $13.0B
   <b>WWCC</b> Wesco International Inc
-    $373.08 (-0.3%) | $18.2B
+    $371.77 (-0.3%) | $18.1B
+
+<b>〈기술〉</b>
+  <b>BBSP</b> Bending Spoons S.p.A
+    $45.15 (+3.2%) | $28.7B
+  <b>MMSI</b> Motorola Solutions Inc 🔥
+    $474.07 (+8.2%) | $78.7B
+  <b>TTDY</b> Teledyne Technologies Inc
+    $687.52 (+0.6%) | $31.9B
 
 <b>〈경기소비재〉</b>
   <b>CCCK</b> Crown Holdings Inc
-    $122.14 (+0.4%) | $13.3B
+    $121.10 (-0.9%) | $13.2B
   <b>EEXPE</b> Expedia Group Inc
-    $319.66 (+2.4%) | $38.4B
-  <b>MMGA</b> Magna International Inc
-    $71.76 (+2.5%) | $19.1B
-  <b>SSN</b> SharkNinja Inc 🔥
-    $182.11 (+8.3%) | $25.8B
-  <b>VVIK</b> Viking Holdings Ltd
-    $108.26 (+0.7%) | $48.3B
-  <b>WWSM</b> Williams-Sonoma Inc
-    $248.24 (-0.3%) | $29.2B
-
-<b>〈소재〉</b>
-  <b>IIFF</b> International Flavors & Fragrances Inc 🔥
-    $88.07 (+8.9%) | $22.5B
-  <b>MMT</b> ArcelorMittal
-    $75.35 (+0.2%) | $56.8B
-  <b>NNUE</b> Nucor Corp
-    $274.74 (+0.3%) | $62.6B
-  <b>RRS</b> Reliance Inc
-    $421.08 (+1.5%) | $21.5B
-  <b>TTX</b> Ternium SA ADR
-    $53.71 (+6.7%) | $10.5B
-
-<b>〈부동산〉</b>
-  <b>JJLL</b> Jones Lang Lasalle Inc
-    $373.24 (+1.5%) | $17.2B
+    $306.57 (-4.1%) | $36.8B
+  <b>SSN</b> SharkNinja Inc
+    $179.93 (-1.2%) | $25.5B
+  <b>TTPR</b> Tapestry Inc
+    $162.00 (+1.8%) | $32.7B
 
 <b>〈에너지〉</b>
-  <b>MMPLX</b> MPLX LP
-    $59.29 (-2.0%) | $60.2B
+  <b>EET</b> Energy Transfer LP
+    $20.67 (+1.6%) | $71.1B
 
-🚀 <b>8% 이상 급등 (6종목)</b>
+<b>〈커뮤니케이션〉</b>
+  <b>RROKU</b> Roku Inc
+    $150.07 (+2.1%) | $22.3B
+  <b>TTIGO</b> Millicom International Cellular SA 🔥
+    $104.31 (+13.6%) | $17.5B
 
-<b>〈소재〉</b>
-  <b>AAEM</b> Agnico Eagle Mines Ltd
-    $165.45 (+9.8%) | $84.3B
-  <b>AAGI</b> Alamos Gold Inc
-    $31.27 (+8.7%) | $13.1B
-  <b>AAU</b> AngloGold Ashanti Plc
-    $88.60 (+8.7%) | $44.7B
-  <b>GGFI</b> Gold Fields Ltd ADR
-    $37.29 (+9.3%) | $33.4B
-  <b>KKGC</b> Kinross Gold Corp
-    $25.70 (+8.9%) | $30.5B
+<b>〈필수소비재〉</b>
+  <b>UUSFD</b> US Foods Holding Corp
+    $106.97 (+6.5%) | $23.6B
+
+🚀 <b>8% 이상 급등 (10종목)</b>
 
 <b>〈기술〉</b>
-  <b>SSHOP</b> Shopify Inc
-    $144.24 (+17.0%) | $187.2B
+  <b>CCACI</b> Caci International Inc
+    $628.79 (+21.4%) | $13.9B
+  <b>CCHYM</b> Chime Financial Inc
+    $31.25 (+20.6%) | $11.9B
+  <b>MMTSI</b> MACOM Technology Solutions Holdings Inc
+    $301.64 (+14.5%) | $23.0B
+  <b>PPAYC</b> Paycom Software Inc
+    $215.97 (+23.6%) | $10.3B
+  <b>SSITM</b> SiTime Corp
+    $687.50 (+26.6%) | $18.1B
+  <b>SSMTC</b> Semtech Corp
+    $134.78 (+11.2%) | $12.6B
+  <b>UU</b> Unity Software Inc
+    $40.81 (+15.0%) | $17.8B
+
+<b>〈헬스케어〉</b>
+  <b>EEHC</b> Encompass Health Corp
+    $124.82 (+12.6%) | $12.4B
+  <b>IINSM</b> Insmed Inc
+    $132.55 (+33.9%) | $28.7B
+
+<b>〈에너지〉</b>
+  <b>VVG</b> Venture Global Inc
+    $13.58 (+9.2%) | $33.7B
 
 
