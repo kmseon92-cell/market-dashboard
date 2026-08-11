@@ -987,6 +987,10 @@ def render_cpi_nowcast_card():
     prev_str = f"{previous:.1f}%" if previous is not None else "—"
     core_str = f"{core_nowcast:.2f}%" if core_nowcast is not None else "—"
 
+    # m/m 컨센서스(ForexFactory 피드에만 있음) — 있으면 하단에 병기
+    cons_mom = cons.get("forecast_mom")
+    mom_str = f" · 컨센 m/m {cons_mom:+.1f}%" if cons_mom is not None else ""
+
     # 컨센서스 vs nowcast 차이 — 둘 다 있을 때 surprise 가능성 표시
     surprise_html = ""
     if nowcast is not None and consensus is not None:
@@ -1011,7 +1015,7 @@ def render_cpi_nowcast_card():
         f'컨센서스 <b style="font-size:1.35rem;color:#000;">{cons_str}</b>'
         f'<span style="font-size:0.9rem;color:#6b7280;font-weight:500;"> · 이전 {prev_str}</span></div>'
         f'<div style="font-size:0.78rem;color:#6b7280;margin-top:2px;">'
-        f'{release_md} 발표 · {period_kr} · Core {core_str}</div>'
+        f'{release_md} 발표 · {period_kr} · Core {core_str}{mom_str}</div>'
         f'</div>'
     )
     st.markdown(html, unsafe_allow_html=True)
