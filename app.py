@@ -941,6 +941,30 @@ def _ref_period_to_kr(ref: str) -> str:
     return mp.get(ref, ref)
 
 
+def _stale_badge(fetched_at: str, warn_hours: float = 26.0) -> str:
+    """JSON의 fetched_at이 오래됐으면 경고 배지.
+
+    Streamlit Cloud가 데이터 파일만 바뀐 커밋을 늦게/안 당겨가는 경우가 있어
+    화면이 조용히 과거 값을 보여준다(2026-08-11 CPI 컨센 건). 카드 스스로
+    자기 데이터 나이를 드러내게 해서 무소음 stale을 눈으로 잡는다.
+    """
+    if not fetched_at:
+        return ""
+    try:
+        t = datetime.fromisoformat(fetched_at)
+    except ValueError:
+        return ""
+    hours = (datetime.now() - t).total_seconds() / 3600
+    if hours < warn_hours:
+        return ""
+    label = f"{hours / 24:.0f}일 전" if hours >= 48 else f"{hours:.0f}시간 전"
+    return (
+        f'<span style="display:inline-block;font-size:0.68rem;font-weight:700;'
+        f'color:#fff;background:#b45309;padding:1px 5px;border-radius:4px;'
+        f'margin-left:6px;vertical-align:middle;">데이터 {label}</span>'
+    )
+
+
 def render_cpi_nowcast_card():
     data = fetch_cpi_nowcast()
     if "error" in data:
@@ -1008,7 +1032,7 @@ def render_cpi_nowcast_card():
         f'min-height:150px;box-sizing:border-box;display:flex;'
         f'flex-direction:column;justify-content:center;">'
         f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
-        f'Cleveland CPI Nowcast{surprise_html}</div>'
+        f'Cleveland CPI Nowcast{surprise_html}{_stale_badge(data.get("fetched_at", ""))}</div>'
         f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">'
         f'{arrow} {nowcast_str}</div>'
         f'<div style="font-size:1.15rem;color:#111;margin-top:5px;font-weight:600;">'
