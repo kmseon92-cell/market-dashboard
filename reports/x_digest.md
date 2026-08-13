@@ -1,47 +1,44 @@
-<!-- updated: 2026-08-13 08:16 -->
-🐦 <b>X 데일리 다이제스트</b> (08/13)
+<!-- updated: 2026-08-14 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (08/14)
 
 <b>일론 머스크</b>
-💡 xAI Grok 4.6 출시 — GDPVal-AA·AA-Briefcase·에이전틱 지수 등 다수 벤치마크 1위, GPT-5.6 Sol 능가·Opus5/Fable5 바로 아래. 가격은 Grok 4.5와 동일($2/$6), 첫주 사용량 2배 프로모션 <a href="https://x.com/elonmusk/status/2087565206272823552">원문</a>
+💡 Grok 4.6 출시 러시 — GPQA Diamond 1위(95%), Perplexity WANDR 벤치마크 Fable 5 동률에 비용 1/3, 버그벤치·Warp·X알고리즘 오픈소스 등 홍보 RT 다수. 테슬라 로보택시 대기시간 단축 자랑, "X는 가장 투명한 플랫폼" 발언도. <a href="https://x.com/elonmusk/status/2088033597999473050">원문</a>
 
-<b>샘 올트먼 / 다리오 아모데이 / Anthropic / OpenAI / 마크 저커버그 / Market Feed / 안드레 카파시</b>
-기간 내 글 없음
+<b>샘 올트먼 / 다리오 아모데이 / Anthropic / 마크 저커버그 / Market Feed / 안드레 카파시</b>
+그 외: 글 없음
+
+<b>OpenAI</b>
+💡 ChatGPT 데스크톱에 "Computer History"(PC 활동 기억) 기능 글로벌 롤아웃. GPT-5.6 Sol "Ultrafast" 모드 프리뷰(Cerebras 기반, 초당 최대 750토큰=14배 속도). 상위 10% 기업은 플러그인 2배·스킬 6배 더 활용한다는 기업 AI 도입 리포트도 공개.
 
 <b>Tae Kim</b>
-💡 Reuters: 구글 제미나이 성능 경쟁사 대비 뒤처져 신버전 2개월 연기, DeepMind-클라우드 인력 갈등설(세르게이 브린 개입). 반면 OpenAI 기업고객 매출 월 32%↑, 네비우스 2Q +454% — "AI 펀더멘털은 계속 가속" <a href="https://x.com/firstadopter/status/2087634147384660090">원문</a>
+💡 어플라이드머티리얼즈 콜: "DRAM 수요-공급 갭 크다, 2H 대폭 성장·2027도 강한 해". FT "Anthropic 10월 $2조+ 밸류 IPO, 연말 ARR $100~120B" 인용. 델·레노버 AI 서버 실적 서프라이즈, "코스피 2만 간다, 레버리지 다 청산되고 바닥" 발언.
 
 <b>Hardik Shah</b>
-💡 애플, Siri AI 개선용 콘텐츠 대가로 퍼블리셔에 9자리 달러 지급 논의(WSJ). Cerebras Q2 코어매출 +103%YoY, FY26 가이던스 $880-890M로 상향. NextEra 텍사스·펜실베이니아 가스발전 10GW 계약 초기 $3.3B 확보. Robinhood 7월 플랫폼자산 $355B(+19%YoY)
+💡 OpenAI 연환산매출 $40B 돌파 - Bloomberg. AMAT Q3 매출 $9.12B(+25%YoY) 서프라이즈, 램리서치 R&D $3B+ 투자, 마이크론 $250M AI펀드 신설. Eisman "AI붐은 OpenAI·Anthropic 두 곳에 과도 의존, 중국 오픈웨이트발 가격전쟁 리스크" 경고. 네비우스 버인랜드 데이터센터 공사중지명령(Hunterbrook 폭로), 실버레이크의 Workday 인수설(Reuters), 레딧 S&P500 편입.
 
 <b>dnap</b>
-크립토 트레이더 인터뷰(Tradermayne)·Threadguy 언급 등 잡담 위주, 시장 코멘트 없음
+Anthropic $3조 밸류 FT 보도에 "어디서 들어본 얘긴데" 반응, 정치권 자산공개(AOC) 관련 잡담, 크립토 인터뷰 RT 위주.
 
 <b>Jukan</b>
-💡 삼성전자 8월 중 특별배당 등 주주환원안 발표 예정, SK하이닉스도 3분기 내 발표(대신증권 인용). 톈펑증권: 클라우드 신규수주 20분기래 최대, CoreWeave·Nebius 가격 인상에도 수요 여전 강함. YMTC 낸드 출하량 3위로 마이크론·샌디스크·키옥시아 추월 <a href="https://x.com/jukan05/status/2087670240511684620">원문</a>
+💡 Aletheia: 엔비디아 루빈 울트라 HBM4E(8/12단) 사용 전망, Kyber 로드맵 생존. Anthropic 연말 ARR $120B 전망 인용. CoreWeave 2Q26 매출 $2.6B·EBITDA $1.5B 컨센 상회, 백로그 $129B. JPM "HBM 2028 공급부족이 2027보다 심화" 경고.
 
-<b>First Squawk / FinancialJuice (속보 종합)</b>
-- 美 CPI 완화로 S&amp;P500 사상최고 근접(7,748), 9월 동결 확률 62%. 브렌트 $88.98, WTI $83.27
-- Cisco Q4 EPS $1.22(예상상회)·매출 $17.3B, FY27 AI매출 $7.5B 가이던스 <a href="https://x.com/FirstSquawk/status/2087633398240354768">원문</a>
-- Cerebras Q2 매출 $180.1M 예상하회·마진 부진했으나 Q3·FY 가이던스는 상향
-- 美 10년물 입찰 수익률 4.683%로 2007년 이후 최고, 응찰률 2.53
-- 美 7월 재정적자 -$432B(예상 -$346B 대비 대폭 확대)
-- 이스라엘-미국, 레바논 남부 영구 주둔 두고 프레임워크 갈등 표면화(Axios)
-- 애플 Siri용 콘텐츠 퍼블리셔 대가 지급 논의(WSJ)
+<b>First Squawk / FinancialJuice</b>(속보 통합)
+💡 미 재무장관 베선트 "이란에 전례없는 조치 시행". 호르무즈 해협서 UAE 소속 유조선 피격설(Fars News). 트럼프, 드론 관세 서명(EU·일·韓·스위스·대만 15%, 민감품목 100%). 트럼프, 차기 항공모함 전자식→증기식 사출 회귀 지시(WSJ). 피치, 美 신용등급 AA+ 유지하되 재정적자 미대응·2027년 부채한도 도달 경고. 연준 굴스비 "인플레 개선세, 관세·유가발 일시충격". 북한 "핵억지력 계속 확대, 한미일 군사협력은 사실상 핵동맹" 반발. S&P500 사상최고치 경신.
 
 <b>루팡</b>
-💡 대신증권: 삼성전자 목표가 56만원·SK하이닉스 320만원(매수) — 조기 주주환원+LTA 재평가+HBM 성장+2027 수요 확장 근거. 모건스탠리 SpaceX 비중확대, 목표가 $300(강세 $600). 코히런트 CEO: 2027 회계연도 사실상 풀부킹, CPO/NPO 수요 이연 없음 오히려 앞당겨짐 <a href="https://x.com/DrNHJ/status/2087678265465184572">원문</a>
+💡 Evercore, SanDisk 투자의견 매수·PT $2,800 — 인베스터데이 상세중계(FY30 매출성장 10%대 후반·GM 80%·잉여현금 100% 환원, NBM 계약 TCV $939억). 젠슨 황 "A100 2029년까지 가동 가능, CUDA가 컴퓨트를 금융자산화". SK하이닉스 8/27 인디애나팹 착공식(최태원·젠슨 황 회동 가능성). BofA, 네비우스 PT $280→$310 상향.
 
 <b>P Equity Research</b>
-💡 코히런트(COHR) 실적 EPS +74%·매출 +34%YoY, CPO/NPO로 $20B+ 신규 SAM 확보, FY27내 분기매출 $3B 목표 제시. 마이클 버리, 오라클·마이크론·네비우스 숏 확대(서브스택). Foxconn AI서버랙 가시성 2027까지 확대, 점유율 50% 육박
+💡 SanDisk "물리적 AI 고객과 깊이 협업 중" (HBF 시장 성장 자신). AMAT "2030년까지 로드맵 가시성". Mizuho: SNDK HBF는 HBM 대비 1/8~1/10 비용, GOOGL·META·SKHY·Tenstorrent 컨소시엄. Aletheia: 루빈 울트라 ASP $17만 육박 전망(Rubin 대비 +30%). BofA 서버CPU TAM 2030년 $2,106억(6배 성장).
 
 <b>북극성</b>
-💡 SK하이닉스 채권 투자 돌연 변경 — 주주환원 앞두고 자금운용 주목 <a href="https://x.com/PolarisLog/status/2087675078012232036">원문</a>. DDR5 16G 현물가 $52.5 ATH(연초대비 +751%). HBM 공급망: Blackwell=하이닉스·마이크론, Vera Rubin 3사, MI400X=삼성 주력. AI 데이터센터발 전기요금 2년 +10.1%로 물가 자극, JPM은 D램 가격 연내 400%↑ 전망
+💡 "삼성·하이닉스 실적은 빅테크급인데 여전히 저평가" 아쉬움 표출. 대신증권: 韓 반도체 6월래 낙폭과대, 삼성·하이닉스 8~9월 조기 주주환원(각 150조/80조+) 전망, 루빈 스펙하향은 HBM 공급부족 때문이라 해석. DDR5 16G 현물가 $52.7 사상최고(1년새 +754%). BofA 서버CPU TAM 6배 성장 전망도 공유. Roundhill 삼성그룹주 ETF 상장신청.
 
 <b>Nuradu</b>
-알몬티 인더스트리스 2Q 매출 +498%·마진 60.7% 흑자전환. NBIS 실적 서프라이즈 언급, S-Oil 단기 관심. CXMT DDR5 수율 90% 돌파(삼성 추격). Citadel 8월 노트: 과열 대부분 해소, 낮은 변동성 속 완만한 상승 전망 <a href="https://x.com/NURadu_/status/2087573762728419708">원문</a>
+💡 SanDisk HBF 훈풍에 국내 밸류체인 정리(SK하이닉스·삼성전자·한미반도체·하나마이크론·티씨케이·티에프이·솔브레인·한화솔루션). 연준 해맥 "지금 금리 인상해라" 매파 발언, 美 PPI·실업수당 지표 혼조. JPM, HBM 공급부족 전망 완화(2026E -20%→-15%). AMAT 실적 변동성 주의 코멘트.
 
 <b>개빈 베이커</b>
-💡 Cerebras 2027년말 600MW 계약 기준 클라우드 ARR 약 $10B 추정(Nebius 단가 준용). Grok 4.6은 Fable5 Max와 비슷한 성능에 85% 저렴 — 파레토 우위 평가 <a href="https://x.com/GavinSBaker/status/2087644672273650119">원문</a>
+💡 "Anthropic $3조 밸류, 어디서 들어본 얘기" FT 인용. "단일/양극 AI모델 체제는 위험, 오픈소스·Grok의 객관적 진실 지향이 중요". Grok 4.6이 8.6M 토큰·$55로 Fable 대비 1/10 비용에 동일 과제 수행.
 
 <b>Semiconductor Insider</b>
-💡 JPM 메모리 전망 상향조정: DRAM 부족률 2026 10→3%, 2027 13→7%로 완화됐지만 여전히 타이트. 2028년 균형 위해 DRAM 5.5EB·NAND 76EB 추가공급 필요(capex +41%/+27%). 서버 DDR5 현물가 지속 상승, 계약가 15~23%↑. 세르게이 브린, 딥마인드에 AI 자기개선(recursive self-improvement) 우선순위 지시(Reuters) <a href="https://x.com/SemiconductorsX/status/2087618510654734475">원문</a>
+💡 메모리 랠리: 이번주 SNDK +30%·DRAM +17%·삼성 +16%·MU +13%·SK하이닉스 +12%. SanDisk 인베스터데이: HBF CY27 샘플 출하, FY30 매출 $80B+ 목표(컨센서스 상회), GM 80%·영업이익률 75%, $15.5B 자사주 승인. 골드만: 엔비디아 2026년 AI랙 5만개 vs AMD 5천개, 2028년 격차 13.3만개로 확대. MU 시총 $1.1조 돌파.
