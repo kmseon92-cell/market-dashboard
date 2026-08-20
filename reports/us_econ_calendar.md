@@ -1,13 +1,7 @@
-<!-- updated: 2026-08-20 06:03 -->
+<!-- updated: 2026-08-21 06:03 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-08-20 06:03 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-08-21 06:03 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>08/20 (목) · 4건</b>
-  03:00 ★★★ FOMC Meeting Minutes
-  03:30 ★★ President Trump Speaks
-  21:30 ★★ Philly Fed Manufacturing Index 예상:24.1 이전:41.4
-  21:30 ★★ Unemployment Claims 예상:210K 이전:209K
 
 <b>08/21 (금) · 0건</b>
   — 발표 예정 없음
@@ -19,4 +13,7 @@
   — 발표 예정 없음
 
 <b>08/26 (수) · 0건</b>
+  — 발표 예정 없음
+
+<b>08/27 (목) · 0건</b>
   — 발표 예정 없음
