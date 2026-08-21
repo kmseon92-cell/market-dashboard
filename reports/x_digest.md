@@ -1,32 +1,45 @@
-<!-- updated: 2026-08-21 08:17 -->
-🐦 <b>X 데일리 다이제스트</b> (08/21)
+<!-- updated: 2026-08-22 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (08/22)
 
-<b>일론 머스크</b> — Grok Build/Grok Bot 자율에이전트 대대적 홍보(전용 원격컴퓨터 상시구동, 노트북 꺼도 작업 지속), 💡 Grok 4.6 Artificial Analysis Agentic Index 1위 타이(Claude Opus 5 Max와 동률 59점, <a href="https://x.com/elonmusk/status/2090479226868662304">원문</a>), Starship 단일엔진 정적연소로 궤도이탈burn 데모 완료, X 트래픽이 구글·유튜브·메타·인스타·레딧 앞지름(Similarweb)
+<b>일론 머스크</b>
+💡 Grok 4.6이 CursorBench 3.2 1위(70.8%, 비용은 Fable5/Opus5의 1/3~1/6) 소식 RT, Vertex AI 출시·X Ads MCP(에이전트가 광고 캠페인 직접 운영) 공개. Starlink 기내 와이파이 호평 RT, 테슬라 경영메모(회의·위계 최소화) 관련 장문 트윗.
 
-<b>샘 올트먼</b> — 💡 OpenAI 첫 NVIDIA Vera Rubin 랙 가동 시작(차세대 프론티어 프리트레이닝용), Replit 무료모드에 GPT-5.6 Luna 탑재
+<b>샘 올트먼 / 다리오 아모데이 / Anthropic / 마크 저커버그 / Market Feed / 카파시</b>: 글 없음
 
-<b>OpenAI</b> — ChatGPT 데스크톱 Computer History 기능 EEA/UK/스위스 Pro·Biz·Enterprise로 확대(사소한 기능업데이트)
+<b>OpenAI</b>
+💡 GPT-5.6 Sol API·크레딧 가격 3개월간 20%+ 인하, ChatGPT Work/Codex 크레딧 확대(Pro/Plus/Business 구독 사용량은 동일 유지).
 
-<b>Tae Kim</b> — 💡 Cerebras 임원 Sean Lie $153M 지분매도 신고(내부자만 챙기고 IPO 개미는 손실이라 비판), 💡 Anthropic IPO 규모 SpaceX 상장 맞먹거나 상회 전망(Bloomberg, <a href="https://x.com/firstadopter/status/2090502458569310707">원문</a>), 💡 OpenAI 3분기 QoQ 엔터프라이즈 성장 82 vs Anthropic 76(GPT-5.6 Sol 호조·Fable5 부진), GitHub 사용량 폭증으로 다운타임, 퀀트 모멘텀 펀드 2년래 최악의 하루(FT)
+<b>Tae Kim</b>
+💡 "OpenAI가 3분기 Anthropic 대비 점유율 확대 중" — Mercury 스타트업 1/3 사용, Sol모델+Codex 개선이 반전 요인이라 주장. Cerebras 내부자 매도 지적, BofA "美 3대 화살 0/3(성장·재정적자·원유증산 전부 미달)", Citadel SALP 포트폴리오 80% 축소.
 
-<b>Hardik Shah</b> — 💡 Cerebras Sean Lie $153.19M 지분매도 신고, 💡 Anthropic IPO SpaceX급 전망(7월 연환산매출 $65B), 💡 트럼프 우주발사 확대 행정명령(2030까지 연 1000+회 목표, $SPCX $RKLB $ASTS 등), 💡 Broadcom $60B+ AI부채 조달 추진, 💡 Nvidia 中수출용 AI칩 로드맵 준비(The Information), SMCI 신규수주 $60B 낙관(Rosenblatt), Waymo 자체 로보택시 칩 개발
+<b>Hardik Shah</b>
+코인베이스 CEO 美 크립토 규제 9월 중순 명확화 기대, 테슬라 태양광 타일 사업 중단(Electrek), Cramer는 BMNR 대신 비트코인 직접매수·CELH보다 KO 선호 발언.
 
-<b>dnap</b> — Palantir Karp "마오·덩샤오핑한테서 배운다"며 독일 테크씬 저평가 비유 인터뷰, GTA6 해킹 유출본 2건 존재해도 TTWO 주가 상승, CZ: "Hyperliquid 美진출은 크립토업계 전체에 호재"
+<b>dnap</b> (All-in Pod 발췌)
+💡 Chamath: "실리콘밸리가 아이디얼리즘 잃고 돈만 좇는 곳 됐다", "오픈소스 금지 시 코카콜라처럼 자본이 해외로 이탈", AI doom 내러티브가 텍사스·펜실베이니아 데이터센터 규제로 이어지는 중. Sacks: "AI랩 안전조율은 필요하나 밀실 담합은 반경쟁적". Friedberg: 중국 규제속도가 빨라 우주경쟁·바이오텍에서 미국 추월 중. Karp: "최고 오픈소스 모델은 이제 중국산", "AI 없었으면 러시아가 우크라전 승리".
 
-<b>Jukan</b> — 💡 SK하이닉스 CPO/광인터커넥트 로드맵 분석(HBM 이후 메모리 디스어그리게이션 대비, Tianfeng), 💡 삼성전자 주주환원 150조원 검토설(기존 100조 보도 상회, 한경), 💡 알리바바 "AI투자 회수기간 2.5년까지 단축", 대만·한국 CCL(동박적층판) 증설 지연으로 공급부족 지속
+<b>Jukan</b>
+💡 YMTC STAR마켓 IPO 심사 접수(RMB330억 조달), 한국 8/1~20 DRAM 수출단가 상승세 지속, SanDisk IR "HBF는 HBM 대체 아닌 추가 계층, YMTC 확장은 中내수 80% 흡수하지만 글로벌 공급엔 리스크 제한적". SK하이닉스 일본 미야기현 반도체 공장 검토 단독보도(NAND=Shitco 코멘트도).
 
-<b>루팡</b> — 💡 BMO 반도체 5종목 커버리지 개시 전부 Outperform(MU $1300/NVDA $340/AMD $550/MRVL $250/AVGO $455), 💡 Barclays SK하이닉스ADR TP $300 유지, 💡 JPMorgan: 마벨-구글 파트너십은 핵심TPU 아닌 어태치칩, 워런트 구조상 FY33까지 최대 $120B 매출 잠재, 💡 삼성전자 사상최대 100조+ 주주환원 8월 이사회 공식화 예정, JPMorgan 폭스콘 AI서버 매출 26년 +130%·27년 +70% 전망
+<b>First Squawk · FinancialJuice</b> (속보 중복제거, 시장 핵심만)
+💡 엔비디아, 데이터센터 전력개발사 Cloverleaf Infrastructure에 수억달러 투자 논의(WSJ) — DSX플랫폼 연계 AI팩토리 확대. 엔비디아, 한국 AI칩 스타트업 리벨리온과 인수·투자 초기 협상(젠슨황-박성현 CEO 회동). Anthropic, 구글 칩 베테랑 Amir Salek 컴퓨트팀 영입 + 오픈소스 사이버방어에 $35M 펀드 출시. OpenAI GPT-5.6 Sol 가격 20%+ 인하. 삼성전자 90~110조원 주주환원 발표. 美 8월 S&amp;P 서비스PMI 56.8(예상 상회, 종합 56), 나스닥 5일 연속 하락 멈추고 반등(비트코인 랠리 동반), 다우 +1.06%. 금 현물 $4,607/oz(+2%대).
+<a href="https://x.com/PolarisLog/status/2090714362403340509">원문(리벨리온)</a>
 
-<b>P Equity Research</b> — 💡 Citadel: 상위1% 기업 직원당 AI지출 7월 MoM +50%, 💡 Nomura: 2027/28 CPO 대량양산 어려움(EML칩 병목), 💡 Micron CEO "메모리는 이제 AI 전략 인프라, 상품재 아니다"(<a href="https://x.com/pequityresearch/status/2090472804604842198">원문</a>), 하이퍼스케일러 부채 2027년까지 $659B 전망, Hanwha: CXMT 램프업해도 26-27 DRAM 공급부족 지속(완화요인일 뿐)
+<b>P Equity Research</b>
+💡 BofA "ABF기판 2026~28년 공급부족 7%→14%→19%(기존 전망보다 확대)". Edgewater "엔비디아 GB200/300 메모리원가 전가 위해 3분기 20~30% 가격인상 예상". Wells Fargo: DRAM 산업매출 2026 $655B(+327%y/y)·2027 $1.13T(+72%)·2028 첫 전망 $1.09T(-3%), 수급타이트 2027 하반기까지 지속. 한국 NAND 수출단가 8월 폭등.
 
-<b>북극성</b> — 💡 골드만삭스 SK하이닉스 TP 350만원(Buy) — 40조 자사주매입 8/20 개시, 환원목표 누적FCF 50%→최소 50%로 상향(<a href="https://x.com/PolarisLog/status/2090574438316318746">원문</a>), 💡 SK증권/삼성증권: 환원정책 상향은 실적 지속성 자신감 신호, 하이닉스 2026 임단협 잠정합의(임금 6.3%, PS 현금40%+주식40%), DDR5 16G 현물가 $53.77 ATH(1년새 +772%)
+<b>북극성</b>
+💡 삼성전자 90~110조 주주환원 상세(3Q26 배당 30조원, 잔여 60~80조는 27년1월 확정) — 시장 반응은 미지근(애프터마켓 27만원대). "삼성전자, 금산분리 규제(삼성생명·화재 지분율 상한)로 대규모 자사주 소각 못하는 구조적 딜레마" 분석. DDR5 16G 현물가 ATH $54.1(+777% since 25.8). 8/1~20 반도체 수출 ATH — DRAM +415%y/y, NAND +400%y/y. 카카오 인적분할(카카오AI/카카오X) 결의. 엔비디아-리벨리온 인수는 정부자금 얽혀 현실적으로 지분투자·협력 형태 전망.
 
-<b>Nuradu</b> — SK하이닉스 성과급 40% 자사주 지급 결정, 신규 실업수당 20.6만건(예상 하회, 고용 견조), 카카오모빌리티 미국 ADR 상장 위해 F-1 비공개 제출(TPG 지분 대상), BofA 8월 FMS: 현금비중 3.5% 초저·강세장 뷰 22년래 3위·최대 쏠림거래는 '글로벌 반도체 롱'(53%), TSLA/ESS/TEM 등 개별종목 잡담 다수
+<b>Nuradu</b>
+💡 AI 네오클라우드 4사 비교 — CoreWeave(ARR $190억, 부채 $350억 부담), Nebius(1황, 클라우드매출 +514%y/y), IREN(MS 5년 $97억 계약), Boostrun(소액베팅용). "텍사스 데이터센터 신규건설 유예가 12월로 밀림 — 아무도 안 다루는 악재". 美 에너지부 핵심광물 $5억 직접투자(라일락솔루션스·제르부아·엔사이클, 배터리소재 자립). UUUU 일본 자석소재 진출(중국 우회 희토류 공급망). 베센트 국채 바이백에도 월가는 "임시방편" 회의론.
 
-<b>개빈 베이커</b> — 💡 OpenAI QoQ 엔터프라이즈 성장 82 vs Anthropic 76 동의, Grok Bot·오픈소스가 두 프론티어랩보다 빠르게 성장 중이라 언급
+<b>개빈 베이커</b>
+💡 Citadel이 SALP 포트폴리오($450억, 레버리지 4배 이상=최소 $1,800억 gross) 80% 축소 공시 관련 — "매도압력은 사실상 끝났을 가능성 높다"며 시장에 영향 있었다고 평가.
 
-<b>FinancialJuice</b> — 💡 Broadcom $60-100B 규모 AI부채 조달 논의(Apollo·Blackstone 참여, SPV 가능, <a href="https://x.com/financialjuice/status/2090531673360208203">원문</a>), 💡 Anthropic 8월말 IPO 신청 준비(SpaceX 기록 상회 목표), 💡 Nvidia 中수출용 AI칩 연내 소량출하 준비, 💡 Fed 무살렘: "7월 인상 권고했었다, 9월 입장 미정", WTI $87.83(+2.33%)·브렌트 $93.78(+2.36%) 급등, 한국 PPI YoY 7.7%(전월 8.6%)
+<b>FinancialJuice</b>: 위 First Squawk 병합 항목과 동일(이란·호르무즈 관련 지정학 속보 다수는 생략)
 
-<b>Semiconductor Insider</b> — 💡 Broadcom AVGO AI수주잔고 상세(구글 TPU 2031까지·Anthropic 5GW 추가·OpenAI 10GW·메타 3GW, FY27 AI매출 목표 $100B+, <a href="https://x.com/SemiconductorsX/status/2090494403366502828">원문</a>), 💡 JPMorgan DRAM+NAND 시장 2027년 $1.83조 전망(2026년 $1.44조 대비 대폭 확대), 💡 Nomura 신규 '칩 부족 지수' 출시 — 심각한 공급부족 시그널, 💡 Micron CEO "메모리는 AI 전략 인프라" 재확인, Goldman 대형성장주 Overweight 리스트에 Intel 포함(YTD +178%), Waymo 자체 5nm ASIC 로보택시칩 양산, UMC 실리콘포토닉스 파운드리 진출
+<b>Semiconductor Insider</b>
+💡 Foxconn 美 AI제조 자회사 Q-Edge에 $1.88억 증자(총 $2.26억, 인디애나·휴스턴). 엔비디아 Cloverleaf 소수지분 투자(전력·부지 확보). $MU 2027 목표주가 $1,600~1,800 컨센서스, SCA(Micron, take-or-pay+가격상한) vs LTA(SK하이닉스, 상한 없음) 구조 비교. 인텔, 헤지펀드(Coatue 신규 1,200만주·Tiger Global 등) 매집 지속 + 골드만 "Rising Stars" 1위. YMTC IPO 소식 중복.
 
-그 외: 글 없음 — 다리오 아모데이, Anthropic, 마크 저커버그, First Squawk, Market Feed, 안드레 카파시
+⚠️ <i>요약 누락(원문엔 글 있음): 루팡</i>
