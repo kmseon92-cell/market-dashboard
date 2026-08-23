@@ -1,6 +1,6 @@
-<!-- updated: 2026-08-23 06:04 -->
+<!-- updated: 2026-08-23 22:25 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-08-23 06:04 KST
+기준: 2026-08-23 22:25 KST
 ━━━━━━━━━━━━━━━
 
 <b>08/24 (월) · 0종목</b>
@@ -10,13 +10,18 @@
   〈장후〉
     <b>SMTC</b> Semtech Corporation
 
-<b>08/26 (수) · 1종목</b>
+<b>08/26 (수) · 4종목</b>
   〈장후〉
     <b>NVDA</b> NVIDIA Corp.
+    <b>CRM</b> Salesforce, Inc.
+    <b>CRWD</b> CrowdStrike Holdings, Inc.
+    <b>SNPS</b> Synopsys, Inc.
 
-<b>08/27 (목) · 1종목</b>
+<b>08/27 (목) · 3종목</b>
   〈장후〉
     <b>MRVL</b> Marvell Technology, Inc. 
+    <b>IREN</b> IREN Limited
+    <b>ADSK</b> Autodesk, Inc.
 
 <b>08/28 (금) · 0종목</b>
   — 주목 종목 없음
