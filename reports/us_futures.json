@@ -11,9 +11,9 @@
       "pct": 0.0
     },
     "JPY=X": {
-      "price": 158.93,
-      "change": 0.0,
-      "pct": 0.0
+      "price": 158.87,
+      "change": -0.06,
+      "pct": -0.0378
     },
     "^TNX": {
       "price": 4.736,
@@ -26,9 +26,9 @@
       "pct": 0.0
     },
     "DX-Y.NYB": {
-      "price": 98.882,
-      "change": 0.082,
-      "pct": 0.08
+      "price": 98.847,
+      "change": 0.047,
+      "pct": 0.05
     },
     "^VIX": {
       "price": 15.13,
@@ -37,11 +37,11 @@
     }
   },
   "errors": [],
-  "fetched_at": "2026-08-24T07:02:07+09:00",
+  "fetched_at": "2026-08-24T07:07:11+09:00",
   "jpy_carry": {
     "peak_3mo": 163.83,
     "warn_level": 158.92,
-    "drop_pct": -2.99,
-    "warning": false
+    "drop_pct": -3.03,
+    "warning": true
   }
 }
