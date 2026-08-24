@@ -1,13 +1,10 @@
-<!-- updated: 2026-08-24 06:03 -->
+<!-- updated: 2026-08-25 06:03 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-08-24 06:03 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-08-25 06:03 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
 
-<b>08/24 (월) · 0건</b>
-  — 발표 예정 없음
-
 <b>08/25 (화) · 2건</b>
-  03:00 ★★ Treasury Sec Bessent Speaks
+  02:00 ★★ Treasury Sec Bessent Speaks
   23:00 ★★ CB Consumer Confidence 예상:90.3 이전:90.8
 
 <b>08/26 (수) · 3건</b>
@@ -23,3 +20,6 @@
   23:00 ★★★ Prelim Benchmark Payrolls Revision 이전:-911K
   23:00 ★★ Revised UoM Consumer Sentiment 예상:51.0 이전:51.0
   23:00 ★★ Revised UoM Inflation Expectations 이전:4.3%
+
+<b>08/31 (월) · 0건</b>
+  — 발표 예정 없음
