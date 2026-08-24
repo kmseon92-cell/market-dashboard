@@ -1,18 +1,18 @@
 {
- "as_of": "2026-08-20",
+ "as_of": "2026-08-21",
  "signal": {
   "status": "purge",
   "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 1053542.9,
-  "deposit_delta": -12207.100000000093,
-  "down_streak": 0,
-  "deposit_drop_pct": -24.6,
-  "uncl": 10973.9,
+  "deposit": 1007456.5,
+  "deposit_delta": -46086.5,
+  "down_streak": 1,
+  "deposit_drop_pct": -27.9,
+  "uncl": 10715.2,
   "uncl_peak": 17249.0,
-  "uncl_drop_pct": -36.4,
-  "bandae": 93.5,
-  "bandae_peak_10d": 408.6,
-  "bandae_pct": 0.8520216149226801,
+  "uncl_drop_pct": -37.9,
+  "bandae": 484.3,
+  "bandae_peak_10d": 484.3,
+  "bandae_pct": 4.519747648200687,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
@@ -23,21 +23,11 @@
    "bandae": 1220.1,
    "kospi": 5593.56
   },
-  "credit": 313120.0,
+  "credit": 318939.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -18.9
+  "credit_drop_pct": -17.4
  },
  "history": [
-  {
-   "date": "2026-04-09",
-   "bandae": 73.8,
-   "bandae_pct": 0.7,
-   "credit": 327200.0,
-   "deposit": 1128070.0,
-   "futs": 306613.0,
-   "kospi": 5778.01,
-   "uncl": 10639.0
-  },
   {
    "date": "2026-04-10",
    "bandae": 80.6,
@@ -912,20 +902,30 @@
    "date": "2026-08-19",
    "bandae": 55.6,
    "bandae_pct": 0.6,
+   "credit": 313120.0,
    "deposit": 1065750.0,
    "futs": 419506.0,
-   "uncl": 9135.0,
-   "credit": 313120.0,
-   "kospi": 6471.17
+   "kospi": 6471.17,
+   "uncl": 9135.0
   },
   {
    "date": "2026-08-20",
-   "deposit": 1053542.9,
-   "futs": 410119.5,
-   "uncl": 10973.9,
    "bandae": 93.5,
-   "bandae_pct": 0.9
+   "bandae_pct": 0.9,
+   "deposit": 1053543.0,
+   "futs": 410119.0,
+   "uncl": 10974.0,
+   "credit": 318939.0,
+   "kospi": 6852.58
+  },
+  {
+   "date": "2026-08-21",
+   "deposit": 1007456.5,
+   "futs": 421518.2,
+   "uncl": 10715.2,
+   "bandae": 484.3,
+   "bandae_pct": 4.5
   }
  ],
- "fetched_at": "2026-08-21T17:10:07"
+ "fetched_at": "2026-08-24T16:10:11"
 }
