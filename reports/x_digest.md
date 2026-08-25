@@ -1,55 +1,47 @@
-<!-- updated: 2026-08-25 08:23 -->
-🐦 <b>X 데일리 다이제스트</b> (08/25)
+<!-- updated: 2026-08-26 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (08/26)
+
 <b>일론 머스크</b>
-💡 스타링크 콜센터 하루 15,000건을 Grok Voice로 처리, 주 3,000건 이상 주문 처리·Grok Voice 2가 음성AI 지표 1위
-💡 SpaceX+Nvidia, 우주용 Vera Rubin NVL72 설계 — 2027년 4분기 궤도 발사, 2028년 본격 스케일 (<a href="https://x.com/elonmusk/status/2091939113008238838">원문</a>)
-저출산 위기론·조지 플로이드 펜타닐 재조명 등 정치 콘텐츠 다수 RT
+💡 SpaceX가 루이지애나에 $100B+ 규모 신규 발사장 'Starbase, Louisiana' 공식 발표(2027 착공, 2029 첫 발사, 3000+ 고용) — <a href="https://x.com/elonmusk/status/2092285684333625550">원문</a>. 텍사스 TeraFab(반도체 팹) 세금 협약도 서명 완료 단계 진입. K2 문명 단계 도달 조건으로 태양광+AI칩+휴머노이드+달 매스드라이버 언급.
+
+<b>샘 올트먼</b>
+💡 "we made a chip and it is fast" — OpenAI 자체 추론칩 Jalapeño 언급 <a href="https://x.com/sama/status/2092339694210040187">원문</a>
+
+<b>다리오 아모데이 / Anthropic / 마크 저커버그 / Market Feed / 안드레 카파시</b>
+글 없음
+
+<b>OpenAI</b>
+💡 자체 추론칩 Jalapeño 첫 성능 공개 — GPT-OSS 120B 기준 상용 시스템 대비 와트당 처리량↑·지연↓, 연내 자사 인프라 배치 시작, Gen2 개발 중·Gen3 구상 단계. ChatGPT Business용 $100 Premium 좌석제 신설.
+
 <b>Tae Kim</b>
-💡 Hot Chips 총력 커버: Nvidia "데이터센터는 전력이 병목", Vera Rubin이 SemiAnalysis AgentX서 Blackwell 압도, IBM 메인프레임+ARM 듀얼 ISA 프로세서 공개
-💡 샌디스크, HBF 발표 후 8.9% 급락 목격
-캐나다 관세 확대 소식에 "장 왜 이렇게 빠지나" 반응, 순다 피차이 사퇴 촉구 리트윗
+💡 Hot Chips 현장: Cerebras가 Nvidia Rubin NVL72 케이블 뭉치를 "mess"라 저격, CS-6엔 3D 스택 DRAM 탑재 예고. AMD MI400/MI455X·Helios, Nvidia Rubin 스펙 공개. Druckenmiller: "30년물 금리가 세계에서 가장 중요한 가격". 테슬라 최신 FSD 시승 "인상적".
+
 <b>Hardik Shah</b>
-💡 메타, 수주 내 AI 에이전트 플랫폼 '해치(Hatch)' 출시 예정 (The Information)
+💡 월가 목표가 랠리: AMD(RJ, Strong Buy $641), NVDA(RJ $352), MRVL(Rosenblatt $300), NBIS(GS $328), MSTR(Canaccord $175). OpenAI "자사 칩이 Nvidia 능가" 주장 보도. QBTS CFO 사임, Cisco-Nvidia AI 팩토리 확장(SMCI 랙).
+
 <b>dnap</b>
-Grindr CEO, Anthropic의 국방부(DoD) 협력 이유로 Claude 사용 중단 선언
-💡 Anthropic, 입사 면접서 "주가 0 되면 어떨지" 질문한다는 Axios 보도 — 노선 전환 리스크 논란
-공동창업자 전원 재산 80% 기부 서약(다리오 1월 블로그) 재조명, 마틴 슈크렐리 밈코인 근황
+💡 Dylan Patel(SemiAnalysis) 인터뷰: 2026년 말이면 세계 신규 컴퓨트의 40~50%를 OpenAI+Anthropic 두 곳이 독점, 2030년까지 연 $2조+ capex 전망. Anthropic 2분기 흑자 전환, 3분기 OpenAI도 흑자 가능성. AI capex發 국가부채 위기 가능성도 논의.
+
 <b>Jukan</b>
-💡 삼성·SK하이닉스, 중국 낸드 라인(시안 V9/다롄 2공장) 내년까지 설비투자 확대 — AI서버향 낸드 수요 대응
-💡 Nvidia Groq3 LPX 양산 돌입, TPU가 2028년 Nvidia 출하량 추월 전망(Jeff Pu)
-Vikram(@vikramskr), "Nvidia Vera Hot Chips 비교는 AMD Turin급일 뿐, Venice급 비교 없어 반쪽 결론" 지적 RT
+💡 Artificial Analysis: 한국이 미·중 다음 AI 3위국 확정(Motif·Upstage 지능지수 40+). Jalapeño로 반도체 설계 진입장벽 하락 전망, "OAI Jalapeño는 삼성 HBM4 독점 사용, Rubin보다 우수"(검증필요). YMTC·CXMT가 우회경로로 美 수출 확대 중, YMTC 3공장 가동 2026년 4Q로 앞당김.
+
+<b>First Squawk / FinancialJuice (속보 종합)</b>
+💡 금 4거래일 연속 상승 $4657, 연내 $5000 전망 확산. Fed 워시 의장 잭슨홀 연설(금) 최대 변수, Barkin "부채 계속 늘면 언젠가 매수 중단" 경고. 오만-이란 호르무즈 해협 임시 통로 합의, 60일 내 영구 항로 목표. WTI $82.36(-3.1%)·브렌트 $88.58(-3.9%) 급락에 국채금리 하락, NVDA 실적(예상매출 $92B) 앞두고 나스닥100 +0.6%. Anthropic IPO에서 $30T+ TAM 제시 예정(WSJ), $2T 밸류 목표. OpenAI 데이터센터 총괄 Malone 퇴사. BOJ 9월 인상(1.25%) 전망 이코노미스트 57%로 급증.
+
 <b>루팡</b>
-💡 메타 '해치' AI 에이전트 출시 예정, 낸시 펠로시 블룸에너지($1200만)·인텔($150만) 매수 공시
-💡 Nvidia, 퍼플렉시티 기업가치 $300억+ 투자 논의 / Cantor, Nvidia 비중확대·목표가 $350 재확인
-💡 마이크론 Hot Chips: "메모리 월" 병목 심화, HBM4 대역폭 최대 2,800GB/s
-폭스콘 Vera Rubin 첫 설치(MS 애저), LS일렉트릭 美 데이터센터 전력설비 2,309억 공급계약
+💡 Semtech $SMTC 어닝비트(매출 +33%YoY, EPS $0.71) 및 3분기 가이던스 어닝서프라이즈(매출 $410M, 컨센서스 대폭 상회). TrendForce: 2027년 CSP capex 중 메모리 비중 68%. 베센트 국채 바이백發 숏스퀴즈 가능성 분석. NVDA(RJ $352), NBIS(GS $328) 목표가 상향. 인도 AM Intelligence, Nvidia Vera Rubin 9000대 발주.
+
 <b>P Equity Research</b>
-💡 HBM 콘텐츠 대폭 하향 경보: Rubin Ultra HBM4 8-hi 192GB — 당초 1TB 프리뷰 대비 대폭 삭감, 일반 Rubin(288GB)보다도 낮음
-💡 Gartner: 2026 반도체 매출 $1.6조(+92%), 메모리 비중 27%→54% 급증, DRAM +247%·낸드 +372%
-💡 번스타인: 삼성 HBM 패키징(충남) 수출 4월대비 122%↑ — 3Q26 삼성 HBM 매출 QoQ +80% 전망
+💡 SemiAnalysis: NAND WFE 2026-28 3배 성장 전망, WFE 전망 재상향(MS: 2026 $163bn/2027 $223bn/2028 $254bn). TPU 2027 대수 추정 확산(MS 740만 vs UBS 1040만). BofA: HBM TAM 2026 $77.4B→2030 $276.9B(CAGR 38%). MS: Nvidia CoWoS 점유율 2026 53.4%→2027 45.6%, AMD는 9.4%→19.8%로 급증. Anthropic $30T+ TAM 소식 공유.
+
 <b>북극성</b>
-💡 브로드컴, AI 인프라 확충 위해 최대 $1000억 부채 조달 — 앤트로픽·오픈AI向 반도체·인프라 자금
-💡 Nvidia Groq3 LPX 랙 양산 시작, Nebius 최초 도입(초당 3,400토큰)
-💡 기업 AI 지출, 중국 모델 비중 1월 4.4%→최근 60%대 급증 — 앤트로픽 최상위 모델은 출시 2개월째 지출 11%대 정체
-2026 스마트폰 출하 -14.3% 전망(카운터포인트), 삼성 점유율 1위 탈환 예상
+💡 한국 D램 수출단가 1kg=금 620g 수준까지 급등(+401%YoY), 골드만 내년 HBM 시장 108% 성장·D램 공급부족 확대 전망. SK하이닉스 노조 잠정합의안 부결(반대 50.1%). 삼성 파운드리 4나노 가격 최대 15% 인상(4나노 완전가동發). 엔비디아 DGX Spark, 일본 미니PC 판매 1위(107.8만엔). DDR5 16Gb 현물가 사상최고 $54.167(1년새 +778%).
+
 <b>Nuradu</b>
-💡 오라클 5년물 CDS 200bp 돌파 — 2008년 금융위기 고점 상회, 아마존도 60bp까지 상승(연초 25bp)
-💡 골드만삭스, 중국 CXMT가 2028년 중국 D램 수요 50% 충당 전망
-💡 DDR5 16Gb 현물가 1년새 +778%(08/22 $54.167 ATH)
-원/달러 1380원 붕괴, 샘 올트먼-David Senra 팟캐스트 요약("AI 병목은 지능 아닌 맥락, 아이폰 모먼트 아직")
+💡 Nvidia Groq3 LPX 랙(Vera Rubin 보완용 추론 특화) 양산 시작, Nebius 배치·폭스콘 조립 수혜 거론. Barclays: 美 AI 데이터센터發 전기요금·물 이슈로 중간선거 정치리스크 경고. 골드만, BOJ 9월 인상 전망으로 앞당김. 골드만 한국 반도체 목표가: 삼성전자 49만원·SK하이닉스 350만원·삼성전기 22.5만원(재미로 보라는 단서). 잭슨홀 워시 연설 주목.
+
 <b>개빈 베이커</b>
-💡 Fable 5 기업지출 정체는 "니치"가 아니라 ZDR(데이터 미보관) 선호 때문이라는 반박 — 오픈AI 플래그십 울트라패스트 모드도 언급
-💡 2027년 1월 31일 이전 Blackwell·Rubin 대량 구매 기업이 경쟁 우위 — GPU가 랙보다 더 오르는지가 관건
-미래는 프런티어+고객데이터 파인튜닝 오픈소스 특화모델이 라우터로 결합되는 멀티모델 구조 전망
-<b>FinancialJuice</b>
-💡 美재무 베센트, 이란 관련 60개 개인·기관·선박 제재, 디지털자산·기술·금·항공·해운 5개 섹터 2차제재 경고
-💡 Nvidia 7거래일 연속 하락, 2022년來 최장 하락세
-💡 미·중, 시진핑-트럼프 회담 앞두고 중국 과잉생산 7.5% 관세 검토(백악관은 부인)
-💡 캐나다-美 무역전쟁 격화 — 트럼프 "캐나다 굴복 안 하면 더 나쁜 결과"
-💡 반도체 급락이 유가 하락 상쇄 — WTI $85.01(-2.35%), Brent $92.17(-2.35%)
-💡 오픈AI·앤트로픽 챗봇, 중국 배후 해커에 악용 — 엔지니어 사칭해 Claude 통제 우회 사례 보고
+💡 "Jalapeño가 TPU 대비 비교 벤치마크에서도 인상적, TPU/Trainium 밖에서 나온 첫 제대로 된 ASIC" — 다만 진짜 비교 대상은 Rubin Ultra라며 신중론 <a href="https://x.com/GavinSBaker/status/2092265540068966504">원문</a>
+
 <b>Semiconductor Insider</b>
-💡 구글 TPU 출하량 2024년 27.6억→2027년 88.4억개 전망(3.2배, GF Securities)
-💡 골드만삭스, 머스크 Terafab을 웨이퍼장비 성장 주요 동력 지목 — 2026 WFE 전망 $1500억(+36%)로 상향
-한국 리테일 이달 엔비디아 약 3.6조원 순매도, 지수 ETF로 로테이션 / 펠로시 7월 인텔 신규 매수 공시
-그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, Anthropic, OpenAI, 마크 저커버그, First Squawk, Market Feed, 안드레 카파시
+💡 Nvidia Vera Rubin NVL72 랙 MS에서 첫 가동 시작. Hot Chips서 Cerebras가 Rubin 케이블 뭉치 재차 저격. OpenAI Jalapeño는 Broadcom과 9개월 만에 테이프아웃, GPT-Astra·Codex로 설계 가속(와트당 성능 1.5~1.9배). Apple, CXMT/YMTC 메모리 품질 검증 목적 접촉 중. UBS: AMD 2030년 매출 $227B(5배+) 전망. 삼성전기·LG이노텍 FC-BGA 기판도 2028년까지 구조적 공급부족.
