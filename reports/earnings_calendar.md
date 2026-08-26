@@ -1,14 +1,7 @@
-<!-- updated: 2026-08-26 06:04 -->
+<!-- updated: 2026-08-27 06:02 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-08-26 06:04 KST
+기준: 2026-08-27 06:02 KST
 ━━━━━━━━━━━━━━━
-
-<b>08/26 (수) · 4종목</b>
-  〈장후〉
-    <b>NVDA</b> NVIDIA Corp.
-    <b>CRM</b> Salesforce, Inc.
-    <b>CRWD</b> CrowdStrike Holdings, Inc.
-    <b>SNPS</b> Synopsys, Inc.
 
 <b>08/27 (목) · 3종목</b>
   〈장후〉
@@ -25,3 +18,7 @@
 <b>09/01 (화) · 1종목</b>
   〈장후〉
     <b>CRDO</b> Credo Technology Group Holding Ltd
+
+<b>09/02 (수) · 1종목</b>
+  〈장후〉
+    <b>AVGO</b> Broadcom Inc.
