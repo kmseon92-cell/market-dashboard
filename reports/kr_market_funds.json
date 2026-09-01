@@ -1,39 +1,29 @@
 {
- "as_of": "2026-08-28",
+ "as_of": "2026-08-31",
  "signal": {
-  "status": "turn1",
-  "label": "🟢 전환 1일차 — 내일도 예탁금 +면 저점신호 (하루 반등은 함정 잦음)",
-  "deposit": 998138.2,
-  "deposit_delta": 31047.199999999953,
-  "down_streak": 3,
-  "deposit_drop_pct": -28.5,
-  "uncl": 9303.0,
-  "uncl_peak": 16615.0,
-  "uncl_drop_pct": -44.0,
-  "bandae": 48.0,
+  "status": "purge",
+  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
+  "deposit": 997044.3,
+  "deposit_delta": -1093.6999999999534,
+  "down_streak": 0,
+  "deposit_drop_pct": -28.6,
+  "uncl": 9318.8,
+  "uncl_peak": 15663.0,
+  "uncl_drop_pct": -40.5,
+  "bandae": 66.5,
   "bandae_peak_10d": 484.3,
-  "bandae_pct": 0.5159625927120284,
+  "bandae_pct": 0.7136111945744088,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 333290.0,
+  "credit": 333380.0,
   "credit_peak": 386328.0,
   "credit_drop_pct": -13.7
  },
  "history": [
-  {
-   "date": "2026-04-17",
-   "bandae": 82.0,
-   "bandae_pct": 0.8,
-   "credit": 340279.0,
-   "deposit": 1205855.0,
-   "futs": 303809.0,
-   "kospi": 6191.92,
-   "uncl": 10409.0
-  },
   {
    "date": "2026-04-20",
    "bandae": 86.0,
@@ -908,20 +898,30 @@
    "date": "2026-08-27",
    "bandae": 248.7,
    "bandae_pct": 2.4,
+   "credit": 333290.0,
    "deposit": 967091.0,
    "futs": 414120.0,
-   "uncl": 10233.0,
-   "credit": 333290.0,
-   "kospi": 6912.37
+   "kospi": 6912.37,
+   "uncl": 10233.0
   },
   {
    "date": "2026-08-28",
-   "deposit": 998138.2,
-   "futs": 413794.2,
-   "uncl": 9303.0,
    "bandae": 48.0,
-   "bandae_pct": 0.5
+   "bandae_pct": 0.5,
+   "deposit": 998138.0,
+   "futs": 413794.0,
+   "uncl": 9303.0,
+   "credit": 333380.0,
+   "kospi": 6788.88
+  },
+  {
+   "date": "2026-08-31",
+   "deposit": 997044.3,
+   "futs": 402776.2,
+   "uncl": 9318.8,
+   "bandae": 66.5,
+   "bandae_pct": 0.7
   }
  ],
- "fetched_at": "2026-08-31T16:10:11"
+ "fetched_at": "2026-09-01T15:40:12"
 }
