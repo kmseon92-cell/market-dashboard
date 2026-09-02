@@ -1,39 +1,29 @@
 {
- "as_of": "2026-08-31",
+ "as_of": "2026-09-01",
  "signal": {
-  "status": "purge",
-  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 997044.3,
-  "deposit_delta": -1093.6999999999534,
-  "down_streak": 0,
-  "deposit_drop_pct": -28.6,
-  "uncl": 9318.8,
-  "uncl_peak": 15663.0,
-  "uncl_drop_pct": -40.5,
-  "bandae": 66.5,
+  "status": "outflow",
+  "label": "📉 자금 이탈 지속 (2일 연속 감소)",
+  "deposit": 981690.9,
+  "deposit_delta": -15353.099999999977,
+  "down_streak": 1,
+  "deposit_drop_pct": -29.7,
+  "uncl": 9240.4,
+  "uncl_peak": 12166.0,
+  "uncl_drop_pct": -24.0,
+  "bandae": 89.1,
   "bandae_peak_10d": 484.3,
-  "bandae_pct": 0.7136111945744088,
+  "bandae_pct": 0.9642439721224189,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 333380.0,
+  "credit": 332527.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -13.7
+  "credit_drop_pct": -13.9
  },
  "history": [
-  {
-   "date": "2026-04-20",
-   "bandae": 86.0,
-   "bandae_pct": 0.8,
-   "credit": 342592.0,
-   "deposit": 1218173.0,
-   "futs": 300907.0,
-   "kospi": 6219.09,
-   "uncl": 10209.0
-  },
   {
    "date": "2026-04-21",
    "bandae": 161.3,
@@ -908,20 +898,30 @@
    "date": "2026-08-28",
    "bandae": 48.0,
    "bandae_pct": 0.5,
+   "credit": 333380.0,
    "deposit": 998138.0,
    "futs": 413794.0,
-   "uncl": 9303.0,
-   "credit": 333380.0,
-   "kospi": 6788.88
+   "kospi": 6788.88,
+   "uncl": 9303.0
   },
   {
    "date": "2026-08-31",
-   "deposit": 997044.3,
-   "futs": 402776.2,
-   "uncl": 9318.8,
    "bandae": 66.5,
-   "bandae_pct": 0.7
+   "bandae_pct": 0.7,
+   "deposit": 997044.0,
+   "futs": 402776.0,
+   "uncl": 9319.0,
+   "credit": 332527.0,
+   "kospi": 6820.02
+  },
+  {
+   "date": "2026-09-01",
+   "deposit": 981690.9,
+   "futs": 409773.0,
+   "uncl": 9240.4,
+   "bandae": 89.1,
+   "bandae_pct": 1.0
   }
  ],
- "fetched_at": "2026-09-01T15:40:12"
+ "fetched_at": "2026-09-02T15:10:08"
 }
