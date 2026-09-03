@@ -1,39 +1,29 @@
 {
- "as_of": "2026-09-01",
+ "as_of": "2026-09-02",
  "signal": {
-  "status": "outflow",
-  "label": "📉 자금 이탈 지속 (2일 연속 감소)",
-  "deposit": 981690.9,
-  "deposit_delta": -15353.099999999977,
-  "down_streak": 1,
-  "deposit_drop_pct": -29.7,
-  "uncl": 9240.4,
-  "uncl_peak": 12166.0,
-  "uncl_drop_pct": -24.0,
-  "bandae": 89.1,
+  "status": "neutral",
+  "label": "⚪ 중립",
+  "deposit": 1022672.4,
+  "deposit_delta": 40981.40000000002,
+  "down_streak": 2,
+  "deposit_drop_pct": -26.8,
+  "uncl": 9235.3,
+  "uncl_peak": 11492.0,
+  "uncl_drop_pct": -19.6,
+  "bandae": 149.8,
   "bandae_peak_10d": 484.3,
-  "bandae_pct": 0.9642439721224189,
+  "bandae_pct": 1.622037183415807,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 332527.0,
+  "credit": 334302.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -13.9
+  "credit_drop_pct": -13.5
  },
  "history": [
-  {
-   "date": "2026-04-21",
-   "bandae": 161.3,
-   "bandae_pct": 1.6,
-   "credit": 346946.0,
-   "deposit": 1212861.0,
-   "futs": 303671.0,
-   "kospi": 6388.47,
-   "uncl": 10329.0
-  },
   {
    "date": "2026-04-22",
    "bandae": 98.2,
@@ -908,20 +898,30 @@
    "date": "2026-08-31",
    "bandae": 66.5,
    "bandae_pct": 0.7,
+   "credit": 332527.0,
    "deposit": 997044.0,
    "futs": 402776.0,
-   "uncl": 9319.0,
-   "credit": 332527.0,
-   "kospi": 6820.02
+   "kospi": 6820.02,
+   "uncl": 9319.0
   },
   {
    "date": "2026-09-01",
-   "deposit": 981690.9,
-   "futs": 409773.0,
-   "uncl": 9240.4,
    "bandae": 89.1,
-   "bandae_pct": 1.0
+   "bandae_pct": 1.0,
+   "deposit": 981691.0,
+   "futs": 409773.0,
+   "uncl": 9240.0,
+   "credit": 334302.0,
+   "kospi": 6835.8
+  },
+  {
+   "date": "2026-09-02",
+   "deposit": 1022672.4,
+   "futs": 414988.2,
+   "uncl": 9235.3,
+   "bandae": 149.8,
+   "bandae_pct": 1.6
   }
  ],
- "fetched_at": "2026-09-02T15:10:08"
+ "fetched_at": "2026-09-03T15:40:12"
 }
