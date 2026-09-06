@@ -15,9 +15,35 @@
     "source_updated": "2026-09-04 00:00"
   },
   "consensus": {
-    "cpi": null,
-    "core_cpi": null
+    "cpi": {
+      "latest_release": null,
+      "next_release": {
+        "forecast": 3.4,
+        "previous": 3.4,
+        "actual": null,
+        "forecast_mom": 0.4,
+        "previous_mom": 0.1,
+        "actual_mom": null,
+        "occurrence_time": "2026-09-11T08:30:00-04:00",
+        "reference_period": "Aug",
+        "source": "forexfactory"
+      }
+    },
+    "core_cpi": {
+      "latest_release": null,
+      "next_release": {
+        "forecast": 2.4,
+        "previous": 2.5,
+        "actual": null,
+        "forecast_mom": 0.2,
+        "previous_mom": 0.2,
+        "actual_mom": null,
+        "occurrence_time": "2026-09-11T08:30:00-04:00",
+        "reference_period": "Aug",
+        "source": "forexfactory"
+      }
+    }
   },
   "consensus_feed_ok": true,
-  "fetched_at": "2026-09-06T07:00:08"
+  "fetched_at": "2026-09-07T07:00:08"
 }
