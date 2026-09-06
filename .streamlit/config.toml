@@ -1,0 +1,5 @@
+# static/ 폴더를 /app/static/ 경로로 서빙 — 배포 프로브용.
+# static/build.txt가 "지금 라이브에 떠 있는 배포판"을 밖에서 확인하는 유일한 창구다.
+# (2026-09-02~06 웹훅 사망으로 나흘간 옛 배포가 돌던 사고 — 밖에서는 확인 불가였음)
+[server]
+enableStaticServing = true
