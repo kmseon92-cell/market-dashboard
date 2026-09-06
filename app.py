@@ -1,4 +1,4 @@
-# redeploy nudge: 2026-06-23 us_futures.json GitHub raw 라이브 fetch (리부트 지연 우회)
+# redeploy nudge: 2026-09-06 전 리포트 GitHub raw 라이브 fetch (fedwatch 9/2 고정 사고)
 import json
 import os
 import re
@@ -402,18 +402,38 @@ PREFETCH_FUTURES = {"NQ=F", "CL=F", "JPY=X", "^TNX", "^TYX", "DX-Y.NYB"}
 # JPY=X(KIS/naver 실시간)·^TNX/^TYX(yahoo 수용 가능)는 정상 폴백 유지.
 FUTURES_PREFETCH_ONLY = {"NQ=F", "CL=F"}
 
+# Streamlit Cloud는 git push마다 즉시 리부트하지 않아 컨테이너 디스크의 reports/가
+# 마지막 배포 시점에 묶인다. 데이터 전용 커밋은 재배포를 아예 안 걸기도 해서
+# fedwatch가 9/2에 나흘간 고정되는 무소음 stale이 났다(2026-09-06). 그래서
+# 모든 리포트 파일은 디스크 대신 GitHub raw에서 라이브로 읽는다. 실패 시 디스크 폴백.
+RAW_REPORT_BASE = ("https://raw.githubusercontent.com/kmseon92-cell/"
+                   "market-dashboard/main/reports/")
+
+
+@st.cache_data(ttl=300, show_spinner=False)
+def _report_text(filename: str):
+    """reports/<filename>을 GitHub raw 우선으로 읽는다. 둘 다 실패하면 None."""
+    import urllib.request
+    try:
+        req = urllib.request.Request(RAW_REPORT_BASE + filename,
+                                     headers={"User-Agent": "Mozilla/5.0"})
+        return urllib.request.urlopen(req, timeout=5).read().decode("utf-8")
+    except Exception:
+        pass
+    p = os.path.join(os.path.dirname(__file__), "reports", filename)
+    if not os.path.exists(p):
+        return None
+    with open(p, encoding="utf-8") as f:
+        return f.read()
+
 
 @st.cache_data(ttl=60)
 def _load_us_futures() -> dict:
-    # Streamlit Cloud는 git push마다 즉시 리부트하지 않아 컨테이너 디스크의
-    # reports/us_futures.json이 마지막 배포 시점에 묶인다(맥미니는 5분마다 푸시하는데
-    # 화면엔 '64분 전'처럼 묵은 값이 뜨던 사고). 따라서 디스크 대신 GitHub raw에서
-    # 라이브로 끌어와 ttl=60 캐시 주기로 최신 fetched_at을 반영한다. 실패 시 디스크 폴백.
+    # 5분 주기 페처라 ttl=60 별도 유지(_report_text의 ttl=300은 너무 김).
     import urllib.request
-    raw_url = ("https://raw.githubusercontent.com/kmseon92-cell/"
-               "market-dashboard/main/reports/us_futures.json")
     try:
-        req = urllib.request.Request(raw_url, headers={"User-Agent": "Mozilla/5.0"})
+        req = urllib.request.Request(RAW_REPORT_BASE + "us_futures.json",
+                                     headers={"User-Agent": "Mozilla/5.0"})
         return json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
     except Exception:
         p = os.path.join(os.path.dirname(__file__), "reports", "us_futures.json")
@@ -924,12 +944,11 @@ def fetch_all_quotes(symbols: tuple) -> dict:
 @st.cache_data(ttl=300)
 def fetch_cpi_nowcast() -> dict:
     """reports/cpi_nowcast.json 로드 — 맥미니 fetcher가 일간 업데이트."""
-    p = os.path.join(os.path.dirname(__file__), "reports", "cpi_nowcast.json")
-    if not os.path.exists(p):
+    text = _report_text("cpi_nowcast.json")
+    if text is None:
         return {"error": "cpi_nowcast.json 없음"}
     try:
-        with open(p, encoding="utf-8") as f:
-            return json.load(f)
+        return json.loads(text)
     except Exception as e:
         return {"error": str(e)}
 
@@ -1048,12 +1067,11 @@ def render_cpi_nowcast_card():
 @st.cache_data(ttl=300)
 def fetch_kospi_disparity() -> dict:
     """reports/kospi_disparity.json 로드 — 맥미니 fetcher가 일간 업데이트."""
-    p = os.path.join(os.path.dirname(__file__), "reports", "kospi_disparity.json")
-    if not os.path.exists(p):
+    text = _report_text("kospi_disparity.json")
+    if text is None:
         return {"error": "kospi_disparity.json 없음"}
     try:
-        with open(p, encoding="utf-8") as f:
-            return json.load(f)
+        return json.loads(text)
     except Exception as e:
         return {"error": str(e)}
 
@@ -1204,12 +1222,11 @@ def render_kospi_disparity_card():
 
 def fetch_kr_market_funds() -> dict:
     """reports/kr_market_funds.json 로드 — 맥미니 fetcher가 아침(08:40/10:30) 업데이트."""
-    p = os.path.join(os.path.dirname(__file__), "reports", "kr_market_funds.json")
-    if not os.path.exists(p):
+    text = _report_text("kr_market_funds.json")
+    if text is None:
         return {"error": "kr_market_funds.json 없음"}
     try:
-        with open(p, encoding="utf-8") as f:
-            return json.load(f)
+        return json.loads(text)
     except Exception as e:
         return {"error": str(e)}
 
@@ -1366,12 +1383,9 @@ st.divider()
 
 # 미국증시 마감시황 한 줄 (us_market_close.md에서 추출)
 def extract_us_summary() -> str:
-    import os
-    p = os.path.join(os.path.dirname(__file__), "reports", "us_market_close.md")
-    if not os.path.exists(p):
+    text = _report_text("us_market_close.md")
+    if text is None:
         return ""
-    with open(p, encoding="utf-8") as f:
-        text = f.read()
     # ━━━ 다음 줄이 요약
     lines = text.split("\n")
     for i, line in enumerate(lines):
@@ -1404,13 +1418,12 @@ if us_summary:
 @st.cache_data(ttl=300)
 def fetch_fedwatch() -> dict:
     """reports/fedwatch.json 로드. 맥미니 fetcher가 주기적으로 업데이트."""
-    p = os.path.join(os.path.dirname(__file__), "reports", "fedwatch.json")
-    if not os.path.exists(p):
+    text = _report_text("fedwatch.json")
+    if text is None:
         return {"meetings": [], "updated": "", "baseline_rate": None,
                 "error": "fedwatch.json 없음 (맥미니 fetcher 첫 실행 대기)"}
     try:
-        with open(p, encoding="utf-8") as f:
-            return json.load(f)
+        return json.loads(text)
     except Exception as e:
         return {"meetings": [], "updated": "", "baseline_rate": None,
                 "error": f"{type(e).__name__}: {e}"}
@@ -1520,18 +1533,12 @@ st.subheader("🏦 Fed 금리 경로 (CME FedWatch)")
 render_fedwatch()
 st.divider()
 
-import os
-REPORTS_DIR = os.path.join(os.path.dirname(__file__), "reports")
-
-
 # 📅 실적 캘린더 — ETF 리더스 위, 영업일 5일치 가로 분할
 def render_earnings_md(filename: str) -> None:
-    p = os.path.join(REPORTS_DIR, filename)
-    if not os.path.exists(p):
+    text = _report_text(filename)
+    if text is None:
         st.caption("_아직 업데이트 안 됨_")
         return
-    with open(p, encoding="utf-8") as f:
-        text = f.read()
 
     body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
     body = re.sub(r"^📅[^\n]*\n", "", body)
@@ -1619,12 +1626,11 @@ def _fetch_live_prices(tickers: tuple[str, ...]) -> dict[str, float]:
 
 @st.fragment(run_every=f"{REFRESH_SEC}s")
 def render_kr_market_alert() -> None:
-    p = os.path.join(REPORTS_DIR, "kr_market_alert.json")
-    if not os.path.exists(p):
+    text = _report_text("kr_market_alert.json")
+    if text is None:
         st.caption("_아직 업데이트 안 됨_")
         return
-    with open(p, encoding="utf-8") as f:
-        payload = json.load(f)
+    payload = json.loads(text)
     records = payload.get("alerts", [])
     fetched_at = payload.get("fetched_at", "")
     if not records:
@@ -1767,12 +1773,10 @@ st.subheader("🌍 ETF 리더스 — 주도 국가·섹터")
 
 
 def render_etf_leaders() -> None:
-    p = os.path.join(REPORTS_DIR, "etf_leaders.md")
-    if not os.path.exists(p):
+    text = _report_text("etf_leaders.md")
+    if text is None:
         st.caption("_아직 업데이트 안 됨_")
         return
-    with open(p, encoding="utf-8") as f:
-        text = f.read()
 
     body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
     body = re.sub(r"^🌍[^\n]*\n", "", body)
@@ -1833,11 +1837,8 @@ REPORT_FILES = [
 ]
 
 def load_report(fname: str) -> str:
-    p = os.path.join(REPORTS_DIR, fname)
-    if not os.path.exists(p):
-        return "_아직 업데이트 안 됨_"
-    with open(p, encoding="utf-8") as f:
-        return f.read()
+    text = _report_text(fname)
+    return text if text is not None else "_아직 업데이트 안 됨_"
 
 
 KR_LINE_RE = re.compile(r'<b>([^<]+)</b>\s*\((\d{6})\)')
