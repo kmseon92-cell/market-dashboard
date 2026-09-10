@@ -822,6 +822,8 @@ def render_card(
     price_val = q.get("price", 0)
     carry = q.get("carry") or {}
     danger = symbol == "^TNX" and price_val >= 5.0
+    # 코스피 9000 = 매도 목표 도달 (2026-09-10 Dave 지시): WTI식 빨간 강조 + 매도 배너
+    kospi_sell = symbol == "^KS11" and price_val >= KOSPI_SELL_TARGET
     # 엔케리 청산 시그널: 달러/엔이 하루 -2%+ 급락 + 156 미만이면 빨간 "경고"
     jpy_crash = symbol == "JPY=X" and pct <= -2.0 and price_val < 156
     # 엔캐리 청산 워닝: 3개월 고점 대비 -3% 엔 강세 (2024.8.5 급락 때 12영업일 선행)
@@ -838,16 +840,25 @@ def render_card(
         "box-shadow:0 0 12px rgba(255,0,0,0.55), inset 0 0 6px rgba(255,0,0,0.15);"
     )
     always_red = symbol in ("^TNX", "CL=F")
-    if danger or jpy_crash or jpy_carry_warn:
+    if danger or jpy_crash or jpy_carry_warn or kospi_sell:
         card_bg = "background:#fee2e2;"
-        border = red_frame if always_red else "border:2px solid #dc2626;"
+        border = red_frame if (always_red or kospi_sell) else "border:2px solid #dc2626;"
     elif warn:
         card_bg = "background:#fef08a;"
         border = red_frame if always_red else "border:2px solid #eab308;"
     else:
         card_bg = ""
         border = red_frame if always_red else "border:1px solid #2a2a2a;"
-    if danger:
+    if kospi_sell:
+        danger_html = (
+            '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
+            'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
+            'letter-spacing:4px;text-align:center;border-radius:6px;'
+            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
+            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
+            'animation:bumgorae-pulse 1.2s ease-in-out infinite;">매도해!!!!</div>'
+        )
+    elif danger:
         danger_html = (
             '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
             'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
