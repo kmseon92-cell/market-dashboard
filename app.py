@@ -689,6 +689,37 @@ st.markdown(
 
 st.title("🐳 범고래 프로젝트")
 
+# ── 코스피 9000 매도 목표 배너 (2026-09-10 Dave 지시) ──────────────────────
+KOSPI_SELL_TARGET = 9000
+
+def render_kospi_sell_target_banner():
+    q = fetch_quote("^KS11")
+    price = q.get("price") if isinstance(q, dict) else None
+    if price and price >= KOSPI_SELL_TARGET:
+        st.markdown(
+            f'<div style="padding:12px 16px;margin:4px 0 12px 0;border-radius:12px;'
+            f'background:#dc2626;color:#fff;font-size:1.15rem;font-weight:800;'
+            f'animation:bumgorae-pulse 1.2s ease-in-out infinite;">'
+            f'🚨 코스피 {price:,.0f} — 매도 목표 {KOSPI_SELL_TARGET:,} 도달! 팔아라!</div>',
+            unsafe_allow_html=True,
+        )
+        return
+    if price:
+        remain = (KOSPI_SELL_TARGET / price - 1) * 100
+        detail = f'현재 {price:,.2f} · 남은 상승폭 <b style="color:#dc2626;">+{remain:.1f}%</b>'
+    else:
+        detail = "현재가 조회 실패 — 목표만 표시"
+    st.markdown(
+        f'<div style="display:flex;align-items:center;gap:10px;padding:9px 14px;'
+        f'margin:4px 0 12px 0;border:1.5px solid #dc2626;border-radius:12px;'
+        f'background:#fef2f2;font-size:0.98rem;color:#000;">'
+        f'<span style="font-weight:800;color:#dc2626;">🎯 코스피 {KOSPI_SELL_TARGET:,} 도달 시 매도</span>'
+        f'<span style="color:#444;">{detail}</span></div>',
+        unsafe_allow_html=True,
+    )
+
+render_kospi_sell_target_banner()
+
 @st.cache_data(ttl=3600)
 def fetch_yf_ytd(symbols: tuple) -> dict:
     """yfinance 심볼 리스트 → {symbol: [(o,h,l,c), ...]} (YTD 일봉 OHLC, 배치)"""
