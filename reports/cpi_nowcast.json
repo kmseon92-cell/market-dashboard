@@ -8,42 +8,16 @@
     },
     "forward_target": {
       "subcaption": "2026-9",
-      "cpi_yoy": 3.40838412109039,
-      "core_yoy": 2.32049800492051,
-      "nowcast_as_of": "09/10"
+      "cpi_yoy": 3.43377588561402,
+      "core_yoy": 2.39023925044117,
+      "nowcast_as_of": "09/11"
     },
-    "source_updated": "2026-09-10 00:00"
+    "source_updated": "2026-09-11 00:00"
   },
   "consensus": {
-    "cpi": {
-      "latest_release": null,
-      "next_release": {
-        "forecast": 3.4,
-        "previous": 3.4,
-        "actual": null,
-        "forecast_mom": 0.4,
-        "previous_mom": 0.1,
-        "actual_mom": null,
-        "occurrence_time": "2026-09-11T08:30:00-04:00",
-        "reference_period": "Aug",
-        "source": "forexfactory"
-      }
-    },
-    "core_cpi": {
-      "latest_release": null,
-      "next_release": {
-        "forecast": 2.4,
-        "previous": 2.5,
-        "actual": null,
-        "forecast_mom": 0.2,
-        "previous_mom": 0.2,
-        "actual_mom": null,
-        "occurrence_time": "2026-09-11T08:30:00-04:00",
-        "reference_period": "Aug",
-        "source": "forexfactory"
-      }
-    }
+    "cpi": null,
+    "core_cpi": null
   },
   "consensus_feed_ok": true,
-  "fetched_at": "2026-09-11T07:00:07"
+  "fetched_at": "2026-09-12T07:00:09"
 }
