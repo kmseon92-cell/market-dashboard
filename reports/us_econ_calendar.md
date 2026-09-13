@@ -1,15 +1,7 @@
-<!-- updated: 2026-09-11 06:02 -->
+<!-- updated: 2026-09-14 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-09-11 06:02 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-09-14 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>09/11 (금) · 6건</b>
-  21:30 ★★★ Core CPI m/m 예상:0.2% 이전:0.2%
-  21:30 ★★★ Core CPI y/y 예상:2.4% 이전:2.5%
-  21:30 ★★★ CPI m/m 예상:0.4% 이전:0.1%
-  21:30 ★★★ CPI y/y 예상:3.4% 이전:3.4%
-  23:00 ★★ Prelim UoM Consumer Sentiment 예상:51.0 이전:51.0
-  23:00 ★★ Prelim UoM Inflation Expectations 이전:4.3%
 
 <b>09/14 (월) · 0건</b>
   — 발표 예정 없음
@@ -17,8 +9,17 @@
 <b>09/15 (화) · 0건</b>
   — 발표 예정 없음
 
-<b>09/16 (수) · 0건</b>
-  — 발표 예정 없음
+<b>09/16 (수) · 2건</b>
+  21:30 ★★ Core Retail Sales m/m 예상:0.5% 이전:-0.3%
+  21:30 ★★ Retail Sales m/m 예상:0.8% 이전:-0.6%
 
-<b>09/17 (목) · 0건</b>
+<b>09/17 (목) · 6건</b>
+  03:00 ★★★ Federal Funds Rate 예상:3.75% 이전:3.75%
+  03:00 ★★★ FOMC Economic Projections
+  03:00 ★★★ FOMC Statement
+  03:30 ★★★ FOMC Press Conference
+  21:30 ★★ Philly Fed Manufacturing Index 예상:28.9 이전:47.4
+  21:30 ★★ Unemployment Claims 예상:209K 이전:206K
+
+<b>09/18 (금) · 0건</b>
   — 발표 예정 없음
