@@ -1,24 +1,45 @@
 {
   "quotes": {
+    "NQ=F": {
+      "price": 29489.75,
+      "change": -194.5,
+      "pct": -0.66
+    },
+    "CL=F": {
+      "price": 101.89,
+      "change": 1.84,
+      "pct": 1.84
+    },
+    "JPY=X": {
+      "price": 154.34,
+      "change": -0.01,
+      "pct": -0.0065
+    },
+    "^TNX": {
+      "price": 4.998,
+      "change": 0.023,
+      "pct": 0.4623
+    },
     "^TYX": {
-      "price": 5.329,
-      "change": -0.025,
-      "pct": -0.47
+      "price": 5.354,
+      "change": 0.0,
+      "pct": 0.0
+    },
+    "^VIX": {
+      "price": 17.1,
+      "change": 1.26,
+      "pct": 7.95
     }
   },
   "errors": [
-    "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
-    "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden",
-    "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden",
-    "^TNX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "^TNX: investing: https://uk.investing.com/rates-bonds/u.s.-10-year-bond-yield: HTTPError: HTTP Error 403: Forbidden",
     "DX-Y.NYB: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden",
-    "^VIX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "^VIX: investing: https://uk.investing.com/indices/volatility-s-p-500: HTTPError: HTTP Error 403: Forbidden"
+    "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-09-15T06:17:56+09:00"
+  "fetched_at": "2026-09-15T06:23:00+09:00",
+  "jpy_carry": {
+    "peak_3mo": 163.86,
+    "warn_level": 158.95,
+    "drop_pct": -5.81,
+    "warning": true
+  }
 }
