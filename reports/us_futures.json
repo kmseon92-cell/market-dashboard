@@ -1,47 +1,45 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29348.0,
-      "change": -101.5,
-      "pct": -0.34
+      "price": 29361.25,
+      "change": -88.25,
+      "pct": -0.3
     },
     "CL=F": {
-      "price": 103.64,
-      "change": 2.25,
-      "pct": 2.22
+      "price": 103.44,
+      "change": 2.05,
+      "pct": 2.02
     },
     "JPY=X": {
-      "price": 154.93,
-      "change": 0.58,
-      "pct": 0.38
+      "price": 154.96,
+      "change": 0.61,
+      "pct": 0.4
     },
     "^TNX": {
-      "price": 5.008,
-      "change": 0.047,
-      "pct": 0.9474
+      "price": 5.01,
+      "change": 0.049,
+      "pct": 0.9877
     },
     "^TYX": {
-      "price": 5.375,
-      "change": 0.047,
-      "pct": 0.8821
-    },
-    "DX-Y.NYB": {
-      "price": 99.561,
-      "change": 0.17,
-      "pct": 0.17
+      "price": 5.374,
+      "change": 0.046,
+      "pct": 0.8634
     },
     "^VIX": {
-      "price": 17.47,
-      "change": 0.37,
-      "pct": 2.16
+      "price": 17.45,
+      "change": 0.35,
+      "pct": 2.05
     }
   },
-  "errors": [],
-  "fetched_at": "2026-09-15T23:25:20+09:00",
+  "errors": [
+    "DX-Y.NYB: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-09-15T23:30:24+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
-    "drop_pct": -5.45,
+    "drop_pct": -5.43,
     "warning": true
   }
 }
