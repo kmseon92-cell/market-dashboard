@@ -1,39 +1,29 @@
 {
- "as_of": "2026-09-11",
+ "as_of": "2026-09-14",
  "signal": {
   "status": "outflow",
-  "label": "📉 자금 이탈 지속 (1일 연속 감소)",
-  "deposit": 1070560.0,
-  "deposit_delta": -6013.0,
-  "down_streak": 0,
-  "deposit_drop_pct": -23.4,
-  "uncl": 10302.0,
+  "label": "📉 자금 이탈 지속 (2일 연속 감소)",
+  "deposit": 1068179.1,
+  "deposit_delta": -2380.899999999907,
+  "down_streak": 1,
+  "deposit_drop_pct": -23.5,
+  "uncl": 9861.4,
   "uncl_peak": 11492.0,
-  "uncl_drop_pct": -10.4,
-  "bandae": 99.4,
+  "uncl_drop_pct": -14.2,
+  "bandae": 108.7,
   "bandae_peak_10d": 260.6,
-  "bandae_pct": 0.9648611920015532,
+  "bandae_pct": 1.1022775670797251,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 323599.0,
+  "credit": 322649.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -16.2
+  "credit_drop_pct": -16.5
  },
  "history": [
-  {
-   "date": "2026-05-04",
-   "bandae": 198.4,
-   "bandae_pct": 1.8,
-   "credit": 358389.0,
-   "deposit": 1248406.0,
-   "futs": 330876.0,
-   "kospi": 6936.99,
-   "uncl": 10183.0
-  },
   {
    "date": "2026-05-06",
    "bandae": 71.6,
@@ -908,20 +898,30 @@
    "date": "2026-09-10",
    "bandae": 58.4,
    "bandae_pct": 0.6,
+   "credit": 323599.0,
    "deposit": 1076573.0,
    "futs": 437621.0,
-   "uncl": 10214.0,
-   "credit": 323599.0,
-   "kospi": 7033.92
+   "kospi": 7033.92,
+   "uncl": 10214.0
   },
   {
    "date": "2026-09-11",
-   "deposit": 1070560.0,
-   "futs": 432952.1,
-   "uncl": 10302.0,
    "bandae": 99.4,
-   "bandae_pct": 1.0
+   "bandae_pct": 1.0,
+   "deposit": 1070560.0,
+   "futs": 432952.0,
+   "uncl": 10302.0,
+   "credit": 322649.0,
+   "kospi": 6909.91
+  },
+  {
+   "date": "2026-09-14",
+   "deposit": 1068179.1,
+   "futs": 421621.1,
+   "uncl": 9861.4,
+   "bandae": 108.7,
+   "bandae_pct": 1.1
   }
  ],
- "fetched_at": "2026-09-14T15:10:11"
+ "fetched_at": "2026-09-15T17:10:07"
 }
