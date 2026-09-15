@@ -1,19 +1,19 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 29236.0,
-      "change": -213.5,
-      "pct": -0.72
+      "price": 29239.25,
+      "change": -210.25,
+      "pct": -0.71
     },
     "CL=F": {
-      "price": 105.64,
-      "change": 4.25,
-      "pct": 4.19
+      "price": 105.58,
+      "change": 4.19,
+      "pct": 4.13
     },
     "JPY=X": {
-      "price": 155.1,
-      "change": 0.75,
-      "pct": 0.49
+      "price": 155.12,
+      "change": 0.77,
+      "pct": 0.5
     },
     "^TNX": {
       "price": 5.0,
@@ -21,25 +21,25 @@
       "pct": 0.7861
     },
     "^TYX": {
-      "price": 5.367,
-      "change": 0.039,
-      "pct": 0.732
+      "price": 5.366,
+      "change": 0.038,
+      "pct": 0.7132
     },
     "^VIX": {
-      "price": 17.48,
-      "change": 0.38,
-      "pct": 2.22
+      "price": 17.51,
+      "change": 0.41,
+      "pct": 2.4
     }
   },
   "errors": [
     "DX-Y.NYB: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
     "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden"
   ],
-  "fetched_at": "2026-09-16T04:34:33+09:00",
+  "fetched_at": "2026-09-16T04:39:37+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
-    "drop_pct": -5.35,
+    "drop_pct": -5.34,
     "warning": true
   }
 }
