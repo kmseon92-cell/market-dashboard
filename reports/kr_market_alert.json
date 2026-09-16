@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-09-16T08:00:34",
+  "fetched_at": "2026-09-17T08:00:43",
   "alerts": [
     {
       "stock_name": "키다리스튜디오",
@@ -13,13 +13,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 9000.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 10560.0,
-        "cond2_15d_100pct": 11100.0,
+        "cond1_5d_60pct": 12736.0,
+        "cond2_15d_100pct": 11000.0,
         "cond3_15d_high": 9000.0,
         "binding": "15일신고가"
       },
-      "current_price": 8960.0,
-      "current_date": "2026-09-15",
+      "current_price": 8980.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "020120.KS",
       "price_error": null
@@ -34,16 +34,16 @@
       "judgment_date": "2026-10-02",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 157000.0,
+      "threshold_price": 166900.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 234400.0,
-        "cond2_15d_100pct": 241400.0,
-        "cond3_15d_high": 157000.0,
+        "cond1_5d_60pct": 243840.0,
+        "cond2_15d_100pct": 238400.0,
+        "cond3_15d_high": 166900.0,
         "binding": "15일신고가"
       },
-      "current_price": 166900.0,
-      "current_date": "2026-09-15",
-      "is_at_risk": true,
+      "current_price": 166800.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": false,
       "ticker": "031980.KQ",
       "price_error": null
     },
@@ -59,13 +59,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 5110.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 7704.0,
-        "cond2_15d_100pct": 7920.0,
+        "cond1_5d_60pct": 8160.0,
+        "cond2_15d_100pct": 8200.0,
         "cond3_15d_high": 5110.0,
         "binding": "15일신고가"
       },
-      "current_price": 4930.0,
-      "current_date": "2026-09-15",
+      "current_price": 4920.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "032580.KQ",
       "price_error": null
@@ -82,15 +82,61 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 7210.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 10720.0,
-        "cond2_15d_100pct": 11720.0,
+        "cond1_5d_60pct": 11536.0,
+        "cond2_15d_100pct": 12100.0,
         "cond3_15d_high": 7210.0,
         "binding": "15일신고가"
       },
-      "current_price": 6690.0,
-      "current_date": "2026-09-15",
+      "current_price": 6950.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "052860.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "한국첨단소재",
+      "stock_code": "062970",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-09-16",
+      "designated_date": "2026-09-17",
+      "judgment_date": "2026-10-06",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 3088.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 3088.0,
+        "cond2_15d_100pct": 4680.0,
+        "cond3_15d_high": 3360.0,
+        "binding": "5일60%"
+      },
+      "current_price": 3375.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": true,
+      "ticker": "062970.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "빛과전자",
+      "stock_code": "069540",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-09-16",
+      "designated_date": "2026-09-17",
+      "judgment_date": "2026-10-06",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 4325.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 6096.0,
+        "cond2_15d_100pct": 5690.0,
+        "cond3_15d_high": 4325.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 4410.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": true,
+      "ticker": "069540.KQ",
       "price_error": null
     },
     {
@@ -128,13 +174,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 8040.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 12288.0,
-        "cond2_15d_100pct": 9480.0,
+        "cond1_5d_60pct": 12528.0,
+        "cond2_15d_100pct": 9340.0,
         "cond3_15d_high": 8040.0,
         "binding": "15일신고가"
       },
-      "current_price": 6470.0,
-      "current_date": "2026-09-15",
+      "current_price": 6570.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "079650.KQ",
       "price_error": null
@@ -151,13 +197,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 1490.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 2344.0,
-        "cond2_15d_100pct": 1902.0,
+        "cond1_5d_60pct": 2168.0,
+        "cond2_15d_100pct": 1892.0,
         "cond3_15d_high": 1490.0,
         "binding": "15일신고가"
       },
-      "current_price": 1408.0,
-      "current_date": "2026-09-15",
+      "current_price": 1385.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "079950.KQ",
       "price_error": null
@@ -174,13 +220,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 32650.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 43200.0,
-        "cond2_15d_100pct": 49200.0,
+        "cond1_5d_60pct": 43360.0,
+        "cond2_15d_100pct": 53100.0,
         "cond3_15d_high": 32650.0,
         "binding": "15일신고가"
       },
-      "current_price": 30500.0,
-      "current_date": "2026-09-15",
+      "current_price": 32000.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "092870.KQ",
       "price_error": null
@@ -197,13 +243,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 154900.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 236960.0,
-        "cond2_15d_100pct": 278000.0,
+        "cond1_5d_60pct": 246880.0,
+        "cond2_15d_100pct": 276200.0,
         "cond3_15d_high": 154900.0,
         "binding": "15일신고가"
       },
-      "current_price": 129700.0,
-      "current_date": "2026-09-15",
+      "current_price": 135700.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "095610.KQ",
       "price_error": null
@@ -243,15 +289,38 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 306500.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 409600.0,
-        "cond2_15d_100pct": 498000.0,
+        "cond1_5d_60pct": 429600.0,
+        "cond2_15d_100pct": 503000.0,
         "cond3_15d_high": 306500.0,
         "binding": "15일신고가"
       },
-      "current_price": 241500.0,
-      "current_date": "2026-09-15",
+      "current_price": 243000.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "131290.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "카티스",
+      "stock_code": "140430",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-09-16",
+      "designated_date": "2026-09-17",
+      "judgment_date": "2026-10-06",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 2723.2000000000003,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 2723.2000000000003,
+        "cond2_15d_100pct": 3452.0,
+        "cond3_15d_high": 3005.0,
+        "binding": "5일60%"
+      },
+      "current_price": 3315.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": true,
+      "ticker": "140430.KQ",
       "price_error": null
     },
     {
@@ -264,17 +333,40 @@
       "judgment_date": "2026-10-01",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 6980.0,
+      "threshold_price": 7700.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 9136.0,
-        "cond2_15d_100pct": 6980.0,
+        "cond1_5d_60pct": 11872.0,
+        "cond2_15d_100pct": 7700.0,
         "cond3_15d_high": 8460.0,
         "binding": "15일100%"
       },
-      "current_price": 7800.0,
-      "current_date": "2026-09-15",
-      "is_at_risk": true,
+      "current_price": 6740.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": false,
       "ticker": "187660.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "타이거일렉",
+      "stock_code": "219130",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-09-16",
+      "designated_date": "2026-09-17",
+      "judgment_date": "2026-10-06",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 69200.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 107680.0,
+        "cond2_15d_100pct": 126800.0,
+        "cond3_15d_high": 69200.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 74800.0,
+      "current_date": "2026-09-16",
+      "is_at_risk": true,
+      "ticker": "219130.KQ",
       "price_error": null
     },
     {
@@ -287,40 +379,40 @@
       "judgment_date": "2026-09-29",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 5720.0,
+      "threshold_price": 6630.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 9376.0,
-        "cond2_15d_100pct": 5720.0,
+        "cond1_5d_60pct": 12176.0,
+        "cond2_15d_100pct": 6630.0,
         "cond3_15d_high": 9890.0,
         "binding": "15일100%"
       },
-      "current_price": 7020.0,
-      "current_date": "2026-09-15",
+      "current_price": 7430.0,
+      "current_date": "2026-09-16",
       "is_at_risk": true,
       "ticker": "224060.KQ",
       "price_error": null
     },
     {
-      "stock_name": "유디엠텍",
-      "stock_code": "389680",
+      "stock_name": "샌즈랩",
+      "stock_code": "411080",
       "market": "코스닥",
       "alert_type": "투자경고",
-      "disclose_date": "2026-08-28",
-      "designated_date": "2026-08-31",
-      "judgment_date": "2026-09-15",
-      "judgment_source": "공시",
+      "disclose_date": "2026-09-16",
+      "designated_date": "2026-09-17",
+      "judgment_date": "2026-10-06",
+      "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 2080.0,
+      "threshold_price": 6848.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 3163.2000000000003,
-        "cond2_15d_100pct": 2080.0,
-        "cond3_15d_high": 2495.0,
-        "binding": "15일100%"
+        "cond1_5d_60pct": 6848.0,
+        "cond2_15d_100pct": 8140.0,
+        "cond3_15d_high": 6900.0,
+        "binding": "5일60%"
       },
-      "current_price": 2530.0,
-      "current_date": "2026-09-15",
+      "current_price": 7160.0,
+      "current_date": "2026-09-16",
       "is_at_risk": true,
-      "ticker": "389680.KQ",
+      "ticker": "411080.KQ",
       "price_error": null
     },
     {
@@ -335,13 +427,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 79300.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 113600.0,
-        "cond2_15d_100pct": 128600.0,
+        "cond1_5d_60pct": 119040.0,
+        "cond2_15d_100pct": 125200.0,
         "cond3_15d_high": 79300.0,
         "binding": "15일신고가"
       },
-      "current_price": 61500.0,
-      "current_date": "2026-09-15",
+      "current_price": 59300.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "440110.KQ",
       "price_error": null
@@ -356,15 +448,15 @@
       "judgment_date": "2026-09-21",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 1746.0,
+      "threshold_price": 1887.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 2710.4,
-        "cond2_15d_100pct": 1746.0,
+        "cond1_5d_60pct": 2304.0,
+        "cond2_15d_100pct": 1980.0,
         "cond3_15d_high": 1887.0,
-        "binding": "15일100%"
+        "binding": "15일신고가"
       },
-      "current_price": 1080.0,
-      "current_date": "2026-09-15",
+      "current_price": 1190.0,
+      "current_date": "2026-09-16",
       "is_at_risk": false,
       "ticker": "216400.KS",
       "price_error": null
@@ -379,15 +471,15 @@
       "judgment_date": "2026-09-16",
       "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 818.0,
+      "threshold_price": 940.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 2224.0,
-        "cond2_15d_100pct": 818.0,
-        "cond3_15d_high": 1900.0,
+        "cond1_5d_60pct": 2080.0,
+        "cond2_15d_100pct": 940.0,
+        "cond3_15d_high": 2000.0,
         "binding": "15일100%"
       },
-      "current_price": 2000.0,
-      "current_date": "2026-09-15",
+      "current_price": 2100.0,
+      "current_date": "2026-09-16",
       "is_at_risk": true,
       "ticker": "302920.KS",
       "price_error": null
@@ -402,15 +494,15 @@
       "judgment_date": "2026-09-23",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3150.0,
+      "threshold_price": 3310.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 6936.0,
-        "cond2_15d_100pct": 3150.0,
+        "cond1_5d_60pct": 8000.0,
+        "cond2_15d_100pct": 3310.0,
         "cond3_15d_high": 5000.0,
         "binding": "15일100%"
       },
-      "current_price": 4105.0,
-      "current_date": "2026-09-15",
+      "current_price": 3860.0,
+      "current_date": "2026-09-16",
       "is_at_risk": true,
       "ticker": "351320.KQ",
       "price_error": null
