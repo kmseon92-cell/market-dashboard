@@ -1,15 +1,5 @@
 {
   "quotes": {
-    "NQ=F": {
-      "price": 29331.75,
-      "change": 85.0,
-      "pct": 0.29
-    },
-    "CL=F": {
-      "price": 104.71,
-      "change": -1.12,
-      "pct": -1.06
-    },
     "JPY=X": {
       "price": 155.1,
       "change": 0.02,
@@ -26,9 +16,9 @@
       "pct": -0.0559
     },
     "DX-Y.NYB": {
-      "price": 99.608,
-      "change": -0.007,
-      "pct": -0.01
+      "price": 99.61,
+      "change": 0.0,
+      "pct": 0.0
     },
     "^VIX": {
       "price": 17.2,
@@ -36,8 +26,13 @@
       "pct": 0.0
     }
   },
-  "errors": [],
-  "fetched_at": "2026-09-16T15:38:30+09:00",
+  "errors": [
+    "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
+    "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-09-16T15:43:39+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
