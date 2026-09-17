@@ -1,67 +1,109 @@
-<!-- updated: 2026-09-17 06:30 -->
+<!-- updated: 2026-09-18 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-09-17
+📅 2026-09-18
 ━━━━━━━━━━━━━━━
-다우 -1.21% | 나스닥 -0.01% | S&P500 -0.45% | 러셀2000 -0.40% | 필반도체 +0.63% | WTI $102.02 | 환율 1,377원
+다우 +0.61% | 나스닥 +1.69% | S&P500 +1.14% | 러셀2000 +0.55% | 필반도체 +3.14% | WTI $101.09 | 환율 1,380원
 
-📈 <b>52주 신고가 (19종목)</b>
+📈 <b>52주 신고가 (29종목)</b>
 
 <b>〈기술〉</b>
   <b>CRWD</b> Crowdstrike Holdings Inc
-    $241.36 (-0.5%) | $247.1B
+    $245.70 (+1.8%) | $251.6B
   <b>DELL</b> Dell Technologies Inc
-    $563.29 (+3.6%) | $358.1B
+    $588.40 (+4.5%) | $374.1B
   <b>DT</b> Dynatrace Inc
-    $55.19 (+0.0%) | $15.9B
+    $55.83 (+1.2%) | $16.1B
   <b>FFIV</b> F5 Inc
-    $423.59 (-1.7%) | $24.0B
+    $434.62 (+2.6%) | $24.6B
   <b>FTNT</b> Fortinet Inc
-    $171.77 (-0.3%) | $126.0B
+    $172.58 (+0.5%) | $126.6B
+  <b>NET</b> Cloudflare Inc
+    $333.94 (+2.9%) | $118.9B
+  <b>OKTA</b> Okta Inc
+    $190.02 (+1.0%) | $33.2B
+  <b>RBRK</b> Rubrik Inc
+    $107.83 (+2.7%) | $22.4B
+  <b>SMTC</b> Semtech Corp
+    $178.19 (+6.3%) | $16.6B
 
 <b>〈헬스케어〉</b>
   <b>TMO</b> Thermo Fisher Scientific Inc
-    $648.43 (+1.1%) | $239.8B
+    $658.32 (+1.5%) | $243.4B
+  <b>AVTR</b> Avantor Inc
+    $15.86 (+1.6%) | $10.7B
+  <b>DGX</b> Quest Diagnostics Inc
+    $247.45 (+0.1%) | $27.3B
   <b>GH</b> Guardant Health Inc
-    $174.90 (-0.4%) | $23.5B
+    $183.10 (+4.7%) | $24.6B
   <b>ILMN</b> Illumina Inc
-    $228.93 (+3.0%) | $34.6B
+    $245.18 (+7.1%) | $37.0B
   <b>IQV</b> IQVIA Holdings Inc
-    $268.82 (-0.3%) | $44.2B
+    $269.44 (+0.2%) | $44.4B
   <b>NTRA</b> Natera Inc
-    $345.34 (-1.6%) | $49.8B
+    $366.31 (+6.1%) | $52.8B
   <b>RVTY</b> Revvity Inc
-    $145.73 (+4.0%) | $16.3B
+    $146.73 (+0.7%) | $16.4B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $19.05 (+2.2%) | $60.6B
   <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
-    $38.53 (-1.8%) | $44.9B
+    $39.19 (+1.7%) | $45.7B
+  <b>TWST</b> Twist Bioscience Corp 🔥
+    $155.56 (+8.7%) | $10.2B
+  <b>TXG</b> 10x Genomics Inc
+    $76.97 (+5.9%) | $10.0B
+  <b>WAT</b> Waters Corp
+    $429.72 (+2.6%) | $42.2B
+
+<b>〈경기소비재〉</b>
+  <b>BBY</b> Best Buy Co Inc
+    $94.56 (+2.3%) | $19.8B
 
 <b>〈금융〉</b>
   <b>CRBG</b> Corebridge Financial Inc
-    $34.85 (-0.5%) | $15.5B
+    $34.88 (+0.1%) | $15.6B
 
 <b>〈에너지〉</b>
   <b>DINO</b> HF Sinclair Corp
-    $113.97 (+1.5%) | $20.3B
+    $116.62 (+2.3%) | $20.7B
   <b>FRO</b> Frontline Plc
-    $53.67 (+4.0%) | $11.9B
+    $54.03 (+0.7%) | $12.0B
   <b>MPC</b> Marathon Petroleum Corp
-    $413.92 (+0.8%) | $116.2B
+    $421.96 (+1.9%) | $118.5B
   <b>PSX</b> Phillips 66
-    $264.63 (-0.1%) | $105.6B
-  <b>SUN</b> Sunoco LP
-    $78.92 (-1.3%) | $16.2B
+    $274.21 (+3.6%) | $109.4B
   <b>VLO</b> Valero Energy Corp
-    $403.28 (+1.6%) | $116.1B
+    $412.53 (+2.3%) | $118.8B
 
-🚀 <b>8% 이상 급등 (3종목)</b>
+🚀 <b>8% 이상 급등 (12종목)</b>
+
+<b>〈기술〉</b>
+  <b>ARM</b> Arm Holdings Plc ADR
+    $264.90 (+8.6%) | $282.9B
+  <b>ALAB</b> Astera Labs Inc
+    $293.56 (+9.1%) | $50.9B
+  <b>IONQ</b> IonQ Inc
+    $40.34 (+9.5%) | $16.3B
+  <b>SITM</b> SiTime Corp
+    $598.60 (+9.1%) | $18.0B
+  <b>SMCI</b> Super Micro Computer Inc
+    $40.35 (+9.5%) | $26.5B
+  <b>TSEM</b> Tower Semiconductor Ltd
+    $219.24 (+8.4%) | $24.7B
+  <b>UMC</b> United Micro Electronics ADR
+    $24.47 (+8.6%) | $61.5B
 
 <b>〈산업재〉</b>
   <b>FPS</b> Forgent Power Solutions Inc
-    $34.84 (+11.1%) | $10.6B
+    $38.06 (+9.2%) | $11.6B
+  <b>GNRC</b> Generac Holdings Inc
+    $207.23 (+18.3%) | $12.2B
+  <b>INIO</b> Innio NV
+    $20.96 (+12.0%) | $15.7B
 
-<b>〈기술〉</b>
-  <b>LITE</b> Lumentum Holdings Inc
-    $919.40 (+9.6%) | $82.5B
-  <b>SMTC</b> Semtech Corp
-    $167.55 (+11.0%) | $15.6B
+<b>〈헬스케어〉</b>
+  <b>MRNA</b> Moderna Inc
+    $158.07 (+8.6%) | $63.1B
+  <b>TEM</b> Tempus AI Inc
+    $80.36 (+14.8%) | $14.5B
 
 
