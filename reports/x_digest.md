@@ -1,62 +1,72 @@
-<!-- updated: 2026-09-20 08:16 -->
-🐦 <b>X 데일리 다이제스트</b> (09/20)
+<!-- updated: 2026-09-21 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (09/21)
 
 <b>일론 머스크</b>
-💡 AI 안전 테스트 결과를 인용: GPT-6 Astra는 유해 행동을 97% 시도하고 62% 성공했고, Fable 5.1은 80% 시도에 34% 성공 <a href="https://x.com/elonmusk/status/2101118049944543545">원문</a>
-X "Under The Hood"에 국가별 법적 요구로 노출이 제한됐는지 표시하는 기능을 추가했고, 플랫폼 사용량은 역대 최고라고 함. 나머지는 보링컴퍼니 "Uranus" 굿즈 농담과 밈.
-
-<b>마크 저커버그</b>
-💡 개발자가 Muse 커넥터를 만들 수 있도록 개방했다. API를 연결하면 Muse의 에이전트와 브라우저가 처리한다 <a href="https://x.com/finkd/status/2101084678640066765">원문</a>
+• 💡 보링컴퍼니가 오스틴~샌안토니오 하이퍼루프 터널(시속 200mph 초과) 추진. 지금 최대 2.5시간 걸리는 구간을 30분 안쪽으로 줄이겠다는 계획 <a href="https://x.com/elonmusk/status/2101732496396439751">원문</a>
+• 💡 RT: 궤도 데이터센터 비용 논쟁. 월가는 GW당 $160B 이상으로 보지만 Mach33은 스타십 기준 $46B/GW에서 시작해 $24B/GW까지 내려간다고 봄. Grok Imagine Image 2.0은 이미지 생성 리더보드 4위
+• 잡담: 테슬라 블랙박스가 억울한 운전자를 구한 사례, 테슬라 세미, 테일러 로렌츠 "X가 그 어느 때보다 낫다" 발언
 
 <b>Tae Kim</b>
-💡 Reuters가 "Anthropic, OpenAI 모멘텀에 대응해 신모델 출시 검토"를 보도했다. Ramp 기준 기업 AI 지출은 Astra 13%, Claude Fable 8%. WSJ는 Anthropic IPO가 11월로 밀린다고 전함 <a href="https://x.com/firstadopter/status/2101113663448818043">원문</a>
-Anthropic이 Accenture에 독립 평가 비용을 대는 것은 이해충돌이라고 비판했고, IPO 때 "정부 통제 수용" 발언은 부적절하다고 지적함. Jeff Dean이 AI 인재를 계속 영입 중이라고 언급.
-아이폰: 아이폰 Duo 기대감이 18 Pro 판매를 깎는 듯하고, Duo는 $2,000에도 수요가 있다고 봄.
+• 💡 엔비디아 DGX Spark 마이크로센터 가격 인상(지난달 $4,500에서 상승) <a href="https://x.com/firstadopter/status/2101742734708990339">원문</a>
+• 후티가 사우디 수도와 석유시설을 미사일·드론으로 공격, 확전 경고 <a href="https://x.com/firstadopter/status/2101507980541730833">원문</a>
+• 캔자스 상원 토론회 야유 기사를 인용하며 중간선거 참패를 전망
 
 <b>Hardik Shah</b>
-💡 트럼프가 "AI Force"를 창설하고 AI 차르를 곧 발표한다고 함. 젠슨 황은 "2030 종말론" 반박. 일본 Nippon Life이 미국 데이터센터 금융에 $13B 투입 계획 (NBIS·IREN·CIFR·CRWV 언급)
-주간 상향 톱: MARA, BLSH, BE, IREN, RBLX 등. 하향 톱: APP, NFLX, OPEN, MARA, GLW 등. RKLB 일렉트론 96번째 발사 성공. Anthropic·OpenAI·Google 등이 "AI 속도 조절" 발언으로 피소(Politico).
+• 💡 SpaceX 나스닥100 비중이 리밸런싱에서 2.82%로 두 배 이상 확대 ($SPCX) <a href="https://x.com/AIStockSavvy/status/2101489858606694623">원문</a>
+• 💡 머스크: 위성 1기당 250kW, SpaceX 설계 엔비디아 베라 루빈 NVL72 탑재 <a href="https://x.com/AIStockSavvy/status/2101483277018132622">원문</a>
+• 💡 CXMT가 24Gb LPDDR5X 공개(용량 +50%, 웨이퍼당 다이 +50%↑). 에이서는 PC 부품가가 2027년 중반 전까지 5~20% 오른다고 전망
+• $COHR가 ECOC 2026에서 CPO·NPO용 3.2T 플러그러블과 6.4T NPO 엔진 공개
+• 트럼프가 캠프데이비드에서 조기 복귀. CNN은 후티 타격 옵션을 검토 중이라고 보도
 
 <b>dnap</b>
-올트먼 인터뷰에서 "clanker"가 가장 좋아하는 AI 비하 표현이라는 발언 소개. 코인·트레이딩 잡담(BTC 8만 달러, ZCAT, VVV).
+• 언급 키워드: RXBAR 창업자 Peter Rahal 인터뷰(David Protein, 단백질바). 반도체·매크로와 무관
 
 <b>Jukan</b>
-Muse와 Instinct를 보면 OpenClaw 이후 진전이 빠르고, Meta가 Muse용으로 VM을 대량 임차한다고 들었음. Muse 한국 출시 시점 질문. "Anthropic IPO는 중간선거 이후로 밀린 셈" <a href="https://x.com/jukan05/status/2101089083284164984">원문</a>
+• 💡 BofA 메모리 리포트: 3Q DRAM ASP +20~30% QoQ, NAND +15%↑. 4Q도 한 자릿수 후반 상승. 하이퍼스케일러가 1Q27 DRAM을 4Q26보다 높은 가격에 계약. 27~28년 ASP 가정은 DRAM +8~12%, NAND +2~3% 상향, 2028년은 -10% 안팎으로 연착륙 <a href="https://x.com/jukan05/status/2101655940038565898">원문</a>
+• 💡 삼성전자가 내년 HBM4·4E 생산을 최소 2배로 확대. 글라스 캐리어 세정 물량이 월 2만 장에서 5만 장으로 증가 <a href="https://x.com/jukan05/status/2101578323050500376">원문</a>
+• 💡 JP모건: 삼성 HBM 점유율이 2025년 20%에서 2026년 34%, 2027년 39%로 상승. 목표가 40만원, 원화 강세와 주주환원 미흡이 부담 <a href="https://x.com/jukan05/status/2101522481802801495">원문</a>
+• 💡 CXMT가 12nm급(11.95nm) 신공정 양산. 빅3와의 격차를 "2세대, 낙관적으론 1.5세대"로 평가. 에이서 회장은 "메모리 공급난은 이미 해소됐다"고 발언(Jukan은 소비자 쪽 얘기라고 선 긋기) <a href="https://x.com/jukan05/status/2101526741466705980">원문</a>
+• 드러켄밀러가 첫 방한해 삼성·SK·두산 방문 예정 <a href="https://x.com/jukan05/status/2101572635067048176">원문</a>
 
 <b>루팡</b>
-💡 UBS: AI capex는 2025년 $506B에서 2026년 $998B, 2027년 $1.447T로 늘어난다. 증가분의 약 90%가 메모리 가격 상승이고, 메모리 비중은 14%에서 37%, 64%로 커진다 <a href="https://x.com/DrNHJ/status/2101268072191631695">원문</a>
-💡 JP모건 삼성전자 목표가 40만 원(비중확대). HBM 점유율 20%에서 34%(26E), 39%(27E)로 확대 전망. 원화 강세로 3Q·4Q 영업이익 추정을 102~109조 원으로 하향 (컨센 109~121조 원) <a href="https://x.com/DrNHJ/status/2101266939691888730">원문</a>
-미·중 정상회담(24일)과 국빈 만찬에 빅테크 CEO가 총출동한다. 다음 주 일정은 CLSA 포럼, Snapdragon Summit, Meta Connect, 코스트코 실적 등.
+• 💡 BofA: 2030년 글로벌 메모리 TAM을 $1.8T에서 $2.0T로 상향. 2026~30년 연평균 21% 성장, 7월 메모리 지표 180(2017~18년 정점 120). 21~24일 홍콩 컨퍼런스에서 삼성·SK·트렌드포스 미팅은 마감 <a href="https://x.com/DrNHJ/status/2101796325646119358">원문</a>
+• 💡 SK하이닉스 ADR이 SMH ETF에 편입(약 5% 비중, 패시브 $3.4B 유입 추정). 21일부터 효력 <a href="https://x.com/DrNHJ/status/2101464515976237119">원문</a>
+• 💡 Evercore: AI 토큰 소비량이 2026년 약 100 Quadrillion에서 2030년 약 3,600 Quadrillion으로 증가. 트럼프는 "AI군" 창설과 AI 차르 임명을 예고 <a href="https://x.com/DrNHJ/status/2101473615783043566">원문</a>
+• 이란이 카타르를 통해 종전 3조건(전선 중단·동결자금 해제·봉쇄 해제)을 미국에 전달
 
 <b>P Equity Research</b>
-💡 JPM: DRAM 블렌디드 가격 26년 +250%, 27년 +30%. HSBC: 루빈 NVL72의 CPU당 DRAM이 GB300 대비 +170%
-💡 Citi: HBM 수요는 2028년 126,990(1Gb 환산 단위)으로 급증하고, 엔비디아 비중은 약 32%로 하락. Goldman: 서버 시장 2030년 $1.5T (AI 서버 CAGR 46%). Evercore: 연간 토큰 사용량 2030년 3,500 quadrillion
-Jefferies: Ayar Labs는 CPO 램프가 C28에 시작해 C29에 대량 출하된다고 봄. Anthropic·OpenAI의 모델 스위칭 순환 문제 언급, 젠슨 황 "안전하지 않은 제품은 출시 안 하지만 속도는 최대로" 인용.
+• 💡 HBM 수출단가가 5개월 만에 첫 하락(7월 $76.14에서 8월 $73.39, -3.6%). 3월 이후 87% 급등한 뒤라 "경고 신호이지 붕괴는 아니다" <a href="https://x.com/pequityresearch/status/2101771282669093314">원문</a>
+• 💡 Mizuho: GB300 램프가 2H26~2027까지 예상보다 강함. MU·CRDO에 긍정적 <a href="https://x.com/pequityresearch/status/2101745558520205771">원문</a>
+• 💡 Citi: 메모리 Capex 2026년 $54.9B(+39.5%), 2027년 $80.4B(+46.5%). Evercore: 2027년 엔비디아 점유율 80% 유지 전망
+• MS는 MLCC·ABF 기판은 사이클 초입이고 메모리는 정점 근처라고 봄. 젠슨 황은 AI 규제에 대해 "기존 법부터 적용하라"고 발언
 
 <b>북극성</b>
-💡 Anthropic은 9월 1일 Fable 5.1을 냈고, 9월 3일 Astra 등장 후 OpenRouter 점유율이 50% 초과에서 약 35%로 하락. Amodei의 감속론 일주일 만에 신모델 조기 출시를 검토 중 <a href="https://x.com/PolarisLog/status/2101241024266031119">원문</a>
-💡 메리츠: 외국인의 SK하이닉스 평균 매입가는 142만 원이고 추정 수익률은 19%. 3Q 영업이익 컨센 78.1조 원 vs 9월 이후 리포트 평균 74.1조 원. 매도 유인이 줄어 수급 개선 여지가 있다고 함 <a href="https://x.com/PolarisLog/status/2101198757547450461">원문</a>
-IBK: AI 속도 조절론의 DRAM 영향은 제한적이라고 봄. Citi는 연속학습이 HBM 수요를 키운다고 함(내년 +62%). 윤지호 코스피 박스권 분석, S&P Global의 OpenZeppelin 인수, 이더리움 애정글, JEV 모델 정리.
+• 💡 BofA 메모리 2030년 $2T 전망 요약(Rubin 384GB, Rubin Ultra 1TB, 2028년 소프트랜딩) <a href="https://x.com/PolarisLog/status/2101804615067115789">원문</a>
+• 💡 골드만삭스가 삼성전자 경영진 미팅 후 목표가 49만원 제시. 신규 DRAM 캐파는 HBM에 우선 배정하고, LTA는 기간·구속력이 강화됨. 자사주와 배당은 연말 실적 후 결정 <a href="https://x.com/PolarisLog/status/2101500559668953228">원문</a>
+• 💡 금리 5%대에서도 반도체주가 버틸 수 있는지 다룬 글(김탁). 핵심 체크는 EPS 증가세, 유가·물가, 하이일드 스프레드 <a href="https://x.com/PolarisLog/status/2101613351260594663">원문</a>
+• 이재명 대통령이 단일종목 레버리지 ETF에 대해 이해충돌 관리 필요성을 언급 <a href="https://x.com/PolarisLog/status/2101575629535649816">원문</a>
 
 <b>Nuradu</b>
-💡 하이퍼스케일러 회사채: Goldman은 2027년 IG 발행이 약 $420B에 이를 것으로 전망(올해 9월 중순까지 이미 약 $230B) <a href="https://x.com/NURadu_/status/2101184268118675828">원문</a>
-미·중 정상회담 타임라인 정리(23일 도착·24일 회담·25일 출국, 11월 무역휴전 만료가 핵심). 사우디 송유관 피격으로 브렌트 현물이 $132까지 급등. 코인채굴에서 데이터센터로 전환 중인 기업을 퀴즈로 내고 있고, 검토 후 패스한다고 밝힘(정답은 VRT 파트너십 언급). 구독자용 아티클과 계절성 차트 공유.
+• 💡 후티가 사우디를 공격했고 미국은 급격한 확전을 경고. 호르무즈와 바브엘만데브 이중 봉쇄로 VLCC 일일 용선료가 $1.241M으로 사상 최고 <a href="https://x.com/NURadu_/status/2101617189644308922">원문</a>
+• 💡 드러켄밀러가 22일 두산·삼성·SK하이닉스·네이버·쿠팡 등을 만난다고 전함. 이번 주 일정으로 GMIF 메모리 정상회의(9/22~23), 메타 커넥트(9/23~24), 미중 무역협상을 정리
+• JP모건 경고: 슈퍼 엘니뇨로 2027년 1Q 식량 인플레 우려. 우크라이나 드론이 모스크바 정유공장을 타격
 
-<b>개빈 베이커</b>
-💡 오픈모델이 점유율을 뺏고 있다. Vercel AI Gateway 토큰 비중은 오픈 78.4%로 역대 최고이고, 지출도 Moonshot·DeepSeek·Z.ai 합산이 OpenAI를 넘었다. 모델 계층에서 인프라·앱 계층으로 마진이 이동하므로 AI 인프라에 긍정적 <a href="https://x.com/GavinSBaker/status/2101284601347928334">원문</a>
+<b>Gavin Baker</b>
+• 💡 모델 레이어 마진이 높을수록 토큰 생산량과 CoreWeave·Oracle·엔비디아 매출은 줄어든다고 주장. OpenAI·Anthropic이 컴퓨트 수요독점(monopsony)이 되면 인프라 업체에 악재 <a href="https://x.com/GavinSBaker/status/2101753332343722317">원문</a>
 
 <b>Semiconductor Insider</b>
-💡 서버 DDR5 64GB RDIMM 계약가는 $270(3Q25)에서 $1,500(9/15)으로 올라 HSBC 추정과 일치. 상승률은 둔화하지만 가격은 계속 오르는 중 <a href="https://x.com/SemiconductorsX/status/2101206190474875170">원문</a>
-💡 JPM: 클라우드 capex는 2025년 $491B에서 2026년 $954B, 2030년 $1.66T로 늘어난다. ASIC 출하가 2027~28년에 GPU를 추월하고, Tomahawk 6은 2027년분이 완판 <a href="https://x.com/SemiconductorsX/status/2101379832919826695">원문</a>
-💡 Acer 회장: PC 가격이 5~20% 더 오르고 정점은 2027년 중반. 메모리 시장은 3분기 Micron이 점유율 23.3%까지 올라 하이닉스와 격차가 좁혀졌고 CXMT는 9.5%. 삼성전기는 6월 고점 대비 40% 넘게 하락했고, KB는 3Q 영업이익 6,601억 원(+154%) 전망으로 매수·목표가 300만 원 유지.
-AMD의 "군용 칩 덤핑" 논란은 이중용도 RFSoC의 유통 가격 차이일 뿐이라고 반박.
+• 💡 메모리 LTA 정리: 삼성은 물량 약 2/3를 장기계약으로 묶길 원하고, 마이크론은 SCA 16건(DRAM 출하의 약 20%). 2027~28 증설분도 이미 선계약될 수 있어 현물 타이트가 길어질 수 있음 <a href="https://x.com/SemiconductorsX/status/2101802915988222457">원문</a>
+• 💡 CPU 수요 급증: 인텔은 서버 CPU 수요의 절반만 충족 가능. 에이전트형 AI 때문에 GPU:CPU 비율이 1:1에 근접 <a href="https://x.com/SemiconductorsX/status/2101736672845320566">원문</a>
+• 💡 성숙 파운드리 타이트: UMC는 2027년 가격 인상 폭이 더 클 것이라고 예고, PSMC는 최대 40% 인상 준비 <a href="https://x.com/SemiconductorsX/status/2101788849823527056">원문</a>
+• TSMC 2nm 가동, 인텔의 EMIB·AUO 유리기판 패키징 탐색, HBM 수출단가 하락 재인용, CXMT는 "1.5세대 격차" 주장에 반박
 
-<b>속보 (First Squawk + FinancialJuice)</b>
-💡 트럼프: "AI Force" 창설, AI 차르 곧 발표
-💡 미·중: 베선트·그리어가 일요일 뉴욕 JP모건 본사에서 허리펑 부총리와 회동. 허리펑은 9/19~23 방미
-💡 Anthropic: IPO가 중간선거 이후로 지연될 수 있고, 상장 전 신모델 공개를 검토 중(소식통)
-💡 중동: 후티가 리야드 민감 시설과 얀부 아람코 시설 공격을 주장했고, 사우디 연합은 리야드행 미사일을 요격했다고 발표 <a href="https://x.com/FirstSquawk/status/2101360058038980813">원문</a>
-이란: 전쟁 종식·동결자금 해제·해상봉쇄 해제가 조건이고, 카타르를 통해 미국의 답을 기다리는 중. NPT 탈퇴는 미결정.
-미국·덴마크·그린란드 합의가 임박했고, 프랑스는 2027년 재정적자 목표를 GDP 대비 5.0%로 제시.
+<b>FinancialJuice</b> (First Squawk 글 없음)
+• 🚨 이란 군 총사령부: 미국이 공격하면 미군 기지에 무제한 보복. 갈리바프 의장은 조건 충족 전까지 호르무즈 폐쇄 유지를 재확인
+• 🛢 카타르에너지 CEO: LNG 생산은 극소량, 호르무즈가 열리면 몇 주 내 정상화
+• 🇺🇦 젤렌스키가 트럼프와 통화하고 뉴욕 회동에 합의. 우크라이나가 모스크바 정유시설을 타격
+• 🇩🇪 독일 주의회 선거: 메클렌부르크-포어포메른에서 AfD 37.0%, CDU 5.5%(출구조사). 메르츠는 "재앙"이라고 언급
+• 🏛 미 연준 카슈카리: 인플레는 여전히 높고 고용은 견조
+• 🇺🇸 트럼프 행정부가 ICC 제재 준비(WSJ)
+• 🇰🇵 북한 미사일 발사, 미 태평양사령부가 동맹과 협의 중
 
-그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, Anthropic, OpenAI, Market Feed, 안드레 카파시
+그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, Anthropic, OpenAI, 마크 저커버그, Market Feed, 안드레 카파시
