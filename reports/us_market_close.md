@@ -1,67 +1,91 @@
-<!-- updated: 2026-09-19 06:30 -->
+<!-- updated: 2026-09-22 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-09-19
+📅 2026-09-22
 ━━━━━━━━━━━━━━━
-다우 -0.18% | 나스닥 +0.39% | S&P500 +0.17% | 러셀2000 -0.50% | 필반도체 +2.78% | WTI $95.47 | 환율 1,386원
+다우 +0.71% | 나스닥 +2.26% | S&P500 +1.49% | 러셀2000 +0.52% | 필반도체 +4.29% | WTI $91.97 | 환율 1,375원
 
-📈 <b>52주 신고가 (16종목)</b>
+📈 <b>52주 신고가 (19종목)</b>
 
 <b>〈기술〉</b>
-  <b>DELL</b> Dell Technologies Inc
-    $568.06 (-3.5%) | $361.2B
-  <b>DT</b> Dynatrace Inc
-    $55.14 (-1.2%) | $15.9B
+  <b>AMD</b> Advanced Micro Devices Inc 🔥
+    $615.52 (+9.9%) | $1.0T
   <b>FFIV</b> F5 Inc
-    $432.03 (-0.6%) | $24.5B
-  <b>NET</b> Cloudflare Inc
-    $323.60 (-3.1%) | $115.2B
-  <b>QRVO</b> Qorvo Inc
-    $117.18 (-1.9%) | $10.3B
+    $450.10 (+4.2%) | $25.5B
+  <b>NET</b> Cloudflare Inc 🔥
+    $351.67 (+8.7%) | $125.2B
   <b>RBRK</b> Rubrik Inc
-    $106.71 (-1.0%) | $22.1B
+    $112.96 (+5.9%) | $23.4B
   <b>SMTC</b> Semtech Corp
-    $185.00 (+3.8%) | $17.3B
+    $177.37 (-4.1%) | $16.6B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $98.51 (+0.4%) | $51.0B
+    $98.78 (+0.3%) | $59.3B
+  <b>TWLO</b> Twilio Inc 🔥
+    $266.06 (+9.1%) | $40.9B
+
+<b>〈금융〉</b>
+  <b>BNS</b> Bank Of Nova Scotia
+    $95.35 (+1.4%) | $117.5B
+
+<b>〈헬스케어〉</b>
+  <b>DGX</b> Quest Diagnostics Inc
+    $244.88 (-0.6%) | $27.0B
+  <b>HALO</b> Halozyme Therapeutics Inc
+    $111.45 (-0.9%) | $12.7B
+  <b>MRNA</b> Moderna Inc 🔥
+    $172.94 (+12.3%) | $69.0B
+  <b>NTRA</b> Natera Inc
+    $370.64 (+0.3%) | $53.4B
+  <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
+    $40.06 (+2.8%) | $46.7B
+  <b>TWST</b> Twist Bioscience Corp
+    $165.83 (-0.7%) | $10.9B
+  <b>TXG</b> 10x Genomics Inc
+    $79.10 (+3.3%) | $10.3B
 
 <b>〈에너지〉</b>
   <b>DINO</b> HF Sinclair Corp
-    $115.90 (-0.6%) | $20.6B
+    $109.29 (-5.7%) | $19.4B
   <b>MPC</b> Marathon Petroleum Corp
-    $424.89 (+0.7%) | $119.3B
-  <b>PSX</b> Phillips 66
-    $273.13 (-0.4%) | $109.0B
+    $402.38 (-5.3%) | $113.0B
   <b>VLO</b> Valero Energy Corp
-    $413.28 (+0.2%) | $119.0B
+    $393.27 (-4.8%) | $113.2B
 
-<b>〈헬스케어〉</b>
-  <b>HALO</b> Halozyme Therapeutics Inc
-    $112.45 (+2.5%) | $12.8B
-  <b>ILMN</b> Illumina Inc
-    $239.62 (-2.3%) | $36.2B
-  <b>NTRA</b> Natera Inc
-    $369.39 (+0.8%) | $53.2B
-  <b>TWST</b> Twist Bioscience Corp
-    $166.99 (+7.3%) | $11.0B
+<b>〈커뮤니케이션〉</b>
+  <b>WBD</b> Warner Bros. Discovery Inc 🔥
+    $30.80 (+10.8%) | $77.3B
 
-🚀 <b>8% 이상 급등 (7종목)</b>
+🚀 <b>8% 이상 급등 (12종목)</b>
 
 <b>〈기술〉</b>
-  <b>SNDK</b> Sandisk Corp
-    $1,791.82 (+11.0%) | $262.4B
+  <b>ARM</b> Arm Holdings Plc ADR
+    $322.90 (+17.2%) | $344.9B
+  <b>INTC</b> Intel Corp
+    $121.78 (+12.1%) | $643.7B
+  <b>QCOM</b> Qualcomm Inc
+    $194.23 (+9.3%) | $204.0B
+  <b>AKAM</b> Akamai Technologies Inc
+    $117.41 (+12.3%) | $16.9B
+  <b>ALAB</b> Astera Labs Inc
+    $340.74 (+12.4%) | $59.1B
+  <b>DOCN</b> DigitalOcean Holdings Inc
+    $146.16 (+12.3%) | $17.2B
   <b>MSTR</b> Strategy Inc
-    $153.92 (+16.4%) | $59.1B
+    $168.50 (+9.5%) | $64.7B
+  <b>P</b> Everpure Inc
+    $113.66 (+9.1%) | $37.9B
+  <b>RMBS</b> Rambus Inc
+    $96.96 (+10.7%) | $10.5B
+
+<b>〈커뮤니케이션〉</b>
+  <b>META</b> Meta Platforms Inc
+    $741.24 (+11.3%) | $1.9T
 
 <b>〈금융〉</b>
   <b>BMNR</b> BitMine Immersion Technologies Inc
-    $25.99 (+8.8%) | $15.7B
-  <b>COIN</b> Coinbase Global Inc
-    $194.25 (+11.7%) | $51.2B
-  <b>HOOD</b> Robinhood Markets Inc
-    $119.82 (+9.1%) | $107.7B
-  <b>HUT</b> Hut 8 Corp
-    $98.74 (+8.5%) | $12.2B
-  <b>PS</b> Pershing Square Inc
-    $49.83 (+13.7%) | $19.9B
+    $28.25 (+8.7%) | $17.0B
+
+<b>〈산업재〉</b>
+  <b>RKLB</b> Rocket Lab Corp
+    $69.89 (+8.2%) | $41.8B
 
 
