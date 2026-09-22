@@ -1,91 +1,75 @@
-<!-- updated: 2026-09-22 06:30 -->
+<!-- updated: 2026-09-23 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-09-22
+📅 2026-09-23
 ━━━━━━━━━━━━━━━
-다우 +0.71% | 나스닥 +2.26% | S&P500 +1.49% | 러셀2000 +0.52% | 필반도체 +4.29% | WTI $91.97 | 환율 1,375원
+다우 -0.36% | 나스닥 +0.45% | S&P500 -0.00% | 러셀2000 +0.51% | 필반도체 +2.06% | WTI $89.85 | 환율 1,355원
 
-📈 <b>52주 신고가 (19종목)</b>
+📈 <b>52주 신고가 (22종목)</b>
 
 <b>〈기술〉</b>
-  <b>AMD</b> Advanced Micro Devices Inc 🔥
-    $615.52 (+9.9%) | $1.0T
+  <b>AAPL</b> Apple Inc
+    $339.75 (+0.2%) | $5.0T
+  <b>AMD</b> Advanced Micro Devices Inc
+    $623.77 (+1.3%) | $1.0T
+  <b>CRWD</b> Crowdstrike Holdings Inc
+    $250.06 (+0.3%) | $256.1B
+  <b>DT</b> Dynatrace Inc
+    $57.20 (+1.4%) | $16.5B
   <b>FFIV</b> F5 Inc
-    $450.10 (+4.2%) | $25.5B
-  <b>NET</b> Cloudflare Inc 🔥
-    $351.67 (+8.7%) | $125.2B
+    $453.33 (+0.7%) | $25.7B
+  <b>NET</b> Cloudflare Inc
+    $353.00 (+0.4%) | $125.7B
+  <b>OKTA</b> Okta Inc
+    $196.62 (+2.8%) | $34.4B
   <b>RBRK</b> Rubrik Inc
-    $112.96 (+5.9%) | $23.4B
-  <b>SMTC</b> Semtech Corp
-    $177.37 (-4.1%) | $16.6B
+    $111.87 (-1.0%) | $23.2B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $98.78 (+0.3%) | $59.3B
-  <b>TWLO</b> Twilio Inc 🔥
-    $266.06 (+9.1%) | $40.9B
+    $99.06 (+0.3%) | $64.9B
+  <b>TEAM</b> Atlassian Corp
+    $188.65 (-3.6%) | $47.8B
+  <b>TWLO</b> Twilio Inc
+    $284.53 (+6.9%) | $43.7B
+
+<b>〈헬스케어〉</b>
+  <b>A</b> Agilent Technologies Inc
+    $167.26 (+3.3%) | $47.2B
+  <b>BIIB</b> Biogen Inc
+    $225.36 (+2.9%) | $33.3B
+  <b>HALO</b> Halozyme Therapeutics Inc
+    $115.13 (+3.3%) | $13.1B
+  <b>MRNA</b> Moderna Inc
+    $182.56 (+5.6%) | $72.9B
+  <b>NTRA</b> Natera Inc
+    $390.90 (+5.5%) | $56.4B
+  <b>TECH</b> Bio-Techne Corp
+    $72.55 (+0.1%) | $11.4B
+  <b>TWST</b> Twist Bioscience Corp
+    $164.60 (-0.7%) | $10.8B
+  <b>TXG</b> 10x Genomics Inc
+    $80.70 (+2.0%) | $10.5B
+  <b>WAT</b> Waters Corp
+    $425.74 (+0.4%) | $41.8B
 
 <b>〈금융〉</b>
   <b>BNS</b> Bank Of Nova Scotia
-    $95.35 (+1.4%) | $117.5B
+    $94.06 (-1.4%) | $115.9B
+  <b>FRHC</b> Freedom Holding Corp
+    $171.16 (-1.7%) | $10.9B
 
-<b>〈헬스케어〉</b>
-  <b>DGX</b> Quest Diagnostics Inc
-    $244.88 (-0.6%) | $27.0B
-  <b>HALO</b> Halozyme Therapeutics Inc
-    $111.45 (-0.9%) | $12.7B
-  <b>MRNA</b> Moderna Inc 🔥
-    $172.94 (+12.3%) | $69.0B
-  <b>NTRA</b> Natera Inc
-    $370.64 (+0.3%) | $53.4B
-  <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
-    $40.06 (+2.8%) | $46.7B
-  <b>TWST</b> Twist Bioscience Corp
-    $165.83 (-0.7%) | $10.9B
-  <b>TXG</b> 10x Genomics Inc
-    $79.10 (+3.3%) | $10.3B
+🚀 <b>8% 이상 급등 (5종목)</b>
 
-<b>〈에너지〉</b>
-  <b>DINO</b> HF Sinclair Corp
-    $109.29 (-5.7%) | $19.4B
-  <b>MPC</b> Marathon Petroleum Corp
-    $402.38 (-5.3%) | $113.0B
-  <b>VLO</b> Valero Energy Corp
-    $393.27 (-4.8%) | $113.2B
-
-<b>〈커뮤니케이션〉</b>
-  <b>WBD</b> Warner Bros. Discovery Inc 🔥
-    $30.80 (+10.8%) | $77.3B
-
-🚀 <b>8% 이상 급등 (12종목)</b>
+<b>〈경기소비재〉</b>
+  <b>DKS</b> Dicks Sporting Goods Inc
+    $133.94 (+8.3%) | $11.9B
 
 <b>〈기술〉</b>
-  <b>ARM</b> Arm Holdings Plc ADR
-    $322.90 (+17.2%) | $344.9B
-  <b>INTC</b> Intel Corp
-    $121.78 (+12.1%) | $643.7B
-  <b>QCOM</b> Qualcomm Inc
-    $194.23 (+9.3%) | $204.0B
-  <b>AKAM</b> Akamai Technologies Inc
-    $117.41 (+12.3%) | $16.9B
-  <b>ALAB</b> Astera Labs Inc
-    $340.74 (+12.4%) | $59.1B
-  <b>DOCN</b> DigitalOcean Holdings Inc
-    $146.16 (+12.3%) | $17.2B
-  <b>MSTR</b> Strategy Inc
-    $168.50 (+9.5%) | $64.7B
-  <b>P</b> Everpure Inc
-    $113.66 (+9.1%) | $37.9B
+  <b>GRAB</b> Grab Holdings Limited
+    $3.17 (+8.9%) | $12.9B
+  <b>MPWR</b> Monolithic Power System Inc
+    $1,380.62 (+8.1%) | $67.8B
   <b>RMBS</b> Rambus Inc
-    $96.96 (+10.7%) | $10.5B
-
-<b>〈커뮤니케이션〉</b>
-  <b>META</b> Meta Platforms Inc
-    $741.24 (+11.3%) | $1.9T
-
-<b>〈금융〉</b>
-  <b>BMNR</b> BitMine Immersion Technologies Inc
-    $28.25 (+8.7%) | $17.0B
-
-<b>〈산업재〉</b>
-  <b>RKLB</b> Rocket Lab Corp
-    $69.89 (+8.2%) | $41.8B
+    $105.24 (+8.5%) | $11.4B
+  <b>VICR</b> Vicor Corp
+    $268.34 (+19.9%) | $12.4B
 
 
