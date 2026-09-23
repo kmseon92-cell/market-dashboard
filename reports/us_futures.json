@@ -1,19 +1,19 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 31032.5,
-      "change": 4.0,
-      "pct": 0.01
+      "price": 31029.75,
+      "change": 1.25,
+      "pct": 0.0
     },
     "CL=F": {
-      "price": 89.53,
-      "change": -0.99,
-      "pct": -1.09
+      "price": 89.3,
+      "change": -1.22,
+      "pct": -1.35
     },
     "JPY=X": {
-      "price": 157.65,
-      "change": 0.28,
-      "pct": 0.18
+      "price": 157.62,
+      "change": 0.25,
+      "pct": 0.16
     },
     "^TNX": {
       "price": 4.955,
@@ -26,9 +26,9 @@
       "pct": -0.1509
     },
     "DX-Y.NYB": {
-      "price": 100.748,
-      "change": 0.147,
-      "pct": 0.15
+      "price": 100.734,
+      "change": 0.133,
+      "pct": 0.13
     },
     "^VIX": {
       "price": 14.21,
@@ -37,11 +37,11 @@
     }
   },
   "errors": [],
-  "fetched_at": "2026-09-23T14:50:21+09:00",
+  "fetched_at": "2026-09-23T14:55:25+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
-    "drop_pct": -3.79,
+    "drop_pct": -3.81,
     "warning": true
   }
 }
