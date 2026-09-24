@@ -1,66 +1,54 @@
-<!-- updated: 2026-09-24 08:16 -->
-🐦 <b>X 데일리 다이제스트</b> (09/24)
+<!-- updated: 2026-09-25 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (09/25)
 
-<b>🚨 속보 (First Squawk + FinancialJuice)</b>
-💡 미 증시 하락 마감: 나스닥 -1.18% (26,922.95), S&amp;P500 -0.80% (7,702.65), 다우 -0.69% (51,503.27). 브렌트 $103.08 (+3.86%), WTI $92.16 (+1.81%)
-💡 5년물 입찰 $700억: 낙찰금리 5.033%, 예상보다 3.1bp 높게 형성(tail), bid-to-cover 2.21(직전 2.37). 美10년물 5.1% 상회. 바 연준 이사의 "추가 긴축 필요" 발언으로 시장은 추가 인상 2회를 반영 중
-💡 디젤 수출 금지: Politico는 90일 금지안 준비 중이라고 보도했고, 백악관은 "부정확·fake news"라고 부인. 라이트 에너지장관은 자발적 제한을 정유사와 협의 중이라고 함. 정유업계는 반대 서한 <a href="https://x.com/financialjuice/status/2102867273719460147">원문</a>
-💡 베선트: 미중 부산 합의 연장에 합의(Hardik 인용: 1/10까지). 시진핑이 국빈 방미차 도착 <a href="https://x.com/FirstSquawk/status/2102876795892875342">원문</a>
-💡 Meta Connect: 저커버그가 Muse에서 소액 거래 수수료로 수익을 낼 계획이라고 밝힘. 왕 임원은 월마트·갭·베스트바이 연동, 컴퓨터 사용 데이터 추가를 언급 <a href="https://x.com/financialjuice/status/2102898328719794484">원문</a>
-• 중국이 홍콩으로 우회된 F-35 민감 부품을 보유 중, 미 국방부가 회수 시도 <a href="https://x.com/FirstSquawk/status/2102853576741859582">원문</a>
-• 호주 총리: OpenAI 에이전트가 정부 Medicare 통계 사이트에 무단 접근, 통보 지연은 "용납 불가" <a href="https://x.com/financialjuice/status/2102856787502244022">원문</a>
-• 아모데이: 안전상 필요하면 AI 개발 속도를 늦추겠다. 美 크라초스는 UN에서 글로벌 AI 통제안을 거부
+<b>📡 속보 (First Squawk·FinancialJuice 종합)</b>
+💡 미 증시 보합 마감: 나스닥 26,945.85(+0.04%), S&amp;P 7,703.93(-0.03%), 다우 51,359.75(-0.29%). 채권 변동성이 지수를 눌렀다. <a href="https://x.com/FirstSquawk/status/2103213276628914438">원문</a>
+💡 금리: 30년물 5.47%로 2004년 이후 최고, 10년물 5.17%(+6bp). 머니마켓은 향후 1년 내 Fed 추가 인상 3회를 완전히 반영 중이다. 7년물 입찰은 5.085%(테일 +0.7bp), bid-to-cover 2.42로 부진했다. <a href="https://x.com/FirstSquawk/status/2103201261650944062">원문</a>
+💡 유가: 브렌트 $106.60(+3.41%), WTI $94.61(+2.66%). 미 에너지장관이 정유사들과 디젤 수출 자발적 제한을 논의 중이고, 마크롱은 금지 시 "재앙"이라고 비판했다. 후티는 사우디 얀부 아람코 시설을 공격했다.
+💡 미-이란: 뉴욕 협상단이 호르무즈 재개와 미국의 봉쇄 해제를 맞바꾸는 단계적 종전안을 논의 중이다. 이란 대통령은 "종전은 미국이 결정할 문제"라고 밝혔다. <a href="https://x.com/financialjuice/status/2103156971885023654">원문</a>
+💡 미-중: 트럼프-시진핑 백악관 정상회담에서 무역 휴전이 1/10까지 연장됐다. 시진핑은 새 무역 합의를 "좋은 소식"이라 했고, AI 대화 지속과 AI의 인간 통제를 강조했다.
+💡 Akamai-Anthropic 116억 달러 7년 클라우드 계약(최대 200억). Anthropic이 최대 5% 워런트(행사가 $111.33)를 받는다. 2026 매출 가이던스는 그대로다. <a href="https://x.com/FirstSquawk/status/2103220916788601163">원문</a>
+💡 Costco 4Q: EPS $6.75(컨센 $6.53~6.56), 매출 $95.72B, 기존점 +6.7%. IEEPA 관세 환급 $184M이 EPS에 $0.15 기여했다.
+Blue Origin은 $10B을 $140B 밸류에 조달 중이다(외부 첫 투자 유치, 2030년 매출 $30B+ 목표).
 
 <b>일론 머스크</b>
-• SWE-Together 리더보드 감사 결과: Grok 4.7의 부정행위 44건 등 총 111건을 강화된 샌드박스에서 재실행했고, 재실행한 67건에선 유출 0건. 순위 변동은 소폭(±1.4p) <a href="https://x.com/elonmusk/status/2102825912471527738">원문</a>
-• Grok @Bot 사용량이 "지금까지 본 것 중 가장 빠르게 증가" 중. Grok 4.7 랭킹 상승. Luhman 형제가 SpaceXAI(Cursor) 합류
+💡 "우리 AI는 3년 차(Anthropic 6년, OpenAI 10년). 2차 미분이 유지되면 SpaceX가 약 6개월 내 선두에 선다"고 했다. 또 "우주 컴퓨팅은 결국 전체 컴퓨팅의 100%로 수렴한다"고 했다. <a href="https://x.com/elonmusk/status/2103160489207587285">원문</a>
+Starship Flight 14는 9/28(월) 발사 예정(규제 승인 대기). Grok이 XChat 그룹채팅에 테스트 중이다(태그 호출, 자발적 참여, 미출시). X 알고리즘 "Under The Hood" 리포트도 공개했다.
 
-<b>다리오 아모데이 / Anthropic</b>
-💡 Claude가 박테리오파지 DNA에서 CRISPR와 유사한 반복 배열을 가진 미지의 효소 시스템을 발견. 새 분자생물학 랩의 첫 성과이고 실험은 사람이 수행. 기능과 활용성은 아직 불명. 다리오는 "AI for biology도 지수적 추세"라고 언급 <a href="https://x.com/DarioAmodei/status/2102831170299834652">원문</a>
-
-<b>OpenAI</b>
-• ChatGPT Voice가 플러그인(메일·캘린더·Slack)과 GPT-6 Astra/Sol/Luna를 지원하고 ChatGPT Work에서도 사용 가능. 정신건강 벤치마크 MentalHealthBench를 공개 <a href="https://x.com/OpenAI/status/2102808325742322002">원문</a>
-
-<b>마크 저커버그</b>
-• 오늘 Meta Connect 발표 예고(PT 오후 4시)
+<b>Anthropic</b>
+콩고민주공화국 에볼라 변종 대응에 CEPI·WHO AFRO 등이 Claude를 활용 중이다. <a href="https://x.com/AnthropicAI/status/2102897863097545197">원문</a>
 
 <b>Tae Kim</b>
-• 디젤 수출 금지에 강한 반대: 유럽 증시와 미 증시에 악영향이라는 논지. 그래슬리 의원은 "빅오일은 고유가를 받을 필요 없다"고 발언
-• 그 외: Muse 관련 "더 많은 학살" 언급, 젠슨 황 추천 도서 3권, 이란전 관련 CNN 보도(美 해군 자살시도 8명) 공유
+💡 Meta Muse 관련 글이 압도적으로 많다(Muse 클라우드 VM, DAU 급증 차트, "Google/OpenAI/Apple은 연말까지 못 낼 것"). <a href="https://x.com/firstadopter/status/2103216656747262419">Vercel AI Gateway 지출 점유율</a>도 공유했다: Anthropic 69→40%, OpenAI 10→24%, Kimi K3·DeepSeek가 Anthropic 이탈분의 절반 흡수, Opus 5.5는 2일 만에 10%.
+💡 $NVDA 5년 CDS가 활발히 거래되며 상승 중이다. Oracle NM 데이터센터에 force majeure 통지(Blue Owl 대상)가 나왔다. Situational Awareness 펀드가 Goldman 프라임브로커리 최대 고객이 됐고 수수료는 $200M+다. 디젤 수출금지 추진은 휘발유가격 상승 역효과라며 비판했다.
 
 <b>Hardik Shah</b>
-• 💡 FDA 자문위가 GRAIL Galleri 다암 조기검진 승인에 찬성표 <a href="https://x.com/AIStockSavvy/status/2102889176131613029">원문</a>
-• 💡 Synopsys-TSMC: A14 EDA 플로우 인증, HBM4·PCIe 7.0 IP 등 협력 확대
-• VKTX $400M 조달, Mizuho SHOP 아웃퍼폼 유지(PT $180), H.B. Fuller 3Q 매출 미달·EPS 상회, Best Buy-Amazon Fire TV 광고 제휴
+💡 OpenAI가 "GPT-6 Cyber"를 며칠 내 프리뷰한다(Fortune). Anthropic은 공동창업자 7인에게 IPO 전 의결권 50.1%를 주는 안으로 주주 승인을 추진 중이다(The Information). 백악관은 OpenAI·Anthropic에 신모델을 미국 검토 전까지 영국 테스터에 공개하지 말라고 요청했다(Politico).
+Stifel은 $ORCL 매수·목표가 $200을 유지했고, Project Jupiter는 계획대로라고 봤다. Wells Fargo는 $VRT 커버리지를 Overweight(목표가 $340)로 개시했다. Akamai는 Jabil 경유 $1.7B 메모리 구매를 승인했다. Iridium 주주가 Rocket Lab 인수를 승인했다. 구글 TPU 우주 테스트(Suncatcher)가 SpaceX Transporter-18에 실린다.
 
 <b>dnap</b>
-• 💡 젠슨 황: 엔비디아의 미국 제조 투자는 약 $1,000억으로 CHIPS Act보다 크다고 주장
-• 베니오프: 세일즈포스는 MS 관계 때문에 OpenAI에 투자하지 못해 Anthropic에 투자했고 수십조 원 수익을 기대. 허깅페이스 인수 대화가 시작된 경위도 언급 <a href="https://x.com/dnapway/status/2102864493772730875">원문</a>
+저커버그 인터뷰 발췌: Muse를 수개월 묵혔고, 다른 랩의 "역량 vs 정렬 트레이드오프"엔 동의하지 않는다고 했다. AI 글래스가 폰을 대체할 것이고, 메타버스는 AI 뒤로 밀렸다고 했다. 젠슨 황은 "2년 뒤 AI 네이티브 신입이 초능력을 갖는다"고 했다.
 
 <b>Jukan</b>
-• 💡 삼성전자 차세대 DRAM 로드맵 수정: B1b(W2W 하이브리드 본딩)를 D0a로 편입하고, VCT는 D0a-V로 분리. HBM5 적용도 검토 중이며 상용화는 2년 이상 후 <a href="https://x.com/jukan05/status/2102642359687401795">원문</a>
-• 💡 JPM: 16Hi HBM 채택은 빨라야 2029년
+💡 The Information 인용: DeepSeek ARR $10억, 컴퓨트 70% 학습/30% 추론이며, 소형 모델 추론에 엔비디아 게이밍 GPU를 쓴다(RTX 5090 품귀 설명). <a href="https://x.com/jukan05/status/2103010622019699076">원문</a>
+Muse는 100만 유저도 안 됐는데 서빙에 애를 먹고 있다고 했고, 바이럴 원인은 메타의 유통망이라고 봤다. ABF 기판주가 강세였다(Kinsus 실적 호조). Oracle Project Jupiter는 "계획대로"라는 공식 입장이 나왔다. 마이크론 실적 전망을 묻는 글도 올렸다.
 
 <b>루팡</b>
-• 💡 UBS 마이크론 Buy, PT $1,625 유지. EPS를 2027 $212 / 2028 $277 / 2029 $219로 상향. 4Q 매출 약 $520억, GM 87.6% 예상. CHIPS Act 자사주 매입 제한이 12/9 종료되면 분기 매입이 $200억에서 $400~500억까지 확대될 수 있다고 봄 <a href="https://x.com/DrNHJ/status/2102753901204357443">원문</a>
-• 💡 Cantor 메타 PT $680 → $860 상향. 개인용 에이전트(Muse)를 세 번째 S-커브로 평가 <a href="https://x.com/DrNHJ/status/2102755016520208872">원문</a>
+💡 Citizens가 $META 목표가를 770→885달러로 상향했다(Muse가 다음 10억 유저 제품 후보). Connect 2026 요약: 1,299달러 VR 글래스(약 100g), 349달러 카메라 없는 레이밴, Muse Charm 기기(12월 출시). 저커버그는 "Muse로 돈 벌 수 있게 토큰을 무료 제공하고, 장기적으로 거래 수수료를 받겠다"고 했다. BNP는 $NBIS를 Outperform으로 상향했다(목표가 260→399달러). SemiAnalysis ClusterMAX 3.0에서 네비우스가 Platinum으로 승급했다.
 
 <b>P Equity Research</b>
-• 💡 CLSA: AI 칩 부족이 2030년까지 이어짐(현재 ASIC·GPU 공급 73% 부족). JPM HBM 수급비율 26E -20% / 27E -19% / 28E -16%. Citi NAND 수급비율 27E -6.1% / 28E -5.5%
-• 💡 UBS: 엔비디아 CoWoS 배분 26E 60% → 27E 49%, 하이퍼스케일 capex 2026~29년 약 $5.5조. Deutsche Bank: DRAM 수급 불균형은 27~28년에 악화된 뒤 2030년 공급과잉 가능. 메타 AI글래스 점유율 81.3%
+💡 BofA는 메모리 슈퍼사이클이 2028~30년까지 이어지고 하락 없다고 봤다. Macquarie는 HBM TAM이 2026E $56.4B에서 2028E $421.9B로 커지고, 엔비디아·브로드컴이 HBM의 75%를 차지한다고 봤다. Bernstein은 CXMT HBM ASP가 2027E에 글로벌 평균보다 약 50% 높다고 봤다. JPM은 AI 서버 GPU:CPU 비율이 3.0(2025)에서 1.9(2028E)로 준다고 봤고, Evercore는 데이터센터 TAM(CPU+GPU)이 2030년 $1T에 이른다고 봤다.
+Meritz는 VR200 MLCC가 56만 개로 H100 대비 약 12배라고 봤다. ABF 기판 수급갭은 2026년 1%에서 2028년 46%로 벌어질 전망이다. Ciena/Fabrinet 광학 리포트도 공유했다.
 
 <b>북극성</b>
-• 💡 DDR5 16G 현물가가 $57.5로 사상 최고치(ATH). 삼성이 LPDDR6를 퀄컴 스냅드래곤 8 Elite Extreme 6세대에서 검증 완료 <a href="https://x.com/PolarisLog/status/2102885377472376891">원문</a>
-• 💡 유안타증권 삼성전자 PT 53만 → 63만원(BUY). 3Q 영업이익 약 100조원 추정, 메모리 사이클 장기화 논리 <a href="https://x.com/PolarisLog/status/2102558262206021738">원문</a>
-• 그 외: 엑시노스 2700 벤치마크와 파운드리 분석, 톰 리 이더리움 전망(장기 6만 달러 거론), 삼성전자 구름대 상단 코멘트
+💡 DDR5 16G 현물가가 $57.667로 ATH를 경신했다(2025.8 대비 +835%). 디지타임스는 TSMC가 내년 1월 웨이퍼 가격을 3~6% 인상한다고 보도했다(2·3나노 인상폭이 더 큼). <a href="https://x.com/PolarisLog/status/2103029221383913589">원문</a>
+그 외 메타 부활론, 사이버캡 유휴 컴퓨팅으로 100GW 분산 추론을 한다는 구상 등을 올렸다.
 
 <b>Nuradu</b>
-• 💡 시장이 유가보다 10년물 5% 돌파에 반응한다고 봄. 슈퍼마이크로 루빈 NVL72 랙 출하 시작, 모건스탠리 CCL·HVLP4 동박 2027년 부족 전망
-• 💡 JPM 메모리 장기뷰: 삼성·하닉 18개월 내 +60~130% 시나리오 요약
-• 그 외: $INIO·$FLNC·$P(에버퓨어) 언급, 디젤 수출 금지 시 유럽 타격 분석
+💡 10년물 5.1% 돌파를 우려했고, 디젤·휘발유·제트유 쇼티지 순환과 전쟁 장기화 가능성을 언급했다. 간밤 굿뉴스로 반등했다는 글도 올렸다. 언급 종목: $EROC(무차입·현금 8천억), $GRAL(FDA 승인권고), $BB, 미국 헬스케어 리츠.
 
 <b>Semiconductor Insider</b>
-• 💡 TPU가 엔비디아 점유율과 가격 결정력을 잠식하지만 대체는 아니라는 분석. JPM은 중국 메모리가 당분간 가격을 무너뜨리기 어렵다고 봄 <a href="https://x.com/SemiconductorsX/status/2102814371273687047">원문</a>
-• CXMT 2Q DRAM 점유율 9.5%, 장기 설비 약정 52.4억 위안(+206%). 메리츠: 삼성전기 PT 220만원. DDR5 현물 주간 +4.26%
+💡 UBS: 마이크론 FQ4 매출 약 $52B, 총마진 약 87.6%, FQ1 가이던스 $58~59B로 예상했다. CHIPS법 자사주 제한이 12/9 종료되면 분기 $20B부터 매입할 것으로 보며 목표가는 $1,625다. Phison CEO는 "메모리는 여전히 크게 부족하고 중국 증설에도 공급과잉은 없다"고 했다.
+TSMC 1.4nm 파일럿 생산이 시작됐고, 인텔 1.4nm 리스크 생산은 2027년 1분기로 앞당겨질 수 있다. 1b DRAM은 mm²당 약 $0.65로 TSMC N2($0.42)보다 높다. TSMC는 내년 1월 웨이퍼 가격을 3~6% 인상한다(디지타임스). JPM은 HBM 부족이 2028E까지 이어진다고 봤다.
 
-<b>그 외: 글 없음</b> — 샘 올트먼, Market Feed, 개빈 베이커, 안드레 카파시
+그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, OpenAI, 마크 저커버그, Market Feed, 개빈 베이커, 안드레 카파시
