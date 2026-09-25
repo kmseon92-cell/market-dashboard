@@ -1,57 +1,41 @@
-<!-- updated: 2026-09-25 06:30 -->
+<!-- updated: 2026-09-26 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-09-25
+📅 2026-09-26
 ━━━━━━━━━━━━━━━
-다우 -0.31% | 나스닥 +0.01% | S&P500 -0.02% | 러셀2000 -0.11% | 필반도체 -0.33% | WTI $94.76 | 환율 1,366원
+다우 +0.93% | 나스닥 +0.48% | S&P500 +0.51% | 러셀2000 +0.07% | 필반도체 +1.41% | WTI $92.44 | 환율 1,355원
 
-📈 <b>52주 신고가 (21종목)</b>
+📈 <b>52주 신고가 (8종목)</b>
 
 <b>〈기술〉</b>
   <b>AMD</b> Advanced Micro Devices Inc
-    $629.26 (+2.4%) | $1.0T
-  <b>CRWD</b> Crowdstrike Holdings Inc
-    $259.67 (-1.1%) | $265.9B
-  <b>DT</b> Dynatrace Inc
-    $58.68 (+0.3%) | $17.0B
-  <b>FTNT</b> Fortinet Inc
-    $178.67 (-0.0%) | $131.1B
+    $630.63 (+0.2%) | $1.0T
   <b>HPE</b> Hewlett Packard Enterprise Co
-    $63.52 (+1.9%) | $84.3B
-  <b>NET</b> Cloudflare Inc
-    $358.82 (+1.8%) | $127.8B
-  <b>OKTA</b> Okta Inc
-    $206.64 (+0.6%) | $36.1B
-  <b>P</b> Everpure Inc 🔥
-    $121.88 (+11.2%) | $40.6B
-  <b>TWLO</b> Twilio Inc
-    $299.66 (+3.1%) | $46.0B
+    $62.94 (-0.9%) | $83.5B
 
-<b>〈커뮤니케이션〉</b>
-  <b>META</b> Meta Platforms Inc
-    $777.59 (+4.5%) | $2.0T
+<b>〈금융〉</b>
+  <b>FRHC</b> Freedom Holding Corp
+    $172.08 (-2.4%) | $11.0B
+  <b>PS</b> Pershing Square Inc
+    $56.16 (+7.4%) | $22.5B
 
 <b>〈헬스케어〉</b>
-  <b>TMO</b> Thermo Fisher Scientific Inc
-    $678.39 (+2.0%) | $250.8B
-  <b>A</b> Agilent Technologies Inc
-    $172.84 (+4.5%) | $48.7B
-  <b>ILMN</b> Illumina Inc
-    $273.90 (+7.2%) | $41.4B
   <b>MRNA</b> Moderna Inc
-    $194.82 (+7.0%) | $77.8B
-  <b>MTD</b> Mettler-Toledo International Inc
-    $1,519.15 (+1.8%) | $30.4B
+    $198.88 (+2.1%) | $79.4B
   <b>NTRA</b> Natera Inc
-    $408.79 (+4.6%) | $58.9B
-  <b>RGEN</b> Repligen Corp
-    $190.65 (+3.3%) | $10.8B
-  <b>RVTY</b> Revvity Inc
-    $150.68 (+6.0%) | $16.8B
-  <b>TWST</b> Twist Bioscience Corp 🔥
-    $184.03 (+16.1%) | $12.1B
-  <b>TXG</b> 10x Genomics Inc 🔥
-    $84.11 (+11.2%) | $11.0B
-  <b>WAT</b> Waters Corp
-    $430.30 (+2.3%) | $42.3B
+    $412.56 (+0.9%) | $59.5B
+  <b>TWST</b> Twist Bioscience Corp
+    $182.83 (-0.7%) | $12.0B
+  <b>TXG</b> 10x Genomics Inc
+    $85.71 (+1.9%) | $11.2B
+
+🚀 <b>8% 이상 급등 (2종목)</b>
+
+<b>〈산업재〉</b>
+  <b>BE</b> Bloom Energy Corp
+    $288.70 (+8.3%) | $85.0B
+
+<b>〈기술〉</b>
+  <b>VIAV</b> Viavi Solutions Inc
+    $40.68 (+9.3%) | $10.0B
 
 
