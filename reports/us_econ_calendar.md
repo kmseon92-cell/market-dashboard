@@ -1,20 +1,27 @@
-<!-- updated: 2026-09-25 06:01 -->
+<!-- updated: 2026-09-28 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-09-25 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-09-28 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>09/25 (금) · 2건</b>
-  23:00 ★★ Revised UoM Consumer Sentiment 예상:47.4 이전:47.8
-  23:00 ★★ Revised UoM Inflation Expectations 이전:4.6%
 
 <b>09/28 (월) · 0건</b>
   — 발표 예정 없음
 
-<b>09/29 (화) · 0건</b>
-  — 발표 예정 없음
+<b>09/29 (화) · 2건</b>
+  23:00 ★★ CB Consumer Confidence 예상:90.1 이전:89.4
+  23:00 ★★ JOLTS Job Openings 예상:7.23M 이전:7.27M
 
-<b>09/30 (수) · 0건</b>
-  — 발표 예정 없음
+<b>09/30 (수) · 4건</b>
+  21:15 ★★ ADP Non-Farm Employment Change 예상:70K 이전:38K
+  21:30 ★★★ Core PCE Price Index m/m 예상:0.3% 이전:0.2%
+  21:30 ★★★ Final GDP q/q 예상:1.5% 이전:1.5%
+  21:30 ★★ Final GDP Price Index q/q 예상:6.4% 이전:6.4%
 
-<b>10/01 (목) · 0건</b>
-  — 발표 예정 없음
+<b>10/01 (목) · 3건</b>
+  21:30 ★★ Unemployment Claims 예상:199K 이전:197K
+  23:00 ★★ FOMC Member Waller Speaks
+  23:00 ★★ ISM Manufacturing PMI 예상:55.0 이전:54.6
+
+<b>10/02 (금) · 3건</b>
+  21:30 ★★★ Average Hourly Earnings m/m 예상:0.3% 이전:0.3%
+  21:30 ★★★ Non-Farm Employment Change 예상:98K 이전:162K
+  21:30 ★★★ Unemployment Rate 예상:4.1% 이전:4.1%
