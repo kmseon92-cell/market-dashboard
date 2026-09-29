@@ -1,11 +1,7 @@
-<!-- updated: 2026-09-29 06:01 -->
+<!-- updated: 2026-09-30 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-09-29 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-09-30 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>09/29 (화) · 2건</b>
-  23:00 ★★ CB Consumer Confidence 예상:89.2 이전:89.4
-  23:00 ★★ JOLTS Job Openings 예상:7.23M 이전:7.27M
 
 <b>09/30 (수) · 4건</b>
   21:15 ★★ ADP Non-Farm Employment Change 예상:73K 이전:38K
@@ -24,4 +20,7 @@
   21:30 ★★★ Unemployment Rate 예상:4.1% 이전:4.1%
 
 <b>10/05 (월) · 0건</b>
+  — 발표 예정 없음
+
+<b>10/06 (화) · 0건</b>
   — 발표 예정 없음
