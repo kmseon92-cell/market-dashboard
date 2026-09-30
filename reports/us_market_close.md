@@ -1,51 +1,61 @@
-<!-- updated: 2026-09-30 06:30 -->
+<!-- updated: 2026-10-01 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-09-30
+📅 2026-10-01
 ━━━━━━━━━━━━━━━
-다우 -0.26% | 나스닥 -0.09% | S&P500 -0.17% | 러셀2000 -0.35% | 필반도체 +1.32% | WTI $88.94 | 환율 1,352원
+다우 -0.86% | 나스닥 +0.24% | S&P500 -0.25% | 러셀2000 -0.39% | 필반도체 -0.00% | WTI $90.34 | 환율 1,357원
 
-📈 <b>52주 신고가 (14종목)</b>
+📈 <b>52주 신고가 (18종목)</b>
 
 <b>〈기술〉</b>
   <b>CRWD</b> Crowdstrike Holdings Inc
-    $262.74 (+1.4%) | $269.0B
-  <b>ASX</b> ASE Technology Holding CoLtd ADR
-    $45.31 (+3.5%) | $99.6B
+    $264.75 (+0.8%) | $271.1B
+  <b>PANW</b> Palo Alto Networks Inc
+    $397.31 (+2.3%) | $325.0B
+  <b>HPE</b> Hewlett Packard Enterprise Co
+    $63.89 (+3.9%) | $84.8B
   <b>NTAP</b> Netapp Inc
-    $209.18 (+2.3%) | $41.1B
+    $210.08 (+0.4%) | $41.3B
   <b>P</b> Everpure Inc
-    $130.05 (+0.5%) | $43.3B
+    $130.78 (+0.6%) | $43.6B
+  <b>RBRK</b> Rubrik Inc
+    $114.47 (-0.3%) | $23.7B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.56 (+0.5%) | $60.7B
+    $99.35 (+0.3%) | $59.3B
 
 <b>〈헬스케어〉</b>
-  <b>A</b> Agilent Technologies Inc
-    $175.03 (-0.1%) | $49.4B
+  <b>TMO</b> Thermo Fisher Scientific Inc
+    $675.05 (-0.7%) | $249.6B
+  <b>EXEL</b> Exelixis Inc
+    $58.41 (-0.4%) | $14.5B
+  <b>GMAB</b> Genmab ADR
+    $35.67 (+0.3%) | $21.3B
   <b>ILMN</b> Illumina Inc
-    $272.00 (+0.0%) | $41.1B
-  <b>MRNA</b> Moderna Inc
-    $203.46 (+3.1%) | $81.2B
+    $273.68 (+0.6%) | $41.3B
   <b>MTD</b> Mettler-Toledo International Inc
-    $1,537.33 (-0.5%) | $30.8B
+    $1,510.95 (-1.7%) | $30.3B
   <b>NTRA</b> Natera Inc
-    $414.52 (+0.7%) | $59.8B
+    $413.31 (-0.3%) | $59.6B
   <b>RVTY</b> Revvity Inc
-    $152.77 (+1.2%) | $17.1B
+    $152.89 (+0.1%) | $17.1B
   <b>TWST</b> Twist Bioscience Corp
-    $186.13 (+3.6%) | $12.2B
+    $193.24 (+3.8%) | $12.7B
   <b>TXG</b> 10x Genomics Inc
-    $90.04 (+1.7%) | $11.7B
-  <b>VTRS</b> Viatris Inc
-    $18.12 (-0.8%) | $20.8B
+    $90.36 (+0.4%) | $11.8B
+  <b>WAT</b> Waters Corp
+    $439.39 (-0.9%) | $43.2B
+
+<b>〈커뮤니케이션〉</b>
+  <b>WBD</b> Warner Bros. Discovery Inc
+    $30.95 (+0.3%) | $77.7B
 
 🚀 <b>8% 이상 급등 (2종목)</b>
 
-<b>〈산업재〉</b>
-  <b>BE</b> Bloom Energy Corp
-    $291.25 (+10.8%) | $85.8B
+<b>〈기술〉</b>
+  <b>FORM</b> FormFactor Inc
+    $149.31 (+9.6%) | $11.7B
 
-<b>〈경기소비재〉</b>
-  <b>CCL</b> Carnival Corp Ltd
-    $25.11 (+13.4%) | $34.4B
+<b>〈헬스케어〉</b>
+  <b>UTHR</b> United Therapeutics Corp
+    $541.89 (+12.6%) | $23.2B
 
 
