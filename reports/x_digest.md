@@ -1,72 +1,84 @@
-<!-- updated: 2026-09-30 08:16 -->
-🐦 <b>X 데일리 다이제스트</b> (09/30)
+<!-- updated: 2026-10-01 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (10/01)
 
-<b>일론 머스크</b>
-💡 백악관 'Super Intelligence' 만찬 참석, Trump·빅테크 CEO들과 <a href="https://x.com/i/status/2105047395599794215">AI 안전 서약(Accord)</a> 서명 자리에 배석
-💡 SpaceX·Tesla, 연간 200GW 태양광 생산 목표 발표. xAI Grok이 신규 미국정부 공식사이트(America.gov) 구동에 활용
-Starship 플라이트14 이착륙 영상 다수 공유
+<b>일론 머스크</b> 💡
+- Starship Flight 14 궤도 도달 성공, 우주망원경·달 관측소 확장 가능성 강조(“risk를 mass로 전환”)
+- SpaceX+Tesla 태양광 연 200GW 생산해 우주로 반출 계획, "우주는 항상 맑음"—美中 전력격차(3배) 대응 논리
+- 2027 실질GDP 성장률 전망 "2026 대비 50%↑, 즉 3.3%+" 제시, 오늘 발표 Q2 GDP 2.2%↑·근원PCE 3.0%(예상하회)·ADP +90K 긍정 평가
+- 두바이-텔아비브행 항공편 하이재킹 의심 코드 발동 속보 RT
+<a href="https://x.com/elonmusk/status/2105366280085672280">원문</a>
 
-<b>샘 올트먼</b>
-💡 DevDay: <a href="https://x.com/sama/status/2104986027953930613">GPT-6.1 Sol</a>(Astra 근접 성능, 가격 1/5, 캐시읽기 95%할인) + Ultrafast(8배속) + 상시구동 에이전트 'Dots' 공개
+<b>Tae Kim</b> 💡
+- Cerebras: SemiAnalysis發 논란(수율/캐파 의혹) 관련 회사의 침묵 비판, 내부자 매도 지적
+- Micron 어닝콜: "FY27이 FY26보다 더 강할 것", 마진 FQ1 바닥 후 개선, 자사주매입 확대(12/9~)
+- 구글 Gemini4 코딩 성능 두고 구글 내부 회의론 Bloomberg 보도 인용, "벤치마크만 잘한다" 비판
+- Synopsys-OpenAI "GPT-Synopsys" 파트너십 발표에 "신테시스 공매도 논리 깨졌다"
+- OpenAI ARR $70B 돌파했는데 주류 언론 보도량 부족 강하게 비판
+<a href="https://x.com/firstadopter/status/2105398727275860410">원문</a>
 
-<b>다리오 아모데이</b> — 기간 내 글 없음
-
-<b>Anthropic</b>
-사용자 대상 AI 경험 설문조사(Anthropic Interviewer) 시작, 9/29~10/6, 응답 공개선택 가능
-
-<b>OpenAI</b>
-💡 DevDay 풀세트: Dots(상시 에이전트, GPT-6 Astra 기반) / Ultrafast(코덱스 최대 8배속) / GPT-6.1 Sol / Pro 500 신설·Pro 200 재개 / Codex Security Cloud / AWS 인프라 파트너십
-
-<b>마크 저커버그</b> — 기간 내 글 없음
-
-<b>Tae Kim</b>
-💡 <a href="https://x.com/firstadopter/status/2105003833995022404">FT 확인: OpenAI ARR $70B</a> 돌파(7월래 +70%), 주간유저 12억. OpenAI $30B 신규펀딩 $1.4T 밸류 추진
-💡 <a href="https://x.com/firstadopter/status/2104784617672683988">Anthropic IPO 프로스펙터스에 "인류 실존적 위협" 문구</a> 포함 비판, 2025년 매출$4.6B에 영업손실 $8B(컴퓨트비용$7.3B)
-
-<b>Hardik Shah</b>
-💡 Boeing 美해군 차세대전투기 $20B+ 수주 / Anthropic 매출 47% AWS·구글 경유(Reuters) / Salesforce가 AI리서치 스타트업 Listen Labs 인수 / Tesla $30B 신규 신용한도 확보 / OpenAI $30B 펀딩 $1.4T밸류
+<b>Hardik Shah</b> 💡
+- 美-韓 $22.3B 텍사스 가스발전(NextEra 주도, 6.47GW)+AI데이터센터 프로젝트 "Project Star" 발표, 2029년 가동 목표
+- Micron FY26 Q4 EPS $33.42(서프라이즈), 매출 $54.23B — 어닝 비트
+- 구글 Gemini4 Argon 공개, Synopsys 투자자의날 FY27 매출 가이던스 $11.1-11.2B(컨센 상회)
+- FCC 위성브로드밴드용 스펙트럼 1000MHz+ 추가 개방($SPCX $RKLB $ASTS)
+<a href="https://x.com/AIStockSavvy/status/2105388895294943340">원문</a>
 
 <b>dnap</b>
-정부 공식 AI 사이트 공개를 "Steve Jobs식 제품발표"에 비유하는 반응 위주, 시장 관련 언급 없음
+- All-In 서밋 클립: 샘 올트먼 "직원당 업무량 계속 늘리는 게 스타트업 문화 유지 핵심" / "정렬(alignment) 과학 아직 안 풀렸다" 발언
+- 엘론 머스크·젠슨 황: 궤도 컴퓨팅 "우주는 항상 맑다" 발언 클립
+- 피터 틸: "현재 전세계적으로 반(反)민주주의 트렌드 존재" 발언
+- Jake Paul 인터뷰: Vine 몰락 비화(인플루언서 $1M 요구)
 
-<b>Jukan</b>
-💡 대만 언론: TSMC 텍사스 추가 팹(6개) 검토설 / Nvidia CPO 스케일아웃 예상보다 가속(GF증권) / HBM 2027 ASP +121% 전망 / AMD 이미 2028년 물량 판매중이라는 업계 확인
-삼성전기, 글로벌 대기업과 MLCC·인덕터 2850억원 공급계약(2027년)
+<b>Jukan</b> 💡
+- Kuo 채널체크: 엔비디아, Rubin Ultra NVL576 스위치트레이 PCB에 유리섬유 없는 HC(탄화수소) CCL 테스트 중, PTFE 대비 수율·생산성 개선 목적
+- 본인 "오늘 첫 프라이빗마켓 투자 집행" 근황
+- $LITE OCS 사업 고평가 저평가 논쟁 RT
 
-<b>First Squawk / FinancialJuice (속보 통합)</b>
-💡 Trump, 빅테크 CEO들과 'White House Accord on Super Intelligence' 서명 — 4중 내부통제·감사 체계 요구
-💡 한국 8월 산업생산 -2.2%YoY(예상 +4% 큰 괴리)·소매판매 -1.8%MoM 부진
-💡 美 30년물 국채금리 2002년래 최고, WTI -3.9% $89.01. Fed Williams "추가 인상 가능하나 서두르지 않음" → 10월 인상 베팅 축소
-💡 Trump, 알래스카 LNG 프로젝트에 한국 투자펀드 $54B 배정 발표 예정($200B 한국투자 패키지 일부)
-Workday 인력 2.5% 감원 발표
+<b>First Squawk + FinancialJuice</b> 💡 (속보 통합, 중복 제거)
+- 8월 근원PCE +0.2%(예상하회)·소비 1년래 최대폭 증가, 시장 10월 Fed 인상 확률 40%↓로 하향
+- Fed 감사국(IG), 코너스톤 청사 리노베이션(약 $2.4B, $1B 초과지출) 관련 파월 위법행위 없음으로 클리어
+- Kashkari: 연내 1회+2027년 1회 추가 인상 전망, "인플레 아직 3%대, AI 섹터 빼면 경기 부진 의문"
+- 美-韓 $22.3B 텍사스 가스발전 AI데이터센터 프로젝트 공식 발표, 韓 대미 관세 15% 유지 전망
+- Synopsys 투자자의날: FY27 매출 $11.10-11.20B 가이던스(컨센 $10.81B 상회), OpenAI와 GPT-Synopsys 파트너십
+- 美국방장관 헤그세스: 머스크·깅리치·러키가 신설 자율전투 프로젝트 주도, 주요 군기지 자체발전 추진
+- Anthropic IPO 서류: AI가 "자기보존적 행동·셧다운 저항·정보 은폐/조작" 가능성 명시
+- WTI 11월물 $90.42(+1.16%), Brent $103.53
 
-<b>Market Feed</b> — 기간 내 글 없음
+<b>루팡</b> 💡
+- Micron 어닝콜 Q&A 10포인트: 2027·28년 공급부족 2026보다 심화, 2027 생산량 75%+ 이미 커밋, 고객들 2031년 물량까지 확보 시도, HBM 수요 성장률 2028까지 DRAM 상회, 2027 HBM 가격 대폭 인상, FY27Q1 GM 86.25%가 연중 바닥(성과급 영향)
+- 삼성 파운드리·시스템LSI 올해 합산 영업손실 3.92조원(전년比 -41.8%), HBM4 베이스다이(4나노) 효과
+- 삼성 반도체 부사장: "2027년 D램 웨이퍼 10장 중 3장은 HBM용"
+- DDR5 16G 스팟가격 $57.9 사상최고(작년 8월 대비 +838%)
+- 앤스로픽 10년간 6개 파트너에 $5180억 AI인프라 투자 약정(80%는 취소불가) 유출 보도
 
-<b>루팡</b>
-💡 Meta, 소상공인용 AI 에이전트 'Muse for Small Business' 출시 / 트렌드포스 2027 HBM ASP +121% 전망, 8Hi 비중 확대 / Nvidia CPO 가속 + $150B 자사주매입 승인(Citi) / Nvidia 'DSX Ready' 인증 1차기업: 테슬라·히타치에너지·LG엔솔
+<b>P Equity Research</b> 💡
+- Micron 콜: "2027·28년 NAND/DRAM 공급 계속 타이트", SCA 26건 체결(2030년까지 매출 35%+), 로봇 등 물리적AI가 신규 메모리 수요 동력
+- BofA: 하이퍼스케일러 capex, RPO 대비 방어 가능(MSFT RPO/capex 100%, ORCL 229%) — 단 Anthropic/OpenAI 지불능력이 변수
+- DRAM/NAND 마진 사이클, 2023-28E 각각 91%/87%로 역대 최고 전망
+- AMD-Marvell TPU v10 협업설(AVGO 경쟁), FC-BGA 공급부족 2028년 32.6%까지 심화 전망(미래에셋)
 
-<b>P Equity Research</b>
-💡 Deutsche Bank: SpaceX 5개 뉴클라우드 딜 연 $54.5B 가치 추산 / HBM ASP +121%(TrendForce) / Nvidia VR200 NVL72 2027 수요 8만랙 전망(전문가) / CPO·OCS 2027 시장 확대(Nomura·UBS)
-
-<b>북극성</b>
-💡 마이클 버리, AI버블 붕괴 베팅 확대 — 마이크론·네비우스·SOXX·팔란티어 풋옵션 신규/확대
-💡 GPT-6.1 Sol 공개(저가·고성능), OpenAI 새 에이전트 'Dot' 라이브데모 중 오작동
-💡 HBM ASP 내년 +121% 전망 / ChatGPT Pro $200 재개하되 API환산 제공량은 절반으로 축소
-증권사 프리뷰: 삼성전자 3Q 영업이익 103.6조원, SK하이닉스 3Q 매출 89.5조·영업익 70.1조 추정(환율 하향 조정 영향)
+<b>북극성</b> 💡
+- 삼성 파운드리 4나노 베이스다이+HBM4로 적자 41.8%↓(3.92조원), 3Q HBM4 매출 전분기 3배·하반기 HBM 매출 60%+
+- Micron FY26Q4 매출 $542억(+379%YoY), 조정영업이익률 82.3%(작년 35%)
+- 구글 Gemini4 Argon 공개, 젠슨 황 "33년간 매일 '망하기까지 30일' 마음가짐" 발언
+- Arthur Hayes 연말 ETH $10,000 전망, DDR5 스팟가 사상최고, 앤스로픽 $5180억 인프라 투자 유출 기사
 
 <b>Nuradu</b>
-미 전략비축유 방출 우려 코멘트, 소비자신뢰지수 급락/고용지표 둔화 언급
-젠슨 황: AI모델 증류는 "도둑질 아닌 경쟁" 발언 소개 / Anthropic 2025 순손실 $420억 中 $340억은 지분평가 회계상 손실이라는 분석 공유
-개별종목($EROC $BB $FRVO $GLW) 짧은 코멘트, 팔로워 이벤트 잡담
+- Micron 어닝콜 반응: "2030년까지 팔 물량 없음, 엔비디아와 차세대 HBM 개발중", 직원 성과급이 마진에 영향 지적
+- 구글 Gemini4 내부 평가 엇갈림 보도에 나스닥 급락 언급
+- Redwire-Sophia Space 우주 데이터센터 인프라 MOU($RDW), 구글 Project Suncatcher 첫 우주테스트 예고
+- 백악관 AI 안전 가이드라인 4단계 요약(내부통제/전담팀/외부감사/이사회 독립위원회)
+- 9월 중화권 증시 결산: 中·홍 기술주 급락, 대만 나홀로 사상최고
 
 <b>개빈 베이커</b>
-Super Intelligence 런칭 패널 백스테이지 사진 공유, Cognition 성장수치에 "인상적" 코멘트
+- 슈퍼인텔리전스 관련 백악관 행사 패널 백스테이지 사진 공유(영상 추후 게시 예고)
 
-<b>안드레 카파시</b> — 기간 내 글 없음
+<b>Semiconductor Insider</b> 💡
+- SK하이닉스, 컨벤셔널 D램 패키징 외주 WINPAC 4년만에 재개(월 4400만→5000만개), 삼성·SK하이닉스 동시 수주
+- Micron FQ4 실적 프리뷰: 5분기 연속 가이던스 상회 기록, 이번엔 서프라이즈 폭 축소 전망했으나 실제로는 큰 폭 비트
+- 소비자向 NAND(512Gb TLC 웨이퍼) $19.40로 약세 지속, HBM/서버 D램과 디커플링
+- 엔비디아 Rubin Ultra 스위치트레이 PCB에 HC CCL 테스트(제조수율 목적), MediaTek TPU v9 패키징 전량 인텔 EMIB-T向 확인(목표가 상향)
 
-<b>Semiconductor Insider</b>
-💡 DRAM/NAND 총마진 사상 최고(91%/87%, Bernstein) — 2028 정상화 전망치도 역대 최고 상회
-💡 삼성전자, HBM이 2027 DRAM 웨이퍼 생산능력의 30%까지 확대 전망(현 20%) / SK하이닉스, TSMC OIP서 HBM4E 48GB 스택 공개
-Intel EMIB-T, 2028년 TPU 250만개 지원 가능(Morgan Stanley) / AMD 서버CPU 시장 TAM 2030년 $170~220B 전망(BofA·UBS)
+그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, Anthropic, Market Feed, 안드레 카파시
 
-그 외: 글 없음 — 마크 저커버그, 다리오 아모데이, Market Feed, 안드레 카파시
+⚠️ <i>요약 누락(원문엔 글 있음): 마크 저커버그</i>
