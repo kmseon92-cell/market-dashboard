@@ -1,47 +1,25 @@
 {
   "quotes": {
-    "NQ=F": {
-      "price": 30723.75,
-      "change": 25.0,
-      "pct": 0.08
-    },
-    "CL=F": {
-      "price": 93.23,
-      "change": 2.81,
-      "pct": 3.11
-    },
-    "JPY=X": {
-      "price": 158.2,
-      "change": 0.81,
-      "pct": 0.51
-    },
-    "^TNX": {
-      "price": 5.236,
-      "change": -0.057,
-      "pct": -1.0769
-    },
-    "^TYX": {
-      "price": 5.601,
-      "change": -0.038,
-      "pct": -0.6739
-    },
     "DX-Y.NYB": {
       "price": 102.158,
-      "change": 0.707,
+      "change": 0.708,
       "pct": 0.7
-    },
-    "^VIX": {
-      "price": 16.6,
-      "change": 0.26,
-      "pct": 1.59
     }
   },
-  "errors": [],
-  "fetched_at": "2026-10-02T03:18:44+09:00",
-  "jpy_carry": {
-    "peak_3mo": 163.86,
-    "warn_level": 158.95,
-    "drop_pct": -3.46,
-    "warning": true
-  }
+  "errors": [
+    "cnbc: timeout: The read operation timed out",
+    "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
+    "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden",
+    "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden",
+    "^TNX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "^TNX: investing: https://uk.investing.com/rates-bonds/u.s.-10-year-bond-yield: HTTPError: HTTP Error 403: Forbidden",
+    "^TYX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "^TYX: investing: https://uk.investing.com/rates-bonds/u.s.-30-year-bond-yield: HTTPError: HTTP Error 403: Forbidden",
+    "^VIX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "^VIX: investing: https://uk.investing.com/indices/volatility-s-p-500: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-10-02T03:24:03+09:00"
 }
