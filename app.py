@@ -2204,36 +2204,65 @@ def annotate_us(content: str) -> str:
     return US_FULL_LINE_RE.sub(repl, content)
 
 
+NEW_HIGH_RE = re.compile(
+    r'📈\s*<b>52주 신고가[^\n]*\n.*?(?=\n🚀|\n총 |\Z)', re.DOTALL,
+)
+REPORT_DATE_RE = re.compile(r'📅\s*([\d-]+)')
+
+
+def split_new_high(content: str) -> tuple[str, str]:
+    """마감시황 리포트 → (52주 신고가 섹션, 나머지). 섹션 없으면 ('', 원문)"""
+    m = NEW_HIGH_RE.search(content)
+    if not m:
+        return "", content
+    rest = content[:m.start()] + content[m.end():]
+    return m.group(0).strip(), re.sub(r'\n{3,}', '\n\n', rest)
+
+
+def render_report_card(content: str, kind: str) -> None:
+    """kind: kr(한국 종목 주석) / us(미국 종목 주석) / plain"""
+    if kind == "kr":
+        # 종목 간 한 줄 띄우기 (차트 때문에 조밀해 보여서)
+        content = re.sub(r'\n(\s*<b>[^<]+</b>\s*\(\d{6}\))', r'\n\n\1', content)
+        content = annotate_kr(content)
+    elif kind == "us":
+        content = re.sub(r'\n(\s*<b>[A-Z]{1,5}</b>\s+[A-Z])', r'\n\n\1', content)
+        content = annotate_us(content)
+    # 텔레그램 HTML(<b>) 그대로 렌더, 줄바꿈은 <br>로 변환
+    rendered = content.replace("\n", "<br>")
+    st.markdown(
+        f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
+        f'font-size:1.05rem;line-height:1.7;color:#000;">'
+        f'{rendered}</div>',
+        unsafe_allow_html=True,
+    )
+
+
+reports = {fname: load_report(fname) for _, fname in REPORT_FILES}
+kr_high, reports["kr_market_close.md"] = split_new_high(reports["kr_market_close.md"])
+us_high, reports["us_market_close.md"] = split_new_high(reports["us_market_close.md"])
+
 report_cols = st.columns(3)
 for col, (title, fname) in zip(report_cols, REPORT_FILES):
     with col:
         st.markdown(f"#### {title}")
-        content = load_report(fname)
-        if "kr_market_close" in fname:
-            # 종목 간 한 줄 띄우기 (차트 때문에 조밀해 보여서)
-            content = re.sub(
-                r'\n(\s*<b>[^<]+</b>\s*\(\d{6}\))',
-                r'\n\n\1',
-                content,
-            )
-        if "kr_market_close" in fname or "bumgorae" in fname:
-            content = annotate_kr(content)
-        elif "us_market_close" in fname:
-            # 종목 간 한 줄 띄우기
-            content = re.sub(
-                r'\n(\s*<b>[A-Z]{1,5}</b>\s+[A-Z])',
-                r'\n\n\1',
-                content,
-            )
-            content = annotate_us(content)
-        # 텔레그램 HTML(<b>) 그대로 렌더, 줄바꿈은 <br>로 변환
-        rendered = content.replace("\n", "<br>")
-        st.markdown(
-            f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:14px;'
-            f'font-size:1.05rem;line-height:1.7;color:#000;">'
-            f'{rendered}</div>',
-            unsafe_allow_html=True,
-        )
+        kind = "us" if "us_market_close" in fname else "kr"
+        render_report_card(reports[fname], kind)
+
+st.divider()
+
+# 52주 신고가 (마감시황 리포트에서 분리)
+st.subheader("📈 52주 신고가")
+high_cols = st.columns(2)
+for col, (title, src, section, kind) in zip(high_cols, [
+    ("🇰🇷 국내", "kr_market_close.md", kr_high, "kr"),
+    ("🇺🇸 미국", "us_market_close.md", us_high, "us"),
+]):
+    with col:
+        dm = REPORT_DATE_RE.search(_report_text(src) or "")
+        st.markdown(f"#### {title}" + (f" <small>({dm.group(1)})</small>" if dm else ""),
+                    unsafe_allow_html=True)
+        render_report_card(section or "_신고가 종목 없음_", kind)
 
 st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
