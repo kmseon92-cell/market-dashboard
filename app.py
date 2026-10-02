@@ -2219,15 +2219,17 @@ def split_new_high(content: str) -> tuple[str, str]:
     return m.group(0).strip(), re.sub(r'\n{3,}', '\n\n', rest)
 
 
-def render_report_card(content: str, kind: str) -> None:
-    """kind: kr(한국 종목 주석) / us(미국 종목 주석) / plain"""
+def annotate_report(content: str, kind: str) -> str:
+    """kind: kr(한국 종목 주석) / us(미국 종목 주석)"""
     if kind == "kr":
         # 종목 간 한 줄 띄우기 (차트 때문에 조밀해 보여서)
         content = re.sub(r'\n(\s*<b>[^<]+</b>\s*\(\d{6}\))', r'\n\n\1', content)
-        content = annotate_kr(content)
-    elif kind == "us":
-        content = re.sub(r'\n(\s*<b>[A-Z]{1,5}</b>\s+[A-Z])', r'\n\n\1', content)
-        content = annotate_us(content)
+        return annotate_kr(content)
+    content = re.sub(r'\n(\s*<b>[A-Z]{1,5}</b>\s+[A-Z])', r'\n\n\1', content)
+    return annotate_us(content)
+
+
+def render_report_card(content: str) -> None:
     # 텔레그램 HTML(<b>) 그대로 렌더, 줄바꿈은 <br>로 변환
     rendered = content.replace("\n", "<br>")
     st.markdown(
@@ -2242,27 +2244,31 @@ reports = {fname: load_report(fname) for _, fname in REPORT_FILES}
 kr_high, reports["kr_market_close.md"] = split_new_high(reports["kr_market_close.md"])
 us_high, reports["us_market_close.md"] = split_new_high(reports["us_market_close.md"])
 
-report_cols = st.columns(3)
+
+def _new_high_part(flag: str, src: str, section: str, kind: str) -> str:
+    """신고가 카드의 국가별 블록: 헤더(국기+리포트 날짜) + 종목"""
+    dm = REPORT_DATE_RE.search(_report_text(src) or "")
+    date = f" ({dm.group(1)})" if dm else ""
+    if not section:
+        return f"{flag} <b>52주 신고가</b>{date}\n신고가 종목 없음"
+    head, _, body = section.partition("\n")
+    return f"{flag} {head.replace('📈', '').strip()}{date}\n" + annotate_report(body, kind)
+
+
+report_cols = st.columns(4)
 for col, (title, fname) in zip(report_cols, REPORT_FILES):
     with col:
         st.markdown(f"#### {title}")
         kind = "us" if "us_market_close" in fname else "kr"
-        render_report_card(reports[fname], kind)
-
-st.divider()
-
-# 52주 신고가 (마감시황 리포트에서 분리)
-st.subheader("📈 52주 신고가")
-high_cols = st.columns(2)
-for col, (title, src, section, kind) in zip(high_cols, [
-    ("🇰🇷 국내", "kr_market_close.md", kr_high, "kr"),
-    ("🇺🇸 미국", "us_market_close.md", us_high, "us"),
-]):
-    with col:
-        dm = REPORT_DATE_RE.search(_report_text(src) or "")
-        st.markdown(f"#### {title}" + (f" <small>({dm.group(1)})</small>" if dm else ""),
-                    unsafe_allow_html=True)
-        render_report_card(section or "_신고가 종목 없음_", kind)
+        render_report_card(annotate_report(reports[fname], kind))
+with report_cols[3]:
+    # 52주 신고가 — 국내/미국 마감시황 리포트에서 분리해 한 카드로
+    st.markdown("#### 📈 52주 신고가")
+    render_report_card(
+        _new_high_part("🇰🇷", "kr_market_close.md", kr_high, "kr")
+        + "\n━━━━━━━━━━━━━━━\n"
+        + _new_high_part("🇺🇸", "us_market_close.md", us_high, "us")
+    )
 
 st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
