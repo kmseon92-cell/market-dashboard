@@ -1,45 +1,57 @@
-<!-- updated: 2026-10-02 06:30 -->
+<!-- updated: 2026-10-03 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-02
+📅 2026-10-03
 ━━━━━━━━━━━━━━━
-다우 +0.04% | 나스닥 +0.04% | S&P500 +0.19% | 러셀2000 +0.35% | 필반도체 +1.59% | WTI $92.91 | 환율 1,360원
+다우 +0.49% | 나스닥 +1.19% | S&P500 +0.73% | 러셀2000 +0.94% | 필반도체 +2.40% | WTI $91.26 | 환율 1,343원
 
-📈 <b>52주 신고가 (9종목)</b>
+📈 <b>52주 신고가 (17종목)</b>
 
 <b>〈기술〉</b>
+  <b>AMD</b> Advanced Micro Devices Inc
+    $633.91 (+3.0%) | $1.0T
   <b>CRWD</b> Crowdstrike Holdings Inc
-    $266.09 (+0.5%) | $272.5B
+    $270.04 (+1.5%) | $276.5B
+  <b>NVDA</b> NVIDIA Corp
+    $233.95 (+1.3%) | $5.6T
+  <b>PANW</b> Palo Alto Networks Inc
+    $403.24 (+1.8%) | $329.9B
+  <b>ARW</b> Arrow Electronics Inc
+    $242.01 (+4.5%) | $12.3B
+  <b>ASX</b> ASE Technology Holding CoLtd ADR
+    $47.45 (+6.1%) | $104.3B
   <b>DT</b> Dynatrace Inc
-    $59.26 (+2.6%) | $17.1B
+    $59.32 (+0.1%) | $17.1B
+  <b>FTNT</b> Fortinet Inc
+    $180.95 (+1.2%) | $132.8B
+  <b>HPE</b> Hewlett Packard Enterprise Co
+    $69.33 (+7.4%) | $92.0B
   <b>KEYS</b> Keysight Technologies Inc
-    $373.88 (+2.7%) | $63.6B
+    $384.64 (+2.9%) | $65.5B
+  <b>LITE</b> Lumentum Holdings Inc
+    $1,085.42 (+3.8%) | $97.4B
+  <b>NTAP</b> Netapp Inc
+    $226.27 (+5.2%) | $44.4B
   <b>OKTA</b> Okta Inc
-    $212.63 (+1.7%) | $37.2B
+    $211.49 (-0.5%) | $37.0B
   <b>P</b> Everpure Inc
-    $134.13 (+2.6%) | $44.7B
+    $140.14 (+4.5%) | $46.7B
   <b>RBRK</b> Rubrik Inc
-    $115.40 (+0.8%) | $23.9B
+    $118.58 (+2.8%) | $24.6B
+  <b>SMTC</b> Semtech Corp
+    $194.88 (+4.4%) | $18.2B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.50 (+0.1%) | $58.9B
-  <b>TWLO</b> Twilio Inc
-    $301.27 (+3.0%) | $46.3B
+    $99.41 (-0.1%) | $61.6B
+
+🚀 <b>8% 이상 급등 (3종목)</b>
+
+<b>〈산업재〉</b>
+  <b>FPS</b> Forgent Power Solutions Inc
+    $40.35 (+8.1%) | $12.3B
+  <b>INIO</b> Innio NV
+    $19.99 (+9.3%) | $15.0B
 
 <b>〈헬스케어〉</b>
-  <b>TWST</b> Twist Bioscience Corp
-    $188.05 (-2.7%) | $12.4B
-
-🚀 <b>8% 이상 급등 (5종목)</b>
-
-<b>〈기술〉</b>
-  <b>ACN</b> Accenture plc
-    $212.30 (+15.8%) | $129.9B
-  <b>COHR</b> Coherent Corp
-    $319.19 (+10.9%) | $62.5B
-  <b>FICO</b> Fair Isaac Corp
-    $661.75 (+11.7%) | $14.3B
-  <b>GWRE</b> Guidewire Software Inc
-    $155.32 (+8.9%) | $12.7B
-  <b>SNPS</b> Synopsys Inc
-    $490.54 (+12.8%) | $94.0B
+  <b>IBRX</b> ImmunityBio Inc
+    $10.28 (+10.8%) | $10.9B
 
 
