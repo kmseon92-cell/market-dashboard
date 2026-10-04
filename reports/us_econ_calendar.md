@@ -1,15 +1,10 @@
-<!-- updated: 2026-10-02 06:01 -->
+<!-- updated: 2026-10-05 06:06 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-02 06:01 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
+기준: 2026-10-05 06:06 KST · 출처: ForexFactory (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
 
-<b>10/02 (금) · 3건</b>
-  21:30 ★★★ Average Hourly Earnings m/m 예상:0.3% 이전:0.3%
-  21:30 ★★★ Non-Farm Employment Change 예상:89K 이전:162K
-  21:30 ★★★ Unemployment Rate 예상:4.1% 이전:4.1%
-
-<b>10/05 (월) · 0건</b>
-  — 발표 예정 없음
+<b>10/05 (월) · 1건</b>
+  23:00 ★★ ISM Services PMI 예상:55.1 이전:55.4
 
 <b>10/06 (화) · 0건</b>
   — 발표 예정 없음
@@ -17,5 +12,10 @@
 <b>10/07 (수) · 0건</b>
   — 발표 예정 없음
 
-<b>10/08 (목) · 0건</b>
-  — 발표 예정 없음
+<b>10/08 (목) · 2건</b>
+  03:00 ★★★ FOMC Meeting Minutes
+  21:30 ★★ Unemployment Claims 예상:200K 이전:197K
+
+<b>10/09 (금) · 2건</b>
+  23:00 ★★ Prelim UoM Consumer Sentiment 예상:47.6 이전:47.8
+  23:00 ★★ Prelim UoM Inflation Expectations 이전:4.6%
