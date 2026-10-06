@@ -1,63 +1,64 @@
-<!-- updated: 2026-10-06 08:17 -->
-🐦 <b>X 데일리 다이제스트</b> (10/06)
+<!-- updated: 2026-10-07 08:16 -->
+🐦 <b>X 데일리 다이제스트</b> (10/07)
 
-<b>📰 속보 종합 (First Squawk·FinancialJuice, 중복 제거)</b>
-• 💡 유가: WTI $89.43(-1.8%), 브렌트 $100.32. 사우디 아람코 아시아향 아랍라이트 가격 벤치마크 대비 -$5(6년래 최저) <a href="https://x.com/FirstSquawk/status/2107229704805929409">원문</a>
-• 💡 채권·증시: 美 10년물 5.31%(+4bp), 장기물 다십년래 고점 / 나스닥100 사상 최고, S&amp;P500 7,773(+0.66%) <a href="https://x.com/FirstSquawk/status/2107206700315099147">원문</a>
-• 💡 월가 은행단, 브로드컴·앤트로픽 칩 금융 $60B(역대 최대, FT) <a href="https://x.com/FirstSquawk/status/2107216054418284678">원문</a>
-• 💡 뉴욕연은, 대형은행 사모신용 대출 익스포저 점검(Semafor) <a href="https://x.com/FirstSquawk/status/2107214112661045573">원문</a>
-• 💡 ISM 서비스 가격지수 74.0, 2022년 7월 이후 최고 <a href="https://x.com/FinancialJuice/status/2107108651337171329">원문</a>
-• 이란: 미 중부사령부 해상봉쇄 후 상선 130척 우회 <a href="https://x.com/FirstSquawk/status/2107230051460907494">원문</a> / 재무부, 이란 거래 외국은행 제재 경고 <a href="https://x.com/FinancialJuice/status/2107193746580443408">원문</a>
+<b>📰 속보 (FirstSquawk · FinancialJuice)</b>
+💡 S&amp;P500 사상 최고 마감(7,820.07), 나스닥 2거래일 연속 신고가 · 美 10년물 5.28%(-3bp), WTI $89.44 · Brent $100.58 <a href="https://x.com/FirstSquawk/status/2107569062444499229">원문</a>
+💡 美 3년물 입찰 4.932%, 2006년 이후 최고 금리 · 연준 Schmid "인플레 해결 갈 길 멀다, AI가 주요 인플레 요인" <a href="https://x.com/financialjuice/status/2107525012844642547">원문</a>
+💡 SpaceX, Apollo 주도 $40bn 조달 추진(FT) — 엔비디아 칩 구매 목적 <a href="https://x.com/financialjuice/status/2107599422502695048">원문</a>
+💡 BOJ 신임 사토 "점진적 금리인상 동의, 사전에 정한 인상 속도 없음" · 일본 단観 Tankan 제조업 22(9월 21에서 상승)
+💡 베센트 "이란, 8/25 이후 원유 선적 0배럴" · 트럼프 "이란 마무리 곧, 유가는 전쟁 끝나면 하락" <a href="https://x.com/FirstSquawk/status/2107572323507208625">원문</a>
+💡 FTSE Russell, KRX 시장경보제도·결제자금 요건 모니터링 계속 발표 — 국내 시장 관련 <a href="https://x.com/FirstSquawk/status/2107574130342268963">원문</a>
 
-<b>일론 머스크</b> (23개)
-• 💡 Grok 4.7 아마존 베드록·구글 엔터프라이즈 플랫폼 출시(API $2/$6 per 1M) <a href="https://x.com/elonmusk/status/2107030436103045282">원문</a>
-• 테슬라 네덜란드 9월 신차 시장 1·2위(모델Y 2,078대) (RT) <a href="https://x.com/elonmusk/status/2107077372637749687">원문</a>
+<b>🚀 @elonmusk (23개, RT 다수)</b>
+💡 SpaceX 연결성 로드맵: 달 레이저 메시 → 화성, "LEO 안전 확보가 선행" (Nicolls 발언) <a href="https://x.com/elonmusk/status/2107554670004895890">원문</a>
+Grok 4.7 VulcanBench Frontier v4 1~3위 독점 주장, Grok Bot 홍보 다수 <a href="https://x.com/elonmusk/status/2107415031667392567">원문</a>
 
-<b>OpenAI</b> (3개)
-• 💡 EU AI법 대응 ChatGPT·Codex 텍스트 워터마크 "수주 내" 적용, API는 모델별 선택. 탐지기는 승인 연구자만, 재작성·번역으로 제거 가능 인정 <a href="https://x.com/OpenAI/status/2107164650249101695">원문</a>
+<b>🤖 Anthropic (@AnthropicAI)</b>
+Cyber Verification Program 확대 — 검증된 보안 전문가에게 Mythos 5.1·Opus 5.5·Sonnet 5.5 방어용 접근, 승인된 공격·레드팀 티어 신설 <a href="https://x.com/AnthropicAI/status/2107546569654636883">원문</a>
 
-<b>Tae Kim</b> (14개)
-• 💡 Bernstein: 아이폰18 프로 미국 수요 전년비 저한자릿수 감소, 분기 초 매출 "소폭 하회" 추적, 메모리 가격 급등이 마진 압박 <a href="https://x.com/firstadopter/status/2107237928069960152">원문</a>
-• 💡 퀄컴, 화웨이와 5G·AI 특허 계약에서 순지급자 전환 — 부정적 평가 <a href="https://x.com/firstadopter/status/2107040601719878095">원문</a>
-• 엔비디아 4분기 연속 가속 성장, 내년 매출 +70% 가이던스 언급 <a href="https://x.com/firstadopter/status/2107132508785783032">원문</a>
+<b>🧠 OpenAI (@OpenAI)</b>
+내부 프론티어 모델이 낸 수학 신규 결과 공개, IAS 자문그룹 권고를 반영해 릴리스 <a href="https://x.com/OpenAI/status/2107596713791767021">원문</a>
 
-<b>Hardik Shah</b> (60개, 애널리스트 PT·딜 속보 위주)
-• 💡 OpenAI, UAE 펀드·블랙록 참여 $30B 라운드 협상(Bloomberg) <a href="https://x.com/AIStockSavvy/status/2107215195827536148">원문</a>
-• 💡 노키아 CEO "공급 제약만 없으면 데이터센터 2배 빠르게 구축 가능, 과잉 건설 아님" <a href="https://x.com/AIStockSavvy/status/2107242685161427236">원문</a>
-• 기타: DayOne 데이터센터 美 IPO 신청(매출 $512M), 메타·MSFT 앤트로픽 Claude 사용 축소, Synopsys $1B 자사주 매입
+<b>💬 Tae Kim (@firstadopter, 12개)</b>
+💡 "센티먼트 과열, 조심하라" · AI칩 랠리 옹호(AMD 8월 이후 +36%), BofA 비판 <a href="https://x.com/firstadopter/status/2107477983103758650">원문</a>
+💡 유럽 재정위기 우려(프랑스), 트럼프 이란 전쟁발 금리 상승 · OpenAI 300억달러 라운드 협의(UAE펀드·BlackRock·Thrive·a16z)
 
-<b>dnap</b> (3개)
-• 올트먼 AI 지정학: 미국 주도하되 모델 가중치 이전 등으로 전 세계 혜택 필요, 칩 흐름 규제는 최선 아님 <a href="https://x.com/dnapway/status/2107187102245146818">원문</a>
+<b>🔎 Hardik Shah (@AIStockSavvy, 60개)</b>
+💡 SpaceX $40bn 조달(Apollo) · TSMC 美·동남아 AI 투자 확대 · Lambda $4bn @ $14.5bn · AMD ATH <a href="https://x.com/AIStockSavvy/status/2107600618193842189">원문</a>
+💡 $FRVO 공매도 리포트(Morpheus) · $ZIM 가이던스 상향(EBITDA 30%↑) · $NVTS Claros 인수 완료 · $MSFT JPM Buy PT $625
+Anthropic Claude → Google Docs·Sheets·Slides 연동 공개
 
-<b>Jukan</b> (12개)
-• 💡 UBS: 브로드컴 TPU v9 유지, 2nm v10이 2029년 TPU 물량 대다수 — "AVGO 이탈" 베어케이스 반박 <a href="https://x.com/jukan05/status/2107085937582710946">원문</a>
-• 💡 TrendForce: ABF 기판 3Q26~4Q27 QoQ 10~15% 인상, HDD 리드타임 2027말까지 지속 <a href="https://x.com/jukan05/status/2107070303323189434">원문</a>
-• 💡 TSMC 대만 상장주 사상 최고 / 中 YMTC "NAND 공급 부족 3년 지속" <a href="https://x.com/jukan05/status/2106940458761089227">원문</a>
+<b>🧬 dnap (@dnapway, 12개)</b>
+💡 Moonshot 프리IPO $50B 밸류 마감 임박, 홍콩 IPO 2027년 1Q 목표 <a href="https://x.com/dnapway/status/2107297495521038421">원문</a>
+Huberman 팟캐스트 공유("AI 랩은 전부 바이오텍이 된다") 외 잡담
 
-<b>Pequity Research</b> (29개)
-• 💡 BofA: 반도체 패키지 기판 S/D 2026 -6% → 2028 -10%로 악화 <a href="https://x.com/pequityresearch/status/2107235130146431472">원문</a>
-• 💡 MS: 추론 지출 CAGR 42%(2025~30E), 훈련보다 빠른 성장 <a href="https://x.com/pequityresearch/status/2107172215456448817">원문</a>
-• 💡 MSFT 내부 Claude 지출 1/3 감축, Meta Claude 사용자 6만→3만(The Information) <a href="https://x.com/pequityresearch/status/2107180231198974010">원문</a>
+<b>🌏 Jukan (@jukan05, 12개)</b>
+💡 HDD: 시게이트 vs 도시바, TDK HDD 헤드 사업 인수 경쟁 · WDC 태국 아유타야 홍수 리스크 <a href="https://x.com/jukan05/status/2107344491921502439">원문</a>
+💡 DeepSeek ≥$12B 펀딩(목표 RMB 100B), 2027 초 IPO 목표 · 도쿄일렉 FY27 영업익 ¥1T 전망(닛케이, +60%) <a href="https://x.com/jukan05/status/2107338201044263180">원문</a>
+💡 한국 JNTC 유리기판, 내년부터 Broadcom 공급 보도 · B200 가격 급등
 
-<b>루팡</b> (33개)
-• 💡 TSMC 2027Q1 선단 웨이퍼 6~8% 추가 인상, 2nm 주문 15~20% 상향 <a href="https://x.com/DrNHJ/status/2107082110628663584">원문</a>
-• 💡 난야테크 9월 매출 450억 대만달러 사상 최고, 3Q 매출 상반기 전체 초과 <a href="https://x.com/DrNHJ/status/2107011520819597741">원문</a>
-• 💡 Cantor, 엔비디아 비중확대·목표 $350 / 골드만: 2026말 美 데이터센터 용량 64GW(+5GW) <a href="https://x.com/DrNHJ/status/2107023946155446547">원문</a>
+<b>🇰🇷 루팡 (@DrNHJ, 40개)</b>
+💡 전력기기 3Q26 프리뷰(유안타): 6개사 영업익 5.46조(+44.6%, '27E), LS ELECTRIC·효성중공업 Top Pick, 가온전선 NR 신규 <a href="https://x.com/DrNHJ/status/2107606095128846844">원문</a>
+💡 산일전기 美 BESS 변압기 351억 계약(10/6 공시) · 한투 목표가 30만원 상향 · PENG 4Q 매출 +68%, FY27 가이던스 상향
+💡 Marvell 인베스터데이: TAM $400B(2030), FY28 매출 $20B 목표 · 애플라이드–인텔 EPIC센터 공동 R&amp;D
 
-<b>북극성</b> (6개)
-• 💡 DDR5 16G 현물 $58.07 사상 최고(2025.8 대비 +841%) <a href="https://x.com/PolarisLog/status/2107051080358211682">원문</a>
-• 💡 삼성 HBM4 Rubin향 퀄 완료, HBM4E 1st 진입 브링업 10월 시작 <a href="https://x.com/PolarisLog/status/2107100485350207693">원문</a>
+<b>🐺 북극성 (@PolarisLog, 20개)</b>
+💡 삼성 내년 HBM4 공급가 2배↑ 협상 중(KB 판가 +100%대, 트렌드포스 HBM 평균 +121%) <a href="https://x.com/PolarisLog/status/2107587719576814007">원문</a>
+💡 하나증권 "반도체 주가는 위안화에 달렸다" — 중국 메모리·로직 순수입 1,100억$ · 삼성 시스템LSI 차량용 AP(엑시노스 오토) 철수 보도
+Lisa Su 방한(7일), 젠슨 황 대신 매디슨 황 11/9~10 방한 확정
 
-<b>Nuradu</b> (10개)
-• 💡 DOE 최대 $42억 조건부 대출 → 직접 수혜는 VST(원전 출력증강 +433MW, Meta PPA 총 2,609MW). SMR 직접 수혜 아님 <a href="https://x.com/NURadu_/status/2107155294010941608">원문</a>
+<b>🏦 Nuradu (@NURadu_, 38개)</b>
+💡 SpaceX $40bn 조달 상세(은행대출 ~$10bn + IG채권 ~$30bn, 2027 목표) <a href="https://x.com/NURadu_/status/2107604954303389923">원문</a>
+💡 $BRUN 부스트런 5년 $526M AI클라우드 계약(GB300) · 엔비디아–Groq 200억달러 거래 소송(델라웨어)
+$SPCX CSA 매출 전망, $INIO $FRVO $BRUN 언급 · 나머지 잡담
 
-<b>Gavin Baker</b> (6개)
-• 💡 2027년 고속 트레이딩·사이버전은 저지연 SRAM칩(Groq 3 LPX·CS-4) 중심 전망, Jane Street 메가와트당 $2억 지불 보도 언급 <a href="https://x.com/GavinSBaker/status/2107114362833981692">원문</a>
+<b>📊 P Equity Research (@pequityresearch, 22개)</b>
+💡 Bernstein: 범용 DRAM ASP 2027년 3Q 정점 후 하락 전망 · UBS: 8월 MLCC ASP 삼성 +68% <a href="https://x.com/pequityresearch/status/2107503901255569902">원문</a>
+💡 Mirae: 2028 메모리 수급이 2027보다 타이트, 장기계약은 상승 가격 반영 · Lumentum CY28/29 LTA 가격 인상 여지 · DDR5 16G 스팟 ATH
 
-<b>Semiconductor Insider</b> (19개)
-• 💡 UBS: 브로드컴 v9는 3nm 멀티칩 대형화, 2nm v10은 2028말 출하 — N2 웨이퍼 미배정은 계약 취소 아님 <a href="https://x.com/SemiconductorsX/status/2107103451897622761">원문</a>
-• 💡 TSMC 2Q 매출 $402억(+34%), 2026 달러매출 성장률 40%↑ 상향, CAPEX $600~640억, 3·5nm 풀부킹 <a href="https://x.com/SemiconductorsX/status/2107097563459731863">원문</a>
-• 💡 마이크론 전략고객계약 26건(16→26), 약정 $320억, 2027 출하 75%↑ 배정 <a href="https://x.com/SemiconductorsX/status/2107004921967157497">원문</a>
-• 삼성 베트남 메모리 테스트 허브 건설(약 5.5조원), 하이엔드 스택은 국내 잔류 <a href="https://x.com/SemiconductorsX/status/2107109049062052118">원문</a>
+<b>🔬 Semiconductor Insider (@SemiconductorsX, 31개)</b>
+💡 MU FY26 FCF ~$59B, FY27·28 컨센 ~$140B·$168B <a href="https://x.com/SemiconductorsX/status/2107481964538397080">원문</a>
+💡 삼성 3Q 영업익 전망 105~109조(키오보·미래·SK증권 등) · UBS: 2027 TSMC N3 점유율 엔비디아 30%·애플 14% · AMAT–인텔 EPIC 협력
+💡 JNTC 2mm 유리기판 구리충전 수분 단축, 2028년 고객 물량 목표 (TheElec 인용)
 
-그 외: 글 없음 — 샘 올트먼, 다리오 아모데이, Anthropic, 마크 저커버그, Market Feed, 안드레 카파시
+그 외: 글 없음 — Sam Altman, Dario Amodei, Mark Zuckerberg, Market Feed, Gavin Baker, Karpathy
