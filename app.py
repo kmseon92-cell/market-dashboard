@@ -1423,6 +1423,69 @@ render_quotes()
 
 st.divider()
 
+def render_kr_pullback() -> None:
+    """신고가 대비 -15% 눌림 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
+    text = _report_text("kr_pullback15.md")
+    if text is None:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
+    head = re.search(r"📅[^\n]*", body)
+    if head:
+        st.caption(re.sub(r"</?b>", "", head.group(0)))
+    blocks = re.findall(r"(<b>〈[^〉]+〉[^\n]*</b>\n.*?)(?=\n<b>〈|\n총 |\Z)", body, flags=re.DOTALL)
+    if not blocks:
+        st.caption("조건에 맞는 종목 없음" if "없습니다" in body else "_데이터 파싱 실패_")
+        return
+    total = re.search(r"총 \d+종목", body)
+    if total:
+        st.caption(total.group(0))
+    cols = st.columns(4)
+    loads = [0] * 4
+    for b in blocks:  # 줄 수 기준으로 가장 짧은 단에 채워 높이 균형
+        i = loads.index(min(loads))
+        loads[i] += b.count("\n") + 2
+        with cols[i]:
+            b = re.sub(r"\s*\(\d{6}\)", "", b.strip())
+            st.markdown(
+                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+                f'margin-bottom:10px;font-size:0.9rem;line-height:1.6;color:#000;">'
+                f'{b.replace(chr(10), "<br>")}</div>',
+                unsafe_allow_html=True,
+            )
+
+
+def render_kr_new_high_list() -> None:
+    """국내 52주 신고가 — kr_market_close.md에서 섹터별 종목명만 뽑아 한 카드로 (일일 리포트 카드는 그대로)"""
+    text = _report_text("kr_market_close.md")
+    if text is None:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    m = re.search(r"📈\s*<b>52주 신고가[^\n]*\n(.*?)(?=\n🚀|\n총 |\Z)", text, flags=re.DOTALL)
+    dm = re.search(r"📅\s*([\d-]+)", text)
+    if dm:
+        st.caption(dm.group(1))
+    if not m:
+        st.caption("신고가 종목 없음")
+        return
+    lines = []
+    for sec, items in re.findall(r"<b>〈([^〉]+)〉</b>\n(.*?)(?=\n<b>〈|\Z)", m.group(1), flags=re.DOTALL):
+        names = re.findall(r"<b>([^<]+)</b>\s*\(\d{6}\)", items)
+        if names:
+            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(names))
+    st.markdown(
+        f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+        f'font-size:0.92rem;line-height:1.7;color:#000;">{"<br>".join(lines)}</div>',
+        unsafe_allow_html=True,
+    )
+
+
+st.subheader("📉 신고가 대비 -15% 눌림 (시총 5000억↑)")
+render_kr_pullback()
+st.markdown("##### 📈 국내 52주 신고가")
+render_kr_new_high_list()
+st.divider()
+
 # 미국증시 마감시황 한 줄 (us_market_close.md에서 추출)
 def extract_us_summary() -> str:
     text = _report_text("us_market_close.md")
@@ -2273,39 +2336,4 @@ with report_cols[3]:
 st.divider()
 
 
-def render_kr_pullback() -> None:
-    """신고가 대비 -15% 눌림 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
-    text = _report_text("kr_pullback15.md")
-    if text is None:
-        st.caption("_아직 업데이트 안 됨_")
-        return
-    body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
-    head = re.search(r"📅[^\n]*", body)
-    if head:
-        st.caption(re.sub(r"</?b>", "", head.group(0)))
-    blocks = re.findall(r"(<b>〈[^〉]+〉[^\n]*</b>\n.*?)(?=\n<b>〈|\n총 |\Z)", body, flags=re.DOTALL)
-    if not blocks:
-        st.caption("조건에 맞는 종목 없음" if "없습니다" in body else "_데이터 파싱 실패_")
-        return
-    total = re.search(r"총 \d+종목", body)
-    if total:
-        st.caption(total.group(0))
-    cols = st.columns(4)
-    loads = [0] * 4
-    for b in blocks:  # 줄 수 기준으로 가장 짧은 단에 채워 높이 균형
-        i = loads.index(min(loads))
-        loads[i] += b.count("\n") + 2
-        with cols[i]:
-            b = re.sub(r"\s*\(\d{6}\)", "", b.strip())
-            st.markdown(
-                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
-                f'margin-bottom:10px;font-size:0.9rem;line-height:1.6;color:#000;">'
-                f'{b.replace(chr(10), "<br>")}</div>',
-                unsafe_allow_html=True,
-            )
-
-
-st.subheader("📉 신고가 대비 -15% 눌림 (시총 5000억↑)")
-render_kr_pullback()
-st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
