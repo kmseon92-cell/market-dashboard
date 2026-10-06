@@ -1423,6 +1423,39 @@ render_quotes()
 
 st.divider()
 
+@st.cache_data(ttl=60)
+def fetch_kr_pcts(codes: tuple) -> dict:
+    """한국 종목코드 리스트 → {code: pct} (네이버 실시간)"""
+    if not codes:
+        return {}
+    import urllib.request, json
+    try:
+        q = ",".join(codes)
+        url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:{q}"
+        req = urllib.request.Request(
+            url,
+            headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
+        )
+        raw = urllib.request.urlopen(req, timeout=5).read().decode("euc-kr", "ignore")
+        data = json.loads(raw)
+        out = {}
+        for d in data["result"]["areas"][0]["datas"]:
+            pct = abs(float(d.get("cr", 0)))
+            if str(d.get("rf")) in ("4", "5"):
+                pct = -pct
+            out[d["cd"]] = pct
+        return out
+    except Exception:
+        return {}
+
+
+def _live_pct_span(pct) -> str:
+    if pct is None:
+        return ""
+    color = "#ef4444" if pct > 0 else ("#3b82f6" if pct < 0 else "#888")
+    return f' <span style="color:{color};font-weight:700;">{pct:+.2f}%</span>'
+
+
 def render_kr_pullback() -> None:
     """신고가 대비 -15% 이내 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
     text = _report_text("kr_pullback15.md")
@@ -1440,6 +1473,10 @@ def render_kr_pullback() -> None:
     total = re.search(r"총 \d+종목", body)
     if total:
         st.caption(total.group(0))
+    pcts = fetch_kr_pcts(tuple(sorted(set(re.findall(r"\((\d{6})\)", body)))))
+    blocks = [re.sub(r"(<b>[^<]+</b>)\s*\((\d{6})\)",
+                     lambda mm: mm.group(1) + _live_pct_span(pcts.get(mm.group(2))), b)
+              for b in blocks]
     cols = st.columns(4)
     loads = [0] * 4
     for b in blocks:  # 줄 수 기준으로 가장 짧은 단에 채워 높이 균형
@@ -1468,11 +1505,12 @@ def render_kr_new_high_list() -> None:
     if not m:
         st.caption("신고가 종목 없음")
         return
+    pcts = fetch_kr_pcts(tuple(sorted(set(re.findall(r"\((\d{6})\)", m.group(1))))))
     lines = []
     for sec, items in re.findall(r"<b>〈([^〉]+)〉</b>\n(.*?)(?=\n<b>〈|\Z)", m.group(1), flags=re.DOTALL):
-        names = re.findall(r"<b>([^<]+)</b>\s*\(\d{6}\)", items)
+        names = re.findall(r"<b>([^<]+)</b>\s*\((\d{6})\)", items)
         if names:
-            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(names))
+            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(n + _live_pct_span(pcts.get(c)) for n, c in names))
     st.markdown(
         f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
         f'font-size:0.92rem;line-height:1.7;color:#000;">{"<br>".join(lines)}</div>',
@@ -1949,32 +1987,6 @@ def load_report(fname: str) -> str:
 KR_LINE_RE = re.compile(r'<b>([^<]+)</b>\s*\((\d{6})\)')
 US_LINE_RE = re.compile(r'<b>([A-Z]{1,5})</b>\s+[A-Z]')
 US_FULL_LINE_RE = re.compile(r'(<b>([A-Z]{1,5})</b>\s+[A-Z][^\n]*)')
-
-
-@st.cache_data(ttl=60)
-def fetch_kr_pcts(codes: tuple) -> dict:
-    """한국 종목코드 리스트 → {code: pct} (네이버 실시간)"""
-    if not codes:
-        return {}
-    import urllib.request, json
-    try:
-        q = ",".join(codes)
-        url = f"https://polling.finance.naver.com/api/realtime?query=SERVICE_ITEM:{q}"
-        req = urllib.request.Request(
-            url,
-            headers={"User-Agent": "Mozilla/5.0", "Referer": "https://finance.naver.com/"},
-        )
-        raw = urllib.request.urlopen(req, timeout=5).read().decode("euc-kr", "ignore")
-        data = json.loads(raw)
-        out = {}
-        for d in data["result"]["areas"][0]["datas"]:
-            pct = abs(float(d.get("cr", 0)))
-            if str(d.get("rf")) in ("4", "5"):
-                pct = -pct
-            out[d["cd"]] = pct
-        return out
-    except Exception:
-        return {}
 
 
 @st.cache_data(ttl=300)
