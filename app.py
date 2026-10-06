@@ -2271,4 +2271,41 @@ with report_cols[3]:
     )
 
 st.divider()
+
+
+def render_kr_pullback() -> None:
+    """신고가 대비 -15% 눌림 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
+    text = _report_text("kr_pullback15.md")
+    if text is None:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    body = re.sub(r"^<!--.*?-->\s*", "", text, flags=re.DOTALL)
+    head = re.search(r"📅[^\n]*", body)
+    if head:
+        st.caption(re.sub(r"</?b>", "", head.group(0)))
+    blocks = re.findall(r"(<b>〈[^〉]+〉[^\n]*</b>\n.*?)(?=\n<b>〈|\n총 |\Z)", body, flags=re.DOTALL)
+    if not blocks:
+        st.caption("조건에 맞는 종목 없음" if "없습니다" in body else "_데이터 파싱 실패_")
+        return
+    total = re.search(r"총 \d+종목", body)
+    if total:
+        st.caption(total.group(0))
+    cols = st.columns(4)
+    loads = [0] * 4
+    for b in blocks:  # 줄 수 기준으로 가장 짧은 단에 채워 높이 균형
+        i = loads.index(min(loads))
+        loads[i] += b.count("\n") + 2
+        with cols[i]:
+            b = re.sub(r"\s*\(\d{6}\)", "", b.strip())
+            st.markdown(
+                f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+                f'margin-bottom:10px;font-size:0.9rem;line-height:1.6;color:#000;">'
+                f'{b.replace(chr(10), "<br>")}</div>',
+                unsafe_allow_html=True,
+            )
+
+
+st.subheader("📉 신고가 대비 -15% 눌림 (시총 5000억↑)")
+render_kr_pullback()
+st.divider()
 st.caption("데이터: Yahoo Finance · 지연 시세일 수 있음")
