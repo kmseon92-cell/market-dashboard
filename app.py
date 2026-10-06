@@ -1424,7 +1424,7 @@ render_quotes()
 st.divider()
 
 def render_kr_pullback() -> None:
-    """신고가 대비 -15% 눌림 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
+    """신고가 대비 -15% 이내 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
     text = _report_text("kr_pullback15.md")
     if text is None:
         st.caption("_아직 업데이트 안 됨_")
@@ -1480,7 +1480,7 @@ def render_kr_new_high_list() -> None:
     )
 
 
-st.subheader("📉 신고가 대비 -15% 눌림 (시총 5000억↑)")
+st.subheader("📉 신고가 대비 -15% 이내 (시총 5000억↑)")
 render_kr_pullback()
 st.markdown("##### 📈 국내 52주 신고가")
 render_kr_new_high_list()
