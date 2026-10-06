@@ -1,121 +1,117 @@
-<!-- updated: 2026-10-06 06:30 -->
+<!-- updated: 2026-10-07 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-06
+📅 2026-10-07
 ━━━━━━━━━━━━━━━
-다우 +0.18% | 나스닥 +1.05% | S&P500 +0.66% | 러셀2000 +0.50% | 필반도체 +0.27% | WTI $89.30 | 환율 1,342원
+다우 +0.49% | 나스닥 +0.45% | S&P500 +0.58% | 러셀2000 -0.59% | 필반도체 +0.34% | WTI $89.91 | 환율 1,337원
 
-📈 <b>52주 신고가 (31종목)</b>
+📈 <b>52주 신고가 (38종목)</b>
 
 <b>〈기술〉</b>
+  <b>AMD</b> Advanced Micro Devices Inc
+    $649.42 (+2.8%) | $1.1T
+  <b>ANET</b> Arista Networks Inc
+    $215.36 (+4.1%) | $271.6B
+  <b>APH</b> Amphenol Corp
+    $88.62 (+1.6%) | $218.5B
   <b>CRWD</b> Crowdstrike Holdings Inc
-    $272.67 (+1.0%) | $279.2B
+    $278.86 (+2.3%) | $285.5B
   <b>NVDA</b> NVIDIA Corp
-    $238.90 (+2.1%) | $5.8T
-  <b>TSM</b> Taiwan Semiconductor Manufacturing ADR
-    $485.80 (+2.8%) | $2.5T
-  <b>ARW</b> Arrow Electronics Inc
-    $240.22 (-0.7%) | $12.2B
+    $239.24 (+0.1%) | $5.8T
+  <b>PANW</b> Palo Alto Networks Inc
+    $419.91 (+3.2%) | $343.5B
   <b>DT</b> Dynatrace Inc
-    $60.21 (+1.5%) | $17.4B
+    $61.05 (+1.4%) | $17.6B
+  <b>FFIV</b> F5 Inc
+    $469.79 (+2.5%) | $26.6B
   <b>FTNT</b> Fortinet Inc
-    $184.13 (+1.8%) | $135.1B
+    $191.27 (+3.9%) | $140.3B
+  <b>HPE</b> Hewlett Packard Enterprise Co
+    $70.48 (+3.1%) | $93.6B
   <b>KEYS</b> Keysight Technologies Inc
-    $384.17 (-0.1%) | $65.4B
+    $388.03 (+1.0%) | $66.1B
   <b>LITE</b> Lumentum Holdings Inc
-    $1,091.67 (+0.6%) | $97.9B
+    $1,133.40 (+3.8%) | $101.7B
+  <b>NET</b> Cloudflare Inc
+    $355.01 (-1.2%) | $126.4B
   <b>OKTA</b> Okta Inc
-    $218.29 (+3.2%) | $38.2B
+    $218.67 (+0.2%) | $38.2B
   <b>P</b> Everpure Inc
-    $143.88 (+2.7%) | $47.9B
+    $147.20 (+2.3%) | $49.0B
   <b>RBRK</b> Rubrik Inc
-    $122.68 (+3.5%) | $25.4B
-
-<b>〈금융〉</b>
-  <b>BBD</b> Banco Bradesco SA ADR 🔥
-    $4.33 (+18.6%) | $24.2B
-  <b>ITUB</b> Itau Unibanco Holding SA ADR 🔥
-    $9.92 (+15.5%) | $53.6B
-  <b>XP</b> XP Inc 🔥
-    $28.15 (+30.9%) | $14.6B
+    $125.80 (+2.5%) | $26.1B
+  <b>TWLO</b> Twilio Inc
+    $280.41 (-6.8%) | $43.1B
+  <b>ZBRA</b> Zebra Technologies Corp
+    $385.78 (+2.7%) | $18.2B
 
 <b>〈헬스케어〉</b>
+  <b>TMO</b> Thermo Fisher Scientific Inc
+    $656.58 (-3.0%) | $242.8B
+  <b>AVTR</b> Avantor Inc
+    $15.43 (-2.4%) | $10.4B
   <b>CRL</b> Charles River Laboratories International Inc
-    $310.77 (+7.1%) | $14.8B
+    $304.96 (-1.9%) | $14.6B
   <b>GH</b> Guardant Health Inc
-    $187.22 (+5.3%) | $25.1B
-  <b>GMAB</b> Genmab ADR 🔥
-    $38.48 (+10.7%) | $23.0B
+    $170.69 (-8.8%) | $22.9B
   <b>ILMN</b> Illumina Inc
-    $293.69 (+7.6%) | $44.4B
-  <b>PCVX</b> Vaxcyte Inc 🔥
-    $73.82 (+30.7%) | $11.0B
-  <b>TWST</b> Twist Bioscience Corp 🔥
-    $205.00 (+8.7%) | $13.5B
+    $273.54 (-6.9%) | $41.3B
+  <b>MRNA</b> Moderna Inc
+    $187.46 (-7.8%) | $74.8B
+  <b>MTD</b> Mettler-Toledo International Inc
+    $1,533.07 (-0.6%) | $30.7B
+  <b>NTRA</b> Natera Inc
+    $400.65 (-5.9%) | $57.8B
+  <b>RVTY</b> Revvity Inc
+    $153.30 (-2.6%) | $17.1B
+  <b>TWST</b> Twist Bioscience Corp
+    $166.97 (-18.6%) | $11.0B
   <b>TXG</b> 10x Genomics Inc
-    $97.74 (+4.5%) | $12.7B
+    $80.66 (-17.5%) | $10.5B
+  <b>WAT</b> Waters Corp
+    $436.43 (-0.8%) | $42.9B
 
-<b>〈유틸리티〉</b>
-  <b>ELPC</b> Cia Paranaense De Energia Copel ADR 🔥
-    $13.92 (+8.2%) | $10.3B
+<b>〈금융〉</b>
+  <b>BBD</b> Banco Bradesco SA ADR
+    $4.51 (+4.2%) | $25.2B
+  <b>EQH</b> Equitable Holdings Inc
+    $54.50 (+0.9%) | $14.9B
+  <b>ITUB</b> Itau Unibanco Holding SA ADR
+    $10.15 (+2.3%) | $54.9B
+  <b>PS</b> Pershing Square Inc 🔥
+    $59.75 (+8.9%) | $23.9B
+  <b>XP</b> XP Inc
+    $29.73 (+5.6%) | $15.4B
 
 <b>〈산업재〉</b>
-  <b>EXPD</b> Expeditors International Of Washington Inc
-    $194.12 (+0.9%) | $25.2B
   <b>JCI</b> Johnson Controls International plc
-    $156.85 (+0.4%) | $95.0B
+    $158.76 (+1.2%) | $96.2B
+  <b>WCC</b> Wesco International Inc
+    $384.09 (+1.9%) | $18.7B
 
 <b>〈에너지〉</b>
-  <b>FRO</b> Frontline Plc
-    $53.75 (+1.9%) | $12.0B
-  <b>MPC</b> Marathon Petroleum Corp
-    $433.47 (+2.6%) | $121.7B
-  <b>PBR</b> Petroleo Brasileiro SA Petrobras ADR 🔥
-    $24.14 (+11.5%) | $89.8B
-  <b>PBR-A</b> Petroleo Brasileiro SA Petrobras ADR 🔥
-    $22.12 (+12.9%) | $60.2B
   <b>VLO</b> Valero Energy Corp
-    $419.33 (+3.2%) | $120.7B
+    $419.22 (-0.0%) | $120.7B
 
-<b>〈소재〉</b>
-  <b>TX</b> Ternium SA ADR
-    $57.97 (+2.4%) | $11.4B
-
-<b>〈커뮤니케이션〉</b>
-  <b>WBD</b> Warner Bros. Discovery Inc
-    $30.95 (+0.0%) | $77.7B
-
-🚀 <b>8% 이상 급등 (9종목)</b>
-
-<b>〈필수소비재〉</b>
-  <b>ABEV</b> Ambev SA ADR
-    $3.25 (+8.7%) | $49.3B
+🚀 <b>8% 이상 급등 (7종목)</b>
 
 <b>〈기술〉</b>
-  <b>CBRS</b> Cerebras Systems Inc
-    $181.55 (+9.1%) | $40.6B
-  <b>PTC</b> PTC Inc
-    $192.26 (+33.5%) | $20.9B
-
-<b>〈경기소비재〉</b>
-  <b>MELI</b> MercadoLibre Inc
-    $1,860.61 (+9.7%) | $94.3B
-
-<b>〈헬스케어〉</b>
-  <b>MMEDV</b> MiniMed Group Inc - When Issued - Oct 2026
-    $20.00 (+161.8%) | $14.5B
-  <b>TEM</b> Tempus AI Inc
-    $83.55 (+9.0%) | $15.1B
-
-<b>〈금융〉</b>
-  <b>NU</b> Nu Holdings Ltd
-    $15.18 (+13.0%) | $73.3B
+  <b>ASTS</b> AST SpaceMobile Inc
+    $63.12 (+8.0%) | $24.6B
+  <b>CIEN</b> CIENA Corp
+    $443.65 (+13.8%) | $62.9B
 
 <b>〈유틸리티〉</b>
-  <b>SBS</b> Companhia de Saneamento Basico do Estado de Sao Paulo ADR
-    $6.26 (+16.4%) | $21.9B
+  <b>CEG</b> Constellation Energy Corp
+    $300.40 (+12.2%) | $106.4B
+  <b>TLN</b> Talen Energy Corp
+    $373.11 (+12.4%) | $17.6B
+  <b>VST</b> Vistra Corp
+    $160.50 (+10.8%) | $53.9B
 
-<b>〈커뮤니케이션〉</b>
-  <b>VIV</b> Telefonica Brasil SA ADR
-    $12.62 (+9.4%) | $20.2B
+<b>〈산업재〉</b>
+  <b>FTAI</b> FTAI Aviation Ltd
+    $179.44 (+8.9%) | $18.4B
+  <b>INIO</b> Innio NV
+    $21.35 (+12.5%) | $16.0B
 
 
