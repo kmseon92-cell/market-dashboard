@@ -1456,6 +1456,14 @@ def _live_pct_span(pct) -> str:
     return f' <span style="color:{color};font-weight:700;">{pct:+.2f}%</span>'
 
 
+def _name_live(name_html: str, pct) -> str:
+    """종목명 + 실시간 등락률, -5% 이하 급락이면 형광펜"""
+    out = name_html + _live_pct_span(pct)
+    if pct is not None and pct <= -5:
+        out = f'<span style="background:#fff176;padding:1px 4px;border-radius:3px;">{out}</span>'
+    return out
+
+
 def render_kr_pullback() -> None:
     """신고가 대비 -15% 이내 (시총 5000억↑) — kr-market-close가 15:40 발행. 섹터 블록을 4단 분배."""
     text = _report_text("kr_pullback15.md")
@@ -1475,7 +1483,7 @@ def render_kr_pullback() -> None:
         st.caption(total.group(0))
     pcts = fetch_kr_pcts(tuple(sorted(set(re.findall(r"\((\d{6})\)", body)))))
     blocks = [re.sub(r"(<b>[^<]+</b>)\s*\((\d{6})\)",
-                     lambda mm: mm.group(1) + _live_pct_span(pcts.get(mm.group(2))), b)
+                     lambda mm: _name_live(mm.group(1), pcts.get(mm.group(2))), b)
               for b in blocks]
     cols = st.columns(4)
     loads = [0] * 4
@@ -1510,7 +1518,7 @@ def render_kr_new_high_list() -> None:
     for sec, items in re.findall(r"<b>〈([^〉]+)〉</b>\n(.*?)(?=\n<b>〈|\Z)", m.group(1), flags=re.DOTALL):
         names = re.findall(r"<b>([^<]+)</b>\s*\((\d{6})\)", items)
         if names:
-            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(n + _live_pct_span(pcts.get(c)) for n, c in names))
+            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(_name_live(n, pcts.get(c)) for n, c in names))
     st.markdown(
         f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
         f'font-size:0.92rem;line-height:1.7;color:#000;">{"<br>".join(lines)}</div>',
