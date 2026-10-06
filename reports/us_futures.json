@@ -25,19 +25,17 @@
       "change": -0.003,
       "pct": -0.053
     },
-    "DX-Y.NYB": {
-      "price": 101.858,
-      "change": -0.309,
-      "pct": -0.3
-    },
     "^VIX": {
       "price": 15.01,
       "change": -0.51,
       "pct": -3.29
     }
   },
-  "errors": [],
-  "fetched_at": "2026-10-07T06:31:28+09:00",
+  "errors": [
+    "DX-Y.NYB: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "DX-Y.NYB: investing: https://uk.investing.com/indices/usdollar: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-10-07T06:36:36+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
