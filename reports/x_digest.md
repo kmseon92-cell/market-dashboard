@@ -1,64 +1,86 @@
-<!-- updated: 2026-10-07 08:16 -->
-🐦 <b>X 데일리 다이제스트</b> (10/07)
+<!-- updated: 2026-10-08 08:17 -->
+🐦 <b>X 데일리 다이제스트</b> (10/08)
 
-<b>📰 속보 (FirstSquawk · FinancialJuice)</b>
-💡 S&amp;P500 사상 최고 마감(7,820.07), 나스닥 2거래일 연속 신고가 · 美 10년물 5.28%(-3bp), WTI $89.44 · Brent $100.58 <a href="https://x.com/FirstSquawk/status/2107569062444499229">원문</a>
-💡 美 3년물 입찰 4.932%, 2006년 이후 최고 금리 · 연준 Schmid "인플레 해결 갈 길 멀다, AI가 주요 인플레 요인" <a href="https://x.com/financialjuice/status/2107525012844642547">원문</a>
-💡 SpaceX, Apollo 주도 $40bn 조달 추진(FT) — 엔비디아 칩 구매 목적 <a href="https://x.com/financialjuice/status/2107599422502695048">원문</a>
-💡 BOJ 신임 사토 "점진적 금리인상 동의, 사전에 정한 인상 속도 없음" · 일본 단観 Tankan 제조업 22(9월 21에서 상승)
-💡 베센트 "이란, 8/25 이후 원유 선적 0배럴" · 트럼프 "이란 마무리 곧, 유가는 전쟁 끝나면 하락" <a href="https://x.com/FirstSquawk/status/2107572323507208625">원문</a>
-💡 FTSE Russell, KRX 시장경보제도·결제자금 요건 모니터링 계속 발표 — 국내 시장 관련 <a href="https://x.com/FirstSquawk/status/2107574130342268963">원문</a>
+<b>일론 머스크 (@elonmusk)</b>
+💡 Terafab 관련: "우리가 직접 팹을 짓고 운영한다. TSMC가 일부 공간을 빌릴 수는 있어도 그 이상은 아니다"
+Starlink 인도 서비스 관련 가짜뉴스 반박(빔 OFF 상태) 반복 RT, Grok Bot 0.68.1 업데이트(PPT·이메일 기능 추가), 정치 이슈 다수 RT(생략)
 
-<b>🚀 @elonmusk (23개, RT 다수)</b>
-💡 SpaceX 연결성 로드맵: 달 레이저 메시 → 화성, "LEO 안전 확보가 선행" (Nicolls 발언) <a href="https://x.com/elonmusk/status/2107554670004895890">원문</a>
-Grok 4.7 VulcanBench Frontier v4 1~3위 독점 주장, Grok Bot 홍보 다수 <a href="https://x.com/elonmusk/status/2107415031667392567">원문</a>
+<b>샘 올트먼 (@sama)</b>
+💡 GPT-6 + Intelligent UI 전 사용자 롤아웃, ChatGPT가 대화 중 커스텀 UI(그래프·인터랙티브 툴) 생성 가능
+별 보며 발견에 대한 감상 트윗 2건
 
-<b>🤖 Anthropic (@AnthropicAI)</b>
-Cyber Verification Program 확대 — 검증된 보안 전문가에게 Mythos 5.1·Opus 5.5·Sonnet 5.5 방어용 접근, 승인된 공격·레드팀 티어 신설 <a href="https://x.com/AnthropicAI/status/2107546569654636883">원문</a>
+<b>다리오 아모데이 / 마크 저커버그 / Market Feed / 개빈 베이커 / 안드레 카파시</b>: 기간 내 글 없음
 
-<b>🧠 OpenAI (@OpenAI)</b>
-내부 프론티어 모델이 낸 수학 신규 결과 공개, IAS 자문그룹 권고를 반영해 릴리스 <a href="https://x.com/OpenAI/status/2107596713791767021">원문</a>
+<b>Anthropic (@AnthropicAI)</b>
+💡 Claude Haiku 5.5 출시 — 역대 최저가·최고성능 소형 모델, Haiku 4.5 대비 평균 75% 비용 절감
 
-<b>💬 Tae Kim (@firstadopter, 12개)</b>
-💡 "센티먼트 과열, 조심하라" · AI칩 랠리 옹호(AMD 8월 이후 +36%), BofA 비판 <a href="https://x.com/firstadopter/status/2107477983103758650">원문</a>
-💡 유럽 재정위기 우려(프랑스), 트럼프 이란 전쟁발 금리 상승 · OpenAI 300억달러 라운드 협의(UAE펀드·BlackRock·Thrive·a16z)
+<b>OpenAI (@OpenAI)</b>
+💡 GPT-6 + Intelligent UI 오늘부터 Plus/Pro/Business/Enterprise 전체 롤아웃(Free/Go는 내일), 텍스트+시각+인터랙티브 요소 결합 응답
+ChatGPT for Teens 진행상황 공유, College Planner 예고
 
-<b>🔎 Hardik Shah (@AIStockSavvy, 60개)</b>
-💡 SpaceX $40bn 조달(Apollo) · TSMC 美·동남아 AI 투자 확대 · Lambda $4bn @ $14.5bn · AMD ATH <a href="https://x.com/AIStockSavvy/status/2107600618193842189">원문</a>
-💡 $FRVO 공매도 리포트(Morpheus) · $ZIM 가이던스 상향(EBITDA 30%↑) · $NVTS Claros 인수 완료 · $MSFT JPM Buy PT $625
-Anthropic Claude → Google Docs·Sheets·Slides 연동 공개
+<b>Tae Kim (@firstadopter)</b>
+💡 NY연은 서베이: 1년 인플레 기대 3.9%로 2023.5월 이후 최고 — "스태그플레이션은 안 좋다, 전쟁 끝내라"
+호르무즈 해협 통과 유조선 선장 월 $10만+보너스 $5만(이란 공격 리스크), ChatGPT 성장 재가속·美 유료 사용자 Claude·Gemini 대비 3배(WSJ)
+Ben Affleck 공항 라인 끼어들기 비판, 이란 제한 공습론에 "선거용 액션 그만" 비판
 
-<b>🧬 dnap (@dnapway, 12개)</b>
-💡 Moonshot 프리IPO $50B 밸류 마감 임박, 홍콩 IPO 2027년 1Q 목표 <a href="https://x.com/dnapway/status/2107297495521038421">원문</a>
-Huberman 팟캐스트 공유("AI 랩은 전부 바이오텍이 된다") 외 잡담
+<b>Hardik Shah (@AIStockSavvy)</b>
+💡 삼성전자 Q3 잠정 영업익 107.4조(컨센 상회) vs 매출 195조(컨센 하회)
+💡 SK하이닉스 솔리다임 美 IPO 추진, 100억달러 조달설(블룸버그)
+💡 브로드컴 OpenAI 커스텀칩용 500억달러+ 자금조달 추진(WSJ), 오라클도 아폴로·GS와 칩구매 자금 협의
+💡 FOMC 의사록: 19명 전원 9월 인상 지지, AI 투자 규모가 계속 기대 상회
+베조스 블루오리진 외부투자 100억달러 최초 유치+본인 280억달러 투자, 향후 IPO 시사
+울프스피드 美국방부 15억달러 30년 대출 확약, 샌프란시스코 데이터센터 45일 신축 모라토리엄, Lambda $40억 조달(밸류 $145억) 추진
 
-<b>🌏 Jukan (@jukan05, 12개)</b>
-💡 HDD: 시게이트 vs 도시바, TDK HDD 헤드 사업 인수 경쟁 · WDC 태국 아유타야 홍수 리스크 <a href="https://x.com/jukan05/status/2107344491921502439">원문</a>
-💡 DeepSeek ≥$12B 펀딩(목표 RMB 100B), 2027 초 IPO 목표 · 도쿄일렉 FY27 영업익 ¥1T 전망(닛케이, +60%) <a href="https://x.com/jukan05/status/2107338201044263180">원문</a>
-💡 한국 JNTC 유리기판, 내년부터 Broadcom 공급 보도 · B200 가격 급등
+<b>dnap (@dnapway)</b>
+대형 데이터센터 외관 선호한다는 잡담, Palmer Luckey 옥시토신 커플링 스타트업 아이디어 RT — 시장 관련 내용 없음
 
-<b>🇰🇷 루팡 (@DrNHJ, 40개)</b>
-💡 전력기기 3Q26 프리뷰(유안타): 6개사 영업익 5.46조(+44.6%, '27E), LS ELECTRIC·효성중공업 Top Pick, 가온전선 NR 신규 <a href="https://x.com/DrNHJ/status/2107606095128846844">원문</a>
-💡 산일전기 美 BESS 변압기 351억 계약(10/6 공시) · 한투 목표가 30만원 상향 · PENG 4Q 매출 +68%, FY27 가이던스 상향
-💡 Marvell 인베스터데이: TAM $400B(2030), FY28 매출 $20B 목표 · 애플라이드–인텔 EPIC센터 공동 R&amp;D
+<b>Jukan (@jukan05)</b>
+💡 삼성전자 Q3 잠정 매출 195조/영업익 107.4조(컨센 +1%)
+💡 삼성·AMD 회동 — AMD는 삼성 파운드리 발주 대가로 HBM 안정공급 원함(양측 입장차)
+💡 삼성 12-Hi HBM4E, 엔비디아 등 품질테스트 통과(한국 매체)
+마이크론 대만 노조 보너스 분쟁 파업 투표, 난야 DRAM 계약가 최대 20% 인상 추진, 메리츠: 모바일 D램 1Q27 +50%대 급등 전망
 
-<b>🐺 북극성 (@PolarisLog, 20개)</b>
-💡 삼성 내년 HBM4 공급가 2배↑ 협상 중(KB 판가 +100%대, 트렌드포스 HBM 평균 +121%) <a href="https://x.com/PolarisLog/status/2107587719576814007">원문</a>
-💡 하나증권 "반도체 주가는 위안화에 달렸다" — 중국 메모리·로직 순수입 1,100억$ · 삼성 시스템LSI 차량용 AP(엑시노스 오토) 철수 보도
-Lisa Su 방한(7일), 젠슨 황 대신 매디슨 황 11/9~10 방한 확정
+<b>First Squawk (@FirstSquawk)</b>
+💡 삼성 Q3 잠정 영업익 107.4조(컨센 106.1조 상회) vs 매출 195조(컨센 199조 하회)
+💡 FOMC 의사록: 19명 전원 9월 인상 지지, 대부분 2026년 추가 인상 적절 판단
+💡 스페이스X, 엔비디아 칩 구매 위해 400억달러 조달 추진(은행대출 100억+채권 300억)
+💡 브로드컴 OpenAI 커스텀칩 500억달러+ 금융 주선(WSJ)
+💡 트럼프 목요일 AI 과학 서밋 참석, Genesis Mission에 AMD·OpenAI·Anthropic 등 10억달러+ 투자 발표 예정
+다우 -0.69%/S&P -0.22%/나스닥 -0.20% (브렌트유 $100 근접, 인플레 우려로 랠리 중단), 호르무즈 해협 유조선 피격·사상자 보고, $39B 10년물 강한 수요(2000년 이후 최고 낙찰수익률)
 
-<b>🏦 Nuradu (@NURadu_, 38개)</b>
-💡 SpaceX $40bn 조달 상세(은행대출 ~$10bn + IG채권 ~$30bn, 2027 목표) <a href="https://x.com/NURadu_/status/2107604954303389923">원문</a>
-💡 $BRUN 부스트런 5년 $526M AI클라우드 계약(GB300) · 엔비디아–Groq 200억달러 거래 소송(델라웨어)
-$SPCX CSA 매출 전망, $INIO $FRVO $BRUN 언급 · 나머지 잡담
+<b>루팡 (@DrNHJ)</b>
+💡 삼성전자 Q3 잠정 매출 195조/영업익 107.4조
+💡 삼성 HBM4E 12단, 엔비디아 등 주요 고객사 품질검증 통과
+💡 AMD 리사 수, 삼성·SK하이닉스 수장과 잇따라 회동 — HBM·파운드리 협력 논의, "삼성·하이닉스는 핵심 공급망"
+비아트론, 삼성전기향 유리기판 글라스본더 공동개발·연내 공급, Marvell 목표가 제프리스 $450/에버코어 $433 상향(FY31 매출 $700-900억 프레임워크), 스페이스X 엔비디아칩 구매 400억달러 조달, 누리호 5호기 발사 성공
 
-<b>📊 P Equity Research (@pequityresearch, 22개)</b>
-💡 Bernstein: 범용 DRAM ASP 2027년 3Q 정점 후 하락 전망 · UBS: 8월 MLCC ASP 삼성 +68% <a href="https://x.com/pequityresearch/status/2107503901255569902">원문</a>
-💡 Mirae: 2028 메모리 수급이 2027보다 타이트, 장기계약은 상승 가격 반영 · Lumentum CY28/29 LTA 가격 인상 여지 · DDR5 16G 스팟 ATH
+<b>P Equity Research (@pequityresearch)</b>
+💡 Citi: 메타 Muse 1억 DAU 시 엔비디아 매출 $7-19B 기여 추정
+💡 미래에셋 전문가콜: SK하이닉스 HBM 하이브리드본딩 기술난항, 삼성은 이미 고객사 샘플 발송
+💡 메모리 전문가콜: 계약구조 5년+ take-or-pay 전환, HBM4/4E 가격 $800-1400/device(HBM3E의 $530-550 대비 급등)
+Marvell 애널리스트데이 FY31 매출 $700-900억 가이던스 세부 공개, 스페이스X 엔비디아 GPU 100만개 배치(Colossus), Anthropic 삼성 2nm ASIC 채택 검토(TSMC 경쟁 회피 목적)
 
-<b>🔬 Semiconductor Insider (@SemiconductorsX, 31개)</b>
-💡 MU FY26 FCF ~$59B, FY27·28 컨센 ~$140B·$168B <a href="https://x.com/SemiconductorsX/status/2107481964538397080">원문</a>
-💡 삼성 3Q 영업익 전망 105~109조(키오보·미래·SK증권 등) · UBS: 2027 TSMC N3 점유율 엔비디아 30%·애플 14% · AMAT–인텔 EPIC 협력
-💡 JNTC 2mm 유리기판 구리충전 수분 단축, 2028년 고객 물량 목표 (TheElec 인용)
+<b>북극성 (@PolarisLog)</b>
+💡 삼성전자 Q3 잠정 매출 195조/영업익 107.4조
+💡 SK하이닉스 솔리다임 IPO 주관사로 GS·MS 선정
+💡 삼성 무선사업부, 협력사에 Q4 생산량 20-30% 감산 주문("팔아도 남는 게 없다")
+💡 대신증권: 3Q 한국 메모리 매출 사상 첫 $1700억 돌파 추정, 2027 영업이익 전망 삼성 586조/하이닉스 449조로 상향
+DDR5 16G DRAM 현물가 사상최고(작년 8월 대비 +847%), Claude Haiku 5.5 공개, Anthropic 향후 10년 AI인프라 지출 $518B(80%는 취소불가 약정)
 
-그 외: 글 없음 — Sam Altman, Dario Amodei, Mark Zuckerberg, Market Feed, Gavin Baker, Karpathy
+<b>Nuradu (@NURadu_)</b>
+💡 삼성전자 Q3 영업익·매출 모두 시장 기대치 하회 소식(일부 지표), 하루 1.1~2조원 벌지만 기대치 부담 지적
+💡 SK하이닉스 솔리다임 美 IPO 추진, 밸류 최대 $1000억(블룸버그)
+💡 AI 반도체 자금조달 경쟁 심화: 브로드컴 500억달러+, 스페이스X 400억달러, 오라클 자금조달 협의(WSJ)
+AMD 리사 수 "삼성과 파운드리 협력 계속 모색" 발언 정리, 삼성전자 분석글(2027-28 메모리 가격 유지 여부가 관전포인트), TSMC-머스크 Terafab 협력 우려 대만매체 인용
+
+<b>FinancialJuice (@financialjuice)</b>
+💡 FOMC 의사록: 19명 전원 9월 인상 지지, 다수 2026년 추가 인상 적절("AI 붐 규모가 계속 예상 상회")
+💡 브렌트 $100.20/WTI $88.28 마감(호르무즈 공격 긴장 속), 10년물 $39B 입찰 2000.11월 이후 최고 낙찰수익률
+💡 브로드컴 OpenAI 커스텀칩 500억달러+ 자금조달(WSJ), 베조스 블루오리진 외부투자 100억달러 첫 유치
+OpenAI GPT-6 출시, 트럼프 목요일 AI 서밋 참석 예정, 美 소비자신용 8.28B(예상 15B 하회)
+
+<b>Semiconductor Insider (@SemiconductorsX)</b>
+💡 리사 수-삼성 3시간 만찬, 파운드리 수량·일정 언급 없이 "폭넓은 파트너십"만 — HBM4 확보는 확실, 웨이퍼 딜은 미확정
+💡 삼성 HBM4E 12-Hi, 엔비디아·주요 하이퍼스케일러 품질테스트 통과(물량·시점은 미확정)
+💡 골드만: 인텔 2028년 파운드리 매출 컨센서스보다 39% 높게 전망, EPS도 47% 상회 추정
+대만 칼럼: TSMC-머스크 Terafab 합작 시 엔비디아·AMD 등 기존 고객과 이해충돌 우려 제기, 인텔 Lip-Bu Tan "Terafab 계속 참여" 재확인(머스크 TSMC 협상설과 같은 주)
