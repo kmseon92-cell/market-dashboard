@@ -1530,6 +1530,77 @@ st.subheader("📉 신고가 대비 -15% 이내 (시총 5000억↑)")
 render_kr_pullback()
 st.markdown("##### 📈 국내 52주 신고가")
 render_kr_new_high_list()
+
+
+def render_cpi_yoy_chart() -> None:
+    """미국 CPI YoY(헤드라인·근원) 2024~ — cpi_nowcast.json의 history(FRED 원계열, 발표치 기준)."""
+    import altair as alt
+    text = _report_text("cpi_nowcast.json")
+    hist = (json.loads(text).get("history") if text else None) or []
+    if not hist:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    rows = []
+    for h in hist:
+        for key, name in (("cpi_yoy", "헤드라인"), ("core_yoy", "근원")):
+            rows.append({"월": pd.Timestamp(h["month"] + "-01"), "구분": name, "YoY": h.get(key)})
+    df = pd.DataFrame(rows)
+    color = alt.Color("구분:N", scale=alt.Scale(domain=["헤드라인", "근원"], range=["#c8434f", "#3d6fb6"]),
+                      legend=alt.Legend(orient="top-left", title=None))
+    base = alt.Chart(df).encode(
+        x=alt.X("월:T", title=None, axis=alt.Axis(format="%y.%-m", tickCount="month", labelAngle=0)),
+        y=alt.Y("YoY:Q", title="YoY (%)", scale=alt.Scale(zero=False)),
+        color=color,
+    )
+    lines = base.mark_line(strokeWidth=2.4, point=alt.OverlayMarkDef(size=18)).encode(
+        tooltip=[alt.Tooltip("월:T", format="%Y.%-m"), "구분:N", alt.Tooltip("YoY:Q", format=".1f")])
+    last = df.dropna().sort_values("월").groupby("구분").tail(1)
+    labels = alt.Chart(last).mark_text(align="left", dx=6, fontSize=13, fontWeight="bold").encode(
+        x="월:T", y="YoY:Q", text=alt.Text("YoY:Q", format=".1f"), color=color)
+    target = alt.Chart(pd.DataFrame({"y": [2.0]})).mark_rule(strokeDash=[4, 4], color="#6b7280").encode(y="y:Q")
+    st.altair_chart((target + lines + labels).properties(height=320), width="stretch")
+    lm = hist[-1]["month"]
+    st.caption(f"출처: FRED CPIAUCNS·CPILFENS(원계열, 발표치 YoY 기준) · 최신 {lm} · 점선=연준 목표 2% · 25.10월분 셧다운 통계 취소(공백)")
+
+
+def render_ism_chart() -> None:
+    """미국 ISM 제조업 PMI·신규주문 2024~ — ism_pmi.json(cpi-nowcast 잡이 나스닥 캘린더에서 수집)."""
+    import altair as alt
+    text = _report_text("ism_pmi.json")
+    hist = (json.loads(text).get("history") if text else None) or []
+    if not hist:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    rows = []
+    for h in hist:
+        for key, name in (("pmi", "PMI"), ("new_orders", "신규주문")):
+            rows.append({"월": pd.Timestamp(h["month"] + "-01"), "구분": name, "지수": h.get(key)})
+    df = pd.DataFrame(rows)
+    color = alt.Color("구분:N", scale=alt.Scale(domain=["PMI", "신규주문"], range=["#2b2f36", "#e08a2c"]),
+                      legend=alt.Legend(orient="top-left", title=None))
+    base = alt.Chart(df).encode(
+        x=alt.X("월:T", title=None, axis=alt.Axis(format="%y.%-m", tickCount="month", labelAngle=0)),
+        y=alt.Y("지수:Q", title="지수", scale=alt.Scale(zero=False)),
+        color=color,
+    )
+    lines = base.mark_line(strokeWidth=2.4, point=alt.OverlayMarkDef(size=18)).encode(
+        tooltip=[alt.Tooltip("월:T", format="%Y.%-m"), "구분:N", alt.Tooltip("지수:Q", format=".1f")])
+    last = df.dropna().sort_values("월").groupby("구분").tail(1)
+    labels = alt.Chart(last).mark_text(align="left", dx=6, fontSize=13, fontWeight="bold").encode(
+        x="월:T", y="지수:Q", text=alt.Text("지수:Q", format=".1f"), color=color)
+    rule = alt.Chart(pd.DataFrame({"y": [50.0]})).mark_rule(strokeDash=[4, 4], color="#6b7280").encode(y="y:Q")
+    st.altair_chart((rule + lines + labels).properties(height=320), width="stretch")
+    lh = hist[-1]
+    st.caption(f"출처: ISM(나스닥 경제캘린더, 발표 당시 값) · 최신 {lh['month']} · 가격지수 {lh.get('prices')} · 점선=50(확장/위축)")
+
+
+cpi_col, ism_col = st.columns(2)
+with cpi_col:
+    st.markdown("##### 🇺🇸 미국 CPI YoY")
+    render_cpi_yoy_chart()
+with ism_col:
+    st.markdown("##### 🏭 미국 ISM 제조업")
+    render_ism_chart()
 st.divider()
 
 # 미국증시 마감시황 한 줄 (us_market_close.md에서 추출)
