@@ -1,19 +1,19 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 31506.25,
-      "change": 23.0,
-      "pct": 0.07
+      "price": 31507.5,
+      "change": 24.25,
+      "pct": 0.08
     },
     "CL=F": {
-      "price": 90.21,
-      "change": 0.77,
-      "pct": 0.86
+      "price": 90.15,
+      "change": 0.71,
+      "pct": 0.79
     },
     "JPY=X": {
-      "price": 158.4,
-      "change": 0.3,
-      "pct": 0.19
+      "price": 158.39,
+      "change": 0.29,
+      "pct": 0.18
     },
     "^TNX": {
       "price": 5.296,
@@ -21,27 +21,25 @@
       "pct": 0.4743
     },
     "^TYX": {
-      "price": 5.675,
-      "change": 0.034,
-      "pct": 0.6027
+      "price": 5.674,
+      "change": 0.033,
+      "pct": 0.585
     },
     "DX-Y.NYB": {
-      "price": 101.941,
-      "change": 0.108,
-      "pct": 0.11
-    },
-    "^VIX": {
-      "price": 15.01,
-      "change": -0.51,
-      "pct": -3.29
+      "price": 101.938,
+      "change": 0.105,
+      "pct": 0.1
     }
   },
-  "errors": [],
-  "fetched_at": "2026-10-07T09:40:45+09:00",
+  "errors": [
+    "^VIX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
+    "^VIX: investing: https://uk.investing.com/indices/volatility-s-p-500: HTTPError: HTTP Error 403: Forbidden"
+  ],
+  "fetched_at": "2026-10-07T09:45:53+09:00",
   "jpy_carry": {
     "peak_3mo": 163.86,
     "warn_level": 158.95,
-    "drop_pct": -3.33,
+    "drop_pct": -3.34,
     "warning": true
   }
 }
