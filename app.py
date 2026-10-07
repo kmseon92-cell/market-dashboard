@@ -1589,9 +1589,12 @@ def render_ism_chart() -> None:
     labels = alt.Chart(last).mark_text(align="left", dx=6, fontSize=13, fontWeight="bold").encode(
         x="월:T", y="지수:Q", text=alt.Text("지수:Q", format=".1f"), color=color)
     rule = alt.Chart(pd.DataFrame({"y": [50.0]})).mark_rule(strokeDash=[4, 4], color="#6b7280").encode(y="y:Q")
-    st.altair_chart((rule + lines + labels).properties(height=320), width="stretch")
+    # 58~60 형광펜 밴드 (Dave 지정 관심 구간)
+    band = alt.Chart(pd.DataFrame({"y": [58.0], "y2": [60.0]})).mark_rect(color="#fff200", opacity=0.45).encode(
+        y="y:Q", y2="y2:Q")
+    st.altair_chart((band + rule + lines + labels).properties(height=320), width="stretch")
     lh = hist[-1]
-    st.caption(f"출처: ISM(나스닥 경제캘린더, 발표 당시 값) · 최신 {lh['month']} · 가격지수 {lh.get('prices')} · 점선=50(확장/위축)")
+    st.caption(f"출처: ISM(나스닥 경제캘린더, 발표 당시 값) · 최신 {lh['month']} · 가격지수 {lh.get('prices')} · 점선=50(확장/위축) · 노란 띠=58~60")
 
 
 cpi_col, ism_col = st.columns(2)
