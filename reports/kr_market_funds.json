@@ -1,39 +1,29 @@
 {
- "as_of": "2026-10-06",
+ "as_of": "2026-10-07",
  "signal": {
-  "status": "turn",
-  "label": "🟡 예탁금 플러스 전환 (청산 소진 미확인 — 데드캣 주의)",
-  "deposit": 1010486.3,
-  "deposit_delta": 2064.3000000000466,
-  "down_streak": 3,
-  "deposit_drop_pct": -27.7,
-  "uncl": 9601.3,
+  "status": "outflow",
+  "label": "📉 자금 이탈 지속 (1일 연속 감소)",
+  "deposit": 1003796.1,
+  "deposit_delta": -6689.900000000023,
+  "down_streak": 0,
+  "deposit_drop_pct": -28.1,
+  "uncl": 9316.0,
   "uncl_peak": 11480.0,
-  "uncl_drop_pct": -16.4,
-  "bandae": 162.6,
+  "uncl_drop_pct": -18.9,
+  "bandae": 192.2,
   "bandae_peak_10d": 272.2,
-  "bandae_pct": 1.6935206690760627,
+  "bandae_pct": 2.0631172176899955,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 336282.0,
+  "credit": 335591.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -13.0
+  "credit_drop_pct": -13.1
  },
  "history": [
-  {
-   "date": "2026-05-26",
-   "bandae": 51.7,
-   "bandae_pct": 0.3,
-   "credit": 362548.0,
-   "deposit": 1245769.0,
-   "futs": 438553.0,
-   "kospi": 8047.51,
-   "uncl": 11492.0
-  },
   {
    "date": "2026-05-27",
    "bandae": 79.8,
@@ -908,20 +898,30 @@
    "date": "2026-10-02",
    "bandae": 85.5,
    "bandae_pct": 0.9,
+   "credit": 336282.0,
    "deposit": 1008422.0,
    "futs": 401885.0,
-   "uncl": 9883.0,
-   "credit": 336282.0,
-   "kospi": 7003.74
+   "kospi": 7003.74,
+   "uncl": 9883.0
   },
   {
    "date": "2026-10-06",
-   "deposit": 1010486.3,
-   "futs": 399832.2,
-   "uncl": 9601.3,
    "bandae": 162.6,
-   "bandae_pct": 1.7
+   "bandae_pct": 1.7,
+   "deposit": 1010486.0,
+   "futs": 399832.0,
+   "uncl": 9601.0,
+   "credit": 335591.0,
+   "kospi": 6941.39
+  },
+  {
+   "date": "2026-10-07",
+   "deposit": 1003796.1,
+   "futs": 395381.9,
+   "uncl": 9316.0,
+   "bandae": 192.2,
+   "bandae_pct": 2.1
   }
  ],
- "fetched_at": "2026-10-07T15:10:07"
+ "fetched_at": "2026-10-08T15:10:34"
 }
