@@ -691,6 +691,8 @@ st.title("🐳 범고래 프로젝트")
 
 # ── 코스피 9000 매도 목표 배너 (2026-09-10 Dave 지시) ──────────────────────
 KOSPI_SELL_TARGET = 9000
+# 배너 상시 문구 (2026-10-11 Dave 지시)
+MOTTO_HTML = '<span style="font-weight:800;color:#dc2626;font-size:1.05rem;">성장률의 델타값</span>'
 
 def _size_style_regime_html() -> str:
     """직전 5거래일 사이즈(대/중/소)·스타일(성장/가치) 장세 — kr-size-style/fetch.py 공급 (2026-10-11 Dave 요청).
@@ -744,9 +746,8 @@ def render_kospi_sell_target_banner():
             f'🚨 코스피 {price:,.0f} — 매도 목표 {KOSPI_SELL_TARGET:,} 도달! 팔아라!</div>',
             unsafe_allow_html=True,
         )
-        if regime:
-            st.markdown(f'<div style="padding:4px 14px 9px;margin:-4px 0 12px 0;border:1.5px solid #dc2626;'
-                        f'border-radius:12px;background:#fef2f2;">{regime}</div>', unsafe_allow_html=True)
+        st.markdown(f'<div style="padding:8px 14px 9px;margin:-4px 0 12px 0;border:1.5px solid #dc2626;'
+                    f'border-radius:12px;background:#fef2f2;">{MOTTO_HTML}{regime}</div>', unsafe_allow_html=True)
         return
     if price:
         remain = (KOSPI_SELL_TARGET / price - 1) * 100
@@ -758,7 +759,8 @@ def render_kospi_sell_target_banner():
         f'background:#fef2f2;font-size:0.98rem;color:#000;">'
         f'<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">'
         f'<span style="font-weight:800;color:#dc2626;">🎯 코스피 {KOSPI_SELL_TARGET:,} 도달 시 매도</span>'
-        f'<span style="color:#444;">{detail}</span></div>{regime}</div>',
+        f'<span style="color:#444;">{detail}</span>'
+        f'<span style="margin-left:auto;">{MOTTO_HTML}</span></div>{regime}</div>',
         unsafe_allow_html=True,
     )
 
