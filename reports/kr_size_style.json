@@ -1,0 +1,144 @@
+{
+ "as_of": "2026-10-08",
+ "window": [
+  "2026-10-01",
+  "2026-10-08"
+ ],
+ "base_date": "2026-09-30",
+ "size": [
+  {
+   "name": "대형주",
+   "ret5": -3.43,
+   "tv_share": 87.3,
+   "tv_share_base": 86.2,
+   "tv5_jo": 84.0,
+   "tv_share_chg": 1.1
+  },
+  {
+   "name": "중형주",
+   "ret5": 0.64,
+   "tv_share": 9.7,
+   "tv_share_base": 10.0,
+   "tv5_jo": 9.4,
+   "tv_share_chg": -0.3
+  },
+  {
+   "name": "소형주",
+   "ret5": 0.89,
+   "tv_share": 3.0,
+   "tv_share_base": 3.8,
+   "tv5_jo": 2.9,
+   "tv_share_chg": -0.8
+  }
+ ],
+ "size_verdict": "중소형주",
+ "size_winners": [
+  "중형주",
+  "소형주"
+ ],
+ "style": [
+  {
+   "name": "성장주",
+   "etf": "KODEX 성장주",
+   "code": "325010",
+   "ret5": -2.0,
+   "share": 61
+  },
+  {
+   "name": "가치주",
+   "etf": "KODEX 가치주",
+   "code": "275290",
+   "ret5": -3.13,
+   "share": 39
+  }
+ ],
+ "style_verdict": "성장주",
+ "style_winners": [
+  "성장주"
+ ],
+ "etf_list": {
+  "대형주": [
+   {
+    "code": "337140",
+    "name": "KODEX 코스피대형주"
+   },
+   {
+    "code": "277640",
+    "name": "TIGER 코스피대형주"
+   },
+   {
+    "code": "069500",
+    "name": "KODEX 200"
+   },
+   {
+    "code": "237350",
+    "name": "KODEX 코스피100"
+   },
+   {
+    "code": "122090",
+    "name": "PLUS 코스피50"
+   }
+  ],
+  "중형주": [
+   {
+    "code": "277650",
+    "name": "TIGER 코스피중형주"
+   },
+   {
+    "code": "226980",
+    "name": "KODEX 200 중소형"
+   },
+   {
+    "code": "266550",
+    "name": "PLUS 중형주저변동50"
+   }
+  ],
+  "소형주": [
+   {
+    "code": "438740",
+    "name": "MIDAS 중소형액티브"
+   },
+   {
+    "code": "0053M0",
+    "name": "더제이 중소형포커스액티브"
+   },
+   {
+    "code": "229200",
+    "name": "KODEX 코스닥150(대용)"
+   }
+  ],
+  "성장주": [
+   {
+    "code": "325010",
+    "name": "KODEX 성장주"
+   },
+   {
+    "code": "395760",
+    "name": "PLUS ESG성장주액티브"
+   },
+   {
+    "code": "373490",
+    "name": "KODEX 코리아혁신성장액티브"
+   }
+  ],
+  "가치주": [
+   {
+    "code": "275290",
+    "name": "KODEX 가치주"
+   },
+   {
+    "code": "227570",
+    "name": "TIGER 우량가치"
+   },
+   {
+    "code": "223190",
+    "name": "KODEX 200가치저변동"
+   },
+   {
+    "code": "395750",
+    "name": "PLUS ESG가치주액티브"
+   }
+  ]
+ },
+ "fetched_at": "2026-10-11T18:15:58"
+}
