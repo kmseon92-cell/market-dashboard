@@ -1,4 +1,5 @@
 # redeploy nudge: 2026-09-06 전 리포트 GitHub raw 라이브 fetch (fedwatch 9/2 고정 사고)
+import html
 import json
 import os
 import re
@@ -1572,10 +1573,38 @@ def render_kr_new_high_list() -> None:
     )
 
 
+def render_kr_op_accel() -> None:
+    """영업이익 가속 TOP20 — kr-market-close/op_accel.py가 발행. 섹터별 종목명만 (신고가 카드와 같은 형식)"""
+    text = _report_text("kr_op_accel.md")
+    if text is None:
+        st.caption("_아직 업데이트 안 됨_")
+        return
+    dm = re.search(r"📅\s*([^\n]+)", text)
+    if dm:
+        st.caption(html.unescape(dm.group(1)))
+    pcts = fetch_kr_pcts(tuple(sorted(set(re.findall(r"\((\d{6})\)", text)))))
+    lines = []
+    for sec, items in re.findall(r"<b>〈([^〉]+)〉</b>\n(.*?)(?=\n<b>〈|\n총 |\Z)", text, flags=re.DOTALL):
+        names = re.findall(r"<b>([^<]+)</b>\s*\((\d{6})\)", items)
+        if names:
+            lines.append(f"<b>〈{sec}〉</b> " + ", ".join(_name_live(n, pcts.get(c)) for n, c in names))
+    if not lines:
+        st.caption("조건에 맞는 종목 없음")
+        return
+    st.markdown(
+        f'<div style="border:1px solid #2a2a2a;border-radius:10px;padding:12px;'
+        f'font-size:0.92rem;line-height:1.7;color:#000;">{"<br>".join(lines)}</div>',
+        unsafe_allow_html=True,
+    )
+
+
 st.subheader("📉 신고가 대비 -15% 이내 (시총 5000억↑)")
 render_kr_pullback()
 st.markdown("##### 📈 국내 52주 신고가")
 render_kr_new_high_list()
+_acc = re.search(r"\[중요\] ([^<]+)</b>", _report_text("kr_op_accel.md") or "")
+st.markdown(f"##### ‼️ {_acc.group(1) if _acc else '영업이익 가속 TOP20 (시총 5000억↑)'}")
+render_kr_op_accel()
 
 
 def render_cpi_yoy_chart() -> None:
