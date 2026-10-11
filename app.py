@@ -692,9 +692,50 @@ st.title("🐳 범고래 프로젝트")
 # ── 코스피 9000 매도 목표 배너 (2026-09-10 Dave 지시) ──────────────────────
 KOSPI_SELL_TARGET = 9000
 
+def _size_style_regime_html() -> str:
+    """직전 5거래일 사이즈(대/중/소)·스타일(성장/가치) 장세 — kr-size-style/fetch.py 공급 (2026-10-11 Dave 요청).
+    이긴 쪽(5일 수익률 1등)을 크게. 사이즈 비중=5일 거래대금 비중(괄호=직전 20일 대비 %p), 스타일 비중=상대성과 환산."""
+    try:
+        d = json.loads(_report_text("kr_size_style.json") or "")
+    except Exception:
+        return ""
+
+    def _ret(v):
+        c = "#dc2626" if v > 0 else "#2563eb" if v < 0 else "#444"
+        return f'<span style="color:{c};">{v:+.1f}%</span>'
+
+    def _chip(name, body, win):
+        if win:
+            return (f'<span style="display:inline-block;margin-right:12px;">'
+                    f'<b style="font-size:1.55rem;color:#dc2626;">{name}</b> {body}</span>')
+        return f'<span style="display:inline-block;margin-right:12px;color:#666;font-size:0.9rem;">{name} {body}</span>'
+
+    sw = set(d.get("size_winners", []))
+    size_html = "".join(
+        _chip(s["name"], f'<span style="font-size:0.95rem;">{s["tv_share"]:.0f}% '
+                         f'<span style="color:#888;font-size:0.8rem;">({s["tv_share_chg"]:+.1f}%p)</span> '
+                         f'{_ret(s["ret5"])}</span>', s["name"] in sw)
+        for s in d.get("size", []))
+    tw = set(d.get("style_winners", []))
+    style_html = "".join(
+        _chip(s["name"], f'<span style="font-size:0.95rem;">{s["share"]}% {_ret(s["ret5"])}</span>', s["name"] in tw)
+        for s in d.get("style", []))
+    w0, w1 = (x[5:].replace("-", "/") for x in d.get("window", ["", ""]))
+    return (
+        f'<div style="margin-top:8px;padding-top:8px;border-top:1px dashed #fca5a5;color:#000;line-height:1.9;">'
+        f'<div style="font-size:0.85rem;color:#555;">📊 직전 5거래일({w0}~{w1}) — 지금은 '
+        f'<b style="font-size:1.25rem;color:#dc2626;white-space:nowrap;">{d.get("size_verdict", "?")} 시장</b> · '
+        f'<b style="font-size:1.25rem;color:#dc2626;white-space:nowrap;">{d.get("style_verdict", "?")} 우위</b></div>'
+        f'<div><span style="font-size:0.8rem;color:#888;margin-right:6px;">사이즈 · 거래대금비중</span>{size_html}</div>'
+        f'<div><span style="font-size:0.8rem;color:#888;margin-right:6px;">스타일 · 성과비중</span>{style_html}</div>'
+        f'</div>'
+    )
+
+
 def render_kospi_sell_target_banner():
     q = fetch_quote("^KS11")
     price = q.get("price") if isinstance(q, dict) else None
+    regime = _size_style_regime_html()
     if price and price >= KOSPI_SELL_TARGET:
         st.markdown(
             f'<div style="padding:12px 16px;margin:4px 0 12px 0;border-radius:12px;'
@@ -703,6 +744,9 @@ def render_kospi_sell_target_banner():
             f'🚨 코스피 {price:,.0f} — 매도 목표 {KOSPI_SELL_TARGET:,} 도달! 팔아라!</div>',
             unsafe_allow_html=True,
         )
+        if regime:
+            st.markdown(f'<div style="padding:4px 14px 9px;margin:-4px 0 12px 0;border:1.5px solid #dc2626;'
+                        f'border-radius:12px;background:#fef2f2;">{regime}</div>', unsafe_allow_html=True)
         return
     if price:
         remain = (KOSPI_SELL_TARGET / price - 1) * 100
@@ -710,11 +754,11 @@ def render_kospi_sell_target_banner():
     else:
         detail = "현재가 조회 실패 — 목표만 표시"
     st.markdown(
-        f'<div style="display:flex;align-items:center;gap:10px;padding:9px 14px;'
-        f'margin:4px 0 12px 0;border:1.5px solid #dc2626;border-radius:12px;'
+        f'<div style="padding:9px 14px;margin:4px 0 12px 0;border:1.5px solid #dc2626;border-radius:12px;'
         f'background:#fef2f2;font-size:0.98rem;color:#000;">'
+        f'<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;">'
         f'<span style="font-weight:800;color:#dc2626;">🎯 코스피 {KOSPI_SELL_TARGET:,} 도달 시 매도</span>'
-        f'<span style="color:#444;">{detail}</span></div>',
+        f'<span style="color:#444;">{detail}</span></div>{regime}</div>',
         unsafe_allow_html=True,
     )
 
