@@ -92,9 +92,23 @@ def _holiday_cal(name: str):
     return getattr(holidays, name)()
 
 
+US_BONDS = {"^TNX", "^TYX"}
+
+
+def _us_bond_holiday() -> bool:
+    """美 국채 현물시장 휴장(SIFMA): 연방공휴일(콜럼버스데이·재향군인의날 포함) + NYSE 휴장일.
+    주식은 열어도 채권은 닫는 날이 있다 — 2026-10-12 콜럼버스데이에 10년물이 금요일 종가인데
+    '5분' 실시간 배지를 달고 떠서 Dave가 숫자 오류로 오인."""
+    import holidays
+    d = datetime.now(ZoneInfo("America/New_York")).date()
+    return d in holidays.US() or d in holidays.NYSE()
+
+
 def is_market_closed(symbol: str) -> bool | None:
     """지금 해당 시장이 닫혀있으면 True, 열려있으면 False, 판단 불가면 None."""
     try:
+        if symbol in US_BONDS and _us_bond_holiday():
+            return True
         if symbol in MARKET_24H:
             et = datetime.now(ZoneInfo("America/New_York"))
             wd, hm = et.weekday(), et.hour * 100 + et.minute
@@ -956,6 +970,8 @@ def render_card(
         as_of = q.get("as_of") or ""
         base = "장 마감" if closed else "전일 종가"
         label = f"{base} · {as_of[5:]}" if as_of else base  # MM-DD
+        if symbol in US_BONDS and closed and _us_bond_holiday():
+            label = "美채권 휴장 · 직전 종가"  # as_of는 수집일이라 표기 안 함
         stale_badge = (
             f'<span style="flex-shrink:0;display:inline-block;font-size:0.7rem;font-weight:600;'
             f'color:#92400e;background:#fef3c7;border:1px solid #fcd34d;'
