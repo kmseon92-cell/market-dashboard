@@ -896,36 +896,26 @@ def render_card(
     else:
         card_bg = ""
         border = red_frame if always_red else "border:1px solid #2a2a2a;"
+    # 경고 배지는 카드 폭(1/5 컬럼)에 한 줄로 들어가게 컴팩트하게 — 예전 2rem·자간 6px은
+    # '엔캐 리 -3.3%'처럼 쪼개지고 카드가 두 배로 늘어나 선물·환율 그리드가 깨졌다(2026-10-12)
+    def _badge(label: str) -> str:
+        return (
+            '<div class="bumgorae-danger" style="margin-top:6px;padding:3px 8px;'
+            'background:#dc2626;color:#fff;font-size:0.95rem;font-weight:900;'
+            'letter-spacing:0;text-align:center;border-radius:6px;white-space:nowrap;'
+            'overflow:hidden;text-overflow:ellipsis;'
+            'box-shadow:0 2px 8px rgba(220,38,38,0.45);'
+            f'animation:bumgorae-pulse 1.2s ease-in-out infinite;">{label}</div>'
+        )
     if kospi_sell:
-        danger_html = (
-            '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
-            'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
-            'letter-spacing:4px;text-align:center;border-radius:6px;'
-            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
-            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
-            'animation:bumgorae-pulse 1.2s ease-in-out infinite;">매도해!!!!</div>'
-        )
+        danger_html = _badge("매도해!!!!")
     elif danger:
-        danger_html = (
-            '<div class="bumgorae-danger" style="margin-top:8px;padding:8px 14px;'
-            'background:#dc2626;color:#fff;font-size:2rem;font-weight:900;'
-            'letter-spacing:6px;text-align:center;border-radius:6px;'
-            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
-            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
-            'animation:bumgorae-pulse 1.2s ease-in-out infinite;">돔황챠</div>'
-        )
+        danger_html = _badge("돔황챠")
     elif jpy_crash or jpy_carry_warn:
         label = "⚠ 경고"
         if jpy_carry_warn and not jpy_crash:
-            label = f"⚠ 엔캐리 {carry.get('drop_pct', 0):+.1f}%"
-        danger_html = (
-            '<div class="bumgorae-danger" style="margin-top:8px;padding:6px 12px;'
-            'background:#dc2626;color:#fff;font-size:1.5rem;font-weight:900;'
-            'letter-spacing:4px;text-align:center;border-radius:6px;'
-            'box-shadow:0 2px 10px rgba(220,38,38,0.5);'
-            'text-shadow:0 1px 2px rgba(0,0,0,0.3);'
-            f'animation:bumgorae-pulse 1.2s ease-in-out infinite;">{label}</div>'
-        )
+            label = f"엔캐리 {carry.get('drop_pct', 0):+.1f}%"
+        danger_html = _badge(label)
     else:
         danger_html = ""
     # 엔캐리 경고선은 별도 줄 대신 등락폭 줄에 인라인(카드 높이 유지)
