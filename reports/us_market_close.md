@@ -1,91 +1,77 @@
-<!-- updated: 2026-10-10 06:30 -->
+<!-- updated: 2026-10-13 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-10
+📅 2026-10-13
 ━━━━━━━━━━━━━━━
-다우 +0.83% | 나스닥 +0.64% | S&P500 +0.59% | 러셀2000 +0.46% | 필반도체 -0.41% | WTI $91.66 | 환율 1,340원
+다우 +0.38% | 나스닥 -0.44% | S&P500 -0.06% | 러셀2000 -0.45% | 필반도체 -2.67% | WTI $93.16 | 환율 1,334원
 
-📈 <b>52주 신고가 (28종목)</b>
+📈 <b>52주 신고가 (26종목)</b>
 
 <b>〈헬스케어〉</b>
   <b>ABBV</b> Abbvie Inc
-    $276.47 (+1.5%) | $488.6B
-  <b>HUM</b> Humana Inc 🔥
-    $431.87 (+11.6%) | $51.9B
-  <b>MRNA</b> Moderna Inc 🔥
-    $225.00 (+14.2%) | $89.8B
-  <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
-    $41.10 (+4.7%) | $47.9B
+    $281.12 (+1.7%) | $496.8B
+  <b>BIIB</b> Biogen Inc
+    $229.41 (+1.6%) | $33.9B
+  <b>EXEL</b> Exelixis Inc
+    $59.82 (-0.1%) | $14.8B
+  <b>MRNA</b> Moderna Inc
+    $213.74 (-5.0%) | $85.3B
 
 <b>〈기술〉</b>
-  <b>ANET</b> Arista Networks Inc
-    $216.74 (+2.7%) | $273.4B
   <b>PLTR</b> Palantir Technologies Inc
-    $209.05 (+5.2%) | $502.4B
+    $209.00 (-0.0%) | $502.2B
   <b>DDOG</b> Datadog Inc
-    $293.26 (+7.1%) | $105.3B
+    $287.29 (-2.0%) | $103.2B
   <b>DT</b> Dynatrace Inc
-    $63.50 (+3.9%) | $18.4B
+    $65.25 (+2.8%) | $18.9B
   <b>FFIV</b> F5 Inc
-    $479.83 (+3.9%) | $27.2B
+    $473.49 (-1.3%) | $26.8B
   <b>FTNT</b> Fortinet Inc
-    $194.75 (+3.0%) | $142.9B
-  <b>HPE</b> Hewlett Packard Enterprise Co
-    $73.46 (+3.5%) | $97.5B
-  <b>LITE</b> Lumentum Holdings Inc
-    $1,103.35 (+5.2%) | $100.0B
+    $192.94 (-0.9%) | $141.6B
+  <b>NTAP</b> Netapp Inc
+    $239.18 (+0.9%) | $47.0B
   <b>NTNX</b> Nutanix Inc
-    $74.63 (+2.1%) | $20.2B
+    $74.14 (-0.7%) | $20.1B
   <b>OKTA</b> Okta Inc
-    $232.13 (+5.4%) | $40.6B
+    $227.08 (-2.2%) | $39.7B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.65 (+0.2%) | $64.0B
+    $99.88 (+0.2%) | $65.3B
   <b>TEAM</b> Atlassian Corp
-    $206.79 (+1.6%) | $52.4B
+    $207.75 (+0.5%) | $52.6B
 
 <b>〈에너지〉</b>
   <b>SHEL</b> Shell Plc ADR
-    $100.18 (-0.0%) | $285.6B
+    $101.59 (+1.4%) | $289.7B
   <b>DINO</b> HF Sinclair Corp
-    $121.30 (+0.5%) | $21.6B
+    $122.91 (+1.3%) | $21.9B
   <b>FRO</b> Frontline Plc
-    $56.10 (-0.3%) | $12.5B
-  <b>MPC</b> Marathon Petroleum Corp
-    $455.03 (-1.8%) | $127.8B
+    $59.19 (+5.5%) | $13.2B
   <b>PBR</b> Petroleo Brasileiro SA Petrobras ADR
-    $25.30 (+2.5%) | $94.1B
+    $25.42 (+0.5%) | $94.6B
   <b>PBR-A</b> Petroleo Brasileiro SA Petrobras ADR
-    $22.47 (+1.5%) | $61.2B
-  <b>PSX</b> Phillips 66
-    $278.18 (-1.2%) | $111.0B
+    $22.62 (+0.7%) | $61.6B
   <b>SU</b> Suncor Energy Inc
-    $72.23 (+1.9%) | $84.5B
-  <b>VLO</b> Valero Energy Corp
-    $433.75 (-2.3%) | $124.9B
+    $73.51 (+1.8%) | $86.0B
 
 <b>〈금융〉</b>
   <b>V</b> Visa Inc
-    $385.45 (+2.8%) | $719.6B
+    $389.27 (+1.0%) | $726.8B
+  <b>RGA</b> Reinsurance Group Of America Inc
+    $259.95 (+1.6%) | $17.0B
+  <b>RNR</b> RenaissanceRe Holdings Ltd
+    $338.87 (+2.3%) | $14.1B
+  <b>VYLR</b> Vylor Inc
+    $75.89 (+3.8%) | $50.6B
   <b>XP</b> XP Inc
-    $32.22 (+6.7%) | $16.7B
+    $32.60 (+1.2%) | $16.9B
 
-<b>〈산업재〉</b>
-  <b>EXPD</b> Expeditors International Of Washington Inc
-    $193.24 (-0.2%) | $25.1B
+<b>〈경기소비재〉</b>
+  <b>GME</b> Gamestop Corp
+    $27.23 (+2.5%) | $13.7B
 
-🚀 <b>8% 이상 급등 (4종목)</b>
-
-<b>〈부동산〉</b>
-  <b>AMT</b> American Tower Corp
-    $182.24 (+9.3%) | $84.9B
-  <b>CCI</b> Crown Castle Inc
-    $79.64 (+15.6%) | $33.9B
+🚀 <b>8% 이상 급등 (1종목)</b>
 
 <b>〈기술〉</b>
-  <b>DOCN</b> DigitalOcean Holdings Inc
-    $134.82 (+8.8%) | $15.8B
-
-<b>〈헬스케어〉</b>
-  <b>PCVX</b> Vaxcyte Inc
-    $71.38 (+9.8%) | $10.6B
+  <b>FICO</b> Fair Isaac Corp
+    $740.00 (+10.8%) | $16.0B
 
 
