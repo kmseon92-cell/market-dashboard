@@ -754,11 +754,25 @@ st.title("🐳 범고래 프로젝트")
 KOSPI_SELL_TARGET = 9000
 # 배너 상시 문구 (2026-10-11 Dave 지시)
 # 돌격 기간엔 앞에 별도 문구 "돌격"(2.2rem)을 띄워서 표시 (2026-10-12 Dave 지시, KST 기준 양끝 포함)
+# D-day: 기간 전엔 다음 돌격 시작까지 "돌격 D-n", 기간 중엔 "돌격 D-n"(종료까지 남은 일수, 마지막날 D-DAY)
 MOTTO_CHARGE_WINDOWS = [("2026-10-24", "2026-11-22"), ("2027-01-20", "2027-03-20")]
-_today_kst = datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
-_charge = any(a <= _today_kst <= b for a, b in MOTTO_CHARGE_WINDOWS)
-MOTTO_HTML = ('<span style="font-weight:800;color:#dc2626;font-size:2.2rem;line-height:1.2;margin-right:2.5rem;">돌격</span>'
-              if _charge else '') + \
+
+def _charge_html() -> str:
+    today = datetime.now(ZoneInfo("Asia/Seoul")).date()
+    _d = lambda x: datetime.strptime(x, "%Y-%m-%d").date()
+    _dd = lambda n: "D-DAY" if n == 0 else f"D-{n}"
+    red = "font-weight:800;color:#dc2626;line-height:1.2;"
+    for a, b in MOTTO_CHARGE_WINDOWS:
+        a, b = _d(a), _d(b)
+        if a <= today <= b:   # 돌격 중: 크게 + 종료까지
+            return (f'<span style="{red}font-size:2.2rem;margin-right:0.6rem;">돌격</span>'
+                    f'<span style="{red}font-size:1.2rem;margin-right:2.5rem;">종료 {_dd((b - today).days)}</span>')
+        if today < a:         # 다음 돌격까지 카운트다운
+            return (f'<span style="{red}font-size:1.6rem;margin-right:2.5rem;">'
+                    f'돌격 {_dd((a - today).days)}</span>')
+    return ""
+
+MOTTO_HTML = _charge_html() + \
              '<span style="font-weight:800;color:#dc2626;font-size:1.6rem;line-height:1.2;">성장률의 델타값</span>'
 
 def _size_style_regime_html() -> str:
