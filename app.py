@@ -456,6 +456,45 @@ def _load_us_futures() -> dict:
             return json.load(f)
 
 
+# CNBC restQuote를 대시보드가 직접 읽는다(30초 캐시). 맥미니 5분 프리페치 → GitHub →
+# 60초 캐시를 거치면 최대 6분 묵은 값이라 나스닥선물이 CNBC 화면과 10~20pt 어긋났다
+# (2026-10-12 Dave "숫자 틀림" 지적). 실패하면 프리페치 JSON으로 폴백.
+CNBC_LIVE_SYMS = {"NQ=F": "@ND.1", "CL=F": "@CL.1", "JPY=X": "JPY=", "^TNX": "US10Y",
+                  "^TYX": "US30Y", "DX-Y.NYB": ".DXY"}
+
+
+@st.cache_data(ttl=30, show_spinner=False)
+def _cnbc_live() -> dict:
+    import urllib.parse
+    import urllib.request
+    url = ("https://quote.cnbc.com/quote-html-webservice/restQuote/symbolType/symbol"
+           f"?symbols={urllib.parse.quote('|'.join(CNBC_LIVE_SYMS.values()), safe='')}"
+           "&requestMethod=itv&noform=1&partnerId=2&fund=1&exthrs=1&output=json")
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+        items = json.loads(urllib.request.urlopen(req, timeout=5).read())["FormattedQuoteResult"]["FormattedQuote"]
+    except Exception:
+        return {}
+    num = lambda v: float(str(v).replace(",", "").replace("%", "").replace("+", ""))
+    rev = {v: k for k, v in CNBC_LIVE_SYMS.items()}
+    out = {}
+    for q in items if isinstance(items, list) else [items]:
+        ysym = rev.get(q.get("symbol"))
+        if not ysym:
+            continue
+        try:
+            price = num(q["last"])
+        except Exception:
+            continue
+        sign = -1.0 if q.get("changetype") == "DOWN" else 1.0
+        try:
+            chg, pct = sign * abs(num(q.get("change", 0))), sign * abs(num(q.get("change_pct", 0)))
+        except ValueError:
+            chg = pct = 0.0  # 보합이면 "UNCH"
+        out[ysym] = {"price": price, "change": chg, "pct": pct}
+    return out
+
+
 def _fetch_prefetched(symbol: str):
     """reports/us_futures.json(맥미니가 investing.com에서 5분마다 갱신)에서 읽기.
     investing.com 프리페치는 이 심볼들의 '정식' 소스다. yahoo 폴백은 선물 야간장에
@@ -465,7 +504,8 @@ def _fetch_prefetched(symbol: str):
     실제보다 오래돼 보일 때) 프리페치 값을 버리지 않고 '지연' 배지만 키운다.
     파일/심볼이 아예 없을 때만 raise해서 폴백시킨다."""
     data = _load_us_futures()
-    q = (data.get("quotes") or {}).get(symbol)
+    live = _cnbc_live().get(symbol)
+    q = live or (data.get("quotes") or {}).get(symbol)
     if not q:
         raise ValueError(f"prefetch: {symbol} 없음")
     out = {"price": q["price"], "change": q["change"], "pct": q["pct"],
@@ -473,6 +513,10 @@ def _fetch_prefetched(symbol: str):
     # 엔캐리 청산 워닝(3개월 고점比 -3% 엔 강세) — us-futures/fetch.py가 계산해 동봉
     if symbol == "JPY=X" and data.get("jpy_carry"):
         out["carry"] = data["jpy_carry"]
+    if live:
+        out["delayed"] = False  # CNBC 직접(30초 캐시) — 지연 배지 없음
+        out["as_of"] = datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
+        return out
     fetched = data.get("fetched_at", "")
     if len(fetched) >= 10:
         out["as_of"] = fetched[:10]
