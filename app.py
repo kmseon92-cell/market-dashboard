@@ -753,12 +753,13 @@ st.title("🐳 범고래 프로젝트")
 # ── 코스피 9000 매도 목표 배너 (2026-09-10 Dave 지시) ──────────────────────
 KOSPI_SELL_TARGET = 9000
 # 배너 상시 문구 (2026-10-11 Dave 지시)
-# 돌격 기간엔 앞에 "돌격" + 글자 키움 (2026-10-12 Dave 지시, KST 기준 양끝 포함)
+# 돌격 기간엔 앞에 별도 문구 "돌격"(2.2rem)을 띄워서 표시 (2026-10-12 Dave 지시, KST 기준 양끝 포함)
 MOTTO_CHARGE_WINDOWS = [("2026-10-24", "2026-11-22"), ("2027-01-20", "2027-03-20")]
 _today_kst = datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
 _charge = any(a <= _today_kst <= b for a, b in MOTTO_CHARGE_WINDOWS)
-MOTTO_HTML = (f'<span style="font-weight:800;color:#dc2626;font-size:{"2.2rem" if _charge else "1.6rem"};line-height:1.2;">'
-              f'{"돌격 " if _charge else ""}성장률의 델타값</span>')
+MOTTO_HTML = ('<span style="font-weight:800;color:#dc2626;font-size:2.2rem;line-height:1.2;margin-right:2.5rem;">돌격</span>'
+              if _charge else '') + \
+             '<span style="font-weight:800;color:#dc2626;font-size:1.6rem;line-height:1.2;">성장률의 델타값</span>'
 
 def _size_style_regime_html() -> str:
     """직전 5거래일 사이즈(대/중/소)·스타일(성장/가치) 장세 — kr-size-style/fetch.py 공급 (2026-10-11 Dave 요청).
