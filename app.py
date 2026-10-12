@@ -442,12 +442,14 @@ def _report_text(filename: str):
         return f.read()
 
 
-@st.cache_data(ttl=60)
+@st.cache_data(ttl=15)
 def _load_us_futures() -> dict:
-    # 5분 주기 페처라 ttl=60 별도 유지(_report_text의 ttl=300은 너무 김).
+    # CNBC 직접 조회 실패 시 폴백(5분 페처). raw.githubusercontent는 max-age=300 CDN 캐시라 그냥 읽으면
+    # 최대 5분 묵는다 → ?t= 캐시버스터 필수(2026-10-12 나스닥선물 6분+ 지연 사고).
+    import time
     import urllib.request
     try:
-        req = urllib.request.Request(RAW_REPORT_BASE + "us_futures.json",
+        req = urllib.request.Request(RAW_REPORT_BASE + f"us_futures.json?t={int(time.time()) // 15}",
                                      headers={"User-Agent": "Mozilla/5.0"})
         return json.loads(urllib.request.urlopen(req, timeout=5).read().decode())
     except Exception:
