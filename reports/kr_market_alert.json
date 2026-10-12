@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-12T08:01:27",
+  "fetched_at": "2026-10-13T08:01:01",
   "alerts": [
     {
       "stock_name": "SH에너지화학",
@@ -45,52 +45,6 @@
       "current_date": "2026-10-08",
       "is_at_risk": false,
       "ticker": "009155.KS",
-      "price_error": null
-    },
-    {
-      "stock_name": "에이치엠넥스",
-      "stock_code": "036170",
-      "market": "코스닥",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-09-21",
-      "designated_date": "2026-09-22",
-      "judgment_date": "2026-10-12",
-      "judgment_source": "시행세칙",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3200.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 4448.0,
-        "cond2_15d_100pct": 4680.0,
-        "cond3_15d_high": 3200.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 3225.0,
-      "current_date": "2026-10-08",
-      "is_at_risk": true,
-      "ticker": "036170.KQ",
-      "price_error": null
-    },
-    {
-      "stock_name": "비트플래닛",
-      "stock_code": "049470",
-      "market": "코스닥",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-09-22",
-      "designated_date": "2026-09-23",
-      "judgment_date": "2026-10-13",
-      "judgment_source": "시행세칙",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3180.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 4304.0,
-        "cond2_15d_100pct": 4480.0,
-        "cond3_15d_high": 3180.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 2560.0,
-      "current_date": "2026-10-08",
-      "is_at_risk": false,
-      "ticker": "049470.KQ",
       "price_error": null
     },
     {
@@ -155,6 +109,29 @@
       "current_date": "2026-10-08",
       "is_at_risk": true,
       "ticker": "078350.KQ",
+      "price_error": null
+    },
+    {
+      "stock_name": "동양고속",
+      "stock_code": "084670",
+      "market": "유가증권",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-10-12",
+      "designated_date": "2026-10-13",
+      "judgment_date": "2026-10-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 29250.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 37520.0,
+        "cond2_15d_100pct": 47000.0,
+        "cond3_15d_high": 29250.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 38000.0,
+      "current_date": "2026-10-08",
+      "is_at_risk": true,
+      "ticker": "084670.KS",
       "price_error": null
     },
     {
@@ -296,6 +273,29 @@
       "price_error": null
     },
     {
+      "stock_name": "츌립앤사이언스",
+      "stock_code": "291650",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-10-12",
+      "designated_date": "2026-10-13",
+      "judgment_date": "2026-10-27",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 2750.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 3592.0,
+        "cond2_15d_100pct": 3122.0,
+        "cond3_15d_high": 2750.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 2765.0,
+      "current_date": "2026-10-08",
+      "is_at_risk": true,
+      "ticker": "291650.KQ",
+      "price_error": null
+    },
+    {
       "stock_name": "더콘텐츠온",
       "stock_code": "302920",
       "market": "코넥스",
@@ -431,29 +431,6 @@
       "current_date": "2026-10-08",
       "is_at_risk": false,
       "ticker": "393210.KQ",
-      "price_error": null
-    },
-    {
-      "stock_name": "기가비스",
-      "stock_code": "420770",
-      "market": "코스닥",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-09-22",
-      "designated_date": "2026-09-23",
-      "judgment_date": "2026-10-13",
-      "judgment_source": "시행세칙",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 135500.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 203360.0,
-        "cond2_15d_100pct": 187800.0,
-        "cond3_15d_high": 135500.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 137500.0,
-      "current_date": "2026-10-08",
-      "is_at_risk": true,
-      "ticker": "420770.KQ",
       "price_error": null
     }
   ]
