@@ -2,47 +2,21 @@
   "cleveland": {
     "next_target": {
       "subcaption": "2026-10",
-      "cpi_yoy": 3.6330049944524,
-      "core_yoy": 2.29751877767275,
-      "nowcast_as_of": "10/13"
+      "cpi_yoy": 3.77955475607954,
+      "core_yoy": 2.48284216554884,
+      "nowcast_as_of": "10/14"
     },
     "forward_target": {
       "subcaption": "2026-10",
-      "cpi_yoy": 3.6330049944524,
-      "core_yoy": 2.29751877767275,
-      "nowcast_as_of": "10/13"
+      "cpi_yoy": 3.77955475607954,
+      "core_yoy": 2.48284216554884,
+      "nowcast_as_of": "10/14"
     },
-    "source_updated": "2026-10-13 00:00"
+    "source_updated": "2026-10-14 00:00"
   },
   "consensus": {
-    "cpi": {
-      "latest_release": null,
-      "next_release": {
-        "forecast": 3.6,
-        "previous": 3.4,
-        "actual": null,
-        "forecast_mom": 0.6,
-        "previous_mom": 0.4,
-        "actual_mom": null,
-        "occurrence_time": "2026-10-14T08:30:00-04:00",
-        "reference_period": "Sep",
-        "source": "forexfactory"
-      }
-    },
-    "core_cpi": {
-      "latest_release": null,
-      "next_release": {
-        "forecast": 2.5,
-        "previous": 2.4,
-        "actual": null,
-        "forecast_mom": 0.2,
-        "previous_mom": 0.3,
-        "actual_mom": null,
-        "occurrence_time": "2026-10-14T08:30:00-04:00",
-        "reference_period": "Sep",
-        "source": "forexfactory"
-      }
-    }
+    "cpi": null,
+    "core_cpi": null
   },
   "consensus_feed_ok": true,
   "history": [
@@ -205,7 +179,12 @@
       "month": "2026-08",
       "cpi_yoy": 3.4,
       "core_yoy": 2.45
+    },
+    {
+      "month": "2026-09",
+      "cpi_yoy": 3.74,
+      "core_yoy": 2.56
     }
   ],
-  "fetched_at": "2026-10-14T19:00:09"
+  "fetched_at": "2026-10-15T07:01:02"
 }
