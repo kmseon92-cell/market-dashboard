@@ -1,39 +1,29 @@
 {
- "as_of": "2026-10-12",
+ "as_of": "2026-10-13",
  "signal": {
-  "status": "neutral",
-  "label": "⚪ 중립",
-  "deposit": 1004388.8,
-  "deposit_delta": 3289.4000000000233,
-  "down_streak": 2,
-  "deposit_drop_pct": -28.1,
-  "uncl": 10634.7,
-  "uncl_peak": 11480.0,
-  "uncl_drop_pct": -7.4,
-  "bandae": 270.8,
-  "bandae_peak_10d": 272.2,
-  "bandae_pct": 2.5463811861171446,
+  "status": "outflow",
+  "label": "📉 자금 이탈 지속 (1일 연속 감소)",
+  "deposit": 1000982.8,
+  "deposit_delta": -3406.1999999999534,
+  "down_streak": 0,
+  "deposit_drop_pct": -28.3,
+  "uncl": 12415.2,
+  "uncl_peak": 12415.2,
+  "uncl_drop_pct": 0.0,
+  "bandae": 593.5,
+  "bandae_peak_10d": 593.5,
+  "bandae_pct": 4.780430440105676,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 335167.0,
+  "credit": 342887.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -13.2
+  "credit_drop_pct": -11.2
  },
  "history": [
-  {
-   "date": "2026-05-29",
-   "bandae": 154.1,
-   "bandae_pct": 1.2,
-   "credit": 380227.0,
-   "deposit": 1315856.0,
-   "futs": 480248.0,
-   "kospi": 8476.15,
-   "uncl": 13492.0
-  },
   {
    "date": "2026-06-01",
    "bandae": 331.7,
@@ -908,18 +898,30 @@
    "date": "2026-10-08",
    "bandae": 63.6,
    "bandae_pct": 0.6,
-   "deposit": 1001099.4,
-   "futs": 393914.2,
-   "uncl": 9914.6
+   "deposit": 1001099.0,
+   "futs": 393914.0,
+   "uncl": 9915.0,
+   "credit": 338113.0,
+   "kospi": 6625.93
   },
   {
    "date": "2026-10-12",
-   "deposit": 1004388.8,
-   "futs": 397479.8,
-   "uncl": 10634.7,
    "bandae": 270.8,
-   "bandae_pct": 2.5
+   "bandae_pct": 2.5,
+   "deposit": 1004389.0,
+   "futs": 397480.0,
+   "uncl": 10635.0,
+   "credit": 342887.0,
+   "kospi": 6384.24
+  },
+  {
+   "date": "2026-10-13",
+   "deposit": 1000982.8,
+   "futs": 381937.5,
+   "uncl": 12415.2,
+   "bandae": 593.5,
+   "bandae_pct": 4.8
   }
  ],
- "fetched_at": "2026-10-13T15:11:12"
+ "fetched_at": "2026-10-14T15:10:09"
 }
