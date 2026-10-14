@@ -1,83 +1,95 @@
-<!-- updated: 2026-10-14 06:30 -->
+<!-- updated: 2026-10-15 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-14
+📅 2026-10-15
 ━━━━━━━━━━━━━━━
-다우 -0.35% | 나스닥 -0.15% | S&P500 -0.02% | 러셀2000 -0.40% | 필반도체 -0.23% | WTI $94.79 | 환율 1,340원
+다우 -0.09% | 나스닥 -1.88% | S&P500 -1.11% | 러셀2000 -1.93% | 필반도체 -4.30% | WTI $95.17 | 환율 1,341원
 
-📈 <b>52주 신고가 (31종목)</b>
-
-<b>〈기술〉</b>
-  <b>AAPL</b> Apple Inc
-    $341.27 (+0.1%) | $5.0T
-  <b>DT</b> Dynatrace Inc
-    $64.47 (-1.2%) | $18.6B
-  <b>FTNT</b> Fortinet Inc
-    $190.76 (-1.1%) | $140.0B
-  <b>NTAP</b> Netapp Inc
-    $239.01 (-0.1%) | $47.0B
-  <b>P</b> Everpure Inc
-    $156.97 (+1.1%) | $52.3B
-  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.90 (+0.0%) | $64.5B
-  <b>TEAM</b> Atlassian Corp
-    $208.04 (+0.1%) | $52.7B
+📈 <b>52주 신고가 (32종목)</b>
 
 <b>〈헬스케어〉</b>
   <b>ABBV</b> Abbvie Inc
-    $274.36 (-2.4%) | $484.8B
+    $283.48 (+3.3%) | $500.9B
   <b>CNC</b> Centene Corp
-    $68.86 (+2.8%) | $34.0B
+    $70.16 (+1.9%) | $34.7B
+  <b>HALO</b> Halozyme Therapeutics Inc
+    $116.82 (+6.6%) | $13.3B
   <b>MTD</b> Mettler-Toledo International Inc
-    $1,598.03 (+2.2%) | $32.0B
-  <b>OSCR</b> Oscar Health Inc
-    $33.79 (-0.7%) | $10.4B
-  <b>VEEV</b> Veeva Systems Inc
-    $301.63 (+1.9%) | $48.8B
+    $1,609.27 (+0.7%) | $32.2B
+  <b>PFE</b> Pfizer Inc
+    $29.21 (+3.0%) | $166.5B
 
 <b>〈에너지〉</b>
   <b>CVX</b> Chevron Corp
-    $217.73 (+1.3%) | $430.2B
+    $222.04 (+2.0%) | $438.7B
   <b>SHEL</b> Shell Plc ADR
-    $102.99 (+1.4%) | $293.5B
+    $103.58 (+0.6%) | $295.1B
+  <b>XOM</b> ExxonMobil Holdings Corp
+    $177.01 (+1.7%) | $727.9B
   <b>APA</b> APA Corp
-    $48.01 (+2.5%) | $16.8B
+    $47.37 (-1.3%) | $16.6B
   <b>BP</b> BP plc ADR
-    $48.53 (+3.9%) | $125.0B
+    $48.81 (+0.6%) | $125.7B
+  <b>CNQ</b> Canadian Natural Resources Ltd
+    $51.82 (-0.6%) | $106.8B
+  <b>COP</b> Conoco Phillips
+    $142.34 (+1.0%) | $171.0B
   <b>DINO</b> HF Sinclair Corp
-    $128.23 (+4.3%) | $22.8B
-  <b>FRO</b> Frontline Plc
-    $59.04 (-0.2%) | $13.1B
+    $127.69 (-0.4%) | $22.7B
+  <b>EOG</b> EOG Resources Inc
+    $154.19 (+0.7%) | $80.9B
   <b>MPC</b> Marathon Petroleum Corp
-    $476.98 (+4.0%) | $133.9B
+    $484.92 (+1.7%) | $136.2B
   <b>PBF</b> PBF Energy Inc
-    $91.17 (+7.2%) | $10.8B
+    $89.51 (-1.8%) | $10.6B
+  <b>PBR</b> Petroleo Brasileiro SA Petrobras ADR
+    $25.94 (+1.7%) | $96.5B
+  <b>PBR-A</b> Petroleo Brasileiro SA Petrobras ADR
+    $23.06 (+2.0%) | $62.8B
   <b>PSX</b> Phillips 66
-    $292.73 (+4.0%) | $116.8B
+    $297.29 (+1.6%) | $118.6B
   <b>SU</b> Suncor Energy Inc
-    $75.20 (+2.3%) | $88.0B
+    $75.89 (+0.9%) | $88.8B
   <b>VLO</b> Valero Energy Corp
-    $456.46 (+4.7%) | $131.4B
+    $459.78 (+0.7%) | $132.4B
 
 <b>〈금융〉</b>
   <b>MA</b> Mastercard Incorporated
-    $604.80 (+1.6%) | $529.8B
+    $603.24 (-0.3%) | $528.4B
   <b>V</b> Visa Inc
-    $396.06 (+1.7%) | $739.5B
-  <b>MET</b> Metlife Inc
-    $100.65 (+0.5%) | $64.0B
+    $391.43 (-1.2%) | $730.8B
   <b>RGA</b> Reinsurance Group Of America Inc
-    $258.33 (-0.6%) | $16.9B
+    $261.05 (+1.1%) | $17.1B
   <b>RNR</b> RenaissanceRe Holdings Ltd
-    $340.82 (+0.6%) | $14.2B
-  <b>VYLR</b> Vylor Inc
-    $76.94 (+1.4%) | $51.3B
+    $339.51 (-0.4%) | $14.1B
+
+<b>〈커뮤니케이션〉</b>
+  <b>CHT</b> Chunghwa Telecom ADR
+    $46.51 (+0.9%) | $36.1B
+
+<b>〈기술〉</b>
+  <b>DOCU</b> DocuSign Inc
+    $75.23 (+4.0%) | $14.1B
+  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
+    $99.74 (-0.2%) | $64.1B
 
 <b>〈산업재〉</b>
   <b>EXPD</b> Expeditors International Of Washington Inc
-    $195.13 (+0.9%) | $25.4B
+    $196.38 (+0.6%) | $25.5B
 
 <b>〈경기소비재〉</b>
   <b>GME</b> Gamestop Corp
-    $27.22 (-0.0%) | $13.7B
+    $27.15 (-0.3%) | $13.7B
+  <b>HMC</b> Honda Motor ADR
+    $33.45 (+0.4%) | $43.4B
+
+<b>〈소재〉</b>
+  <b>IFF</b> International Flavors & Fragrances Inc
+    $89.60 (+1.6%) | $22.9B
+
+🚀 <b>8% 이상 급등 (1종목)</b>
+
+<b>〈기술〉</b>
+  <b>BSP</b> Bending Spoons S.p.A
+    $53.46 (+41.2%) | $34.0B
 
 
