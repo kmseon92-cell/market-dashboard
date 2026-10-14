@@ -1,11 +1,7 @@
-<!-- updated: 2026-10-14 06:04 -->
+<!-- updated: 2026-10-15 06:08 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-10-14 06:04 KST
+기준: 2026-10-15 06:08 KST
 ━━━━━━━━━━━━━━━
-
-<b>10/14 (수) · 1종목</b>
-  〈장전〉
-    <b>ASML</b> ASML Holding N.V.
 
 <b>10/15 (목) · 1종목</b>
   〈장전〉
@@ -19,3 +15,10 @@
 
 <b>10/20 (화) · 0종목</b>
   — 주목 종목 없음
+
+<b>10/21 (수) · 4종목</b>
+  〈장후〉
+    <b>TSLA</b> Tesla, Inc.
+    <b>META</b> Meta Platforms, Inc.
+    <b>LRCX</b> Lam Research Corporation
+    <b>TXN</b> Texas Instruments Incorporated
