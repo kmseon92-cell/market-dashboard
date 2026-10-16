@@ -1,43 +1,33 @@
 {
- "as_of": "2026-10-14",
+ "as_of": "2026-10-15",
  "signal": {
-  "status": "climax",
-  "label": "🔔 반대매매 클라이맥스 893억 — 바닥 후보일. 단 60일 신기록 아님(함정 주의: 6/24·7/9형). ①지수 저점 사수 ②예탁금 2일 전환 확인 필요",
-  "deposit": 974280.1,
-  "deposit_delta": -26702.900000000023,
-  "down_streak": 1,
-  "deposit_drop_pct": -30.3,
-  "uncl": 13574.7,
-  "uncl_peak": 13574.7,
+  "status": "outflow",
+  "label": "📉 자금 이탈 지속 (3일 연속 감소)",
+  "deposit": 969121.2,
+  "deposit_delta": -5158.800000000047,
+  "down_streak": 2,
+  "deposit_drop_pct": -30.6,
+  "uncl": 13925.6,
+  "uncl_peak": 13925.6,
   "uncl_drop_pct": 0.0,
-  "bandae": 893.4,
+  "bandae": 805.0,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 6.581360914053349,
+  "bandae_pct": 5.7807203998391445,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": 7.343364429732169,
-  "climax": "today",
+  "climax": "pending",
   "climax_spike": {
    "date": "2026-10-14",
    "bandae": 893.4,
-   "kospi": 6035.35
+   "kospi": 6008.81
   },
-  "credit": 342529.0,
+  "credit": 337057.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -11.3
+  "credit_drop_pct": -12.8
  },
  "history": [
-  {
-   "date": "2026-06-02",
-   "bandae": 168.4,
-   "bandae_pct": 1.2,
-   "credit": 377091.0,
-   "deposit": 1368111.0,
-   "futs": 534509.0,
-   "kospi": 8801.49,
-   "uncl": 13277.0
-  },
   {
    "date": "2026-06-04",
    "bandae": 243.1,
@@ -912,20 +902,30 @@
    "date": "2026-10-13",
    "bandae": 593.5,
    "bandae_pct": 4.8,
+   "credit": 342529.0,
    "deposit": 1000983.0,
    "futs": 381937.0,
-   "uncl": 12415.0,
-   "credit": 342529.0,
-   "kospi": 6035.35
+   "kospi": 6035.35,
+   "uncl": 12415.0
   },
   {
    "date": "2026-10-14",
-   "deposit": 974280.1,
-   "futs": 367374.3,
-   "uncl": 13574.7,
    "bandae": 893.4,
-   "bandae_pct": 6.6
+   "bandae_pct": 6.6,
+   "deposit": 974280.0,
+   "futs": 367374.0,
+   "uncl": 13575.0,
+   "credit": 337057.0,
+   "kospi": 6008.81
+  },
+  {
+   "date": "2026-10-15",
+   "deposit": 969121.2,
+   "futs": 376443.8,
+   "uncl": 13925.6,
+   "bandae": 805.0,
+   "bandae_pct": 5.8
   }
  ],
- "fetched_at": "2026-10-15T15:10:10"
+ "fetched_at": "2026-10-16T15:10:35"
 }
