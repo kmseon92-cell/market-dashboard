@@ -1,143 +1,115 @@
-<!-- updated: 2026-10-16 06:30 -->
+<!-- updated: 2026-10-17 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-16
+📅 2026-10-17
 ━━━━━━━━━━━━━━━
-다우 +1.08% | 나스닥 +0.08% | S&P500 +0.33% | 러셀2000 +1.38% | 필반도체 -0.88% | WTI $96.12 | 환율 1,341원
+다우 -0.34% | 나스닥 -2.14% | S&P500 -1.09% | 러셀2000 -1.66% | 필반도체 -3.83% | WTI $99.04 | 환율 1,341원
 
-📈 <b>52주 신고가 (47종목)</b>
-
-<b>〈헬스케어〉</b>
-  <b>ABBV</b> Abbvie Inc
-    $283.40 (-0.0%) | $500.8B
-  <b>TMO</b> Thermo Fisher Scientific Inc
-    $696.49 (+3.5%) | $257.5B
-  <b>BDX</b> Becton Dickinson & Co
-    $193.76 (+2.6%) | $52.8B
-  <b>BIIB</b> Biogen Inc
-    $235.35 (+1.1%) | $34.8B
-  <b>CNC</b> Centene Corp
-    $70.51 (+0.5%) | $34.8B
-  <b>EHC</b> Encompass Health Corp
-    $127.77 (+1.0%) | $12.6B
-  <b>EXEL</b> Exelixis Inc
-    $62.83 (+3.0%) | $15.6B
-  <b>GILD</b> Gilead Sciences Inc
-    $157.37 (+2.5%) | $195.1B
-  <b>HALO</b> Halozyme Therapeutics Inc
-    $121.51 (+4.0%) | $13.8B
-  <b>MCK</b> Mckesson Corp
-    $998.64 (+2.3%) | $116.4B
-  <b>MRNA</b> Moderna Inc
-    $236.50 (+4.5%) | $94.4B
-  <b>MTD</b> Mettler-Toledo International Inc
-    $1,639.04 (+1.9%) | $32.8B
-  <b>PFE</b> Pfizer Inc
-    $29.44 (+0.8%) | $167.8B
-  <b>TAK</b> Takeda Pharmaceutical Co ADR
-    $19.45 (+2.3%) | $61.9B
-  <b>VEEV</b> Veeva Systems Inc
-    $313.03 (+5.3%) | $50.7B
+📈 <b>52주 신고가 (44종목)</b>
 
 <b>〈에너지〉</b>
   <b>CVX</b> Chevron Corp
-    $219.32 (-1.2%) | $433.3B
+    $224.99 (+2.6%) | $444.5B
   <b>SHEL</b> Shell Plc ADR
-    $103.55 (-0.0%) | $295.0B
+    $106.66 (+3.0%) | $303.8B
   <b>XOM</b> ExxonMobil Holdings Corp
-    $174.68 (-1.3%) | $718.3B
+    $178.98 (+2.5%) | $736.0B
+  <b>APA</b> APA Corp
+    $49.15 (+4.1%) | $17.2B
   <b>BP</b> BP plc ADR
-    $48.44 (-0.8%) | $124.8B
+    $50.21 (+3.6%) | $129.3B
+  <b>CNQ</b> Canadian Natural Resources Ltd
+    $53.80 (+3.6%) | $110.9B
   <b>COP</b> Conoco Phillips
-    $141.73 (-0.4%) | $170.3B
+    $146.51 (+3.4%) | $176.0B
+  <b>E</b> Eni Spa ADR
+    $59.10 (+2.9%) | $86.1B
   <b>EOG</b> EOG Resources Inc
-    $152.62 (-1.0%) | $80.0B
+    $158.01 (+3.5%) | $82.9B
+  <b>EQNR</b> Equinor ASA ADR
+    $46.98 (+4.6%) | $112.3B
+  <b>OVV</b> Ovintiv Inc
+    $69.33 (+4.8%) | $19.1B
+  <b>PBR</b> Petroleo Brasileiro SA Petrobras ADR
+    $26.00 (+2.8%) | $96.8B
+  <b>PBR-A</b> Petroleo Brasileiro SA Petrobras ADR
+    $23.30 (+3.0%) | $63.5B
   <b>SU</b> Suncor Energy Inc
-    $75.64 (-0.3%) | $88.5B
-
-<b>〈필수소비재〉</b>
-  <b>KO</b> Coca-Cola Co
-    $92.00 (+0.2%) | $395.8B
-  <b>PM</b> Philip Morris International Inc
-    $199.90 (-2.8%) | $311.6B
-  <b>BJ</b> BJ's Wholesale Club Holdings Inc
-    $103.27 (-0.1%) | $13.0B
-  <b>KDP</b> Keurig Dr Pepper Inc
-    $34.18 (+3.2%) | $46.5B
+    $78.05 (+3.2%) | $91.3B
 
 <b>〈금융〉</b>
   <b>MA</b> Mastercard Incorporated
-    $616.32 (+2.2%) | $539.9B
+    $617.42 (+0.2%) | $540.9B
   <b>V</b> Visa Inc
-    $399.75 (+2.1%) | $746.4B
+    $402.61 (+0.7%) | $751.7B
+  <b>AFG</b> American Financial Group Inc
+    $149.13 (+2.3%) | $12.4B
   <b>FRHC</b> Freedom Holding Corp
-    $180.39 (+2.4%) | $11.5B
+    $181.57 (+0.7%) | $11.6B
+  <b>MET</b> Metlife Inc
+    $100.76 (+0.5%) | $64.0B
   <b>RGA</b> Reinsurance Group Of America Inc
-    $264.04 (+1.1%) | $17.2B
+    $266.75 (+1.0%) | $17.4B
   <b>RNR</b> RenaissanceRe Holdings Ltd
-    $344.16 (+1.4%) | $14.3B
+    $351.06 (+2.0%) | $14.6B
+
+<b>〈헬스케어〉</b>
+  <b>A</b> Agilent Technologies Inc
+    $172.97 (-1.5%) | $48.8B
+  <b>AVTR</b> Avantor Inc
+    $16.42 (+2.0%) | $11.1B
+  <b>BDX</b> Becton Dickinson & Co
+    $191.75 (-1.0%) | $52.2B
+  <b>CNC</b> Centene Corp
+    $69.16 (-1.9%) | $34.2B
+  <b>EXEL</b> Exelixis Inc
+    $62.23 (-0.9%) | $15.4B
+  <b>HALO</b> Halozyme Therapeutics Inc
+    $121.84 (+0.3%) | $13.8B
+  <b>MCK</b> Mckesson Corp
+    $1,004.84 (+0.6%) | $117.2B
+  <b>VEEV</b> Veeva Systems Inc
+    $310.36 (-0.8%) | $50.2B
+  <b>VTRS</b> Viatris Inc
+    $18.66 (+2.4%) | $21.4B
+  <b>WST</b> West Pharmaceutical Services Inc
+    $384.02 (+0.3%) | $27.0B
 
 <b>〈기술〉</b>
   <b>ADP</b> Automatic Data Processing Inc
-    $285.65 (+1.9%) | $113.2B
-  <b>BSP</b> Bending Spoons S.p.A
-    $55.77 (+4.3%) | $35.4B
+    $288.90 (+1.1%) | $114.5B
   <b>DOCU</b> DocuSign Inc
-    $77.52 (+3.0%) | $14.5B
+    $74.65 (-3.7%) | $13.9B
   <b>MANH</b> Manhattan Associates Inc
-    $226.96 (+3.1%) | $13.2B
+    $222.17 (-2.1%) | $12.9B
   <b>PAYC</b> Paycom Software Inc
-    $252.87 (+5.8%) | $11.2B
-  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.53 (+0.3%) | $60.3B
+    $251.64 (-0.5%) | $11.1B
   <b>TEAM</b> Atlassian Corp
-    $217.12 (+6.1%) | $55.0B
+    $207.82 (-4.3%) | $52.3B
 
 <b>〈커뮤니케이션〉</b>
   <b>CHT</b> Chunghwa Telecom ADR
-    $47.66 (+2.5%) | $37.0B
+    $47.64 (-0.0%) | $37.0B
   <b>PSO</b> Pearson plc ADR
-    $17.86 (+3.2%) | $10.7B
-
-<b>〈경기소비재〉</b>
-  <b>EBAY</b> EBay Inc
-    $122.91 (+5.2%) | $54.7B
-  <b>GME</b> Gamestop Corp
-    $28.02 (+3.2%) | $14.1B
-  <b>HMC</b> Honda Motor ADR
-    $34.06 (+1.8%) | $44.2B
-  <b>SN</b> SharkNinja Inc
-    $193.68 (+4.0%) | $27.3B
+    $18.24 (+2.1%) | $10.9B
 
 <b>〈산업재〉</b>
   <b>EXPD</b> Expeditors International Of Washington Inc
-    $198.64 (+1.1%) | $25.8B
+    $195.91 (-1.4%) | $25.5B
+
+<b>〈경기소비재〉</b>
+  <b>HMC</b> Honda Motor ADR
+    $34.28 (+0.7%) | $44.5B
+  <b>WSM</b> Williams-Sonoma Inc
+    $250.16 (-0.7%) | $29.5B
 
 <b>〈소재〉</b>
   <b>IFF</b> International Flavors & Fragrances Inc
-    $90.29 (+0.8%) | $23.0B
+    $90.68 (+0.4%) | $23.1B
   <b>SSL</b> Sasol Ltd ADR
-    $15.92 (+1.9%) | $10.1B
+    $16.34 (+2.6%) | $10.4B
 
-🚀 <b>8% 이상 급등 (6종목)</b>
-
-<b>〈금융〉</b>
-  <b>CRCL</b> Circle Internet Group Inc
-    $86.97 (+9.3%) | $22.2B
-  <b>TRU</b> TransUnion
-    $74.12 (+10.7%) | $14.2B
-
-<b>〈기술〉</b>
-  <b>ERIC</b> Telefonaktiebolaget L M Ericsson ADR
-    $10.71 (+11.8%) | $32.6B
-  <b>IONQ</b> IonQ Inc
-    $34.35 (+9.3%) | $13.9B
-
-<b>〈경기소비재〉</b>
-  <b>PAG</b> Penske Automotive Group Inc
-    $212.00 (+8.8%) | $13.9B
-
-<b>〈산업재〉</b>
-  <b>QXO</b> QXO Inc
-    $11.18 (+8.2%) | $11.6B
+<b>〈필수소비재〉</b>
+  <b>KDP</b> Keurig Dr Pepper Inc
+    $34.62 (+1.3%) | $47.1B
 
 
