@@ -1,43 +1,33 @@
 {
- "as_of": "2026-10-15",
+ "as_of": "2026-10-16",
  "signal": {
   "status": "outflow",
-  "label": "📉 자금 이탈 지속 (3일 연속 감소)",
-  "deposit": 969121.2,
-  "deposit_delta": -5158.800000000047,
-  "down_streak": 2,
-  "deposit_drop_pct": -30.6,
-  "uncl": 13925.6,
-  "uncl_peak": 13925.6,
-  "uncl_drop_pct": 0.0,
-  "bandae": 805.0,
+  "label": "📉 자금 이탈 지속 (4일 연속 감소)",
+  "deposit": 944029.7,
+  "deposit_delta": -25091.300000000047,
+  "down_streak": 3,
+  "deposit_drop_pct": -32.4,
+  "uncl": 12322.7,
+  "uncl_peak": 13926.0,
+  "uncl_drop_pct": -11.5,
+  "bandae": 572.5,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 5.7807203998391445,
+  "bandae_pct": 4.645897408847087,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
-  "bandae_record_bar": 7.343364429732169,
-  "climax": "pending",
+  "bandae_record_bar": null,
+  "climax": "held",
   "climax_spike": {
    "date": "2026-10-14",
    "bandae": 893.4,
-   "kospi": 6008.81
+   "kospi": 5554.22
   },
-  "credit": 337057.0,
+  "credit": 327499.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -12.8
+  "credit_drop_pct": -15.2
  },
  "history": [
-  {
-   "date": "2026-06-04",
-   "bandae": 243.1,
-   "bandae_pct": 1.8,
-   "credit": 377376.0,
-   "deposit": 1396948.0,
-   "futs": 535185.0,
-   "kospi": 8639.41,
-   "uncl": 18293.0
-  },
   {
    "date": "2026-06-05",
    "bandae": 1661.9,
@@ -912,20 +902,30 @@
    "date": "2026-10-14",
    "bandae": 893.4,
    "bandae_pct": 6.6,
+   "credit": 337057.0,
    "deposit": 974280.0,
    "futs": 367374.0,
-   "uncl": 13575.0,
-   "credit": 337057.0,
-   "kospi": 6008.81
+   "kospi": 6008.81,
+   "uncl": 13575.0
   },
   {
    "date": "2026-10-15",
-   "deposit": 969121.2,
-   "futs": 376443.8,
-   "uncl": 13925.6,
    "bandae": 805.0,
-   "bandae_pct": 5.8
+   "bandae_pct": 5.8,
+   "deposit": 969121.0,
+   "futs": 376444.0,
+   "uncl": 13926.0,
+   "credit": 327499.0,
+   "kospi": 5554.22
+  },
+  {
+   "date": "2026-10-16",
+   "deposit": 944029.7,
+   "futs": 349739.1,
+   "uncl": 12322.7,
+   "bandae": 572.5,
+   "bandae_pct": 4.6
   }
  ],
- "fetched_at": "2026-10-16T15:10:35"
+ "fetched_at": "2026-10-19T15:10:39"
 }
