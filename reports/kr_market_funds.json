@@ -1,18 +1,18 @@
 {
- "as_of": "2026-10-16",
+ "as_of": "2026-10-19",
  "signal": {
   "status": "outflow",
-  "label": "📉 자금 이탈 지속 (4일 연속 감소)",
-  "deposit": 944029.7,
-  "deposit_delta": -25091.300000000047,
-  "down_streak": 3,
-  "deposit_drop_pct": -32.4,
-  "uncl": 12322.7,
-  "uncl_peak": 13926.0,
-  "uncl_drop_pct": -11.5,
-  "bandae": 572.5,
+  "label": "📉 자금 이탈 지속 (5일 연속 감소)",
+  "deposit": 920966.2,
+  "deposit_delta": -23063.800000000047,
+  "down_streak": 4,
+  "deposit_drop_pct": -34.1,
+  "uncl": 14292.7,
+  "uncl_peak": 14292.7,
+  "uncl_drop_pct": 0.0,
+  "bandae": 542.3,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 4.645897408847087,
+  "bandae_pct": 3.7942446143835658,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
@@ -23,21 +23,11 @@
    "bandae": 893.4,
    "kospi": 5554.22
   },
-  "credit": 327499.0,
+  "credit": 322528.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -15.2
+  "credit_drop_pct": -16.5
  },
  "history": [
-  {
-   "date": "2026-06-05",
-   "bandae": 1661.9,
-   "bandae_pct": 9.1,
-   "credit": 378384.0,
-   "deposit": 1342344.0,
-   "futs": 527046.0,
-   "kospi": 8160.59,
-   "uncl": 16885.0
-  },
   {
    "date": "2026-06-08",
    "bandae": 1391.3,
@@ -912,20 +902,30 @@
    "date": "2026-10-15",
    "bandae": 805.0,
    "bandae_pct": 5.8,
+   "credit": 327499.0,
    "deposit": 969121.0,
    "futs": 376444.0,
-   "uncl": 13926.0,
-   "credit": 327499.0,
-   "kospi": 5554.22
+   "kospi": 5554.22,
+   "uncl": 13926.0
   },
   {
    "date": "2026-10-16",
-   "deposit": 944029.7,
-   "futs": 349739.1,
-   "uncl": 12322.7,
    "bandae": 572.5,
-   "bandae_pct": 4.6
+   "bandae_pct": 4.6,
+   "deposit": 944030.0,
+   "futs": 349739.0,
+   "uncl": 12323.0,
+   "credit": 322528.0,
+   "kospi": 5668.05
+  },
+  {
+   "date": "2026-10-19",
+   "deposit": 920966.2,
+   "futs": 344504.6,
+   "uncl": 14292.7,
+   "bandae": 542.3,
+   "bandae_pct": 3.8
   }
  ],
- "fetched_at": "2026-10-19T15:10:39"
+ "fetched_at": "2026-10-20T15:10:06"
 }
