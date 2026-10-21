@@ -1,119 +1,109 @@
-<!-- updated: 2026-10-21 07:21 -->
+<!-- updated: 2026-10-22 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-21
+📅 2026-10-22
 ━━━━━━━━━━━━━━━
-다우 +1.02% | 나스닥 -0.02% | S&P500 +0.28% | 러셀2000 +1.65% | 필반도체 -0.29% | WTI $98.17 | 환율 1,326원
+다우 +0.69% | 나스닥 +1.05% | S&P500 +0.58% | 러셀2000 +0.27% | 필반도체 +1.97% | WTI $97.71 | 환율 1,327원
 
-📈 <b>52주 신고가 (42종목)</b>
+📈 <b>52주 신고가 (39종목)</b>
 
 <b>〈금융〉</b>
   <b>BRK-A</b> Berkshire Hathaway Inc
-    $809,555.00 (+1.4%) | $1.2T
+    $811,320.00 (+0.2%) | $1.2T
   <b>BRK-B</b> Berkshire Hathaway Inc
-    $539.82 (+1.4%) | $1.2T
+    $538.99 (-0.1%) | $1.2T
   <b>MA</b> Mastercard Incorporated
-    $620.42 (+0.7%) | $543.5B
+    $622.62 (+0.3%) | $545.4B
   <b>V</b> Visa Inc
-    $406.57 (+0.9%) | $759.1B
-  <b>AFG</b> American Financial Group Inc
-    $149.24 (+0.8%) | $12.4B
-  <b>RGA</b> Reinsurance Group Of America Inc
-    $267.39 (+0.2%) | $17.5B
-  <b>RNR</b> RenaissanceRe Holdings Ltd
-    $354.33 (+0.8%) | $14.7B
+    $407.85 (+0.3%) | $761.5B
+  <b>AMG</b> Affiliated Managers Group Inc
+    $393.66 (+1.3%) | $10.2B
+  <b>FDS</b> Factset Research Systems Inc
+    $319.91 (+2.5%) | $11.4B
+  <b>MET</b> Metlife Inc
+    $102.18 (+1.0%) | $64.9B
+  <b>MFC</b> Manulife Financial Corp
+    $45.26 (+1.8%) | $75.1B
+  <b>TRV</b> Travelers Companies Inc
+    $398.95 (+0.8%) | $81.8B
 
 <b>〈에너지〉</b>
   <b>CVX</b> Chevron Corp
-    $225.71 (+0.6%) | $445.9B
-  <b>XOM</b> ExxonMobil Holdings Corp
-    $177.86 (-0.2%) | $731.3B
+    $226.78 (+0.5%) | $448.1B
   <b>APA</b> APA Corp
-    $49.90 (+0.3%) | $17.5B
-  <b>CNQ</b> Canadian Natural Resources Ltd
-    $54.18 (+0.1%) | $111.7B
+    $49.63 (-0.5%) | $17.4B
   <b>COP</b> Conoco Phillips
-    $145.95 (+0.5%) | $175.3B
-  <b>E</b> Eni Spa ADR
-    $58.86 (+0.0%) | $85.8B
-  <b>EOG</b> EOG Resources Inc
-    $157.91 (+0.2%) | $82.8B
-  <b>OVV</b> Ovintiv Inc
-    $70.29 (+0.4%) | $19.4B
-  <b>PR</b> Permian Resources Holdings Inc
-    $24.84 (+0.2%) | $20.8B
+    $145.67 (-0.2%) | $175.0B
   <b>SU</b> Suncor Energy Inc
-    $78.44 (+0.1%) | $91.8B
+    $79.02 (+0.7%) | $92.4B
 
 <b>〈헬스케어〉</b>
-  <b>LLY</b> Lilly(Eli) & Co
-    $1,283.66 (+3.5%) | $1.2T
+  <b>TMO</b> Thermo Fisher Scientific Inc
+    $694.02 (+1.0%) | $256.6B
+  <b>A</b> Agilent Technologies Inc
+    $177.75 (+2.7%) | $50.1B
   <b>AVTR</b> Avantor Inc
-    $16.62 (+2.0%) | $11.2B
-  <b>BIIB</b> Biogen Inc
-    $243.10 (+4.1%) | $35.9B
+    $17.26 (+3.9%) | $11.7B
+  <b>CAH</b> Cardinal Health Inc
+    $257.46 (-0.0%) | $59.6B
+  <b>CNC</b> Centene Corp
+    $70.24 (-0.8%) | $34.7B
+  <b>CRL</b> Charles River Laboratories International Inc 🔥
+    $344.87 (+9.3%) | $16.5B
   <b>ELV</b> Elevance Health Inc
-    $440.18 (+2.3%) | $95.5B
+    $434.13 (-1.4%) | $94.2B
   <b>EXEL</b> Exelixis Inc
-    $64.39 (+2.7%) | $15.9B
+    $64.58 (+0.3%) | $16.0B
   <b>HALO</b> Halozyme Therapeutics Inc
-    $124.37 (+1.5%) | $14.1B
-  <b>MCK</b> Mckesson Corp
-    $1,030.12 (+1.9%) | $120.1B
+    $124.83 (+0.4%) | $14.2B
   <b>MRNA</b> Moderna Inc
-    $242.08 (+6.7%) | $96.7B
-  <b>PFE</b> Pfizer Inc
-    $30.11 (+2.3%) | $171.6B
-  <b>TAK</b> Takeda Pharmaceutical Co ADR
-    $20.08 (+2.4%) | $63.9B
+    $245.81 (+1.5%) | $98.1B
+  <b>MTD</b> Mettler-Toledo International Inc
+    $1,677.94 (+2.7%) | $33.6B
+  <b>ONC</b> BeOne Medicines Ltd ADR
+    $386.46 (+0.5%) | $40.3B
   <b>VEEV</b> Veeva Systems Inc
-    $318.67 (+0.6%) | $51.6B
+    $320.55 (+0.6%) | $51.9B
+  <b>WAT</b> Waters Corp
+    $457.47 (+3.3%) | $45.0B
   <b>WST</b> West Pharmaceutical Services Inc
-    $388.78 (+1.3%) | $27.4B
+    $393.48 (+1.2%) | $27.7B
 
 <b>〈기술〉</b>
   <b>ADP</b> Automatic Data Processing Inc
-    $292.75 (+2.0%) | $116.0B
+    $294.50 (+0.6%) | $116.7B
   <b>DOCU</b> DocuSign Inc
-    $80.28 (+4.7%) | $15.0B
+    $81.48 (+1.5%) | $15.2B
   <b>MANH</b> Manhattan Associates Inc
-    $232.86 (+3.3%) | $13.6B
+    $235.83 (+1.3%) | $13.8B
   <b>PAYC</b> Paycom Software Inc
-    $262.32 (+3.7%) | $11.6B
+    $261.01 (-0.5%) | $11.6B
+  <b>TEAM</b> Atlassian Corp
+    $225.51 (+2.0%) | $56.8B
+  <b>ZBRA</b> Zebra Technologies Corp
+    $391.00 (+1.8%) | $18.5B
+
+<b>〈산업재〉</b>
+  <b>CTAS</b> Cintas Corp
+    $220.15 (+1.4%) | $87.4B
 
 <b>〈경기소비재〉</b>
-  <b>HAS</b> Hasbro Inc 🔥
-    $109.52 (+11.2%) | $15.4B
+  <b>HAS</b> Hasbro Inc
+    $114.00 (+4.1%) | $16.1B
   <b>HLT</b> Hilton Worldwide Holdings Inc
-    $359.29 (+3.8%) | $80.9B
+    $362.25 (+0.8%) | $81.5B
   <b>SN</b> SharkNinja Inc
-    $198.72 (+5.2%) | $28.0B
-  <b>WSM</b> Williams-Sonoma Inc
-    $253.99 (+1.8%) | $29.9B
-
-<b>〈소재〉</b>
-  <b>IFF</b> International Flavors & Fragrances Inc
-    $91.21 (+0.3%) | $23.3B
-  <b>TX</b> Ternium SA ADR
-    $59.69 (+2.6%) | $11.7B
-
-<b>〈필수소비재〉</b>
-  <b>KDP</b> Keurig Dr Pepper Inc
-    $34.63 (+0.5%) | $47.1B
+    $197.58 (-0.6%) | $27.8B
 
 <b>〈커뮤니케이션〉</b>
   <b>MTCH</b> Match Group Inc
-    $46.53 (+4.0%) | $10.7B
-  <b>PSO</b> Pearson plc ADR
-    $18.24 (+0.3%) | $10.9B
+    $46.30 (-0.5%) | $10.6B
 
 🚀 <b>8% 이상 급등 (2종목)</b>
 
-<b>〈산업재〉</b>
-  <b>EFX</b> Equifax Inc
-    $176.54 (+11.3%) | $20.7B
-
-<b>〈커뮤니케이션〉</b>
-  <b>TLK</b> Telkom Indonesia (Persero) Tbk PT ADR
-    $11.64 (+11.4%) | $11.5B
+<b>〈기술〉</b>
+  <b>QNT</b> Quantinuum Inc
+    $38.65 (+8.3%) | $10.2B
+  <b>SMCI</b> Super Micro Computer Inc
+    $35.57 (+9.6%) | $23.4B
 
 
