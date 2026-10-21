@@ -1,19 +1,19 @@
 {
- "as_of": "2026-10-19",
+ "as_of": "2026-10-20",
  "signal": {
-  "status": "outflow",
-  "label": "📉 자금 이탈 지속 (5일 연속 감소)",
-  "deposit": 920966.2,
-  "deposit_delta": -23063.800000000047,
-  "down_streak": 4,
-  "deposit_drop_pct": -34.1,
-  "uncl": 14292.7,
-  "uncl_peak": 14292.7,
-  "uncl_drop_pct": 0.0,
-  "bandae": 542.3,
+  "status": "purge",
+  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
+  "deposit": 902975.9,
+  "deposit_delta": -17990.099999999977,
+  "down_streak": 5,
+  "deposit_drop_pct": -35.4,
+  "uncl": 11874.8,
+  "uncl_peak": 14293.0,
+  "uncl_drop_pct": -16.9,
+  "bandae": 226.7,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 3.7942446143835658,
-  "bandae_climax_passed": false,
+  "bandae_pct": 1.9090847845858456,
+  "bandae_climax_passed": true,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
@@ -23,21 +23,11 @@
    "bandae": 893.4,
    "kospi": 5554.22
   },
-  "credit": 322528.0,
+  "credit": 311083.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -16.5
+  "credit_drop_pct": -19.5
  },
  "history": [
-  {
-   "date": "2026-06-08",
-   "bandae": 1391.3,
-   "bandae_pct": 8.2,
-   "credit": 377904.0,
-   "deposit": 1363847.0,
-   "futs": 496360.0,
-   "kospi": 7484.41,
-   "uncl": 16246.0
-  },
   {
    "date": "2026-06-09",
    "bandae": 1698.0,
@@ -912,20 +902,30 @@
    "date": "2026-10-16",
    "bandae": 572.5,
    "bandae_pct": 4.6,
+   "credit": 322528.0,
    "deposit": 944030.0,
    "futs": 349739.0,
-   "uncl": 12323.0,
-   "credit": 322528.0,
-   "kospi": 5668.05
+   "kospi": 5668.05,
+   "uncl": 12323.0
   },
   {
    "date": "2026-10-19",
-   "deposit": 920966.2,
-   "futs": 344504.6,
-   "uncl": 14292.7,
    "bandae": 542.3,
-   "bandae_pct": 3.8
+   "bandae_pct": 3.8,
+   "deposit": 920966.0,
+   "futs": 344505.0,
+   "uncl": 14293.0,
+   "credit": 311083.0,
+   "kospi": 5768.01
+  },
+  {
+   "date": "2026-10-20",
+   "deposit": 902975.9,
+   "futs": 348853.7,
+   "uncl": 11874.8,
+   "bandae": 226.7,
+   "bandae_pct": 1.9
   }
  ],
- "fetched_at": "2026-10-20T15:10:06"
+ "fetched_at": "2026-10-21T15:10:11"
 }
