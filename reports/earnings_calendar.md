@@ -1,11 +1,7 @@
-<!-- updated: 2026-10-22 06:08 -->
+<!-- updated: 2026-10-23 06:10 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-10-22 06:08 KST
+기준: 2026-10-23 06:10 KST
 ━━━━━━━━━━━━━━━
-
-<b>10/22 (목) · 1종목</b>
-  〈장후〉
-    <b>WDC</b> Western Digital Corporation
 
 <b>10/23 (금) · 0종목</b>
   — 주목 종목 없음
@@ -27,3 +23,13 @@
     <b>GOOG</b> Alphabet Inc.
     <b>KLAC</b> KLA Corporation
     <b>FORM</b> FormFactor, Inc.
+
+<b>10/29 (목) · 6종목</b>
+  〈장전〉
+    <b>CAT</b> Caterpillar Inc.
+    <b>ENTG</b> Entegris, Inc.
+  〈장후〉
+    <b>INTC</b> Intel Corporation
+    <b>AMZN</b> Amazon.com, Inc.
+    <b>SNDK</b> Sandisk Corporation
+    <b>MPWR</b> Monolithic Power Systems, Inc.
