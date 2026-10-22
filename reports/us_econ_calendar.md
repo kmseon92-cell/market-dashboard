@@ -1,10 +1,7 @@
-<!-- updated: 2026-10-22 06:08 -->
+<!-- updated: 2026-10-23 06:10 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-22 06:08 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-10-23 06:10 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>10/22 (목) · 1건</b>
-  21:30 ★★ Unemployment Claims 예상:200K 이전:199K
 
 <b>10/23 (금) · 4건</b>
   22:45 ★★ Flash Manufacturing PMI 예상:55.4 이전:57.0
@@ -16,9 +13,23 @@
   — 발표 예정 없음
 
 <b>10/27 (화) · 3건</b>
-  21:00 ★★ Building Permits 예상:1.400M 이전:1.403M
+  21:00 ★★ Building Permits 예상:-0.2% 이전:-2.1%
   23:00 ★★ CB Consumer Confidence 이전:81.9
   23:00 ★★ New Home Sales 이전:684K
 
 <b>10/28 (수) · 0건</b>
   — 발표 예정 없음
+
+<b>10/29 (목) · 12건</b>
+  03:00 ★★★ FOMC Statement
+  03:00 ★★★ Fed Interest Rate Decision 이전:4.00%
+  03:30 ★★★ FOMC Press Conference
+  21:30 ★★★ Core PCE Price Index 이전:0.2%
+  21:30 ★★★ Core PCE Prices 이전:3.30%
+  21:30 ★★★ GDP 이전:2.2%
+  21:30 ★★ Initial Jobless Claims
+  21:30 ★★ PCE Price index 이전:3.4%
+  21:30 ★★ PCE price index 이전:0.3%
+  21:30 ★★ PCE Prices 이전:5.0%
+  21:30 ★★ Personal Income 이전:0.2%
+  21:30 ★★ Personal Spending 이전:0.9%
