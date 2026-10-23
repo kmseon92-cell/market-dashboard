@@ -1,35 +1,32 @@
-<!-- updated: 2026-10-23 06:10 -->
+<!-- updated: 2026-10-24 06:09 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-23 06:10 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-10-24 06:09 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>10/23 (금) · 4건</b>
-  22:45 ★★ Flash Manufacturing PMI 예상:55.4 이전:57.0
-  22:45 ★★ Flash Services PMI 예상:57.9 이전:58.7
-  23:00 ★★ Revised UoM Consumer Sentiment 예상:46.3 이전:46.3
-  23:00 ★★ Revised UoM Inflation Expectations 이전:4.7%
 
 <b>10/26 (월) · 0건</b>
   — 발표 예정 없음
 
 <b>10/27 (화) · 3건</b>
   21:00 ★★ Building Permits 예상:-0.2% 이전:-2.1%
-  23:00 ★★ CB Consumer Confidence 이전:81.9
-  23:00 ★★ New Home Sales 이전:684K
+  23:00 ★★ CB Consumer Confidence 예상:80.5 이전:81.9
+  23:00 ★★ New Home Sales 예상:652K 이전:684K
 
 <b>10/28 (수) · 0건</b>
   — 발표 예정 없음
 
 <b>10/29 (목) · 12건</b>
   03:00 ★★★ FOMC Statement
-  03:00 ★★★ Fed Interest Rate Decision 이전:4.00%
+  03:00 ★★★ Fed Interest Rate Decision 예상:4.00% 이전:4.00%
   03:30 ★★★ FOMC Press Conference
-  21:30 ★★★ Core PCE Price Index 이전:0.2%
+  21:30 ★★★ Core PCE Price Index 예상:0.3% 이전:0.2%
   21:30 ★★★ Core PCE Prices 이전:3.30%
-  21:30 ★★★ GDP 이전:2.2%
-  21:30 ★★ Initial Jobless Claims
-  21:30 ★★ PCE Price index 이전:3.4%
+  21:30 ★★★ GDP 예상:3.0% 이전:2.2%
+  21:30 ★★ Initial Jobless Claims 이전:194K
   21:30 ★★ PCE price index 이전:0.3%
+  21:30 ★★ PCE Price index 이전:3.4%
   21:30 ★★ PCE Prices 이전:5.0%
-  21:30 ★★ Personal Income 이전:0.2%
-  21:30 ★★ Personal Spending 이전:0.9%
+  21:30 ★★ Personal Income 예상:0.3% 이전:0.2%
+  21:30 ★★ Personal Spending 예상:0.5% 이전:0.9%
+
+<b>10/30 (금) · 0건</b>
+  — 발표 예정 없음
