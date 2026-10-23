@@ -1,10 +1,7 @@
-<!-- updated: 2026-10-23 06:10 -->
+<!-- updated: 2026-10-24 06:09 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-10-23 06:10 KST
+기준: 2026-10-24 06:09 KST
 ━━━━━━━━━━━━━━━
-
-<b>10/23 (금) · 0종목</b>
-  — 주목 종목 없음
 
 <b>10/26 (월) · 1종목</b>
   〈장후〉
@@ -29,7 +26,10 @@
     <b>CAT</b> Caterpillar Inc.
     <b>ENTG</b> Entegris, Inc.
   〈장후〉
-    <b>INTC</b> Intel Corporation
     <b>AMZN</b> Amazon.com, Inc.
+    <b>INTC</b> Intel Corporation
     <b>SNDK</b> Sandisk Corporation
     <b>MPWR</b> Monolithic Power Systems, Inc.
+
+<b>10/30 (금) · 0종목</b>
+  — 주목 종목 없음
