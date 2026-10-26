@@ -1,18 +1,18 @@
 {
- "as_of": "2026-10-22",
+ "as_of": "2026-10-23",
  "signal": {
-  "status": "purge",
-  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 886841.9,
-  "deposit_delta": -9502.099999999977,
-  "down_streak": 7,
-  "deposit_drop_pct": -36.5,
-  "uncl": 10474.2,
+  "status": "turn1",
+  "label": "🟢 전환 1일차 — 내일도 예탁금 +면 저점신호 (하루 반등은 함정 잦음)",
+  "deposit": 898626.2,
+  "deposit_delta": 11784.199999999953,
+  "down_streak": 8,
+  "deposit_drop_pct": -35.7,
+  "uncl": 9342.8,
   "uncl_peak": 14293.0,
-  "uncl_drop_pct": -26.7,
-  "bandae": 106.2,
+  "uncl_drop_pct": -34.6,
+  "bandae": 74.7,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 1.0139199175116,
+  "bandae_pct": 0.7995461745943402,
   "bandae_climax_passed": true,
   "bandae_record_60d": false,
   "bandae_near_record": false,
@@ -23,21 +23,11 @@
    "bandae": 893.4,
    "kospi": 5554.22
   },
-  "credit": 302710.0,
+  "credit": 303633.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -21.6
+  "credit_drop_pct": -21.4
  },
  "history": [
-  {
-   "date": "2026-06-11",
-   "bandae": 306.2,
-   "bandae_pct": 1.8,
-   "credit": 366565.0,
-   "deposit": 1273718.0,
-   "futs": 485396.0,
-   "kospi": 7763.95,
-   "uncl": 12072.0
-  },
   {
    "date": "2026-06-12",
    "bandae": 476.9,
@@ -902,30 +892,40 @@
    "date": "2026-10-20",
    "bandae": 226.7,
    "bandae_pct": 1.9,
+   "credit": 305139.0,
    "deposit": 902976.0,
    "futs": 348854.0,
-   "uncl": 11875.0,
-   "credit": 305139.0,
-   "kospi": 5552.74
+   "kospi": 5552.74,
+   "uncl": 11875.0
   },
   {
    "date": "2026-10-21",
    "bandae": 129.9,
    "bandae_pct": 1.2,
+   "credit": 302710.0,
    "deposit": 896344.0,
    "futs": 342436.0,
-   "uncl": 10865.0,
-   "credit": 302710.0,
-   "kospi": 5735.66
+   "kospi": 5735.66,
+   "uncl": 10865.0
   },
   {
    "date": "2026-10-22",
-   "deposit": 886841.9,
-   "futs": 350634.3,
-   "uncl": 10474.2,
    "bandae": 106.2,
-   "bandae_pct": 1.0
+   "bandae_pct": 1.0,
+   "deposit": 886842.0,
+   "futs": 350634.0,
+   "uncl": 10474.0,
+   "credit": 303633.0,
+   "kospi": 5533.77
+  },
+  {
+   "date": "2026-10-23",
+   "deposit": 898626.2,
+   "futs": 337683.3,
+   "uncl": 9342.8,
+   "bandae": 74.7,
+   "bandae_pct": 0.8
   }
  ],
- "fetched_at": "2026-10-23T15:40:08"
+ "fetched_at": "2026-10-26T15:11:05"
 }
