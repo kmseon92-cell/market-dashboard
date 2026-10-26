@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-10-26T08:01:13",
+  "fetched_at": "2026-10-27T08:01:16",
   "alerts": [
     {
       "stock_name": "천일고속",
@@ -13,13 +13,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 224000.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 342400.0,
+        "cond1_5d_60pct": 355200.0,
         "cond2_15d_100pct": 283200.0,
         "cond3_15d_high": 224000.0,
         "binding": "15일신고가"
       },
-      "current_price": 210000.0,
-      "current_date": "2026-10-23",
+      "current_price": 216000.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
       "ticker": "000650.KS",
       "price_error": null
@@ -36,13 +36,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 2700.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 4264.0,
-        "cond2_15d_100pct": 4180.0,
+        "cond1_5d_60pct": 4216.0,
+        "cond2_15d_100pct": 4090.0,
         "cond3_15d_high": 2700.0,
         "binding": "15일신고가"
       },
-      "current_price": 2170.0,
-      "current_date": "2026-10-23",
+      "current_price": 2075.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
       "ticker": "009730.KQ",
       "price_error": null
@@ -57,15 +57,15 @@
       "judgment_date": "2026-10-21",
       "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 724.0,
+      "threshold_price": 754.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 1401.6000000000001,
-        "cond2_15d_100pct": 724.0,
+        "cond1_5d_60pct": 1403.2,
+        "cond2_15d_100pct": 754.0,
         "cond3_15d_high": 1140.0,
         "binding": "15일100%"
       },
-      "current_price": 775.0,
-      "current_date": "2026-10-23",
+      "current_price": 811.0,
+      "current_date": "2026-10-26",
       "is_at_risk": true,
       "ticker": "011080.KQ",
       "price_error": null
@@ -117,6 +117,29 @@
       "price_error": null
     },
     {
+      "stock_name": "에이전트AI",
+      "stock_code": "060900",
+      "market": "코스닥",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-10-26",
+      "designated_date": "2026-10-27",
+      "judgment_date": "2026-11-10",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 2771.2000000000003,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 2771.2000000000003,
+        "cond2_15d_100pct": 3190.0,
+        "cond3_15d_high": 2780.0,
+        "binding": "5일60%"
+      },
+      "current_price": 2820.0,
+      "current_date": "2026-10-26",
+      "is_at_risk": true,
+      "ticker": "060900.KQ",
+      "price_error": null
+    },
+    {
       "stock_name": "하이퍼코퍼레이션",
       "stock_code": "065650",
       "market": "코스닥",
@@ -126,15 +149,15 @@
       "judgment_date": "2026-10-30",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 2790.0,
+      "threshold_price": 2700.0,
       "threshold_breakdown": {
         "cond1_5d_60pct": 3936.0,
-        "cond2_15d_100pct": 2790.0,
+        "cond2_15d_100pct": 2700.0,
         "cond3_15d_high": 3265.0,
         "binding": "15일100%"
       },
-      "current_price": 1829.0,
-      "current_date": "2026-10-23",
+      "current_price": 1930.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
       "ticker": "065650.KQ",
       "price_error": null
@@ -169,38 +192,15 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 8780.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 12848.0,
-        "cond2_15d_100pct": 11520.0,
+        "cond1_5d_60pct": 13008.0,
+        "cond2_15d_100pct": 11220.0,
         "cond3_15d_high": 8780.0,
         "binding": "15일신고가"
       },
-      "current_price": 7300.0,
-      "current_date": "2026-10-23",
+      "current_price": 6920.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
       "ticker": "079650.KQ",
-      "price_error": null
-    },
-    {
-      "stock_name": "동양고속",
-      "stock_code": "084670",
-      "market": "유가증권",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-10-12",
-      "designated_date": "2026-10-13",
-      "judgment_date": "2026-10-15",
-      "judgment_source": "공시",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 41950.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 60240.0,
-        "cond2_15d_100pct": 46900.0,
-        "cond3_15d_high": 41950.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 31900.0,
-      "current_date": "2026-10-23",
-      "is_at_risk": false,
-      "ticker": "084670.KS",
       "price_error": null
     },
     {
@@ -215,13 +215,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 58000.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 86560.0,
-        "cond2_15d_100pct": 98000.0,
+        "cond1_5d_60pct": 86720.0,
+        "cond2_15d_100pct": 106200.0,
         "cond3_15d_high": 58000.0,
         "binding": "15일신고가"
       },
-      "current_price": 51300.0,
-      "current_date": "2026-10-23",
+      "current_price": 47550.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
       "ticker": "092870.KQ",
       "price_error": null
@@ -236,15 +236,15 @@
       "judgment_date": "2026-10-15",
       "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 1394.0,
+      "threshold_price": 1356.0,
       "threshold_breakdown": {
         "cond1_5d_60pct": 4120.0,
-        "cond2_15d_100pct": 1394.0,
+        "cond2_15d_100pct": 1356.0,
         "cond3_15d_high": 2575.0,
         "binding": "15일100%"
       },
-      "current_price": 1751.0,
-      "current_date": "2026-10-23",
+      "current_price": 1620.0,
+      "current_date": "2026-10-26",
       "is_at_risk": true,
       "ticker": "199730.KQ",
       "price_error": null
@@ -259,15 +259,15 @@
       "judgment_date": "2026-10-28",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 958.0,
+      "threshold_price": 930.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 2584.0,
-        "cond2_15d_100pct": 958.0,
+        "cond1_5d_60pct": 2340.8,
+        "cond2_15d_100pct": 930.0,
         "cond3_15d_high": 1960.0,
         "binding": "15일100%"
       },
-      "current_price": 1125.0,
-      "current_date": "2026-10-23",
+      "current_price": 1048.0,
+      "current_date": "2026-10-26",
       "is_at_risk": true,
       "ticker": "250930.KQ",
       "price_error": null
@@ -282,15 +282,15 @@
       "judgment_date": "2026-10-26",
       "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 6310.0,
+      "threshold_price": 6110.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 8464.0,
-        "cond2_15d_100pct": 6510.0,
-        "cond3_15d_high": 6310.0,
-        "binding": "15일신고가"
+        "cond1_5d_60pct": 9600.0,
+        "cond2_15d_100pct": 6110.0,
+        "cond3_15d_high": 6530.0,
+        "binding": "15일100%"
       },
       "current_price": 6530.0,
-      "current_date": "2026-10-23",
+      "current_date": "2026-10-26",
       "is_at_risk": true,
       "ticker": "278650.KQ",
       "price_error": null
@@ -305,40 +305,17 @@
       "judgment_date": "2026-11-09",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 25550.0,
+      "threshold_price": 25900.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 33680.0,
-        "cond2_15d_100pct": 43100.0,
-        "cond3_15d_high": 25550.0,
+        "cond1_5d_60pct": 34400.0,
+        "cond2_15d_100pct": 44100.0,
+        "cond3_15d_high": 25900.0,
         "binding": "15일신고가"
       },
-      "current_price": 25900.0,
-      "current_date": "2026-10-23",
-      "is_at_risk": true,
-      "ticker": "290550.KQ",
-      "price_error": null
-    },
-    {
-      "stock_name": "츌립앤사이언스",
-      "stock_code": "291650",
-      "market": "코스닥",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-10-12",
-      "designated_date": "2026-10-13",
-      "judgment_date": "2026-10-27",
-      "judgment_source": "시행세칙",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 2835.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 4152.0,
-        "cond2_15d_100pct": 4490.0,
-        "cond3_15d_high": 2835.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 2490.0,
-      "current_date": "2026-10-23",
+      "current_price": 24600.0,
+      "current_date": "2026-10-26",
       "is_at_risk": false,
-      "ticker": "291650.KQ",
+      "ticker": "290550.KQ",
       "price_error": null
     },
     {
@@ -374,15 +351,15 @@
       "judgment_date": "2026-11-09",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 5050.0,
+      "threshold_price": 5350.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 7928.0,
-        "cond2_15d_100pct": 7900.0,
-        "cond3_15d_high": 5050.0,
+        "cond1_5d_60pct": 7880.0,
+        "cond2_15d_100pct": 9300.0,
+        "cond3_15d_high": 5350.0,
         "binding": "15일신고가"
       },
-      "current_price": 5350.0,
-      "current_date": "2026-10-23",
+      "current_price": 5530.0,
+      "current_date": "2026-10-26",
       "is_at_risk": true,
       "ticker": "351320.KQ",
       "price_error": null
