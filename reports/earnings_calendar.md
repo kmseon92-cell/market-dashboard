@@ -1,13 +1,7 @@
-<!-- updated: 2026-10-27 06:04 -->
+<!-- updated: 2026-10-28 06:01 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-10-27 06:04 KST
+기준: 2026-10-28 06:01 KST
 ━━━━━━━━━━━━━━━
-
-<b>10/27 (화) · 3종목</b>
-  〈장후〉
-    <b>STX</b> Seagate Technology plc
-    <b>NXPI</b> NXP Semiconductors N.V.
-    <b>TER</b> Teradyne, Inc.
 
 <b>10/28 (수) · 5종목</b>
   〈장후〉
@@ -34,3 +28,10 @@
   〈장후〉
     <b>AAPL</b> Apple, Inc.
     <b>ON</b> onsemi
+
+<b>11/03 (화) · 4종목</b>
+  〈장후〉
+    <b>AMD</b> Advanced Micro Devices, Inc.
+    <b>SMCI</b> Super Micro Computer, Inc.
+    <b>ALAB</b> Astera Labs 
+    <b>SWKS</b> Skyworks Solutions, Inc.
