@@ -1,10 +1,7 @@
-<!-- updated: 2026-10-27 06:05 -->
+<!-- updated: 2026-10-28 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-27 06:05 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-10-28 06:01 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>10/27 (화) · 1건</b>
-  23:00 ★★ CB Consumer Confidence 예상:81.2 이전:81.9
 
 <b>10/28 (수) · 0건</b>
   — 발표 예정 없음
@@ -23,3 +20,8 @@
 
 <b>11/02 (월) · 0건</b>
   — 발표 예정 없음
+
+<b>11/03 (화) · 3건</b>
+  00:45 ★★ S&P Global Manufacturing PMI 이전:56.0
+  01:00 ★★★ ISM Manufacturing PMI 이전:54.5
+  02:15 ★★ Fed Goolsbee Speaks
