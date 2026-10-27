@@ -1,87 +1,87 @@
-<!-- updated: 2026-10-27 06:30 -->
+<!-- updated: 2026-10-28 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-27
+📅 2026-10-28
 ━━━━━━━━━━━━━━━
-다우 +0.29% | 나스닥 +0.83% | S&P500 +0.71% | 러셀2000 +0.41% | 필반도체 +2.81% | WTI $101.25 | 환율 1,325원
+다우 +0.04% | 나스닥 +1.18% | S&P500 +0.60% | 러셀2000 +1.16% | 필반도체 +3.59% | WTI $100.20 | 환율 1,327원
 
-📈 <b>52주 신고가 (26종목)</b>
+📈 <b>52주 신고가 (18종목)</b>
 
 <b>〈에너지〉</b>
-  <b>CVX</b> Chevron Corp
-    $232.01 (-0.5%) | $458.4B
   <b>XOM</b> ExxonMobil Holdings Corp
-    $184.54 (+0.7%) | $758.8B
+    $179.91 (-2.5%) | $739.8B
   <b>LNG</b> Cheniere Energy Inc
-    $300.59 (+0.6%) | $62.1B
-  <b>OVV</b> Ovintiv Inc
-    $72.55 (+0.4%) | $20.0B
-  <b>PAA</b> Plains All American Pipeline LP
-    $26.85 (+0.8%) | $18.9B
-  <b>PR</b> Permian Resources Holdings Inc
-    $25.77 (+1.1%) | $21.6B
-  <b>RRC</b> Range Resources Corp 🔥
-    $53.56 (+17.7%) | $12.5B
-
-<b>〈금융〉</b>
-  <b>TD</b> Toronto Dominion Bank
-    $125.32 (+0.6%) | $211.7B
-  <b>NDAQ</b> Nasdaq Inc
-    $104.72 (+2.1%) | $58.5B
-
-<b>〈경기소비재〉</b>
-  <b>CART</b> Maplebear Inc
-    $60.88 (+7.9%) | $14.1B
-  <b>HAS</b> Hasbro Inc
-    $117.96 (+0.4%) | $16.6B
+    $299.74 (-0.3%) | $61.9B
+  <b>RRC</b> Range Resources Corp
+    $56.38 (+5.3%) | $13.2B
 
 <b>〈헬스케어〉</b>
   <b>CRL</b> Charles River Laboratories International Inc
-    $357.27 (+3.5%) | $17.1B
-  <b>EXEL</b> Exelixis Inc
-    $65.11 (+0.9%) | $16.1B
-  <b>GMAB</b> Genmab ADR
-    $44.69 (+2.0%) | $26.7B
+    $358.84 (+0.4%) | $17.1B
   <b>HALO</b> Halozyme Therapeutics Inc
-    $128.01 (+1.9%) | $14.5B
+    $128.50 (+0.4%) | $14.6B
+  <b>IQV</b> IQVIA Holdings Inc
+    $271.55 (-0.8%) | $44.7B
   <b>RPRX</b> Royalty Pharma plc
-    $64.76 (+1.4%) | $28.8B
-  <b>TAK</b> Takeda Pharmaceutical Co ADR
-    $20.43 (+0.9%) | $65.0B
+    $65.28 (+0.8%) | $37.6B
   <b>TECH</b> Bio-Techne Corp
-    $72.69 (+0.2%) | $11.4B
+    $72.60 (-0.1%) | $11.4B
+  <b>VTRS</b> Viatris Inc
+    $18.72 (+2.4%) | $21.5B
+  <b>WAT</b> Waters Corp
+    $468.55 (+2.8%) | $46.0B
+  <b>WST</b> West Pharmaceutical Services Inc
+    $398.29 (+0.9%) | $28.0B
 
 <b>〈산업재〉</b>
-  <b>CTAS</b> Cintas Corp
-    $225.93 (+0.8%) | $89.7B
+  <b>EMR</b> Emerson Electric Co
+    $166.27 (+2.8%) | $92.8B
   <b>R</b> Ryder System Inc
-    $282.11 (+4.1%) | $10.8B
-  <b>WCN</b> Waste Connections Inc
-    $186.72 (+0.1%) | $47.1B
+    $279.49 (-0.9%) | $10.7B
+  <b>URI</b> United Rentals Inc
+    $1,162.00 (+3.6%) | $72.0B
+
+<b>〈경기소비재〉</b>
+  <b>HAS</b> Hasbro Inc
+    $118.33 (+0.3%) | $16.7B
+
+<b>〈금융〉</b>
+  <b>NDAQ</b> Nasdaq Inc
+    $104.36 (-0.3%) | $57.9B
 
 <b>〈기술〉</b>
-  <b>DOCU</b> DocuSign Inc
-    $84.89 (-0.5%) | $15.9B
   <b>NTSK</b> Netskope Inc
-    $25.21 (+3.8%) | $10.3B
+    $26.15 (+3.7%) | $10.7B
   <b>RBRK</b> Rubrik Inc
-    $133.40 (+3.6%) | $27.6B
+    $135.74 (+1.8%) | $28.1B
 
-<b>〈소재〉</b>
-  <b>IFF</b> International Flavors & Fragrances Inc
-    $93.69 (-0.5%) | $23.9B
+🚀 <b>8% 이상 급등 (10종목)</b>
 
-<b>〈커뮤니케이션〉</b>
-  <b>PSO</b> Pearson plc ADR
-    $18.30 (+0.3%) | $11.0B
-
-🚀 <b>8% 이상 급등 (2종목)</b>
+<b>〈기술〉</b>
+  <b>ALAB</b> Astera Labs Inc
+    $286.69 (+10.5%) | $49.7B
+  <b>CBRS</b> Cerebras Systems Inc
+    $119.31 (+10.1%) | $26.7B
+  <b>CLS</b> Celestica Inc
+    $276.54 (+12.1%) | $34.9B
+  <b>CRDO</b> Credo Technology Group Holding Ltd
+    $167.43 (+10.8%) | $31.5B
+  <b>FLEX</b> Flex Ltd
+    $83.35 (+8.3%) | $30.8B
+  <b>NBIS</b> Nebius Group NV
+    $170.47 (+11.2%) | $46.3B
 
 <b>〈산업재〉</b>
-  <b>INIO</b> Innio NV
-    $16.63 (+9.3%) | $12.5B
+  <b>LECO</b> Lincoln Electric Holdings Inc
+    $282.37 (+9.2%) | $15.4B
+  <b>RKLB</b> Rocket Lab Corp
+    $58.31 (+8.3%) | $34.9B
 
-<b>〈기술〉</b>
-  <b>LITE</b> Lumentum Holdings Inc
-    $818.10 (+8.2%) | $74.1B
+<b>〈금융〉</b>
+  <b>SOFI</b> SoFi Technologies Inc
+    $16.40 (+13.4%) | $21.2B
+
+<b>〈헬스케어〉</b>
+  <b>TWST</b> Twist Bioscience Corp
+    $159.85 (+10.1%) | $10.5B
 
 
