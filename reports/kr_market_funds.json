@@ -1,18 +1,18 @@
 {
- "as_of": "2026-10-23",
+ "as_of": "2026-10-26",
  "signal": {
-  "status": "turn1",
-  "label": "🟢 전환 1일차 — 내일도 예탁금 +면 저점신호 (하루 반등은 함정 잦음)",
-  "deposit": 898626.2,
-  "deposit_delta": 11784.199999999953,
-  "down_streak": 8,
-  "deposit_drop_pct": -35.7,
-  "uncl": 9342.8,
+  "status": "purge",
+  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
+  "deposit": 886825.8,
+  "deposit_delta": -11800.199999999953,
+  "down_streak": 0,
+  "deposit_drop_pct": -36.5,
+  "uncl": 9736.6,
   "uncl_peak": 14293.0,
-  "uncl_drop_pct": -34.6,
-  "bandae": 74.7,
+  "uncl_drop_pct": -31.9,
+  "bandae": 111.1,
   "bandae_peak_10d": 893.4,
-  "bandae_pct": 0.7995461745943402,
+  "bandae_pct": 1.1410553992153318,
   "bandae_climax_passed": true,
   "bandae_record_60d": false,
   "bandae_near_record": false,
@@ -23,21 +23,11 @@
    "bandae": 893.4,
    "kospi": 5554.22
   },
-  "credit": 303633.0,
+  "credit": 301522.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -21.4
+  "credit_drop_pct": -22.0
  },
  "history": [
-  {
-   "date": "2026-06-12",
-   "bandae": 476.9,
-   "bandae_pct": 4.0,
-   "credit": 368793.0,
-   "deposit": 1210566.0,
-   "futs": 490411.0,
-   "kospi": 8123.62,
-   "uncl": 13764.0
-  },
   {
    "date": "2026-06-15",
    "bandae": 100.8,
@@ -912,20 +902,30 @@
    "date": "2026-10-22",
    "bandae": 106.2,
    "bandae_pct": 1.0,
+   "credit": 303633.0,
    "deposit": 886842.0,
    "futs": 350634.0,
-   "uncl": 10474.0,
-   "credit": 303633.0,
-   "kospi": 5533.77
+   "kospi": 5533.77,
+   "uncl": 10474.0
   },
   {
    "date": "2026-10-23",
-   "deposit": 898626.2,
-   "futs": 337683.3,
-   "uncl": 9342.8,
    "bandae": 74.7,
-   "bandae_pct": 0.8
+   "bandae_pct": 0.8,
+   "deposit": 898626.0,
+   "futs": 337683.0,
+   "uncl": 9343.0,
+   "credit": 301522.0,
+   "kospi": 5550.3
+  },
+  {
+   "date": "2026-10-26",
+   "deposit": 886825.8,
+   "futs": 341018.5,
+   "uncl": 9736.6,
+   "bandae": 111.1,
+   "bandae_pct": 1.1
   }
  ],
- "fetched_at": "2026-10-26T15:11:05"
+ "fetched_at": "2026-10-27T15:10:03"
 }
