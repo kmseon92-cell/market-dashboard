@@ -1,87 +1,129 @@
-<!-- updated: 2026-10-28 06:30 -->
+<!-- updated: 2026-10-29 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-10-28
+📅 2026-10-29
 ━━━━━━━━━━━━━━━
-다우 +0.04% | 나스닥 +1.18% | S&P500 +0.60% | 러셀2000 +1.16% | 필반도체 +3.59% | WTI $100.20 | 환율 1,327원
+다우 +0.17% | 나스닥 +0.28% | S&P500 +0.27% | 러셀2000 +0.41% | 필반도체 +1.74% | WTI $101.94 | 환율 1,343원
 
-📈 <b>52주 신고가 (18종목)</b>
-
-<b>〈에너지〉</b>
-  <b>XOM</b> ExxonMobil Holdings Corp
-    $179.91 (-2.5%) | $739.8B
-  <b>LNG</b> Cheniere Energy Inc
-    $299.74 (-0.3%) | $61.9B
-  <b>RRC</b> Range Resources Corp
-    $56.38 (+5.3%) | $13.2B
+📈 <b>52주 신고가 (34종목)</b>
 
 <b>〈헬스케어〉</b>
+  <b>AMGN</b> AMGEN Inc
+    $451.83 (+0.9%) | $244.3B
+  <b>TMO</b> Thermo Fisher Scientific Inc
+    $704.15 (+1.6%) | $260.4B
+  <b>A</b> Agilent Technologies Inc
+    $181.48 (+2.2%) | $51.2B
+  <b>BIIB</b> Biogen Inc
+    $244.05 (-3.4%) | $36.1B
+  <b>CAI</b> Caris Life Sciences Inc
+    $35.45 (+5.3%) | $10.0B
   <b>CRL</b> Charles River Laboratories International Inc
-    $358.84 (+0.4%) | $17.1B
+    $373.98 (+4.2%) | $17.9B
+  <b>DGX</b> Quest Diagnostics Inc
+    $245.62 (+1.3%) | $27.0B
+  <b>EXEL</b> Exelixis Inc
+    $66.28 (+1.4%) | $16.4B
+  <b>GILD</b> Gilead Sciences Inc
+    $159.20 (+0.1%) | $197.4B
+  <b>GMAB</b> Genmab ADR 🔥
+    $57.29 (+28.2%) | $34.2B
   <b>HALO</b> Halozyme Therapeutics Inc
-    $128.50 (+0.4%) | $14.6B
-  <b>IQV</b> IQVIA Holdings Inc
-    $271.55 (-0.8%) | $44.7B
-  <b>RPRX</b> Royalty Pharma plc
-    $65.28 (+0.8%) | $37.6B
-  <b>TECH</b> Bio-Techne Corp
-    $72.60 (-0.1%) | $11.4B
+    $130.03 (+1.2%) | $14.8B
+  <b>ICLR</b> Icon Plc 🔥
+    $214.16 (+17.0%) | $16.5B
+  <b>LH</b> Labcorp Holdings Inc 🔥
+    $360.25 (+8.8%) | $29.2B
+  <b>MEDP</b> Medpace Holdings Inc
+    $692.68 (+2.8%) | $19.4B
+  <b>MTD</b> Mettler-Toledo International Inc
+    $1,698.47 (+0.8%) | $34.0B
+  <b>RVTY</b> Revvity Inc
+    $165.33 (+2.1%) | $18.4B
   <b>VTRS</b> Viatris Inc
-    $18.72 (+2.4%) | $21.5B
+    $18.77 (+0.3%) | $21.6B
   <b>WAT</b> Waters Corp
-    $468.55 (+2.8%) | $46.0B
+    $476.88 (+1.8%) | $46.9B
   <b>WST</b> West Pharmaceutical Services Inc
-    $398.29 (+0.9%) | $28.0B
+    $403.64 (+1.3%) | $28.4B
+
+<b>〈금융〉</b>
+  <b>TD</b> Toronto Dominion Bank
+    $126.46 (+0.5%) | $213.7B
+  <b>CRBG</b> Corebridge Financial Inc
+    $35.32 (-0.1%) | $15.7B
+  <b>NDAQ</b> Nasdaq Inc
+    $105.55 (+1.1%) | $58.6B
 
 <b>〈산업재〉</b>
+  <b>AER</b> Aercap Holdings NV
+    $155.48 (+3.6%) | $24.0B
   <b>EMR</b> Emerson Electric Co
-    $166.27 (+2.8%) | $92.8B
-  <b>R</b> Ryder System Inc
-    $279.49 (-0.9%) | $10.7B
+    $167.71 (+0.9%) | $93.5B
   <b>URI</b> United Rentals Inc
-    $1,162.00 (+3.6%) | $72.0B
+    $1,174.61 (+1.1%) | $72.7B
+
+<b>〈기술〉</b>
+  <b>FTV</b> Fortive Corp
+    $64.11 (+4.0%) | $19.4B
+  <b>MANH</b> Manhattan Associates Inc
+    $239.73 (+2.5%) | $14.0B
+  <b>NTSK</b> Netskope Inc
+    $26.52 (+1.4%) | $10.8B
+  <b>RBRK</b> Rubrik Inc
+    $136.00 (+0.2%) | $28.2B
+  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
+    $99.92 (+0.4%) | $59.9B
 
 <b>〈경기소비재〉</b>
   <b>HAS</b> Hasbro Inc
-    $118.33 (+0.3%) | $16.7B
+    $118.68 (+0.3%) | $16.7B
 
-<b>〈금융〉</b>
-  <b>NDAQ</b> Nasdaq Inc
-    $104.36 (-0.3%) | $57.9B
+<b>〈에너지〉</b>
+  <b>RRC</b> Range Resources Corp
+    $55.88 (-0.9%) | $13.1B
+  <b>TRGP</b> Targa Resources Corp
+    $305.90 (+1.1%) | $65.6B
+
+<b>〈소재〉</b>
+  <b>RS</b> Reliance Inc
+    $437.18 (+1.0%) | $22.6B
+
+🚀 <b>8% 이상 급등 (12종목)</b>
 
 <b>〈기술〉</b>
-  <b>NTSK</b> Netskope Inc
-    $26.15 (+3.7%) | $10.7B
-  <b>RBRK</b> Rubrik Inc
-    $135.74 (+1.8%) | $28.1B
-
-🚀 <b>8% 이상 급등 (10종목)</b>
-
-<b>〈기술〉</b>
-  <b>ALAB</b> Astera Labs Inc
-    $286.69 (+10.5%) | $49.7B
-  <b>CBRS</b> Cerebras Systems Inc
-    $119.31 (+10.1%) | $26.7B
+  <b>ORCL</b> Oracle Corp
+    $144.54 (+10.7%) | $437.1B
+  <b>SKHY</b> SK Hynix Inc ADR
+    $164.70 (+13.3%) | $1.2T
   <b>CLS</b> Celestica Inc
-    $276.54 (+12.1%) | $34.9B
-  <b>CRDO</b> Credo Technology Group Holding Ltd
-    $167.43 (+10.8%) | $31.5B
+    $299.80 (+8.4%) | $37.8B
   <b>FLEX</b> Flex Ltd
-    $83.35 (+8.3%) | $30.8B
-  <b>NBIS</b> Nebius Group NV
-    $170.47 (+11.2%) | $46.3B
-
-<b>〈산업재〉</b>
-  <b>LECO</b> Lincoln Electric Holdings Inc
-    $282.37 (+9.2%) | $15.4B
-  <b>RKLB</b> Rocket Lab Corp
-    $58.31 (+8.3%) | $34.9B
-
-<b>〈금융〉</b>
-  <b>SOFI</b> SoFi Technologies Inc
-    $16.40 (+13.4%) | $21.2B
+    $93.03 (+11.6%) | $34.4B
+  <b>VSAT</b> Viasat Inc
+    $78.26 (+11.3%) | $10.8B
 
 <b>〈헬스케어〉</b>
+  <b>ENSG</b> Ensign Group Inc
+    $184.11 (+8.6%) | $10.7B
   <b>TWST</b> Twist Bioscience Corp
-    $159.85 (+10.1%) | $10.5B
+    $173.45 (+8.5%) | $11.4B
+
+<b>〈금융〉</b>
+  <b>EVR</b> Evercore Inc
+    $292.38 (+12.5%) | $11.2B
+
+<b>〈산업재〉</b>
+  <b>INIO</b> Innio NV
+    $18.35 (+8.1%) | $13.8B
+  <b>VRT</b> Vertiv Holdings Co
+    $242.94 (+16.5%) | $93.5B
+
+<b>〈부동산〉</b>
+  <b>JLL</b> Jones Lang Lasalle Inc
+    $333.34 (+11.1%) | $15.3B
+
+<b>〈경기소비재〉</b>
+  <b>STLA</b> Stellantis N.V
+    $4.68 (+13.0%) | $13.6B
 
 
