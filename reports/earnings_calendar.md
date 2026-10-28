@@ -1,15 +1,7 @@
-<!-- updated: 2026-10-28 06:01 -->
+<!-- updated: 2026-10-29 06:01 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-10-28 06:01 KST
+기준: 2026-10-29 06:01 KST
 ━━━━━━━━━━━━━━━
-
-<b>10/28 (수) · 5종목</b>
-  〈장후〉
-    <b>MSFT</b> Microsoft Corporation
-    <b>GOOGL</b> Alphabet Inc.
-    <b>GOOG</b> Alphabet Inc.
-    <b>KLAC</b> KLA Corporation
-    <b>FORM</b> FormFactor, Inc.
 
 <b>10/29 (목) · 6종목</b>
   〈장전〉
@@ -35,3 +27,11 @@
     <b>SMCI</b> Super Micro Computer, Inc.
     <b>ALAB</b> Astera Labs 
     <b>SWKS</b> Skyworks Solutions, Inc.
+
+<b>11/04 (수) · 4종목</b>
+  〈장전〉
+    <b>GFS</b> GlobalFoundries Inc.
+  〈장후〉
+    <b>QCOM</b> Qualcomm Incorporated
+    <b>COHR</b> Coherent Corp.
+    <b>ARM</b> Arm Holdings plc 
