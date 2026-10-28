@@ -1,9 +1,29 @@
 {
   "quotes": {
+    "NQ=F": {
+      "price": 29934.75,
+      "change": 122.75,
+      "pct": 0.41
+    },
+    "CL=F": {
+      "price": 101.61,
+      "change": 1.71,
+      "pct": 1.71
+    },
+    "JPY=X": {
+      "price": 157.85,
+      "change": -0.09,
+      "pct": -0.057
+    },
     "^TNX": {
       "price": 5.03,
       "change": 0.037,
       "pct": 0.741
+    },
+    "^TYX": {
+      "price": 5.338,
+      "change": 0.033,
+      "pct": 0.5
     },
     "DX-Y.NYB": {
       "price": 102.458,
@@ -16,15 +36,12 @@
       "pct": 0.0
     }
   },
-  "errors": [
-    "NQ=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "NQ=F: investing: https://uk.investing.com/indices/nq-100-futures: HTTPError: HTTP Error 403: Forbidden",
-    "CL=F: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "CL=F: investing: https://uk.investing.com/commodities/crude-oil: HTTPError: HTTP Error 403: Forbidden",
-    "JPY=X: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "JPY=X: investing: https://uk.investing.com/currencies/usd-jpy: HTTPError: HTTP Error 403: Forbidden",
-    "^TYX: yahoo: HTTPError: HTTP Error 429: Too Many Requests",
-    "^TYX: investing: https://uk.investing.com/rates-bonds/u.s.-30-year-bond-yield: HTTPError: HTTP Error 403: Forbidden"
-  ],
-  "fetched_at": "2026-10-28T15:33:23+09:00"
+  "errors": [],
+  "fetched_at": "2026-10-28T15:38:27+09:00",
+  "jpy_carry": {
+    "peak_3mo": 163.86,
+    "warn_level": 158.95,
+    "drop_pct": -3.67,
+    "warning": true
+  }
 }
