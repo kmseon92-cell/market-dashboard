@@ -1,16 +1,13 @@
-<!-- updated: 2026-10-30 06:01 -->
+<!-- updated: 2026-10-31 06:02 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-30 06:01 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-10-31 06:02 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>10/30 (금) · 1건</b>
-  21:30 ★★ Employment Cost Index q/q 예상:0.8% 이전:0.9%
 
 <b>11/02 (월) · 0건</b>
   — 발표 예정 없음
 
 <b>11/03 (화) · 3건</b>
-  00:45 ★★ S&P Global Manufacturing PMI 이전:56.0
+  00:45 ★★ S&P Global Manufacturing PMI 예상:56.0 이전:55.9
   01:00 ★★★ ISM Manufacturing PMI 이전:54.5
   02:15 ★★ Fed Goolsbee Speaks
 
@@ -24,4 +21,12 @@
 <b>11/05 (목) · 3건</b>
   00:45 ★★ S&P Global Services PMI 예상:57.9 이전:57.9
   01:00 ★★ ISM Non-Manufacturing PMI 이전:54.9
-  23:30 ★★ Initial Jobless Claims
+  23:30 ★★ Initial Jobless Claims 이전:194K
+
+<b>11/06 (금) · 6건</b>
+  00:10 ★★ FOMC Member Barkin Speaks
+  10:00 ★★ Fed Logan Speaks
+  19:30 ★★ FOMC Member Williams Speaks
+  23:30 ★★★ Average Hourly Earnings 이전:0.1%
+  23:30 ★★★ Nonfarm Payrolls 이전:29K
+  23:30 ★★★ Unemployment Rate 이전:4.2%
