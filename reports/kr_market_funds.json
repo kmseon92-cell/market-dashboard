@@ -1,19 +1,19 @@
 {
- "as_of": "2026-10-28",
+ "as_of": "2026-10-29",
  "signal": {
   "status": "purge",
   "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 882975.0,
-  "deposit_delta": -18055.0,
-  "down_streak": 0,
-  "deposit_drop_pct": -36.8,
-  "uncl": 9356.8,
+  "deposit": 887132.8,
+  "deposit_delta": 4157.800000000047,
+  "down_streak": 1,
+  "deposit_drop_pct": -36.5,
+  "uncl": 8785.8,
   "uncl_peak": 14293.0,
-  "uncl_drop_pct": -34.5,
-  "bandae": 49.7,
-  "bandae_peak_10d": 805.0,
-  "bandae_pct": 0.5311645006839947,
-  "bandae_climax_passed": true,
+  "uncl_drop_pct": -38.5,
+  "bandae": 36.6,
+  "bandae_peak_10d": 572.5,
+  "bandae_pct": 0.4165813016458376,
+  "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
@@ -23,21 +23,11 @@
    "bandae": 893.4,
    "kospi": 5554.22
   },
-  "credit": 296372.0,
+  "credit": 293290.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -23.3
+  "credit_drop_pct": -24.1
  },
  "history": [
-  {
-   "date": "2026-06-17",
-   "bandae": 120.3,
-   "bandae_pct": 1.0,
-   "credit": 378005.0,
-   "deposit": 1246320.0,
-   "futs": 529563.0,
-   "kospi": 8864.24,
-   "uncl": 12303.0
-  },
   {
    "date": "2026-06-18",
    "bandae": 141.9,
@@ -912,20 +902,30 @@
    "date": "2026-10-27",
    "bandae": 193.4,
    "bandae_pct": 2.0,
+   "credit": 296372.0,
    "deposit": 901030.0,
    "futs": 337216.0,
-   "uncl": 9438.0,
-   "credit": 296372.0,
-   "kospi": 5638.34
+   "kospi": 5638.34,
+   "uncl": 9438.0
   },
   {
    "date": "2026-10-28",
-   "deposit": 882975.0,
-   "futs": 342976.1,
-   "uncl": 9356.8,
    "bandae": 49.7,
-   "bandae_pct": 0.5
+   "bandae_pct": 0.5,
+   "deposit": 882975.0,
+   "futs": 342976.0,
+   "uncl": 9357.0,
+   "credit": 293290.0,
+   "kospi": 6012.44
+  },
+  {
+   "date": "2026-10-29",
+   "deposit": 887132.8,
+   "futs": 346549.5,
+   "uncl": 8785.8,
+   "bandae": 36.6,
+   "bandae_pct": 0.4
   }
  ],
- "fetched_at": "2026-10-29T15:10:07"
+ "fetched_at": "2026-10-30T15:10:06"
 }
