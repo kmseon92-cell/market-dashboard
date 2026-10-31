@@ -1,32 +1,32 @@
-<!-- updated: 2026-10-31 06:02 -->
+<!-- updated: 2026-11-01 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-10-31 06:02 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-11-01 06:01 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
 
 <b>11/02 (월) · 0건</b>
   — 발표 예정 없음
 
 <b>11/03 (화) · 3건</b>
-  00:45 ★★ S&P Global Manufacturing PMI 예상:56.0 이전:55.9
+  00:45 ★★ S&P Global Manufacturing PMI 예상:56.0 이전:56.0
   01:00 ★★★ ISM Manufacturing PMI 이전:54.5
   02:15 ★★ Fed Goolsbee Speaks
 
 <b>11/04 (수) · 5건</b>
   00:45 ★★ S&P Global Manufacturing PMI 예상:56.0 이전:55.9
-  01:00 ★★★ JOLTS Job Openings 이전:7.079M
+  01:00 ★★★ JOLTS Job Openings 예상:7.100M 이전:7.079M
   01:00 ★★ Durables Excluding Transport 이전:0.5%
-  23:15 ★★ ADP Nonfarm Employment Change 이전:90K
-  23:30 ★★ Trade Balance 이전:-105.60B
+  23:15 ★★ ADP Nonfarm Employment Change 예상:65K 이전:90K
+  23:30 ★★ Trade Balance 예상:-107.60B 이전:-105.60B
 
 <b>11/05 (목) · 3건</b>
   00:45 ★★ S&P Global Services PMI 예상:57.9 이전:57.9
-  01:00 ★★ ISM Non-Manufacturing PMI 이전:54.9
-  23:30 ★★ Initial Jobless Claims 이전:194K
+  01:00 ★★ ISM Non-Manufacturing PMI 예상:54.8 이전:54.9
+  23:30 ★★ Initial Jobless Claims 예상:197K 이전:194K
 
 <b>11/06 (금) · 6건</b>
   00:10 ★★ FOMC Member Barkin Speaks
   10:00 ★★ Fed Logan Speaks
   19:30 ★★ FOMC Member Williams Speaks
-  23:30 ★★★ Average Hourly Earnings 이전:0.1%
-  23:30 ★★★ Nonfarm Payrolls 이전:29K
-  23:30 ★★★ Unemployment Rate 이전:4.2%
+  23:30 ★★★ Average Hourly Earnings 예상:0.3% 이전:0.1%
+  23:30 ★★★ Nonfarm Payrolls 예상:63K 이전:29K
+  23:30 ★★★ Unemployment Rate 예상:4.2% 이전:4.2%
