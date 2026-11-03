@@ -1,145 +1,101 @@
-<!-- updated: 2026-11-03 06:30 -->
+<!-- updated: 2026-11-04 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-11-03
+📅 2026-11-04
 ━━━━━━━━━━━━━━━
-다우 +0.41% | 나스닥 -1.09% | S&P500 -0.52% | 러셀2000 -0.22% | 필반도체 -3.37% | WTI $96.09 | 환율 1,346원
+다우 -0.39% | 나스닥 +0.80% | S&P500 +0.35% | 러셀2000 +0.25% | 필반도체 +2.66% | WTI $96.80 | 환율 1,345원
 
-📈 <b>52주 신고가 (51종목)</b>
+📈 <b>52주 신고가 (25종목)</b>
 
 <b>〈금융〉</b>
   <b>BRK-A</b> Berkshire Hathaway Inc
-    $834,640.69 (+2.3%) | $1.2T
+    $836,445.12 (+0.2%) | $1.2T
   <b>BRK-B</b> Berkshire Hathaway Inc
-    $556.11 (+2.5%) | $1.2T
-  <b>MA</b> Mastercard Incorporated
-    $658.10 (+3.1%) | $576.8B
-  <b>V</b> Visa Inc
-    $425.51 (+2.9%) | $815.1B
-  <b>ACGL</b> Arch Capital Group Ltd
-    $109.31 (+2.8%) | $37.3B
+    $557.07 (+0.2%) | $1.2T
   <b>AFG</b> American Financial Group Inc
-    $155.17 (+0.8%) | $12.9B
-  <b>AJG</b> Arthur J. Gallagher & Co
-    $278.89 (+1.0%) | $71.5B
-  <b>CB</b> Chubb Limited
-    $368.98 (+1.3%) | $141.0B
+    $153.00 (-1.4%) | $12.7B
+  <b>CRBG</b> Corebridge Financial Inc
+    $35.74 (+2.0%) | $15.9B
   <b>EG</b> Everest Group Ltd
-    $417.72 (+1.6%) | $16.0B
-  <b>FDS</b> Factset Research Systems Inc
-    $343.74 (+4.3%) | $12.1B
+    $410.57 (-1.7%) | $15.2B
+  <b>EQH</b> Equitable Holdings Inc
+    $55.24 (+1.8%) | $15.1B
   <b>FRHC</b> Freedom Holding Corp
-    $187.30 (+0.2%) | $11.9B
-  <b>MRSH</b> Marsh
-    $205.38 (+2.4%) | $97.7B
-  <b>NDAQ</b> Nasdaq Inc
-    $108.65 (+2.3%) | $60.3B
+    $186.83 (-0.2%) | $11.9B
 
-<b>〈필수소비재〉</b>
-  <b>KO</b> Coca-Cola Co
-    $95.83 (+1.9%) | $412.2B
-  <b>BJ</b> BJ's Wholesale Club Holdings Inc
-    $110.67 (+3.1%) | $14.0B
-  <b>CCEP</b> Coca-Cola Europacific Partners Plc
-    $115.58 (+2.1%) | $51.2B
-  <b>KDP</b> Keurig Dr Pepper Inc
-    $36.95 (+3.1%) | $50.3B
-
-<b>〈산업재〉</b>
-  <b>AER</b> Aercap Holdings NV
-    $163.34 (+3.0%) | $25.2B
-  <b>ALLE</b> Allegion plc
-    $191.73 (+2.8%) | $16.2B
-  <b>EXPD</b> Expeditors International Of Washington Inc
-    $200.56 (+0.9%) | $26.1B
-  <b>J</b> Jacobs Solutions Inc
-    $160.24 (+3.6%) | $18.8B
-  <b>MAS</b> Masco Corp
-    $83.51 (+3.6%) | $16.1B
-  <b>R</b> Ryder System Inc
-    $285.58 (+1.1%) | $10.9B
-  <b>SWK</b> Stanley Black & Decker Inc
-    $106.71 (+3.2%) | $16.1B
-  <b>TTC</b> Toro Co
-    $108.84 (+0.8%) | $10.3B
-  <b>VLTO</b> Veralto Corp
-    $115.70 (+4.1%) | $28.2B
-
-<b>〈소재〉</b>
-  <b>APD</b> Air Products & Chemicals Inc
-    $316.03 (-0.1%) | $70.4B
-  <b>ECL</b> Ecolab Inc
-    $308.38 (+1.8%) | $86.5B
-  <b>IFF</b> International Flavors & Fragrances Inc
-    $94.63 (+1.7%) | $24.1B
-  <b>NUE</b> Nucor Corp
-    $277.65 (+1.4%) | $63.0B
-  <b>RS</b> Reliance Inc
-    $448.08 (+2.6%) | $22.8B
-
-<b>〈유틸리티〉</b>
-  <b>AWK</b> American Water Works Co Inc
-    $147.43 (+2.1%) | $29.4B
-  <b>ED</b> Consolidated Edison Inc
-    $118.48 (+1.6%) | $43.7B
-  <b>FTS</b> Fortis Inc
-    $59.29 (+1.1%) | $30.3B
-  <b>WTRG</b> Essential Utilities Inc
-    $44.44 (+2.1%) | $12.6B
+<b>〈기술〉</b>
+  <b>CACI</b> Caci International Inc
+    $680.10 (-0.1%) | $15.1B
+  <b>FTV</b> Fortive Corp
+    $66.81 (-0.0%) | $19.9B
+  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
+    $99.93 (+0.7%) | $55.5B
+  <b>VRSN</b> Verisign Inc
+    $313.88 (+1.8%) | $28.2B
 
 <b>〈경기소비재〉</b>
   <b>CCK</b> Crown Holdings Inc
-    $123.24 (+3.4%) | $13.3B
-  <b>HLT</b> Hilton Worldwide Holdings Inc
-    $364.71 (+2.2%) | $81.2B
-  <b>MAR</b> Marriott International Inc
-    $416.41 (+4.3%) | $108.6B
-  <b>PKG</b> Packaging Corp Of America
-    $258.64 (+0.7%) | $23.0B
-  <b>SN</b> SharkNinja Inc
-    $213.22 (+2.5%) | $30.0B
-  <b>W</b> Wayfair Inc
-    $113.14 (-2.4%) | $15.5B
-
-<b>〈부동산〉</b>
-  <b>CUBE</b> CubeSmart
-    $44.27 (+3.6%) | $10.0B
-  <b>HST</b> Host Hotels & Resorts Inc
-    $25.59 (+1.1%) | $17.5B
+    $120.73 (-2.0%) | $13.1B
 
 <b>〈헬스케어〉</b>
   <b>EHC</b> Encompass Health Corp
-    $137.19 (+0.9%) | $13.5B
+    $134.79 (-1.8%) | $13.3B
+  <b>EXEL</b> Exelixis Inc
+    $72.31 (+3.1%) | $17.6B
+  <b>KYMR</b> Kymera Therapeutics Inc
+    $127.09 (-0.3%) | $10.8B
   <b>PFE</b> Pfizer Inc
-    $30.67 (+0.5%) | $174.8B
+    $30.00 (-2.2%) | $171.0B
   <b>REGN</b> Regeneron Pharmaceuticals Inc
-    $961.26 (+3.6%) | $99.0B
-  <b>VRTX</b> Vertex Pharmaceuticals Inc
-    $553.15 (-1.0%) | $140.2B
+    $973.36 (+1.3%) | $100.7B
+  <b>RVTY</b> Revvity Inc
+    $163.48 (+7.8%) | $18.2B
+  <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
+    $41.91 (+3.0%) | $48.8B
+
+<b>〈산업재〉</b>
+  <b>EXPD</b> Expeditors International Of Washington Inc
+    $204.31 (+1.9%) | $26.6B
+  <b>J</b> Jacobs Solutions Inc
+    $159.85 (-0.2%) | $18.7B
+  <b>VLTO</b> Veralto Corp
+    $116.32 (+0.5%) | $28.3B
+  <b>WCN</b> Waste Connections Inc
+    $186.66 (-0.8%) | $46.7B
+
+<b>〈유틸리티〉</b>
+  <b>FTS</b> Fortis Inc
+    $59.72 (+0.7%) | $30.5B
+
+<b>〈커뮤니케이션〉</b>
+  <b>ROKU</b> Roku Inc
+    $160.36 (+3.1%) | $23.8B
+
+🚀 <b>8% 이상 급등 (9종목)</b>
+
+<b>〈산업재〉</b>
+  <b>BE</b> Bloom Energy Corp
+    $214.01 (+9.1%) | $63.3B
+  <b>INIO</b> Innio NV
+    $18.31 (+11.6%) | $13.7B
+  <b>RRX</b> Regal Rexnord Corp
+    $179.93 (+11.8%) | $12.0B
+
+<b>〈소재〉</b>
+  <b>DD</b> DuPont de Nemours Inc
+    $153.46 (+8.6%) | $20.7B
 
 <b>〈기술〉</b>
-  <b>FTV</b> Fortive Corp
-    $66.84 (+2.5%) | $19.9B
-  <b>MANH</b> Manhattan Associates Inc
-    $253.22 (+1.9%) | $14.8B
-  <b>ROP</b> Roper Technologies Inc
-    $479.54 (+2.8%) | $47.4B
-  <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.28 (+0.2%) | $55.2B
-
-🚀 <b>8% 이상 급등 (4종목)</b>
+  <b>FISV</b> Fiserv Inc
+    $58.40 (+12.5%) | $31.1B
+  <b>FN</b> Fabrinet
+    $363.33 (+15.4%) | $13.0B
+  <b>GRAB</b> Grab Holdings Limited
+    $3.12 (+9.1%) | $12.7B
+  <b>LSCC</b> Lattice Semiconductor Corp
+    $105.92 (+11.0%) | $15.0B
 
 <b>〈헬스케어〉</b>
-  <b>IDXX</b> Idexx Laboratories Inc
-    $671.64 (+21.9%) | $52.9B
-  <b>TEM</b> Tempus AI Inc
-    $78.48 (+8.7%) | $14.3B
-
-<b>〈기술〉</b>
-  <b>NXT</b> Nextpower Inc
-    $91.13 (+14.9%) | $13.8B
-
-<b>〈경기소비재〉</b>
-  <b>RIVN</b> Rivian Automotive Inc
-    $13.19 (+8.5%) | $19.1B
+  <b>NBIX</b> Neurocrine Biosciences Inc
+    $164.85 (+13.4%) | $16.8B
 
 
