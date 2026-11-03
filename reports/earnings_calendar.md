@@ -1,14 +1,7 @@
-<!-- updated: 2026-11-03 06:01 -->
+<!-- updated: 2026-11-04 06:01 -->
 📅 미국 실적 캘린더 (M7·SOX반도체·지정종목, 영업일 5일)
-기준: 2026-11-03 06:01 KST
+기준: 2026-11-04 06:01 KST
 ━━━━━━━━━━━━━━━
-
-<b>11/03 (화) · 4종목</b>
-  〈장후〉
-    <b>AMD</b> Advanced Micro Devices, Inc.
-    <b>SMCI</b> Super Micro Computer, Inc.
-    <b>ALAB</b> Astera Labs 
-    <b>SWKS</b> Skyworks Solutions, Inc.
 
 <b>11/04 (수) · 4종목</b>
   〈장전〉
@@ -32,3 +25,7 @@
 
 <b>11/09 (월) · 0종목</b>
   — 주목 종목 없음
+
+<b>11/10 (화) · 1종목</b>
+  〈장후〉
+    <b>CRWV</b> CoreWeave, Inc.
