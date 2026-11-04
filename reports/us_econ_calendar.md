@@ -1,11 +1,7 @@
-<!-- updated: 2026-11-04 06:01 -->
+<!-- updated: 2026-11-05 06:01 -->
 📅 미국 경제지표 캘린더 (영업일 5일)
-기준: 2026-11-04 06:01 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
+기준: 2026-11-05 06:01 KST · 출처: ForexFactory·나스닥(다음 주분) (High·Medium 임팩트, KST 시간)
 ━━━━━━━━━━━━━━━
-
-<b>11/04 (수) · 2건</b>
-  00:00 ★★ JOLTS Job Openings 예상:7.15M 이전:7.08M
-  00:16 ★★★ Congressional Elections
 
 <b>11/05 (목) · 2건</b>
   00:00 ★★ ISM Services PMI 예상:54.8 이전:54.9
@@ -23,3 +19,6 @@
   00:00 ★★ Fed Goolsbee Speaks
   22:30 ★★★ Core CPI 이전:0.3%
   22:30 ★★★ CPI 이전:0.6%
+
+<b>11/11 (수) · 0건</b>
+  — 발표 예정 없음
