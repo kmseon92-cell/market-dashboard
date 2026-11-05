@@ -1,5 +1,5 @@
 {
-  "fetched_at": "2026-11-05T08:00:22",
+  "fetched_at": "2026-11-06T08:00:24",
   "alerts": [
     {
       "stock_name": "뉴인텍",
@@ -54,18 +54,18 @@
       "alert_type": "투자경고",
       "disclose_date": "2026-11-04",
       "designated_date": "2026-11-05",
-      "judgment_date": "2026-11-19",
-      "judgment_source": "시행세칙",
+      "judgment_date": "2026-11-06",
+      "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3300.0,
+      "threshold_price": 3228.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 3384.0,
-        "cond2_15d_100pct": 3300.0,
-        "cond3_15d_high": 3560.0,
+        "cond1_5d_60pct": 3920.0,
+        "cond2_15d_100pct": 3228.0,
+        "cond3_15d_high": 3750.0,
         "binding": "15일100%"
       },
-      "current_price": 3750.0,
-      "current_date": "2026-11-04",
+      "current_price": 4045.0,
+      "current_date": "2026-11-05",
       "is_at_risk": true,
       "ticker": "051630.KS",
       "price_error": null
@@ -82,13 +82,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 2820.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 3880.0,
-        "cond2_15d_100pct": 3250.0,
+        "cond1_5d_60pct": 3520.0,
+        "cond2_15d_100pct": 3180.0,
         "cond3_15d_high": 2820.0,
         "binding": "15일신고가"
       },
-      "current_price": 1740.0,
-      "current_date": "2026-11-04",
+      "current_price": 1648.0,
+      "current_date": "2026-11-05",
       "is_at_risk": false,
       "ticker": "060900.KQ",
       "price_error": null
@@ -112,6 +112,29 @@
       "price_error": "all halted"
     },
     {
+      "stock_name": "한진칼우",
+      "stock_code": "18064K",
+      "market": "유가증권",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-11-05",
+      "designated_date": "2026-11-06",
+      "judgment_date": "2026-11-20",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 42640.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 42640.0,
+        "cond2_15d_100pct": 55100.0,
+        "cond3_15d_high": 47750.0,
+        "binding": "5일60%"
+      },
+      "current_price": 62000.0,
+      "current_date": "2026-11-05",
+      "is_at_risk": true,
+      "ticker": "18064K.KS",
+      "price_error": null
+    },
+    {
       "stock_name": "디케이티",
       "stock_code": "290550",
       "market": "코스닥",
@@ -123,13 +146,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 25900.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 40320.0,
-        "cond2_15d_100pct": 44400.0,
+        "cond1_5d_60pct": 39040.0,
+        "cond2_15d_100pct": 40200.0,
         "cond3_15d_high": 25900.0,
         "binding": "15일신고가"
       },
-      "current_price": 24950.0,
-      "current_date": "2026-11-04",
+      "current_price": 21450.0,
+      "current_date": "2026-11-05",
       "is_at_risk": false,
       "ticker": "290550.KQ",
       "price_error": null
@@ -169,13 +192,13 @@
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
       "threshold_price": 5530.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 8624.0,
-        "cond2_15d_100pct": 10100.0,
+        "cond1_5d_60pct": 8384.0,
+        "cond2_15d_100pct": 9670.0,
         "cond3_15d_high": 5530.0,
         "binding": "15일신고가"
       },
-      "current_price": 5330.0,
-      "current_date": "2026-11-04",
+      "current_price": 5130.0,
+      "current_date": "2026-11-05",
       "is_at_risk": false,
       "ticker": "351320.KQ",
       "price_error": null
