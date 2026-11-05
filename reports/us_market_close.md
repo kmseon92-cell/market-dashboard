@@ -1,335 +1,273 @@
-<!-- updated: 2026-11-05 06:30 -->
+<!-- updated: 2026-11-06 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-11-05
+📅 2026-11-06
 ━━━━━━━━━━━━━━━
-다우 +3.05% | 나스닥 +1.46% | S&P500 +1.59% | 러셀2000 +1.54% | 필반도체 -3.12% | WTI $88.48 | 환율 1,341원
+다우 -3.44% | 나스닥 -5.54% | S&P500 -4.36% | 러셀2000 -4.45% | 필반도체 -12.28% | WTI $90.80 | 환율 1,357원
 
-📈 <b>52주 신고가 (102종목)</b>
+📈 <b>52주 신고가 (115종목)</b>
 
 <b>〈기술〉</b>
   <b>AAPL</b> Apple Inc
-    $349.69 (+5.4%) | $5.1T
-  <b>MSFT</b> Microsoft Corp
-    $555.99 (+6.7%) | $4.1T
-  <b>CDW</b> CDW Corp 🔥
-    $168.75 (+12.7%) | $21.1B
-  <b>FTV</b> Fortive Corp
-    $68.34 (+2.3%) | $20.3B
-  <b>MANH</b> Manhattan Associates Inc
-    $260.55 (+2.1%) | $15.1B
+    $344.64 (-1.4%) | $5.0T
+  <b>ADP</b> Automatic Data Processing Inc
+    $307.24 (+1.2%) | $121.3B
+  <b>CPAY</b> Corpay Inc
+    $447.00 (+6.8%) | $29.4B
+  <b>MSI</b> Motorola Solutions Inc
+    $517.01 (+4.0%) | $85.6B
   <b>ROP</b> Roper Technologies Inc
-    $492.22 (+3.9%) | $48.8B
+    $491.68 (-0.1%) | $48.7B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.98 (+0.1%) | $57.3B
+    $99.56 (-0.4%) | $60.0B
   <b>VRSN</b> Verisign Inc
-    $318.12 (+1.4%) | $28.5B
-  <b>XYZ</b> Block Inc 🔥
-    $87.63 (+15.3%) | $52.6B
+    $312.07 (-1.9%) | $28.0B
 
 <b>〈헬스케어〉</b>
+  <b>ABBV</b> Abbvie Inc
+    $288.24 (-2.2%) | $509.5B
   <b>AMGN</b> AMGEN Inc
-    $478.23 (+3.7%) | $258.6B
-  <b>TMO</b> Thermo Fisher Scientific Inc
-    $706.16 (+1.1%) | $261.6B
+    $460.28 (-3.8%) | $248.8B
+  <b>GILD</b> Gilead Sciences Inc
+    $167.57 (-4.0%) | $207.8B
+  <b>LLY</b> Lilly(Eli) & Co
+    $1,364.73 (-3.8%) | $1.3T
   <b>BDX</b> Becton Dickinson & Co
-    $209.19 (+5.6%) | $57.0B
+    $213.55 (+2.1%) | $58.2B
   <b>CAH</b> Cardinal Health Inc
-    $261.93 (+3.5%) | $60.6B
-  <b>CNC</b> Centene Corp 🔥
-    $76.01 (+12.6%) | $37.6B
+    $267.82 (+2.2%) | $62.0B
+  <b>CI</b> Cigna Group
+    $301.48 (-1.3%) | $79.7B
+  <b>CNC</b> Centene Corp
+    $74.17 (-2.4%) | $36.7B
+  <b>DGX</b> Quest Diagnostics Inc
+    $254.74 (-0.4%) | $28.0B
   <b>EHC</b> Encompass Health Corp
-    $141.03 (+4.6%) | $13.9B
+    $141.27 (+0.2%) | $13.9B
   <b>EW</b> Edwards Lifesciences Corp
-    $99.37 (+4.4%) | $57.3B
-  <b>GKOS</b> Glaukos Corp
-    $246.70 (+5.9%) | $14.6B
+    $100.82 (+1.5%) | $58.1B
+  <b>EXEL</b> Exelixis Inc
+    $68.61 (-5.7%) | $16.7B
   <b>KYMR</b> Kymera Therapeutics Inc
-    $136.25 (+7.2%) | $11.6B
+    $128.12 (-6.0%) | $10.9B
+  <b>LH</b> Labcorp Holdings Inc
+    $363.30 (-1.2%) | $29.5B
   <b>MCK</b> Mckesson Corp
-    $1,069.44 (+7.0%) | $124.7B
-  <b>MRNA</b> Moderna Inc 🔥
-    $258.12 (+13.0%) | $103.0B
+    $1,072.00 (+0.2%) | $125.0B
+  <b>MRNA</b> Moderna Inc
+    $241.06 (-6.7%) | $96.2B
   <b>MTD</b> Mettler-Toledo International Inc
-    $1,723.24 (+1.5%) | $34.5B
-  <b>OSCR</b> Oscar Health Inc 🔥
-    $35.19 (+8.6%) | $10.9B
-  <b>REGN</b> Regeneron Pharmaceuticals Inc
-    $930.67 (-4.4%) | $96.3B
-  <b>TECH</b> Bio-Techne Corp
-    $72.74 (+0.1%) | $11.4B
-  <b>THC</b> Tenet Healthcare Corp 🔥
-    $292.25 (+9.6%) | $23.3B
-  <b>UTHR</b> United Therapeutics Corp
-    $608.49 (+1.2%) | $26.1B
-  <b>ZBH</b> Zimmer Biomet Holdings Inc 🔥
-    $110.15 (+13.5%) | $21.0B
+    $1,679.08 (-2.6%) | $33.6B
+  <b>ONC</b> BeOne Medicines Ltd ADR
+    $387.25 (+2.5%) | $40.4B
+  <b>OSCR</b> Oscar Health Inc
+    $33.18 (-5.7%) | $10.2B
+  <b>PFE</b> Pfizer Inc
+    $29.88 (-3.0%) | $170.3B
+  <b>RPRX</b> Royalty Pharma plc
+    $67.51 (-0.1%) | $38.9B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $21.19 (+0.6%) | $67.7B
+  <b>THC</b> Tenet Healthcare Corp
+    $286.46 (-2.0%) | $22.8B
+  <b>VTRS</b> Viatris Inc
+    $18.97 (-1.3%) | $21.8B
 
 <b>〈금융〉</b>
   <b>BRK-A</b> Berkshire Hathaway Inc
-    $869,300.81 (+3.9%) | $1.2T
+    $856,700.00 (-1.4%) | $1.2T
   <b>BRK-B</b> Berkshire Hathaway Inc
-    $579.09 (+4.0%) | $1.2T
+    $572.33 (-1.2%) | $1.2T
   <b>MA</b> Mastercard Incorporated
-    $672.68 (+3.9%) | $586.0B
+    $655.92 (-2.5%) | $571.4B
   <b>TD</b> Toronto Dominion Bank
-    $128.20 (+2.8%) | $216.6B
+    $123.09 (-4.0%) | $208.0B
   <b>V</b> Visa Inc
-    $436.57 (+3.8%) | $836.3B
+    $422.59 (-3.2%) | $809.5B
   <b>ACGL</b> Arch Capital Group Ltd
-    $110.68 (+2.7%) | $37.8B
+    $110.57 (-0.1%) | $37.7B
+  <b>AFG</b> American Financial Group Inc
+    $156.35 (+1.0%) | $13.0B
+  <b>AFL</b> Aflac Inc
+    $126.24 (+0.8%) | $63.3B
   <b>AIZ</b> Assurant Inc
-    $308.52 (+4.2%) | $15.2B
+    $306.87 (-0.5%) | $15.1B
   <b>AJG</b> Arthur J. Gallagher & Co
-    $288.38 (+5.5%) | $73.9B
+    $288.11 (-0.1%) | $73.9B
+  <b>ALL</b> Allstate Corp
+    $266.72 (-0.9%) | $67.4B
   <b>BLK</b> Blackrock Inc
-    $1,224.37 (+5.4%) | $198.9B
+    $1,170.67 (-4.4%) | $190.2B
   <b>BNS</b> Bank Of Nova Scotia
-    $96.43 (+3.0%) | $118.8B
+    $91.77 (-4.8%) | $113.0B
   <b>CB</b> Chubb Limited
-    $374.17 (+2.1%) | $143.0B
-  <b>CRBG</b> Corebridge Financial Inc
-    $36.24 (+1.4%) | $16.1B
-  <b>EQH</b> Equitable Holdings Inc
-    $56.12 (+1.6%) | $15.3B
+    $371.63 (-0.7%) | $142.0B
+  <b>CINF</b> Cincinnati Financial Corp
+    $188.31 (-1.1%) | $28.9B
+  <b>EG</b> Everest Group Ltd
+    $417.79 (-0.8%) | $15.5B
+  <b>FDS</b> Factset Research Systems Inc
+    $340.47 (-0.5%) | $12.0B
+  <b>IBN</b> ICICI Bank Ltd ADR
+    $32.53 (+4.1%) | $116.8B
+  <b>ICE</b> Intercontinental Exchange Inc
+    $174.00 (-0.5%) | $97.2B
+  <b>MET</b> Metlife Inc
+    $99.75 (-3.0%) | $63.4B
   <b>MFC</b> Manulife Financial Corp
-    $45.99 (+2.7%) | $76.3B
+    $43.99 (-4.3%) | $73.0B
   <b>MRSH</b> Marsh
-    $210.38 (+3.3%) | $100.0B
+    $209.43 (-0.5%) | $99.6B
   <b>MSCI</b> MSCI Inc
-    $674.30 (+5.4%) | $48.2B
+    $655.91 (-2.7%) | $46.9B
   <b>NDAQ</b> Nasdaq Inc
-    $109.71 (+2.6%) | $60.9B
+    $106.83 (-2.6%) | $59.3B
+  <b>PGR</b> Progressive Corp
+    $233.18 (-0.7%) | $135.1B
   <b>PRU</b> Prudential Financial Inc
-    $126.63 (+6.6%) | $43.7B
+    $122.46 (-3.3%) | $42.2B
   <b>TRV</b> Travelers Companies Inc
-    $409.25 (+3.5%) | $83.9B
+    $402.89 (-1.6%) | $82.6B
   <b>TW</b> Tradeweb Markets Inc
-    $126.99 (+1.0%) | $29.5B
+    $127.56 (+0.5%) | $29.6B
+  <b>WRB</b> W.R. Berkley Corp
+    $76.98 (+0.3%) | $28.6B
 
 <b>〈커뮤니케이션〉</b>
   <b>DIS</b> Walt Disney Co
-    $118.95 (+4.2%) | $205.4B
-  <b>CHT</b> Chunghwa Telecom ADR
-    $48.98 (+0.7%) | $38.0B
-  <b>GSAT</b> Globalstar Inc
-    $84.58 (+1.0%) | $11.0B
-  <b>LLYVA</b> Liberty Live Holdings Inc
-    $106.37 (+4.0%) | $10.1B
-  <b>LLYVK</b> Liberty Live Holdings Inc
-    $110.35 (+4.2%) | $10.1B
+    $117.22 (-1.4%) | $202.4B
+  <b>FWONA</b> Liberty Media Corp 🔥
+    $99.72 (+9.6%) | $26.9B
+  <b>FWONK</b> Liberty Media Corp
+    $106.52 (+7.7%) | $26.5B
   <b>ROKU</b> Roku Inc
-    $162.77 (+1.5%) | $24.3B
-  <b>SIRI</b> Sirius XM Holdings Inc 🔥
-    $33.38 (+8.4%) | $11.2B
+    $160.37 (-1.5%) | $23.9B
+  <b>SIRI</b> Sirius XM Holdings Inc
+    $33.24 (-0.5%) | $11.2B
 
 <b>〈필수소비재〉</b>
   <b>KO</b> Coca-Cola Co
-    $95.80 (+1.1%) | $412.1B
+    $95.73 (-0.1%) | $411.8B
   <b>PG</b> Procter & Gamble Co
-    $167.32 (+3.2%) | $387.8B
+    $167.10 (-0.1%) | $387.3B
   <b>BF-A</b> Brown-Forman Corp
-    $31.48 (+5.6%) | $14.2B
+    $31.80 (+1.0%) | $14.4B
   <b>BJ</b> BJ's Wholesale Club Holdings Inc
-    $110.90 (+1.3%) | $14.0B
+    $111.26 (+0.3%) | $14.1B
   <b>CCEP</b> Coca-Cola Europacific Partners Plc
-    $115.84 (+3.8%) | $51.3B
+    $117.29 (+1.2%) | $51.5B
   <b>CHD</b> Church & Dwight Co Inc
-    $112.03 (+2.6%) | $26.4B
+    $111.33 (-0.6%) | $26.3B
   <b>CL</b> Colgate-Palmolive Co
-    $98.76 (+3.3%) | $78.5B
-  <b>DLTR</b> Dollar Tree Inc 🔥
-    $147.00 (+9.6%) | $27.6B
+    $98.69 (-0.1%) | $78.5B
+  <b>COKE</b> Coca-Cola Consolidated Inc
+    $212.50 (+4.1%) | $14.1B
+  <b>DLTR</b> Dollar Tree Inc
+    $137.94 (-6.2%) | $25.9B
   <b>KDP</b> Keurig Dr Pepper Inc
-    $36.79 (+5.9%) | $50.1B
+    $36.91 (+0.3%) | $50.2B
   <b>MDLZ</b> Mondelez International Inc
-    $67.36 (+3.4%) | $85.3B
-  <b>USFD</b> US Foods Holding Corp 🔥
-    $109.93 (+8.5%) | $23.8B
+    $66.83 (-0.8%) | $84.6B
+  <b>MO</b> Altria Group Inc
+    $77.58 (-0.6%) | $129.1B
+  <b>SJM</b> J.M. Smucker Co
+    $133.25 (+0.6%) | $14.2B
+  <b>TBBB</b> BBB Foods Inc
+    $64.21 (-1.3%) | $10.6B
+  <b>USFD</b> US Foods Holding Corp
+    $106.85 (-2.8%) | $23.1B
 
 <b>〈산업재〉</b>
   <b>AER</b> Aercap Holdings NV
-    $165.72 (+2.0%) | $25.6B
+    $166.17 (+0.3%) | $25.7B
   <b>ALLE</b> Allegion plc
-    $192.69 (+1.8%) | $16.2B
+    $187.14 (-2.9%) | $15.8B
   <b>CTAS</b> Cintas Corp
-    $229.04 (+2.4%) | $91.0B
-  <b>EMR</b> Emerson Electric Co
-    $170.44 (+2.4%) | $95.1B
-  <b>EXPD</b> Expeditors International Of Washington Inc
-    $197.69 (-3.2%) | $25.7B
+    $226.41 (-1.1%) | $89.9B
   <b>FAST</b> Fastenal Co
-    $53.21 (+1.7%) | $61.0B
-  <b>GWW</b> W.W. Grainger Inc
-    $1,489.39 (+6.5%) | $70.2B
-  <b>J</b> Jacobs Solutions Inc
-    $160.11 (+0.2%) | $18.7B
-  <b>MAS</b> Masco Corp
-    $86.82 (+5.7%) | $16.7B
-  <b>MMM</b> 3M Co 🔥
-    $193.95 (+9.6%) | $100.2B
-  <b>SWK</b> Stanley Black & Decker Inc 🔥
-    $118.33 (+13.1%) | $17.9B
+    $52.93 (-0.5%) | $60.7B
+  <b>MMM</b> 3M Co
+    $187.77 (-3.2%) | $97.0B
+  <b>RSG</b> Republic Services Inc
+    $249.42 (+1.6%) | $76.0B
   <b>VLTO</b> Veralto Corp
-    $117.02 (+0.6%) | $28.4B
+    $116.55 (-0.4%) | $28.3B
   <b>WCN</b> Waste Connections Inc
-    $191.81 (+2.8%) | $48.0B
+    $191.66 (-0.1%) | $48.0B
+
+<b>〈소재〉</b>
+  <b>APD</b> Air Products & Chemicals Inc
+    $309.49 (-2.9%) | $68.9B
+  <b>ECL</b> Ecolab Inc
+    $305.83 (-2.9%) | $85.8B
 
 <b>〈유틸리티〉</b>
   <b>AWK</b> American Water Works Co Inc
-    $149.63 (+2.2%) | $29.8B
+    $152.42 (+1.9%) | $30.4B
   <b>ED</b> Consolidated Edison Inc
-    $120.30 (+3.0%) | $44.3B
+    $121.44 (+0.9%) | $44.8B
+  <b>EVRG</b> Evergy Inc
+    $87.21 (+1.2%) | $20.1B
   <b>FTS</b> Fortis Inc
-    $60.93 (+2.0%) | $31.1B
+    $61.18 (+0.4%) | $31.3B
   <b>OGE</b> Oge Energy Corp
-    $50.63 (+3.1%) | $10.5B
+    $50.82 (+0.4%) | $10.5B
+  <b>WEC</b> WEC Energy Group Inc
+    $118.32 (+0.2%) | $38.9B
   <b>WTRG</b> Essential Utilities Inc
-    $45.13 (+2.5%) | $12.8B
+    $46.05 (+2.0%) | $13.1B
 
 <b>〈경기소비재〉</b>
+  <b>BALL</b> Ball Corp
+    $66.91 (-0.7%) | $17.4B
   <b>BBY</b> Best Buy Co Inc
-    $101.36 (+8.0%) | $21.3B
+    $99.40 (-1.9%) | $20.9B
   <b>CCK</b> Crown Holdings Inc
-    $124.78 (+3.4%) | $13.5B
+    $121.86 (-2.3%) | $13.2B
   <b>DRI</b> Darden Restaurants Inc
-    $230.61 (+5.1%) | $26.1B
+    $228.67 (-0.8%) | $25.9B
   <b>EBAY</b> EBay Inc
-    $125.21 (+5.6%) | $55.0B
-  <b>GM</b> General Motors Company
-    $92.43 (+4.6%) | $78.0B
+    $123.35 (-1.4%) | $54.1B
   <b>HAS</b> Hasbro Inc
-    $121.58 (+3.1%) | $17.0B
+    $119.54 (-1.7%) | $16.7B
   <b>HLT</b> Hilton Worldwide Holdings Inc
-    $376.53 (+3.5%) | $83.8B
+    $369.64 (-1.8%) | $82.2B
   <b>HMC</b> Honda Motor ADR
-    $35.22 (+3.6%) | $45.7B
+    $36.26 (+3.0%) | $47.0B
   <b>IHG</b> Intercontinental Hotels Group ADR
-    $176.00 (+3.4%) | $25.7B
+    $175.56 (-0.2%) | $25.6B
   <b>LTH</b> Life Time Group Holdings Inc
-    $47.39 (+6.3%) | $10.6B
-  <b>PKG</b> Packaging Corp Of America
-    $259.17 (+1.7%) | $23.1B
+    $47.75 (+0.8%) | $10.7B
+  <b>SBUX</b> Starbucks Corp
+    $106.12 (-3.3%) | $121.0B
   <b>SN</b> SharkNinja Inc
-    $219.25 (+4.1%) | $30.9B
-  <b>W</b> Wayfair Inc 🔥
-    $123.56 (+11.0%) | $16.9B
+    $217.13 (-1.0%) | $30.6B
   <b>WSM</b> Williams-Sonoma Inc
-    $270.08 (+6.5%) | $31.8B
+    $258.61 (-4.2%) | $30.5B
 
 <b>〈부동산〉</b>
   <b>CUBE</b> CubeSmart
-    $45.89 (+3.7%) | $10.3B
+    $45.37 (-1.1%) | $10.2B
   <b>EXR</b> Extra Space Storage Inc
-    $161.04 (+3.1%) | $35.1B
+    $160.12 (-0.6%) | $34.9B
   <b>HST</b> Host Hotels & Resorts Inc
-    $26.11 (+1.3%) | $17.9B
+    $24.63 (-5.7%) | $16.9B
+  <b>JLL</b> Jones Lang Lasalle Inc
+    $375.25 (-3.9%) | $17.1B
   <b>PSA</b> Public Storage
-    $342.76 (+2.8%) | $64.0B
+    $340.50 (-0.7%) | $63.6B
 
-<b>〈소재〉</b>
-  <b>ECL</b> Ecolab Inc
-    $315.01 (+3.4%) | $88.3B
+🚀 <b>8% 이상 급등 (3종목)</b>
 
-🚀 <b>8% 이상 급등 (42종목)</b>
-
-<b>〈소재〉</b>
-  <b>AEM</b> Agnico Eagle Mines Ltd
-    $183.45 (+9.7%) | $93.5B
-  <b>AGI</b> Alamos Gold Inc
-    $30.00 (+10.8%) | $12.6B
-  <b>B</b> Barrick Mining Corp
-    $40.13 (+8.3%) | $66.0B
-  <b>CDE</b> Coeur Mining Inc
-    $14.58 (+8.7%) | $15.0B
-  <b>EQX</b> Equinox Gold Corp
-    $11.28 (+12.8%) | $13.2B
-  <b>HL</b> Hecla Mining Co
-    $14.95 (+13.2%) | $10.0B
-  <b>HMY</b> Harmony Gold Mining Co Ltd ADR
-    $16.41 (+8.7%) | $10.3B
-  <b>JHX</b> James Hardie Industries plc
-    $29.52 (+8.3%) | $17.1B
-  <b>NEM</b> Newmont Corp
-    $118.11 (+9.9%) | $122.7B
-  <b>PAAS</b> Pan American Silver Corp
-    $41.49 (+8.4%) | $17.2B
-  <b>WPM</b> Wheaton Precious Metals Corp
-    $131.50 (+12.0%) | $59.7B
-
-<b>〈헬스케어〉</b>
-  <b>ALGN</b> Align Technology Inc
-    $164.90 (+8.8%) | $11.7B
-  <b>GMED</b> Globus Medical Inc
-    $87.10 (+9.4%) | $11.7B
-  <b>HCA</b> HCA Healthcare Inc
-    $510.70 (+10.3%) | $106.7B
-  <b>ISRG</b> Intuitive Surgical Inc
-    $482.24 (+9.4%) | $167.2B
-  <b>MDLN</b> Medline Inc
-    $40.38 (+18.4%) | $53.1B
-  <b>MOH</b> Molina Healthcare Inc
-    $226.42 (+8.9%) | $11.8B
-  <b>PHG</b> Koninklijke Philips NV ADR
-    $31.06 (+9.1%) | $30.4B
-  <b>SYK</b> Stryker Corp
-    $339.65 (+9.4%) | $129.3B
-  <b>UHS</b> Universal Health Services Inc
-    $196.46 (+10.9%) | $11.6B
-
-<b>〈금융〉</b>
-  <b>APO</b> Apollo Global Management Inc
-    $122.76 (+8.1%) | $72.5B
-  <b>PS</b> Pershing Square Inc
-    $52.82 (+13.2%) | $21.1B
-  <b>RKT</b> Rocket Companies Inc
-    $15.01 (+8.7%) | $42.6B
+<b>〈경기소비재〉</b>
+  <b>TM</b> Toyota Motor Corp ADR
+    $218.11 (+9.3%) | $258.3B
 
 <b>〈커뮤니케이션〉</b>
   <b>APP</b> Applovin Corp
-    $271.11 (+10.4%) | $90.7B
-  <b>RBLX</b> Roblox Corp
-    $49.31 (+8.5%) | $35.3B
-
-<b>〈경기소비재〉</b>
-  <b>BKNG</b> Booking Holdings Inc
-    $170.97 (+9.8%) | $128.5B
-  <b>CPNG</b> Coupang Inc
-    $17.05 (+11.9%) | $30.6B
-  <b>CVNA</b> Carvana Co
-    $77.56 (+8.8%) | $85.6B
-  <b>DASH</b> DoorDash Inc
-    $198.67 (+8.4%) | $86.6B
-  <b>DHI</b> D.R. Horton Inc
-    $156.99 (+8.1%) | $42.6B
-  <b>EXPE</b> Expedia Group Inc
-    $315.88 (+10.5%) | $37.9B
-
-<b>〈필수소비재〉</b>
-  <b>DG</b> Dollar General Corp
-    $141.64 (+8.5%) | $31.2B
-  <b>PFGC</b> Performance Food Group Company
-    $109.57 (+13.5%) | $17.3B
+    $356.10 (+31.0%) | $119.2B
 
 <b>〈기술〉</b>
-  <b>JKHY</b> Jack Henry & Associates Inc
-    $179.02 (+10.7%) | $12.6B
-  <b>NXT</b> Nextpower Inc
-    $106.70 (+11.1%) | $16.1B
-  <b>PAYP</b> PayPay Corp ADR
-    $15.99 (+8.7%) | $10.7B
-  <b>PCOR</b> Procore Technologies Inc
-    $75.60 (+19.7%) | $11.5B
-
-<b>〈산업재〉</b>
-  <b>LTM</b> LATAM Airlines Group SA ADR
-    $47.78 (+8.4%) | $13.7B
-  <b>OC</b> Owens Corning
-    $127.80 (+8.5%) | $10.1B
-  <b>QXO</b> QXO Inc
-    $12.66 (+8.1%) | $13.1B
-  <b>RYAAY</b> Ryanair Holdings Plc ADR
-    $59.05 (+8.2%) | $30.6B
-  <b>UAL</b> United Airlines Holdings Inc
-    $115.79 (+8.0%) | $37.6B
+  <b>U</b> Unity Software Inc
+    $48.80 (+14.9%) | $21.5B
 
 
