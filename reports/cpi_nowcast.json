@@ -15,8 +15,34 @@
     "source_updated": "2026-11-05 00:00"
   },
   "consensus": {
-    "cpi": null,
-    "core_cpi": null
+    "cpi": {
+      "latest_release": null,
+      "next_release": {
+        "forecast": 0.3,
+        "previous": 0.6,
+        "actual": null,
+        "forecast_mom": null,
+        "previous_mom": null,
+        "actual_mom": null,
+        "occurrence_time": "2026-11-10T08:30:00-05:00",
+        "reference_period": "Oct",
+        "source": "nasdaq"
+      }
+    },
+    "core_cpi": {
+      "latest_release": null,
+      "next_release": {
+        "forecast": 0.2,
+        "previous": 0.3,
+        "actual": null,
+        "forecast_mom": null,
+        "previous_mom": null,
+        "actual_mom": null,
+        "occurrence_time": "2026-11-10T08:30:00-05:00",
+        "reference_period": "Oct",
+        "source": "nasdaq"
+      }
+    }
   },
   "consensus_feed_ok": true,
   "history": [
@@ -186,5 +212,5 @@
       "core_yoy": 2.56
     }
   ],
-  "fetched_at": "2026-11-06T13:00:43"
+  "fetched_at": "2026-11-06T19:00:16"
 }
