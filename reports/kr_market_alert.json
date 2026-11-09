@@ -1,6 +1,75 @@
 {
-  "fetched_at": "2026-11-09T08:00:23",
+  "fetched_at": "2026-11-10T08:00:27",
   "alerts": [
+    {
+      "stock_name": "동양2우B",
+      "stock_code": "001527",
+      "market": "유가증권",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-11-09",
+      "designated_date": "2026-11-10",
+      "judgment_date": "2026-11-24",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 5200.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 5904.0,
+        "cond2_15d_100pct": 10100.0,
+        "cond3_15d_high": 5200.0,
+        "binding": "15일신고가"
+      },
+      "current_price": 6760.0,
+      "current_date": "2026-11-09",
+      "is_at_risk": true,
+      "ticker": "001527.KS",
+      "price_error": null
+    },
+    {
+      "stock_name": "깨끗한나라",
+      "stock_code": "004540",
+      "market": "유가증권",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-11-09",
+      "designated_date": "2026-11-10",
+      "judgment_date": "2026-11-24",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 1720.0,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 1720.0,
+        "cond2_15d_100pct": 2390.0,
+        "cond3_15d_high": 1726.0,
+        "binding": "5일60%"
+      },
+      "current_price": 1727.0,
+      "current_date": "2026-11-09",
+      "is_at_risk": true,
+      "ticker": "004540.KS",
+      "price_error": null
+    },
+    {
+      "stock_name": "깨끗한나라우",
+      "stock_code": "004545",
+      "market": "유가증권",
+      "alert_type": "투자경고",
+      "disclose_date": "2026-11-09",
+      "designated_date": "2026-11-10",
+      "judgment_date": "2026-11-24",
+      "judgment_source": "시행세칙",
+      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
+      "threshold_price": 2937.6000000000004,
+      "threshold_breakdown": {
+        "cond1_5d_60pct": 2937.6000000000004,
+        "cond2_15d_100pct": 8210.0,
+        "cond3_15d_high": 5230.0,
+        "binding": "5일60%"
+      },
+      "current_price": 6790.0,
+      "current_date": "2026-11-09",
+      "is_at_risk": true,
+      "ticker": "004545.KS",
+      "price_error": null
+    },
     {
       "stock_name": "뉴인텍",
       "stock_code": "012340",
@@ -57,15 +126,15 @@
       "judgment_date": "2026-11-23",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3120.0,
+      "threshold_price": 3198.4,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 3120.0,
-        "cond2_15d_100pct": 4700.0,
-        "cond3_15d_high": 3345.0,
+        "cond1_5d_60pct": 3198.4,
+        "cond2_15d_100pct": 4800.0,
+        "cond3_15d_high": 3720.0,
         "binding": "5일60%"
       },
-      "current_price": 3720.0,
-      "current_date": "2026-11-06",
+      "current_price": 3635.0,
+      "current_date": "2026-11-09",
       "is_at_risk": true,
       "ticker": "020400.KQ",
       "price_error": null
@@ -80,40 +149,17 @@
       "judgment_date": "2026-11-06",
       "judgment_source": "공시",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 3448.0,
+      "threshold_price": 3560.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 5096.0,
-        "cond2_15d_100pct": 3448.0,
-        "cond3_15d_high": 4045.0,
+        "cond1_5d_60pct": 5408.0,
+        "cond2_15d_100pct": 3560.0,
+        "cond3_15d_high": 4080.0,
         "binding": "15일100%"
       },
-      "current_price": 4080.0,
-      "current_date": "2026-11-06",
-      "is_at_risk": true,
-      "ticker": "051630.KS",
-      "price_error": null
-    },
-    {
-      "stock_name": "에이전트AI",
-      "stock_code": "060900",
-      "market": "코스닥",
-      "alert_type": "투자경고",
-      "disclose_date": "2026-10-26",
-      "designated_date": "2026-10-27",
-      "judgment_date": "2026-11-10",
-      "judgment_source": "시행세칙",
-      "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 2820.0,
-      "threshold_breakdown": {
-        "cond1_5d_60pct": 3448.0,
-        "cond2_15d_100pct": 3434.0,
-        "cond3_15d_high": 2820.0,
-        "binding": "15일신고가"
-      },
-      "current_price": 1524.0,
-      "current_date": "2026-11-06",
+      "current_price": 3500.0,
+      "current_date": "2026-11-09",
       "is_at_risk": false,
-      "ticker": "060900.KQ",
+      "ticker": "051630.KS",
       "price_error": null
     },
     {
@@ -144,15 +190,15 @@
       "judgment_date": "2026-11-20",
       "judgment_source": "시행세칙",
       "release_condition": "해제: T종가 < min(T-5×1.60, T-15×2.00, 최근15일 신고가) (시행세칙 OR 조건 모두 미충족)",
-      "threshold_price": 42080.0,
+      "threshold_price": 48000.0,
       "threshold_breakdown": {
-        "cond1_5d_60pct": 42080.0,
-        "cond2_15d_100pct": 55400.0,
-        "cond3_15d_high": 62000.0,
+        "cond1_5d_60pct": 48000.0,
+        "cond2_15d_100pct": 55100.0,
+        "cond3_15d_high": 80600.0,
         "binding": "5일60%"
       },
-      "current_price": 80600.0,
-      "current_date": "2026-11-06",
+      "current_price": 104700.0,
+      "current_date": "2026-11-09",
       "is_at_risk": true,
       "ticker": "18064K.KS",
       "price_error": null
