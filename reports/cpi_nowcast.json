@@ -4,25 +4,25 @@
       "subcaption": "2026-10",
       "cpi_yoy": 3.74183045049836,
       "core_yoy": 2.48284216554884,
-      "nowcast_as_of": "11/04"
+      "nowcast_as_of": "11/05"
     },
     "forward_target": {
       "subcaption": "2026-11",
       "cpi_yoy": 3.88446343407907,
       "core_yoy": 2.77182230475159,
-      "nowcast_as_of": "11/06"
+      "nowcast_as_of": "11/09"
     },
-    "source_updated": "2026-11-06 00:00"
+    "source_updated": "2026-11-09 00:00"
   },
   "consensus": {
     "cpi": {
       "latest_release": null,
       "next_release": {
-        "forecast": 0.3,
-        "previous": 0.6,
+        "forecast": 3.9,
+        "previous": 3.7,
         "actual": null,
-        "forecast_mom": null,
-        "previous_mom": null,
+        "forecast_mom": 0.3,
+        "previous_mom": 0.6,
         "actual_mom": null,
         "occurrence_time": "2026-11-10T08:30:00-05:00",
         "reference_period": "Oct",
@@ -32,11 +32,11 @@
     "core_cpi": {
       "latest_release": null,
       "next_release": {
-        "forecast": 0.2,
-        "previous": 0.3,
+        "forecast": 2.8,
+        "previous": 2.6,
         "actual": null,
-        "forecast_mom": null,
-        "previous_mom": null,
+        "forecast_mom": 0.2,
+        "previous_mom": 0.3,
         "actual_mom": null,
         "occurrence_time": "2026-11-10T08:30:00-05:00",
         "reference_period": "Oct",
@@ -212,5 +212,5 @@
       "core_yoy": 2.56
     }
   ],
-  "fetched_at": "2026-11-09T19:00:09"
+  "fetched_at": "2026-11-10T07:00:10"
 }
