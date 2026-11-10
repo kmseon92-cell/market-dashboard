@@ -1,39 +1,29 @@
 {
- "as_of": "2026-11-06",
+ "as_of": "2026-11-09",
  "signal": {
-  "status": "purge",
-  "label": "🟠 미수 청산 진행 — 예탁금 전환 대기",
-  "deposit": 903342.4,
-  "deposit_delta": 18003.400000000023,
-  "down_streak": 1,
-  "deposit_drop_pct": -35.3,
-  "uncl": 9066.3,
+  "status": "outflow",
+  "label": "📉 자금 이탈 지속 (1일 연속 감소)",
+  "deposit": 882540.4,
+  "deposit_delta": -20801.599999999977,
+  "down_streak": 0,
+  "deposit_drop_pct": -36.8,
+  "uncl": 11051.0,
   "uncl_peak": 14293.0,
-  "uncl_drop_pct": -36.6,
-  "bandae": 70.2,
-  "bandae_peak_10d": 193.4,
-  "bandae_pct": 0.774296019324311,
+  "uncl_drop_pct": -22.7,
+  "bandae": 379.1,
+  "bandae_peak_10d": 379.1,
+  "bandae_pct": 3.4304587820106778,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 287715.0,
+  "credit": 283856.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -25.5
+  "credit_drop_pct": -26.5
  },
  "history": [
-  {
-   "date": "2026-06-26",
-   "bandae": 509.8,
-   "bandae_pct": 2.5,
-   "credit": 377616.0,
-   "deposit": 1266049.0,
-   "futs": 622662.0,
-   "kospi": 8411.21,
-   "uncl": 15632.0
-  },
   {
    "date": "2026-06-29",
    "bandae": 494.4,
@@ -908,20 +898,30 @@
    "date": "2026-11-05",
    "bandae": 84.2,
    "bandae_pct": 0.9,
+   "credit": 287715.0,
    "deposit": 885339.0,
    "futs": 333504.0,
-   "uncl": 9041.0,
-   "credit": 287715.0,
-   "kospi": 5383.8
+   "kospi": 5383.8,
+   "uncl": 9041.0
   },
   {
    "date": "2026-11-06",
-   "deposit": 903342.4,
-   "futs": 328237.5,
-   "uncl": 9066.3,
    "bandae": 70.2,
-   "bandae_pct": 0.8
+   "bandae_pct": 0.8,
+   "deposit": 903342.0,
+   "futs": 328238.0,
+   "uncl": 9066.0,
+   "credit": 283856.0,
+   "kospi": 5059.69
+  },
+  {
+   "date": "2026-11-09",
+   "deposit": 882540.4,
+   "futs": 316316.5,
+   "uncl": 11051.0,
+   "bandae": 379.1,
+   "bandae_pct": 3.4
   }
  ],
- "fetched_at": "2026-11-09T15:40:07"
+ "fetched_at": "2026-11-10T15:10:05"
 }
