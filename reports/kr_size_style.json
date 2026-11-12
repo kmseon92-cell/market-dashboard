@@ -1,34 +1,34 @@
 {
- "as_of": "2026-11-11",
+ "as_of": "2026-11-12",
  "window": [
-  "2026-11-05",
-  "2026-11-11"
+  "2026-11-06",
+  "2026-11-12"
  ],
- "base_date": "2026-11-04",
+ "base_date": "2026-11-05",
  "size": [
   {
    "name": "대형주",
-   "ret5": -5.83,
-   "tv_share": 90.0,
-   "tv_share_base": 89.5,
-   "tv5_jo": 90.5,
-   "tv_share_chg": 0.5
+   "ret5": -0.71,
+   "tv_share": 89.9,
+   "tv_share_base": 89.7,
+   "tv5_jo": 88.5,
+   "tv_share_chg": 0.2
   },
   {
    "name": "중형주",
-   "ret5": -1.48,
-   "tv_share": 7.7,
-   "tv_share_base": 7.6,
-   "tv5_jo": 7.7,
-   "tv_share_chg": 0.1
+   "ret5": -1.67,
+   "tv_share": 7.8,
+   "tv_share_base": 7.5,
+   "tv5_jo": 7.6,
+   "tv_share_chg": 0.3
   },
   {
    "name": "소형주",
-   "ret5": 0.07,
+   "ret5": 0.31,
    "tv_share": 2.3,
-   "tv_share_base": 2.9,
+   "tv_share_base": 2.8,
    "tv5_jo": 2.3,
-   "tv_share_chg": -0.6
+   "tv_share_chg": -0.5
   }
  ],
  "size_verdict": "소형주",
@@ -40,20 +40,20 @@
    "name": "성장주",
    "etf": "KODEX 성장주",
    "code": "325010",
-   "ret5": -7.29,
-   "share": 35
+   "ret5": -0.48,
+   "share": 61
   },
   {
    "name": "가치주",
    "etf": "KODEX 가치주",
    "code": "275290",
-   "ret5": -5.82,
-   "share": 65
+   "ret5": -1.57,
+   "share": 39
   }
  ],
- "style_verdict": "가치주",
+ "style_verdict": "성장주",
  "style_winners": [
-  "가치주"
+  "성장주"
  ],
  "etf_list": {
   "대형주": [
@@ -139,5 +139,5 @@
    }
   ]
  },
- "fetched_at": "2026-11-11T16:10:00"
+ "fetched_at": "2026-11-12T16:10:01"
 }
