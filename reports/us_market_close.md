@@ -1,89 +1,65 @@
-<!-- updated: 2026-11-13 06:30 -->
+<!-- updated: 2026-11-14 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-11-13
+📅 2026-11-14
 ━━━━━━━━━━━━━━━
-다우 -0.34% | 나스닥 -0.39% | S&P500 -0.33% | 러셀2000 -1.65% | 필반도체 -0.52% | WTI $88.92 | 환율 1,335원
+다우 +0.10% | 나스닥 -0.90% | S&P500 -0.40% | 러셀2000 -0.32% | 필반도체 -3.42% | WTI $89.01 | 환율 1,336원
 
-📈 <b>52주 신고가 (33종목)</b>
+📈 <b>52주 신고가 (16종목)</b>
 
 <b>〈기술〉</b>
   <b>AAPL</b> Apple Inc
-    $354.84 (-0.2%) | $5.2T
-  <b>ADP</b> Automatic Data Processing Inc
-    $307.92 (+0.5%) | $121.5B
+    $356.43 (+0.4%) | $5.2T
+  <b>FROG</b> JFrog Ltd
+    $113.64 (+2.8%) | $14.2B
   <b>STRC</b> Strategy Inc - VR PRF PERPETUAL USD 100 - Ser A
-    $99.96 (+0.0%) | $51.7B
-  <b>SWKS</b> Skyworks Solutions Inc
-    $90.03 (+2.7%) | $21.1B
-
-<b>〈금융〉</b>
-  <b>BRK-A</b> Berkshire Hathaway Inc
-    $885,660.00 (+0.1%) | $1.3T
-  <b>BRK-B</b> Berkshire Hathaway Inc
-    $589.83 (+0.3%) | $1.3T
-  <b>AFG</b> American Financial Group Inc
-    $160.27 (-0.6%) | $13.3B
-  <b>AIZ</b> Assurant Inc
-    $321.09 (-0.7%) | $15.8B
-  <b>CBOE</b> Cboe Global Markets Inc
-    $368.89 (-0.1%) | $38.5B
-  <b>IBN</b> ICICI Bank Ltd ADR
-    $34.39 (-1.0%) | $123.5B
-  <b>ICE</b> Intercontinental Exchange Inc
-    $177.86 (-1.5%) | $99.4B
-  <b>RGA</b> Reinsurance Group Of America Inc
-    $273.74 (+0.2%) | $17.8B
-  <b>TW</b> Tradeweb Markets Inc
-    $131.64 (+0.8%) | $30.6B
+    $99.91 (+0.1%) | $48.3B
 
 <b>〈필수소비재〉</b>
   <b>COST</b> Costco Wholesale Corp
-    $1,092.32 (+0.4%) | $484.0B
+    $1,106.41 (+1.3%) | $490.3B
   <b>KO</b> Coca-Cola Co
-    $97.44 (-0.1%) | $419.2B
+    $99.25 (+1.9%) | $427.0B
+  <b>PG</b> Procter & Gamble Co
+    $169.80 (+1.1%) | $393.6B
 
 <b>〈헬스케어〉</b>
   <b>JNJ</b> Johnson & Johnson
-    $283.52 (+1.1%) | $682.5B
-  <b>LLY</b> Lilly(Eli) & Co
-    $1,427.28 (-0.7%) | $1.3T
+    $285.75 (+0.8%) | $687.9B
   <b>BDX</b> Becton Dickinson & Co
-    $215.71 (+0.6%) | $58.8B
-  <b>DGX</b> Quest Diagnostics Inc
-    $259.65 (+0.4%) | $28.6B
-  <b>EHC</b> Encompass Health Corp
-    $140.83 (-1.0%) | $13.8B
+    $218.03 (+1.1%) | $59.4B
   <b>EW</b> Edwards Lifesciences Corp
-    $105.80 (-0.0%) | $60.8B
-  <b>LH</b> Labcorp Holdings Inc
-    $372.32 (+0.0%) | $30.2B
-  <b>RPRX</b> Royalty Pharma plc
-    $68.97 (-1.5%) | $39.6B
+    $107.15 (+1.3%) | $61.6B
   <b>TEVA</b> Teva- Pharmaceutical Industries Ltd
-    $43.65 (+0.9%) | $50.9B
-  <b>VTRS</b> Viatris Inc
-    $20.67 (-1.9%) | $23.7B
+    $44.50 (+1.9%) | $51.9B
 
 <b>〈산업재〉</b>
   <b>AER</b> Aercap Holdings NV
-    $175.99 (-0.6%) | $27.2B
-  <b>FAST</b> Fastenal Co
-    $55.55 (+0.1%) | $63.7B
-  <b>VLTO</b> Veralto Corp
-    $117.49 (-1.1%) | $28.6B
+    $175.69 (-0.2%) | $27.1B
+  <b>RSG</b> Republic Services Inc
+    $252.99 (-0.0%) | $77.1B
   <b>WCN</b> Waste Connections Inc
-    $193.92 (+0.9%) | $48.5B
+    $193.97 (+0.0%) | $48.5B
 
 <b>〈커뮤니케이션〉</b>
-  <b>FWONA</b> Liberty Media Corp
-    $104.52 (-1.4%) | $27.4B
-  <b>FWONK</b> Liberty Media Corp
-    $109.44 (-1.6%) | $27.3B
-  <b>GSAT</b> Globalstar Inc
-    $86.24 (+0.2%) | $11.2B
+  <b>CHT</b> Chunghwa Telecom ADR
+    $49.87 (+1.6%) | $38.7B
 
 <b>〈유틸리티〉</b>
   <b>OGE</b> Oge Energy Corp
-    $51.26 (+0.4%) | $10.6B
+    $51.56 (+0.6%) | $10.7B
+
+<b>〈금융〉</b>
+  <b>TW</b> Tradeweb Markets Inc
+    $132.74 (+0.8%) | $30.8B
+
+🚀 <b>8% 이상 급등 (2종목)</b>
+
+<b>〈기술〉</b>
+  <b>CBRS</b> Cerebras Systems Inc
+    $108.72 (+11.2%) | $24.3B
+
+<b>〈금융〉</b>
+  <b>NU</b> Nu Holdings Ltd
+    $13.22 (+11.8%) | $63.9B
 
 
