@@ -49,6 +49,7 @@ TICKERS = {
             "니케이225": "^N225",
             "상해종합": "000001.SS",
             "대만 가권": "^TWII",
+            "VKOSPI": "__VKOSPI__",
         },
     ],
     "선물 · 환율": [
@@ -1381,6 +1382,89 @@ def render_kospi_disparity_card():
     st.markdown(html, unsafe_allow_html=True)
 
 
+def fetch_vkospi() -> dict:
+    """reports/vkospi.json 로드 — 맥미니 vkospi/fetch.py(KRX OpenAPI, T+1)가 갱신."""
+    text = _report_text("vkospi.json")
+    if text is None:
+        return {"error": "vkospi.json 없음"}
+    try:
+        return json.loads(text)
+    except Exception as e:
+        return {"error": str(e)}
+
+
+def render_vkospi_card():
+    """VKOSPI 카드 — 35 이하 노란 형광펜, 29 이하 빨강 (2026-11-17 Dave 지정)."""
+    data = fetch_vkospi()
+    if "error" in data:
+        st.markdown(
+            f'<div style="padding:8px 14px;border:1px solid #2a2a2a;border-radius:10px;'
+            f'min-height:150px;box-sizing:border-box;display:flex;'
+            f'flex-direction:column;justify-content:center;">'
+            f'<div style="font-size:1.05rem;font-weight:700;color:#aaa;">VKOSPI</div>'
+            f'<div style="font-size:1.5rem;font-weight:700;color:#888;">—</div>'
+            f'<div style="font-size:0.75rem;color:#888;">{data["error"]}</div>'
+            f'</div>',
+            unsafe_allow_html=True,
+        )
+        return
+
+    v = data.get("close")
+    change = data.get("change")
+    pct = data.get("pct")
+    th = data.get("thresholds") or {}
+    y_th, r_th = th.get("yellow", 35), th.get("red", 29)
+    stats = data.get("stats_1y") or {}
+    as_of = data.get("as_of") or ""
+
+    color, label, bg, fg, red = "#000", "", "transparent", None, False
+    if v is not None:
+        if v <= r_th:
+            color, label, bg, fg, red = "#dc2626", f"{r_th} 이하", "#dc2626", "#fff", True
+        elif v <= y_th:
+            color, label, bg, fg = "#b45309", f"{y_th} 이하", "#fde047", "#000"
+
+    arrow, ch_color = "", "#6b7280"
+    if change is not None:
+        if change > 0:
+            arrow, ch_color = "▲", "#dc2626"
+        elif change < 0:
+            arrow, ch_color = "▼", "#2563eb"
+        else:
+            arrow = "■"
+
+    v_str = f"{v:.2f}" if v is not None else "—"
+    ch_str = (f"{change:+.2f}" if change is not None else "") + (f" ({pct:+.2f}%)" if pct is not None else "")
+    v_inner = (f'<span style="background:{bg};color:{fg};padding:0 8px;border-radius:4px;">{v_str}</span>'
+               if bg != "transparent" else v_str)
+    label_html = (
+        f'<span style="display:inline-block;font-size:0.75rem;font-weight:800;'
+        f'color:{"#fff" if red else "#000"};background:{bg};padding:1px 7px;border-radius:4px;'
+        f'margin-left:6px;vertical-align:middle;">{label}</span>'
+    ) if label else ""
+    spark = _sparkline_svg([h["close"] for h in (data.get("spark") or [])],
+                           stroke=color if color != "#000" else "#6b7280")
+    stats_line = (
+        f'1Y <b style="color:#dc2626;">{stats.get("max", 0):.0f}</b>/'
+        f'<b style="color:#2563eb;">{stats.get("min", 0):.0f}</b>·평균 {stats.get("avg", 0):.0f}'
+    ) if stats else ""
+    as_of_md = as_of[5:].replace("-", "/") if as_of else ""
+    html = (
+        f'<div style="padding:8px 14px;border:{"2px solid #dc2626" if red else "1px solid #2a2a2a"};'
+        f'border-radius:10px;min-height:150px;box-sizing:border-box;display:flex;'
+        f'flex-direction:column;justify-content:center;">'
+        f'<div style="font-size:1.05rem;font-weight:700;color:#000;margin-bottom:2px;">'
+        f'VKOSPI{label_html}{_stale_badge(data.get("fetched_at", ""), warn_hours=96)}</div>'
+        f'<div style="font-size:2.1rem;font-weight:800;line-height:1.1;color:{color};">{v_inner}</div>'
+        f'<div style="font-size:0.85rem;color:{ch_color};font-weight:600;">{arrow} {ch_str}</div>'
+        f'<div style="margin-top:2px;">{spark}</div>'
+        f'<div style="font-size:0.7rem;color:#6b7280;margin-top:0;line-height:1.3;">'
+        f'{stats_line} · KRX {as_of_md} 종가 · 노랑≤{y_th} 빨강≤{r_th}</div>'
+        f'</div>'
+    )
+    st.markdown(html, unsafe_allow_html=True)
+
+
 def fetch_kr_market_funds() -> dict:
     """reports/kr_market_funds.json 로드 — 맥미니 fetcher가 아침(08:40/10:30) 업데이트."""
     text = _report_text("kr_market_funds.json")
@@ -1531,6 +1615,8 @@ def render_quotes():
                         render_kospi_disparity_card()
                     elif symbol == "__KR_MARKET_FUNDS__":
                         render_kr_market_funds_card()
+                    elif symbol == "__VKOSPI__":
+                        render_vkospi_card()
                     else:
                         render_card(
                             name, symbol, quotes.get(symbol), ytd_map.get(symbol),
