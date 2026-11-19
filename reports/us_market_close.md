@@ -1,47 +1,41 @@
-<!-- updated: 2026-11-19 06:30 -->
+<!-- updated: 2026-11-20 06:30 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-11-19
+📅 2026-11-20
 ━━━━━━━━━━━━━━━
-다우 -1.32% | 나스닥 -0.00% | S&P500 -0.50% | 러셀2000 +0.46% | 필반도체 -0.40% | WTI $82.94 | 환율 1,332원
+다우 -2.18% | 나스닥 -2.24% | S&P500 -2.00% | 러셀2000 -2.19% | 필반도체 -2.39% | WTI $83.21 | 환율 1,334원
 
-📈 <b>52주 신고가 (5종목)</b>
+📈 <b>52주 신고가 (4종목)</b>
+
+<b>〈기술〉</b>
+  <b>FROG</b> JFrog Ltd
+    $109.27 (-4.5%) | $13.6B
+  <b>SAIL</b> Sailpoint Inc
+    $22.02 (-1.0%) | $12.6B
 
 <b>〈커뮤니케이션〉</b>
-  <b>DIS</b> Walt Disney Co
-    $122.36 (+4.6%) | $211.3B
+  <b>GSAT</b> Globalstar Inc
+    $86.13 (-0.7%) | $11.2B
 
-<b>〈경기소비재〉</b>
-  <b>DRI</b> Darden Restaurants Inc
-    $239.22 (+3.2%) | $27.1B
+<b>〈금융〉</b>
+  <b>IBN</b> ICICI Bank Ltd ADR
+    $34.90 (+0.0%) | $125.3B
 
-<b>〈기술〉</b>
-  <b>FROG</b> JFrog Ltd 🔥
-    $114.38 (+8.8%) | $14.2B
-  <b>SAIL</b> Sailpoint Inc 🔥
-    $22.24 (+10.2%) | $12.7B
-
-<b>〈필수소비재〉</b>
-  <b>TGT</b> Target Corp
-    $165.93 (+4.0%) | $75.4B
-
-🚀 <b>8% 이상 급등 (6종목)</b>
+🚀 <b>8% 이상 급등 (4종목)</b>
 
 <b>〈기술〉</b>
-  <b>PANW</b> Palo Alto Networks Inc
-    $341.93 (+10.6%) | $280.0B
-  <b>AKAM</b> Akamai Technologies Inc
-    $91.70 (+8.3%) | $13.2B
-  <b>OKTA</b> Okta Inc
-    $195.61 (+12.1%) | $34.2B
-  <b>RBRK</b> Rubrik Inc
-    $110.00 (+9.3%) | $22.8B
+  <b>ANT</b> Anthropic PBC
+    $96.86 (+16.7%) | $1.8T
 
-<b>〈산업재〉</b>
-  <b>GNRC</b> Generac Holdings Inc
-    $205.45 (+9.9%) | $12.1B
+<b>〈헬스케어〉</b>
+  <b>INSM</b> Insmed Inc
+    $144.25 (+20.4%) | $31.6B
 
 <b>〈경기소비재〉</b>
-  <b>TJX</b> TJX Companies Inc
-    $140.30 (+8.1%) | $154.3B
+  <b>PDD</b> PDD Holdings Inc ADR
+    $86.00 (+11.0%) | $122.4B
+
+<b>〈커뮤니케이션〉</b>
+  <b>TU</b> Telus Corp
+    $10.78 (+13.3%) | $17.2B
 
 
