@@ -349,6 +349,24 @@ def _fetch_naver_world(symbol: str):
     return out
 
 
+def _fetch_twse_mis(symbol: str):
+    """대만 가권 — 대만거래소 공식 MIS API(실시간 ~5초). investing은 403, naver/KIS/CNBC는 20분 지연이라 1순위."""
+    import urllib.request, json
+    url = "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0"
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0",
+                                               "Referer": "https://mis.twse.com.tw/stock/index.jsp"})
+    d = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())["msgArray"][0]
+    prev = float(d["y"])
+    z = d.get("z")
+    last = float(z) if z not in (None, "", "-") else prev
+    change = last - prev
+    dd = str(d.get("d") or "")
+    out = {"price": last, "change": change, "pct": change / prev * 100 if prev else 0.0}
+    if len(dd) == 8:
+        out["as_of"] = f"{dd[:4]}-{dd[4:6]}-{dd[6:]}"
+    return out
+
+
 # 미국 채권 cash 시장이 닫혀있으면 yfinance는 직전 종가에 고착됨 → 실시간 futures 기반 implied yield는 CNBC/investing.com에서만
 CNBC_YIELD_TAG = {"^TNX": "US10Y", "^TYX": "US30Y"}
 INVESTING_URL = {
@@ -685,7 +703,9 @@ def fetch_quote(symbol: str):
             if r:
                 return r
         return {"error": " / ".join(errs) or "prefetch unavailable"}
-    # 지수(니케이/대만/상해): naver 월드인덱스(~15~20분 지연) 1순위, KIS(지연) 폴백. 둘 다 지연이라 카드에 '지연' 뱃지.
+    # 대만은 TWSE MIS 실시간 1순위. 지수(니케이/대만/상해): naver 월드인덱스(~15~20분 지연) 1순위, KIS(지연) 폴백. 둘 다 지연이라 카드에 '지연' 뱃지.
+    if symbol == "^TWII":
+        sources.append(("twse", lambda: _fetch_twse_mis(symbol)))
     if symbol in NAVER_WORLD_MAP:
         sources.append(("naver_world", lambda: _fetch_naver_world(symbol)))
     if symbol in KIS_INDEX_MAP:
