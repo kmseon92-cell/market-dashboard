@@ -350,22 +350,23 @@ def _fetch_naver_world(symbol: str):
 
 
 def _fetch_twse_mis(symbol: str):
-    """대만 가권 — 대만거래소 공식 MIS API(실시간 ~5초). investing은 403, naver/KIS/CNBC는 20분 지연이라 1순위."""
-    import urllib.request, json
-    url = "https://mis.twse.com.tw/stock/api/getStockInfo.jsp?ex_ch=tse_t00.tw&json=1&delay=0"
-    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0",
-                                               "Referer": "https://mis.twse.com.tw/stock/index.jsp"})
-    d = json.loads(urllib.request.urlopen(req, timeout=5).read().decode())["msgArray"][0]
-    prev = float(d["y"])
-    z = d.get("z")
-    last = float(z) if z not in (None, "", "-") else prev
-    change = last - prev
-    dd = str(d.get("d") or "")
-    out = {"price": last, "change": change, "pct": change / prev * 100 if prev else 0.0}
-    if len(dd) == 8:
-        out["as_of"] = f"{dd[:4]}-{dd[4:6]}-{dd[6:]}"
+    """대만 가권 — 맥미니 us-futures/fetch.py가 TWSE MIS 공식 API(실시간)를 5분마다
+    us_futures.json에 동봉. Streamlit Cloud(미국)에선 TWSE 직접 호출이 막혀서 프리페치 경유.
+    naver/KIS/CNBC/야후는 전부 20분 지연이라 이게 1순위(2026-11-23 Dave)."""
+    q = (_load_us_futures().get("quotes") or {}).get(symbol)
+    if not q:
+        raise ValueError("twse prefetch 없음")
+    out = {"price": q["price"], "change": q["change"], "pct": q["pct"]}
+    if q.get("as_of"):
+        out["as_of"] = q["as_of"]
+    fetched = q.get("fetched_at", "")
+    if is_market_closed(symbol) is False and fetched:
+        age = (datetime.now(ZoneInfo("Asia/Seoul")) - datetime.fromisoformat(fetched)).total_seconds()
+        if age > 1200:  # 20분 넘게 멈췄으면 naver(20분 지연)보다 나을 게 없음 → 폴백
+            raise ValueError(f"twse prefetch stale {int(age)}s")
+        out["delayed"] = True
+        out["delay_label"] = "5분"
     return out
-
 
 # 미국 채권 cash 시장이 닫혀있으면 yfinance는 직전 종가에 고착됨 → 실시간 futures 기반 implied yield는 CNBC/investing.com에서만
 CNBC_YIELD_TAG = {"^TNX": "US10Y", "^TYX": "US30Y"}
