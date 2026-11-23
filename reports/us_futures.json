@@ -1,49 +1,55 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 25850.75,
-      "change": 724.25,
-      "pct": 2.88
+      "price": 25828.75,
+      "change": 702.25,
+      "pct": 2.79
     },
     "CL=F": {
-      "price": 83.13,
-      "change": -0.28,
-      "pct": -0.34
+      "price": 83.02,
+      "change": -0.39,
+      "pct": -0.47
     },
     "JPY=X": {
-      "price": 158.96,
-      "change": 0.43,
-      "pct": 0.27
+      "price": 159.02,
+      "change": 0.49,
+      "pct": 0.31
     },
     "^TNX": {
-      "price": 4.948,
-      "change": 0.036,
-      "pct": 0.7329
+      "price": 4.95,
+      "change": 0.038,
+      "pct": 0.7736
     },
     "^TYX": {
-      "price": 5.328,
-      "change": 0.026,
-      "pct": 0.3867
+      "price": 5.329,
+      "change": 0.027,
+      "pct": 0.4023
     },
     "DX-Y.NYB": {
-      "price": 103.632,
-      "change": -0.175,
-      "pct": -0.17
+      "price": 103.621,
+      "change": -0.186,
+      "pct": -0.18
     },
     "^VIX": {
       "price": 35.89,
       "change": 0.0,
       "pct": 0.0
+    },
+    "^TWII": {
+      "price": 36811.89,
+      "change": 778.6,
+      "pct": 2.1608,
+      "as_of": "2026-11-23",
+      "time": "13:33:00",
+      "fetched_at": "2026-11-23T16:16:09+09:00"
     }
   },
-  "errors": [
-    "^TWII: twse: URLError: <urlopen error _ssl.c:1112: The handshake operation timed out>"
-  ],
-  "fetched_at": "2026-11-23T16:10:53+09:00",
+  "errors": [],
+  "fetched_at": "2026-11-23T16:16:09+09:00",
   "jpy_carry": {
     "peak_3mo": 160.2,
     "warn_level": 155.39,
-    "drop_pct": -0.77,
+    "drop_pct": -0.73,
     "warning": false
   }
 }
