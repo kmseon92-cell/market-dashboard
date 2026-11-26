@@ -1,19 +1,19 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 26269.75,
-      "change": 169.5,
-      "pct": 0.65
+      "price": 26304.75,
+      "change": 204.5,
+      "pct": 0.78
     },
     "CL=F": {
-      "price": 83.84,
-      "change": 0.16,
-      "pct": 0.19
+      "price": 84.07,
+      "change": 0.39,
+      "pct": 0.47
     },
     "JPY=X": {
-      "price": 159.16,
-      "change": -0.01,
-      "pct": -0.0063
+      "price": 159.14,
+      "change": -0.03,
+      "pct": -0.0188
     },
     "^TNX": {
       "price": 4.864,
@@ -26,30 +26,24 @@
       "pct": -0.5742
     },
     "DX-Y.NYB": {
-      "price": 103.748,
-      "change": 0.083,
-      "pct": 0.08
+      "price": 103.737,
+      "change": 0.072,
+      "pct": 0.07
     },
     "^VIX": {
       "price": 28.29,
       "change": 1.93,
       "pct": 7.32
-    },
-    "^TWII": {
-      "price": 38905.52,
-      "change": 710.09,
-      "pct": 1.8591,
-      "as_of": "2026-11-26",
-      "time": "10:36:00",
-      "fetched_at": "2026-11-26T11:37:06+09:00"
     }
   },
-  "errors": [],
-  "fetched_at": "2026-11-26T11:37:06+09:00",
+  "errors": [
+    "^TWII: twse: JSONDecodeError: Expecting value: line 22 column 1 (char 21)"
+  ],
+  "fetched_at": "2026-11-26T11:42:13+09:00",
   "jpy_carry": {
     "peak_3mo": 160.2,
     "warn_level": 155.39,
-    "drop_pct": -0.65,
+    "drop_pct": -0.66,
     "warning": false
   }
 }
