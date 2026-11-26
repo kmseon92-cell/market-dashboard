@@ -1,9 +1,9 @@
 {
   "quotes": {
     "NQ=F": {
-      "price": 26225.0,
-      "change": 124.75,
-      "pct": 0.48
+      "price": 26235.25,
+      "change": 135.0,
+      "pct": 0.52
     },
     "CL=F": {
       "price": 83.45,
@@ -11,8 +11,8 @@
       "pct": -0.27
     },
     "JPY=X": {
-      "price": 159.22,
-      "change": 0.05,
+      "price": 159.21,
+      "change": 0.04,
       "pct": 0.03
     },
     "^TNX": {
@@ -26,30 +26,24 @@
       "pct": -0.5742
     },
     "DX-Y.NYB": {
-      "price": 103.76,
-      "change": 0.095,
+      "price": 103.754,
+      "change": 0.089,
       "pct": 0.09
     },
     "^VIX": {
-      "price": 26.89,
-      "change": -1.4,
-      "pct": -4.95
-    },
-    "^TWII": {
-      "price": 39151.81,
-      "change": 956.38,
-      "pct": 2.5039,
-      "as_of": "2026-11-26",
-      "time": "13:33:00",
-      "fetched_at": "2026-11-26T18:58:35+09:00"
+      "price": 26.92,
+      "change": -1.37,
+      "pct": -4.84
     }
   },
-  "errors": [],
-  "fetched_at": "2026-11-26T18:58:35+09:00",
+  "errors": [
+    "^TWII: twse: URLError: <urlopen error [Errno 54] Connection reset by peer>"
+  ],
+  "fetched_at": "2026-11-26T19:03:45+09:00",
   "jpy_carry": {
     "peak_3mo": 160.2,
     "warn_level": 155.39,
-    "drop_pct": -0.61,
+    "drop_pct": -0.62,
     "warning": false
   }
 }
