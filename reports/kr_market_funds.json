@@ -1,39 +1,29 @@
 {
- "as_of": "2026-11-25",
+ "as_of": "2026-11-26",
  "signal": {
   "status": "neutral",
   "label": "⚪ 중립",
-  "deposit": 835106.6,
-  "deposit_delta": 14609.599999999977,
-  "down_streak": 1,
-  "deposit_drop_pct": -40.2,
-  "uncl": 10084.0,
+  "deposit": 851020.5,
+  "deposit_delta": 15913.5,
+  "down_streak": 0,
+  "deposit_drop_pct": -39.1,
+  "uncl": 10044.4,
   "uncl_peak": 11051.0,
-  "uncl_drop_pct": -8.8,
-  "bandae": 84.0,
+  "uncl_drop_pct": -9.1,
+  "bandae": 60.2,
   "bandae_peak_10d": 284.5,
-  "bandae_pct": 0.8330027766759223,
+  "bandae_pct": 0.5993389351280316,
   "bandae_climax_passed": false,
   "bandae_record_60d": false,
   "bandae_near_record": false,
   "bandae_record_bar": null,
   "climax": null,
   "climax_spike": null,
-  "credit": 258777.0,
+  "credit": 254123.0,
   "credit_peak": 386328.0,
-  "credit_drop_pct": -33.0
+  "credit_drop_pct": -34.2
  },
  "history": [
-  {
-   "date": "2026-07-15",
-   "bandae": 384.7,
-   "bandae_pct": 2.8,
-   "credit": 343702.0,
-   "deposit": 1098670.0,
-   "futs": 495778.0,
-   "kospi": 7284.41,
-   "uncl": 13968.0
-  },
   {
    "date": "2026-07-16",
    "bandae": 148.2,
@@ -908,20 +898,30 @@
    "date": "2026-11-24",
    "bandae": 136.8,
    "bandae_pct": 1.4,
+   "credit": 258777.0,
    "deposit": 820497.0,
    "futs": 299344.0,
-   "uncl": 9660.0,
-   "credit": 258777.0,
-   "kospi": 5006.03
+   "kospi": 5006.03,
+   "uncl": 9660.0
   },
   {
    "date": "2026-11-25",
-   "deposit": 835106.6,
-   "futs": 316081.4,
-   "uncl": 10084.0,
    "bandae": 84.0,
-   "bandae_pct": 0.8
+   "bandae_pct": 0.8,
+   "deposit": 835107.0,
+   "futs": 316081.0,
+   "uncl": 10084.0,
+   "credit": 254123.0,
+   "kospi": 4697.51
+  },
+  {
+   "date": "2026-11-26",
+   "deposit": 851020.5,
+   "futs": 301718.6,
+   "uncl": 10044.4,
+   "bandae": 60.2,
+   "bandae_pct": 0.6
   }
  ],
- "fetched_at": "2026-11-26T15:10:35"
+ "fetched_at": "2026-11-27T15:40:08"
 }
