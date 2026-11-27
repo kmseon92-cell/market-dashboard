@@ -1,119 +1,2067 @@
-<!-- updated: 2026-11-26 06:30 -->
+<!-- updated: 2026-11-28 06:31 -->
 🇺🇸 <b>미국 주식 데일리 스캔</b>
-📅 2026-11-26
+📅 2026-11-28
 ━━━━━━━━━━━━━━━
-다우 +0.31% | 나스닥 -0.63% | S&P500 -0.27% | 러셀2000 +0.73% | 필반도체 -0.62% | WTI $84.18 | 환율 1,344원
+다우 +1.18% | 나스닥 +2.33% | S&P500 +1.60% | 러셀2000 +1.73% | 필반도체 +4.68% | WTI $83.08 | 환율 1,334원
 
-📈 <b>52주 신고가 (33종목)</b>
-
-<b>〈헬스케어〉</b>
-  <b>ABBV</b> Abbvie Inc
-    $294.48 (-1.9%) | $520.5B
-  <b>BDX</b> Becton Dickinson & Co
-    $221.24 (+0.6%) | $60.3B
-  <b>GKOS</b> Glaukos Corp
-    $259.90 (+1.1%) | $15.4B
-  <b>REGN</b> Regeneron Pharmaceuticals Inc
-    $981.87 (-0.5%) | $101.6B
-  <b>SNY</b> Sanofi ADR
-    $54.35 (+4.7%) | $129.5B
-  <b>TAK</b> Takeda Pharmaceutical Co ADR
-    $23.01 (+1.8%) | $73.5B
-  <b>VRTX</b> Vertex Pharmaceuticals Inc
-    $564.12 (+0.0%) | $143.0B
+📈 <b>52주 신고가 (1002종목)</b>
 
 <b>〈필수소비재〉</b>
   <b>COST</b> Costco Wholesale Corp
-    $1,086.81 (-0.5%) | $481.6B
-  <b>PG</b> Procter & Gamble Co
-    $173.23 (+0.4%) | $401.5B
-  <b>COKE</b> Coca-Cola Consolidated Inc
-    $218.64 (+4.7%) | $14.6B
+    $1,097.81 (+1.0%) | $486.5B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
+  <b>USFD</b> US Foods Holding Corp
+    $112.52 (+0.8%) | $24.2B
 
 <b>〈커뮤니케이션〉</b>
   <b>DIS</b> Walt Disney Co
-    $125.60 (+2.5%) | $214.5B
+    $127.24 (+1.3%) | $217.3B
   <b>OMC</b> Omnicom Group Inc
-    $90.70 (+1.6%) | $24.8B
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
+  <b>OMC</b> Omnicom Group Inc
+    $92.23 (+1.7%) | $25.2B
 
 <b>〈기술〉</b>
   <b>ADP</b> Automatic Data Processing Inc
-    $316.59 (+1.9%) | $125.0B
+    $319.43 (+0.9%) | $126.1B
   <b>CDW</b> CDW Corp
-    $174.97 (+6.6%) | $21.8B
+    $179.10 (+2.4%) | $22.4B
   <b>NTSK</b> Netskope Inc
-    $26.44 (+3.6%) | $10.8B
-  <b>PTC</b> PTC Inc
-    $196.10 (+0.1%) | $21.3B
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
+  <b>ADP</b> Automatic Data Processing Inc
+    $319.43 (+0.9%) | $126.1B
+  <b>CDW</b> CDW Corp
+    $179.10 (+2.4%) | $22.4B
+  <b>NTSK</b> Netskope Inc
+    $28.50 (+7.8%) | $11.6B
+  <b>SAIL</b> Sailpoint Inc
+    $23.52 (+2.8%) | $13.4B
 
 <b>〈금융〉</b>
   <b>AFG</b> American Financial Group Inc
-    $160.76 (+0.8%) | $13.3B
+    $161.19 (+0.3%) | $13.3B
   <b>AIZ</b> Assurant Inc
-    $325.73 (+1.0%) | $16.0B
-  <b>AJG</b> Arthur J. Gallagher & Co
-    $292.39 (+1.9%) | $75.0B
-  <b>IBN</b> ICICI Bank Ltd ADR
-    $36.50 (+1.7%) | $131.1B
-  <b>MRSH</b> Marsh
-    $216.66 (+1.6%) | $103.0B
-  <b>RGA</b> Reinsurance Group Of America Inc
-    $278.29 (+1.4%) | $18.1B
-  <b>WRB</b> W.R. Berkley Corp
-    $79.34 (+0.8%) | $29.5B
+    $328.18 (+0.8%) | $16.1B
   <b>WTW</b> Willis Towers Watson Public Limited Co
-    $352.56 (+1.7%) | $32.5B
-
-<b>〈부동산〉</b>
-  <b>AHR</b> American Healthcare REIT Inc
-    $60.24 (+0.8%) | $14.1B
-  <b>JAN</b> Janus Living Inc
-    $33.83 (+2.2%) | $10.5B
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
+  <b>AFG</b> American Financial Group Inc
+    $161.19 (+0.3%) | $13.3B
+  <b>AIZ</b> Assurant Inc
+    $328.18 (+0.8%) | $16.1B
+  <b>WTW</b> Willis Towers Watson Public Limited Co
+    $359.85 (+2.1%) | $33.2B
 
 <b>〈유틸리티〉</b>
   <b>AWK</b> American Water Works Co Inc
-    $152.84 (+1.6%) | $30.4B
-  <b>SONN</b> Southern Company
-    $51.76 (+0.6%) | $110.2B
+    $153.76 (+0.6%) | $30.6B
   <b>WTRG</b> Essential Utilities Inc
-    $46.23 (+1.8%) | $13.2B
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
+  <b>AWK</b> American Water Works Co Inc
+    $153.76 (+0.6%) | $30.6B
+  <b>WTRG</b> Essential Utilities Inc
+    $46.64 (+0.9%) | $13.4B
 
 <b>〈경기소비재〉</b>
   <b>DRI</b> Darden Restaurants Inc
-    $241.16 (+0.4%) | $27.3B
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
   <b>SN</b> SharkNinja Inc
-    $232.50 (+1.6%) | $32.8B
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+  <b>DRI</b> Darden Restaurants Inc
+    $243.26 (+0.9%) | $27.5B
+  <b>LTH</b> Life Time Group Holdings Inc
+    $48.39 (+1.2%) | $10.9B
+  <b>SN</b> SharkNinja Inc
+    $236.98 (+1.9%) | $33.4B
+
+<b>〈헬스케어〉</b>
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+  <b>GKOS</b> Glaukos Corp
+    $264.06 (+1.6%) | $15.6B
+  <b>REGN</b> Regeneron Pharmaceuticals Inc
+    $992.14 (+1.1%) | $102.6B
+  <b>ROIV</b> Roivant Sciences Ltd
+    $43.25 (+2.5%) | $31.3B
+  <b>TAK</b> Takeda Pharmaceutical Co ADR
+    $23.02 (+0.0%) | $73.5B
+
+<b>〈부동산〉</b>
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
+  <b>JAN</b> Janus Living Inc
+    $34.24 (+1.2%) | $10.6B
 
 <b>〈산업재〉</b>
   <b>VLTO</b> Veralto Corp
-    $120.19 (+1.0%) | $29.2B
-  <b>WM</b> Waste Management Inc
-    $247.29 (+1.1%) | $98.3B
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
+  <b>VLTO</b> Veralto Corp
+    $120.06 (-0.1%) | $29.2B
 
-🚀 <b>8% 이상 급등 (8종목)</b>
+🚀 <b>8% 이상 급등 (12종목)</b>
 
 <b>〈기술〉</b>
-  <b>ASTS</b> AST SpaceMobile Inc
-    $26.00 (+10.2%) | $10.1B
-  <b>BSP</b> Bending Spoons S.p.A
-    $46.29 (+8.0%) | $30.4B
-  <b>HPQ</b> HP Inc
-    $31.15 (+11.5%) | $28.1B
+  <b>ANT</b> Anthropic PBC
+    $91.88 (+11.0%) | $1.2T
+  <b>ALAB</b> Astera Labs Inc
+    $206.84 (+8.7%) | $36.1B
+  <b>COHR</b> Coherent Corp
+    $223.79 (+14.1%) | $44.1B
+  <b>CRDO</b> Credo Technology Group Holding Ltd
+    $115.57 (+8.2%) | $21.7B
+  <b>SNDK</b> Sandisk Corp
+    $85.36 (+16.0%) | $97.2B
 
-<b>〈커뮤니케이션〉</b>
-  <b>CHTR</b> Charter Communications Inc
-    $147.23 (+8.4%) | $25.8B
+<b>〈금융〉</b>
+  <b>BBD</b> Banco Bradesco SA ADR
+    $2.80 (+15.2%) | $31.6B
+  <b>ITUB</b> Itau Unibanco Holding SA ADR
+    $7.66 (+11.3%) | $89.1B
+  <b>XP</b> XP Inc
+    $16.99 (+18.1%) | $10.1B
+
+<b>〈소재〉</b>
+  <b>CDE</b> Coeur Mining Inc
+    $12.76 (+8.6%) | $13.0B
+  <b>EQX</b> Equinox Gold Corp
+    $9.84 (+8.5%) | $11.8B
 
 <b>〈산업재〉</b>
-  <b>CNH</b> CNH Industrial NV
-    $11.88 (+8.0%) | $14.7B
-  <b>QXO</b> QXO Inc
-    $11.97 (+8.6%) | $12.4B
+  <b>RKLB</b> Rocket Lab Corp
+    $50.88 (+8.2%) | $32.2B
 
-<b>〈경기소비재〉</b>
-  <b>DKNG</b> DraftKings Inc
-    $17.64 (+9.5%) | $15.7B
-  <b>LI</b> Li Auto Inc ADR
-    $11.88 (+11.0%) | $10.1B
+<b>〈유틸리티〉</b>
+  <b>SBS</b> Companhia de Saneamento Basico do Estado de Sao Paulo ADR
+    $5.41 (+11.3%) | $19.0B
 
 
